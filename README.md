@@ -2,6 +2,37 @@ https://dacon.io/competitions/official/236754/overview/evaluation
 
 위 데이콘 공모전에서 수상을 노리는 프로젝트
 
+기본 실험은 **12그룹 · Thinking OFF · 공고 간 연속 배치 · 엔진16** 파이프라인입니다.
+
+```bash
+uv run --locked python scripts/run_experiment.py
+```
+
+현재 작업 트리의 프롬프트·규칙을 사용해 dev 200건을 실행합니다. 출력은 실행 시각별
+`output/experiments/` 하위 폴더에 저장하며, `--output-dir 새폴더`로 직접 지정할 수 있습니다.
+첫 2개 공고의 첫 그룹을 준비하고, 후속 작업이 16개 이하가 되면 다음 공고의 첫 그룹을
+선행 투입합니다. 최대 3개 공고·공통 원문 합계 48,000토큰을 유지하며, decode에서
+전체 CUDA graph 사용을 확인합니다. 출력·재시도 한도는 2,048토큰, 문맥은 32,768토큰입니다.
+v2·v3는 현재 규칙으로 판정합니다.
+
+8건 예비 실행 후 200건을 측정하고, 실패 복구·평가까지 수행합니다. 실행 소스와 해시,
+`submission.csv`, `report.json`, `evaluation.json`, 요청·캐시·graph 계측을 저장합니다.
+사전 검사·예열·예비 실행은 본 추론 시간에서 제외합니다.
+
+```bash
+# GPU 모델을 로딩하지 않고 입력·문맥·소스 스냅샷만 검증
+uv run --locked python scripts/run_experiment.py --prepare-only
+
+# 8건 GPU 실행과 전체 graph 사용만 확인
+uv run --locked python scripts/run_experiment.py --smoke-only
+```
+
+설정과 측정 결과는 [파이프라인 문서](docs/experiments/prefix-pipeline.md)를 참고합니다.
+`scripts/benchmark_prefix_pipeline.py`는 과거 소스 해시를 검증하는 재현용 진입점입니다.
+새 프롬프트·규칙 실험에는 `scripts/run_experiment.py`를 사용합니다.
+
+## 기존 비교 실행
+
 동적 RAG 베이스라인은 프로젝트 루트의 script.py로 실행합니다. Gemma가 검색어를 만들면
 로컬 BGE-M3와 법령 인덱스로 검색하고, 같은 대화에서 판단을 이어갑니다.
 
@@ -56,7 +87,7 @@ Thinking을 비교할 때 `--thinking --output-tokens 2048`을 사용하면 기�
 Thinking의 최초 전체 실행은 199/200 성공했고, 실패 1건을 출력 4096으로 복구한 최종 결과는
 `analysis/gemma4_rag_dev200_thinking_recovered/`에 있습니다. 최초 로그와 복구 예외도 보존했습니다.
 
-현재 혼합 5그룹 실험은 최대 8개 요청이 모두 끝난 뒤 다음 묶음을 처리합니다.
+비교용 혼합 5그룹 실험은 최대 8개 요청이 모두 끝난 뒤 다음 묶음을 처리합니다.
 Instant 4그룹은 thinking OFF, 나머지 6개 feature 그룹은 thinking ON/1,024토큰이며,
 v2·v3는 규칙으로 판정합니다.
 Instant 응답과 재시도 한도는 모두 512토큰입니다. 잘림·형식 오류 시 1회 재시도합니다.

@@ -24,39 +24,80 @@ def dump(path, value): path.write_text(json.dumps(value, ensure_ascii=False, ind
 def jsonl(path, values): path.write_text(''.join(json.dumps(v, ensure_ascii=False) + '\n' for v in values))
 
 
-def main():
+def measure_prefix_inputs(records, predictor, groups):
+    counts = []
+    for record in records:
+        rendered = []
+        for group in groups:
+            messages = predictor._messages(record, group)
+            assert all(doc['text'] in messages[1]['content'] for doc in record['docs'])
+            tokens = predictor.model._tokens(messages)
+            if len(tokens) + predictor.limits.output_tokens + 128 > predictor.model.max_model_len:
+                raise ValueError(f"{record['id']}: source and output exceed context; no text was truncated")
+            rendered.append(tokens)
+        shared = 0
+        for column in zip(*rendered):
+            if len(set(column)) != 1:
+                break
+            shared += 1
+        counts.append({'id': record['id'], 'shared_prefix_tokens': shared,
+                       'input_tokens': [len(tokens) for tokens in rendered]})
+    return counts
+
+
+def main(argv=None, *, verify_reference=True, default_output=Path('analysis/prefix_pipeline200')):
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--output', type=Path, default=Path('analysis/prefix_pipeline200'))
+    parser.add_argument('--output', '--output-dir', type=Path, default=default_output)
     parser.add_argument('--smoke-only', action='store_true')
-    args = parser.parse_args(); out = args.output; out.mkdir(parents=True, exist_ok=False)
+    parser.add_argument('--prepare-only', action='store_true', help='Validate current inputs and save source snapshots without loading the GPU model')
+    args = parser.parse_args(argv); out = args.output; out.mkdir(parents=True, exist_ok=False)
     records = read_records('data/dev.jsonl'); assert len(records) == 200
     table = json.loads(Path('data/항목표.json').read_text())['항목']
     schema = json.loads(Path('data/정답스키마_디코딩.json').read_text())['properties']['판정']
     table, schema, groups = configuration(table, schema, 'groups12', True)
-    old_manifest = json.loads(Path('analysis/prefix200/manifest.json').read_text())
-    for name in ['nara/compact_criteria.json', 'nara/vllm_model.py', 'nara/inference.py',
-                 'nara/compact_predictor.py', 'nara/prefix_predictor.py', 'nara/hypothesis6.py',
-                 'data/dev.jsonl', 'data/항목표.json', 'data/정답스키마_디코딩.json']:
-        assert hashlib.sha256(Path(name).read_bytes()).hexdigest() == old_manifest['source_sha256'][name], name
-    assert groups == old_manifest['groups']
-    source_tokens = {c['id']: c['shared_prefix_tokens'] for c in old_manifest['counts']}
+    old_manifest = None
+    if verify_reference:
+        old_manifest = json.loads(Path('analysis/prefix200/manifest.json').read_text())
+        for name in ['nara/compact_criteria.json', 'nara/vllm_model.py', 'nara/inference.py',
+                     'nara/compact_predictor.py', 'nara/prefix_predictor.py', 'nara/hypothesis6.py',
+                     'data/dev.jsonl', 'data/항목표.json', 'data/정답스키마_디코딩.json']:
+            assert hashlib.sha256(Path(name).read_bytes()).hexdigest() == old_manifest['source_sha256'][name], name
+        assert groups == old_manifest['groups']
     limits = Limits(output_tokens=2048, batch_size=16)
     policy = {'initial_records': 2, 'max_live_records': 3, 'max_live_source_tokens': 48000, 'lookahead_groups': 16}
     sources = ['scripts/benchmark_prefix_pipeline.py', 'nara/prefix_pipeline.py', 'nara/continuous.py',
                'nara/vllm_model.py', 'nara/inference.py', 'nara/prefix_predictor.py', 'nara/compact_predictor.py',
                'nara/compact_criteria.json', 'nara/hypothesis6.py', 'scripts/benchmark_compact200.py',
-               'scripts/recover_hybrid200.py', 'data/dev.jsonl', 'data/項目表.json']
-    sources[-1] = 'data/항목표.json'; sources.append('data/정답스키마_디코딩.json')
+               'scripts/recover_hybrid200.py', 'scripts/benchmark_grouping_time.py',
+               'scripts/benchmark_hybrid200.py', 'scripts/evaluate_dev.py', 'script.py',
+               'data/dev.jsonl', 'data/항목표.json', 'data/정답스키마_디코딩.json']
+    if not verify_reference:
+        sources.append('scripts/run_experiment.py')
     hashes = {}
     for name in sources:
         target = out / 'source' / name; target.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(name, target); hashes[name] = hashlib.sha256(Path(name).read_bytes()).hexdigest()
     manifest = {'groups': groups, 'limits': asdict(limits), 'policy': policy, 'max_num_seqs': 16,
-                'max_num_batched_tokens': 8192, 'counts': old_manifest['counts'], 'source_sha256': hashes,
+                'max_num_batched_tokens': 8192, 'source_sha256': hashes,
+                'source_mode': 'frozen_reference' if verify_reference else 'current',
                 'baseline': 'analysis/prefix200_batch11', 'smoke': 'first8 notices; excluded from benchmark',
                 'recovery_policy': 'One same-policy rerun of failed notices, then one same-prompt isolated predict per still-failed group. All internal retries, recovery time and events included.'}
-    dump(out / 'manifest.json', manifest)
     from nara.vllm_model import VLLMModel
+    from transformers import AutoTokenizer
+    counter = VLLMModel.__new__(VLLMModel)
+    counter.tokenizer = AutoTokenizer.from_pretrained(MODEL, local_files_only=True)
+    counter.thinking = False; counter.max_model_len = 32768
+    full = SourceFirstPredictor(counter, None, table, schema, limits=limits)
+    counts = measure_prefix_inputs(records, full, groups)
+    if old_manifest is not None:
+        assert counts == old_manifest['counts']
+    manifest['counts'] = counts
+    source_tokens = {c['id']: c['shared_prefix_tokens'] for c in counts}
+    dump(out / 'manifest.json', manifest)
+    print(json.dumps({'stage': 'preflight_complete', 'records': 200,
+        'source_mode': manifest['source_mode'], 'max_input_tokens': max(max(c['input_tokens']) for c in counts)}), flush=True)
+    if args.prepare_only:
+        return
     from nara.retrieval import BGEEncoder, LegalRetriever
     import vllm, torch
     tick = time.monotonic()
@@ -77,15 +118,7 @@ def main():
               'kv_cache_dtype': str(cfg.cache_config.cache_dtype),
               'gpu_memory_utilization': cfg.cache_config.gpu_memory_utilization}
     dump(out / 'engine.json', engine)
-    # Validate all actual messages/token counts against the frozen source-first run.
     full = SourceFirstPredictor(base, retriever, table, schema, limits=limits)
-    for record, counts in zip(records, old_manifest['counts']):
-        assert record['id'] == counts['id']
-        for gi, group in enumerate(groups):
-            messages = full._messages(record, group)
-            assert base.count_messages(messages) == counts['input_tokens'][gi]
-            assert all(doc['text'] in messages[1]['content'] for doc in record['docs'])
-    print(json.dumps({'stage': 'preflight_complete', 'records': 200, 'same_input_counts': True, 'engine': engine}), flush=True)
     simple = {'type': 'object', 'properties': {'answer': {'type': 'integer'}}, 'required': ['answer'], 'additionalProperties': False}
     tick = time.monotonic()
     base.generate([Turn(str(i), [{'role': 'user', 'content': '2+3을 계산하고 {"answer":5}로 답하라.'}], simple, 512) for i in range(16)])

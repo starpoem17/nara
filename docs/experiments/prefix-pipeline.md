@@ -1,6 +1,12 @@
 # Source-first twelve-group pipeline16
 
-Completed2026-09-11. User explicitly authorized cross-notice continuous scheduling again, superseding the earlier mixed-five barrier-only direction for this experiment. Current experiment runner `scripts/benchmark_prefix_pipeline.py`; prediction prompts/groups/model/H6 remain frozen. Do not interpret one batch-dependent F1 fluctuation as structural quality degradation.
+Completed2026-09-11. User explicitly authorized cross-notice continuous scheduling again, superseding the earlier mixed-five barrier-only direction for this experiment. The measured run used `scripts/benchmark_prefix_pipeline.py` with frozen prompts/groups/model/H6. User subsequently selected this execution structure as the default experiment pipeline. Do not interpret one batch-dependent F1 fluctuation as structural quality degradation.
+
+## Default experiment entrypoint
+
+`uv run --locked python scripts/run_experiment.py` runs current source code on dev200 with the measured twelve-group OFF/engine16 scheduling defaults. Timestamped `output/experiments/` directory by default; `--output-dir`/`--output` chooses a fresh directory. `--prepare-only` measures all current prompt token lengths/common prefixes and snapshots sources without GPU model loading; `--smoke-only` also runs first8 and verifies actual FULL graphs. Normal execution retains warmup, smoke, timed200, unchanged-budget recovery and evaluation. Output2048 applies to OFF and its retries; the mixed-five comparison's512token limit does not apply here.
+
+Default runs do not require historical analysis manifests or matching old H6/prompt hashes. Current tokens/common-prefix lengths are recomputed, context overflow rejected without clipping, current code copied/hashed in manifest/source. Existing `scripts/benchmark_prefix_pipeline.py` retains historical-reference assertions for explicit reproduction; exact past runs require the archived source versions. `script.py` remains the ungrouped comparison/submission entrypoint; `scripts/run_batch_fallback.py` is historical mixed-five comparison. They are not the default experimental workflow.
 
 ## Schedule and scope
 
@@ -18,4 +24,4 @@ Actualgraphs FULL13675steps/NONE943/PIECEWISE0; FULL with16real tokens206steps. 
 
 `analysis/prefix_pipeline200/comparison.md`, `scheduling_summary.json`, `prefill_timeline.json`, `validation.json`; main/ contains frozen firstpass, smoke/ excluded execution test. Root traces final200. Source snapshots/manifest and analysis_source/analysis_manifest preserve reproducibility. `scripts/summarize_prefix_pipeline.py`: sourcehashes,200×24,49columnCSV,allrule rows,request IDs/tokens,seed-before-follower timing,max16live,FULLgraphs,earlyprefill verified.10related tests passed (pipeline3/prefix3/continuous4). Evidence invalid0,positive nonabsence missing77; binary F1 does not score evidence completeness.
 
-Reproduce: `MAX_JOBS=2 uv run --locked python scripts/benchmark_prefix_pipeline.py --output FRESH_DIRECTORY`; summarize fixed artifact directory with `python3 scripts/summarize_prefix_pipeline.py`. Default submission entrypoints were not changed.
+Historical run: `MAX_JOBS=2 uv run --locked python scripts/benchmark_prefix_pipeline.py --output FRESH_DIRECTORY` with frozen reference sources. `scripts/summarize_prefix_pipeline.py` audits the original fixed artifact directory; new default runs produce evaluation via the runner itself. Default submission entrypoints were not changed.
