@@ -1,6 +1,6 @@
 # Compressed-criteria dev200 experiment
 
-Completed 2026-09-11, RTX5090. Owning artifacts: `analysis/compact200/comparison.json`, `.md`, `validation.json`. Full200 in all6 runs after bounded recovery. No source clipping. `user/` unchanged.
+Completed 2026-09-11, RTX5090. Report: [comparison](../reports/analysis/compact200/comparison.md). Artifacts: `analysis/compact200/` (`comparison.json`, `validation.json`). Full200 in all6 runs after bounded recovery. No source clipping. `user/` unchanged.
 
 | Configuration | Macro F1 | Micro F1 | inference seconds incl repair | projected1853 minutes incl one load |
 |---|---:|---:|---:|---:|

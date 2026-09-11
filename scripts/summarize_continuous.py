@@ -6,6 +6,7 @@ import re
 from pathlib import Path
 import sys
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
+from scripts.reporting import write_report
 import numpy as np
 from scripts.summarize_hybrid200 import timing
 from nara.hybrid_experiment import THINK,GROUPS
@@ -169,7 +170,7 @@ def main():
        '- pilot8192는 같은 엔진에서 barrier 다음 continuous 순서로 단회 실행했다. Prefix cache는 초기화했지만 컴파일/grammar 등 다른 warm 상태의 순서 효과는 완전히 제거하지 않았다.',
        '- 46 tests passed including refill under a slow first request, RAG/retry, modes/cache seed, context failure. validation.json: full input/source/rules/events/refill checks.',
        '- 실행: scripts/benchmark_continuous.py --kind mixed --tokens '+str(budget)+'. 완료된 출력 디렉터리는 덮어쓰지 않는다. 새 데이터/다른 운영 경로에는 ContinuousPredictor를 동일 인터페이스로 연결한다.', '']
-    (ROOT/'comparison.md').write_text('\n'.join(text))
+    write_report(ROOT/'comparison.md', '\n'.join(text))
     print(json.dumps({'selected_tokens':budget,'pilot_seconds':{n:result[n]['report']['prediction_seconds'] for n in names[:4]},'full_seconds':{n:result[n]['report']['prediction_seconds'] for n in names[4:]}},indent=2))
 
 if __name__=='__main__':main()

@@ -1,6 +1,8 @@
 # Colleague submitted ZIP: dev200 timing anchor
 
-Completed2026-09-11; `analysis/colleague200/comparison.md`, `evaluation.json`, `calibration.json`, `casebook_audit.json`, `validation.json`. User reports this exact submission took75min in competition and passed120min; no server log/timing-scope/count supplied. No new submission performed.
+Artifact base: `analysis/colleague200/`; unqualified JSON/CSV/log/source paths below use this base. Detailed Markdown reports: [index](../reports/README.md).
+
+Completed2026-09-11; `docs/reports/analysis/colleague200/comparison.md`, `evaluation.json`, `calibration.json`, `casebook_audit.json`, `validation.json`. User reports this exact submission took75min in competition and passed120min; no server log/timing-scope/count supplied. No new submission performed.
 
 Archive `submit_today_fewshot_rag.zip`: script.py, requirements.txt(comments only), model\casebook.json. Preserve file bytes under `analysis/colleague200/original/`; normalize Windows separator for extraction. Hashes in archive_manifest.json/run_manifest.json. `user/` untouched. Runner `scripts/benchmark_colleague200.py` imports original, delegates original run unchanged, records prompts/requests and model/index times. Local changes only checkpoint path, quant=None(auto native NVFP4), Cutlass MoE backend for RTX5090. No source/prompts/rules/retrieval tuning.
 

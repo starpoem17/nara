@@ -1,0 +1,90 @@
+{
+  "model": "models/gemma-4-26B-A4B-it-NVFP4",
+  "records": 200,
+  "groups": [
+    [
+      "v4",
+      "v6",
+      "v7",
+      "v8"
+    ],
+    [
+      "v10",
+      "v11",
+      "v12",
+      "v13"
+    ],
+    [
+      "v15",
+      "v16",
+      "v17",
+      "v18"
+    ],
+    [
+      "v19",
+      "v20",
+      "v21",
+      "v23"
+    ]
+  ],
+  "limits": {
+    "batch_size": 8,
+    "search_rounds": 2,
+    "queries_per_round": 4,
+    "top_k": 5,
+    "round_tokens": 4096,
+    "total_retrieval_tokens": 8192,
+    "output_tokens": 2048,
+    "retries": 1,
+    "require_search": false
+  },
+  "conditions": {
+    "off": {
+      "enable_thinking": false,
+      "thinking_token_budget": null
+    },
+    "on0": {
+      "enable_thinking": true,
+      "thinking_token_budget": 0
+    }
+  },
+  "design": "100 pairs of notices in original order; OFF/ON0 order alternates per pair; reset prefix cache before each arm; two seed group requests then six cached group requests. Same resident engine, max_num_seqs8, BGE CUDA, output2048, seed0, temperature0. One ordinary retry; no label-based recovery. Smoke excluded from full measurements.",
+  "smoke_ids": [
+    "PPS-DEV-077",
+    "PPS-DEV-059",
+    "PPS-DEV-187",
+    "PPS-DEV-055",
+    "PPS-DEV-20",
+    "PPS-DEV-175",
+    "PPS-DEV-188",
+    "PPS-DEV-11"
+  ],
+  "probe_ids": [
+    "PPS-DEV-077",
+    "PPS-DEV-167",
+    "PPS-DEV-064",
+    "PPS-DEV-22",
+    "PPS-DEV-178",
+    "PPS-DEV-11"
+  ],
+  "smoke_gate": "No final failures and zero ON0 thinking body tokens after ordinary retries.",
+  "full_failure_policy": "Preserve failures; paired-complete score only if incomplete; never zero-fill.",
+  "composite": "Optional 24-feature score freezes the other 8 judgments from hybrid200/main; not a new full pipeline run.",
+  "source_sha256": {
+    "scripts/benchmark_on0.py": "65812531828d578f243f149e77a0ab4f724276a95877d2ee3b44652caca93406",
+    "scripts/benchmark_hybrid200.py": "b8f17813f4cb8507b237d26a10c244a33d24f277b1a493d449d7908b0253c3e2",
+    "scripts/benchmark_compact200.py": "7e1dcb2a706a0c635a6467e61484015567dc2281be37106aef06e6812271f61d",
+    "nara/hybrid_experiment.py": "c83e8296c1d88db5d13ba715c8ef6c98aa4c0086ee709058b638631130096a59",
+    "nara/vllm_model.py": "c3ae5a8f7bd75365e0d685018fab22733a917fca423eacf2fb7f623e4e8c1e0d",
+    "nara/inference.py": "e09a87a3113399f2656d119b18536a59b70128242547fbd92774eee5c07dd226",
+    "nara/prefix_predictor.py": "aee83eb0ce46cef8f2cbc7bc8697a94282d0b7908306fff55b5416d271ed19b7",
+    "nara/compact_predictor.py": "046002710b57ad799ff6f287f016ae215c2109338b66d3706570c8ac8651f969",
+    "nara/compact_criteria.json": "84cc8ca7f625f51e55206fc581a28e36df4551999c4009de84188f273bd06a04",
+    "nara/hypothesis6.py": "850ebdceff80371dc8bd4859813e86e017552941b44dfdb4773b672576c925ba",
+    "data/dev.jsonl": "5507f5ab0ba53b708f87211ed050dbe531b48a626ace6084c3ccaefb53147534",
+    "data/항목표.json": "368cb41f376d8ad7edbbdf181542e6e959de356f7f70d86e72943325ecad61d9",
+    "data/정답스키마_디코딩.json": "149580162261b446090bec075eb4c13f765a771c827b6bbe06660eb833a3c2ac",
+    "analysis/hybrid200/main/trace.jsonl": "007eaf311c691e350c96021859d0b9b762e8feb28b31af7b74f6a868cc045422"
+  },
+  "maximum_input_tokens": 29349
+}

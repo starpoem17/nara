@@ -1,0 +1,49 @@
+{
+  "records": 8,
+  "groups": [
+    [
+      "v4",
+      "v6",
+      "v7",
+      "v8"
+    ],
+    [
+      "v10",
+      "v11",
+      "v12",
+      "v13"
+    ],
+    [
+      "v15",
+      "v16",
+      "v17",
+      "v18"
+    ],
+    [
+      "v19",
+      "v20",
+      "v21",
+      "v23"
+    ]
+  ],
+  "thinking": false,
+  "thinking_budget": null,
+  "seconds": 14.512619621003978,
+  "failed_ids": [],
+  "model_turns": 32,
+  "thinking_tokens": 0,
+  "thinking_budgets": [],
+  "invalid_responses": 0,
+  "search_rounds": 0,
+  "limits": {
+    "batch_size": 8,
+    "search_rounds": 2,
+    "queries_per_round": 4,
+    "top_k": 5,
+    "round_tokens": 4096,
+    "total_retrieval_tokens": 8192,
+    "output_tokens": 2048,
+    "retries": 1,
+    "require_search": false
+  }
+}

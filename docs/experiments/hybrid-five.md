@@ -1,6 +1,8 @@
 # Five-group mixed-mode dev200
 
-Completed 2026-09-11. All variants200×24, no remaining failures or context overflow. Canonical report: `analysis/hybrid200/comparison.md`; detailed scores `per_feature.csv`, `comparison.json`; timing `timing_analysis.json`, `cache_analysis.json`; audit `validation.json`.
+Artifact base: `analysis/hybrid200/`; unqualified JSON/CSV/log/source paths below use this base. Detailed Markdown reports: [index](../reports/README.md).
+
+Completed 2026-09-11. All variants200×24, no remaining failures or context overflow. Canonical report: `docs/reports/analysis/hybrid200/comparison.md`; detailed scores `per_feature.csv`, `comparison.json`; timing `timing_analysis.json`, `cache_analysis.json`; audit `validation.json`.
 
 ## Frozen design
 
@@ -54,10 +56,14 @@ Execution audit passed full200/49-column CSV, trace alignment, source hashes, ru
 
 ## Follow-up: batching, ON0, ungrouped-only strengths
 
-`analysis/hybrid200/followup_analysis.md` answers user follow-up; no additional GPU inference. Batch8 means8 independent notices×same6 features, one model; first main supplied only1 ON request despite max_num_seqs8. Log weight14.8GiB, KV9.75GiB/80,934tokens, max32K concurrency2.47x; no8×32K guarantee. Mean per-request decode8.742→16.227s and queue.022→1.841s traded for3.74x throughput. No OOM/preemption log; Waiting/Deferred does NOT identify memory as sole cause (grammar readiness also uses skipped queue). No GPU peak time series measured.
+`docs/reports/analysis/hybrid200/followup_analysis.md` answers user follow-up; no additional GPU inference. Batch8 means8 independent notices×same6 features, one model; first main supplied only1 ON request despite max_num_seqs8. Log weight14.8GiB, KV9.75GiB/80,934tokens, max32K concurrency2.47x; no8×32K guarantee. Mean per-request decode8.742→16.227s and queue.022→1.841s traded for3.74x throughput. No OOM/preemption log; Waiting/Deferred does NOT identify memory as sole cause (grammar readiness also uses skipped queue). No GPU peak time series measured.
 
 ON0 static check accepted by installed SamplingParams; actual PPS-DEV-01 common prefix OFF G1/ON G5=4tokens vs ON G1/ON G5=13,640 of13,928 G5 tokens. Budget is sampling metadata, not prefix key. ON0 may share source KV withON1024 but generation behavior/cache hit/score untested. Preserve max_tokens2048, enable_thinking=True for both, differ only thinking budget; avoid cache eviction before reuse. Main thinking prefill128.17s/2404.81s=5.33% upper bound on direct isolated prefill saving; overlapping batched latency is not additive. Possible indirect KV capacity gain unmeasured.
 
 Only v15,v18,v9 have ungrouped F1 above both prefix12 and main. v15 robust loss: allON TP4/FP12/FN2 F1.364 vs12 TP0/FP3/FN6 and main0/0/6. v18 weak overall: all1/5/6 F1.154 vs12 2/36/5 F1.089 vs main0/4/7; ON benefit vs12 is precision, not recall. v9 all5/9/1 .5 vs12 5/17/1 .357 vs main4/9/2 .421; ON batch8 same6 recovers.533, so no stable grouping weakness proven. v8 excluded:12OFF better than allON.
 
 Source cases: v15 PPS-DEV-18 has total estimated204.246M vs unit1458.90, SME-wide metadata vs small-only body;055 estimated170.909M vs '<100M' metadata plus nonprofit exception;080 estimated116.522M with SME summary vs small-only detailed eligibility. v18 PPS-DEV-039 small-company mentions in summary/submission docs but missing in actual eligibility section. v9 PPS-DEV-050 specific models plus equivalents clause; allON positive evidence refers to maintenance service, not model designation. Analyze against provided labels; not new legal rulings. Hypotheses only: cross-field conflict, category/amount/exception conjunction, absence scope, output calibration, prompt-context and numeric batch differences. All source docs retained; related groups already paired/combined, so 'group related features' alone did not fix v15/v18. Prioritize controlled ON/OFF on existing[v15,v16,v17,v18] before changing grouping. This follow-up analyzed the proposal without launching new GPU runs.
+
+## Subsequent ON0 execution
+
+The static-only ON0 proposal above was later measured on GPU: [paired instant OFF/ON0 dev200](instant-on0.md). Preserve the earlier measurements as historical scope; see the new report for actual output, quality, runtime, cache and zero-budget parser limitations.

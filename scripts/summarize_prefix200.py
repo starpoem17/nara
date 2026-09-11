@@ -2,6 +2,9 @@
 import hashlib
 import json
 from pathlib import Path
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from scripts.reporting import report_path, write_report
 
 
 def read(path):return json.loads(Path(path).read_text())
@@ -96,8 +99,8 @@ def main():
       '- OFF여도 최종 JSON 생성은 남는다. 캐시가 문맥 길이 자체를 줄이지는 않는다. 기존에도 prefix caching 옵션은 켜져 있었으나 그룹별 기준이 원문 앞에 있어 원문 공유가 막혔다.',
       f'- 같은 장비에서 1853건 선형 추정(추론+1회 모델 로드): 기존 {result["old_projected_1853_minutes"]:.1f}분 → 이번 {result["new_projected_1853_minutes"]:.1f}분. warmup·개발용 사전 검증 제외. L40S 실제 측정이나 2시간 보장이 아니다.',
       '', '재현: `uv run --locked python scripts/benchmark_prefix200.py --output NEW_DIRECTORY`. `source/`에 실행 코드 스냅샷, `prompt_*.txt`에 실제 템플릿, `cache_trace.jsonl`에 요청별 캐시 계측.', '']
-    (out/'comparison.md').write_text('\n'.join(text))
-    p=out/'evaluation.md'
+    write_report(out/'comparison.md', '\n'.join(text))
+    p=report_path(out/'evaluation.md')
     s=p.read_text().replace('실제 시스템 프롬프트는 system_prompt.txt 참조.','실제 system/user 프롬프트는 prompt_*.txt 참조.').replace('대화당 4항목.','대화당 최대 4항목; v2/v3는 고정 규칙.')
     s=s.replace('- 초기 문맥 길이 측정 파일 없음.',f'- 최대 초기 입력 {max(max(c["input_tokens"]) for c in manifest["counts"]):,}토큰. manifest.json 참조.')
     s=s.replace('uv run --locked python script.py --input data/dev.jsonl --output-dir NEW_OUTPUT_DIR','uv run --locked python scripts/benchmark_prefix200.py --output NEW_OUTPUT_DIR')

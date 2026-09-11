@@ -7,6 +7,7 @@ from pathlib import Path
 import sys
 import unicodedata
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
+from scripts.reporting import write_report
 from sklearn.metrics import f1_score,precision_score,recall_score
 from scripts.evaluate_dev import read_csv,ITEMS
 
@@ -155,7 +156,7 @@ def main():
     summary += ['', '- 이는 한 번의 제출을 기준으로 한 경험적 환산이다. 평가 공고 수를 추정해 넣지 않았다. 200건과 실제 평가의 길이·출력 분포, 고정 로딩 비용, NVFP4/INT8, batch와 prefix cache에 따른 장비별 속도 차이를 분리하지 못한다.',
         '- 특히 KV 캐싱 그룹과 일괄 few-shot은 입력 처리·출력 생성 비중이 달라 환산 계수가 같다고 보장할 수 없다. 경계값 바로 아래를 안전한 통과 시간으로 해석하지 않는다.',
         '', '재현: `uv run --locked python scripts/benchmark_colleague200.py` (기존 출력이 있으면 중단). 평가: `uv run --locked python scripts/summarize_colleague200.py`. 실제 프롬프트·응답·캐시 계측·사례 중복은 같은 디렉터리 JSON 파일 참조.', '']
-    (OUT/'comparison.md').write_text('\n'.join(summary))
+    write_report(OUT/'comparison.md', '\n'.join(summary))
     (OUT/'validation.json').write_text(json.dumps({'passed':True,'records':200,'judgments':4800,'original_hashes_match':True,'csv_matches_original_postprocess':True,'prompt_ids_match_actual':True,'actual_minus_counted_tokens':evaluation['actual_minus_counted_input_tokens'],'context_overflows':0,'law_index_active':True},indent=2)+'\n')
     print(json.dumps({'score':{k:v for k,v in evaluation.items() if k!='per_item'},'overlap':{k:v for k,v in audit.items() if k!='casebook_unlisted_subset_diagnostic'},'calibration':calibration},ensure_ascii=False,indent=2))
 

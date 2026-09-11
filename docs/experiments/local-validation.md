@@ -26,7 +26,7 @@ Unit tests use small fixtures/injected models; no GPU. Retrieval check covers ex
 
 ## Later dev200 experiments
 
-Scores, settings and per-run artifacts: [dev200 comparison](../../analysis/gemma4_experiments_summary.md).
+Scores, settings and per-run artifacts: [dev200 comparison](../reports/analysis/gemma4_experiments_summary.md).
 
 - Optional search produced no searches; forcing one search did not improve Macro F1. Thinking with optional search had the highest observed Macro F1 of these three runs.
 - Thinking initially succeeded on 199/200 records; one record required recovery with output budget 4096 instead of 2048. The combined result is not a single successful uniform-budget run.

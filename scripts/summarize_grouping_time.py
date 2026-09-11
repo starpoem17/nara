@@ -3,6 +3,9 @@ import argparse
 import csv
 import json
 from pathlib import Path
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from scripts.reporting import write_report
 
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--input', default='analysis/grouping_time32')
@@ -68,5 +71,5 @@ if effect_path.exists():
         '[상세 효과 분석](effect.md) · [항목별 결과](effect_per_item.csv) · [사후 평가 수치](effect.json)',
     ]
     lines = lines[:2] + overview + ['## 추론 시간 상세'] + lines[2:]
-(folder/'comparison.md').write_text('\n\n'.join(lines).replace('|\n\n|','|\n|')+'\n')
+write_report(folder/'comparison.md', '\n\n'.join(lines).replace('|\n\n|','|\n|')+'\n')
 print(json.dumps({'load_seconds':r['load_seconds'],'rows':rows},ensure_ascii=False,indent=2))

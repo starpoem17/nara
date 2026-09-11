@@ -2,6 +2,9 @@
 import argparse
 import json
 from pathlib import Path
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from scripts.reporting import write_report
 
 from scripts.evaluate_dev import ITEMS, read_csv
 
@@ -43,7 +46,7 @@ def compare(baseline, candidate):
     for r in rows:
         lines.append(f'| {r["item"]} | {r["name"]} | {r["before_f1"]:.3f} | {r["after_f1"]:.3f} | {r["delta_f1"]:+.3f} |')
     lines += ['', '같은 dev 200건의 탐색적 비교이며 독립 테스트 성능 추정이나 통계적 유의성 검정은 아니다.']
-    (new / 'comparison.md').write_text('\n'.join(lines) + '\n')
+    write_report(new / 'comparison.md', '\n'.join(lines) + '\n')
     print(json.dumps({k:v for k,v in result.items() if k != 'per_item'}, ensure_ascii=False, indent=2))
 
 

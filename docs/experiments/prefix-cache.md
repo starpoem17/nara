@@ -1,6 +1,6 @@
 # Source-first prefix reuse: dev200
 
-Completed 2026-09-11. Artifacts: `analysis/prefix200/comparison.md`, `.json`, `validation.json`; predecessor [compact200](compact200.md). RTX5090, same local Gemma4 NVFP4/32768, groups12 OFF H6, output2048, batch8, optional RAG. No grouped ON rerun.
+Completed 2026-09-11. Report: [comparison](../reports/analysis/prefix200/comparison.md). Artifacts: `analysis/prefix200/` (`comparison.json`, `validation.json`); predecessor [compact200](compact200.md). RTX5090, same local Gemma4 NVFP4/32768, groups12 OFF H6, output2048, batch8, optional RAG. No grouped ON rerun.
 
 Change: `nara/prefix_predictor.py` keeps common system; moves existing group criteria/absence IDs from system to the end of user, after unchanged notice ID/meta/full documents. Per notice, complete first real group, then remaining11 through normal batch8. Reuse first answer in merged24; never put answers into another group's prompt. Frozen `nara/inference.py`, model adapter, criteria and H6 unchanged. Main `script.py` remains previous default; use experiment runner explicitly.
 
@@ -28,7 +28,7 @@ Local1853 linear projection incl one measured load27.023s:93.25min vs historical
 
 ## Batch11 follow-up (2026-09-11)
 
-Artifacts `analysis/prefix200_batch11/{comparison.md,comparison.json,validation.json}`. Runner now accepts `--batch-size 11` (default8 unchanged); changes both Limits.batch_size and engine max_num_seqs. Same source-first prompts/schemas/groups/input-token counts, model adapter, criteria and H6 hashes; all200 first phases begin1, remaining phases begin11. No cross-notice concurrency.
+Report: [batch11 comparison](../reports/analysis/prefix200_batch11/comparison.md). Artifacts: `analysis/prefix200_batch11/{comparison.json,validation.json}`. Runner now accepts `--batch-size 11` (default8 unchanged); changes both Limits.batch_size and engine max_num_seqs. Same source-first prompts/schemas/groups/input-token counts, model adapter, criteria and H6 hashes; all200 first phases begin1, remaining phases begin11. No cross-notice concurrency.
 
 Full200 inference incl completed recovery561.6153s vs600.9577s (6.55% faster); Macro .26766451 vs.28349273, Micro .25853659 vs.27737226; FP204/FN100 vs201/96;251/4800 label flips. First pass550.8362s failed022/066/075 after output/parse retries;9invalid responses total. Whole-notice retries using identical1→11 prompts/budgets succeeded all3 in10.7791s; isolated fallback policy unused. Initial load27.0508s + recovery load28.0450s; measured load+inference616.7111s vs627.9808s. Warmup/dev preflight excluded. One earlier recovery helper crashed on list/tuple comparison after inference; its unmeasured overhead is excluded, disclosed in recovery_aborted.json/log. Do not call616.71s total development walltime.
 

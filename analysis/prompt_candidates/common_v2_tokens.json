@@ -1,0 +1,27 @@
+{
+  "model_path": "models/gemma-4-26B-A4B-it-NVFP4",
+  "measurement": "Tokenizer only. No generation, inference or evaluation. Final newline stripped from candidate.",
+  "add_special_tokens": false,
+  "common_prompt_tokens": {
+    "current": 197,
+    "candidate": 393
+  },
+  "delta_tokens": 196,
+  "increase_percent": 99.49,
+  "illustrative_chat_tokens": {
+    "current": 273,
+    "candidate": 469
+  },
+  "illustrative_user": "[공고 ID] EXAMPLE\n[메타]\n{}\n[문서]\n[notice:EXAMPLE]\n공고 원문\n[판단 기준]\n\nAbsence items: .\n[v1] Unlawful bidder institution-type restriction; distinguish statutory licenses.",
+  "chat_template_options": {
+    "add_generation_prompt": true,
+    "enable_thinking": false
+  },
+  "sha256": {
+    "nara/compact_criteria.json": "84cc8ca7f625f51e55206fc581a28e36df4551999c4009de84188f273bd06a04",
+    "analysis/prompt_candidates/common_v2.txt": "a3848d235bd5b818b14048a3cc5e72ed31628eab0233f2de7ed6cbc58ce92ae1",
+    "models/gemma-4-26B-A4B-it-NVFP4/tokenizer.json": "d93b194780d6d3212d02d300123b13009b4e46871c1a8395e3294d7205d349a8",
+    "models/gemma-4-26B-A4B-it-NVFP4/tokenizer_config.json": "e467669cfe172dfb0c4e7de7bfbe7553c42bfa5de95acd71f423f58a434d80de",
+    "models/gemma-4-26B-A4B-it-NVFP4/chat_template.jinja": "6a1015c47ccfcfa67c3b772385bccee357a4d37c3cda37bd202e9047f391ab82"
+  }
+}

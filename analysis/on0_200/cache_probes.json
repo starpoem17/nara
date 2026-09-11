@@ -1,0 +1,2552 @@
+[
+  {
+    "id": "PPS-DEV-077",
+    "order": [
+      "cold",
+      "off_seed",
+      "on0_seed"
+    ],
+    "conditions": {
+      "cold": {
+        "target_seconds": 7.606821007997496,
+        "seed_seconds": 0.0,
+        "seed_error": null,
+        "target": {
+          "record_id": "PPS-DEV-077",
+          "judgments": {
+            "v1": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v5": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v9": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v14": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v22": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v24": {
+              "위반여부": 0,
+              "근거문구": null
+            }
+          },
+          "error": null,
+          "trace": [
+            {
+              "task_id": "0:0",
+              "items": [
+                "v1",
+                "v5",
+                "v9",
+                "v14",
+                "v22",
+                "v24"
+              ],
+              "search_rounds": 0,
+              "retrieval_tokens": 0,
+              "events": [
+                {
+                  "event": "model",
+                  "input_tokens": 2592,
+                  "output_tokens": 1146,
+                  "finish_reason": "stop",
+                  "response": "{\"action\":\"final\",\"judgments\":{\"v1\": {\"위반여부\":0,\"근거문구\":null},\"v5\": {\"위반여부\":0,\"근거문구\":null},\"v9\": {\"위반여부\":0,\"근거문구\":null},\"v14\": {\"위반여부\":0,\"근거문구\":null},\"v22\": {\"위반여부\":0,\"근거문구\":null},\"v24\": {\"위반여부\":0,\"근거문구\":null}}}",
+                  "error": null,
+                  "max_output_tokens": 2048,
+                  "thinking_tokens": 1022,
+                  "thinking_budget": 1024,
+                  "required_search": false
+                },
+                {
+                  "event": "final",
+                  "evidence_dropped": []
+                }
+              ]
+            }
+          ]
+        },
+        "target_requests": [
+          {
+            "record_id": "PPS-DEV-077",
+            "phase": "on1024_target",
+            "batch": 0,
+            "request_id": "1692",
+            "input_tokens": 2592,
+            "cached_tokens": 0,
+            "cache_creation_tokens": 2592,
+            "output_tokens": 1146,
+            "finish_reason": "stop",
+            "request_stats": {
+              "num_generation_tokens": 1146,
+              "arrival_time": 1789111027.052473,
+              "queued_ts": 91742.182477654,
+              "scheduled_ts": 91742.2105358,
+              "first_token_ts": 91742.302707218,
+              "last_token_ts": 91749.780064751,
+              "first_token_latency": 0.1226663589477539,
+              "is_corrupted": false
+            },
+            "queue_seconds": 0.02805814599560108,
+            "prefill_seconds": 0.09217141800036188,
+            "decode_seconds": 7.477357533003669,
+            "thinking_budget": 1024,
+            "max_tokens": 2048,
+            "thinking_text_tokens": 1022,
+            "output_sha256": "8b97343014a6821900bdeedf3c71740041e8190888b4bc22d325fed9e9abec41",
+            "input_sha256": "ff2d95889435b20961e544a4dd69a0f655e86bca4ac93399a20563b73a26eee8",
+            "opening_token_ids": [
+              100,
+              45518,
+              107,
+              236829,
+              139,
+              8410,
+              5853,
+              236787
+            ],
+            "opening_text": "[thinking omitted]"
+          }
+        ],
+        "seed_requests": []
+      },
+      "off_seed": {
+        "target_seconds": 7.603423292996013,
+        "seed_seconds": 0.8004867529962212,
+        "seed_error": null,
+        "target": {
+          "record_id": "PPS-DEV-077",
+          "judgments": {
+            "v1": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v5": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v9": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v14": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v22": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v24": {
+              "위반여부": 0,
+              "근거문구": null
+            }
+          },
+          "error": null,
+          "trace": [
+            {
+              "task_id": "0:0",
+              "items": [
+                "v1",
+                "v5",
+                "v9",
+                "v14",
+                "v22",
+                "v24"
+              ],
+              "search_rounds": 0,
+              "retrieval_tokens": 0,
+              "events": [
+                {
+                  "event": "model",
+                  "input_tokens": 2592,
+                  "output_tokens": 1146,
+                  "finish_reason": "stop",
+                  "response": "{\"action\":\"final\",\"judgments\":{\"v1\": {\"위반여부\":0,\"근거문구\":null},\"v5\": {\"위반여부\":0,\"근거문구\":null},\"v9\": {\"위반여부\":0,\"근거문구\":null},\"v14\": {\"위반여부\":0,\"근거문구\":null},\"v22\": {\"위반여부\":0,\"근거문구\":null},\"v24\": {\"위반여부\":0,\"근거문구\":null}}}",
+                  "error": null,
+                  "max_output_tokens": 2048,
+                  "thinking_tokens": 1022,
+                  "thinking_budget": 1024,
+                  "required_search": false
+                },
+                {
+                  "event": "final",
+                  "evidence_dropped": []
+                }
+              ]
+            }
+          ]
+        },
+        "target_requests": [
+          {
+            "record_id": "PPS-DEV-077",
+            "phase": "on1024_target",
+            "batch": 1,
+            "request_id": "1694",
+            "input_tokens": 2592,
+            "cached_tokens": 0,
+            "cache_creation_tokens": 2592,
+            "output_tokens": 1146,
+            "finish_reason": "stop",
+            "request_stats": {
+              "num_generation_tokens": 1146,
+              "arrival_time": 1789111035.4645634,
+              "queued_ts": 91750.595081655,
+              "scheduled_ts": 91750.619347545,
+              "first_token_ts": 91750.711042049,
+              "last_token_ts": 91758.187470872,
+              "first_token_latency": 0.11907434463500977,
+              "is_corrupted": false
+            },
+            "queue_seconds": 0.024265889995149337,
+            "prefill_seconds": 0.09169450400804635,
+            "decode_seconds": 7.476428822992602,
+            "thinking_budget": 1024,
+            "max_tokens": 2048,
+            "thinking_text_tokens": 1022,
+            "output_sha256": "8b97343014a6821900bdeedf3c71740041e8190888b4bc22d325fed9e9abec41",
+            "input_sha256": "ff2d95889435b20961e544a4dd69a0f655e86bca4ac93399a20563b73a26eee8",
+            "opening_token_ids": [
+              100,
+              45518,
+              107,
+              236829,
+              139,
+              8410,
+              5853,
+              236787
+            ],
+            "opening_text": "[thinking omitted]"
+          }
+        ],
+        "seed_requests": [
+          {
+            "record_id": "PPS-DEV-077",
+            "phase": "off_seed",
+            "batch": 0,
+            "request_id": "1693",
+            "input_tokens": 2453,
+            "cached_tokens": 0,
+            "cache_creation_tokens": 2432,
+            "output_tokens": 108,
+            "finish_reason": "stop",
+            "request_stats": {
+              "num_generation_tokens": 108,
+              "arrival_time": 1789111034.6633544,
+              "queued_ts": 91749.793743551,
+              "scheduled_ts": 91749.813906609,
+              "first_token_ts": 91749.899812932,
+              "last_token_ts": 91750.586861833,
+              "first_token_latency": 0.10873293876647949,
+              "is_corrupted": false
+            },
+            "queue_seconds": 0.020163057997706346,
+            "prefill_seconds": 0.08590632300183643,
+            "decode_seconds": 0.6870489010034362,
+            "thinking_budget": null,
+            "max_tokens": 2048,
+            "thinking_text_tokens": 0,
+            "output_sha256": "b92a3e5a50a3b4dbbb3e37ae0290d50e301a5dbdaa9be9c11b041044bfd1ca89",
+            "input_sha256": "d1e2e620bbe4d8975762bf56c0715fe6519e5df2aabc7ada6a487f1b94723bf4",
+            "opening_token_ids": [
+              14937,
+              2064,
+              12375,
+              10218,
+              4337,
+              14793,
+              115237,
+              68693
+            ],
+            "opening_text": "{\"action\":\"final\",\"judgments\":{\""
+          }
+        ]
+      },
+      "on0_seed": {
+        "target_seconds": 7.48180726999999,
+        "seed_seconds": 1.2662005649908679,
+        "seed_error": null,
+        "target": {
+          "record_id": "PPS-DEV-077",
+          "judgments": {
+            "v1": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v5": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v9": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v14": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v22": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v24": {
+              "위반여부": 0,
+              "근거문구": null
+            }
+          },
+          "error": null,
+          "trace": [
+            {
+              "task_id": "0:0",
+              "items": [
+                "v1",
+                "v5",
+                "v9",
+                "v14",
+                "v22",
+                "v24"
+              ],
+              "search_rounds": 0,
+              "retrieval_tokens": 0,
+              "events": [
+                {
+                  "event": "model",
+                  "input_tokens": 2592,
+                  "output_tokens": 1140,
+                  "finish_reason": "stop",
+                  "response": "{\"action\":\"final\",\"judgments\":{\"v1\":{\"위반여부\":0,\"근거문구\":null},\"v5\":{\"위반여부\":0,\"근거문구\":null},\"v9\":{\"위반여부\":0,\"근거문구\":null},\"v14\":{\"위반여부\":0,\"근거문구\":null},\"v22\":{\"위반여부\":0,\"근거문구\":null},\"v24\":{\"위반여부\":0,\"근거문구\":null}}}",
+                  "error": null,
+                  "max_output_tokens": 2048,
+                  "thinking_tokens": 1022,
+                  "thinking_budget": 1024,
+                  "required_search": false
+                },
+                {
+                  "event": "final",
+                  "evidence_dropped": []
+                }
+              ]
+            }
+          ]
+        },
+        "target_requests": [
+          {
+            "record_id": "PPS-DEV-077",
+            "phase": "on1024_target",
+            "batch": 1,
+            "request_id": "1696",
+            "input_tokens": 2592,
+            "cached_tokens": 2304,
+            "cache_creation_tokens": 288,
+            "output_tokens": 1140,
+            "finish_reason": "stop",
+            "request_stats": {
+              "num_generation_tokens": 1140,
+              "arrival_time": 1789111044.3375869,
+              "queued_ts": 91759.468125182,
+              "scheduled_ts": 91759.468134911,
+              "first_token_ts": 91759.503085806,
+              "last_token_ts": 91766.93950259,
+              "first_token_latency": 0.03763771057128906,
+              "is_corrupted": false
+            },
+            "queue_seconds": 9.729003068059683e-06,
+            "prefill_seconds": 0.03495089500211179,
+            "decode_seconds": 7.43641678399581,
+            "thinking_budget": 1024,
+            "max_tokens": 2048,
+            "thinking_text_tokens": 1022,
+            "output_sha256": "ce712a594216a2b66251699a2214c685c26321341f8fa9c08e602cd74789e2ab",
+            "input_sha256": "ff2d95889435b20961e544a4dd69a0f655e86bca4ac93399a20563b73a26eee8",
+            "opening_token_ids": [
+              100,
+              45518,
+              107,
+              236829,
+              139,
+              8410,
+              5853,
+              236787
+            ],
+            "opening_text": "[thinking omitted]"
+          }
+        ],
+        "seed_requests": [
+          {
+            "record_id": "PPS-DEV-077",
+            "phase": "on0_seed",
+            "batch": 0,
+            "request_id": "1695",
+            "input_tokens": 2451,
+            "cached_tokens": 0,
+            "cache_creation_tokens": 2432,
+            "output_tokens": 183,
+            "finish_reason": "stop",
+            "request_stats": {
+              "num_generation_tokens": 183,
+              "arrival_time": 1789111043.0709362,
+              "queued_ts": 91758.201390818,
+              "scheduled_ts": 91758.201396489,
+              "first_token_ts": 91758.287465929,
+              "last_token_ts": 91759.460142259,
+              "first_token_latency": 0.08930826187133789,
+              "is_corrupted": false
+            },
+            "queue_seconds": 5.6710123317316175e-06,
+            "prefill_seconds": 0.08606943998893257,
+            "decode_seconds": 1.1726763300102903,
+            "thinking_budget": 0,
+            "max_tokens": 2048,
+            "thinking_text_tokens": 0,
+            "output_sha256": "d9e3c7d94a64eeb988a8efbe9f3d7caa40c9313ac2d537d01e2cbb542c731c58",
+            "input_sha256": "39b5442963281fb01b8e1518cc845f4daf005ad781c72a194a794196f9946e01",
+            "opening_token_ids": [
+              100,
+              101,
+              14937,
+              2064,
+              12375,
+              10218,
+              4337,
+              14793
+            ],
+            "opening_text": "<|channel><channel|>{\"action\":\"final\",\"jud"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "PPS-DEV-167",
+    "order": [
+      "off_seed",
+      "on0_seed",
+      "cold"
+    ],
+    "conditions": {
+      "off_seed": {
+        "target_seconds": 8.15210928399756,
+        "seed_seconds": 1.686289350996958,
+        "seed_error": null,
+        "target": {
+          "record_id": "PPS-DEV-167",
+          "judgments": {
+            "v1": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v5": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v9": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v14": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v22": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v24": {
+              "위반여부": 0,
+              "근거문구": null
+            }
+          },
+          "error": null,
+          "trace": [
+            {
+              "task_id": "0:0",
+              "items": [
+                "v1",
+                "v5",
+                "v9",
+                "v14",
+                "v22",
+                "v24"
+              ],
+              "search_rounds": 0,
+              "retrieval_tokens": 0,
+              "events": [
+                {
+                  "event": "model",
+                  "input_tokens": 5515,
+                  "output_tokens": 1146,
+                  "finish_reason": "stop",
+                  "response": "{\"action\":\"final\",\"judgments\":{\"v1\": {\"위반여부\":0,\"근거문구\":null},\"v5\": {\"위반여부\":0,\"근거문구\":null},\"v9\": {\"위반여부\":0,\"근거문구\":null},\"v14\": {\"위반여부\":0,\"근거문구\":null},\"v22\": {\"위반여부\":0,\"근거문구\":null},\"v24\": {\"위반여부\":0,\"근거문구\":null}}}",
+                  "error": null,
+                  "max_output_tokens": 2048,
+                  "thinking_tokens": 1022,
+                  "thinking_budget": 1024,
+                  "required_search": false
+                },
+                {
+                  "event": "final",
+                  "evidence_dropped": []
+                }
+              ]
+            }
+          ]
+        },
+        "target_requests": [
+          {
+            "record_id": "PPS-DEV-167",
+            "phase": "on1024_target",
+            "batch": 1,
+            "request_id": "1698",
+            "input_tokens": 5515,
+            "cached_tokens": 0,
+            "cache_creation_tokens": 5504,
+            "output_tokens": 1146,
+            "finish_reason": "stop",
+            "request_stats": {
+              "num_generation_tokens": 1146,
+              "arrival_time": 1789111053.512688,
+              "queued_ts": 91768.643748784,
+              "scheduled_ts": 91768.643753483,
+              "first_token_ts": 91768.860113735,
+              "last_token_ts": 91776.781935177,
+              "first_token_latency": 0.22052240371704102,
+              "is_corrupted": false
+            },
+            "queue_seconds": 4.699002602137625e-06,
+            "prefill_seconds": 0.2163602520013228,
+            "decode_seconds": 7.921821441996144,
+            "thinking_budget": 1024,
+            "max_tokens": 2048,
+            "thinking_text_tokens": 1022,
+            "output_sha256": "ee7ea17b0021205cdf5dd712e521ae76e5b95f382d2eebeaea84656c2038901b",
+            "input_sha256": "87783956340e403492a675a06f684b64c7ad68713893f4a2a08687f9f548e733",
+            "opening_token_ids": [
+              100,
+              45518,
+              107,
+              236829,
+              139,
+              236929,
+              236840,
+              238074
+            ],
+            "opening_text": "[thinking omitted]"
+          }
+        ],
+        "seed_requests": [
+          {
+            "record_id": "PPS-DEV-167",
+            "phase": "off_seed",
+            "batch": 0,
+            "request_id": "1697",
+            "input_tokens": 5376,
+            "cached_tokens": 0,
+            "cache_creation_tokens": 5376,
+            "output_tokens": 216,
+            "finish_reason": "stop",
+            "request_stats": {
+              "num_generation_tokens": 216,
+              "arrival_time": 1789111051.8262923,
+              "queued_ts": 91766.956630705,
+              "scheduled_ts": 91766.956635835,
+              "first_token_ts": 91767.164461129,
+              "last_token_ts": 91768.632199543,
+              "first_token_latency": 0.2106790542602539,
+              "is_corrupted": false
+            },
+            "queue_seconds": 5.130001227371395e-06,
+            "prefill_seconds": 0.20782529399730265,
+            "decode_seconds": 1.467738414008636,
+            "thinking_budget": null,
+            "max_tokens": 2048,
+            "thinking_text_tokens": 0,
+            "output_sha256": "177e0d5f8f600ab1a53a88c428e0c8d5526438028994fc9006561e4de381554a",
+            "input_sha256": "5952f5613c7707acd47400f1baafb674d4d1f5e98c5c47b31a5c3fce2f918aef",
+            "opening_token_ids": [
+              14937,
+              2064,
+              12375,
+              10218,
+              4337,
+              14793,
+              115237,
+              68693
+            ],
+            "opening_text": "{\"action\":\"final\",\"judgments\":{\""
+          }
+        ]
+      },
+      "on0_seed": {
+        "target_seconds": 7.972750971006462,
+        "seed_seconds": 1.5581379209907027,
+        "seed_error": null,
+        "target": {
+          "record_id": "PPS-DEV-167",
+          "judgments": {
+            "v1": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v5": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v9": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v14": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v22": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v24": {
+              "위반여부": 0,
+              "근거문구": null
+            }
+          },
+          "error": null,
+          "trace": [
+            {
+              "task_id": "0:0",
+              "items": [
+                "v1",
+                "v5",
+                "v9",
+                "v14",
+                "v22",
+                "v24"
+              ],
+              "search_rounds": 0,
+              "retrieval_tokens": 0,
+              "events": [
+                {
+                  "event": "model",
+                  "input_tokens": 5515,
+                  "output_tokens": 1146,
+                  "finish_reason": "stop",
+                  "response": "{\"action\":\"final\",\"judgments\":{\"v1\": {\"위반여부\":0,\"근거문구\":null},\"v5\": {\"위반여부\":0,\"근거문구\":null},\"v9\": {\"위반여부\":0,\"근거문구\":null},\"v14\": {\"위반여부\":0,\"근거문구\":null},\"v22\": {\"위반여부\":0,\"근거문구\":null},\"v24\": {\"위반여부\":0,\"근거문구\":null}}}",
+                  "error": null,
+                  "max_output_tokens": 2048,
+                  "thinking_tokens": 1022,
+                  "thinking_budget": 1024,
+                  "required_search": false
+                },
+                {
+                  "event": "final",
+                  "evidence_dropped": []
+                }
+              ]
+            }
+          ]
+        },
+        "target_requests": [
+          {
+            "record_id": "PPS-DEV-167",
+            "phase": "on1024_target",
+            "batch": 1,
+            "request_id": "1700",
+            "input_tokens": 5515,
+            "cached_tokens": 5216,
+            "cache_creation_tokens": 288,
+            "output_tokens": 1146,
+            "finish_reason": "stop",
+            "request_stats": {
+              "num_generation_tokens": 1146,
+              "arrival_time": 1789111063.227404,
+              "queued_ts": 91778.358453153,
+              "scheduled_ts": 91778.358458894,
+              "first_token_ts": 91778.394495172,
+              "last_token_ts": 91786.316736561,
+              "first_token_latency": 0.039327383041381836,
+              "is_corrupted": false
+            },
+            "queue_seconds": 5.740992492064834e-06,
+            "prefill_seconds": 0.03603627800475806,
+            "decode_seconds": 7.922241388994735,
+            "thinking_budget": 1024,
+            "max_tokens": 2048,
+            "thinking_text_tokens": 1022,
+            "output_sha256": "e860257d6a15b048125565f00870ce5e16d39f9800d14164d7e632780eefcf1a",
+            "input_sha256": "87783956340e403492a675a06f684b64c7ad68713893f4a2a08687f9f548e733",
+            "opening_token_ids": [
+              100,
+              45518,
+              107,
+              818,
+              2430,
+              8150,
+              786,
+              531
+            ],
+            "opening_text": "[thinking omitted]"
+          }
+        ],
+        "seed_requests": [
+          {
+            "record_id": "PPS-DEV-167",
+            "phase": "on0_seed",
+            "batch": 0,
+            "request_id": "1699",
+            "input_tokens": 5374,
+            "cached_tokens": 0,
+            "cache_creation_tokens": 5344,
+            "output_tokens": 197,
+            "finish_reason": "stop",
+            "request_stats": {
+              "num_generation_tokens": 197,
+              "arrival_time": 1789111061.6688056,
+              "queued_ts": 91776.799515468,
+              "scheduled_ts": 91776.799522231,
+              "first_token_ts": 91777.008106249,
+              "last_token_ts": 91778.346539974,
+              "first_token_latency": 0.21199941635131836,
+              "is_corrupted": false
+            },
+            "queue_seconds": 6.763002602383494e-06,
+            "prefill_seconds": 0.20858401800796855,
+            "decode_seconds": 1.3384337249881355,
+            "thinking_budget": 0,
+            "max_tokens": 2048,
+            "thinking_text_tokens": 0,
+            "output_sha256": "a2ab9251e155323e5d0a588a736dae977fe87346cafc16afd7dee424f23c8d97",
+            "input_sha256": "63b666d4e072091914fcc8c59e86a171302507b5f91fc36318a518bbb7ee506d",
+            "opening_token_ids": [
+              100,
+              101,
+              14937,
+              2064,
+              12375,
+              10218,
+              4337,
+              14793
+            ],
+            "opening_text": "<|channel><channel|>{\"action\":\"final\",\"jud"
+          }
+        ]
+      },
+      "cold": {
+        "target_seconds": 8.152631749995635,
+        "seed_seconds": 0.0,
+        "seed_error": null,
+        "target": {
+          "record_id": "PPS-DEV-167",
+          "judgments": {
+            "v1": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v5": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v9": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v14": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v22": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v24": {
+              "위반여부": 0,
+              "근거문구": null
+            }
+          },
+          "error": null,
+          "trace": [
+            {
+              "task_id": "0:0",
+              "items": [
+                "v1",
+                "v5",
+                "v9",
+                "v14",
+                "v22",
+                "v24"
+              ],
+              "search_rounds": 0,
+              "retrieval_tokens": 0,
+              "events": [
+                {
+                  "event": "model",
+                  "input_tokens": 5515,
+                  "output_tokens": 1146,
+                  "finish_reason": "stop",
+                  "response": "{\"action\":\"final\",\"judgments\":{\"v1\": {\"위반여부\":0,\"근거문구\":null},\"v5\": {\"위반여부\":0,\"근거문구\":null},\"v9\": {\"위반여부\":0,\"근거문구\":null},\"v14\": {\"위반여부\":0,\"근거문구\":null},\"v22\": {\"위반여부\":0,\"근거문구\":null},\"v24\": {\"위반여부\":0,\"근거문구\":null}}}",
+                  "error": null,
+                  "max_output_tokens": 2048,
+                  "thinking_tokens": 1022,
+                  "thinking_budget": 1024,
+                  "required_search": false
+                },
+                {
+                  "event": "final",
+                  "evidence_dropped": []
+                }
+              ]
+            }
+          ]
+        },
+        "target_requests": [
+          {
+            "record_id": "PPS-DEV-167",
+            "phase": "on1024_target",
+            "batch": 0,
+            "request_id": "1701",
+            "input_tokens": 5515,
+            "cached_tokens": 0,
+            "cache_creation_tokens": 5504,
+            "output_tokens": 1146,
+            "finish_reason": "stop",
+            "request_stats": {
+              "num_generation_tokens": 1146,
+              "arrival_time": 1789111071.2047114,
+              "queued_ts": 91786.335927349,
+              "scheduled_ts": 91786.33593307,
+              "first_token_ts": 91786.55184238,
+              "last_token_ts": 91794.473879906,
+              "first_token_latency": 0.21976518630981445,
+              "is_corrupted": false
+            },
+            "queue_seconds": 5.720998160541058e-06,
+            "prefill_seconds": 0.21590930999082047,
+            "decode_seconds": 7.922037526004715,
+            "thinking_budget": 1024,
+            "max_tokens": 2048,
+            "thinking_text_tokens": 1022,
+            "output_sha256": "ee7ea17b0021205cdf5dd712e521ae76e5b95f382d2eebeaea84656c2038901b",
+            "input_sha256": "87783956340e403492a675a06f684b64c7ad68713893f4a2a08687f9f548e733",
+            "opening_token_ids": [
+              100,
+              45518,
+              107,
+              236829,
+              139,
+              236929,
+              236840,
+              238074
+            ],
+            "opening_text": "[thinking omitted]"
+          }
+        ],
+        "seed_requests": []
+      }
+    }
+  },
+  {
+    "id": "PPS-DEV-064",
+    "order": [
+      "on0_seed",
+      "cold",
+      "off_seed"
+    ],
+    "conditions": {
+      "on0_seed": {
+        "target_seconds": 8.300033999999869,
+        "seed_seconds": 0.9065053639933467,
+        "seed_error": null,
+        "target": {
+          "record_id": "PPS-DEV-064",
+          "judgments": {
+            "v1": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v5": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v9": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v14": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v22": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v24": {
+              "위반여부": 0,
+              "근거문구": null
+            }
+          },
+          "error": null,
+          "trace": [
+            {
+              "task_id": "0:0",
+              "items": [
+                "v1",
+                "v5",
+                "v9",
+                "v14",
+                "v22",
+                "v24"
+              ],
+              "search_rounds": 0,
+              "retrieval_tokens": 0,
+              "events": [
+                {
+                  "event": "model",
+                  "input_tokens": 7576,
+                  "output_tokens": 1146,
+                  "finish_reason": "stop",
+                  "response": "{\"action\":\"final\",\"judgments\":{\"v1\": {\"위반여부\":0,\"근거문구\":null},\"v5\": {\"위반여부\":0,\"근거문구\":null},\"v9\": {\"위반여부\":0,\"근거문구\":null},\"v14\": {\"위반여부\":0,\"근거문구\":null},\"v22\": {\"위반여부\":0,\"근거문구\":null},\"v24\": {\"위반여부\":0,\"근거문구\":null}}}",
+                  "error": null,
+                  "max_output_tokens": 2048,
+                  "thinking_tokens": 1020,
+                  "thinking_budget": 1024,
+                  "required_search": false
+                },
+                {
+                  "event": "final",
+                  "evidence_dropped": []
+                }
+              ]
+            }
+          ]
+        },
+        "target_requests": [
+          {
+            "record_id": "PPS-DEV-064",
+            "phase": "on1024_target",
+            "batch": 1,
+            "request_id": "1703",
+            "input_tokens": 7576,
+            "cached_tokens": 7264,
+            "cache_creation_tokens": 288,
+            "output_tokens": 1146,
+            "finish_reason": "stop",
+            "request_stats": {
+              "num_generation_tokens": 1146,
+              "arrival_time": 1789111080.2702632,
+              "queued_ts": 91795.401040197,
+              "scheduled_ts": 91795.401045948,
+              "first_token_ts": 91795.436647893,
+              "last_token_ts": 91803.684363141,
+              "first_token_latency": 0.03855085372924805,
+              "is_corrupted": false
+            },
+            "queue_seconds": 5.75100420974195e-06,
+            "prefill_seconds": 0.03560194499732461,
+            "decode_seconds": 8.247715247998713,
+            "thinking_budget": 1024,
+            "max_tokens": 2048,
+            "thinking_text_tokens": 1020,
+            "output_sha256": "80dd09df7445e3a9823b4c0f63257d87667c726421385c1d2e9d40f1737631b3",
+            "input_sha256": "f81984a95c6383ccee7034d33b320868e1c141898696032ad310dbbfefeff718",
+            "opening_token_ids": [
+              100,
+              45518,
+              107,
+              236829,
+              139,
+              35559,
+              236787,
+              55781
+            ],
+            "opening_text": "[thinking omitted]"
+          }
+        ],
+        "seed_requests": [
+          {
+            "record_id": "PPS-DEV-064",
+            "phase": "on0_seed",
+            "batch": 0,
+            "request_id": "1702",
+            "input_tokens": 7435,
+            "cached_tokens": 0,
+            "cache_creation_tokens": 7424,
+            "output_tokens": 83,
+            "finish_reason": "stop",
+            "request_stats": {
+              "num_generation_tokens": 83,
+              "arrival_time": 1789111079.3631916,
+              "queued_ts": 91794.493945739,
+              "scheduled_ts": 91794.493950718,
+              "first_token_ts": 91794.80398983,
+              "last_token_ts": 91795.386994714,
+              "first_token_latency": 0.31398463249206543,
+              "is_corrupted": false
+            },
+            "queue_seconds": 4.978996003046632e-06,
+            "prefill_seconds": 0.31003911200969014,
+            "decode_seconds": 0.5830048839998199,
+            "thinking_budget": 0,
+            "max_tokens": 2048,
+            "thinking_text_tokens": 0,
+            "output_sha256": "60905634c1c2771ebea6c5eb34279129689ba3c397b7b6ef22b8e930dea429bf",
+            "input_sha256": "bfc9b222d515c115a2a79079afaf42a5b5940006b4de168d8b08c4979b4e2e2c",
+            "opening_token_ids": [
+              100,
+              101,
+              14937,
+              2064,
+              12375,
+              10218,
+              4337,
+              14793
+            ],
+            "opening_text": "<|channel><channel|>{\"action\":\"final\",\"jud"
+          }
+        ]
+      },
+      "cold": {
+        "target_seconds": 8.53766495900345,
+        "seed_seconds": 0.0,
+        "seed_error": null,
+        "target": {
+          "record_id": "PPS-DEV-064",
+          "judgments": {
+            "v1": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v5": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v9": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v14": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v22": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v24": {
+              "위반여부": 0,
+              "근거문구": null
+            }
+          },
+          "error": null,
+          "trace": [
+            {
+              "task_id": "0:0",
+              "items": [
+                "v1",
+                "v5",
+                "v9",
+                "v14",
+                "v22",
+                "v24"
+              ],
+              "search_rounds": 0,
+              "retrieval_tokens": 0,
+              "events": [
+                {
+                  "event": "model",
+                  "input_tokens": 7576,
+                  "output_tokens": 1140,
+                  "finish_reason": "stop",
+                  "response": "{\"action\":\"final\",\"judgments\":{\"v1\":{\"위반여부\":0,\"근거문구\":null},\"v5\":{\"위반여부\":0,\"근거문구\":null},\"v9\":{\"위반여부\":0,\"근거문구\":null},\"v14\":{\"위반여부\":0,\"근거문구\":null},\"v22\":{\"위반여부\":0,\"근거문구\":null},\"v24\":{\"위반여부\":0,\"근거문구\":null}}}",
+                  "error": null,
+                  "max_output_tokens": 2048,
+                  "thinking_tokens": 1022,
+                  "thinking_budget": 1024,
+                  "required_search": false
+                },
+                {
+                  "event": "final",
+                  "evidence_dropped": []
+                }
+              ]
+            }
+          ]
+        },
+        "target_requests": [
+          {
+            "record_id": "PPS-DEV-064",
+            "phase": "on1024_target",
+            "batch": 0,
+            "request_id": "1704",
+            "input_tokens": 7576,
+            "cached_tokens": 0,
+            "cache_creation_tokens": 7552,
+            "output_tokens": 1140,
+            "finish_reason": "stop",
+            "request_stats": {
+              "num_generation_tokens": 1140,
+              "arrival_time": 1789111088.574566,
+              "queued_ts": 91803.705575322,
+              "scheduled_ts": 91803.705580421,
+              "first_token_ts": 91804.022549561,
+              "last_token_ts": 91812.225509847,
+              "first_token_latency": 0.3207683563232422,
+              "is_corrupted": false
+            },
+            "queue_seconds": 5.098991096019745e-06,
+            "prefill_seconds": 0.3169691400107695,
+            "decode_seconds": 8.202960285998415,
+            "thinking_budget": 1024,
+            "max_tokens": 2048,
+            "thinking_text_tokens": 1022,
+            "output_sha256": "310a96346b036549255b7df02863241d96c3f7a4aa3642b5d8a9a8b5ab4a9177",
+            "input_sha256": "f81984a95c6383ccee7034d33b320868e1c141898696032ad310dbbfefeff718",
+            "opening_token_ids": [
+              100,
+              45518,
+              107,
+              236829,
+              139,
+              35559,
+              236787,
+              55781
+            ],
+            "opening_text": "[thinking omitted]"
+          }
+        ],
+        "seed_requests": []
+      },
+      "off_seed": {
+        "target_seconds": 8.537370914011262,
+        "seed_seconds": 0.8909924710023915,
+        "seed_error": null,
+        "target": {
+          "record_id": "PPS-DEV-064",
+          "judgments": {
+            "v1": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v5": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v9": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v14": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v22": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v24": {
+              "위반여부": 0,
+              "근거문구": null
+            }
+          },
+          "error": null,
+          "trace": [
+            {
+              "task_id": "0:0",
+              "items": [
+                "v1",
+                "v5",
+                "v9",
+                "v14",
+                "v22",
+                "v24"
+              ],
+              "search_rounds": 0,
+              "retrieval_tokens": 0,
+              "events": [
+                {
+                  "event": "model",
+                  "input_tokens": 7576,
+                  "output_tokens": 1140,
+                  "finish_reason": "stop",
+                  "response": "{\"action\":\"final\",\"judgments\":{\"v1\":{\"위반여부\":0,\"근거문구\":null},\"v5\":{\"위반여부\":0,\"근거문구\":null},\"v9\":{\"위반여부\":0,\"근거문구\":null},\"v14\":{\"위반여부\":0,\"근거문구\":null},\"v22\":{\"위반여부\":0,\"근거문구\":null},\"v24\":{\"위반여부\":0,\"근거문구\":null}}}",
+                  "error": null,
+                  "max_output_tokens": 2048,
+                  "thinking_tokens": 1022,
+                  "thinking_budget": 1024,
+                  "required_search": false
+                },
+                {
+                  "event": "final",
+                  "evidence_dropped": []
+                }
+              ]
+            }
+          ]
+        },
+        "target_requests": [
+          {
+            "record_id": "PPS-DEV-064",
+            "phase": "on1024_target",
+            "batch": 1,
+            "request_id": "1706",
+            "input_tokens": 7576,
+            "cached_tokens": 0,
+            "cache_creation_tokens": 7552,
+            "output_tokens": 1140,
+            "finish_reason": "stop",
+            "request_stats": {
+              "num_generation_tokens": 1140,
+              "arrival_time": 1789111098.0059576,
+              "queued_ts": 91813.136637782,
+              "scheduled_ts": 91813.136641168,
+              "first_token_ts": 91813.455279048,
+              "last_token_ts": 91821.658230205,
+              "first_token_latency": 0.3224196434020996,
+              "is_corrupted": false
+            },
+            "queue_seconds": 3.386012394912541e-06,
+            "prefill_seconds": 0.3186378799873637,
+            "decode_seconds": 8.202951156999916,
+            "thinking_budget": 1024,
+            "max_tokens": 2048,
+            "thinking_text_tokens": 1022,
+            "output_sha256": "310a96346b036549255b7df02863241d96c3f7a4aa3642b5d8a9a8b5ab4a9177",
+            "input_sha256": "f81984a95c6383ccee7034d33b320868e1c141898696032ad310dbbfefeff718",
+            "opening_token_ids": [
+              100,
+              45518,
+              107,
+              236829,
+              139,
+              35559,
+              236787,
+              55781
+            ],
+            "opening_text": "[thinking omitted]"
+          }
+        ],
+        "seed_requests": [
+          {
+            "record_id": "PPS-DEV-064",
+            "phase": "off_seed",
+            "batch": 0,
+            "request_id": "1705",
+            "input_tokens": 7437,
+            "cached_tokens": 0,
+            "cache_creation_tokens": 7424,
+            "output_tokens": 81,
+            "finish_reason": "stop",
+            "request_stats": {
+              "num_generation_tokens": 81,
+              "arrival_time": 1789111097.1149886,
+              "queued_ts": 91812.245691468,
+              "scheduled_ts": 91812.24569767,
+              "first_token_ts": 91812.554949453,
+              "last_token_ts": 91813.123583014,
+              "first_token_latency": 0.31278347969055176,
+              "is_corrupted": false
+            },
+            "queue_seconds": 6.202011718414724e-06,
+            "prefill_seconds": 0.3092517829936696,
+            "decode_seconds": 0.5686335610080278,
+            "thinking_budget": null,
+            "max_tokens": 2048,
+            "thinking_text_tokens": 0,
+            "output_sha256": "e3a35524a8e545050238d91d94da8b4da30aa9701c1038ca73d1c754a3944312",
+            "input_sha256": "5a04e5ce2e5e9b958e4f660f1ae53d2775b05ac5b90ed68f6d46ead899baa003",
+            "opening_token_ids": [
+              14937,
+              2064,
+              12375,
+              10218,
+              4337,
+              14793,
+              115237,
+              68693
+            ],
+            "opening_text": "{\"action\":\"final\",\"judgments\":{\""
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "PPS-DEV-22",
+    "order": [
+      "cold",
+      "off_seed",
+      "on0_seed"
+    ],
+    "conditions": {
+      "cold": {
+        "target_seconds": 9.142803054011893,
+        "seed_seconds": 0.0,
+        "seed_error": null,
+        "target": {
+          "record_id": "PPS-DEV-22",
+          "judgments": {
+            "v1": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v5": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v9": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v14": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v22": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v24": {
+              "위반여부": 0,
+              "근거문구": null
+            }
+          },
+          "error": null,
+          "trace": [
+            {
+              "task_id": "0:0",
+              "items": [
+                "v1",
+                "v5",
+                "v9",
+                "v14",
+                "v22",
+                "v24"
+              ],
+              "search_rounds": 0,
+              "retrieval_tokens": 0,
+              "events": [
+                {
+                  "event": "model",
+                  "input_tokens": 10957,
+                  "output_tokens": 1146,
+                  "finish_reason": "stop",
+                  "response": "{\"action\":\"final\",\"judgments\":{\"v1\": {\"위반여부\":0,\"근거문구\":null},\"v5\": {\"위반여부\":0,\"근거문구\":null},\"v9\": {\"위반여부\":0,\"근거문구\":null},\"v14\": {\"위반여부\":0,\"근거문구\":null},\"v22\": {\"위반여부\":0,\"근거문구\":null},\"v24\": {\"위반여부\":0,\"근거문구\":null}}}",
+                  "error": null,
+                  "max_output_tokens": 2048,
+                  "thinking_tokens": 1022,
+                  "thinking_budget": 1024,
+                  "required_search": false
+                },
+                {
+                  "event": "final",
+                  "evidence_dropped": []
+                }
+              ]
+            }
+          ]
+        },
+        "target_requests": [
+          {
+            "record_id": "PPS-DEV-22",
+            "phase": "on1024_target",
+            "batch": 0,
+            "request_id": "1707",
+            "input_tokens": 10957,
+            "cached_tokens": 0,
+            "cache_creation_tokens": 10944,
+            "output_tokens": 1146,
+            "finish_reason": "stop",
+            "request_stats": {
+              "num_generation_tokens": 1146,
+              "arrival_time": 1789111106.5521953,
+              "queued_ts": 91821.68363619,
+              "scheduled_ts": 91821.683642371,
+              "first_token_ts": 91822.204654369,
+              "last_token_ts": 91830.80531475,
+              "first_token_latency": 0.5248150825500488,
+              "is_corrupted": false
+            },
+            "queue_seconds": 6.180998752824962e-06,
+            "prefill_seconds": 0.5210119979892625,
+            "decode_seconds": 8.60066038100922,
+            "thinking_budget": 1024,
+            "max_tokens": 2048,
+            "thinking_text_tokens": 1022,
+            "output_sha256": "d29f57cbe0fceb1ebd5f371326e55afe404bdd768c6dd885fca6a73083f4adbe",
+            "input_sha256": "726152a709f56e6653ab94531e7d6c6a78244726cd6377d80b758d4cc5f32012",
+            "opening_token_ids": [
+              100,
+              45518,
+              107,
+              236829,
+              139,
+              236929,
+              236840,
+              238074
+            ],
+            "opening_text": "[thinking omitted]"
+          }
+        ],
+        "seed_requests": []
+      },
+      "off_seed": {
+        "target_seconds": 9.142450843995903,
+        "seed_seconds": 1.1078057099948637,
+        "seed_error": null,
+        "target": {
+          "record_id": "PPS-DEV-22",
+          "judgments": {
+            "v1": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v5": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v9": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v14": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v22": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v24": {
+              "위반여부": 0,
+              "근거문구": null
+            }
+          },
+          "error": null,
+          "trace": [
+            {
+              "task_id": "0:0",
+              "items": [
+                "v1",
+                "v5",
+                "v9",
+                "v14",
+                "v22",
+                "v24"
+              ],
+              "search_rounds": 0,
+              "retrieval_tokens": 0,
+              "events": [
+                {
+                  "event": "model",
+                  "input_tokens": 10957,
+                  "output_tokens": 1146,
+                  "finish_reason": "stop",
+                  "response": "{\"action\":\"final\",\"judgments\":{\"v1\": {\"위반여부\":0,\"근거문구\":null},\"v5\": {\"위반여부\":0,\"근거문구\":null},\"v9\": {\"위반여부\":0,\"근거문구\":null},\"v14\": {\"위반여부\":0,\"근거문구\":null},\"v22\": {\"위반여부\":0,\"근거문구\":null},\"v24\": {\"위반여부\":0,\"근거문구\":null}}}",
+                  "error": null,
+                  "max_output_tokens": 2048,
+                  "thinking_tokens": 1022,
+                  "thinking_budget": 1024,
+                  "required_search": false
+                },
+                {
+                  "event": "final",
+                  "evidence_dropped": []
+                }
+              ]
+            }
+          ]
+        },
+        "target_requests": [
+          {
+            "record_id": "PPS-DEV-22",
+            "phase": "on1024_target",
+            "batch": 1,
+            "request_id": "1709",
+            "input_tokens": 10957,
+            "cached_tokens": 0,
+            "cache_creation_tokens": 10944,
+            "output_tokens": 1146,
+            "finish_reason": "stop",
+            "request_stats": {
+              "num_generation_tokens": 1146,
+              "arrival_time": 1789111116.8068268,
+              "queued_ts": 91831.938288303,
+              "scheduled_ts": 91831.938294815,
+              "first_token_ts": 91832.46084803,
+              "last_token_ts": 91841.059995123,
+              "first_token_latency": 0.5262620449066162,
+              "is_corrupted": false
+            },
+            "queue_seconds": 6.5119966166093946e-06,
+            "prefill_seconds": 0.522553214992513,
+            "decode_seconds": 8.599147093002102,
+            "thinking_budget": 1024,
+            "max_tokens": 2048,
+            "thinking_text_tokens": 1022,
+            "output_sha256": "d29f57cbe0fceb1ebd5f371326e55afe404bdd768c6dd885fca6a73083f4adbe",
+            "input_sha256": "726152a709f56e6653ab94531e7d6c6a78244726cd6377d80b758d4cc5f32012",
+            "opening_token_ids": [
+              100,
+              45518,
+              107,
+              236829,
+              139,
+              236929,
+              236840,
+              238074
+            ],
+            "opening_text": "[thinking omitted]"
+          }
+        ],
+        "seed_requests": [
+          {
+            "record_id": "PPS-DEV-22",
+            "phase": "off_seed",
+            "batch": 0,
+            "request_id": "1708",
+            "input_tokens": 10818,
+            "cached_tokens": 0,
+            "cache_creation_tokens": 10816,
+            "output_tokens": 77,
+            "finish_reason": "stop",
+            "request_stats": {
+              "num_generation_tokens": 77,
+              "arrival_time": 1789111115.6988466,
+              "queued_ts": 91830.830083228,
+              "scheduled_ts": 91830.83008944,
+              "first_token_ts": 91831.342549592,
+              "last_token_ts": 91831.919949929,
+              "first_token_latency": 0.5159976482391357,
+              "is_corrupted": false
+            },
+            "queue_seconds": 6.212008884176612e-06,
+            "prefill_seconds": 0.5124601519928547,
+            "decode_seconds": 0.577400337002473,
+            "thinking_budget": null,
+            "max_tokens": 2048,
+            "thinking_text_tokens": 0,
+            "output_sha256": "ba015490a07579fb63e968298e119e4055b538c8c3c3262edf49afdbb16e65b7",
+            "input_sha256": "ffd206d9e9b5d303bffd9106b37d60b89ad6388f897916c4cd4c34020db9b2cf",
+            "opening_token_ids": [
+              14937,
+              2064,
+              12375,
+              10218,
+              4337,
+              14793,
+              115237,
+              68693
+            ],
+            "opening_text": "{\"action\":\"final\",\"judgments\":{\""
+          }
+        ]
+      },
+      "on0_seed": {
+        "target_seconds": 8.686542971001472,
+        "seed_seconds": 1.1513460260030115,
+        "seed_error": null,
+        "target": {
+          "record_id": "PPS-DEV-22",
+          "judgments": {
+            "v1": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v5": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v9": {
+              "위반여부": 1,
+              "근거문구": "기저귀는 국내 제조 제품 한정"
+            },
+            "v14": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v22": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v24": {
+              "위반여부": 0,
+              "근거문구": null
+            }
+          },
+          "error": null,
+          "trace": [
+            {
+              "task_id": "0:0",
+              "items": [
+                "v1",
+                "v5",
+                "v9",
+                "v14",
+                "v22",
+                "v24"
+              ],
+              "search_rounds": 0,
+              "retrieval_tokens": 0,
+              "events": [
+                {
+                  "event": "model",
+                  "input_tokens": 10957,
+                  "output_tokens": 1149,
+                  "finish_reason": "stop",
+                  "response": "{\"action\":\"final\",\"judgments\":{\"v1\":{\"위반여부\":0,\"근거문구\":null},\"v5\":{\"위반여부\":0,\"근거문구\":null},\"v9\":{\"위반여부\":1,\"근거문구\":\"기저귀는 국내 제조 제품 한정\"},\"v14\":{\"위반여부\":0,\"근거문구\":null},\"v22\":{\"위반여부\":0,\"근거문구\":null},\"v24\":{\"위반여부\":0,\"근거문구\":null}}}",
+                  "error": null,
+                  "max_output_tokens": 2048,
+                  "thinking_tokens": 1022,
+                  "thinking_budget": 1024,
+                  "required_search": false
+                },
+                {
+                  "event": "final",
+                  "evidence_dropped": []
+                }
+              ]
+            }
+          ]
+        },
+        "target_requests": [
+          {
+            "record_id": "PPS-DEV-22",
+            "phase": "on1024_target",
+            "batch": 1,
+            "request_id": "1711",
+            "input_tokens": 10957,
+            "cached_tokens": 10656,
+            "cache_creation_tokens": 288,
+            "output_tokens": 1149,
+            "finish_reason": "stop",
+            "request_stats": {
+              "num_generation_tokens": 1149,
+              "arrival_time": 1789111127.1039226,
+              "queued_ts": 91842.235172263,
+              "scheduled_ts": 91842.235178315,
+              "first_token_ts": 91842.278267311,
+              "last_token_ts": 91850.902744505,
+              "first_token_latency": 0.04649639129638672,
+              "is_corrupted": false
+            },
+            "queue_seconds": 6.05199602432549e-06,
+            "prefill_seconds": 0.043088996011647396,
+            "decode_seconds": 8.624477193996427,
+            "thinking_budget": 1024,
+            "max_tokens": 2048,
+            "thinking_text_tokens": 1022,
+            "output_sha256": "575c031417ea20aa82e6def0b57bafad5c1535075f454b59cfdce9ccee231cc4",
+            "input_sha256": "726152a709f56e6653ab94531e7d6c6a78244726cd6377d80b758d4cc5f32012",
+            "opening_token_ids": [
+              100,
+              45518,
+              107,
+              236829,
+              139,
+              236929,
+              236840,
+              238074
+            ],
+            "opening_text": "[thinking omitted]"
+          }
+        ],
+        "seed_requests": [
+          {
+            "record_id": "PPS-DEV-22",
+            "phase": "on0_seed",
+            "batch": 0,
+            "request_id": "1710",
+            "input_tokens": 10816,
+            "cached_tokens": 0,
+            "cache_creation_tokens": 10816,
+            "output_tokens": 83,
+            "finish_reason": "stop",
+            "request_stats": {
+              "num_generation_tokens": 83,
+              "arrival_time": 1789111125.9535627,
+              "queued_ts": 91841.084746618,
+              "scheduled_ts": 91841.08475302,
+              "first_token_ts": 91841.595774604,
+              "last_token_ts": 91842.218793898,
+              "first_token_latency": 0.5147840976715088,
+              "is_corrupted": false
+            },
+            "queue_seconds": 6.4019986893981695e-06,
+            "prefill_seconds": 0.5110215839958983,
+            "decode_seconds": 0.62301929401292,
+            "thinking_budget": 0,
+            "max_tokens": 2048,
+            "thinking_text_tokens": 0,
+            "output_sha256": "60905634c1c2771ebea6c5eb34279129689ba3c397b7b6ef22b8e930dea429bf",
+            "input_sha256": "4c635a0b31c59b46083fec792028ed29294ff267eea580651ce9102a424cb572",
+            "opening_token_ids": [
+              100,
+              101,
+              14937,
+              2064,
+              12375,
+              10218,
+              4337,
+              14793
+            ],
+            "opening_text": "<|channel><channel|>{\"action\":\"final\",\"jud"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "PPS-DEV-178",
+    "order": [
+      "off_seed",
+      "on0_seed",
+      "cold"
+    ],
+    "conditions": {
+      "off_seed": {
+        "target_seconds": 10.646556942010648,
+        "seed_seconds": 1.7526262619940098,
+        "seed_error": null,
+        "target": {
+          "record_id": "PPS-DEV-178",
+          "judgments": {
+            "v1": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v5": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v9": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v14": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v22": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v24": {
+              "위반여부": 0,
+              "근거문구": null
+            }
+          },
+          "error": null,
+          "trace": [
+            {
+              "task_id": "0:0",
+              "items": [
+                "v1",
+                "v5",
+                "v9",
+                "v14",
+                "v22",
+                "v24"
+              ],
+              "search_rounds": 0,
+              "retrieval_tokens": 0,
+              "events": [
+                {
+                  "event": "model",
+                  "input_tokens": 18637,
+                  "output_tokens": 1146,
+                  "finish_reason": "stop",
+                  "response": "{\"action\":\"final\",\"judgments\":{\"v1\": {\"위반여부\":0,\"근거문구\":null},\"v5\": {\"위반여부\":0,\"근거문구\":null},\"v9\": {\"위반여부\":0,\"근거문구\":null},\"v14\": {\"위반여부\":0,\"근거문구\":null},\"v22\": {\"위반여부\":0,\"근거문구\":null},\"v24\": {\"위반여부\":0,\"근거문구\":null}}}",
+                  "error": null,
+                  "max_output_tokens": 2048,
+                  "thinking_tokens": 1022,
+                  "thinking_budget": 1024,
+                  "required_search": false
+                },
+                {
+                  "event": "final",
+                  "evidence_dropped": []
+                }
+              ]
+            }
+          ]
+        },
+        "target_requests": [
+          {
+            "record_id": "PPS-DEV-178",
+            "phase": "on1024_target",
+            "batch": 1,
+            "request_id": "1713",
+            "input_tokens": 18637,
+            "cached_tokens": 0,
+            "cache_creation_tokens": 18624,
+            "output_tokens": 1146,
+            "finish_reason": "stop",
+            "request_stats": {
+              "num_generation_tokens": 1146,
+              "arrival_time": 1789111137.5517087,
+              "queued_ts": 91852.683416244,
+              "scheduled_ts": 91852.683421464,
+              "first_token_ts": 91853.779106195,
+              "last_token_ts": 91863.305840341,
+              "first_token_latency": 1.0995848178863525,
+              "is_corrupted": false
+            },
+            "queue_seconds": 5.219990271143615e-06,
+            "prefill_seconds": 1.0956847310008015,
+            "decode_seconds": 9.526734145998489,
+            "thinking_budget": 1024,
+            "max_tokens": 2048,
+            "thinking_text_tokens": 1022,
+            "output_sha256": "fbda70e8c9b8b3f1009e1864151ba8e2ba0da722a613a81a5b290cf7c91c7720",
+            "input_sha256": "c974791a066e414c65cec702401f4668457e5791a5745572dfb231cf217ef2e3",
+            "opening_token_ids": [
+              100,
+              45518,
+              107,
+              818,
+              2430,
+              8150,
+              786,
+              531
+            ],
+            "opening_text": "[thinking omitted]"
+          }
+        ],
+        "seed_requests": [
+          {
+            "record_id": "PPS-DEV-178",
+            "phase": "off_seed",
+            "batch": 0,
+            "request_id": "1712",
+            "input_tokens": 18498,
+            "cached_tokens": 0,
+            "cache_creation_tokens": 18496,
+            "output_tokens": 81,
+            "finish_reason": "stop",
+            "request_stats": {
+              "num_generation_tokens": 81,
+              "arrival_time": 1789111135.8036354,
+              "queued_ts": 91850.93596941,
+              "scheduled_ts": 91850.935981243,
+              "first_token_ts": 91852.01967343,
+              "last_token_ts": 91852.662480046,
+              "first_token_latency": 1.0882256031036377,
+              "is_corrupted": false
+            },
+            "queue_seconds": 1.1833006283268332e-05,
+            "prefill_seconds": 1.0836921869922662,
+            "decode_seconds": 0.6428066160005983,
+            "thinking_budget": null,
+            "max_tokens": 2048,
+            "thinking_text_tokens": 0,
+            "output_sha256": "e3a35524a8e545050238d91d94da8b4da30aa9701c1038ca73d1c754a3944312",
+            "input_sha256": "d8b6ad611c8e1f07f61834a082d4e4e17a9f83caa45161fcfd766b1d11f5ac96",
+            "opening_token_ids": [
+              14937,
+              2064,
+              12375,
+              10218,
+              4337,
+              14793,
+              115237,
+              68693
+            ],
+            "opening_text": "{\"action\":\"final\",\"judgments\":{\""
+          }
+        ]
+      },
+      "on0_seed": {
+        "target_seconds": 9.542117872988456,
+        "seed_seconds": 1.735501100003603,
+        "seed_error": null,
+        "target": {
+          "record_id": "PPS-DEV-178",
+          "judgments": {
+            "v1": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v5": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v9": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v14": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v22": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v24": {
+              "위반여부": 0,
+              "근거문구": null
+            }
+          },
+          "error": null,
+          "trace": [
+            {
+              "task_id": "0:0",
+              "items": [
+                "v1",
+                "v5",
+                "v9",
+                "v14",
+                "v22",
+                "v24"
+              ],
+              "search_rounds": 0,
+              "retrieval_tokens": 0,
+              "events": [
+                {
+                  "event": "model",
+                  "input_tokens": 18637,
+                  "output_tokens": 1140,
+                  "finish_reason": "stop",
+                  "response": "{\"action\":\"final\",\"judgments\":{\"v1\":{\"위반여부\":0,\"근거문구\":null},\"v5\":{\"위반여부\":0,\"근거문구\":null},\"v9\":{\"위반여부\":0,\"근거문구\":null},\"v14\":{\"위반여부\":0,\"근거문구\":null},\"v22\":{\"위반여부\":0,\"근거문구\":null},\"v24\":{\"위반여부\":0,\"근거문구\":null}}}",
+                  "error": null,
+                  "max_output_tokens": 2048,
+                  "thinking_tokens": 1022,
+                  "thinking_budget": 1024,
+                  "required_search": false
+                },
+                {
+                  "event": "final",
+                  "evidence_dropped": []
+                }
+              ]
+            }
+          ]
+        },
+        "target_requests": [
+          {
+            "record_id": "PPS-DEV-178",
+            "phase": "on1024_target",
+            "batch": 1,
+            "request_id": "1715",
+            "input_tokens": 18637,
+            "cached_tokens": 18336,
+            "cache_creation_tokens": 288,
+            "output_tokens": 1140,
+            "finish_reason": "stop",
+            "request_stats": {
+              "num_generation_tokens": 1140,
+              "arrival_time": 1789111149.9392047,
+              "queued_ts": 91865.070817533,
+              "scheduled_ts": 91865.070822503,
+              "first_token_ts": 91865.114814587,
+              "last_token_ts": 91874.589270939,
+              "first_token_latency": 0.047683000564575195,
+              "is_corrupted": false
+            },
+            "queue_seconds": 4.970002919435501e-06,
+            "prefill_seconds": 0.04399208399991039,
+            "decode_seconds": 9.47445635200711,
+            "thinking_budget": 1024,
+            "max_tokens": 2048,
+            "thinking_text_tokens": 1022,
+            "output_sha256": "7fc971c3a88f4b1b07834f342af129da290cb0cb7413351a884fc51f9b50a646",
+            "input_sha256": "c974791a066e414c65cec702401f4668457e5791a5745572dfb231cf217ef2e3",
+            "opening_token_ids": [
+              100,
+              45518,
+              107,
+              818,
+              2430,
+              8150,
+              786,
+              531
+            ],
+            "opening_text": "[thinking omitted]"
+          }
+        ],
+        "seed_requests": [
+          {
+            "record_id": "PPS-DEV-178",
+            "phase": "on0_seed",
+            "batch": 0,
+            "request_id": "1714",
+            "input_tokens": 18496,
+            "cached_tokens": 0,
+            "cache_creation_tokens": 18496,
+            "output_tokens": 79,
+            "finish_reason": "stop",
+            "request_stats": {
+              "num_generation_tokens": 79,
+              "arrival_time": 1789111148.2088325,
+              "queued_ts": 91863.340889327,
+              "scheduled_ts": 91863.34089625,
+              "first_token_ts": 91864.423374519,
+              "last_token_ts": 91865.049939937,
+              "first_token_latency": 1.0867955684661865,
+              "is_corrupted": false
+            },
+            "queue_seconds": 6.923000910319388e-06,
+            "prefill_seconds": 1.0824782690033317,
+            "decode_seconds": 0.6265654180024285,
+            "thinking_budget": 0,
+            "max_tokens": 2048,
+            "thinking_text_tokens": 0,
+            "output_sha256": "f39a8c95f3d5c495965ae863850609a5ed29abe7e4ca1679093a8772892806fe",
+            "input_sha256": "91c1e78e060dba2a39b664ee6fb5522af1129ae57e0c87cc19a835384d129b1f",
+            "opening_token_ids": [
+              100,
+              101,
+              14937,
+              2064,
+              12375,
+              10218,
+              4337,
+              14793
+            ],
+            "opening_text": "<|channel><channel|>{\"action\":\"final\",\"jud"
+          }
+        ]
+      },
+      "cold": {
+        "target_seconds": 10.65310137400229,
+        "seed_seconds": 0.0,
+        "seed_error": null,
+        "target": {
+          "record_id": "PPS-DEV-178",
+          "judgments": {
+            "v1": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v5": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v9": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v14": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v22": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v24": {
+              "위반여부": 0,
+              "근거문구": null
+            }
+          },
+          "error": null,
+          "trace": [
+            {
+              "task_id": "0:0",
+              "items": [
+                "v1",
+                "v5",
+                "v9",
+                "v14",
+                "v22",
+                "v24"
+              ],
+              "search_rounds": 0,
+              "retrieval_tokens": 0,
+              "events": [
+                {
+                  "event": "model",
+                  "input_tokens": 18637,
+                  "output_tokens": 1146,
+                  "finish_reason": "stop",
+                  "response": "{\"action\":\"final\",\"judgments\":{\"v1\": {\"위반여부\":0,\"근거문구\":null},\"v5\": {\"위반여부\":0,\"근거문구\":null},\"v9\": {\"위반여부\":0,\"근거문구\":null},\"v14\": {\"위반여부\":0,\"근거문구\":null},\"v22\": {\"위반여부\":0,\"근거문구\":null},\"v24\": {\"위반여부\":0,\"근거문구\":null}}}",
+                  "error": null,
+                  "max_output_tokens": 2048,
+                  "thinking_tokens": 1022,
+                  "thinking_budget": 1024,
+                  "required_search": false
+                },
+                {
+                  "event": "final",
+                  "evidence_dropped": []
+                }
+              ]
+            }
+          ]
+        },
+        "target_requests": [
+          {
+            "record_id": "PPS-DEV-178",
+            "phase": "on1024_target",
+            "batch": 0,
+            "request_id": "1716",
+            "input_tokens": 18637,
+            "cached_tokens": 0,
+            "cache_creation_tokens": 18624,
+            "output_tokens": 1146,
+            "finish_reason": "stop",
+            "request_stats": {
+              "num_generation_tokens": 1146,
+              "arrival_time": 1789111159.4916332,
+              "queued_ts": 91874.624031167,
+              "scheduled_ts": 91874.62403781,
+              "first_token_ts": 91875.720503011,
+              "last_token_ts": 91885.246866345,
+              "first_token_latency": 1.1010513305664062,
+              "is_corrupted": false
+            },
+            "queue_seconds": 6.643007509410381e-06,
+            "prefill_seconds": 1.096465201000683,
+            "decode_seconds": 9.526363333992776,
+            "thinking_budget": 1024,
+            "max_tokens": 2048,
+            "thinking_text_tokens": 1022,
+            "output_sha256": "fbda70e8c9b8b3f1009e1864151ba8e2ba0da722a613a81a5b290cf7c91c7720",
+            "input_sha256": "c974791a066e414c65cec702401f4668457e5791a5745572dfb231cf217ef2e3",
+            "opening_token_ids": [
+              100,
+              45518,
+              107,
+              818,
+              2430,
+              8150,
+              786,
+              531
+            ],
+            "opening_text": "[thinking omitted]"
+          }
+        ],
+        "seed_requests": []
+      }
+    }
+  },
+  {
+    "id": "PPS-DEV-11",
+    "order": [
+      "on0_seed",
+      "cold",
+      "off_seed"
+    ],
+    "conditions": {
+      "on0_seed": {
+        "target_seconds": 11.055938511010027,
+        "seed_seconds": 3.0513664049940417,
+        "seed_error": null,
+        "target": {
+          "record_id": "PPS-DEV-11",
+          "judgments": {
+            "v1": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v5": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v9": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v14": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v22": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v24": {
+              "위반여부": 0,
+              "근거문구": null
+            }
+          },
+          "error": null,
+          "trace": [
+            {
+              "task_id": "0:0",
+              "items": [
+                "v1",
+                "v5",
+                "v9",
+                "v14",
+                "v22",
+                "v24"
+              ],
+              "search_rounds": 0,
+              "retrieval_tokens": 0,
+              "events": [
+                {
+                  "event": "model",
+                  "input_tokens": 29344,
+                  "output_tokens": 1231,
+                  "finish_reason": "stop",
+                  "response": "{\n  \"action\": \"final\",\n  \"judgments\": {\n    \"v1\": {\n      \"위반여부\": 0,\n      \"근거문구\": null\n    },\n    \"v5\": {\n      \"위반여부\": 0,\n      \"근거문구\": null\n    },\n    \"v9\": {\n      \"위반여부\": 0,\n      \"근거문구\": null\n    },\n    \"v14\": {\n      \"위반여부\": 0,\n      \"근거문구\": null\n    },\n    \"v22\": {\n      \"위반여부\": 0,\n      \"근거문구\": null\n    },\n    \"v24\": {\n      \"위반여부\": 0,\n      \"근거문구\": null\n    }\n  }\n}",
+                  "error": null,
+                  "max_output_tokens": 2048,
+                  "thinking_tokens": 1022,
+                  "thinking_budget": 1024,
+                  "required_search": false
+                },
+                {
+                  "event": "final",
+                  "evidence_dropped": []
+                }
+              ]
+            }
+          ]
+        },
+        "target_requests": [
+          {
+            "record_id": "PPS-DEV-11",
+            "phase": "on1024_target",
+            "batch": 1,
+            "request_id": "1718",
+            "input_tokens": 29344,
+            "cached_tokens": 29056,
+            "cache_creation_tokens": 288,
+            "output_tokens": 1231,
+            "finish_reason": "stop",
+            "request_stats": {
+              "num_generation_tokens": 1231,
+              "arrival_time": 1789111173.2084727,
+              "queued_ts": 91888.342760045,
+              "scheduled_ts": 91888.362016834,
+              "first_token_ts": 91888.422455339,
+              "last_token_ts": 91899.358877625,
+              "first_token_latency": 0.08617687225341797,
+              "is_corrupted": false
+            },
+            "queue_seconds": 0.019256789004430175,
+            "prefill_seconds": 0.06043850499554537,
+            "decode_seconds": 10.936422286002198,
+            "thinking_budget": 1024,
+            "max_tokens": 2048,
+            "thinking_text_tokens": 1022,
+            "output_sha256": "16f7776d00755456f15009754a3773f365d264d606e21226b6c74af819c6c30d",
+            "input_sha256": "c95e9b077f7bf55fa282a679b463f4d97c5625f33f92e1c8879d93169a236813",
+            "opening_token_ids": [
+              100,
+              45518,
+              107,
+              818,
+              2430,
+              8150,
+              786,
+              531
+            ],
+            "opening_text": "[thinking omitted]"
+          }
+        ],
+        "seed_requests": [
+          {
+            "record_id": "PPS-DEV-11",
+            "phase": "on0_seed",
+            "batch": 0,
+            "request_id": "1717",
+            "input_tokens": 29203,
+            "cached_tokens": 0,
+            "cache_creation_tokens": 29184,
+            "output_tokens": 96,
+            "finish_reason": "stop",
+            "request_stats": {
+              "num_generation_tokens": 96,
+              "arrival_time": 1789111170.1586814,
+              "queued_ts": 91885.292154759,
+              "scheduled_ts": 91885.307695278,
+              "first_token_ts": 91887.46332447,
+              "last_token_ts": 91888.30515752,
+              "first_token_latency": 2.1772820949554443,
+              "is_corrupted": false
+            },
+            "queue_seconds": 0.015540519001660869,
+            "prefill_seconds": 2.1556291919987416,
+            "decode_seconds": 0.8418330499989679,
+            "thinking_budget": 0,
+            "max_tokens": 2048,
+            "thinking_text_tokens": 0,
+            "output_sha256": "2845a0e6cbf2ab6ce666c45efc4c3a9a48397ae379f1e006e4bb504e5320e77a",
+            "input_sha256": "b5b9429847d9d1d3bd57b1a266c171590e16007a1ff465694d61709603e1bdc4",
+            "opening_token_ids": [
+              100,
+              101,
+              14937,
+              2064,
+              12375,
+              10218,
+              4337,
+              14793
+            ],
+            "opening_text": "<|channel><channel|>{\"action\":\"final\",\"jud"
+          }
+        ]
+      },
+      "cold": {
+        "target_seconds": 12.397410312987631,
+        "seed_seconds": 0.0,
+        "seed_error": null,
+        "target": {
+          "record_id": "PPS-DEV-11",
+          "judgments": {
+            "v1": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v5": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v9": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v14": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v22": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v24": {
+              "위반여부": 0,
+              "근거문구": null
+            }
+          },
+          "error": null,
+          "trace": [
+            {
+              "task_id": "0:0",
+              "items": [
+                "v1",
+                "v5",
+                "v9",
+                "v14",
+                "v22",
+                "v24"
+              ],
+              "search_rounds": 0,
+              "retrieval_tokens": 0,
+              "events": [
+                {
+                  "event": "model",
+                  "input_tokens": 29344,
+                  "output_tokens": 1146,
+                  "finish_reason": "stop",
+                  "response": "{\"action\":\"final\",\"judgments\":{\"v1\": {\"위반여부\":0,\"근거문구\":null},\"v5\": {\"위반여부\":0,\"근거문구\":null},\"v9\": {\"위반여부\":0,\"근거문구\":null},\"v14\": {\"위반여부\":0,\"근거문구\":null},\"v22\": {\"위반여부\":0,\"근거문구\":null},\"v24\": {\"위반여부\":0,\"근거문구\":null}}}",
+                  "error": null,
+                  "max_output_tokens": 2048,
+                  "thinking_tokens": 1022,
+                  "thinking_budget": 1024,
+                  "required_search": false
+                },
+                {
+                  "event": "final",
+                  "evidence_dropped": []
+                }
+              ]
+            }
+          ]
+        },
+        "target_requests": [
+          {
+            "record_id": "PPS-DEV-11",
+            "phase": "on1024_target",
+            "batch": 0,
+            "request_id": "1719",
+            "input_tokens": 29344,
+            "cached_tokens": 0,
+            "cache_creation_tokens": 29344,
+            "output_tokens": 1146,
+            "finish_reason": "stop",
+            "request_stats": {
+              "num_generation_tokens": 1146,
+              "arrival_time": 1789111184.2712762,
+              "queued_ts": 91899.405483541,
+              "scheduled_ts": 91899.405489412,
+              "first_token_ts": 91901.582544803,
+              "last_token_ts": 91911.761144395,
+              "first_token_latency": 2.183835506439209,
+              "is_corrupted": false
+            },
+            "queue_seconds": 5.870999302715063e-06,
+            "prefill_seconds": 2.1770553909882437,
+            "decode_seconds": 10.178599592007231,
+            "thinking_budget": 1024,
+            "max_tokens": 2048,
+            "thinking_text_tokens": 1022,
+            "output_sha256": "bb5daa18327bebf71f7114849e700070ad33601466320d5fc15631e9cf7ee744",
+            "input_sha256": "c95e9b077f7bf55fa282a679b463f4d97c5625f33f92e1c8879d93169a236813",
+            "opening_token_ids": [
+              100,
+              45518,
+              107,
+              818,
+              2430,
+              8150,
+              786,
+              531
+            ],
+            "opening_text": "[thinking omitted]"
+          }
+        ],
+        "seed_requests": []
+      },
+      "off_seed": {
+        "target_seconds": 12.39260762099002,
+        "seed_seconds": 3.2121801449975464,
+        "seed_error": null,
+        "target": {
+          "record_id": "PPS-DEV-11",
+          "judgments": {
+            "v1": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v5": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v9": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v14": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v22": {
+              "위반여부": 0,
+              "근거문구": null
+            },
+            "v24": {
+              "위반여부": 0,
+              "근거문구": null
+            }
+          },
+          "error": null,
+          "trace": [
+            {
+              "task_id": "0:0",
+              "items": [
+                "v1",
+                "v5",
+                "v9",
+                "v14",
+                "v22",
+                "v24"
+              ],
+              "search_rounds": 0,
+              "retrieval_tokens": 0,
+              "events": [
+                {
+                  "event": "model",
+                  "input_tokens": 29344,
+                  "output_tokens": 1146,
+                  "finish_reason": "stop",
+                  "response": "{\"action\":\"final\",\"judgments\":{\"v1\": {\"위반여부\":0,\"근거문구\":null},\"v5\": {\"위반여부\":0,\"근거문구\":null},\"v9\": {\"위반여부\":0,\"근거문구\":null},\"v14\": {\"위반여부\":0,\"근거문구\":null},\"v22\": {\"위반여부\":0,\"근거문구\":null},\"v24\": {\"위반여부\":0,\"근거문구\":null}}}",
+                  "error": null,
+                  "max_output_tokens": 2048,
+                  "thinking_tokens": 1022,
+                  "thinking_budget": 1024,
+                  "required_search": false
+                },
+                {
+                  "event": "final",
+                  "evidence_dropped": []
+                }
+              ]
+            }
+          ]
+        },
+        "target_requests": [
+          {
+            "record_id": "PPS-DEV-11",
+            "phase": "on1024_target",
+            "batch": 1,
+            "request_id": "1721",
+            "input_tokens": 29344,
+            "cached_tokens": 0,
+            "cache_creation_tokens": 29344,
+            "output_tokens": 1146,
+            "finish_reason": "stop",
+            "request_stats": {
+              "num_generation_tokens": 1146,
+              "arrival_time": 1789111199.8837926,
+              "queued_ts": 91915.018043787,
+              "scheduled_ts": 91915.018052243,
+              "first_token_ts": 91917.191192522,
+              "last_token_ts": 91927.370887365,
+              "first_token_latency": 2.1800670623779297,
+              "is_corrupted": false
+            },
+            "queue_seconds": 8.45600152388215e-06,
+            "prefill_seconds": 2.173140279002837,
+            "decode_seconds": 10.179694842998288,
+            "thinking_budget": 1024,
+            "max_tokens": 2048,
+            "thinking_text_tokens": 1022,
+            "output_sha256": "bb5daa18327bebf71f7114849e700070ad33601466320d5fc15631e9cf7ee744",
+            "input_sha256": "c95e9b077f7bf55fa282a679b463f4d97c5625f33f92e1c8879d93169a236813",
+            "opening_token_ids": [
+              100,
+              45518,
+              107,
+              818,
+              2430,
+              8150,
+              786,
+              531
+            ],
+            "opening_text": "[thinking omitted]"
+          }
+        ],
+        "seed_requests": [
+          {
+            "record_id": "PPS-DEV-11",
+            "phase": "off_seed",
+            "batch": 0,
+            "request_id": "1720",
+            "input_tokens": 29205,
+            "cached_tokens": 0,
+            "cache_creation_tokens": 29184,
+            "output_tokens": 116,
+            "finish_reason": "stop",
+            "request_stats": {
+              "num_generation_tokens": 116,
+              "arrival_time": 1789111196.6737008,
+              "queued_ts": 91911.807084691,
+              "scheduled_ts": 91911.807091995,
+              "first_token_ts": 91913.961536236,
+              "last_token_ts": 91914.980739568,
+              "first_token_latency": 2.160325288772583,
+              "is_corrupted": false
+            },
+            "queue_seconds": 7.303999154828489e-06,
+            "prefill_seconds": 2.154444241008605,
+            "decode_seconds": 1.019203331990866,
+            "thinking_budget": null,
+            "max_tokens": 2048,
+            "thinking_text_tokens": 0,
+            "output_sha256": "ad8b2d82facccce2b4cb309588ec2f6d15926c62fdcd9503782588f348c3289a",
+            "input_sha256": "308a3cae7ca8669e72a40d3df5776d102b685fa97cac63dc38c1ee02e6ce193a",
+            "opening_token_ids": [
+              14937,
+              2064,
+              12375,
+              10218,
+              4337,
+              14793,
+              115237,
+              68693
+            ],
+            "opening_text": "{\"action\":\"final\",\"judgments\":{\""
+          }
+        ]
+      }
+    }
+  }
+]

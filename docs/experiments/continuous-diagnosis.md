@@ -1,6 +1,8 @@
 # Continuous scheduling accuracy diagnosis
 
-Status: complete; no inference task pending. Report `analysis/continuous_diagnosis/report.md`, summary.json, historical_flips.csv, divergences.json, input_audit.json, validation.json. Diagnostic scripts/source snapshots retained in source/; logs engine.log.
+Artifact base: `analysis/continuous_diagnosis/`; unqualified JSON/CSV/log/source paths below use this base. Detailed Markdown reports: [index](../reports/README.md).
+
+Status: complete; no inference task pending. Report `docs/reports/analysis/continuous_diagnosis/report.md`, summary.json, historical_flips.csv, divergences.json, input_audit.json, validation.json. Diagnostic scripts/source snapshots retained in source/; logs engine.log.
 
 Original200 six-feature comparison:26/1200 label flips across24notices;17 correct→wrong,9 wrong→correct, net8 moreerrors. Only41 positive labels. TP18→15,FP15→20; Macro .500577→.391453,Micro .486486→.394737. v1 TP4→2 among7positives drives large macro change. Paired notice bootstrap5000replicates fixed-output new−old95CI Macro[-.22964,.00675],Micro[-.21377,.02983]; not inference-repeat uncertainty.
 

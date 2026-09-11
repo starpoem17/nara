@@ -4,6 +4,9 @@ import csv
 import hashlib
 import json
 from pathlib import Path
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from scripts.reporting import write_report
 from statistics import mean, median
 
 OUT = Path('analysis/prefix_pipeline200')
@@ -145,7 +148,7 @@ def main():
              '재현: `MAX_JOBS=2 uv run --locked python scripts/benchmark_prefix_pipeline.py --output NEW_DIRECTORY`',
              '검증: `python3 scripts/summarize_prefix_pipeline.py`', '']
     text += ['선행 시작 예외3건: PPS-DEV-28·121은 긴 원문 합계가48000토큰 입장 한도를 넘어 기존 공고 완료까지 기다렸다. PPS-DEV-137도 앞서 토큰 한도에 막혔고, 마지막 기존 요청 종료 전에 제출됐지만 엔진 prefill 시작은 종료보다18.3ms 늦었다. 소프트웨어 대기열 소진을 무조건 기다리는 구조는 없지만 메모리 입장 제한·제출 지연에 따른 빈 구간은 남는다.', '']
-    (out / 'comparison.md').write_text('\n'.join(text))
+    write_report(out / 'comparison.md', '\n'.join(text))
     print(json.dumps({'runs': comparison, 'delta': delta, 'scheduling': stats, 'validation': validation}, indent=2))
 
 

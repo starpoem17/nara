@@ -1,5 +1,7 @@
 # Source-first twelve-group pipeline16
 
+Artifact base: `analysis/prefix_pipeline200/`; unqualified JSON/CSV/log/source paths below use this base. Detailed Markdown reports: [index](../reports/README.md).
+
 Completed2026-09-11. User explicitly authorized cross-notice continuous scheduling again, superseding the earlier mixed-five barrier-only direction for this experiment. The measured run used `scripts/benchmark_prefix_pipeline.py` with frozen prompts/groups/model/H6. User subsequently selected this execution structure as the default experiment pipeline. Do not interpret one batch-dependent F1 fluctuation as structural quality degradation.
 
 ## Default experiment entrypoint
@@ -24,6 +26,6 @@ Actualgraphs FULL13675steps/NONE943/PIECEWISE0; FULL with16real tokens206steps. 
 
 ## Artifacts and audit
 
-`analysis/prefix_pipeline200/comparison.md`, `scheduling_summary.json`, `prefill_timeline.json`, `validation.json`; main/ contains frozen firstpass, smoke/ excluded execution test. Root traces final200. Source snapshots/manifest and analysis_source/analysis_manifest preserve reproducibility. `scripts/summarize_prefix_pipeline.py`: sourcehashes,200×24,49columnCSV,allrule rows,request IDs/tokens,seed-before-follower timing,max16live,FULLgraphs,earlyprefill verified.10related tests passed (pipeline3/prefix3/continuous4). Evidence invalid0,positive nonabsence missing77; binary F1 does not score evidence completeness.
+`docs/reports/analysis/prefix_pipeline200/comparison.md`, `scheduling_summary.json`, `prefill_timeline.json`, `validation.json`; main/ contains frozen firstpass, smoke/ excluded execution test. Root traces final200. Source snapshots/manifest and analysis_source/analysis_manifest preserve reproducibility. `scripts/summarize_prefix_pipeline.py`: sourcehashes,200×24,49columnCSV,allrule rows,request IDs/tokens,seed-before-follower timing,max16live,FULLgraphs,earlyprefill verified.10related tests passed (pipeline3/prefix3/continuous4). Evidence invalid0,positive nonabsence missing77; binary F1 does not score evidence completeness.
 
 Historical run: `MAX_JOBS=2 uv run --locked python scripts/benchmark_prefix_pipeline.py --output FRESH_DIRECTORY` with frozen reference sources. `scripts/summarize_prefix_pipeline.py` audits the original fixed artifact directory; new default runs produce evaluation via the runner itself. Default submission entrypoints were not changed.

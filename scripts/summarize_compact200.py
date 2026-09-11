@@ -4,6 +4,7 @@ import json
 from pathlib import Path
 import sys
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
+from scripts.reporting import report_path, write_report
 from scripts.evaluate_dev import read_csv, ITEMS
 from sklearn.metrics import f1_score
 
@@ -18,7 +19,7 @@ def main():
         folder=ROOT/name
         ev=json.loads((folder/'evaluation.json').read_text())
         runtime=json.loads((folder/'report.json').read_text())
-        md=folder/'evaluation.md'
+        md=report_path(folder/'evaluation.md')
         text=md.read_text().replace('system_prompt.txt','prompt_*.txt').replace('대화당 최대 ', '대화당 ').replace('대화당 ', '대화당 최대 ')
         if runtime.get('recovery') and '첫 실행 실패 공고는' not in text:
             text+='\n첫 실행 실패 공고는 recovery_prompt_*.txt 및 recovery_schema_*.json으로 복구했다. 첫 실행 기록은 first_pass/에 보존했다.\n'
@@ -115,7 +116,7 @@ def main():
         '- 숫자로 표시한 원/천원/백만원/만원/억원 및 혼합 단위를 지원한다. 한글 숫자만 있는 금액, 금액 대신 비율만 있는 조건, 복잡한 선택조건·여러 조건 연결은 이 규칙의 한계다. v3은 가설 범위인 금액만 처리한다.',
         '- 압축은 핵심 조건·금액·예외를 남겼으나 상세 법령 원문 전체를 대체하지 않는다. 법령 원본과 상세 기준은 보존했고 자율 RAG로 조회 가능하다.',
         '', '실제 프롬프트·스키마: 각 구성 폴더 `prompt_*.txt`, `schema_*.json`. 예측·오류·평가·원본 해시: `submission.csv`, `trace.jsonl`, `errors.csv`, `evaluation.json`, `manifest.json`.']
-    (ROOT/'comparison.md').write_text('\n'.join(lines)+'\n')
+    write_report(ROOT/'comparison.md', '\n'.join(lines)+'\n')
     print(json.dumps({'runs':[{k:v for k,v in r.items() if k!='per_item'} for r in rows],'pairs':pairs},ensure_ascii=False,indent=2))
 
 if __name__=='__main__':main()

@@ -4,6 +4,9 @@ import hashlib
 import json
 from collections import Counter, defaultdict
 from pathlib import Path
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from scripts.reporting import write_report
 
 
 def read(path):
@@ -127,7 +130,7 @@ def main():
                    '복구: 실패 공고 전체를 동일 1→11 설정으로 1회 재실행하고, 여전히 실패한 그룹만 동일 프롬프트·2048토큰 한도로 따로 1회 재실행. 실제로는 3건 모두 전체 공고 재실행으로 성공하여 그룹 단독 복구는 사용하지 않았다. 최초 성공 공고는 동일함을 검증. first_pass/에 최초 기록 보존.', '']
     if (out / 'recovery_aborted.json').exists():
         report += ['복구 보조 코드의 자료형 비교 오류로 중단된 별도 실행이 1회 있었다. 해당 실행은 판정 결과에 반영되지 않았고 추론 시간이 별도 계측되지 않아 위 시간에서도 제외했다. 따라서 로딩+추론 합계는 이번 개발 작업 전체 소요 시간이 아니다. recovery_aborted.log/json에 기록.', '']
-    (out / 'comparison.md').write_text('\n'.join(report))
+    write_report(out / 'comparison.md', '\n'.join(report))
     print(json.dumps({k: v for k, v in comparison.items() if k not in ('per_item', 'batch_timings')}, indent=2))
     print(json.dumps(validation))
 

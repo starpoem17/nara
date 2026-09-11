@@ -5,6 +5,19 @@ Read this index, then only the documents relevant to the current task.
 
 Default experiment: `uv run --locked python scripts/run_experiment.py` — current sources, twelve OFF groups, cross-notice lookahead, engine16. See [Prefix pipeline](experiments/prefix-pipeline.md).
 
+## Project navigation
+
+| Need | Read |
+|---|---|
+| Find folders, active code or a script; distinguish snapshots | [Project map](project-structure.md) |
+| Resolve domain terminology | [Domain glossary](../CONTEXT.md) |
+| Set up Python/models or check local GPU | [Environment](environment.md) |
+| Find complete run/evaluation commands and prompt edit locations | [Operations](operations.md) |
+| Locate detailed reports and machine evidence by experiment | [Report index](reports/README.md) |
+| Understand document placement, moved files and preserved exceptions | [Structure audit](maintenance/structure-audit.md) |
+
+Read summaries first. Open detailed reports or frozen sources only when the task needs their evidence.
+
 ## Routing
 
 | Work | Read |
@@ -32,6 +45,7 @@ Default experiment: `uv run --locked python scripts/run_experiment.py` — curre
 | Default experiments: twelve-group cross-notice engine16; early prefill and FULL graphs | [Prefix pipeline](experiments/prefix-pipeline.md) |
 | Engine module refactor: compatibility tests and matched dev200 before/after | [Engine refactor](experiments/engine-refactor.md) |
 | Five-group mixed thinking/instant: per-feature effects, prefill/decode, cache and batching controls | [Hybrid five](experiments/hybrid-five.md) |
+| Actual instant OFF vs ON0 dev200, output differences and cross-mode cache probes | [Instant ON0](experiments/instant-on0.md) |
 | Historical mixed-five comparison: batch8 barrier fallback; prefill/decode cause probes | [Prefill/decode and fallback](experiments/prefill-decode-fallback.md) |
 | Completion-driven refill and per-step prefill token budgets | [Continuous prefill](experiments/continuous-prefill.md) |
 | Why scheduling changed accuracy; raw-token adapter/repeat controls | [Continuous diagnosis](experiments/continuous-diagnosis.md) |
@@ -40,6 +54,8 @@ Default experiment: `uv run --locked python scripts/run_experiment.py` — curre
 ## Maintenance contract
 
 - `competition/` contains official requirements only. Its source register is `competition/sources.md`.
+- Generated Markdown reports belong in `reports/`; experiment artifacts remain in `analysis/` or `output/`. Use `scripts/reporting.py`; see [maintenance rules](maintenance/structure-audit.md#maintenance-rules).
+- Root `README.md` contains only the user’s objective. Agent notes belong here or in the owning document.
 - Keep each fact in one owning document; link to it elsewhere. Use stable, descriptive filenames and headings.
 - Write concise English; preserve Korean item names, legal titles, filenames, and exact API identifiers.
 - Each official-requirements document records its source and verification date. When updating a fact, recheck its source and update that date; unresolved conflicts belong in `sources.md`.

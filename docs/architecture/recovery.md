@@ -35,6 +35,6 @@ Evidence: `analysis/recovery_refactor/validation.json`. Reproduce with:
 
 ```bash
 uv run --locked python -m unittest discover -s tests
-uv run --locked python analysis/recovery_refactor/verify_saved.py output/experiments/engine-refactor-after-20260911
+uv run --locked python scripts/verify_recovery_saved.py output/experiments/engine-refactor-after-20260911
 uv run --locked python scripts/run_experiment.py --prepare-only --output-dir FRESH_DIRECTORY
 ```

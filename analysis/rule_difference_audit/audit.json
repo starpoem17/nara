@@ -1,0 +1,800 @@
+{
+  "records": 200,
+  "open_vs_data_bytes_equal": true,
+  "labels_equal": true,
+  "matches_archived_rules": true,
+  "sha256": {
+    "nara/hypothesis6.py": "850ebdceff80371dc8bd4859813e86e017552941b44dfdb4773b672576c925ba",
+    "data/dev.jsonl": "5507f5ab0ba53b708f87211ed050dbe531b48a626ace6084c3ccaefb53147534",
+    "data/dev_labels.csv": "84c79302ac190b45b2487ec8e02aab73e59071ee745828e813a7db96d3a97a35"
+  },
+  "colleague_code_found": false,
+  "colleague_metrics_source": "User-provided report; not independently executed. DEV suffix mapping assumed.",
+  "metrics": {
+    "v2": {
+      "tp": 5,
+      "fp": 3,
+      "fn": 2,
+      "tn": 190,
+      "precision": 0.625,
+      "recall": 0.7142857142857143,
+      "f1": 0.6666666666666666
+    },
+    "v3": {
+      "tp": 6,
+      "fp": 0,
+      "fn": 2,
+      "tn": 192,
+      "precision": 1.0,
+      "recall": 0.75,
+      "f1": 0.8571428571428571
+    }
+  },
+  "cases": [
+    {
+      "id": "PPS-DEV-053",
+      "labels": {
+        "v2": "1",
+        "v3": "1",
+        "e2": "④ 입찰공고일 기준 최근 3년 이내에 단일건으로 1억 원 이상 [수요기관(공공기관)]에서 발주한 유사사업 및 동등이상 관련 사업 등을 실적이 있는 업체(하도급 제외) ※ 실적증명이 가능하고 공고일 현재 용역이 완료된 것",
+        "e3": "④ 입찰공고일 기준 최근 3년 이내에 단일건으로 1억 원 이상 [수요기관(공공기관)]에서 발주한 유사사업 및 동등이상 관련 사업 등을 실적이 있는 업체(하도급 제외) ※ 실적증명이 가능하고 공고일 현재 용역이 완료된 것"
+      },
+      "meta": {
+        "적용계약법": "국가계약법",
+        "업무구분": "일반용역",
+        "계약방법": "제한경쟁",
+        "낙찰방법": "협상에의한계약",
+        "낙찰하한율": null,
+        "배정예산금액": 24959000,
+        "입찰추정가격": 22690000,
+        "소관구분": "국가기관",
+        "공동도급구성방식": "공동이행",
+        "정보화사업여부": "미입력",
+        "세부품명번호목록": null,
+        "제한지역코드목록": null,
+        "지역제한여부": "N",
+        "면허업종제한목록": "[학술.연구용역(1169)]",
+        "업종제한여부": "Y",
+        "조항호내용": "[판로지원법 시행령] 중기업,소기업,소상공인 제한",
+        "공고게시일자": "20260304",
+        "개찰예정일자": "20260316",
+        "긴급공고여부": "Y",
+        "입찰방법": "전자입찰",
+        "조달방식": "자체조달"
+      },
+      "rule_result": {
+        "record_id": "PPS-DEV-053",
+        "judgments": {
+          "v2": {
+            "위반여부": 0,
+            "근거문구": null
+          },
+          "v3": {
+            "위반여부": 0,
+            "근거문구": null
+          }
+        },
+        "eligibility_sections": 2,
+        "estimated_price": 22690000,
+        "allocated_budget": 24959000,
+        "v2_threshold": 230000000,
+        "v2_special_local_exception": false,
+        "v2_scope": true,
+        "unknown_metadata": [],
+        "unmatched_policy": "0; diagnostic does not prove legal compliance",
+        "candidates": [],
+        "diagnostics": []
+      },
+      "spans": [
+        {
+          "doc_id": "D0",
+          "start": 2218,
+          "end": 2228,
+          "start_line": 40,
+          "end_line_exclusive": 41,
+          "start_text": "2. 입찰참가자격",
+          "stop_text": "가. 입찰서 제출마감일 전일까지 아래의 자격을 모두 갖춘 자이어야 합니다."
+        },
+        {
+          "doc_id": "D0",
+          "start": 6338,
+          "end": 8133,
+          "start_line": 88,
+          "end_line_exclusive": 94,
+          "start_text": "3) 입찰참가자격상의 중·소기업확인서 1부",
+          "stop_text": "6. 제안서 기술평가: 제안요청서 참조"
+        }
+      ],
+      "isolated_original_clause_probe": {
+        "record_id": "PPS-DEV-053",
+        "judgments": {
+          "v2": {
+            "위반여부": 1,
+            "근거문구": "④ 입찰공고일 기준 최근 3년 이내에 단일건으로 1억 원 이상 [수요기관(공공기관)]에서 발주한 유사사업 및 동등이상 관련 사업 등을 실적이 있는 업체(하도급 제외) ※ 실적증명이 가능하고 공고일 현재 용역이 완료된 것"
+          },
+          "v3": {
+            "위반여부": 1,
+            "근거문구": "④ 입찰공고일 기준 최근 3년 이내에 단일건으로 1억 원 이상 [수요기관(공공기관)]에서 발주한 유사사업 및 동등이상 관련 사업 등을 실적이 있는 업체(하도급 제외) ※ 실적증명이 가능하고 공고일 현재 용역이 완료된 것"
+          }
+        },
+        "eligibility_sections": 1,
+        "estimated_price": 22690000,
+        "allocated_budget": 24959000,
+        "v2_threshold": 230000000,
+        "v2_special_local_exception": false,
+        "v2_scope": true,
+        "unknown_metadata": [],
+        "unmatched_policy": "0; diagnostic does not prove legal compliance",
+        "candidates": [
+          {
+            "doc_id": "diagnostic",
+            "start": 7,
+            "end": 129,
+            "text": "④ 입찰공고일 기준 최근 3년 이내에 단일건으로 1억 원 이상 [수요기관(공공기관)]에서 발주한 유사사업 및 동등이상 관련 사업 등을 실적이 있는 업체(하도급 제외) ※ 실적증명이 가능하고 공고일 현재 용역이 완료된 것",
+            "amount": 100000000,
+            "operator": "이상",
+            "evidence": "④ 입찰공고일 기준 최근 3년 이내에 단일건으로 1억 원 이상 [수요기관(공공기관)]에서 발주한 유사사업 및 동등이상 관련 사업 등을 실적이 있는 업체(하도급 제외) ※ 실적증명이 가능하고 공고일 현재 용역이 완료된 것",
+            "status": "eligible_experience_lower_bound"
+          }
+        ],
+        "diagnostics": []
+      }
+    },
+    {
+      "id": "PPS-DEV-059",
+      "labels": {
+        "v2": "0",
+        "v3": "1",
+        "e2": "",
+        "e3": "◦ 공고일 기준 최근 3년 이내 공공기관(국가,지자체,공기업 포함) 통근버스 운행 실적이 2억원 이상 있는 업체만 참가 자격이 있습니다."
+      },
+      "meta": {
+        "적용계약법": "지방계약법",
+        "업무구분": "일반용역",
+        "계약방법": "수의계약",
+        "낙찰방법": "소액수의견적",
+        "낙찰하한율": 88.0,
+        "배정예산금액": 91800000,
+        "입찰추정가격": 83454545,
+        "소관구분": "교육기관",
+        "공동도급구성방식": null,
+        "정보화사업여부": "미입력",
+        "세부품명번호목록": null,
+        "제한지역코드목록": "[등록지역:r1|단위=기초|광역=강원특별자치도]",
+        "지역제한여부": "Y",
+        "면허업종제한목록": "[여객자동차운수사업(구역여객자동차운송사업-전세버스)(5805)]",
+        "업종제한여부": "Y",
+        "조항호내용": "추정가격 2천만원 초과 1억원 이하 물품·용역(소기업 소상공인 계약)",
+        "공고게시일자": "20260611",
+        "개찰예정일자": "20260616",
+        "긴급공고여부": null,
+        "입찰방법": "전자입찰",
+        "조달방식": "자체조달"
+      },
+      "rule_result": {
+        "record_id": "PPS-DEV-059",
+        "judgments": {
+          "v2": {
+            "위반여부": 1,
+            "근거문구": "◦ 공고일 기준 최근 3년 이내 공공기관(국가,지자체,공기업 포함) 통근버스 운행 실적이 2억원 이상 있는 업체만 참가 자격이 있습니다."
+          },
+          "v3": {
+            "위반여부": 1,
+            "근거문구": "◦ 공고일 기준 최근 3년 이내 공공기관(국가,지자체,공기업 포함) 통근버스 운행 실적이 2억원 이상 있는 업체만 참가 자격이 있습니다."
+          }
+        },
+        "eligibility_sections": 1,
+        "estimated_price": 83454545,
+        "allocated_budget": 91800000,
+        "v2_threshold": 230000000,
+        "v2_special_local_exception": false,
+        "v2_scope": true,
+        "unknown_metadata": [],
+        "unmatched_policy": "0; diagnostic does not prove legal compliance",
+        "candidates": [
+          {
+            "doc_id": "D0",
+            "start": 1569,
+            "end": 1645,
+            "text": "◦ 공고일 기준 최근 3년 이내 공공기관(국가,지자체,공기업 포함) 통근버스 운행 실적이 2억원 이상 있는 업체만 참가 자격이 있습니다.",
+            "amount": 200000000,
+            "operator": "이상",
+            "evidence": "◦ 공고일 기준 최근 3년 이내 공공기관(국가,지자체,공기업 포함) 통근버스 운행 실적이 2억원 이상 있는 업체만 참가 자격이 있습니다.",
+            "status": "eligible_experience_lower_bound"
+          }
+        ],
+        "diagnostics": []
+      },
+      "spans": [
+        {
+          "doc_id": "D0",
+          "start": 683,
+          "end": 2044,
+          "start_line": 49,
+          "end_line_exclusive": 73,
+          "start_text": "3. 견적 제출 참가자격",
+          "stop_text": "4. 과업설명"
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-062",
+      "labels": {
+        "v2": "1",
+        "v3": "1",
+        "e2": "2) 공고일 전일 기준 최근 5년 이내 국가,정부투자기관에서 시행한 단일 건 3억 원(VAT포함) 이상의 축제, 공연 등 문화행사 수행실적이 있어야 합니다.",
+        "e3": "2) 공고일 전일 기준 최근 5년 이내 국가,정부투자기관에서 시행한 단일 건 3억 원(VAT포함) 이상의 축제, 공연 등 문화행사 수행실적이 있어야 합니다."
+      },
+      "meta": {
+        "적용계약법": "지방계약법",
+        "업무구분": "일반용역",
+        "계약방법": "제한경쟁",
+        "낙찰방법": "협상에의한계약",
+        "낙찰하한율": null,
+        "배정예산금액": 250000000,
+        "입찰추정가격": 227272727,
+        "소관구분": "지방정부",
+        "공동도급구성방식": "공동이행",
+        "정보화사업여부": "미입력",
+        "세부품명번호목록": null,
+        "제한지역코드목록": null,
+        "지역제한여부": "N",
+        "면허업종제한목록": "[기타자유업(행사대행업)(9901)]",
+        "업종제한여부": "Y",
+        "조항호내용": "특수한 기술이 요구되는 용역계약",
+        "공고게시일자": "20260220",
+        "개찰예정일자": "20260311",
+        "긴급공고여부": null,
+        "입찰방법": "직찰",
+        "조달방식": "자체조달"
+      },
+      "rule_result": {
+        "record_id": "PPS-DEV-062",
+        "judgments": {
+          "v2": {
+            "위반여부": 0,
+            "근거문구": null
+          },
+          "v3": {
+            "위반여부": 0,
+            "근거문구": null
+          }
+        },
+        "eligibility_sections": 1,
+        "estimated_price": 227272727,
+        "allocated_budget": 250000000,
+        "v2_threshold": 230000000,
+        "v2_special_local_exception": false,
+        "v2_scope": true,
+        "unknown_metadata": [],
+        "unmatched_policy": "0; diagnostic does not prove legal compliance",
+        "candidates": [],
+        "diagnostics": []
+      },
+      "spans": [
+        {
+          "doc_id": "D0",
+          "start": 724,
+          "end": 854,
+          "start_line": 41,
+          "end_line_exclusive": 45,
+          "start_text": "3. 입찰 참가자격",
+          "stop_text": "1) ｢국가종합전자조달시스템 입찰참가자격등록규정(조달청고시 제2024-29호, 2024. 12. 9.)｣에 의하여 제안서 제출 마감일 전일까지 “행사대행업”으로 등록한 업체여야 합니다."
+        }
+      ],
+      "isolated_original_clause_probe": {
+        "record_id": "PPS-DEV-062",
+        "judgments": {
+          "v2": {
+            "위반여부": 1,
+            "근거문구": "2) 공고일 전일 기준 최근 5년 이내 국가,정부투자기관에서 시행한 단일 건 3억 원(VAT포함) 이상의 축제, 공연 등 문화행사 수행실적이 있어야 합니다."
+          },
+          "v3": {
+            "위반여부": 1,
+            "근거문구": "2) 공고일 전일 기준 최근 5년 이내 국가,정부투자기관에서 시행한 단일 건 3억 원(VAT포함) 이상의 축제, 공연 등 문화행사 수행실적이 있어야 합니다."
+          }
+        },
+        "eligibility_sections": 1,
+        "estimated_price": 227272727,
+        "allocated_budget": 250000000,
+        "v2_threshold": 230000000,
+        "v2_special_local_exception": false,
+        "v2_scope": true,
+        "unknown_metadata": [],
+        "unmatched_policy": "0; diagnostic does not prove legal compliance",
+        "candidates": [
+          {
+            "doc_id": "diagnostic",
+            "start": 7,
+            "end": 94,
+            "text": "2) 공고일 전일 기준 최근 5년 이내 국가,정부투자기관에서 시행한 단일 건 3억 원(VAT포함) 이상의 축제, 공연 등 문화행사 수행실적이 있어야 합니다.",
+            "amount": 300000000,
+            "operator": "이상",
+            "evidence": "2) 공고일 전일 기준 최근 5년 이내 국가,정부투자기관에서 시행한 단일 건 3억 원(VAT포함) 이상의 축제, 공연 등 문화행사 수행실적이 있어야 합니다.",
+            "status": "eligible_experience_lower_bound"
+          }
+        ],
+        "diagnostics": []
+      }
+    },
+    {
+      "id": "PPS-DEV-099",
+      "labels": {
+        "v2": "0",
+        "v3": "0",
+        "e2": "",
+        "e3": ""
+      },
+      "meta": {
+        "적용계약법": "지방계약법",
+        "업무구분": "일반용역",
+        "계약방법": "일반경쟁",
+        "낙찰방법": "협상에의한계약",
+        "낙찰하한율": null,
+        "배정예산금액": 217820000,
+        "입찰추정가격": 198018181,
+        "소관구분": "지자체 출자출연기관",
+        "공동도급구성방식": null,
+        "정보화사업여부": "미입력",
+        "세부품명번호목록": null,
+        "제한지역코드목록": null,
+        "지역제한여부": "N",
+        "면허업종제한목록": "[공공디자인 전문회사(6484) 과 산업디자인전문회사(시각디자인분야)(4440) 과 산업디자인전문회사(환경디자인분야)(4442)]업종 또는[공공디자인 전문회사(6484) 과 산업디자인전문회사(종합디자인분야)(4444)]",
+        "업종제한여부": "Y",
+        "조항호내용": "협상에 의한 계약",
+        "공고게시일자": "20260526",
+        "개찰예정일자": "20260617",
+        "긴급공고여부": null,
+        "입찰방법": "직찰",
+        "조달방식": "자체조달"
+      },
+      "rule_result": {
+        "record_id": "PPS-DEV-099",
+        "judgments": {
+          "v2": {
+            "위반여부": 1,
+            "근거문구": "※ 공고일 전일 기준, 최근 3년 이내 단일 건으로 5천만원 이상(부가세 포함)의 수행실적 기재"
+          },
+          "v3": {
+            "위반여부": 0,
+            "근거문구": null
+          }
+        },
+        "eligibility_sections": 5,
+        "estimated_price": 198018181,
+        "allocated_budget": 217820000,
+        "v2_threshold": 230000000,
+        "v2_special_local_exception": false,
+        "v2_scope": true,
+        "unknown_metadata": [],
+        "unmatched_policy": "0; diagnostic does not prove legal compliance",
+        "candidates": [
+          {
+            "doc_id": "D1",
+            "start": 22051,
+            "end": 22104,
+            "text": "※ 공고일 전일 기준, 최근 3년 이내 단일 건으로 5천만원 이상(부가세 포함)의 수행실적 기재",
+            "amount": 50000000,
+            "operator": "이상",
+            "evidence": "※ 공고일 전일 기준, 최근 3년 이내 단일 건으로 5천만원 이상(부가세 포함)의 수행실적 기재",
+            "status": "eligible_experience_lower_bound"
+          }
+        ],
+        "diagnostics": [
+          {
+            "doc_id": "D1",
+            "start": 21151,
+            "end": 21164,
+            "text": "유사 용역 등 실적 사항",
+            "status": "no_parseable_money"
+          },
+          {
+            "doc_id": "D1",
+            "start": 21358,
+            "end": 21408,
+            "text": "※ 상기 내용을 증명할 수 있는 경력․자격․실적증명서 제출(사본일 경우는 원본대조필 날인)",
+            "status": "no_parseable_money"
+          },
+          {
+            "doc_id": "D1",
+            "start": 21410,
+            "end": 21452,
+            "text": "※ 실적 사항은 공고일 현재까지의 관련 디자인 분야 용역 수행 실적을 기재함",
+            "status": "no_parseable_money"
+          },
+          {
+            "doc_id": "D1",
+            "start": 21645,
+            "end": 21658,
+            "text": "유사 용역 등 실적 사항",
+            "status": "no_parseable_money"
+          },
+          {
+            "doc_id": "D1",
+            "start": 21852,
+            "end": 21902,
+            "text": "※ 상기 내용을 증명할 수 있는 경력․자격․실적증명서 제출(사본일 경우는 원본대조필 날인)",
+            "status": "no_parseable_money"
+          },
+          {
+            "doc_id": "D1",
+            "start": 21904,
+            "end": 21946,
+            "text": "※ 실적 사항은 공고일 현재까지의 관련 디자인 분야 용역 수행 실적을 기재함",
+            "status": "no_parseable_money"
+          },
+          {
+            "doc_id": "D1",
+            "start": 21960,
+            "end": 21982,
+            "text": "유사 용역 수행 실적(최근 3년간 실적)",
+            "status": "no_parseable_money"
+          },
+          {
+            "doc_id": "D1",
+            "start": 22106,
+            "end": 22131,
+            "text": "(유사 용역 실적 판정은 발주부서에서 결정함)",
+            "status": "no_parseable_money"
+          },
+          {
+            "doc_id": "D1",
+            "start": 22181,
+            "end": 22213,
+            "text": "※ 용역 실적 증빙자료는 조달청에서 발행한 실적증명서 제출",
+            "status": "no_parseable_money"
+          }
+        ]
+      },
+      "spans": [
+        {
+          "doc_id": "D0",
+          "start": 1380,
+          "end": 1626,
+          "start_line": 65,
+          "end_line_exclusive": 71,
+          "start_text": "3. 입찰참가자격",
+          "stop_text": "1) 「공공디자인 진흥에 관한 법률」 제18조 및 동법 시행규칙 제4조에 의한 공공디자인 전문회사(업종코드:6484)"
+        },
+        {
+          "doc_id": "D1",
+          "start": 1280,
+          "end": 1733,
+          "start_line": 121,
+          "end_line_exclusive": 135,
+          "start_text": "다. 입찰 참가자격 : 단독입찰만 가능 (공동수급 불가)",
+          "stop_text": "라. 기타사항"
+        },
+        {
+          "doc_id": "D1",
+          "start": 2860,
+          "end": 3033,
+          "start_line": 249,
+          "end_line_exclusive": 281,
+          "start_text": "경쟁입찰 참가자격 등록증 (나라장터)",
+          "stop_text": "평가서류"
+        },
+        {
+          "doc_id": "D1",
+          "start": 16322,
+          "end": 16349,
+          "start_line": 1339,
+          "end_line_exclusive": 1341,
+          "start_text": "1. 입찰 참가자격을 증명하는 서류 사본 1통",
+          "stop_text": "2. 위임장 1부(위임한 경우만 해당한다)"
+        },
+        {
+          "doc_id": "D1",
+          "start": 20179,
+          "end": 22247,
+          "start_line": 1585,
+          "end_line_exclusive": 1889,
+          "start_text": "※ 입찰참가자격의 자격요건을 확인할 수 있는 면허증 / 허가증 / 등록증 등 첨부",
+          "stop_text": "평가항목"
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-138",
+      "labels": {
+        "v2": "0",
+        "v3": "0",
+        "e2": "",
+        "e3": ""
+      },
+      "meta": {
+        "적용계약법": "지방계약법",
+        "업무구분": "일반용역",
+        "계약방법": "제한경쟁",
+        "낙찰방법": "협상에의한계약",
+        "낙찰하한율": null,
+        "배정예산금액": 140100000,
+        "입찰추정가격": 127363636,
+        "소관구분": "기타기관",
+        "공동도급구성방식": null,
+        "정보화사업여부": "미입력",
+        "세부품명번호목록": null,
+        "제한지역코드목록": null,
+        "지역제한여부": "N",
+        "면허업종제한목록": "[기타자유업(행사대행업)(9901)]",
+        "업종제한여부": "Y",
+        "조항호내용": "[판로지원법 시행령] 중기업,소기업,소상공인 제한",
+        "공고게시일자": "20260309",
+        "개찰예정일자": "20260327",
+        "긴급공고여부": "Y",
+        "입찰방법": "전자입찰",
+        "조달방식": "자체조달"
+      },
+      "rule_result": {
+        "record_id": "PPS-DEV-138",
+        "judgments": {
+          "v2": {
+            "위반여부": 0,
+            "근거문구": null
+          },
+          "v3": {
+            "위반여부": 0,
+            "근거문구": null
+          }
+        },
+        "eligibility_sections": 5,
+        "estimated_price": 127363636,
+        "allocated_budget": 140100000,
+        "v2_threshold": 230000000,
+        "v2_special_local_exception": false,
+        "v2_scope": true,
+        "unknown_metadata": [],
+        "unmatched_policy": "0; diagnostic does not prove legal compliance",
+        "candidates": [],
+        "diagnostics": []
+      },
+      "spans": [
+        {
+          "doc_id": "D0",
+          "start": 862,
+          "end": 2656,
+          "start_line": 33,
+          "end_line_exclusive": 201,
+          "start_text": "○ 입찰참가자격 등록, 나라장터 시스템: 정부조달 콜센터(1588-0800)",
+          "stop_text": "입찰참가자격"
+        },
+        {
+          "doc_id": "D0",
+          "start": 2656,
+          "end": 4554,
+          "start_line": 201,
+          "end_line_exclusive": 271,
+          "start_text": "입찰참가자격",
+          "stop_text": "제안서 제출 및 발표"
+        },
+        {
+          "doc_id": "D1",
+          "start": 405,
+          "end": 416,
+          "start_line": 81,
+          "end_line_exclusive": 83,
+          "start_text": "3. 입찰참가자격",
+          "stop_text": "4. 기타사항"
+        },
+        {
+          "doc_id": "D1",
+          "start": 11909,
+          "end": 12032,
+          "start_line": 697,
+          "end_line_exclusive": 701,
+          "start_text": "3. 입찰참가자격 ※아래 자격을 모두 충족하여야 함",
+          "stop_text": "나. 입찰서 제출 마감일 전일까지 【기타자유업(행사대행업)(업종코드9901)】로 나라장터에 입찰참가자격 등록한 업체"
+        },
+        {
+          "doc_id": "D1",
+          "start": 22444,
+          "end": 22475,
+          "start_line": 1451,
+          "end_line_exclusive": 1457,
+          "start_text": "4) 경쟁입찰참가자격 등록증",
+          "stop_text": "5) 공모참가 서약서"
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-165",
+      "labels": {
+        "v2": "0",
+        "v3": "0",
+        "e2": "",
+        "e3": ""
+      },
+      "meta": {
+        "적용계약법": "지방계약법",
+        "업무구분": "일반용역",
+        "계약방법": "제한경쟁",
+        "낙찰방법": "협상에의한계약",
+        "낙찰하한율": null,
+        "배정예산금액": 40000000,
+        "입찰추정가격": 36363636,
+        "소관구분": "지방정부",
+        "공동도급구성방식": null,
+        "정보화사업여부": "미입력",
+        "세부품명번호목록": null,
+        "제한지역코드목록": null,
+        "지역제한여부": "N",
+        "면허업종제한목록": "[학술.연구용역(1169)]",
+        "업종제한여부": "Y",
+        "조항호내용": "[판로지원법 시행령] 소기업,소상공인제한",
+        "공고게시일자": "20260526",
+        "개찰예정일자": "20260608",
+        "긴급공고여부": null,
+        "입찰방법": "직찰",
+        "조달방식": "자체조달"
+      },
+      "rule_result": {
+        "record_id": "PPS-DEV-165",
+        "judgments": {
+          "v2": {
+            "위반여부": 1,
+            "근거문구": "※ 연구용역의 범위 : 최근 5년간 국가, 지방자치단체, 공공기관 등에서 발주한 본 사업과 관련된 유사용역 수행실적으로 3천만원 이상 단일계약건"
+          },
+          "v3": {
+            "위반여부": 0,
+            "근거문구": null
+          }
+        },
+        "eligibility_sections": 6,
+        "estimated_price": 36363636,
+        "allocated_budget": 40000000,
+        "v2_threshold": 230000000,
+        "v2_special_local_exception": false,
+        "v2_scope": true,
+        "unknown_metadata": [],
+        "unmatched_policy": "0; diagnostic does not prove legal compliance",
+        "candidates": [
+          {
+            "doc_id": "D1",
+            "start": 16256,
+            "end": 16336,
+            "text": "※ 연구용역의 범위 : 최근 5년간 국가, 지방자치단체, 공공기관 등에서 발주한 본 사업과 관련된 유사용역 수행실적으로 3천만원 이상 단일계약건",
+            "amount": 30000000,
+            "operator": "이상",
+            "evidence": "※ 연구용역의 범위 : 최근 5년간 국가, 지방자치단체, 공공기관 등에서 발주한 본 사업과 관련된 유사용역 수행실적으로 3천만원 이상 단일계약건",
+            "status": "eligible_experience_lower_bound"
+          }
+        ],
+        "diagnostics": [
+          {
+            "doc_id": "D1",
+            "start": 16180,
+            "end": 16197,
+            "text": "연구용역 수행실적(최근 3년간)",
+            "status": "no_parseable_money"
+          },
+          {
+            "doc_id": "D1",
+            "start": 16410,
+            "end": 16450,
+            "text": "※ 각 실적은 발주처의 확인을 받은 실적증명서【서식 12】를 반드시 첨부",
+            "status": "no_parseable_money"
+          },
+          {
+            "doc_id": "D1",
+            "start": 16461,
+            "end": 16471,
+            "text": "용역이행 실적증명서",
+            "status": "no_parseable_money"
+          },
+          {
+            "doc_id": "D1",
+            "start": 16556,
+            "end": 16573,
+            "text": "용역 입찰참가를 위한 실적 증명",
+            "status": "no_parseable_money"
+          },
+          {
+            "doc_id": "D1",
+            "start": 16601,
+            "end": 16605,
+            "text": "실적내용",
+            "status": "no_parseable_money"
+          },
+          {
+            "doc_id": "D1",
+            "start": 16644,
+            "end": 16652,
+            "text": "수행실적(금액)",
+            "status": "no_parseable_money"
+          },
+          {
+            "doc_id": "D1",
+            "start": 16663,
+            "end": 16665,
+            "text": "실적",
+            "status": "no_parseable_money"
+          },
+          {
+            "doc_id": "D1",
+            "start": 16756,
+            "end": 16846,
+            "text": "주) 1. 용역이행실적은 입찰공고시에 제시한 용역범위 및 기준(금액 등) 등이 조건에 부합되는 실적에 한하며, 공동계약으로 이행하였을 경우 비율과 이행실적을 기재",
+            "status": "no_parseable_money"
+          },
+          {
+            "doc_id": "D1",
+            "start": 16848,
+            "end": 16886,
+            "text": "2. 이행 실적란은 기재 후 투명 접착테이프를 붙여 증명을 받아야 함",
+            "status": "no_parseable_money"
+          },
+          {
+            "doc_id": "D1",
+            "start": 16888,
+            "end": 16930,
+            "text": "3. 위 내용이 포함된 타 기관에서 발행하는 전산용(실적증명원) 서식도 가능",
+            "status": "no_parseable_money"
+          },
+          {
+            "doc_id": "D1",
+            "start": 18809,
+            "end": 18883,
+            "text": "※ 1부를 제외한 제안서에는 업체를 인식할 수 있는 행사 실적 및 일체 표기(회사명, 로고, 마크, 대표자명 등)를 사용해서는 안됨.",
+            "status": "no_parseable_money"
+          }
+        ]
+      },
+      "spans": [
+        {
+          "doc_id": "D0",
+          "start": 909,
+          "end": 1993,
+          "start_line": 53,
+          "end_line_exclusive": 87,
+          "start_text": "3. 입찰 참가자격 ※ 공동수급 불허",
+          "stop_text": "아. 입찰 참가자격을 갖추어 입찰에 참가한 후라도 그 이후에 입찰참가 제한 대상이 되는 사유가 발생할 경우에는 입찰 참가 자격 및 입찰과 관련된 권리 일체를 박탈함"
+        },
+        {
+          "doc_id": "D0",
+          "start": 1993,
+          "end": 2752,
+          "start_line": 87,
+          "end_line_exclusive": 161,
+          "start_text": "아. 입찰 참가자격을 갖추어 입찰에 참가한 후라도 그 이후에 입찰참가 제한 대상이 되는 사유가 발생할 경우에는 입찰 참가 자격 및 입찰과 관련된 권리 일체를 박탈함",
+          "stop_text": "5. 입찰참가자격 관련 자료 및 제안서, 가격제안서 등 제출안내(방문제출)"
+        },
+        {
+          "doc_id": "D0",
+          "start": 2752,
+          "end": 3043,
+          "start_line": 161,
+          "end_line_exclusive": 175,
+          "start_text": "5. 입찰참가자격 관련 자료 및 제안서, 가격제안서 등 제출안내(방문제출)",
+          "stop_text": "- 제안서 제출자의 신분 확인 서류"
+        },
+        {
+          "doc_id": "D1",
+          "start": 1016,
+          "end": 1029,
+          "start_line": 95,
+          "end_line_exclusive": 97,
+          "start_text": "참가자격 및 입찰절차",
+          "stop_text": "1. 참가자격 (아래조건을 모두 충족하는 업체) ※ 공동수급(공동이행) 불가"
+        },
+        {
+          "doc_id": "D1",
+          "start": 1029,
+          "end": 2024,
+          "start_line": 97,
+          "end_line_exclusive": 129,
+          "start_text": "1. 참가자격 (아래조건을 모두 충족하는 업체) ※ 공동수급(공동이행) 불가",
+          "stop_text": "2. 입찰절차"
+        },
+        {
+          "doc_id": "D1",
+          "start": 16123,
+          "end": 19178,
+          "start_line": 1429,
+          "end_line_exclusive": 1815,
+          "start_text": "※ 입찰참가자격의 자격요건을 확인할 수 있는 면허증, 허가증, 등록증 등 사본 첨부",
+          "stop_text": "입찰서제출"
+        }
+      ]
+    }
+  ]
+}

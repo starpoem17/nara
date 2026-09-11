@@ -1,6 +1,9 @@
 """Render the review document from the same criteria used by Predictor."""
 import json
 from pathlib import Path
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from scripts.reporting import write_report
 
 ROOT = Path(__file__).resolve().parents[1]
 criteria = json.loads((ROOT / 'nara/legal_criteria.json').read_text())
@@ -50,4 +53,4 @@ for part in parts:
         text=text.rstrip()+'\n'+part+'\n'
     else:
         text=text.rstrip()+'\n\n'+part+'\n'
-(ROOT/'analysis/feature_legal_criteria_v1.md').write_text(text.lstrip())
+write_report(ROOT/'analysis/feature_legal_criteria_v1.md', text.lstrip())

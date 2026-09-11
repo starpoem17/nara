@@ -49,8 +49,8 @@ Local raw runs, reports, manifests and source snapshots (ignored `output/`):
 ```bash
 uv run --locked python -m unittest discover -s tests
 uv run --locked python scripts/run_experiment.py --output-dir FRESH_DIRECTORY
-uv run --locked python analysis/engine_refactor200/verify.py FRESH_DIRECTORY
-uv run --locked python analysis/engine_refactor200/request_parity.py output/experiments/engine-refactor-before-20260911
+uv run --locked python scripts/verify_engine_refactor.py FRESH_DIRECTORY
+uv run --locked python scripts/check_engine_request_parity.py output/experiments/engine-refactor-before-20260911
 ```
 
 The archived before source is required for differential request verification. Source/data digests are included in comparison.json; raw data and full run snapshots stay local. Historical report/recovery redesign and judgment-conversation consolidation remain separate work.

@@ -1,0 +1,2 @@
+MAX_JOBS=2 HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 uv run --locked python scripts/benchmark_on0.py
+uv run --locked python scripts/summarize_on0.py

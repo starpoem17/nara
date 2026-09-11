@@ -7,6 +7,7 @@ import json
 from pathlib import Path
 import sys
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
+from scripts.reporting import report_path, write_report
 import numpy as np
 from script import write_submission
 from nara.inference import Prediction
@@ -291,10 +292,10 @@ def write_report(result,stats,cache,scores):
         text.append(f'| {names[n]} | {e["nonempty"]} | {e["positive_nonabsence_missing"]} | {s["searched_records"]} |')
     text += ['', 'F1은 이진 라벨 점수이며 근거 완성도를 포함하지 않는다. 원문과 불일치한 근거는 기존 후처리가 제거했으나, 해당 양성 라벨은 유지했다. 실행 검증 통과가 모든 근거의 완성을 뜻하지 않는다.',
              '기존12그룹과 이번5그룹에서 v10/v11/v12/v13은 동일한 그룹·기준인데도 800개 판정 중27개가 달랐다(v10 18개, v11 9개). 따라서 과거 실행 대비 변화에는 그룹 구성 이외의 스케줄·수치 경로 변화도 섞여 있다. unchanged_group_audit.json 참조.', '']
-    (ROOT/'comparison.md').write_text('\n'.join(text))
+    write_report(ROOT/'comparison.md', '\n'.join(text))
     # Fix generic evaluator descriptions that assume a single mode/old system prompt.
     for folder in [ROOT/'main',ROOT/'optimized',ROOT/'optimized_off']+[ROOT/('composite_'+n) for n in ['six_off','six_on256','six_on1024_batch8']]:
-        path=folder/'evaluation.md';s=path.read_text()
+        path=report_path(folder/'evaluation.md');s=path.read_text()
         s=s.replace('실제 시스템 프롬프트는 system_prompt.txt 참조.','그룹별 실제 템플릿은 ../prompt_*.txt 참조.')
         s=s.replace('대화당 6항목.','대화당 최대6항목; v2/v3는 고정 규칙.')
         note='\n모드별 시간·판정 합성 여부·실제 재현 명령은 ../comparison.md 참조.\n'

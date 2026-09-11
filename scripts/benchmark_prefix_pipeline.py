@@ -70,7 +70,7 @@ def main(argv=None, *, verify_reference=True, default_output=Path('analysis/pref
                'nara/prefix_predictor.py', 'nara/compact_predictor.py',
                'nara/compact_criteria.json', 'nara/hypothesis6.py', 'scripts/benchmark_compact200.py',
                'nara/recovery.py', 'scripts/benchmark_grouping_time.py',
-               'scripts/benchmark_hybrid200.py', 'scripts/evaluate_dev.py', 'script.py',
+               'scripts/benchmark_hybrid200.py', 'scripts/evaluate_dev.py', 'scripts/reporting.py', 'script.py',
                'data/dev.jsonl', 'data/항목표.json', 'data/정답스키마_디코딩.json']
     if not verify_reference:
         sources.append('scripts/run_experiment.py')

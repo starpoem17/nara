@@ -4,6 +4,9 @@ import csv
 import hashlib
 import json
 from pathlib import Path
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from scripts.reporting import write_report
 
 from sklearn.metrics import accuracy_score, f1_score, precision_score, recall_score
 
@@ -154,7 +157,7 @@ def evaluate(run_dir, labels_path, input_path, expected_records):
         '', '## 재현', '', '```bash', command,
         f'uv run --locked python -m scripts.evaluate_dev --run-dir {run}', '```', '',
         '코드/프롬프트 스냅샷: source/. 실행 설정: report.json. 오탐·미탐 원문 근거: errors.csv.']
-    (run / 'evaluation.md').write_text('\n'.join(lines) + '\n')
+    write_report(run / 'evaluation.md', '\n'.join(lines) + '\n')
     print(json.dumps({k: v for k, v in result.items() if k not in ('runtime', 'per_item', 'sha256')}, ensure_ascii=False, indent=2))
 
 

@@ -1,6 +1,8 @@
 # Completion-driven scheduling and prefill budgets
 
-Status: complete. No GPU job active. Main report `analysis/continuous200/comparison.md`, machine-readable comparison/validation JSON, per-feature and input-length CSVs. Frozen executed sources in `plan.json` + `source/`; only post-run benchmark report metadata patch is listed in `postrun_changes.json` (no inference change). Current supplemental sources/digests in `analysis_manifest.json` + `analysis_source/`.
+Artifact base: `analysis/continuous200/`; unqualified JSON/CSV/log/source paths below use this base. Detailed Markdown reports: [index](../reports/README.md).
+
+Status: complete. No GPU job active. Main report `docs/reports/analysis/continuous200/comparison.md`, machine-readable comparison/validation JSON, per-feature and input-length CSVs. Frozen executed sources in `plan.json` + `source/`; only post-run benchmark report metadata patch is listed in `postrun_changes.json` (no inference change). Current supplemental sources/digests in `analysis_manifest.json` + `analysis_source/`.
 
 ## Implementation
 

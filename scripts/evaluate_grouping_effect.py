@@ -7,6 +7,9 @@ import csv
 import hashlib
 import json
 from pathlib import Path
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from scripts.reporting import write_report
 from sklearn.metrics import f1_score
 
 ITEMS=[f'v{i}' for i in range(1,25)]
@@ -130,7 +133,7 @@ def main():
         '보충: 구성별 정상 출력 전체를 대상으로 한 점수는 effect.json의 supplementary_all_successful에 저장했다. 9그룹만 분모가 31이라 이 보충 점수끼리 순위를 비교하지 않는다.',
         '파일: [수치·출처·입력 해시](effect.json), [항목별 결과](effect_per_item.csv), [일괄 대비 바뀐 판정](paired_changes.csv), [시간 실측 보고서](comparison.md).',
         '재현: `uv run --locked python scripts/evaluate_grouping_effect.py` (새 모델 호출 없음).']
-    (out/'effect.md').write_text('\n\n'.join(lines).replace('|\n\n|','|\n|')+'\n')
+    write_report(out/'effect.md', '\n\n'.join(lines).replace('|\n\n|','|\n|')+'\n')
     print(json.dumps({name:{k:v for k,v in row.items() if k!='per_item'} for name,row in results.items()},ensure_ascii=False,indent=2))
 
 

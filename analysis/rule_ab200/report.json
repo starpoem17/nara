@@ -1,0 +1,155 @@
+{
+  "records": 200,
+  "scope": "A+B only; no C, threshold, monetary parsing, v2 scope, or v3 denominator change; no Gemma rerun",
+  "baseline": "analysis/prefix200/rules.jsonl",
+  "before": {
+    "v2": {
+      "tp": 5,
+      "fp": 3,
+      "fn": 2,
+      "tn": 190,
+      "precision": 0.625,
+      "recall": 0.7142857142857143,
+      "f1": 0.6666666666666666,
+      "errors": [
+        {
+          "id": "PPS-DEV-053",
+          "expected": 1,
+          "predicted": 0
+        },
+        {
+          "id": "PPS-DEV-059",
+          "expected": 0,
+          "predicted": 1
+        },
+        {
+          "id": "PPS-DEV-062",
+          "expected": 1,
+          "predicted": 0
+        },
+        {
+          "id": "PPS-DEV-099",
+          "expected": 0,
+          "predicted": 1
+        },
+        {
+          "id": "PPS-DEV-165",
+          "expected": 0,
+          "predicted": 1
+        }
+      ]
+    },
+    "v3": {
+      "tp": 6,
+      "fp": 0,
+      "fn": 2,
+      "tn": 192,
+      "precision": 1.0,
+      "recall": 0.75,
+      "f1": 0.8571428571428571,
+      "errors": [
+        {
+          "id": "PPS-DEV-053",
+          "expected": 1,
+          "predicted": 0
+        },
+        {
+          "id": "PPS-DEV-062",
+          "expected": 1,
+          "predicted": 0
+        }
+      ]
+    }
+  },
+  "after": {
+    "v2": {
+      "tp": 5,
+      "fp": 1,
+      "fn": 2,
+      "tn": 192,
+      "precision": 0.8333333333333334,
+      "recall": 0.7142857142857143,
+      "f1": 0.7692307692307693,
+      "errors": [
+        {
+          "id": "PPS-DEV-053",
+          "expected": 1,
+          "predicted": 0
+        },
+        {
+          "id": "PPS-DEV-059",
+          "expected": 0,
+          "predicted": 1
+        },
+        {
+          "id": "PPS-DEV-062",
+          "expected": 1,
+          "predicted": 0
+        }
+      ]
+    },
+    "v3": {
+      "tp": 6,
+      "fp": 0,
+      "fn": 2,
+      "tn": 192,
+      "precision": 1.0,
+      "recall": 0.75,
+      "f1": 0.8571428571428571,
+      "errors": [
+        {
+          "id": "PPS-DEV-053",
+          "expected": 1,
+          "predicted": 0
+        },
+        {
+          "id": "PPS-DEV-062",
+          "expected": 1,
+          "predicted": 0
+        }
+      ]
+    }
+  },
+  "changes": [
+    {
+      "id": "PPS-DEV-099",
+      "item": "v2",
+      "label": 0,
+      "before": {
+        "위반여부": 1,
+        "근거문구": "※ 공고일 전일 기준, 최근 3년 이내 단일 건으로 5천만원 이상(부가세 포함)의 수행실적 기재"
+      },
+      "after": {
+        "위반여부": 0,
+        "근거문구": null
+      }
+    },
+    {
+      "id": "PPS-DEV-165",
+      "item": "v2",
+      "label": 0,
+      "before": {
+        "위반여부": 1,
+        "근거문구": "※ 연구용역의 범위 : 최근 5년간 국가, 지방자치단체, 공공기관 등에서 발주한 본 사업과 관련된 유사용역 수행실적으로 3천만원 이상 단일계약건"
+      },
+      "after": {
+        "위반여부": 0,
+        "근거문구": null
+      }
+    }
+  ],
+  "validation": {
+    "open_data_identical": true,
+    "open_labels_identical": true,
+    "evidence_valid": true,
+    "unit_tests_passed": 56
+  },
+  "caveat": "Rules revised after examining this dev set; scores are regression measurements, not independent generalization estimates. Historical benchmark freeze hashes intentionally unchanged.",
+  "sha256": {
+    "nara/hypothesis6.py": "1747130daecb987366e156322d952a30cd8549ebb1291cd68c8a21728220a654",
+    "tests/test_hypothesis6.py": "e08ac17c702a3609c63544c8b66885cd0066f4d6bbd538078994fc6f36a1b993",
+    "data/dev.jsonl": "5507f5ab0ba53b708f87211ed050dbe531b48a626ace6084c3ccaefb53147534",
+    "data/dev_labels.csv": "84c79302ac190b45b2487ec8e02aab73e59071ee745828e813a7db96d3a97a35",
+    "analysis/prefix200/rules.jsonl": "092874a759e22ce640fb09cba4fb6e93bd0f229603c382f97938ec0f731d187d"
+  }
+}

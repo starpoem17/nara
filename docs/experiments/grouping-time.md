@@ -1,6 +1,6 @@
 # Grouping latency benchmark
 
-Measured 2026-09-10. [Human report](../../analysis/grouping_time32/comparison.md), [raw measurements](../../analysis/grouping_time32/report.json), [selection and prompts](../../analysis/grouping_time32/manifest.json).
+Measured 2026-09-10. [Human report](../reports/analysis/grouping_time32/comparison.md), [raw measurements](../../analysis/grouping_time32/report.json), [selection and prompts](../../analysis/grouping_time32/manifest.json).
 
 - Original benchmark measured timing without reading labels; a later frozen-prediction evaluation is linked below. RTX 5090, Gemma 4 26B A4B NVFP4, thinking ON (1024 budget), output 2048, context 32768, batch 8, optional RAG (max 2 rounds), one retry. BGE and Gemma co-resident.
 - Same 32 notices in original order, sampled at length-stratum midpoints from 179/200 notices that fit every configuration. The 21 excluded long notices and hidden evaluation distribution are not covered.
@@ -26,7 +26,7 @@ The earlier dev200 thinking result used a different prompt and population; do no
 
 ## Post-hoc grouping effect
 
-[Effect report](../../analysis/grouping_time32/effect.md), [machine-readable scores](../../analysis/grouping_time32/effect.json), [per-item results](../../analysis/grouping_time32/effect_per_item.csv).
+[Effect report](../reports/analysis/grouping_time32/effect.md), [machine-readable scores](../../analysis/grouping_time32/effect.json), [per-item results](../../analysis/grouping_time32/effect_per_item.csv).
 
 - Evaluated frozen traces against dev labels after the timing run; no new inference or prompt tuning. Main comparison uses the same 31 notices successful in all four configurations (28 positive labels, 5 items with no positives); nine-group failure PPS-DEV-085 excluded from every main score. Zero-denominator F1=0; all 24 items included.
 - Macro F1, 1/7/9/12 groups: .2431/.2590/.3287/.3597. Twelve groups improves TP 7→15 and FN 21→13, but FP 12→31; whole-notice exact matches fall 13→10. Seven/nine groups' micro F1 falls despite macro F1 increasing. Small selected sample; no generalization or evidence-quality claim.

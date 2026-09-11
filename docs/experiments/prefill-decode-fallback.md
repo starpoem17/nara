@@ -1,8 +1,10 @@
 # Prefill/decode probes and historical batch fallback
 
+Artifact base: `analysis/prefill_decode_probe/`; unqualified JSON/CSV/log/source paths below use this base. Detailed Markdown reports: [index](../reports/README.md).
+
 Status: complete, historical mixed-five comparison. `uv run --locked python scripts/run_batch_fallback.py --output-dir NEW_OUTPUT_DIR` retains its batch8 barrier, OFF4groups + ON1024 six-feature group and H6 rules. The earlier user direction to stop continuous refill was superseded by the authorized twelve-group pipeline experiment and its promotion to default. Current default: `uv run --locked python scripts/run_experiment.py`; see [Prefix pipeline](prefix-pipeline.md).
 
-Artifacts: `analysis/prefill_decode_probe/report.md`, summary.json, probes.json (selected tokens/top10 logprobs), plan.json/targets.json, source/, validation.json. Diagnostic scripts `probe_prefill_decode.py`, `summarize_prefill_decode.py`.
+Artifacts: `docs/reports/analysis/prefill_decode_probe/report.md`, summary.json, probes.json (selected tokens/top10 logprobs), plan.json/targets.json, source/, validation.json. Diagnostic scripts `probe_prefill_decode.py`, `summarize_prefill_decode.py`.
 
 Test1 repeated same24 barrier vs continuous:24/24 raw output differences,6/144 label flips,63.952s vs60.612s. This time initial8 also differ, unlike previous diagnosis; API submission timing/internal prefill batching confounds exclusive attribution to completion waiting. Not a new full200 quality estimate.
 

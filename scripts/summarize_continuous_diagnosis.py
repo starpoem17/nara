@@ -5,6 +5,7 @@ import json
 from pathlib import Path
 import sys
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
+from scripts.reporting import write_report
 import numpy as np
 from nara.hybrid_experiment import THINK
 from scripts.summarize_continuous import scores
@@ -108,6 +109,6 @@ def main():
         f'이번 계측된 기존 방식도 과거 동일24건과 {legacy24_flips}개 판정이 다르다. 원래200건 비교는 별도 엔진 실행이며 이번 raw 관측 훅도CPU 제출 시간을 추가한다. warm/계측/내부스케줄 효과를 모두 분리한 것이 아니므로 과거26개 변화 전부가 완료 즉시 보충 때문이라고 결론내리지 않는다.',
         '양성41개뿐인6항목에서는 TP3개 감소와 FP5개 증가만으로 Micro F1이.4865→.3947로 바뀐다. v1은양성7개 중TP4→2로F1 .7273→.4000. 드문 양성에 대한F1의 민감성이 큰 점수 차이를 확대한다. 이는 오류를 무시할 이유가 아니라 지표와 실제변화 개수를 함께 봐야 하는 이유다.',
         '다음 설정 비교는 배치/순서/엔진 조건과 반복 분산을 함께 기록해야 한다. 동일한 스케줄의 재현성을 높이는 설정과, 서로 다른 배치에서도 출력을 같게 만드는 batch invariance는 별개다. vLLM문서는 offline multiprocessing 비활성화 또는batch invariance를 제안하지만 현재Gemma4 NVFP4 경로의호환성/속도는 여기서 검증하지 않았으며 운영 설정도 변경하지 않았다. 정확도 안정성을 확인하기 전1.8% 속도 차이만으로 전략을 확정할 근거는 부족하다.', '']
-    (ROOT/'report.md').write_text('\n'.join(text))
+    write_report(ROOT/'report.md', '\n'.join(text))
     print(json.dumps({'historical':{k:v for k,v in history.items() if k not in ['old_quality','new_quality','features']},'controls':comparisons},ensure_ascii=False,indent=2))
 if __name__=='__main__':main()

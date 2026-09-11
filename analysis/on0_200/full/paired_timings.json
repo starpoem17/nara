@@ -1,0 +1,5802 @@
+[
+  {
+    "ids": [
+      "PPS-DEV-01",
+      "PPS-DEV-02"
+    ],
+    "order": [
+      "off",
+      "on0"
+    ],
+    "conditions": {
+      "off": {
+        "seconds": 18.554644213989377,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.6295003839913988,
+            "model_seconds": 1.6201008310017642,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.629488260994549
+          },
+          {
+            "phase": "cached",
+            "seconds": 16.924400813004468,
+            "model_seconds": 16.888799776002998,
+            "retrieval_seconds": 0.0,
+            "model_batches": 2,
+            "retrieval_batches": 0,
+            "total_seconds": 16.92438400100218
+          }
+        ]
+      },
+      "on0": {
+        "seconds": 2.485076762997778,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.463064886003849,
+            "model_seconds": 1.454094057000475,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.463050589998602
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.0212625169951934,
+            "model_seconds": 0.9950381630042102,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.0212435809953604
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-03",
+      "PPS-DEV-04"
+    ],
+    "order": [
+      "on0",
+      "off"
+    ],
+    "conditions": {
+      "on0": {
+        "seconds": 4.243945490990882,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 3.0598535680037457,
+            "model_seconds": 3.041169332995196,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 3.059839883004315
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.1831636239949148,
+            "model_seconds": 1.1276501899992581,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.1831420929956948
+          }
+        ]
+      },
+      "off": {
+        "seconds": 4.915939740996691,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 3.779110067989677,
+            "model_seconds": 3.7587186580058187,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 3.779096882994054
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.136081534990808,
+            "model_seconds": 1.0794125139946118,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.1360616980091436
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-05",
+      "PPS-DEV-06"
+    ],
+    "order": [
+      "off",
+      "on0"
+    ],
+    "conditions": {
+      "off": {
+        "seconds": 3.9856759649992455,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 2.847251565006445,
+            "model_seconds": 2.8312072830012767,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 2.847238611007924
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.1376671949983574,
+            "model_seconds": 1.0910235520132119,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.1376461960026063
+          }
+        ]
+      },
+      "on0": {
+        "seconds": 4.331367288003094,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 3.1963072799990186,
+            "model_seconds": 3.179606874997262,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 3.1962938539945753
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.1343031450087437,
+            "model_seconds": 1.086745170992799,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.134285070002079
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-07",
+      "PPS-DEV-08"
+    ],
+    "order": [
+      "on0",
+      "off"
+    ],
+    "conditions": {
+      "on0": {
+        "seconds": 3.9169118650024757,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 2.744456151005579,
+            "model_seconds": 2.7278738509921823,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 2.744444708994706
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.1717944109987002,
+            "model_seconds": 1.1327834219991928,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.1717751740070526
+          }
+        ]
+      },
+      "off": {
+        "seconds": 4.171503763005603,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 3.0111843009945005,
+            "model_seconds": 2.9934605980088236,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 3.0111706550087547
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.1595683790073963,
+            "model_seconds": 1.1132483940018574,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.1595490019972203
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-09",
+      "PPS-DEV-10"
+    ],
+    "order": [
+      "off",
+      "on0"
+    ],
+    "conditions": {
+      "off": {
+        "seconds": 2.802704033005284,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.846167352006887,
+            "model_seconds": 1.8353192070062505,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.8461537359980866
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.9557903770037228,
+            "model_seconds": 0.925422587999492,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.9557714219990885
+          }
+        ]
+      },
+      "on0": {
+        "seconds": 2.827146648996859,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.8124488270113943,
+            "model_seconds": 1.8030580149934394,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.81243632400583
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.0139686999900732,
+            "model_seconds": 0.9852841510000871,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.0139495530020213
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-11",
+      "PPS-DEV-12"
+    ],
+    "order": [
+      "on0",
+      "off"
+    ],
+    "conditions": {
+      "on0": {
+        "seconds": 4.90423440199811,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 3.6737490889936453,
+            "model_seconds": 3.653259868005989,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 3.6737362049898366
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.2297284590022173,
+            "model_seconds": 1.17403511700104,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.2297100650030188
+          }
+        ]
+      },
+      "off": {
+        "seconds": 5.239225465003983,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 4.007209415998659,
+            "model_seconds": 3.9874844330042833,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 4.007194377001724
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.2312650559906615,
+            "model_seconds": 1.174267966998741,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.2312436759966658
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-13",
+      "PPS-DEV-14"
+    ],
+    "order": [
+      "off",
+      "on0"
+    ],
+    "conditions": {
+      "off": {
+        "seconds": 3.513111445994582,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 2.582572422994417,
+            "model_seconds": 2.5720440150034847,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 2.5825586970022414
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.9297812069999054,
+            "model_seconds": 0.901491258002352,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.9297631819936214
+          }
+        ]
+      },
+      "on0": {
+        "seconds": 2.3732498309982475,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.429266623003059,
+            "model_seconds": 1.4199930019967724,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.4292554819985526
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.9433190999989165,
+            "model_seconds": 0.921794919995591,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.9433009559870698
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-15",
+      "PPS-DEV-16"
+    ],
+    "order": [
+      "on0",
+      "off"
+    ],
+    "conditions": {
+      "on0": {
+        "seconds": 3.2688589809986297,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 2.1772715949919075,
+            "model_seconds": 2.162890558000072,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 2.1772599020041525
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.0909304529923247,
+            "model_seconds": 1.0590778349869652,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.0909119179996196
+          }
+        ]
+      },
+      "off": {
+        "seconds": 3.3051648599939654,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 2.1929550080094486,
+            "model_seconds": 2.1798056650004582,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 2.1929428250005003
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.111545773994294,
+            "model_seconds": 1.0798176230018726,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.1115274890034925
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-17",
+      "PPS-DEV-18"
+    ],
+    "order": [
+      "off",
+      "on0"
+    ],
+    "conditions": {
+      "off": {
+        "seconds": 4.344549569999799,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 3.2142487980017904,
+            "model_seconds": 3.196501755999634,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 3.2142353130038828
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.129545119998511,
+            "model_seconds": 1.0820129490020918,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.1295261539926287
+          }
+        ]
+      },
+      "on0": {
+        "seconds": 4.4358487259887625,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 3.2486963830015156,
+            "model_seconds": 3.232627400007914,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 3.2486828370019794
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.1863959899928886,
+            "model_seconds": 1.1388725269935094,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.1863759319967357
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-19",
+      "PPS-DEV-20"
+    ],
+    "order": [
+      "on0",
+      "off"
+    ],
+    "conditions": {
+      "on0": {
+        "seconds": 2.7570841150009073,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.7530436270026257,
+            "model_seconds": 1.740343726996798,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.753029419996892
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.0032967389997793,
+            "model_seconds": 0.9673593760089716,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.003275738999946
+          }
+        ]
+      },
+      "off": {
+        "seconds": 2.7322817370004486,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.7329269959882367,
+            "model_seconds": 1.7198709010117454,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.7329145219991915
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.9986193390068365,
+            "model_seconds": 0.9635380179970525,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.9986007929983316
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-21",
+      "PPS-DEV-22"
+    ],
+    "order": [
+      "off",
+      "on0"
+    ],
+    "conditions": {
+      "off": {
+        "seconds": 2.3943613570008893,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.4312022410013014,
+            "model_seconds": 1.4220759919990087,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.4311896870058263
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.9624659130058717,
+            "model_seconds": 0.9390195140003925,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.9624479480116861
+          }
+        ]
+      },
+      "on0": {
+        "seconds": 2.3706348790001357,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.4225225650006905,
+            "model_seconds": 1.41406926100899,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.422509589989204
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.9471784860070329,
+            "model_seconds": 0.9227480340050533,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.9471608430030756
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-23",
+      "PPS-DEV-24"
+    ],
+    "order": [
+      "on0",
+      "off"
+    ],
+    "conditions": {
+      "on0": {
+        "seconds": 2.545308437998756,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.5225523029948818,
+            "model_seconds": 1.5132294009963516,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.5225397989997873
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.0220586440118495,
+            "model_seconds": 0.9981493200029945,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.022035139001673
+          }
+        ]
+      },
+      "off": {
+        "seconds": 2.439531331008766,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.5073716879996937,
+            "model_seconds": 1.496946097991895,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.507359515002463
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.9314885519997915,
+            "model_seconds": 0.906977367005311,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.9314685330027714
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-25",
+      "PPS-DEV-26"
+    ],
+    "order": [
+      "off",
+      "on0"
+    ],
+    "conditions": {
+      "off": {
+        "seconds": 5.119393199012848,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 4.062495880003553,
+            "model_seconds": 4.047238376006135,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 4.062481802990078
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.0561419789883075,
+            "model_seconds": 1.016482859995449,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.0561226620047819
+          }
+        ]
+      },
+      "on0": {
+        "seconds": 4.2734234320087126,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 3.2088032489991747,
+            "model_seconds": 3.1963213230046676,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 3.2087896919983905
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.0638638910022564,
+            "model_seconds": 1.0240773519908544,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.0638437729940051
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-27",
+      "PPS-DEV-28"
+    ],
+    "order": [
+      "on0",
+      "off"
+    ],
+    "conditions": {
+      "on0": {
+        "seconds": 6.077517954996438,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 4.770992060002754,
+            "model_seconds": 4.744282372994348,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 4.770974537008442
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.3057656549935928,
+            "model_seconds": 1.2284505260031438,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.3057447650062386
+          }
+        ]
+      },
+      "off": {
+        "seconds": 6.0023469680018025,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 4.717819897996378,
+            "model_seconds": 4.691220350010553,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 4.717806230997667
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.283779424004024,
+            "model_seconds": 1.2064492810022784,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.2837601880019065
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-29",
+      "PPS-DEV-30"
+    ],
+    "order": [
+      "off",
+      "on0"
+    ],
+    "conditions": {
+      "off": {
+        "seconds": 3.8557380629936233,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 2.829000931000337,
+            "model_seconds": 2.819714548997581,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 2.828988127002958
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.0259861800004728,
+            "model_seconds": 0.9970064959925367,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.025967003995902
+          }
+        ]
+      },
+      "on0": {
+        "seconds": 2.6893334110063734,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.5729263510002056,
+            "model_seconds": 1.5641566590056755,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.5729123349883594
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.1156282649899367,
+            "model_seconds": 1.0868230210035108,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.1156061729998328
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-31",
+      "PPS-DEV-32"
+    ],
+    "order": [
+      "on0",
+      "off"
+    ],
+    "conditions": {
+      "on0": {
+        "seconds": 2.6751050940074492,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.656627831995138,
+            "model_seconds": 1.6444147470028838,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.656615789004718
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.017726619989844,
+            "model_seconds": 0.9881906130030984,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.017703817007714
+          }
+        ]
+      },
+      "off": {
+        "seconds": 3.1981059899990214,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 2.2068974010035163,
+            "model_seconds": 2.194401310000103,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 2.206884576007724
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.990307282001595,
+            "model_seconds": 0.9578843979979865,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.99028866700246
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-033",
+      "PPS-DEV-034"
+    ],
+    "order": [
+      "off",
+      "on0"
+    ],
+    "conditions": {
+      "off": {
+        "seconds": 2.765910495989374,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.7133300040004542,
+            "model_seconds": 1.7031140030012466,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.713317529996857
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.0518278859963175,
+            "model_seconds": 1.0217576669965638,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.0518079489993397
+          }
+        ]
+      },
+      "on0": {
+        "seconds": 2.822850495009334,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.741062475994113,
+            "model_seconds": 1.7295042640034808,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.7410493610077538
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.0810462340014055,
+            "model_seconds": 1.0503412450052565,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.0810271879890934
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-035",
+      "PPS-DEV-036"
+    ],
+    "order": [
+      "on0",
+      "off"
+    ],
+    "conditions": {
+      "on0": {
+        "seconds": 1.8935585470026126,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 0.8942689140094444,
+            "model_seconds": 0.8896425519924378,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.8942558400012786
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.9985492700070608,
+            "model_seconds": 0.9847355750098359,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.9985304739966523
+          }
+        ]
+      },
+      "off": {
+        "seconds": 3.719087136996677,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 2.5072522629925516,
+            "model_seconds": 2.502797353998176,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 2.507238727004733
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.2110956240067026,
+            "model_seconds": 1.1955747659958433,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.2110766690020682
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-037",
+      "PPS-DEV-038"
+    ],
+    "order": [
+      "off",
+      "on0"
+    ],
+    "conditions": {
+      "off": {
+        "seconds": 2.1646508460107725,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.2323222619888838,
+            "model_seconds": 1.222834170999704,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.2323100990033709
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.9315767099906225,
+            "model_seconds": 0.9078411419905024,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.9315590970072662
+          }
+        ]
+      },
+      "on0": {
+        "seconds": 2.233679240991478,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.2799487440061057,
+            "model_seconds": 1.2722753400012152,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.27993477700511
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.9529936210019514,
+            "model_seconds": 0.9292818389949389,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.9529722209990723
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-039",
+      "PPS-DEV-040"
+    ],
+    "order": [
+      "on0",
+      "off"
+    ],
+    "conditions": {
+      "on0": {
+        "seconds": 2.1022372389998054,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.162564026992186,
+            "model_seconds": 1.1544086700014304,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.162550791996182
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.9389208360080374,
+            "model_seconds": 0.9179840200085891,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.9389014299958944
+          }
+        ]
+      },
+      "off": {
+        "seconds": 2.6958846040070057,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.7691561859974172,
+            "model_seconds": 1.7623855919955531,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.7691429420083296
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.9259879549936159,
+            "model_seconds": 0.9033849429979455,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.9259706119919429
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-041",
+      "PPS-DEV-042"
+    ],
+    "order": [
+      "off",
+      "on0"
+    ],
+    "conditions": {
+      "off": {
+        "seconds": 2.897343702992657,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.4100754319952102,
+            "model_seconds": 1.4048942489898764,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.410063199000433
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.4865251529990928,
+            "model_seconds": 1.4709754310024437,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.4865038830030244
+          }
+        ]
+      },
+      "on0": {
+        "seconds": 2.672901564001222,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.7963291399937589,
+            "model_seconds": 1.790003608999541,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.7963149120041635
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.8755645150085911,
+            "model_seconds": 0.8582354940008372,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.8755462410044856
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-043",
+      "PPS-DEV-044"
+    ],
+    "order": [
+      "on0",
+      "off"
+    ],
+    "conditions": {
+      "on0": {
+        "seconds": 3.3401564990053885,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 2.1718885580048664,
+            "model_seconds": 2.1589634780102642,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 2.1718759950017557
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.1675170590024209,
+            "model_seconds": 1.1298968060000334,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.167492343010963
+          }
+        ]
+      },
+      "off": {
+        "seconds": 4.648937004007166,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 2.124662485002773,
+            "model_seconds": 2.1090914540109225,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 2.124651003992767
+          },
+          {
+            "phase": "cached",
+            "seconds": 2.5236021649907343,
+            "model_seconds": 2.49076915900514,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 2.523582756999531
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-045",
+      "PPS-DEV-046"
+    ],
+    "order": [
+      "off",
+      "on0"
+    ],
+    "conditions": {
+      "off": {
+        "seconds": 2.3379858849948505,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.410914052001317,
+            "model_seconds": 1.4007016899995506,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.4109008979867212
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.9263162310089683,
+            "model_seconds": 0.901124007999897,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.9262952920107637
+          }
+        ]
+      },
+      "on0": {
+        "seconds": 2.344349446007982,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.396583843001281,
+            "model_seconds": 1.386362603996531,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.3965700770058902
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.9470056839927565,
+            "model_seconds": 0.9221251309936633,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.946987959992839
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-047",
+      "PPS-DEV-048"
+    ],
+    "order": [
+      "on0",
+      "off"
+    ],
+    "conditions": {
+      "on0": {
+        "seconds": 2.405804886002443,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.4982327210018411,
+            "model_seconds": 1.4935981230082689,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.4982189150032355
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.9068339570076205,
+            "model_seconds": 0.8915040229912847,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.906813768990105
+          }
+        ]
+      },
+      "off": {
+        "seconds": 2.4071209949906915,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.5214034740056377,
+            "model_seconds": 1.5161177219997626,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.5213899280061014
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.8849773099937011,
+            "model_seconds": 0.8678597090038238,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.8849586239957716
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-049",
+      "PPS-DEV-050"
+    ],
+    "order": [
+      "off",
+      "on0"
+    ],
+    "conditions": {
+      "off": {
+        "seconds": 2.9545847160043195,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 2.019425099992077,
+            "model_seconds": 2.011210533004487,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 2.019411785004195
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.9344099349982571,
+            "model_seconds": 0.9092061419942183,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.9343916310026543
+          }
+        ]
+      },
+      "on0": {
+        "seconds": 3.3722423540020827,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 2.3918548680085223,
+            "model_seconds": 2.384292495000409,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 2.391840801006765
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.9796410510025453,
+            "model_seconds": 0.9540258089982672,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.9796208839979954
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-051",
+      "PPS-DEV-052"
+    ],
+    "order": [
+      "on0",
+      "off"
+    ],
+    "conditions": {
+      "on0": {
+        "seconds": 2.927966949995607,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.9452794940007152,
+            "model_seconds": 1.9356454680091701,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.9452658490044996
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.9819388570031151,
+            "model_seconds": 0.9555440289987018,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.9819197220058413
+          }
+        ]
+      },
+      "off": {
+        "seconds": 2.8311320319917286,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.8176506029994925,
+            "model_seconds": 1.8092089560086606,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.8176377589988988
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.0127457449998474,
+            "model_seconds": 0.9860613479977474,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.0127267990028486
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-053",
+      "PPS-DEV-054"
+    ],
+    "order": [
+      "off",
+      "on0"
+    ],
+    "conditions": {
+      "off": {
+        "seconds": 2.671424318003119,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.7553542249952443,
+            "model_seconds": 1.7483737660077168,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.7553411099943332
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.9153134590014815,
+            "model_seconds": 0.894289474003017,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.9152935019956203
+          }
+        ]
+      },
+      "on0": {
+        "seconds": 2.4606914190080715,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.5141198340133997,
+            "model_seconds": 1.506040413005394,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.5141054470004747
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.9458228659932502,
+            "model_seconds": 0.9241290019999724,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.9458050019893562
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-055",
+      "PPS-DEV-056"
+    ],
+    "order": [
+      "on0",
+      "off"
+    ],
+    "conditions": {
+      "on0": {
+        "seconds": 2.3833792509976774,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.3256005229923176,
+            "model_seconds": 1.3171049939992372,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.3255871369910892
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.0570430949883303,
+            "model_seconds": 1.029995251010405,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.0570249400043394
+          }
+        ]
+      },
+      "off": {
+        "seconds": 2.19727480300935,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.2916453189973254,
+            "model_seconds": 1.2833529449999332,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.2916270949936006
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.9048772700043628,
+            "model_seconds": 0.8768421870045131,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.9048601269896608
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-057",
+      "PPS-DEV-058"
+    ],
+    "order": [
+      "off",
+      "on0"
+    ],
+    "conditions": {
+      "off": {
+        "seconds": 2.3221681309951236,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.417767906008521,
+            "model_seconds": 1.412543682003161,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.417755873000715
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.9036710840009619,
+            "model_seconds": 0.8873329830094008,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.9036493829917163
+          }
+        ]
+      },
+      "on0": {
+        "seconds": 2.412857011993765,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.4912526289990637,
+            "model_seconds": 1.4857281470031012,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.4912399649911094
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.9208661559969187,
+            "model_seconds": 0.9049359369964805,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.9208470290031983
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-059",
+      "PPS-DEV-060"
+    ],
+    "order": [
+      "on0",
+      "off"
+    ],
+    "conditions": {
+      "on0": {
+        "seconds": 2.821035786997527,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.947812468992197,
+            "model_seconds": 1.9428488289995585,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.9477947060076986
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.8722777379880426,
+            "model_seconds": 0.8570883429929381,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.872257509996416
+          }
+        ]
+      },
+      "off": {
+        "seconds": 2.7802236630086554,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.9006401139922673,
+            "model_seconds": 1.8962473650026368,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.9006276500003878
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.8788453719898826,
+            "model_seconds": 0.8641156669909833,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.8788266959891189
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-061",
+      "PPS-DEV-062"
+    ],
+    "order": [
+      "off",
+      "on0"
+    ],
+    "conditions": {
+      "off": {
+        "seconds": 2.3410944729985204,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.4810961840121308,
+            "model_seconds": 1.477157856003032,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.481084220999037
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.8592629469931126,
+            "model_seconds": 0.8486045030003879,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.8592444419919048
+          }
+        ]
+      },
+      "on0": {
+        "seconds": 2.6079997640044894,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.7333061469980748,
+            "model_seconds": 1.7295291739865206,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.733291869997629
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.8739367340022,
+            "model_seconds": 0.8618467890046304,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.8739178980031284
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-063",
+      "PPS-DEV-064"
+    ],
+    "order": [
+      "on0",
+      "off"
+    ],
+    "conditions": {
+      "on0": {
+        "seconds": 2.771960757992929,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.757612939007231,
+            "model_seconds": 1.7463794259965653,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.757597710005939
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.013470858000801,
+            "model_seconds": 0.9837827769952128,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.0134497779945377
+          }
+        ]
+      },
+      "off": {
+        "seconds": 3.2682298149884446,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 2.2548142400046345,
+            "model_seconds": 2.243366791997687,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 2.254800864000572
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.01265235900064,
+            "model_seconds": 0.9793375119916163,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.012632551995921
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-065",
+      "PPS-DEV-066"
+    ],
+    "order": [
+      "off",
+      "on0"
+    ],
+    "conditions": {
+      "off": {
+        "seconds": 4.433186677008052,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 3.2851667200011434,
+            "model_seconds": 3.2708578830061015,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 3.285152934011421
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.1472635240061209,
+            "model_seconds": 1.1056363160023466,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.1472447590058437
+          }
+        ]
+      },
+      "on0": {
+        "seconds": 4.702630774001591,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 3.4768430800031638,
+            "model_seconds": 3.4634806159883738,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 3.476829124003416
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.2250296590063954,
+            "model_seconds": 1.182209973994759,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.2250098910008091
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-067",
+      "PPS-DEV-068"
+    ],
+    "order": [
+      "on0",
+      "off"
+    ],
+    "conditions": {
+      "on0": {
+        "seconds": 1.9802119079977274,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.0736805299966363,
+            "model_seconds": 1.0673627669893904,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.0736674859945197
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.9057854339916958,
+            "model_seconds": 0.8873457470035646,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.9057667890010634
+          }
+        ]
+      },
+      "off": {
+        "seconds": 1.960185204006848,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.0659511429985287,
+            "model_seconds": 1.0600839219987392,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.0659395010006847
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.8935015640017809,
+            "model_seconds": 0.8756756270013284,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.8934844210016308
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-069",
+      "PPS-DEV-070"
+    ],
+    "order": [
+      "off",
+      "on0"
+    ],
+    "conditions": {
+      "off": {
+        "seconds": 2.3719455800019205,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.4120259250048548,
+            "model_seconds": 1.4045145120035158,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.4120131410018075
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.9592021249991376,
+            "model_seconds": 0.9367390179977519,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.9591774780128617
+          }
+        ]
+      },
+      "on0": {
+        "seconds": 2.3464711779961362,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.2623564910027198,
+            "model_seconds": 1.2545327260013437,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.2623445889912546
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.0833880900026998,
+            "model_seconds": 1.0614804460055893,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.0833691350126173
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-071",
+      "PPS-DEV-072"
+    ],
+    "order": [
+      "on0",
+      "off"
+    ],
+    "conditions": {
+      "on0": {
+        "seconds": 2.4881251080078073,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.57872741400206,
+            "model_seconds": 1.5728558550035814,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.5787153510027565
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.9086572520027403,
+            "model_seconds": 0.8934457180002937,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.9086387170100352
+          }
+        ]
+      },
+      "off": {
+        "seconds": 2.462308823989588,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.5656823449971853,
+            "model_seconds": 1.5606470000057016,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.565669681003783
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.8958932810055558,
+            "model_seconds": 0.8801615409902297,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.8958758579974528
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-073",
+      "PPS-DEV-074"
+    ],
+    "order": [
+      "off",
+      "on0"
+    ],
+    "conditions": {
+      "off": {
+        "seconds": 2.1971909550047712,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.2533560449955985,
+            "model_seconds": 1.245264313009102,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.2533444130094722
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.9431036050082184,
+            "model_seconds": 0.9192096610058798,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.9430858620034996
+          }
+        ]
+      },
+      "on0": {
+        "seconds": 2.237121472993749,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.2727662559918826,
+            "model_seconds": 1.2649105509917717,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.272754122997867
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.9636306339962175,
+            "model_seconds": 0.93981525900017,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.9636134320026031
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-075",
+      "PPS-DEV-076"
+    ],
+    "order": [
+      "on0",
+      "off"
+    ],
+    "conditions": {
+      "on0": {
+        "seconds": 4.144764349999605,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 3.020341201001429,
+            "model_seconds": 3.008807963007712,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 3.020326844009105
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.1236738300067373,
+            "model_seconds": 1.0857000860123662,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.1236527000000933
+          }
+        ]
+      },
+      "off": {
+        "seconds": 4.522803504005424,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 3.4256542030052515,
+            "model_seconds": 3.4140225469891448,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 3.425641669004108
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.0964065360021777,
+            "model_seconds": 1.0595826499920804,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.0963864980003564
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-077",
+      "PPS-DEV-078"
+    ],
+    "order": [
+      "off",
+      "on0"
+    ],
+    "conditions": {
+      "off": {
+        "seconds": 2.1432144379941747,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.2359392740036128,
+            "model_seconds": 1.2301878130092518,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.235927071000333
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.9065291709994199,
+            "model_seconds": 0.8920212000084575,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.9065092240052763
+          }
+        ]
+      },
+      "on0": {
+        "seconds": 2.035293578999699,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.1142996969865635,
+            "model_seconds": 1.1090239580080379,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.1142870530020446
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.9202593109948793,
+            "model_seconds": 0.9048319090070436,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.9202396740001859
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-079",
+      "PPS-DEV-080"
+    ],
+    "order": [
+      "on0",
+      "off"
+    ],
+    "conditions": {
+      "on0": {
+        "seconds": 1.8899810919974698,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 0.9821490320027806,
+            "model_seconds": 0.9766460620012367,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.9821370800054865
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.9071016369998688,
+            "model_seconds": 0.8926300550083397,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.9070822700014105
+          }
+        ]
+      },
+      "off": {
+        "seconds": 2.3603350129997125,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.2853208680026,
+            "model_seconds": 1.2801422030024696,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.2853086249961052
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.0739952550065937,
+            "model_seconds": 1.0595894589932868,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.0739740040007746
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-081",
+      "PPS-DEV-082"
+    ],
+    "order": [
+      "off",
+      "on0"
+    ],
+    "conditions": {
+      "off": {
+        "seconds": 5.473013118011295,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 4.227803491987288,
+            "model_seconds": 4.199961584992707,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 4.227791338998941
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.244426471996121,
+            "model_seconds": 1.1834621699963463,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.2444021069968585
+          }
+        ]
+      },
+      "on0": {
+        "seconds": 5.522180008003488,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 4.255318159004673,
+            "model_seconds": 4.229828705996624,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 4.255306085993652
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.266190997994272,
+            "model_seconds": 1.2077619479969144,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.2661701390024973
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-083",
+      "PPS-DEV-084"
+    ],
+    "order": [
+      "on0",
+      "off"
+    ],
+    "conditions": {
+      "on0": {
+        "seconds": 2.1370430660026614,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.1989307589974487,
+            "model_seconds": 1.1915064610075206,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.198916631998145
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.9373541809909511,
+            "model_seconds": 0.9145227830013027,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.9373350050009321
+          }
+        ]
+      },
+      "off": {
+        "seconds": 2.1980738600104814,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.2764027219964191,
+            "model_seconds": 1.2699203480005963,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.27639120000822
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.9209338220098289,
+            "model_seconds": 0.9008162609970896,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.9209168800007319
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-085",
+      "PPS-DEV-086"
+    ],
+    "order": [
+      "off",
+      "on0"
+    ],
+    "conditions": {
+      "off": {
+        "seconds": 3.6300665449962253,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 2.5043052719993284,
+            "model_seconds": 2.4882456849882146,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 2.5042921569984173
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.1250217130000237,
+            "model_seconds": 1.0767576600046596,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.125000772997737
+          }
+        ]
+      },
+      "on0": {
+        "seconds": 3.803581137995934,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 2.5439142620016355,
+            "model_seconds": 2.525213225002517,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 2.5439010269910796
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.2589100129989674,
+            "model_seconds": 1.2100661430013133,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.2588891519990284
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-087",
+      "PPS-DEV-088"
+    ],
+    "order": [
+      "on0",
+      "off"
+    ],
+    "conditions": {
+      "on0": {
+        "seconds": 4.7486373059946345,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 3.4777402940089814,
+            "model_seconds": 3.4584835740097333,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 3.4777258060057648
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.2701257820008323,
+            "model_seconds": 1.2167846090014791,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.2701042909902753
+          }
+        ]
+      },
+      "off": {
+        "seconds": 3.8236806170025375,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 2.687056249997113,
+            "model_seconds": 2.6682769740000367,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 2.687043766010902
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.1359069989994168,
+            "model_seconds": 1.0928652070142562,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.135885828989558
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-089",
+      "PPS-DEV-090"
+    ],
+    "order": [
+      "off",
+      "on0"
+    ],
+    "conditions": {
+      "off": {
+        "seconds": 2.466023408007459,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.5064140600006795,
+            "model_seconds": 1.4947082370053977,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.5064022870064946
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.9588914490013849,
+            "model_seconds": 0.9353168749948964,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.9588699290034128
+          }
+        ]
+      },
+      "on0": {
+        "seconds": 2.5803305389999878,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.4984628579986747,
+            "model_seconds": 1.487384171996382,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.4984505340107717
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.0811734060116578,
+            "model_seconds": 1.0587567939946894,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.0811541200091597
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-091",
+      "PPS-DEV-092"
+    ],
+    "order": [
+      "on0",
+      "off"
+    ],
+    "conditions": {
+      "on0": {
+        "seconds": 2.5765290429990273,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.5674585909873713,
+            "model_seconds": 1.5574939149955753,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.5674478410073789
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.0084015449974686,
+            "model_seconds": 0.986748831011937,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.0083823089953512
+          }
+        ]
+      },
+      "off": {
+        "seconds": 2.5135414410033263,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.5333797720086295,
+            "model_seconds": 1.523262077011168,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.5333691220002947
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.9795057669980451,
+            "model_seconds": 0.9571808400069131,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.9794873020000523
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-093",
+      "PPS-DEV-094"
+    ],
+    "order": [
+      "off",
+      "on0"
+    ],
+    "conditions": {
+      "off": {
+        "seconds": 3.5711289340106305,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 2.418347796003218,
+            "model_seconds": 2.4044305270072073,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 2.418335712995031
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.1521117000083905,
+            "model_seconds": 1.118241454998497,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.152091752999695
+          }
+        ]
+      },
+      "on0": {
+        "seconds": 3.5651959690003423,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 2.445355682997615,
+            "model_seconds": 2.4305282910063397,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 2.445344761988963
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.1191726719989674,
+            "model_seconds": 1.0861491999967257,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.1191517219995148
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-095",
+      "PPS-DEV-096"
+    ],
+    "order": [
+      "on0",
+      "off"
+    ],
+    "conditions": {
+      "on0": {
+        "seconds": 3.316367838997394,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 2.1997866530000465,
+            "model_seconds": 2.1839128300052835,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 2.1997741789964493
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.1158778249955503,
+            "model_seconds": 1.0809233680047328,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.1158587589889066
+          }
+        ]
+      },
+      "off": {
+        "seconds": 3.211490222005523,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 2.141268414998194,
+            "model_seconds": 2.1271021150023444,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 2.1412567329971353
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.0695574290002696,
+            "model_seconds": 1.0353352980018826,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.0695387729938375
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-097",
+      "PPS-DEV-098"
+    ],
+    "order": [
+      "off",
+      "on0"
+    ],
+    "conditions": {
+      "off": {
+        "seconds": 2.371213146005175,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.468000334003591,
+            "model_seconds": 1.4582570979982847,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.4679872090055142
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.9024543760024244,
+            "model_seconds": 0.8746188580116723,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.9024358809983823
+          }
+        ]
+      },
+      "on0": {
+        "seconds": 2.2714518819993827,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.3262021749978885,
+            "model_seconds": 1.3178013909928268,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.3261888200067915
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.9444735680008307,
+            "model_seconds": 0.9177210600028047,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.9444545919977827
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-099",
+      "PPS-DEV-100"
+    ],
+    "order": [
+      "on0",
+      "off"
+    ],
+    "conditions": {
+      "on0": {
+        "seconds": 5.017158627000754,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 3.6691212209989317,
+            "model_seconds": 3.6474019619927276,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 3.6691071940003894
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.3472989480069373,
+            "model_seconds": 1.2906979410036001,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.3472715959942434
+          }
+        ]
+      },
+      "off": {
+        "seconds": 4.8562614349939395,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 3.676619726989884,
+            "model_seconds": 3.6515611869981512,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 3.676605259999633
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.1788788640114944,
+            "model_seconds": 1.1206398579961387,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.1788585350004723
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-101",
+      "PPS-DEV-102"
+    ],
+    "order": [
+      "off",
+      "on0"
+    ],
+    "conditions": {
+      "off": {
+        "seconds": 3.212734763001208,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 2.2320978670031764,
+            "model_seconds": 2.2194756509998115,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 2.2320838500018
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.979874042008305,
+            "model_seconds": 0.9452131139987614,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.9798515489965212
+          }
+        ]
+      },
+      "on0": {
+        "seconds": 3.289508631991339,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 2.24930159500218,
+            "model_seconds": 2.2354172199993627,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 2.249288589999196
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.0394549630000256,
+            "model_seconds": 1.0048320979985874,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.0394352860021172
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-103",
+      "PPS-DEV-104"
+    ],
+    "order": [
+      "on0",
+      "off"
+    ],
+    "conditions": {
+      "on0": {
+        "seconds": 3.98341771599371,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 2.8041909159946954,
+            "model_seconds": 2.7880073279957287,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 2.8041763079963857
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.1784708699997282,
+            "model_seconds": 1.131611228993279,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.1784490080026444
+          }
+        ]
+      },
+      "off": {
+        "seconds": 5.936815801993362,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 4.71173182700295,
+            "model_seconds": 4.694414374011103,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 4.7117181819921825
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.2243267610028852,
+            "model_seconds": 1.176742628987995,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.2243066520022694
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-105",
+      "PPS-DEV-106"
+    ],
+    "order": [
+      "off",
+      "on0"
+    ],
+    "conditions": {
+      "off": {
+        "seconds": 3.1317118019942427,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 2.093850110992207,
+            "model_seconds": 2.08100066499901,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 2.093838398999651
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.0371846799971536,
+            "model_seconds": 1.0079755340120755,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.0371655839990126
+          }
+        ]
+      },
+      "on0": {
+        "seconds": 3.1201303000125336,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 2.087066865991801,
+            "model_seconds": 2.074200148010277,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 2.0870549630053574
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.0323922240058891,
+            "model_seconds": 1.001183022002806,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.032374489994254
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-107",
+      "PPS-DEV-108"
+    ],
+    "order": [
+      "on0",
+      "off"
+    ],
+    "conditions": {
+      "on0": {
+        "seconds": 2.174660478995065,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.2338570650026668,
+            "model_seconds": 1.226340535999043,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.2338428280054359
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.9400142509985017,
+            "model_seconds": 0.9173550249979598,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.939993541003787
+          }
+        ]
+      },
+      "off": {
+        "seconds": 2.1412379819958005,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.2171731229900615,
+            "model_seconds": 1.2099541869974928,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.217161420994671
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.9231890109949745,
+            "model_seconds": 0.9014984399982495,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.9231711570027983
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-109",
+      "PPS-DEV-110"
+    ],
+    "order": [
+      "off",
+      "on0"
+    ],
+    "conditions": {
+      "off": {
+        "seconds": 4.623929604989826,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 3.4580641299980925,
+            "model_seconds": 3.442302252005902,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 3.4580501430027653
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.1651283200044418,
+            "model_seconds": 1.1156346369971288,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.165108532004524
+          }
+        ]
+      },
+      "on0": {
+        "seconds": 3.884157709995634,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 2.7350718450034037,
+            "model_seconds": 2.7180686659994535,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 2.7350583689985797
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.1483314869983587,
+            "model_seconds": 1.103639855995425,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.1483105179941049
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-111",
+      "PPS-DEV-112"
+    ],
+    "order": [
+      "on0",
+      "off"
+    ],
+    "conditions": {
+      "on0": {
+        "seconds": 3.530433246996836,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 2.5510125849978067,
+            "model_seconds": 2.5393403499911074,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 2.550997936996282
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.9786555530008627,
+            "model_seconds": 0.9450682919996325,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.9786333509982796
+          }
+        ]
+      },
+      "off": {
+        "seconds": 2.949131228000624,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.9796856210014084,
+            "model_seconds": 1.967726873990614,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.9796722559985938
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.9686918299994431,
+            "model_seconds": 0.9377883990091505,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.9686723030026769
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-113",
+      "PPS-DEV-114"
+    ],
+    "order": [
+      "off",
+      "on0"
+    ],
+    "conditions": {
+      "off": {
+        "seconds": 1.7945058780023828,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 0.9120219640026335,
+            "model_seconds": 0.9065240369964158,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.9120109030045569
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.8817506659979699,
+            "model_seconds": 0.8680835050035967,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.8817333939950913
+          }
+        ]
+      },
+      "on0": {
+        "seconds": 1.8154319809982553,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 0.9112003729969729,
+            "model_seconds": 0.9067215249961009,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.9111881800054107
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.903416554996511,
+            "model_seconds": 0.889706481990288,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.9033990320021985
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-115",
+      "PPS-DEV-116"
+    ],
+    "order": [
+      "on0",
+      "off"
+    ],
+    "conditions": {
+      "on0": {
+        "seconds": 2.0721290260116803,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.1443578750040615,
+            "model_seconds": 1.1378568390064174,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.1443450810038485
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.927050116006285,
+            "model_seconds": 0.9078943649947178,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.9270319920033216
+          }
+        ]
+      },
+      "off": {
+        "seconds": 1.99699435698858,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.0931366910081124,
+            "model_seconds": 1.0870476639975095,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.0931245469982969
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.9030891119909938,
+            "model_seconds": 0.8835982169985073,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.9030599480029196
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-117",
+      "PPS-DEV-118"
+    ],
+    "order": [
+      "off",
+      "on0"
+    ],
+    "conditions": {
+      "off": {
+        "seconds": 2.5316992799926084,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.5365143240051111,
+            "model_seconds": 1.5273839900037274,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.5365033429989126
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.9945299059909303,
+            "model_seconds": 0.9720962200080976,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.9945113220019266
+          }
+        ]
+      },
+      "on0": {
+        "seconds": 2.593204931996297,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.5723523560009198,
+            "model_seconds": 1.5623611740011256,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.5723408949997975
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.020188196998788,
+            "model_seconds": 0.99719955099863,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.0201676489959937
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-119",
+      "PPS-DEV-120"
+    ],
+    "order": [
+      "on0",
+      "off"
+    ],
+    "conditions": {
+      "on0": {
+        "seconds": 4.000718989002053,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 2.8257365120080067,
+            "model_seconds": 2.808269097004086,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 2.8257218549988465
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.1742028200096684,
+            "model_seconds": 1.1302909689984517,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.1741811100073392
+          }
+        ]
+      },
+      "off": {
+        "seconds": 3.9554368399985833,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 2.8009161450027023,
+            "model_seconds": 2.784803535003448,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 2.8009021489997394
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.1537653749983292,
+            "model_seconds": 1.110017794999294,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.1537443450069986
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-121",
+      "PPS-DEV-122"
+    ],
+    "order": [
+      "off",
+      "on0"
+    ],
+    "conditions": {
+      "off": {
+        "seconds": 5.7080630010023015,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 4.378986627008999,
+            "model_seconds": 4.359043085001758,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 4.378972570004407
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.3283082910056692,
+            "model_seconds": 1.2727762440044899,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.3282873919961276
+          }
+        ]
+      },
+      "on0": {
+        "seconds": 4.4254708220105385,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 3.230043370000203,
+            "model_seconds": 3.2102308769972296,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 3.2300297140027396
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.194651273006457,
+            "model_seconds": 1.140341450998676,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.1946069900004659
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-123",
+      "PPS-DEV-124"
+    ],
+    "order": [
+      "on0",
+      "off"
+    ],
+    "conditions": {
+      "on0": {
+        "seconds": 3.6300443619984435,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 2.4642730509949615,
+            "model_seconds": 2.442526557992096,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 2.4642594850010937
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.165068581001833,
+            "model_seconds": 1.1196943739923881,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.1650468190055108
+          }
+        ]
+      },
+      "off": {
+        "seconds": 4.306434577010805,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 3.1425607230048627,
+            "model_seconds": 3.121074142996804,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 3.1425474290008424
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.1631099469959736,
+            "model_seconds": 1.1058870019915048,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.1630907000071602
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-125",
+      "PPS-DEV-126"
+    ],
+    "order": [
+      "off",
+      "on0"
+    ],
+    "conditions": {
+      "off": {
+        "seconds": 2.9795275710057467,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.929442625012598,
+            "model_seconds": 1.9156388970004627,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.9294294999999693
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.0493327830045018,
+            "model_seconds": 1.0131801009993069,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.0493144990032306
+          }
+        ]
+      },
+      "on0": {
+        "seconds": 3.1159857500024373,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.9472793960012496,
+            "model_seconds": 1.9350194709986681,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.9472666720103007
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.1679566160019021,
+            "model_seconds": 1.1314216809987556,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.16793524500099
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-127",
+      "PPS-DEV-128"
+    ],
+    "order": [
+      "on0",
+      "off"
+    ],
+    "conditions": {
+      "on0": {
+        "seconds": 2.287830065994058,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.3176879550010199,
+            "model_seconds": 1.3089293069933774,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.3176749510021182
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.9693798880034592,
+            "model_seconds": 0.9458694869972533,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.9693592890107539
+          }
+        ]
+      },
+      "off": {
+        "seconds": 2.2300374949991237,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.3223865470063174,
+            "model_seconds": 1.314126623008633,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.3223741639958462
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.9069019409944303,
+            "model_seconds": 0.8840148300077999,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.9068818819941953
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-129",
+      "PPS-DEV-130"
+    ],
+    "order": [
+      "off",
+      "on0"
+    ],
+    "conditions": {
+      "off": {
+        "seconds": 3.125758454989409,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 2.1124043820018414,
+            "model_seconds": 2.100330279004993,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 2.112391236994881
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.012609853001777,
+            "model_seconds": 0.9792490780091612,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.012590045997058
+          }
+        ]
+      },
+      "on0": {
+        "seconds": 3.5261528179980814,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 2.3779513150075218,
+            "model_seconds": 2.3667489619983826,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 2.377934523989097
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.1471326700120699,
+            "model_seconds": 1.112600256994483,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.1471135829924606
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-131",
+      "PPS-DEV-132"
+    ],
+    "order": [
+      "on0",
+      "off"
+    ],
+    "conditions": {
+      "on0": {
+        "seconds": 2.5624675449944334,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.5396371289971285,
+            "model_seconds": 1.5302815420000115,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.539622872005566
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.0220720400102437,
+            "model_seconds": 0.9919979969999986,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.0220523019961547
+          }
+        ]
+      },
+      "off": {
+        "seconds": 3.1083267579961102,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.4861082550050924,
+            "model_seconds": 1.476835204011877,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.4860954920004588
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.6212982110009762,
+            "model_seconds": 1.5942818240000634,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.6212784829986049
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-133",
+      "PPS-DEV-134"
+    ],
+    "order": [
+      "off",
+      "on0"
+    ],
+    "conditions": {
+      "off": {
+        "seconds": 2.434551954997005,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.4863375370041467,
+            "model_seconds": 1.4755217660131166,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.4863265269959811
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.9475330080022104,
+            "model_seconds": 0.9246516290004365,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.9475172579986975
+          }
+        ]
+      },
+      "on0": {
+        "seconds": 2.5004278819978936,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.535048343008384,
+            "model_seconds": 1.5261903470091056,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.5350373120018048
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.964723276993027,
+            "model_seconds": 0.9418147270043846,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.9647064549935749
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-135",
+      "PPS-DEV-136"
+    ],
+    "order": [
+      "on0",
+      "off"
+    ],
+    "conditions": {
+      "on0": {
+        "seconds": 4.103650359000312,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 2.930819902001531,
+            "model_seconds": 2.911810602003243,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 2.9308072080020793
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.17207526700804,
+            "model_seconds": 1.1211932199948933,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.1720563609997043
+          }
+        ]
+      },
+      "off": {
+        "seconds": 5.575694900995586,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 4.439775279999594,
+            "model_seconds": 4.421057351995842,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 4.439761032990646
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.1351662350061815,
+            "model_seconds": 1.0764218879921827,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.1351481799938483
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-137",
+      "PPS-DEV-138"
+    ],
+    "order": [
+      "off",
+      "on0"
+    ],
+    "conditions": {
+      "off": {
+        "seconds": 5.054766854009358,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 3.841889842005912,
+            "model_seconds": 3.818712114007212,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 3.841876548001892
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.2121237950050272,
+            "model_seconds": 1.1434427619969938,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.2121035070013022
+          }
+        ]
+      },
+      "on0": {
+        "seconds": 5.068115615998977,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 3.834240062002209,
+            "model_seconds": 3.8089734989916906,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 3.834227137005655
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.2331185410002945,
+            "model_seconds": 1.1652572610037168,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.2330988650064683
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-139",
+      "PPS-DEV-140"
+    ],
+    "order": [
+      "on0",
+      "off"
+    ],
+    "conditions": {
+      "on0": {
+        "seconds": 4.294805755998823,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 3.072653545998037,
+            "model_seconds": 3.0538466009893455,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 3.0726394200028153
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.2213893160078442,
+            "model_seconds": 1.1669456820091,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.2213692880031886
+          }
+        ]
+      },
+      "off": {
+        "seconds": 4.607898998001474,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 3.0515400639997097,
+            "model_seconds": 3.033244845995796,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 3.0515259069943568
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.555336568999337,
+            "model_seconds": 1.5007775479898555,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.5553159399860306
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-141",
+      "PPS-DEV-142"
+    ],
+    "order": [
+      "off",
+      "on0"
+    ],
+    "conditions": {
+      "off": {
+        "seconds": 3.0273075820005033,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.8825178030092502,
+            "model_seconds": 1.8759698000067146,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.882505849993322
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.1440312740014633,
+            "model_seconds": 1.1279988799942657,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.144012106989976
+          }
+        ]
+      },
+      "on0": {
+        "seconds": 2.415075381999486,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.5004052059957758,
+            "model_seconds": 1.494510068994714,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.5003928819933208
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.9139045479969354,
+            "model_seconds": 0.8975364590005483,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.9138869840098778
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-143",
+      "PPS-DEV-144"
+    ],
+    "order": [
+      "on0",
+      "off"
+    ],
+    "conditions": {
+      "on0": {
+        "seconds": 5.595293521997519,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 3.173470914000063,
+            "model_seconds": 3.1563354329991853,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 3.173459002005984
+          },
+          {
+            "phase": "cached",
+            "seconds": 2.421144022999215,
+            "model_seconds": 2.380613663990516,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 2.4211229929933324
+          }
+        ]
+      },
+      "off": {
+        "seconds": 7.2165322420041775,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 6.051130934996763,
+            "model_seconds": 6.031071028992301,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 6.051117638999131
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.1646347460045945,
+            "model_seconds": 1.1125911379931495,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.1646162719989661
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-145",
+      "PPS-DEV-146"
+    ],
+    "order": [
+      "off",
+      "on0"
+    ],
+    "conditions": {
+      "off": {
+        "seconds": 4.774544373998651,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 3.583689302991843,
+            "model_seconds": 3.5643422470020596,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 3.5836762890103273
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.1900889609969454,
+            "model_seconds": 1.1380811220005853,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.1900675700017018
+          }
+        ]
+      },
+      "on0": {
+        "seconds": 22.62958285100467,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 3.180577181003173,
+            "model_seconds": 3.161572022989276,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 3.1805642859981162
+          },
+          {
+            "phase": "cached",
+            "seconds": 19.448332656989805,
+            "model_seconds": 19.390082154990523,
+            "retrieval_seconds": 0.0,
+            "model_batches": 2,
+            "retrieval_batches": 0,
+            "total_seconds": 19.44831480299763
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-147",
+      "PPS-DEV-148"
+    ],
+    "order": [
+      "on0",
+      "off"
+    ],
+    "conditions": {
+      "on0": {
+        "seconds": 4.182872019999195,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 2.9767922530008946,
+            "model_seconds": 2.9601724599924637,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 2.9767801289999625
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.2053810060024261,
+            "model_seconds": 1.1621866200002842,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.2053595960023813
+          }
+        ]
+      },
+      "off": {
+        "seconds": 4.095861193010933,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 2.9626535889983643,
+            "model_seconds": 2.9431259630073328,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 2.962640844998532
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.132505493995268,
+            "model_seconds": 1.0916889389918651,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.1324855060083792
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-149",
+      "PPS-DEV-150"
+    ],
+    "order": [
+      "off",
+      "on0"
+    ],
+    "conditions": {
+      "off": {
+        "seconds": 2.066409761988325,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.142703210003674,
+            "model_seconds": 1.1353783780068625,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.1426884319953388
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.9229518229985842,
+            "model_seconds": 0.9034367019921774,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.9229341099999147
+          }
+        ]
+      },
+      "on0": {
+        "seconds": 2.07911745000456,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.1261392690066714,
+            "model_seconds": 1.119738966008299,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.1261247509974055
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.9522210680006538,
+            "model_seconds": 0.9306362890056334,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.9522005500039086
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-151",
+      "PPS-DEV-152"
+    ],
+    "order": [
+      "on0",
+      "off"
+    ],
+    "conditions": {
+      "on0": {
+        "seconds": 17.499854472989682,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.4425991940079257,
+            "model_seconds": 1.433953041996574,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.4425880939961644
+          },
+          {
+            "phase": "cached",
+            "seconds": 16.056601301010232,
+            "model_seconds": 16.03129503999662,
+            "retrieval_seconds": 0.0,
+            "model_batches": 2,
+            "retrieval_batches": 0,
+            "total_seconds": 16.05658565099293
+          }
+        ]
+      },
+      "off": {
+        "seconds": 3.7379856619954808,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.4268745959998341,
+            "model_seconds": 1.4171965619898401,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.4268642870010808
+          },
+          {
+            "phase": "cached",
+            "seconds": 2.3102174939995166,
+            "model_seconds": 2.2897043139964808,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 2.310195180994924
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-153",
+      "PPS-DEV-154"
+    ],
+    "order": [
+      "off",
+      "on0"
+    ],
+    "conditions": {
+      "off": {
+        "seconds": 3.9995901369984495,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 2.868355236991192,
+            "model_seconds": 2.8485623610031325,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 2.8683422120084288
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.1304736790043535,
+            "model_seconds": 1.0827299880038481,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.1304523889994016
+          }
+        ]
+      },
+      "on0": {
+        "seconds": 4.460587412992027,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 2.902355837999494,
+            "model_seconds": 2.8861347810016014,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 2.902342822999344
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.557468721002806,
+            "model_seconds": 1.508726169995498,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.5574473810120253
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-155",
+      "PPS-DEV-156"
+    ],
+    "order": [
+      "on0",
+      "off"
+    ],
+    "conditions": {
+      "on0": {
+        "seconds": 4.2479404709883966,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 2.946257345000049,
+            "model_seconds": 2.928509599005338,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 2.946244068996748
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.3009174870094284,
+            "model_seconds": 1.254750742999022,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.300896738001029
+          }
+        ]
+      },
+      "off": {
+        "seconds": 4.027383723994717,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 2.888087870000163,
+            "model_seconds": 2.871099411000614,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 2.8880747450020863
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.1385403239983134,
+            "model_seconds": 1.0926730069913901,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.1385199460055446
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-157",
+      "PPS-DEV-158"
+    ],
+    "order": [
+      "off",
+      "on0"
+    ],
+    "conditions": {
+      "off": {
+        "seconds": 4.978688401010004,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 3.7549222039961023,
+            "model_seconds": 3.7317064209928503,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 3.7549062939942814
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.223001500009559,
+            "model_seconds": 1.1640359260054538,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.2229784359951736
+          }
+        ]
+      },
+      "on0": {
+        "seconds": 5.058661369999754,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 3.7883965890068794,
+            "model_seconds": 3.765221001987811,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 3.788382963000913
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.2695036609948147,
+            "model_seconds": 1.206349191008485,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.2694839629984926
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-159",
+      "PPS-DEV-160"
+    ],
+    "order": [
+      "on0",
+      "off"
+    ],
+    "conditions": {
+      "on0": {
+        "seconds": 3.1443267300055595,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 2.010762171994429,
+            "model_seconds": 1.9967009629908716,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 2.010748897009762
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.1328075460041873,
+            "model_seconds": 1.094930368999485,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.1327878590091132
+          }
+        ]
+      },
+      "off": {
+        "seconds": 3.0193049119989155,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.9349403950036503,
+            "model_seconds": 1.9210918890021276,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.934927460999461
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.0836192169954302,
+            "model_seconds": 1.0475392509979429,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.0835999010014348
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-161",
+      "PPS-DEV-162"
+    ],
+    "order": [
+      "off",
+      "on0"
+    ],
+    "conditions": {
+      "off": {
+        "seconds": 3.6630264979903586,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 2.5689568950037938,
+            "model_seconds": 2.5507276200078195,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 2.56894382101018
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.0933873409958323,
+            "model_seconds": 1.0521459890005644,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.093368065005052
+          }
+        ]
+      },
+      "on0": {
+        "seconds": 3.7153019169927575,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 2.6217538729979424,
+            "model_seconds": 2.6049915829935344,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 2.621741969996947
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.092689008990419,
+            "model_seconds": 1.0520009449974168,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.09267126499617
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-163",
+      "PPS-DEV-164"
+    ],
+    "order": [
+      "on0",
+      "off"
+    ],
+    "conditions": {
+      "on0": {
+        "seconds": 2.457450253990828,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.4701152130000992,
+            "model_seconds": 1.4610894229990663,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.4701041529915528
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.9866604739945615,
+            "model_seconds": 0.9646048480062746,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.986642629999551
+          }
+        ]
+      },
+      "off": {
+        "seconds": 2.3839490029931767,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.4326446390041383,
+            "model_seconds": 1.4232973209873307,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.4326341589912772
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.9506448360043578,
+            "model_seconds": 0.9301352449983824,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.9506273220031289
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-165",
+      "PPS-DEV-166"
+    ],
+    "order": [
+      "off",
+      "on0"
+    ],
+    "conditions": {
+      "off": {
+        "seconds": 3.3609417750121793,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 2.266504218991031,
+            "model_seconds": 2.2534261209948454,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 2.266491764996317
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.093773077998776,
+            "model_seconds": 1.0634386369929416,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.0937545830092859
+          }
+        ]
+      },
+      "on0": {
+        "seconds": 3.5065104739915114,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 2.2779068170057144,
+            "model_seconds": 2.265603274994646,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 2.2778950549982255
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.2279352320038015,
+            "model_seconds": 1.1975636910065077,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.2279178190074163
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-167",
+      "PPS-DEV-168"
+    ],
+    "order": [
+      "on0",
+      "off"
+    ],
+    "conditions": {
+      "on0": {
+        "seconds": 1.9904060730041238,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.0380389600031776,
+            "model_seconds": 1.0318209130055038,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.0380264859995805
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.951627834001556,
+            "model_seconds": 0.9348132370068925,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.9516102820052765
+          }
+        ]
+      },
+      "off": {
+        "seconds": 3.641389320997405,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 2.7457671409938484,
+            "model_seconds": 2.740331426000921,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 2.7457541769981617
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.8948677509906702,
+            "model_seconds": 0.8764843750104774,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.8948480740073137
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-169",
+      "PPS-DEV-170"
+    ],
+    "order": [
+      "off",
+      "on0"
+    ],
+    "conditions": {
+      "off": {
+        "seconds": 5.941191934995004,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 4.714798625995172,
+            "model_seconds": 4.693987525999546,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 4.71478410900454
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.2256420369958505,
+            "model_seconds": 1.1649614939960884,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.2256196639937116
+          }
+        ]
+      },
+      "on0": {
+        "seconds": 4.8207057190011255,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 3.6179700219945516,
+            "model_seconds": 3.5962519659951795,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 3.6179550740052946
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.2018228789966088,
+            "model_seconds": 1.1536275329999626,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.2018022910051513
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-171",
+      "PPS-DEV-172"
+    ],
+    "order": [
+      "on0",
+      "off"
+    ],
+    "conditions": {
+      "on0": {
+        "seconds": 4.333750411999063,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 3.13773540200782,
+            "model_seconds": 3.1163921160041355,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 3.137723138992442
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.1953014680038905,
+            "model_seconds": 1.149517886005924,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.1952828130015405
+          }
+        ]
+      },
+      "off": {
+        "seconds": 4.331091380008729,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 3.15032878301281,
+            "model_seconds": 3.1319869960134383,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 3.150314967002487
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.1800107949966332,
+            "model_seconds": 1.1332277199981036,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.179991177006741
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-173",
+      "PPS-DEV-174"
+    ],
+    "order": [
+      "off",
+      "on0"
+    ],
+    "conditions": {
+      "off": {
+        "seconds": 3.5101037830027053,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 2.3924578260048293,
+            "model_seconds": 2.3786463910073508,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 2.392445913006668
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.1169703589985147,
+            "model_seconds": 1.0828246070013847,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.1169501999975182
+          }
+        ]
+      },
+      "on0": {
+        "seconds": 3.5265834750025533,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 2.383679975013365,
+            "model_seconds": 2.3702389120007865,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 2.3836678020015825
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.1422271600022214,
+            "model_seconds": 1.1086259089934174,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.1422078530013096
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-175",
+      "PPS-DEV-176"
+    ],
+    "order": [
+      "on0",
+      "off"
+    ],
+    "conditions": {
+      "on0": {
+        "seconds": 2.8878301299992017,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.8496342339931289,
+            "model_seconds": 1.8372613020037534,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.8496201369998744
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.037413876998471,
+            "model_seconds": 1.003553385991836,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.0373940089921234
+          }
+        ]
+      },
+      "off": {
+        "seconds": 2.816326279003988,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.8319049040001119,
+            "model_seconds": 1.8200333900022088,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.8318929509987356
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.9836726789944805,
+            "model_seconds": 0.9493698909936938,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.9836495449999347
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-177",
+      "PPS-DEV-178"
+    ],
+    "order": [
+      "off",
+      "on0"
+    ],
+    "conditions": {
+      "off": {
+        "seconds": 3.1577324679965386,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 2.081740029985667,
+            "model_seconds": 2.0666804639913607,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 2.08172779699089
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.0753226300003007,
+            "model_seconds": 1.0440724789950764,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.075304204990971
+          }
+        ]
+      },
+      "on0": {
+        "seconds": 3.26392885101086,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 2.126446840004064,
+            "model_seconds": 2.113916150003206,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 2.1264354980085045
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.136790763004683,
+            "model_seconds": 1.1054732140037231,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.1367716259992449
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-179",
+      "PPS-DEV-180"
+    ],
+    "order": [
+      "on0",
+      "off"
+    ],
+    "conditions": {
+      "on0": {
+        "seconds": 2.2980463990097633,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.3052826459897915,
+            "model_seconds": 1.2970381670020288,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.3052710449992446
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.992030955007067,
+            "model_seconds": 0.969779462000588,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.9920121489994926
+          }
+        ]
+      },
+      "off": {
+        "seconds": 2.189183847003733,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.2787456340010976,
+            "model_seconds": 1.2707700030005071,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.2787331610015826
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.909462005001842,
+            "model_seconds": 0.8863272510061506,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.9094443020003382
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-181",
+      "PPS-DEV-182"
+    ],
+    "order": [
+      "off",
+      "on0"
+    ],
+    "conditions": {
+      "off": {
+        "seconds": 2.2305791059916373,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.2753735599981155,
+            "model_seconds": 1.2679317489964887,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.2753600540017942
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.954463151996606,
+            "model_seconds": 0.9317220719967736,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.9544445859937696
+          }
+        ]
+      },
+      "on0": {
+        "seconds": 2.2427302519936347,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.2683134239923675,
+            "model_seconds": 1.2609138719999464,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.2683005599974422
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.9736566200008383,
+            "model_seconds": 0.9517530349985464,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.9736394369974732
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-183",
+      "PPS-DEV-184"
+    ],
+    "order": [
+      "on0",
+      "off"
+    ],
+    "conditions": {
+      "on0": {
+        "seconds": 2.3689088329992956,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.4296580350055592,
+            "model_seconds": 1.4209706580004422,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.429647526005283
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.938612429992645,
+            "model_seconds": 0.9175410800089594,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.9385957480117213
+          }
+        ]
+      },
+      "off": {
+        "seconds": 2.3584663349902257,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.4102756260108436,
+            "model_seconds": 1.4018815729941707,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.4102647749969037
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.947374775991193,
+            "model_seconds": 0.9256504100048915,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.9473562810017029
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-185",
+      "PPS-DEV-186"
+    ],
+    "order": [
+      "off",
+      "on0"
+    ],
+    "conditions": {
+      "off": {
+        "seconds": 3.100458364991937,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 2.041779614999541,
+            "model_seconds": 2.027788582010544,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 2.0417687840090366
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.0580176100047538,
+            "model_seconds": 1.025824295997154,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.0579989749967353
+          }
+        ]
+      },
+      "on0": {
+        "seconds": 3.1759999289934058,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 2.081065663995105,
+            "model_seconds": 2.067904762006947,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 2.0810521490057
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.0942438479978591,
+            "model_seconds": 1.0626713780075079,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.094224832006148
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-187",
+      "PPS-DEV-188"
+    ],
+    "order": [
+      "on0",
+      "off"
+    ],
+    "conditions": {
+      "on0": {
+        "seconds": 21.2218587440002,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 2.4016924379975535,
+            "model_seconds": 2.386718996989657,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 2.4016790929890703
+          },
+          {
+            "phase": "cached",
+            "seconds": 18.819412789991475,
+            "model_seconds": 18.763339852986974,
+            "retrieval_seconds": 0.0,
+            "model_batches": 2,
+            "retrieval_batches": 0,
+            "total_seconds": 18.819396088001668
+          }
+        ]
+      },
+      "off": {
+        "seconds": 4.302944775001379,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 3.1583915969968075,
+            "model_seconds": 3.1441236109967576,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 3.1583774509927025
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.1437739429966314,
+            "model_seconds": 1.0998685300000943,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.1437513800046872
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-189",
+      "PPS-DEV-190"
+    ],
+    "order": [
+      "off",
+      "on0"
+    ],
+    "conditions": {
+      "off": {
+        "seconds": 2.5060831020091427,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.5721339599986095,
+            "model_seconds": 1.5614959119993728,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.572121706994949
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.9332348809984978,
+            "model_seconds": 0.9083140389993787,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.93321358000685
+          }
+        ]
+      },
+      "on0": {
+        "seconds": 2.5855734380020294,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.5974787150043994,
+            "model_seconds": 1.5845222200005082,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.5974630150012672
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.9872941189969424,
+            "model_seconds": 0.9611841559963068,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.9872752130031586
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-191",
+      "PPS-DEV-192"
+    ],
+    "order": [
+      "on0",
+      "off"
+    ],
+    "conditions": {
+      "on0": {
+        "seconds": 3.4517977659997996,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 2.328394266005489,
+            "model_seconds": 2.3132487389957532,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 2.3283830550062703
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.1227216200059047,
+            "model_seconds": 1.088642559989239,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.1227022940001916
+          }
+        ]
+      },
+      "off": {
+        "seconds": 4.561579329005326,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 3.0413042870059144,
+            "model_seconds": 3.0263905789906858,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 3.041289668995887
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.5194945859984728,
+            "model_seconds": 1.4755181710061152,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.5194696079997811
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-193",
+      "PPS-DEV-194"
+    ],
+    "order": [
+      "off",
+      "on0"
+    ],
+    "conditions": {
+      "off": {
+        "seconds": 2.5886153080064105,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.6343758110015187,
+            "model_seconds": 1.6210533449921058,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.6343636189994868
+          },
+          {
+            "phase": "cached",
+            "seconds": 0.9534988660016097,
+            "model_seconds": 0.9259179210057482,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 0.9534802900016075
+          }
+        ]
+      },
+      "on0": {
+        "seconds": 2.736262272010208,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 1.6530206320021534,
+            "model_seconds": 1.6418574310082477,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.6530084389960393
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.0825095059990417,
+            "model_seconds": 1.0536910790106049,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.0824916010024026
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-195",
+      "PPS-DEV-196"
+    ],
+    "order": [
+      "on0",
+      "off"
+    ],
+    "conditions": {
+      "on0": {
+        "seconds": 3.24457743599487,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 2.1662999060063157,
+            "model_seconds": 2.151688040001318,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 2.166288143998827
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.0776251559873344,
+            "model_seconds": 1.0418374349974329,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.0776044780068332
+          }
+        ]
+      },
+      "off": {
+        "seconds": 3.2139052569982596,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 2.163085823005531,
+            "model_seconds": 2.146035853002104,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 2.163073419011198
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.0501356900058454,
+            "model_seconds": 1.0145626349985832,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.0501168339978904
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-197",
+      "PPS-DEV-198"
+    ],
+    "order": [
+      "off",
+      "on0"
+    ],
+    "conditions": {
+      "off": {
+        "seconds": 5.186565990996314,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 4.020263471989892,
+            "model_seconds": 4.003214195006876,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 4.020250607994967
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.165550195000833,
+            "model_seconds": 1.1149546969973017,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.1655316300020786
+          }
+        ]
+      },
+      "on0": {
+        "seconds": 5.1157713910070015,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 3.888739974994678,
+            "model_seconds": 3.8710326029977296,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 3.888727060999372
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.2262651559867663,
+            "model_seconds": 1.1747395690035773,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.2262471109861508
+          }
+        ]
+      }
+    }
+  },
+  {
+    "ids": [
+      "PPS-DEV-199",
+      "PPS-DEV-200"
+    ],
+    "order": [
+      "on0",
+      "off"
+    ],
+    "conditions": {
+      "on0": {
+        "seconds": 4.0988027669955045,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 2.9401596300012898,
+            "model_seconds": 2.9234677299973555,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 2.9401481289969524
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.1579659349954454,
+            "model_seconds": 1.1183787849877262,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.157947048995993
+          }
+        ]
+      },
+      "off": {
+        "seconds": 4.055908707989147,
+        "phases": [
+          {
+            "phase": "seed",
+            "seconds": 2.894822540009045,
+            "model_seconds": 2.878504556007101,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 2.894809505000012
+          },
+          {
+            "phase": "cached",
+            "seconds": 1.1604070140019758,
+            "model_seconds": 1.120972774006077,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 1.1603893999999855
+          }
+        ]
+      }
+    }
+  }
+]

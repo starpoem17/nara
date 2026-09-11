@@ -1,6 +1,6 @@
 # Feature legal criteria
 
-Assets: [criteria JSON](../../nara/legal_criteria.json), [human review](../../analysis/feature_legal_criteria_v1.md), [full system prompt](../../analysis/legal_criteria_v1_system_prompt.txt).
+Assets: [criteria JSON](../../nara/legal_criteria.json), [human review](../reports/analysis/feature_legal_criteria_v1.md), [full system prompt](../../analysis/legal_criteria_v1_system_prompt.txt).
 
 - `script.py --legal-criteria` opts into `Predictor(..., legal_criteria=True)`. Load the static JSON once; append common rules and only the assigned items. Existing defaults and source documents remain intact. Package the JSON with `nara/` when enabled.
 - Derived from supplied snapshot and item table only, without dev labels. JSON records original-source paths and SHA-256; review document includes original item-table mappings. No external legal data.

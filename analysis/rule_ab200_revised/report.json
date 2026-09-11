@@ -1,0 +1,150 @@
+{
+  "records": 200,
+  "scope": "Eligibility-section boundary repair: preserve qualification deadline sentences and subordinate numbered clauses; no C, amount threshold, v2 applicability, or v3 denominator changes. No model execution.",
+  "baseline": "analysis/rule_ab200/rules.jsonl",
+  "before": {
+    "v2": {
+      "tp": 5,
+      "fp": 1,
+      "fn": 2,
+      "tn": 192,
+      "precision": 0.8333333333333334,
+      "recall": 0.7142857142857143,
+      "f1": 0.7692307692307693,
+      "errors": [
+        {
+          "id": "PPS-DEV-053",
+          "expected": 1,
+          "predicted": 0
+        },
+        {
+          "id": "PPS-DEV-059",
+          "expected": 0,
+          "predicted": 1
+        },
+        {
+          "id": "PPS-DEV-062",
+          "expected": 1,
+          "predicted": 0
+        }
+      ]
+    },
+    "v3": {
+      "tp": 6,
+      "fp": 0,
+      "fn": 2,
+      "tn": 192,
+      "precision": 1.0,
+      "recall": 0.75,
+      "f1": 0.8571428571428571,
+      "errors": [
+        {
+          "id": "PPS-DEV-053",
+          "expected": 1,
+          "predicted": 0
+        },
+        {
+          "id": "PPS-DEV-062",
+          "expected": 1,
+          "predicted": 0
+        }
+      ]
+    }
+  },
+  "after": {
+    "v2": {
+      "tp": 7,
+      "fp": 1,
+      "fn": 0,
+      "tn": 192,
+      "precision": 0.875,
+      "recall": 1.0,
+      "f1": 0.9333333333333333,
+      "errors": [
+        {
+          "id": "PPS-DEV-059",
+          "expected": 0,
+          "predicted": 1
+        }
+      ]
+    },
+    "v3": {
+      "tp": 8,
+      "fp": 0,
+      "fn": 0,
+      "tn": 192,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "errors": []
+    }
+  },
+  "changes": [
+    {
+      "id": "PPS-DEV-053",
+      "item": "v2",
+      "label": 1,
+      "before": {
+        "위반여부": 0,
+        "근거문구": null
+      },
+      "after": {
+        "위반여부": 1,
+        "근거문구": "④ 입찰공고일 기준 최근 3년 이내에 단일건으로 1억 원 이상 [수요기관(공공기관)]에서 발주한 유사사업 및 동등이상 관련 사업 등을 실적이 있는 업체(하도급 제외) ※ 실적증명이 가능하고 공고일 현재 용역이 완료된 것"
+      }
+    },
+    {
+      "id": "PPS-DEV-053",
+      "item": "v3",
+      "label": 1,
+      "before": {
+        "위반여부": 0,
+        "근거문구": null
+      },
+      "after": {
+        "위반여부": 1,
+        "근거문구": "④ 입찰공고일 기준 최근 3년 이내에 단일건으로 1억 원 이상 [수요기관(공공기관)]에서 발주한 유사사업 및 동등이상 관련 사업 등을 실적이 있는 업체(하도급 제외) ※ 실적증명이 가능하고 공고일 현재 용역이 완료된 것"
+      }
+    },
+    {
+      "id": "PPS-DEV-062",
+      "item": "v2",
+      "label": 1,
+      "before": {
+        "위반여부": 0,
+        "근거문구": null
+      },
+      "after": {
+        "위반여부": 1,
+        "근거문구": "2) 공고일 전일 기준 최근 5년 이내 국가,정부투자기관에서 시행한 단일 건 3억 원(VAT포함) 이상의 축제, 공연 등 문화행사 수행실적이 있어야 합니다."
+      }
+    },
+    {
+      "id": "PPS-DEV-062",
+      "item": "v3",
+      "label": 1,
+      "before": {
+        "위반여부": 0,
+        "근거문구": null
+      },
+      "after": {
+        "위반여부": 1,
+        "근거문구": "2) 공고일 전일 기준 최근 5년 이내 국가,정부투자기관에서 시행한 단일 건 3억 원(VAT포함) 이상의 축제, 공연 등 문화행사 수행실적이 있어야 합니다."
+      }
+    }
+  ],
+  "validation": {
+    "ids_aligned": true,
+    "evidence_valid": true,
+    "unit_tests_passed": 59
+  },
+  "colleague_comparison": "Same aggregate scores as user report; different v2 false positive (ours PPS-DEV-059 vs reported DEV-138). Original colleague code unavailable.",
+  "caveat": "Rules revised after examining this dev set; these are regression measurements, not independent validation. Historical results and freeze hashes unchanged.",
+  "sha256": {
+    "nara/hypothesis6.py": "737c4c4198d1254b50acc472e653dd513315e216001282ddf8dc7459368c34bf",
+    "tests/test_hypothesis6.py": "d0bc1af5e8bb189887ead11930e097887de43ef94822ef01a3ec74f01341f3c0",
+    "data/dev.jsonl": "5507f5ab0ba53b708f87211ed050dbe531b48a626ace6084c3ccaefb53147534",
+    "data/dev_labels.csv": "84c79302ac190b45b2487ec8e02aab73e59071ee745828e813a7db96d3a97a35",
+    "analysis/rule_ab200/rules.jsonl": "660cc172f1838206ff2457de5013384bad624b8afd34bd29772b477dfa115379"
+  }
+}
