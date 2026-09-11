@@ -7,9 +7,15 @@ models/
 # Local downloads, private notes, generated indexes and predictions.
 /*.zip
 /open/
-/user/
 /model/
 /output/
+
+# Local agent instructions and context.
+/AGENT.md
+/CONTEXT.md
+/docs/
+/analysis/**/source/docs/
+/analysis/**/analysis_source/docs/
 
 # Keep the task schema and legal references required by tests.
 /data/*
