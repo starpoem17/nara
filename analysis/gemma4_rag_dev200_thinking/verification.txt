@@ -1,0 +1,1 @@
+24 unittests passed. Three-record GPU preflight (including longest source): real thinking text generated, final JSON valid, no failures. All 200 sources fit 32K; system prompt text identical to optional-search thinking-OFF run.

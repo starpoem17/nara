@@ -1,0 +1,13 @@
+{
+  "primary_metric": "24-feature macro F1",
+  "secondary_metrics": [
+    "micro F1",
+    "TP/FP/FN",
+    "source-valid evidence"
+  ],
+  "time_reference_seconds": 533.1209328678203,
+  "time_reference_scope": "Provisional colleague75min scaling; not a passing guarantee.",
+  "similarity_margin": 0.01,
+  "similarity_scope": "Earlier accepted Macro F1 within.01 prefer faster; report both metrics and uncertainty, no hard server-pass verdict.",
+  "status": "Recorded before any new200-label score inspected; group assignment already selected on same dev in prior experiments."
+}

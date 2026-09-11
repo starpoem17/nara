@@ -1,0 +1,121 @@
+{
+  "type": "object",
+  "properties": {
+    "action": {
+      "const": "final"
+    },
+    "judgments": {
+      "type": "object",
+      "properties": {
+        "v1": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "위반여부",
+            "근거문구"
+          ],
+          "properties": {
+            "위반여부": {
+              "type": "integer",
+              "enum": [
+                0,
+                1
+              ]
+            },
+            "근거문구": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "maxLength": 80
+            }
+          }
+        },
+        "v2": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "위반여부",
+            "근거문구"
+          ],
+          "properties": {
+            "위반여부": {
+              "type": "integer",
+              "enum": [
+                0,
+                1
+              ]
+            },
+            "근거문구": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "maxLength": 80
+            }
+          }
+        },
+        "v3": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "위반여부",
+            "근거문구"
+          ],
+          "properties": {
+            "위반여부": {
+              "type": "integer",
+              "enum": [
+                0,
+                1
+              ]
+            },
+            "근거문구": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "maxLength": 80
+            }
+          }
+        },
+        "v4": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "위반여부",
+            "근거문구"
+          ],
+          "properties": {
+            "위반여부": {
+              "type": "integer",
+              "enum": [
+                0,
+                1
+              ]
+            },
+            "근거문구": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "maxLength": 80
+            }
+          }
+        }
+      },
+      "required": [
+        "v1",
+        "v2",
+        "v3",
+        "v4"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "action",
+    "judgments"
+  ],
+  "additionalProperties": false
+}

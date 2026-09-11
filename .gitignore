@@ -1,0 +1,21 @@
+.venv/
+__pycache__/
+*.py[cod]
+models/
+*.log
+
+# Local downloads, private notes, generated indexes and predictions.
+/*.zip
+/open/
+/user/
+/model/
+/output/
+
+# Keep the task schema and legal references required by tests.
+/data/*
+!/data/항목표.json
+!/data/정답스키마_디코딩.json
+!/data/법령패키지/
+
+# Keep experiment reports, metadata and code snapshots; raw traces stay local.
+/analysis/**/*.jsonl

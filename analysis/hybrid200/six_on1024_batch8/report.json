@@ -1,0 +1,17 @@
+{
+  "phase": "six_on1024_batch8",
+  "records": 200,
+  "seconds": 503.5100597050041,
+  "failed_ids": [],
+  "thinking": true,
+  "budget": 1024,
+  "batch_size": 8,
+  "same_features": [
+    "v1",
+    "v5",
+    "v9",
+    "v14",
+    "v22",
+    "v24"
+  ]
+}

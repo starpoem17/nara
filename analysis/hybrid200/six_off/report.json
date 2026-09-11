@@ -1,0 +1,16 @@
+{
+  "phase": "six_off",
+  "records": 200,
+  "seconds": 324.33987931499723,
+  "failed_ids": [],
+  "thinking": false,
+  "budget": 0,
+  "same_features": [
+    "v1",
+    "v5",
+    "v9",
+    "v14",
+    "v22",
+    "v24"
+  ]
+}

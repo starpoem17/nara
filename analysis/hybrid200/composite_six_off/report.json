@@ -1,0 +1,70 @@
+{
+  "name": "composite_six_off",
+  "options": {
+    "model_dir": "models/gemma-4-26B-A4B-it-NVFP4",
+    "max_model_len": 32768,
+    "thinking": false,
+    "item_group_size": 6
+  },
+  "limits": {
+    "batch_size": 8,
+    "search_rounds": 2,
+    "queries_per_round": 4,
+    "top_k": 5,
+    "round_tokens": 4096,
+    "total_retrieval_tokens": 8192,
+    "output_tokens": 2048,
+    "retries": 1,
+    "require_search": false
+  },
+  "groups": [
+    [
+      "v4",
+      "v6",
+      "v7",
+      "v8"
+    ],
+    [
+      "v10",
+      "v11",
+      "v12",
+      "v13"
+    ],
+    [
+      "v15",
+      "v16",
+      "v17",
+      "v18"
+    ],
+    [
+      "v19",
+      "v20",
+      "v21",
+      "v23"
+    ],
+    [
+      "v1",
+      "v5",
+      "v9",
+      "v14",
+      "v22",
+      "v24"
+    ]
+  ],
+  "records": 200,
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "prediction_seconds": 844.3501488150796,
+  "load_seconds": 27.03537458900246,
+  "total_seconds": 871.385523404082,
+  "failed_ids": [],
+  "model_turns": 1002,
+  "search_rounds": 0,
+  "invalid_responses": 2,
+  "context_failures": 0,
+  "input_tokens": 11619648,
+  "output_tokens": 101860,
+  "thinking_tokens": 0,
+  "derived": true,
+  "time_is_estimate": true,
+  "composition": "Reuse main instant16 and frozen rules2; replace only six-feature group with separately measured control. Cold OFF group has no preceding instant document cache, so this overestimates an all-OFF warm pipeline."
+}

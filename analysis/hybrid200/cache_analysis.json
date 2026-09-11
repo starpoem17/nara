@@ -1,0 +1,89 @@
+{
+  "cold": {
+    "pairs": 24,
+    "total_wall_seconds": 39.1952901820041,
+    "total_seed_seconds": 0.0,
+    "requests": 24,
+    "prefill_request_seconds": 16.267993071945966,
+    "decode_request_seconds": 22.877687817046535,
+    "prefill_request_fraction": 0.4155756830000731,
+    "decode_request_fraction": 0.5844243169999269,
+    "mean_prefill_seconds": 0.6778330446644153,
+    "mean_decode_seconds": 0.9532369923769389,
+    "mean_queue_seconds": 5.163918103789911e-06,
+    "p95_prefill_seconds": 2.091696585407771,
+    "input_tokens": 285068,
+    "output_tokens": 3072,
+    "cached_fraction": 0.0,
+    "aggregate_decode_tokens_per_request_second": 133.23024705883458,
+    "interval_union": {
+      "prefill_only_seconds": 16.267993071945966,
+      "decode_only_seconds": 22.877687817046535,
+      "overlap_seconds": 0.0
+    }
+  },
+  "warm": {
+    "pairs": 24,
+    "total_wall_seconds": 23.848578198987525,
+    "total_seed_seconds": 39.150306835988886,
+    "requests": 24,
+    "prefill_request_seconds": 0.9103738339617848,
+    "decode_request_seconds": 22.87985265404859,
+    "prefill_request_fraction": 0.038266715721289514,
+    "decode_request_fraction": 0.9617332842787105,
+    "mean_prefill_seconds": 0.037932243081741035,
+    "mean_decode_seconds": 0.9533271939186913,
+    "mean_queue_seconds": 3.709125545962403e-06,
+    "p95_prefill_seconds": 0.05166459559623035,
+    "input_tokens": 285068,
+    "output_tokens": 3072,
+    "cached_fraction": 0.9840178483730198,
+    "aggregate_decode_tokens_per_request_second": 133.21764113112224,
+    "interval_union": {
+      "prefill_only_seconds": 0.9103738339617848,
+      "decode_only_seconds": 22.87985265404859,
+      "overlap_seconds": 0.0
+    }
+  },
+  "prefill_reduction_fraction": 0.9440389585896912,
+  "wall_reduction_fraction": 0.39154479815696774,
+  "decode_reduction_fraction": -9.462656450986984e-05,
+  "identical_output_pairs": 0,
+  "by_input_length": [
+    {
+      "input_range": [
+        2469,
+        5811
+      ],
+      "pairs": 8,
+      "cold_mean_prefill": 0.16395998474581575,
+      "cold_mean_wall": 1.015893647872872,
+      "warm_mean_prefill": 0.03365464987655287,
+      "warm_mean_wall": 0.885907518748354
+    },
+    {
+      "input_range": [
+        6808,
+        11525
+      ],
+      "pairs": 8,
+      "cold_mean_prefill": 0.41063350799777254,
+      "cold_mean_wall": 1.3383245136246842,
+      "warm_mean_prefill": 0.0348602528720221,
+      "warm_mean_wall": 0.9629919885010167
+    },
+    {
+      "input_range": [
+        15201,
+        29221
+      ],
+      "pairs": 8,
+      "cold_mean_prefill": 1.4589056412496575,
+      "cold_mean_wall": 2.5451931112529564,
+      "warm_mean_prefill": 0.045281826496648137,
+      "warm_mean_wall": 1.1321727676240698
+    }
+  ],
+  "fixed_output_tokens": 128,
+  "scope": "Marginal reuse after another group seeds prefix; seed cost reported separately. 24 pairs from12 length-stratified notices; fixed-length unstructured decode diagnostic, not full pipeline speedup."
+}

@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "phase_probe_rows": 32,
+  "all16_repeat_condition_pairs_exact_match": true,
+  "all8_decode_pairs_equal_first_token_and_top10_scores": true,
+  "all8_injected_after_first_token": true,
+  "source_hashes_match": true,
+  "fallback_records": 16,
+  "fallback_all24_keys": true,
+  "fallback_failed_ids": [],
+  "fallback_all_waves_barrier_verified": true,
+  "fallback_ninth_after_all_initial_eight_seconds": 0.027733007998904213,
+  "unit_tests_passed": 48
+}

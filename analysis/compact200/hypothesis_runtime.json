@@ -1,0 +1,5 @@
+{
+  "load_seconds": 28.180677427000774,
+  "warmup_seconds": 0.4597403969964944,
+  "method": "one resident engine per stage; reset prefix cache before each configuration; single pass"
+}

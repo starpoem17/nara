@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "phase_probe_rows": 32,
+  "all16_repeat_condition_pairs_exact_match": true,
+  "all8_decode_pairs_equal_first_token_and_top10_scores": true,
+  "all8_injected_after_first_token": true,
+  "source_hashes_match": true
+}

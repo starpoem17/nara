@@ -1,0 +1,463 @@
+{
+  "records": 200,
+  "judgments": 4800,
+  "macro_f1": 0.19858434294909708,
+  "micro_f1": 0.24624624624624625,
+  "macro_precision": 0.2020717221375116,
+  "macro_recall": 0.2733630952380952,
+  "label_accuracy": 0.9477083333333334,
+  "exact_match_accuracy": 0.38,
+  "exact_match_records": 76,
+  "false_positives": 139,
+  "false_negatives": 112,
+  "zero_positive_items": [],
+  "zero_division": 0,
+  "searched_records": 0,
+  "retrieved_records": 0,
+  "search_rate": 0.0,
+  "search_rounds": 0,
+  "search_queries": 0,
+  "search_errors": 0,
+  "empty_search_rounds": 0,
+  "invalid_model_responses": 3,
+  "thinking_turns": 0,
+  "thinking_text_tokens": 0,
+  "thinking_budgets": [],
+  "evidence_dropped": 72,
+  "evidence": {
+    "nonempty": 73,
+    "invalid": 0,
+    "positive_nonabsence_missing": 72
+  },
+  "runtime": {
+    "name": "optimized_off",
+    "options": {
+      "model_dir": "models/gemma-4-26B-A4B-it-NVFP4",
+      "max_model_len": 32768,
+      "thinking": false,
+      "item_group_size": 6
+    },
+    "limits": {
+      "batch_size": 8,
+      "search_rounds": 2,
+      "queries_per_round": 4,
+      "top_k": 5,
+      "round_tokens": 4096,
+      "total_retrieval_tokens": 8192,
+      "output_tokens": 2048,
+      "retries": 1,
+      "require_search": false
+    },
+    "groups": [
+      [
+        "v4",
+        "v6",
+        "v7",
+        "v8"
+      ],
+      [
+        "v10",
+        "v11",
+        "v12",
+        "v13"
+      ],
+      [
+        "v15",
+        "v16",
+        "v17",
+        "v18"
+      ],
+      [
+        "v19",
+        "v20",
+        "v21",
+        "v23"
+      ],
+      [
+        "v1",
+        "v5",
+        "v9",
+        "v14",
+        "v22",
+        "v24"
+      ]
+    ],
+    "records": 200,
+    "gpu": "NVIDIA GeForce RTX 5090",
+    "prediction_seconds": 447.1389486010012,
+    "load_seconds": 27.721229032002157,
+    "total_seconds": 502.3292853930034,
+    "failed_ids": [],
+    "model_turns": 1003,
+    "search_rounds": 0,
+    "invalid_responses": 3,
+    "context_failures": 0,
+    "input_tokens": 11603303,
+    "output_tokens": 104929,
+    "thinking_tokens": 0,
+    "model_seconds": 440.8628098579793,
+    "retrieval_seconds": 0.0,
+    "first_pass": {
+      "failed_ids": [
+        "PPS-DEV-049"
+      ],
+      "prediction_seconds": 444.6137995989993
+    },
+    "recovery": {
+      "policy": {
+        "scope": "Only groups without a final event on failed records; all successful groups replayed through original postprocessing",
+        "prompt_change": false,
+        "mode": "OFF",
+        "output_tokens": 2048,
+        "batch_size": 1,
+        "extra_predict_attempts": 1,
+        "source_sha256": "04650e0294ffd1476c47551d37528ff8bd3511d2836ffa484980b030f05f3611"
+      },
+      "prediction_seconds": 2.5251490020018537,
+      "separate_process_load_seconds": 27.469107760000043,
+      "groups": [
+        {
+          "id": "PPS-DEV-049",
+          "items": [
+            "v10",
+            "v11",
+            "v12",
+            "v13"
+          ],
+          "phases": [
+            {
+              "phase": "instant_recovery",
+              "seconds": 2.523479341994971,
+              "model_seconds": 2.4907010270108003,
+              "retrieval_seconds": 0.0,
+              "model_batches": 1,
+              "retrieval_batches": 0,
+              "total_seconds": 2.523466266997275
+            }
+          ],
+          "error": null
+        }
+      ],
+      "success_replay_verified_records": 199
+    }
+  },
+  "per_item": [
+    {
+      "item": "v1",
+      "name": "참가자격 특정기관 제한",
+      "support": 7,
+      "predicted_positive": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 7,
+      "tn": 193,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "item": "v2",
+      "name": "고시금액 미만 실적제한",
+      "support": 7,
+      "predicted_positive": 8,
+      "tp": 5,
+      "fp": 3,
+      "fn": 2,
+      "tn": 190,
+      "precision": 0.625,
+      "recall": 0.7142857142857143,
+      "f1": 0.6666666666666666
+    },
+    {
+      "item": "v3",
+      "name": "실적제한 1배수 이상",
+      "support": 8,
+      "predicted_positive": 6,
+      "tp": 6,
+      "fp": 0,
+      "fn": 2,
+      "tn": 192,
+      "precision": 1.0,
+      "recall": 0.75,
+      "f1": 0.8571428571428571
+    },
+    {
+      "item": "v4",
+      "name": "고시금액 이상 특정기관, 특정실적",
+      "support": 6,
+      "predicted_positive": 7,
+      "tp": 4,
+      "fp": 3,
+      "fn": 2,
+      "tn": 191,
+      "precision": 0.5714285714285714,
+      "recall": 0.6666666666666666,
+      "f1": 0.6153846153846154
+    },
+    {
+      "item": "v5",
+      "name": "고시금액 이상 지역제한",
+      "support": 7,
+      "predicted_positive": 2,
+      "tp": 1,
+      "fp": 1,
+      "fn": 6,
+      "tn": 192,
+      "precision": 0.5,
+      "recall": 0.14285714285714285,
+      "f1": 0.2222222222222222
+    },
+    {
+      "item": "v6",
+      "name": "고시금액 미만 지역제한 시,군,구",
+      "support": 6,
+      "predicted_positive": 16,
+      "tp": 2,
+      "fp": 14,
+      "fn": 4,
+      "tn": 180,
+      "precision": 0.125,
+      "recall": 0.3333333333333333,
+      "f1": 0.18181818181818182
+    },
+    {
+      "item": "v7",
+      "name": "고시금액 미만 지역제한 인접 확대",
+      "support": 7,
+      "predicted_positive": 2,
+      "tp": 0,
+      "fp": 2,
+      "fn": 7,
+      "tn": 191,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "item": "v8",
+      "name": "중복제한 (실적+지역)",
+      "support": 6,
+      "predicted_positive": 55,
+      "tp": 6,
+      "fp": 49,
+      "fn": 0,
+      "tn": 145,
+      "precision": 0.10909090909090909,
+      "recall": 1.0,
+      "f1": 0.19672131147540983
+    },
+    {
+      "item": "v9",
+      "name": "과업지시서 특정 모델명 명시",
+      "support": 6,
+      "predicted_positive": 19,
+      "tp": 5,
+      "fp": 14,
+      "fn": 1,
+      "tn": 180,
+      "precision": 0.2631578947368421,
+      "recall": 0.8333333333333334,
+      "f1": 0.4
+    },
+    {
+      "item": "v10",
+      "name": "중기간 경쟁제품 입찰 직생 없음",
+      "support": 7,
+      "predicted_positive": 14,
+      "tp": 2,
+      "fp": 12,
+      "fn": 5,
+      "tn": 181,
+      "precision": 0.14285714285714285,
+      "recall": 0.2857142857142857,
+      "f1": 0.19047619047619047
+    },
+    {
+      "item": "v11",
+      "name": "중기간 경쟁제품 입찰 중소 없음",
+      "support": 6,
+      "predicted_positive": 3,
+      "tp": 0,
+      "fp": 3,
+      "fn": 6,
+      "tn": 191,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "item": "v12",
+      "name": "일반제품 직생 제한",
+      "support": 6,
+      "predicted_positive": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 6,
+      "tn": 194,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "item": "v13",
+      "name": "중기간 경쟁제품 소기업, 소상공인 제한",
+      "support": 6,
+      "predicted_positive": 1,
+      "tp": 0,
+      "fp": 1,
+      "fn": 6,
+      "tn": 193,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "item": "v14",
+      "name": "고시금액 이상 일반물품 중소기업 제한",
+      "support": 8,
+      "predicted_positive": 5,
+      "tp": 1,
+      "fp": 4,
+      "fn": 7,
+      "tn": 188,
+      "precision": 0.2,
+      "recall": 0.125,
+      "f1": 0.15384615384615385
+    },
+    {
+      "item": "v15",
+      "name": "1억 이상- 고시금액미만 소기업 제한",
+      "support": 6,
+      "predicted_positive": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 6,
+      "tn": 194,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "item": "v16",
+      "name": "1억 이상- 고시금액미만 중소기업 제한 없음",
+      "support": 6,
+      "predicted_positive": 11,
+      "tp": 0,
+      "fp": 11,
+      "fn": 6,
+      "tn": 183,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "item": "v17",
+      "name": "1억원 미만 일반물품 중소기업 제한",
+      "support": 6,
+      "predicted_positive": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 6,
+      "tn": 194,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "item": "v18",
+      "name": "1억원 미만 일반물품 소기업 제한 없음",
+      "support": 7,
+      "predicted_positive": 7,
+      "tp": 1,
+      "fp": 6,
+      "fn": 6,
+      "tn": 187,
+      "precision": 0.14285714285714285,
+      "recall": 0.14285714285714285,
+      "f1": 0.14285714285714285
+    },
+    {
+      "item": "v19",
+      "name": "물품공급 확약서 입찰 시 제출",
+      "support": 6,
+      "predicted_positive": 2,
+      "tp": 1,
+      "fp": 1,
+      "fn": 5,
+      "tn": 193,
+      "precision": 0.5,
+      "recall": 0.16666666666666666,
+      "f1": 0.25
+    },
+    {
+      "item": "v20",
+      "name": "입찰참가자격 (SW)",
+      "support": 5,
+      "predicted_positive": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 5,
+      "tn": 195,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "item": "v21",
+      "name": "공동 5% (10%)",
+      "support": 6,
+      "predicted_positive": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 6,
+      "tn": 194,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "item": "v22",
+      "name": "현장설명회 참석업체 (자격으로 제한 여부) * 계약방법 협상만 적용",
+      "support": 5,
+      "predicted_positive": 13,
+      "tp": 5,
+      "fp": 8,
+      "fn": 0,
+      "tn": 187,
+      "precision": 0.38461538461538464,
+      "recall": 1.0,
+      "f1": 0.5555555555555556
+    },
+    {
+      "item": "v23",
+      "name": "현장설명회 (공고기간) * 계약방법 협상 + 계약법 지방만 적용",
+      "support": 5,
+      "predicted_positive": 7,
+      "tp": 2,
+      "fp": 5,
+      "fn": 3,
+      "tn": 190,
+      "precision": 0.2857142857142857,
+      "recall": 0.4,
+      "f1": 0.3333333333333333
+    },
+    {
+      "item": "v24",
+      "name": "공고서와 나라장터 입력값 상이",
+      "support": 8,
+      "predicted_positive": 2,
+      "tp": 0,
+      "fp": 2,
+      "fn": 8,
+      "tn": 190,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    }
+  ],
+  "sha256": {
+    "data/dev_labels.csv": "84c79302ac190b45b2487ec8e02aab73e59071ee745828e813a7db96d3a97a35",
+    "data/dev.jsonl": "5507f5ab0ba53b708f87211ed050dbe531b48a626ace6084c3ccaefb53147534",
+    "analysis/hybrid200/optimized_off/submission.csv": "873db899ce86e35eecf3dd387d76287aa40a925757085a608b6d0b9e3e380fbf"
+  }
+}

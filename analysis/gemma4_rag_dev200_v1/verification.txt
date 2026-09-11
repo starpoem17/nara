@@ -1,0 +1,7 @@
+Existing unittest suite: 20 passed.
+Evaluator synthetic check: known F1 and accuracy, shuffled IDs, missing predictions, duplicate IDs passed.
+Prompt/data/model-config/uv-lock hashes unchanged after inference started.
+Tokenizer preflight: 200 records, zero source overflows, 7 initial-search exclusions, max input 30228.
+Full run exit code 0; 200/200 successful. CSV/trace IDs and 4800 predictions matched.
+Independent confusion-count check: TP37, FP167, FN116, TN4480; errors.csv 283 rows.
+GPU memory returned to 34 MiB after process shutdown.

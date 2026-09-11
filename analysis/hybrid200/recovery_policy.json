@@ -1,0 +1,9 @@
+{
+  "scope": "Only groups without a final event on failed records; all successful groups replayed through original postprocessing",
+  "prompt_change": false,
+  "mode": "OFF",
+  "output_tokens": 2048,
+  "batch_size": 1,
+  "extra_predict_attempts": 1,
+  "source_sha256": "04650e0294ffd1476c47551d37528ff8bd3511d2836ffa484980b030f05f3611"
+}

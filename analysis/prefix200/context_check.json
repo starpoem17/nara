@@ -1,0 +1,8 @@
+{
+  "max_input_tokens": 29252,
+  "initial_search_disabled": [
+    "PPS-DEV-11",
+    "PPS-DEV-143",
+    "PPS-DEV-197"
+  ]
+}

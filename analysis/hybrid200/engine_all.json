@@ -1,0 +1,7 @@
+{
+  "load_seconds": 27.03537458900246,
+  "warmup_seconds": 1.1601196300034644,
+  "disable_log_stats": false,
+  "max_model_len": 32768,
+  "max_num_seqs": 8
+}

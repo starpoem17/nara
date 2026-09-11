@@ -1,0 +1,257 @@
+{
+  "casebook_source_notice_count": 80,
+  "actually_used_source_notice_count": 32,
+  "self_example_notice_count": 19,
+  "self_example_ids": [
+    "PPS-DEV-01",
+    "PPS-DEV-02",
+    "PPS-DEV-05",
+    "PPS-DEV-06",
+    "PPS-DEV-07",
+    "PPS-DEV-12",
+    "PPS-DEV-16",
+    "PPS-DEV-17",
+    "PPS-DEV-18",
+    "PPS-DEV-21",
+    "PPS-DEV-25",
+    "PPS-DEV-28",
+    "PPS-DEV-29",
+    "PPS-DEV-048",
+    "PPS-DEV-058",
+    "PPS-DEV-062",
+    "PPS-DEV-074",
+    "PPS-DEV-132",
+    "PPS-DEV-141"
+  ],
+  "self_example_pairs": 27,
+  "casebook_unlisted_subset_diagnostic": {
+    "records": 120,
+    "judgments": 2880,
+    "macro_f1": 0.09522058823529411,
+    "micro_f1": 0.12048192771084337,
+    "macro_precision": 0.06989087301587302,
+    "macro_recall": 0.1909722222222222,
+    "exact_match_records": 32,
+    "false_positives": 127,
+    "false_negatives": 19,
+    "per_item": [
+      {
+        "item": "v1",
+        "support": 0,
+        "predicted_positive": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "f1": 0.0
+      },
+      {
+        "item": "v2",
+        "support": 0,
+        "predicted_positive": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "f1": 0.0
+      },
+      {
+        "item": "v3",
+        "support": 1,
+        "predicted_positive": 5,
+        "tp": 1,
+        "fp": 4,
+        "fn": 0,
+        "f1": 0.3333333333333333
+      },
+      {
+        "item": "v4",
+        "support": 1,
+        "predicted_positive": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "f1": 0.0
+      },
+      {
+        "item": "v5",
+        "support": 1,
+        "predicted_positive": 6,
+        "tp": 0,
+        "fp": 6,
+        "fn": 1,
+        "f1": 0.0
+      },
+      {
+        "item": "v6",
+        "support": 0,
+        "predicted_positive": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "f1": 0.0
+      },
+      {
+        "item": "v7",
+        "support": 1,
+        "predicted_positive": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "f1": 0.0
+      },
+      {
+        "item": "v8",
+        "support": 0,
+        "predicted_positive": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "f1": 0.0
+      },
+      {
+        "item": "v9",
+        "support": 3,
+        "predicted_positive": 14,
+        "tp": 2,
+        "fp": 12,
+        "fn": 1,
+        "f1": 0.23529411764705882
+      },
+      {
+        "item": "v10",
+        "support": 2,
+        "predicted_positive": 8,
+        "tp": 0,
+        "fp": 8,
+        "fn": 2,
+        "f1": 0.0
+      },
+      {
+        "item": "v11",
+        "support": 1,
+        "predicted_positive": 12,
+        "tp": 0,
+        "fp": 12,
+        "fn": 1,
+        "f1": 0.0
+      },
+      {
+        "item": "v12",
+        "support": 0,
+        "predicted_positive": 6,
+        "tp": 0,
+        "fp": 6,
+        "fn": 0,
+        "f1": 0.0
+      },
+      {
+        "item": "v13",
+        "support": 0,
+        "predicted_positive": 32,
+        "tp": 0,
+        "fp": 32,
+        "fn": 0,
+        "f1": 0.0
+      },
+      {
+        "item": "v14",
+        "support": 3,
+        "predicted_positive": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 3,
+        "f1": 0.0
+      },
+      {
+        "item": "v15",
+        "support": 3,
+        "predicted_positive": 5,
+        "tp": 2,
+        "fp": 3,
+        "fn": 1,
+        "f1": 0.5
+      },
+      {
+        "item": "v16",
+        "support": 1,
+        "predicted_positive": 8,
+        "tp": 0,
+        "fp": 8,
+        "fn": 1,
+        "f1": 0.0
+      },
+      {
+        "item": "v17",
+        "support": 0,
+        "predicted_positive": 1,
+        "tp": 0,
+        "fp": 1,
+        "fn": 0,
+        "f1": 0.0
+      },
+      {
+        "item": "v18",
+        "support": 4,
+        "predicted_positive": 8,
+        "tp": 1,
+        "fp": 7,
+        "fn": 3,
+        "f1": 0.16666666666666666
+      },
+      {
+        "item": "v19",
+        "support": 2,
+        "predicted_positive": 14,
+        "tp": 2,
+        "fp": 12,
+        "fn": 0,
+        "f1": 0.25
+      },
+      {
+        "item": "v20",
+        "support": 2,
+        "predicted_positive": 3,
+        "tp": 0,
+        "fp": 3,
+        "fn": 2,
+        "f1": 0.0
+      },
+      {
+        "item": "v21",
+        "support": 0,
+        "predicted_positive": 11,
+        "tp": 0,
+        "fp": 11,
+        "fn": 0,
+        "f1": 0.0
+      },
+      {
+        "item": "v22",
+        "support": 2,
+        "predicted_positive": 3,
+        "tp": 2,
+        "fp": 1,
+        "fn": 0,
+        "f1": 0.8
+      },
+      {
+        "item": "v23",
+        "support": 1,
+        "predicted_positive": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "f1": 0.0
+      },
+      {
+        "item": "v24",
+        "support": 1,
+        "predicted_positive": 1,
+        "tp": 0,
+        "fp": 1,
+        "fn": 1,
+        "f1": 0.0
+      }
+    ]
+  },
+  "caveat": "Casebook was built from this dev200. Full score is an in-development reproduction, not independent held-out performance. Excluding listed IDs does not undo dev-driven prompt design."
+}

@@ -1,0 +1,9 @@
+{
+  "output_tokens": 2048,
+  "thinking_budget": 1024,
+  "search_rounds": 0,
+  "retries": 1,
+  "evidence_max_chars": 80,
+  "scope": "rerun every group of failed notices only; preserve full source and legal criteria",
+  "instruction": "Return final JSON. Use the shortest sufficient exact evidence quote, at most 80 characters."
+}

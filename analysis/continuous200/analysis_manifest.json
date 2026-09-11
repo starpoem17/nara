@@ -1,0 +1,10 @@
+{
+  "scope": "Post-run analysis/current code; executed pre-patch benchmark is in source/ and plan.json",
+  "sha256": {
+    "scripts/run_continuous_study.py": "66172770eb342ac614c944202cc6eff1c26e2bc8b63f21a6276675d1b8842ead",
+    "scripts/summarize_continuous.py": "3299aaba130de2b382d0e77c3949b312879e78694331cdf57c1cffa2375e4f8d",
+    "scripts/benchmark_continuous.py": "547820866ce7573645b8ce90a66e21bd8076762e8db36a2b31194813a00ce900",
+    "scripts/recover_continuous.py": "5f595194282aeae5e6f965a26457de98ac254b29908498ffc9269320cd6a4574",
+    "docs/experiments/continuous-prefill.md": "dca36a33c5fadc9f59409fb451f7b9da85ee61599f45d8d7c8e2cddbfe4d3dae"
+  }
+}

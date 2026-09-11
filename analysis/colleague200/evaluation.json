@@ -1,0 +1,239 @@
+{
+  "records": 200,
+  "judgments": 4800,
+  "macro_f1": 0.19689106866142744,
+  "micro_f1": 0.22009569377990432,
+  "macro_precision": 0.22799563309074178,
+  "macro_recall": 0.30456349206349204,
+  "exact_match_records": 36,
+  "false_positives": 219,
+  "false_negatives": 107,
+  "per_item": [
+    {
+      "item": "v1",
+      "support": 7,
+      "predicted_positive": 1,
+      "tp": 1,
+      "fp": 0,
+      "fn": 6,
+      "f1": 0.25
+    },
+    {
+      "item": "v2",
+      "support": 7,
+      "predicted_positive": 4,
+      "tp": 3,
+      "fp": 1,
+      "fn": 4,
+      "f1": 0.5454545454545454
+    },
+    {
+      "item": "v3",
+      "support": 8,
+      "predicted_positive": 21,
+      "tp": 8,
+      "fp": 13,
+      "fn": 0,
+      "f1": 0.5517241379310345
+    },
+    {
+      "item": "v4",
+      "support": 6,
+      "predicted_positive": 1,
+      "tp": 0,
+      "fp": 1,
+      "fn": 6,
+      "f1": 0.0
+    },
+    {
+      "item": "v5",
+      "support": 7,
+      "predicted_positive": 15,
+      "tp": 2,
+      "fp": 13,
+      "fn": 5,
+      "f1": 0.18181818181818182
+    },
+    {
+      "item": "v6",
+      "support": 6,
+      "predicted_positive": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 6,
+      "f1": 0.0
+    },
+    {
+      "item": "v7",
+      "support": 7,
+      "predicted_positive": 1,
+      "tp": 1,
+      "fp": 0,
+      "fn": 6,
+      "f1": 0.25
+    },
+    {
+      "item": "v8",
+      "support": 6,
+      "predicted_positive": 2,
+      "tp": 0,
+      "fp": 2,
+      "fn": 6,
+      "f1": 0.0
+    },
+    {
+      "item": "v9",
+      "support": 6,
+      "predicted_positive": 18,
+      "tp": 4,
+      "fp": 14,
+      "fn": 2,
+      "f1": 0.3333333333333333
+    },
+    {
+      "item": "v10",
+      "support": 7,
+      "predicted_positive": 17,
+      "tp": 0,
+      "fp": 17,
+      "fn": 7,
+      "f1": 0.0
+    },
+    {
+      "item": "v11",
+      "support": 6,
+      "predicted_positive": 23,
+      "tp": 2,
+      "fp": 21,
+      "fn": 4,
+      "f1": 0.13793103448275862
+    },
+    {
+      "item": "v12",
+      "support": 6,
+      "predicted_positive": 16,
+      "tp": 3,
+      "fp": 13,
+      "fn": 3,
+      "f1": 0.2727272727272727
+    },
+    {
+      "item": "v13",
+      "support": 6,
+      "predicted_positive": 55,
+      "tp": 3,
+      "fp": 52,
+      "fn": 3,
+      "f1": 0.09836065573770492
+    },
+    {
+      "item": "v14",
+      "support": 8,
+      "predicted_positive": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 8,
+      "f1": 0.0
+    },
+    {
+      "item": "v15",
+      "support": 6,
+      "predicted_positive": 8,
+      "tp": 3,
+      "fp": 5,
+      "fn": 3,
+      "f1": 0.42857142857142855
+    },
+    {
+      "item": "v16",
+      "support": 6,
+      "predicted_positive": 12,
+      "tp": 1,
+      "fp": 11,
+      "fn": 5,
+      "f1": 0.1111111111111111
+    },
+    {
+      "item": "v17",
+      "support": 6,
+      "predicted_positive": 1,
+      "tp": 0,
+      "fp": 1,
+      "fn": 6,
+      "f1": 0.0
+    },
+    {
+      "item": "v18",
+      "support": 7,
+      "predicted_positive": 11,
+      "tp": 1,
+      "fp": 10,
+      "fn": 6,
+      "f1": 0.1111111111111111
+    },
+    {
+      "item": "v19",
+      "support": 6,
+      "predicted_positive": 20,
+      "tp": 5,
+      "fp": 15,
+      "fn": 1,
+      "f1": 0.38461538461538464
+    },
+    {
+      "item": "v20",
+      "support": 5,
+      "predicted_positive": 3,
+      "tp": 0,
+      "fp": 3,
+      "fn": 5,
+      "f1": 0.0
+    },
+    {
+      "item": "v21",
+      "support": 6,
+      "predicted_positive": 28,
+      "tp": 4,
+      "fp": 24,
+      "fn": 2,
+      "f1": 0.23529411764705882
+    },
+    {
+      "item": "v22",
+      "support": 5,
+      "predicted_positive": 7,
+      "tp": 5,
+      "fp": 2,
+      "fn": 0,
+      "f1": 0.8333333333333334
+    },
+    {
+      "item": "v23",
+      "support": 5,
+      "predicted_positive": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 5,
+      "f1": 0.0
+    },
+    {
+      "item": "v24",
+      "support": 8,
+      "predicted_positive": 1,
+      "tp": 0,
+      "fp": 1,
+      "fn": 8,
+      "f1": 0.0
+    }
+  ],
+  "evidence": {
+    "nonempty": 154,
+    "invalid_single_document": 0,
+    "positive_nonabsence_missing": 45
+  },
+  "missing_items_filled_with_zero": 0,
+  "fully_invalid_records": 0,
+  "actual_minus_counted_input_tokens": {
+    "1": 200
+  }
+}

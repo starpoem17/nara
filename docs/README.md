@@ -1,0 +1,45 @@
+# Agent documentation
+
+Project objective: achieve a strong result in DACON competition 236754.
+Read this index, then only the documents relevant to the current task.
+
+## Routing
+
+| Work | Read |
+|---|---|
+| Understand the prediction task | [task](competition/task.md) |
+| Design data, labeling, retrieval, or inference | [constraints](competition/constraints.md), then [task](competition/task.md) |
+| Optimize scores or extract evidence | [evaluation](competition/evaluation.md) |
+| Implement, package, or debug submission | [submission](competition/submission.md), then [constraints](competition/constraints.md) |
+| Verify freshness, deadlines, or missing details | [sources](competition/sources.md) |
+
+## Implementation and experiments
+
+| Work | Read |
+|---|---|
+| Build/query legal index; inspect artifact contract | [Legal retrieval](architecture/legal-retrieval.md) |
+| Change inference, prompts, grouping, budgets or execution | [Dynamic RAG](architecture/dynamic-rag.md) |
+| Inspect per-feature legal criteria, source provenance and prompt budget | [Legal criteria](architecture/legal-criteria.md) |
+| Run checks; inspect measured results and validation gaps | [Local validation](experiments/local-validation.md) |
+| Compare ungrouped and 7/9/12-group inference latency | [Grouping time](experiments/grouping-time.md) |
+| Full200 compressed-criteria OFF groups and v2/v3 rule experiments | [Compact dev200](experiments/compact200.md) |
+| Source-first KV prefix reuse: grouped OFF speed and accuracy | [Prefix cache](experiments/prefix-cache.md) |
+| Five-group mixed thinking/instant: per-feature effects, prefill/decode, cache and batching controls | [Hybrid five](experiments/hybrid-five.md) |
+| Current mixed-five execution: batch8 barrier fallback; prefill/decode cause probes | [Prefill/decode and fallback](experiments/prefill-decode-fallback.md) |
+| Completion-driven refill and per-step prefill token budgets | [Continuous prefill](experiments/continuous-prefill.md) |
+| Why scheduling changed accuracy; raw-token adapter/repeat controls | [Continuous diagnosis](experiments/continuous-diagnosis.md) |
+| Reproduce colleague ZIP and calibrate local time against reported75min server run | [Colleague submission](experiments/colleague-submission.md) |
+
+## Maintenance contract
+
+- `competition/` contains official requirements only. Its source register is `competition/sources.md`.
+- Keep each fact in one owning document; link to it elsewhere. Use stable, descriptive filenames and headings.
+- Write concise English; preserve Korean item names, legal titles, filenames, and exact API identifiers.
+- Each official-requirements document records its source and verification date. When updating a fact, recheck its source and update that date; unresolved conflicts belong in `sources.md`.
+- Distinguish mandatory rules, organizer recommendations, and baseline examples. Never silently promote an example into a requirement.
+- Add implementation decisions under `architecture/` and experiment conclusions under `experiments/` only when content exists; register new documents here. Keep proposals and project observations out of official requirements.
+- Keep raw datasets, logs, source-page dumps, and repeated background out of this index and requirement summaries.
+- `user/` is user-owned; agents may read it but must not edit it.
+- These summaries are navigation aids for engineering work. Recheck official pages before submissions and material rule-dependent changes.
+
+Search: `rg -n 'PPS_|evidence|label|independent|deadline' docs/competition`.

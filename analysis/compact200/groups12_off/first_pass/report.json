@@ -1,0 +1,95 @@
+{
+  "name": "groups12_off",
+  "plan": "groups12",
+  "hypothesis6": false,
+  "options": {
+    "model_dir": "models/gemma-4-26B-A4B-it-NVFP4",
+    "max_model_len": 32768,
+    "thinking": false,
+    "item_group_size": 4
+  },
+  "limits": {
+    "batch_size": 8,
+    "search_rounds": 2,
+    "queries_per_round": 4,
+    "top_k": 5,
+    "round_tokens": 4096,
+    "total_retrieval_tokens": 8192,
+    "output_tokens": 2048,
+    "retries": 1,
+    "require_search": false
+  },
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "groups": [
+    [
+      "v1",
+      "v2",
+      "v3",
+      "v4"
+    ],
+    [
+      "v5",
+      "v6",
+      "v7"
+    ],
+    [
+      "v8"
+    ],
+    [
+      "v9",
+      "v19"
+    ],
+    [
+      "v10",
+      "v11",
+      "v12",
+      "v13"
+    ],
+    [
+      "v14"
+    ],
+    [
+      "v15",
+      "v16"
+    ],
+    [
+      "v17",
+      "v18"
+    ],
+    [
+      "v20"
+    ],
+    [
+      "v21"
+    ],
+    [
+      "v22",
+      "v23"
+    ],
+    [
+      "v24"
+    ]
+  ],
+  "records": 200,
+  "load_seconds": 28.31007102700096,
+  "prediction_seconds": 1844.6891809860026,
+  "total_seconds": 1872.9992520130036,
+  "rule_seconds": 0,
+  "failed_ids": [
+    "PPS-DEV-120"
+  ],
+  "model_turns": 2406,
+  "search_rounds": 0,
+  "invalid_responses": 7,
+  "context_failures": 0,
+  "input_tokens": 27527652,
+  "output_tokens": 133322,
+  "thinking_tokens": 0,
+  "predictor_metrics": {
+    "model_seconds": 1832.1246863619162,
+    "retrieval_seconds": 0.0,
+    "model_batches": 301,
+    "retrieval_batches": 0,
+    "total_seconds": 1844.6815187190005
+  }
+}

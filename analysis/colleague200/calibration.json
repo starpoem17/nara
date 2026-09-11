@@ -1,0 +1,32 @@
+{
+  "reported_server_minutes": 75.0,
+  "server_limit_minutes": 120.0,
+  "anchor_source": "user-reported successful submission",
+  "colleague_local200_total_seconds": 410.14906423499633,
+  "colleague_local200_inference_seconds": 243.602215987994,
+  "local200_total_threshold_seconds": 656.2385027759941,
+  "colleague_local200_excluding_measured_load_and_index_seconds": 333.20058304238773,
+  "local200_processing_threshold_seconds": 533.1209328678203,
+  "adjustment_scope": "Subtract measured local model loading and index construction; retain per-record prompt preparation. Import and teardown overhead were not separately timed. Assume server startup is small relative to75 minutes; this is not a calibrated stage-by-stage hardware model.",
+  "local200_inference_threshold_seconds": 389.7635455807904,
+  "heuristic_formula": "server_minutes(candidate) = 75 * local200_seconds(candidate) / local200_seconds(colleague)",
+  "scope": "One-anchor heuristic. Total-time ratio includes fixed startup costs; inference-only ratio ignores unknown server startup share. Both assume comparable data and hardware scaling; neither guarantees passing.",
+  "our_candidates": [
+    {
+      "name": "12그룹 OFF + KV 캐싱 + H6",
+      "local_total_seconds": 627.980789897003,
+      "local_inference_seconds": 600.9577476370032,
+      "estimated_server_minutes_total_ratio": 114.83278483183358,
+      "estimated_server_minutes_inference_ratio": 185.02225396421113,
+      "estimated_server_minutes_adjusted_ratio": 135.26936436075047
+    },
+    {
+      "name": "일괄 ON + H6",
+      "local_total_seconds": 745.5284236180014,
+      "local_inference_seconds": 717.3477461910006,
+      "estimated_server_minutes_total_ratio": 136.32758586354745,
+      "estimated_server_minutes_inference_ratio": 220.85628714878624,
+      "estimated_server_minutes_adjusted_ratio": 161.46754748469573
+    }
+  ]
+}

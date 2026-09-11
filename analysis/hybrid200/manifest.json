@@ -1,0 +1,4290 @@
+{
+  "groups": [
+    [
+      "v4",
+      "v6",
+      "v7",
+      "v8"
+    ],
+    [
+      "v10",
+      "v11",
+      "v12",
+      "v13"
+    ],
+    [
+      "v15",
+      "v16",
+      "v17",
+      "v18"
+    ],
+    [
+      "v19",
+      "v20",
+      "v21",
+      "v23"
+    ],
+    [
+      "v1",
+      "v5",
+      "v9",
+      "v14",
+      "v22",
+      "v24"
+    ]
+  ],
+  "thinking_features": [
+    "v1",
+    "v5",
+    "v9",
+    "v14",
+    "v22",
+    "v24"
+  ],
+  "records": 200,
+  "counts": [
+    {
+      "id": "PPS-DEV-01",
+      "groups": [
+        {
+          "False": 13789
+        },
+        {
+          "False": 13805
+        },
+        {
+          "False": 13849
+        },
+        {
+          "False": 13933
+        },
+        {
+          "False": 13930,
+          "True": 13928
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-02",
+      "groups": [
+        {
+          "False": 2712
+        },
+        {
+          "False": 2728
+        },
+        {
+          "False": 2772
+        },
+        {
+          "False": 2856
+        },
+        {
+          "False": 2853,
+          "True": 2851
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-03",
+      "groups": [
+        {
+          "False": 16458
+        },
+        {
+          "False": 16474
+        },
+        {
+          "False": 16518
+        },
+        {
+          "False": 16602
+        },
+        {
+          "False": 16599,
+          "True": 16597
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-04",
+      "groups": [
+        {
+          "False": 19742
+        },
+        {
+          "False": 19758
+        },
+        {
+          "False": 19802
+        },
+        {
+          "False": 19886
+        },
+        {
+          "False": 19883,
+          "True": 19881
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-05",
+      "groups": [
+        {
+          "False": 11228
+        },
+        {
+          "False": 11244
+        },
+        {
+          "False": 11288
+        },
+        {
+          "False": 11372
+        },
+        {
+          "False": 11369,
+          "True": 11367
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-06",
+      "groups": [
+        {
+          "False": 18695
+        },
+        {
+          "False": 18711
+        },
+        {
+          "False": 18755
+        },
+        {
+          "False": 18839
+        },
+        {
+          "False": 18836,
+          "True": 18834
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-07",
+      "groups": [
+        {
+          "False": 10772
+        },
+        {
+          "False": 10788
+        },
+        {
+          "False": 10832
+        },
+        {
+          "False": 10916
+        },
+        {
+          "False": 10913,
+          "True": 10911
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-08",
+      "groups": [
+        {
+          "False": 22632
+        },
+        {
+          "False": 22648
+        },
+        {
+          "False": 22692
+        },
+        {
+          "False": 22776
+        },
+        {
+          "False": 22773,
+          "True": 22771
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-09",
+      "groups": [
+        {
+          "False": 7214
+        },
+        {
+          "False": 7230
+        },
+        {
+          "False": 7274
+        },
+        {
+          "False": 7358
+        },
+        {
+          "False": 7355,
+          "True": 7353
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-10",
+      "groups": [
+        {
+          "False": 11272
+        },
+        {
+          "False": 11288
+        },
+        {
+          "False": 11332
+        },
+        {
+          "False": 11416
+        },
+        {
+          "False": 11413,
+          "True": 11411
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-11",
+      "groups": [
+        {
+          "False": 29205
+        },
+        {
+          "False": 29221
+        },
+        {
+          "False": 29265
+        },
+        {
+          "False": 29349
+        },
+        {
+          "False": 29346,
+          "True": 29344
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-12",
+      "groups": [
+        {
+          "False": 8665
+        },
+        {
+          "False": 8681
+        },
+        {
+          "False": 8725
+        },
+        {
+          "False": 8809
+        },
+        {
+          "False": 8806,
+          "True": 8804
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-13",
+      "groups": [
+        {
+          "False": 9687
+        },
+        {
+          "False": 9703
+        },
+        {
+          "False": 9747
+        },
+        {
+          "False": 9831
+        },
+        {
+          "False": 9828,
+          "True": 9826
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-14",
+      "groups": [
+        {
+          "False": 7466
+        },
+        {
+          "False": 7482
+        },
+        {
+          "False": 7526
+        },
+        {
+          "False": 7610
+        },
+        {
+          "False": 7607,
+          "True": 7605
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-15",
+      "groups": [
+        {
+          "False": 18972
+        },
+        {
+          "False": 18988
+        },
+        {
+          "False": 19032
+        },
+        {
+          "False": 19116
+        },
+        {
+          "False": 19113,
+          "True": 19111
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-16",
+      "groups": [
+        {
+          "False": 7811
+        },
+        {
+          "False": 7827
+        },
+        {
+          "False": 7871
+        },
+        {
+          "False": 7955
+        },
+        {
+          "False": 7952,
+          "True": 7950
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-17",
+      "groups": [
+        {
+          "False": 25384
+        },
+        {
+          "False": 25400
+        },
+        {
+          "False": 25444
+        },
+        {
+          "False": 25528
+        },
+        {
+          "False": 25525,
+          "True": 25523
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-18",
+      "groups": [
+        {
+          "False": 5454
+        },
+        {
+          "False": 5470
+        },
+        {
+          "False": 5514
+        },
+        {
+          "False": 5598
+        },
+        {
+          "False": 5595,
+          "True": 5593
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-19",
+      "groups": [
+        {
+          "False": 12036
+        },
+        {
+          "False": 12052
+        },
+        {
+          "False": 12096
+        },
+        {
+          "False": 12180
+        },
+        {
+          "False": 12177,
+          "True": 12175
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-20",
+      "groups": [
+        {
+          "False": 10339
+        },
+        {
+          "False": 10355
+        },
+        {
+          "False": 10399
+        },
+        {
+          "False": 10483
+        },
+        {
+          "False": 10480,
+          "True": 10478
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-21",
+      "groups": [
+        {
+          "False": 5546
+        },
+        {
+          "False": 5562
+        },
+        {
+          "False": 5606
+        },
+        {
+          "False": 5690
+        },
+        {
+          "False": 5687,
+          "True": 5685
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-22",
+      "groups": [
+        {
+          "False": 10818
+        },
+        {
+          "False": 10834
+        },
+        {
+          "False": 10878
+        },
+        {
+          "False": 10962
+        },
+        {
+          "False": 10959,
+          "True": 10957
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-23",
+      "groups": [
+        {
+          "False": 10242
+        },
+        {
+          "False": 10258
+        },
+        {
+          "False": 10302
+        },
+        {
+          "False": 10386
+        },
+        {
+          "False": 10383,
+          "True": 10381
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-24",
+      "groups": [
+        {
+          "False": 7861
+        },
+        {
+          "False": 7877
+        },
+        {
+          "False": 7921
+        },
+        {
+          "False": 8005
+        },
+        {
+          "False": 8002,
+          "True": 8000
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-25",
+      "groups": [
+        {
+          "False": 10986
+        },
+        {
+          "False": 11002
+        },
+        {
+          "False": 11046
+        },
+        {
+          "False": 11130
+        },
+        {
+          "False": 11127,
+          "True": 11125
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-26",
+      "groups": [
+        {
+          "False": 13562
+        },
+        {
+          "False": 13578
+        },
+        {
+          "False": 13622
+        },
+        {
+          "False": 13706
+        },
+        {
+          "False": 13703,
+          "True": 13701
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-27",
+      "groups": [
+        {
+          "False": 27888
+        },
+        {
+          "False": 27904
+        },
+        {
+          "False": 27948
+        },
+        {
+          "False": 28032
+        },
+        {
+          "False": 28029,
+          "True": 28027
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-28",
+      "groups": [
+        {
+          "False": 27033
+        },
+        {
+          "False": 27049
+        },
+        {
+          "False": 27093
+        },
+        {
+          "False": 27177
+        },
+        {
+          "False": 27174,
+          "True": 27172
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-29",
+      "groups": [
+        {
+          "False": 3783
+        },
+        {
+          "False": 3799
+        },
+        {
+          "False": 3843
+        },
+        {
+          "False": 3927
+        },
+        {
+          "False": 3924,
+          "True": 3922
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-30",
+      "groups": [
+        {
+          "False": 13656
+        },
+        {
+          "False": 13672
+        },
+        {
+          "False": 13716
+        },
+        {
+          "False": 13800
+        },
+        {
+          "False": 13797,
+          "True": 13795
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-31",
+      "groups": [
+        {
+          "False": 6359
+        },
+        {
+          "False": 6375
+        },
+        {
+          "False": 6419
+        },
+        {
+          "False": 6503
+        },
+        {
+          "False": 6500,
+          "True": 6498
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-32",
+      "groups": [
+        {
+          "False": 13313
+        },
+        {
+          "False": 13329
+        },
+        {
+          "False": 13373
+        },
+        {
+          "False": 13457
+        },
+        {
+          "False": 13454,
+          "True": 13452
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-033",
+      "groups": [
+        {
+          "False": 5256
+        },
+        {
+          "False": 5272
+        },
+        {
+          "False": 5316
+        },
+        {
+          "False": 5400
+        },
+        {
+          "False": 5397,
+          "True": 5395
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-034",
+      "groups": [
+        {
+          "False": 15185
+        },
+        {
+          "False": 15201
+        },
+        {
+          "False": 15245
+        },
+        {
+          "False": 15329
+        },
+        {
+          "False": 15326,
+          "True": 15324
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-035",
+      "groups": [
+        {
+          "False": 3201
+        },
+        {
+          "False": 3217
+        },
+        {
+          "False": 3261
+        },
+        {
+          "False": 3345
+        },
+        {
+          "False": 3342,
+          "True": 3340
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-036",
+      "groups": [
+        {
+          "False": 4508
+        },
+        {
+          "False": 4524
+        },
+        {
+          "False": 4568
+        },
+        {
+          "False": 4652
+        },
+        {
+          "False": 4649,
+          "True": 4647
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-037",
+      "groups": [
+        {
+          "False": 8208
+        },
+        {
+          "False": 8224
+        },
+        {
+          "False": 8268
+        },
+        {
+          "False": 8352
+        },
+        {
+          "False": 8349,
+          "True": 8347
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-038",
+      "groups": [
+        {
+          "False": 6598
+        },
+        {
+          "False": 6614
+        },
+        {
+          "False": 6658
+        },
+        {
+          "False": 6742
+        },
+        {
+          "False": 6739,
+          "True": 6737
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-039",
+      "groups": [
+        {
+          "False": 7747
+        },
+        {
+          "False": 7763
+        },
+        {
+          "False": 7807
+        },
+        {
+          "False": 7891
+        },
+        {
+          "False": 7888,
+          "True": 7886
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-040",
+      "groups": [
+        {
+          "False": 4079
+        },
+        {
+          "False": 4095
+        },
+        {
+          "False": 4139
+        },
+        {
+          "False": 4223
+        },
+        {
+          "False": 4220,
+          "True": 4218
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-041",
+      "groups": [
+        {
+          "False": 3234
+        },
+        {
+          "False": 3250
+        },
+        {
+          "False": 3294
+        },
+        {
+          "False": 3378
+        },
+        {
+          "False": 3375,
+          "True": 3373
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-042",
+      "groups": [
+        {
+          "False": 5679
+        },
+        {
+          "False": 5695
+        },
+        {
+          "False": 5739
+        },
+        {
+          "False": 5823
+        },
+        {
+          "False": 5820,
+          "True": 5818
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-043",
+      "groups": [
+        {
+          "False": 5478
+        },
+        {
+          "False": 5494
+        },
+        {
+          "False": 5538
+        },
+        {
+          "False": 5622
+        },
+        {
+          "False": 5619,
+          "True": 5617
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-044",
+      "groups": [
+        {
+          "False": 19314
+        },
+        {
+          "False": 19330
+        },
+        {
+          "False": 19374
+        },
+        {
+          "False": 19458
+        },
+        {
+          "False": 19455,
+          "True": 19453
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-045",
+      "groups": [
+        {
+          "False": 9621
+        },
+        {
+          "False": 9637
+        },
+        {
+          "False": 9681
+        },
+        {
+          "False": 9765
+        },
+        {
+          "False": 9762,
+          "True": 9760
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-046",
+      "groups": [
+        {
+          "False": 5183
+        },
+        {
+          "False": 5199
+        },
+        {
+          "False": 5243
+        },
+        {
+          "False": 5327
+        },
+        {
+          "False": 5324,
+          "True": 5322
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-047",
+      "groups": [
+        {
+          "False": 4173
+        },
+        {
+          "False": 4189
+        },
+        {
+          "False": 4233
+        },
+        {
+          "False": 4317
+        },
+        {
+          "False": 4314,
+          "True": 4312
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-048",
+      "groups": [
+        {
+          "False": 3926
+        },
+        {
+          "False": 3942
+        },
+        {
+          "False": 3986
+        },
+        {
+          "False": 4070
+        },
+        {
+          "False": 4067,
+          "True": 4065
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-049",
+      "groups": [
+        {
+          "False": 7050
+        },
+        {
+          "False": 7066
+        },
+        {
+          "False": 7110
+        },
+        {
+          "False": 7194
+        },
+        {
+          "False": 7191,
+          "True": 7189
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-050",
+      "groups": [
+        {
+          "False": 8582
+        },
+        {
+          "False": 8598
+        },
+        {
+          "False": 8642
+        },
+        {
+          "False": 8726
+        },
+        {
+          "False": 8723,
+          "True": 8721
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-051",
+      "groups": [
+        {
+          "False": 6665
+        },
+        {
+          "False": 6681
+        },
+        {
+          "False": 6725
+        },
+        {
+          "False": 6809
+        },
+        {
+          "False": 6806,
+          "True": 6804
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-052",
+      "groups": [
+        {
+          "False": 9112
+        },
+        {
+          "False": 9128
+        },
+        {
+          "False": 9172
+        },
+        {
+          "False": 9256
+        },
+        {
+          "False": 9253,
+          "True": 9251
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-053",
+      "groups": [
+        {
+          "False": 8221
+        },
+        {
+          "False": 8237
+        },
+        {
+          "False": 8281
+        },
+        {
+          "False": 8365
+        },
+        {
+          "False": 8362,
+          "True": 8360
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-054",
+      "groups": [
+        {
+          "False": 3302
+        },
+        {
+          "False": 3318
+        },
+        {
+          "False": 3362
+        },
+        {
+          "False": 3446
+        },
+        {
+          "False": 3443,
+          "True": 3441
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-055",
+      "groups": [
+        {
+          "False": 7699
+        },
+        {
+          "False": 7715
+        },
+        {
+          "False": 7759
+        },
+        {
+          "False": 7843
+        },
+        {
+          "False": 7840,
+          "True": 7838
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-056",
+      "groups": [
+        {
+          "False": 7826
+        },
+        {
+          "False": 7842
+        },
+        {
+          "False": 7886
+        },
+        {
+          "False": 7970
+        },
+        {
+          "False": 7967,
+          "True": 7965
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-057",
+      "groups": [
+        {
+          "False": 3590
+        },
+        {
+          "False": 3606
+        },
+        {
+          "False": 3650
+        },
+        {
+          "False": 3734
+        },
+        {
+          "False": 3731,
+          "True": 3729
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-058",
+      "groups": [
+        {
+          "False": 5687
+        },
+        {
+          "False": 5703
+        },
+        {
+          "False": 5747
+        },
+        {
+          "False": 5831
+        },
+        {
+          "False": 5828,
+          "True": 5826
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-059",
+      "groups": [
+        {
+          "False": 4295
+        },
+        {
+          "False": 4311
+        },
+        {
+          "False": 4355
+        },
+        {
+          "False": 4439
+        },
+        {
+          "False": 4436,
+          "True": 4434
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-060",
+      "groups": [
+        {
+          "False": 3137
+        },
+        {
+          "False": 3153
+        },
+        {
+          "False": 3197
+        },
+        {
+          "False": 3281
+        },
+        {
+          "False": 3278,
+          "True": 3276
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-061",
+      "groups": [
+        {
+          "False": 2672
+        },
+        {
+          "False": 2688
+        },
+        {
+          "False": 2732
+        },
+        {
+          "False": 2816
+        },
+        {
+          "False": 2813,
+          "True": 2811
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-062",
+      "groups": [
+        {
+          "False": 2691
+        },
+        {
+          "False": 2707
+        },
+        {
+          "False": 2751
+        },
+        {
+          "False": 2835
+        },
+        {
+          "False": 2832,
+          "True": 2830
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-063",
+      "groups": [
+        {
+          "False": 14339
+        },
+        {
+          "False": 14355
+        },
+        {
+          "False": 14399
+        },
+        {
+          "False": 14483
+        },
+        {
+          "False": 14480,
+          "True": 14478
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-064",
+      "groups": [
+        {
+          "False": 7437
+        },
+        {
+          "False": 7453
+        },
+        {
+          "False": 7497
+        },
+        {
+          "False": 7581
+        },
+        {
+          "False": 7578,
+          "True": 7576
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-065",
+      "groups": [
+        {
+          "False": 3669
+        },
+        {
+          "False": 3685
+        },
+        {
+          "False": 3729
+        },
+        {
+          "False": 3813
+        },
+        {
+          "False": 3810,
+          "True": 3808
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-066",
+      "groups": [
+        {
+          "False": 23931
+        },
+        {
+          "False": 23947
+        },
+        {
+          "False": 23991
+        },
+        {
+          "False": 24075
+        },
+        {
+          "False": 24072,
+          "True": 24070
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-067",
+      "groups": [
+        {
+          "False": 5517
+        },
+        {
+          "False": 5533
+        },
+        {
+          "False": 5577
+        },
+        {
+          "False": 5661
+        },
+        {
+          "False": 5658,
+          "True": 5656
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-068",
+      "groups": [
+        {
+          "False": 5497
+        },
+        {
+          "False": 5513
+        },
+        {
+          "False": 5557
+        },
+        {
+          "False": 5641
+        },
+        {
+          "False": 5638,
+          "True": 5636
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-069",
+      "groups": [
+        {
+          "False": 10416
+        },
+        {
+          "False": 10432
+        },
+        {
+          "False": 10476
+        },
+        {
+          "False": 10560
+        },
+        {
+          "False": 10557,
+          "True": 10555
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-070",
+      "groups": [
+        {
+          "False": 2921
+        },
+        {
+          "False": 2937
+        },
+        {
+          "False": 2981
+        },
+        {
+          "False": 3065
+        },
+        {
+          "False": 3062,
+          "True": 3060
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-071",
+      "groups": [
+        {
+          "False": 4183
+        },
+        {
+          "False": 4199
+        },
+        {
+          "False": 4243
+        },
+        {
+          "False": 4327
+        },
+        {
+          "False": 4324,
+          "True": 4322
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-072",
+      "groups": [
+        {
+          "False": 4587
+        },
+        {
+          "False": 4603
+        },
+        {
+          "False": 4647
+        },
+        {
+          "False": 4731
+        },
+        {
+          "False": 4728,
+          "True": 4726
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-073",
+      "groups": [
+        {
+          "False": 8619
+        },
+        {
+          "False": 8635
+        },
+        {
+          "False": 8679
+        },
+        {
+          "False": 8763
+        },
+        {
+          "False": 8760,
+          "True": 8758
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-074",
+      "groups": [
+        {
+          "False": 5980
+        },
+        {
+          "False": 5996
+        },
+        {
+          "False": 6040
+        },
+        {
+          "False": 6124
+        },
+        {
+          "False": 6121,
+          "True": 6119
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-075",
+      "groups": [
+        {
+          "False": 5278
+        },
+        {
+          "False": 5294
+        },
+        {
+          "False": 5338
+        },
+        {
+          "False": 5422
+        },
+        {
+          "False": 5419,
+          "True": 5417
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-076",
+      "groups": [
+        {
+          "False": 17773
+        },
+        {
+          "False": 17789
+        },
+        {
+          "False": 17833
+        },
+        {
+          "False": 17917
+        },
+        {
+          "False": 17914,
+          "True": 17912
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-077",
+      "groups": [
+        {
+          "False": 2453
+        },
+        {
+          "False": 2469
+        },
+        {
+          "False": 2513
+        },
+        {
+          "False": 2597
+        },
+        {
+          "False": 2594,
+          "True": 2592
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-078",
+      "groups": [
+        {
+          "False": 5691
+        },
+        {
+          "False": 5707
+        },
+        {
+          "False": 5751
+        },
+        {
+          "False": 5835
+        },
+        {
+          "False": 5832,
+          "True": 5830
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-079",
+      "groups": [
+        {
+          "False": 5261
+        },
+        {
+          "False": 5277
+        },
+        {
+          "False": 5321
+        },
+        {
+          "False": 5405
+        },
+        {
+          "False": 5402,
+          "True": 5400
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-080",
+      "groups": [
+        {
+          "False": 3493
+        },
+        {
+          "False": 3509
+        },
+        {
+          "False": 3553
+        },
+        {
+          "False": 3637
+        },
+        {
+          "False": 3634,
+          "True": 3632
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-081",
+      "groups": [
+        {
+          "False": 23111
+        },
+        {
+          "False": 23127
+        },
+        {
+          "False": 23171
+        },
+        {
+          "False": 23255
+        },
+        {
+          "False": 23252,
+          "True": 23250
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-082",
+      "groups": [
+        {
+          "False": 27131
+        },
+        {
+          "False": 27147
+        },
+        {
+          "False": 27191
+        },
+        {
+          "False": 27275
+        },
+        {
+          "False": 27272,
+          "True": 27270
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-083",
+      "groups": [
+        {
+          "False": 6214
+        },
+        {
+          "False": 6230
+        },
+        {
+          "False": 6274
+        },
+        {
+          "False": 6358
+        },
+        {
+          "False": 6355,
+          "True": 6353
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-084",
+      "groups": [
+        {
+          "False": 6793
+        },
+        {
+          "False": 6809
+        },
+        {
+          "False": 6853
+        },
+        {
+          "False": 6937
+        },
+        {
+          "False": 6934,
+          "True": 6932
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-085",
+      "groups": [
+        {
+          "False": 19493
+        },
+        {
+          "False": 19509
+        },
+        {
+          "False": 19553
+        },
+        {
+          "False": 19637
+        },
+        {
+          "False": 19634,
+          "True": 19632
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-086",
+      "groups": [
+        {
+          "False": 12199
+        },
+        {
+          "False": 12215
+        },
+        {
+          "False": 12259
+        },
+        {
+          "False": 12343
+        },
+        {
+          "False": 12340,
+          "True": 12338
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-087",
+      "groups": [
+        {
+          "False": 19201
+        },
+        {
+          "False": 19217
+        },
+        {
+          "False": 19261
+        },
+        {
+          "False": 19345
+        },
+        {
+          "False": 19342,
+          "True": 19340
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-088",
+      "groups": [
+        {
+          "False": 14946
+        },
+        {
+          "False": 14962
+        },
+        {
+          "False": 15006
+        },
+        {
+          "False": 15090
+        },
+        {
+          "False": 15087,
+          "True": 15085
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-089",
+      "groups": [
+        {
+          "False": 7674
+        },
+        {
+          "False": 7690
+        },
+        {
+          "False": 7734
+        },
+        {
+          "False": 7818
+        },
+        {
+          "False": 7815,
+          "True": 7813
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-090",
+      "groups": [
+        {
+          "False": 10326
+        },
+        {
+          "False": 10342
+        },
+        {
+          "False": 10386
+        },
+        {
+          "False": 10470
+        },
+        {
+          "False": 10467,
+          "True": 10465
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-091",
+      "groups": [
+        {
+          "False": 12124
+        },
+        {
+          "False": 12140
+        },
+        {
+          "False": 12184
+        },
+        {
+          "False": 12268
+        },
+        {
+          "False": 12265,
+          "True": 12263
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-092",
+      "groups": [
+        {
+          "False": 6639
+        },
+        {
+          "False": 6655
+        },
+        {
+          "False": 6699
+        },
+        {
+          "False": 6783
+        },
+        {
+          "False": 6780,
+          "True": 6778
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-093",
+      "groups": [
+        {
+          "False": 23145
+        },
+        {
+          "False": 23161
+        },
+        {
+          "False": 23205
+        },
+        {
+          "False": 23289
+        },
+        {
+          "False": 23286,
+          "True": 23284
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-094",
+      "groups": [
+        {
+          "False": 3347
+        },
+        {
+          "False": 3363
+        },
+        {
+          "False": 3407
+        },
+        {
+          "False": 3491
+        },
+        {
+          "False": 3488,
+          "True": 3486
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-095",
+      "groups": [
+        {
+          "False": 8581
+        },
+        {
+          "False": 8597
+        },
+        {
+          "False": 8641
+        },
+        {
+          "False": 8725
+        },
+        {
+          "False": 8722,
+          "True": 8720
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-096",
+      "groups": [
+        {
+          "False": 17842
+        },
+        {
+          "False": 17858
+        },
+        {
+          "False": 17902
+        },
+        {
+          "False": 17986
+        },
+        {
+          "False": 17983,
+          "True": 17981
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-097",
+      "groups": [
+        {
+          "False": 9506
+        },
+        {
+          "False": 9522
+        },
+        {
+          "False": 9566
+        },
+        {
+          "False": 9650
+        },
+        {
+          "False": 9647,
+          "True": 9645
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-098",
+      "groups": [
+        {
+          "False": 6502
+        },
+        {
+          "False": 6518
+        },
+        {
+          "False": 6562
+        },
+        {
+          "False": 6646
+        },
+        {
+          "False": 6643,
+          "True": 6641
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-099",
+      "groups": [
+        {
+          "False": 24941
+        },
+        {
+          "False": 24957
+        },
+        {
+          "False": 25001
+        },
+        {
+          "False": 25085
+        },
+        {
+          "False": 25082,
+          "True": 25080
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-100",
+      "groups": [
+        {
+          "False": 19520
+        },
+        {
+          "False": 19536
+        },
+        {
+          "False": 19580
+        },
+        {
+          "False": 19664
+        },
+        {
+          "False": 19661,
+          "True": 19659
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-101",
+      "groups": [
+        {
+          "False": 12236
+        },
+        {
+          "False": 12252
+        },
+        {
+          "False": 12296
+        },
+        {
+          "False": 12380
+        },
+        {
+          "False": 12377,
+          "True": 12375
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-102",
+      "groups": [
+        {
+          "False": 9108
+        },
+        {
+          "False": 9124
+        },
+        {
+          "False": 9168
+        },
+        {
+          "False": 9252
+        },
+        {
+          "False": 9249,
+          "True": 9247
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-103",
+      "groups": [
+        {
+          "False": 25809
+        },
+        {
+          "False": 25825
+        },
+        {
+          "False": 25869
+        },
+        {
+          "False": 25953
+        },
+        {
+          "False": 25950,
+          "True": 25948
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-104",
+      "groups": [
+        {
+          "False": 5795
+        },
+        {
+          "False": 5811
+        },
+        {
+          "False": 5855
+        },
+        {
+          "False": 5939
+        },
+        {
+          "False": 5936,
+          "True": 5934
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-105",
+      "groups": [
+        {
+          "False": 10146
+        },
+        {
+          "False": 10162
+        },
+        {
+          "False": 10206
+        },
+        {
+          "False": 10290
+        },
+        {
+          "False": 10287,
+          "True": 10285
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-106",
+      "groups": [
+        {
+          "False": 16375
+        },
+        {
+          "False": 16391
+        },
+        {
+          "False": 16435
+        },
+        {
+          "False": 16519
+        },
+        {
+          "False": 16516,
+          "True": 16514
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-107",
+      "groups": [
+        {
+          "False": 7601
+        },
+        {
+          "False": 7617
+        },
+        {
+          "False": 7661
+        },
+        {
+          "False": 7745
+        },
+        {
+          "False": 7742,
+          "True": 7740
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-108",
+      "groups": [
+        {
+          "False": 6272
+        },
+        {
+          "False": 6288
+        },
+        {
+          "False": 6332
+        },
+        {
+          "False": 6416
+        },
+        {
+          "False": 6413,
+          "True": 6411
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-109",
+      "groups": [
+        {
+          "False": 24885
+        },
+        {
+          "False": 24901
+        },
+        {
+          "False": 24945
+        },
+        {
+          "False": 25029
+        },
+        {
+          "False": 25026,
+          "True": 25024
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-110",
+      "groups": [
+        {
+          "False": 7143
+        },
+        {
+          "False": 7159
+        },
+        {
+          "False": 7203
+        },
+        {
+          "False": 7287
+        },
+        {
+          "False": 7284,
+          "True": 7282
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-111",
+      "groups": [
+        {
+          "False": 8474
+        },
+        {
+          "False": 8490
+        },
+        {
+          "False": 8534
+        },
+        {
+          "False": 8618
+        },
+        {
+          "False": 8615,
+          "True": 8613
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-112",
+      "groups": [
+        {
+          "False": 11452
+        },
+        {
+          "False": 11468
+        },
+        {
+          "False": 11512
+        },
+        {
+          "False": 11596
+        },
+        {
+          "False": 11593,
+          "True": 11591
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-113",
+      "groups": [
+        {
+          "False": 4021
+        },
+        {
+          "False": 4037
+        },
+        {
+          "False": 4081
+        },
+        {
+          "False": 4165
+        },
+        {
+          "False": 4162,
+          "True": 4160
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-114",
+      "groups": [
+        {
+          "False": 3854
+        },
+        {
+          "False": 3870
+        },
+        {
+          "False": 3914
+        },
+        {
+          "False": 3998
+        },
+        {
+          "False": 3995,
+          "True": 3993
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-115",
+      "groups": [
+        {
+          "False": 5436
+        },
+        {
+          "False": 5452
+        },
+        {
+          "False": 5496
+        },
+        {
+          "False": 5580
+        },
+        {
+          "False": 5577,
+          "True": 5575
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-116",
+      "groups": [
+        {
+          "False": 6564
+        },
+        {
+          "False": 6580
+        },
+        {
+          "False": 6624
+        },
+        {
+          "False": 6708
+        },
+        {
+          "False": 6705,
+          "True": 6703
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-117",
+      "groups": [
+        {
+          "False": 12685
+        },
+        {
+          "False": 12701
+        },
+        {
+          "False": 12745
+        },
+        {
+          "False": 12829
+        },
+        {
+          "False": 12826,
+          "True": 12824
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-118",
+      "groups": [
+        {
+          "False": 5294
+        },
+        {
+          "False": 5310
+        },
+        {
+          "False": 5354
+        },
+        {
+          "False": 5438
+        },
+        {
+          "False": 5435,
+          "True": 5433
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-119",
+      "groups": [
+        {
+          "False": 26780
+        },
+        {
+          "False": 26796
+        },
+        {
+          "False": 26840
+        },
+        {
+          "False": 26924
+        },
+        {
+          "False": 26921,
+          "True": 26919
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-120",
+      "groups": [
+        {
+          "False": 3372
+        },
+        {
+          "False": 3388
+        },
+        {
+          "False": 3432
+        },
+        {
+          "False": 3516
+        },
+        {
+          "False": 3513,
+          "True": 3511
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-121",
+      "groups": [
+        {
+          "False": 24281
+        },
+        {
+          "False": 24297
+        },
+        {
+          "False": 24341
+        },
+        {
+          "False": 24425
+        },
+        {
+          "False": 24422,
+          "True": 24420
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-122",
+      "groups": [
+        {
+          "False": 15145
+        },
+        {
+          "False": 15161
+        },
+        {
+          "False": 15205
+        },
+        {
+          "False": 15289
+        },
+        {
+          "False": 15286,
+          "True": 15284
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-123",
+      "groups": [
+        {
+          "False": 22113
+        },
+        {
+          "False": 22129
+        },
+        {
+          "False": 22173
+        },
+        {
+          "False": 22257
+        },
+        {
+          "False": 22254,
+          "True": 22252
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-124",
+      "groups": [
+        {
+          "False": 6720
+        },
+        {
+          "False": 6736
+        },
+        {
+          "False": 6780
+        },
+        {
+          "False": 6864
+        },
+        {
+          "False": 6861,
+          "True": 6859
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-125",
+      "groups": [
+        {
+          "False": 16327
+        },
+        {
+          "False": 16343
+        },
+        {
+          "False": 16387
+        },
+        {
+          "False": 16471
+        },
+        {
+          "False": 16468,
+          "True": 16466
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-126",
+      "groups": [
+        {
+          "False": 7502
+        },
+        {
+          "False": 7518
+        },
+        {
+          "False": 7562
+        },
+        {
+          "False": 7646
+        },
+        {
+          "False": 7643,
+          "True": 7641
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-127",
+      "groups": [
+        {
+          "False": 9471
+        },
+        {
+          "False": 9487
+        },
+        {
+          "False": 9531
+        },
+        {
+          "False": 9615
+        },
+        {
+          "False": 9612,
+          "True": 9610
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-128",
+      "groups": [
+        {
+          "False": 5627
+        },
+        {
+          "False": 5643
+        },
+        {
+          "False": 5687
+        },
+        {
+          "False": 5771
+        },
+        {
+          "False": 5768,
+          "True": 5766
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-129",
+      "groups": [
+        {
+          "False": 15611
+        },
+        {
+          "False": 15627
+        },
+        {
+          "False": 15671
+        },
+        {
+          "False": 15755
+        },
+        {
+          "False": 15752,
+          "True": 15750
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-130",
+      "groups": [
+        {
+          "False": 4201
+        },
+        {
+          "False": 4217
+        },
+        {
+          "False": 4261
+        },
+        {
+          "False": 4345
+        },
+        {
+          "False": 4342,
+          "True": 4340
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-131",
+      "groups": [
+        {
+          "False": 4474
+        },
+        {
+          "False": 4490
+        },
+        {
+          "False": 4534
+        },
+        {
+          "False": 4618
+        },
+        {
+          "False": 4615,
+          "True": 4613
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-132",
+      "groups": [
+        {
+          "False": 12736
+        },
+        {
+          "False": 12752
+        },
+        {
+          "False": 12796
+        },
+        {
+          "False": 12880
+        },
+        {
+          "False": 12877,
+          "True": 12875
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-133",
+      "groups": [
+        {
+          "False": 11684
+        },
+        {
+          "False": 11700
+        },
+        {
+          "False": 11744
+        },
+        {
+          "False": 11828
+        },
+        {
+          "False": 11825,
+          "True": 11823
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-134",
+      "groups": [
+        {
+          "False": 6236
+        },
+        {
+          "False": 6252
+        },
+        {
+          "False": 6296
+        },
+        {
+          "False": 6380
+        },
+        {
+          "False": 6377,
+          "True": 6375
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-135",
+      "groups": [
+        {
+          "False": 18613
+        },
+        {
+          "False": 18629
+        },
+        {
+          "False": 18673
+        },
+        {
+          "False": 18757
+        },
+        {
+          "False": 18754,
+          "True": 18752
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-136",
+      "groups": [
+        {
+          "False": 18415
+        },
+        {
+          "False": 18431
+        },
+        {
+          "False": 18475
+        },
+        {
+          "False": 18559
+        },
+        {
+          "False": 18556,
+          "True": 18554
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-137",
+      "groups": [
+        {
+          "False": 21014
+        },
+        {
+          "False": 21030
+        },
+        {
+          "False": 21074
+        },
+        {
+          "False": 21158
+        },
+        {
+          "False": 21155,
+          "True": 21153
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-138",
+      "groups": [
+        {
+          "False": 25265
+        },
+        {
+          "False": 25281
+        },
+        {
+          "False": 25325
+        },
+        {
+          "False": 25409
+        },
+        {
+          "False": 25406,
+          "True": 25404
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-139",
+      "groups": [
+        {
+          "False": 11509
+        },
+        {
+          "False": 11525
+        },
+        {
+          "False": 11569
+        },
+        {
+          "False": 11653
+        },
+        {
+          "False": 11650,
+          "True": 11648
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-140",
+      "groups": [
+        {
+          "False": 25237
+        },
+        {
+          "False": 25253
+        },
+        {
+          "False": 25297
+        },
+        {
+          "False": 25381
+        },
+        {
+          "False": 25378,
+          "True": 25376
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-141",
+      "groups": [
+        {
+          "False": 6205
+        },
+        {
+          "False": 6221
+        },
+        {
+          "False": 6265
+        },
+        {
+          "False": 6349
+        },
+        {
+          "False": 6346,
+          "True": 6344
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-142",
+      "groups": [
+        {
+          "False": 3343
+        },
+        {
+          "False": 3359
+        },
+        {
+          "False": 3403
+        },
+        {
+          "False": 3487
+        },
+        {
+          "False": 3484,
+          "True": 3482
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-143",
+      "groups": [
+        {
+          "False": 28438
+        },
+        {
+          "False": 28454
+        },
+        {
+          "False": 28498
+        },
+        {
+          "False": 28582
+        },
+        {
+          "False": 28579,
+          "True": 28577
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-144",
+      "groups": [
+        {
+          "False": 6505
+        },
+        {
+          "False": 6521
+        },
+        {
+          "False": 6565
+        },
+        {
+          "False": 6649
+        },
+        {
+          "False": 6646,
+          "True": 6644
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-145",
+      "groups": [
+        {
+          "False": 28322
+        },
+        {
+          "False": 28338
+        },
+        {
+          "False": 28382
+        },
+        {
+          "False": 28466
+        },
+        {
+          "False": 28463,
+          "True": 28461
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-146",
+      "groups": [
+        {
+          "False": 6897
+        },
+        {
+          "False": 6913
+        },
+        {
+          "False": 6957
+        },
+        {
+          "False": 7041
+        },
+        {
+          "False": 7038,
+          "True": 7036
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-147",
+      "groups": [
+        {
+          "False": 26960
+        },
+        {
+          "False": 26976
+        },
+        {
+          "False": 27020
+        },
+        {
+          "False": 27104
+        },
+        {
+          "False": 27101,
+          "True": 27099
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-148",
+      "groups": [
+        {
+          "False": 6673
+        },
+        {
+          "False": 6689
+        },
+        {
+          "False": 6733
+        },
+        {
+          "False": 6817
+        },
+        {
+          "False": 6814,
+          "True": 6812
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-149",
+      "groups": [
+        {
+          "False": 8669
+        },
+        {
+          "False": 8685
+        },
+        {
+          "False": 8729
+        },
+        {
+          "False": 8813
+        },
+        {
+          "False": 8810,
+          "True": 8808
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-150",
+      "groups": [
+        {
+          "False": 3329
+        },
+        {
+          "False": 3345
+        },
+        {
+          "False": 3389
+        },
+        {
+          "False": 3473
+        },
+        {
+          "False": 3470,
+          "True": 3468
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-151",
+      "groups": [
+        {
+          "False": 9630
+        },
+        {
+          "False": 9646
+        },
+        {
+          "False": 9690
+        },
+        {
+          "False": 9774
+        },
+        {
+          "False": 9771,
+          "True": 9769
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-152",
+      "groups": [
+        {
+          "False": 7206
+        },
+        {
+          "False": 7222
+        },
+        {
+          "False": 7266
+        },
+        {
+          "False": 7350
+        },
+        {
+          "False": 7347,
+          "True": 7345
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-153",
+      "groups": [
+        {
+          "False": 26544
+        },
+        {
+          "False": 26560
+        },
+        {
+          "False": 26604
+        },
+        {
+          "False": 26688
+        },
+        {
+          "False": 26685,
+          "True": 26683
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-154",
+      "groups": [
+        {
+          "False": 5705
+        },
+        {
+          "False": 5721
+        },
+        {
+          "False": 5765
+        },
+        {
+          "False": 5849
+        },
+        {
+          "False": 5846,
+          "True": 5844
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-155",
+      "groups": [
+        {
+          "False": 27560
+        },
+        {
+          "False": 27576
+        },
+        {
+          "False": 27620
+        },
+        {
+          "False": 27704
+        },
+        {
+          "False": 27701,
+          "True": 27699
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-156",
+      "groups": [
+        {
+          "False": 4596
+        },
+        {
+          "False": 4612
+        },
+        {
+          "False": 4656
+        },
+        {
+          "False": 4740
+        },
+        {
+          "False": 4737,
+          "True": 4735
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-157",
+      "groups": [
+        {
+          "False": 18221
+        },
+        {
+          "False": 18237
+        },
+        {
+          "False": 18281
+        },
+        {
+          "False": 18365
+        },
+        {
+          "False": 18362,
+          "True": 18360
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-158",
+      "groups": [
+        {
+          "False": 27072
+        },
+        {
+          "False": 27088
+        },
+        {
+          "False": 27132
+        },
+        {
+          "False": 27216
+        },
+        {
+          "False": 27213,
+          "True": 27211
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-159",
+      "groups": [
+        {
+          "False": 17667
+        },
+        {
+          "False": 17683
+        },
+        {
+          "False": 17727
+        },
+        {
+          "False": 17811
+        },
+        {
+          "False": 17808,
+          "True": 17806
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-160",
+      "groups": [
+        {
+          "False": 5846
+        },
+        {
+          "False": 5862
+        },
+        {
+          "False": 5906
+        },
+        {
+          "False": 5990
+        },
+        {
+          "False": 5987,
+          "True": 5985
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-161",
+      "groups": [
+        {
+          "False": 17411
+        },
+        {
+          "False": 17427
+        },
+        {
+          "False": 17471
+        },
+        {
+          "False": 17555
+        },
+        {
+          "False": 17552,
+          "True": 17550
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-162",
+      "groups": [
+        {
+          "False": 15962
+        },
+        {
+          "False": 15978
+        },
+        {
+          "False": 16022
+        },
+        {
+          "False": 16106
+        },
+        {
+          "False": 16103,
+          "True": 16101
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-163",
+      "groups": [
+        {
+          "False": 11543
+        },
+        {
+          "False": 11559
+        },
+        {
+          "False": 11603
+        },
+        {
+          "False": 11687
+        },
+        {
+          "False": 11684,
+          "True": 11682
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-164",
+      "groups": [
+        {
+          "False": 5157
+        },
+        {
+          "False": 5173
+        },
+        {
+          "False": 5217
+        },
+        {
+          "False": 5301
+        },
+        {
+          "False": 5298,
+          "True": 5296
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-165",
+      "groups": [
+        {
+          "False": 21417
+        },
+        {
+          "False": 21433
+        },
+        {
+          "False": 21477
+        },
+        {
+          "False": 21561
+        },
+        {
+          "False": 21558,
+          "True": 21556
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-166",
+      "groups": [
+        {
+          "False": 3662
+        },
+        {
+          "False": 3678
+        },
+        {
+          "False": 3722
+        },
+        {
+          "False": 3806
+        },
+        {
+          "False": 3803,
+          "True": 3801
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-167",
+      "groups": [
+        {
+          "False": 5376
+        },
+        {
+          "False": 5392
+        },
+        {
+          "False": 5436
+        },
+        {
+          "False": 5520
+        },
+        {
+          "False": 5517,
+          "True": 5515
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-168",
+      "groups": [
+        {
+          "False": 4639
+        },
+        {
+          "False": 4655
+        },
+        {
+          "False": 4699
+        },
+        {
+          "False": 4783
+        },
+        {
+          "False": 4780,
+          "True": 4778
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-169",
+      "groups": [
+        {
+          "False": 28245
+        },
+        {
+          "False": 28261
+        },
+        {
+          "False": 28305
+        },
+        {
+          "False": 28389
+        },
+        {
+          "False": 28386,
+          "True": 28384
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-170",
+      "groups": [
+        {
+          "False": 13985
+        },
+        {
+          "False": 14001
+        },
+        {
+          "False": 14045
+        },
+        {
+          "False": 14129
+        },
+        {
+          "False": 14126,
+          "True": 14124
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-171",
+      "groups": [
+        {
+          "False": 26874
+        },
+        {
+          "False": 26890
+        },
+        {
+          "False": 26934
+        },
+        {
+          "False": 27018
+        },
+        {
+          "False": 27015,
+          "True": 27013
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-172",
+      "groups": [
+        {
+          "False": 9719
+        },
+        {
+          "False": 9735
+        },
+        {
+          "False": 9779
+        },
+        {
+          "False": 9863
+        },
+        {
+          "False": 9860,
+          "True": 9858
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-173",
+      "groups": [
+        {
+          "False": 22736
+        },
+        {
+          "False": 22752
+        },
+        {
+          "False": 22796
+        },
+        {
+          "False": 22880
+        },
+        {
+          "False": 22877,
+          "True": 22875
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-174",
+      "groups": [
+        {
+          "False": 3781
+        },
+        {
+          "False": 3797
+        },
+        {
+          "False": 3841
+        },
+        {
+          "False": 3925
+        },
+        {
+          "False": 3922,
+          "True": 3920
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-175",
+      "groups": [
+        {
+          "False": 14427
+        },
+        {
+          "False": 14443
+        },
+        {
+          "False": 14487
+        },
+        {
+          "False": 14571
+        },
+        {
+          "False": 14568,
+          "True": 14566
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-176",
+      "groups": [
+        {
+          "False": 8932
+        },
+        {
+          "False": 8948
+        },
+        {
+          "False": 8992
+        },
+        {
+          "False": 9076
+        },
+        {
+          "False": 9073,
+          "True": 9071
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-177",
+      "groups": [
+        {
+          "False": 6792
+        },
+        {
+          "False": 6808
+        },
+        {
+          "False": 6852
+        },
+        {
+          "False": 6936
+        },
+        {
+          "False": 6933,
+          "True": 6931
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-178",
+      "groups": [
+        {
+          "False": 18498
+        },
+        {
+          "False": 18514
+        },
+        {
+          "False": 18558
+        },
+        {
+          "False": 18642
+        },
+        {
+          "False": 18639,
+          "True": 18637
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-179",
+      "groups": [
+        {
+          "False": 2935
+        },
+        {
+          "False": 2951
+        },
+        {
+          "False": 2995
+        },
+        {
+          "False": 3079
+        },
+        {
+          "False": 3076,
+          "True": 3074
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-180",
+      "groups": [
+        {
+          "False": 10929
+        },
+        {
+          "False": 10945
+        },
+        {
+          "False": 10989
+        },
+        {
+          "False": 11073
+        },
+        {
+          "False": 11070,
+          "True": 11068
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-181",
+      "groups": [
+        {
+          "False": 9720
+        },
+        {
+          "False": 9736
+        },
+        {
+          "False": 9780
+        },
+        {
+          "False": 9864
+        },
+        {
+          "False": 9861,
+          "True": 9859
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-182",
+      "groups": [
+        {
+          "False": 4111
+        },
+        {
+          "False": 4127
+        },
+        {
+          "False": 4171
+        },
+        {
+          "False": 4255
+        },
+        {
+          "False": 4252,
+          "True": 4250
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-183",
+      "groups": [
+        {
+          "False": 10954
+        },
+        {
+          "False": 10970
+        },
+        {
+          "False": 11014
+        },
+        {
+          "False": 11098
+        },
+        {
+          "False": 11095,
+          "True": 11093
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-184",
+      "groups": [
+        {
+          "False": 5791
+        },
+        {
+          "False": 5807
+        },
+        {
+          "False": 5851
+        },
+        {
+          "False": 5935
+        },
+        {
+          "False": 5932,
+          "True": 5930
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-185",
+      "groups": [
+        {
+          "False": 17120
+        },
+        {
+          "False": 17136
+        },
+        {
+          "False": 17180
+        },
+        {
+          "False": 17264
+        },
+        {
+          "False": 17261,
+          "True": 17259
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-186",
+      "groups": [
+        {
+          "False": 8296
+        },
+        {
+          "False": 8312
+        },
+        {
+          "False": 8356
+        },
+        {
+          "False": 8440
+        },
+        {
+          "False": 8437,
+          "True": 8435
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-187",
+      "groups": [
+        {
+          "False": 6086
+        },
+        {
+          "False": 6102
+        },
+        {
+          "False": 6146
+        },
+        {
+          "False": 6230
+        },
+        {
+          "False": 6227,
+          "True": 6225
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-188",
+      "groups": [
+        {
+          "False": 21845
+        },
+        {
+          "False": 21861
+        },
+        {
+          "False": 21905
+        },
+        {
+          "False": 21989
+        },
+        {
+          "False": 21986,
+          "True": 21984
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-189",
+      "groups": [
+        {
+          "False": 11431
+        },
+        {
+          "False": 11447
+        },
+        {
+          "False": 11491
+        },
+        {
+          "False": 11575
+        },
+        {
+          "False": 11572,
+          "True": 11570
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-190",
+      "groups": [
+        {
+          "False": 8424
+        },
+        {
+          "False": 8440
+        },
+        {
+          "False": 8484
+        },
+        {
+          "False": 8568
+        },
+        {
+          "False": 8565,
+          "True": 8563
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-191",
+      "groups": [
+        {
+          "False": 21111
+        },
+        {
+          "False": 21127
+        },
+        {
+          "False": 21171
+        },
+        {
+          "False": 21255
+        },
+        {
+          "False": 21252,
+          "True": 21250
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-192",
+      "groups": [
+        {
+          "False": 6701
+        },
+        {
+          "False": 6717
+        },
+        {
+          "False": 6761
+        },
+        {
+          "False": 6845
+        },
+        {
+          "False": 6842,
+          "True": 6840
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-193",
+      "groups": [
+        {
+          "False": 10416
+        },
+        {
+          "False": 10432
+        },
+        {
+          "False": 10476
+        },
+        {
+          "False": 10560
+        },
+        {
+          "False": 10557,
+          "True": 10555
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-194",
+      "groups": [
+        {
+          "False": 10458
+        },
+        {
+          "False": 10474
+        },
+        {
+          "False": 10518
+        },
+        {
+          "False": 10602
+        },
+        {
+          "False": 10599,
+          "True": 10597
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-195",
+      "groups": [
+        {
+          "False": 16761
+        },
+        {
+          "False": 16777
+        },
+        {
+          "False": 16821
+        },
+        {
+          "False": 16905
+        },
+        {
+          "False": 16902,
+          "True": 16900
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-196",
+      "groups": [
+        {
+          "False": 10051
+        },
+        {
+          "False": 10067
+        },
+        {
+          "False": 10111
+        },
+        {
+          "False": 10195
+        },
+        {
+          "False": 10192,
+          "True": 10190
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-197",
+      "groups": [
+        {
+          "False": 28813
+        },
+        {
+          "False": 28829
+        },
+        {
+          "False": 28873
+        },
+        {
+          "False": 28957
+        },
+        {
+          "False": 28954,
+          "True": 28952
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-198",
+      "groups": [
+        {
+          "False": 5446
+        },
+        {
+          "False": 5462
+        },
+        {
+          "False": 5506
+        },
+        {
+          "False": 5590
+        },
+        {
+          "False": 5587,
+          "True": 5585
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-199",
+      "groups": [
+        {
+          "False": 26073
+        },
+        {
+          "False": 26089
+        },
+        {
+          "False": 26133
+        },
+        {
+          "False": 26217
+        },
+        {
+          "False": 26214,
+          "True": 26212
+        }
+      ]
+    },
+    {
+      "id": "PPS-DEV-200",
+      "groups": [
+        {
+          "False": 7309
+        },
+        {
+          "False": 7325
+        },
+        {
+          "False": 7369
+        },
+        {
+          "False": 7453
+        },
+        {
+          "False": 7450,
+          "True": 7448
+        }
+      ]
+    }
+  ],
+  "source_sha256": {
+    "scripts/benchmark_hybrid200.py": "b8f17813f4cb8507b237d26a10c244a33d24f277b1a493d449d7908b0253c3e2",
+    "nara/hybrid_experiment.py": "c83e8296c1d88db5d13ba715c8ef6c98aa4c0086ee709058b638631130096a59",
+    "nara/prefix_predictor.py": "aee83eb0ce46cef8f2cbc7bc8697a94282d0b7908306fff55b5416d271ed19b7",
+    "nara/vllm_model.py": "c3ae5a8f7bd75365e0d685018fab22733a917fca423eacf2fb7f623e4e8c1e0d",
+    "nara/inference.py": "e09a87a3113399f2656d119b18536a59b70128242547fbd92774eee5c07dd226",
+    "nara/compact_predictor.py": "046002710b57ad799ff6f287f016ae215c2109338b66d3706570c8ac8651f969",
+    "nara/compact_criteria.json": "84cc8ca7f625f51e55206fc581a28e36df4551999c4009de84188f273bd06a04",
+    "nara/hypothesis6.py": "850ebdceff80371dc8bd4859813e86e017552941b44dfdb4773b672576c925ba",
+    "data/dev.jsonl": "5507f5ab0ba53b708f87211ed050dbe531b48a626ace6084c3ccaefb53147534",
+    "data/항목표.json": "368cb41f376d8ad7edbbdf181542e6e959de356f7f70d86e72943325ecad61d9",
+    "data/정답스키마_디코딩.json": "149580162261b446090bec075eb4c13f765a771c827b6bbe06660eb833a3c2ac"
+  },
+  "main": "instant_first then instant_cached(3 independent requests), then six-feature thinking ON1024 per notice",
+  "controls": "same six features on all200: OFF and ON256, each standalone batch1 without warmed document prefix; reuse main instant judgments for composite scores",
+  "probe_ids": [
+    "PPS-DEV-077",
+    "PPS-DEV-174",
+    "PPS-DEV-033",
+    "PPS-DEV-104",
+    "PPS-DEV-177",
+    "PPS-DEV-037",
+    "PPS-DEV-181",
+    "PPS-DEV-139",
+    "PPS-DEV-034",
+    "PPS-DEV-087",
+    "PPS-DEV-140",
+    "PPS-DEV-11"
+  ],
+  "probes": "12 length quantiles,2 rounds alternating cold/warm order; same instant group2 prompt; fixed128 output tokens without structured decoding; warm via different instant group1; reset cache per condition",
+  "time_definition": "vLLM scheduled->first token=prefill interval, first->last=decode, queued->scheduled=queue. Request latency, not exclusive GPU kernel duration; concurrent request intervals overlap.",
+  "control_time_definition": "full composite walltime estimated as main walltime minus main thinking phase plus alternate standalone six-feature phase time; not separately measured full pipeline",
+  "limits": {
+    "batch_size": 8,
+    "search_rounds": 2,
+    "queries_per_round": 4,
+    "top_k": 5,
+    "round_tokens": 4096,
+    "total_retrieval_tokens": 8192,
+    "output_tokens": 2048,
+    "retries": 1,
+    "require_search": false
+  }
+}

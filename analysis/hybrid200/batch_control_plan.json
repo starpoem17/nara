@@ -1,0 +1,12 @@
+{
+  "source": "scripts/benchmark_hybrid_batch_controls.py",
+  "sha256": "6c3955fa8c8c8290ead2f2d5ee1643c8002b6e582684f5ec93166452b9276b64",
+  "records": 200,
+  "stages": [
+    "six_on1024_batch8",
+    "optimized full5 mixed ON256 batch8",
+    "optimized_off full5 allOFF: seed2 then cached8 requests"
+  ],
+  "optimized_instant_schedule": "Within each block8, seed2 notices together, then reuse each notice prefix for6 remaining requests; no cross-notice answer sharing.",
+  "reason": "Measure full optimized walltime. Mode and budget isolated by separate same-six controls; full optimized changes scheduling for both modes. Plan set before main200 scoring. Include measured all-OFF optimized strategy, since the isolated cold six-OFF control overestimates its possible full-pipeline cost."
+}

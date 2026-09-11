@@ -1,0 +1,1388 @@
+[
+  {
+    "record_id": "PPS-DEV-01,PPS-DEV-02",
+    "phase": "instant_first",
+    "seconds": 1.9445660119963577,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-01,PPS-DEV-02",
+    "phase": "instant_cached",
+    "seconds": 0.9632973599946126,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-03,PPS-DEV-04",
+    "phase": "instant_first",
+    "seconds": 3.538730581989512,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-03,PPS-DEV-04",
+    "phase": "instant_cached",
+    "seconds": 1.0009970889950637,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-05,PPS-DEV-06",
+    "phase": "instant_first",
+    "seconds": 2.8152758729993366,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-05,PPS-DEV-06",
+    "phase": "instant_cached",
+    "seconds": 0.9496462240058463,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-07,PPS-DEV-08",
+    "phase": "instant_first",
+    "seconds": 3.1347429390007164,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-07,PPS-DEV-08",
+    "phase": "instant_cached",
+    "seconds": 1.0334830509964377,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-01,PPS-DEV-02,PPS-DEV-03,PPS-DEV-04,PPS-DEV-05,PPS-DEV-06,PPS-DEV-07,PPS-DEV-08",
+    "phase": "thinking_batch",
+    "seconds": 11.80583014099102,
+    "requests": 8
+  },
+  {
+    "record_id": "PPS-DEV-09,PPS-DEV-10",
+    "phase": "instant_first",
+    "seconds": 1.8487070049886825,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-09,PPS-DEV-10",
+    "phase": "instant_cached",
+    "seconds": 0.9106825839990051,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-11,PPS-DEV-12",
+    "phase": "instant_first",
+    "seconds": 3.7882005470019067,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-11,PPS-DEV-12",
+    "phase": "instant_cached",
+    "seconds": 1.120206887004315,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-13,PPS-DEV-14",
+    "phase": "instant_first",
+    "seconds": 1.4298172359995078,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-13,PPS-DEV-14",
+    "phase": "instant_cached",
+    "seconds": 0.8808984019997297,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-15,PPS-DEV-16",
+    "phase": "instant_first",
+    "seconds": 2.3276324050093535,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-15,PPS-DEV-16",
+    "phase": "instant_cached",
+    "seconds": 1.029250352003146,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-09,PPS-DEV-10,PPS-DEV-11,PPS-DEV-12,PPS-DEV-13,PPS-DEV-14,PPS-DEV-15,PPS-DEV-16",
+    "phase": "thinking_batch",
+    "seconds": 10.441429100988898,
+    "requests": 8
+  },
+  {
+    "record_id": "PPS-DEV-17,PPS-DEV-18",
+    "phase": "instant_first",
+    "seconds": 3.2073722350032767,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-17,PPS-DEV-18",
+    "phase": "instant_cached",
+    "seconds": 1.0763150429993402,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-19,PPS-DEV-20",
+    "phase": "instant_first",
+    "seconds": 1.6874014869972598,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-19,PPS-DEV-20",
+    "phase": "instant_cached",
+    "seconds": 0.9082770509994589,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-21,PPS-DEV-22",
+    "phase": "instant_first",
+    "seconds": 1.4091343290056102,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-21,PPS-DEV-22",
+    "phase": "instant_cached",
+    "seconds": 0.9169077070109779,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-23,PPS-DEV-24",
+    "phase": "instant_first",
+    "seconds": 1.4481403050012887,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-23,PPS-DEV-24",
+    "phase": "instant_cached",
+    "seconds": 15.660479614001815,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-23,PPS-DEV-24",
+    "phase": "instant_cached",
+    "seconds": 0.6657971300010104,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-17,PPS-DEV-18,PPS-DEV-19,PPS-DEV-20,PPS-DEV-21,PPS-DEV-22,PPS-DEV-23,PPS-DEV-24",
+    "phase": "thinking_batch",
+    "seconds": 9.679509086010512,
+    "requests": 8
+  },
+  {
+    "record_id": "PPS-DEV-25,PPS-DEV-26",
+    "phase": "instant_first",
+    "seconds": 4.338471903000027,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-25,PPS-DEV-26",
+    "phase": "instant_cached",
+    "seconds": 0.9663214400061406,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-27,PPS-DEV-28",
+    "phase": "instant_first",
+    "seconds": 5.418571536007221,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-27,PPS-DEV-28",
+    "phase": "instant_cached",
+    "seconds": 1.483594092002022,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-29,PPS-DEV-30",
+    "phase": "instant_first",
+    "seconds": 2.8123153939959593,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-29,PPS-DEV-30",
+    "phase": "instant_cached",
+    "seconds": 0.9697327869944274,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-31,PPS-DEV-32",
+    "phase": "instant_first",
+    "seconds": 2.579550376001862,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-31,PPS-DEV-32",
+    "phase": "instant_cached",
+    "seconds": 0.9374559100106126,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-25,PPS-DEV-26,PPS-DEV-27,PPS-DEV-28,PPS-DEV-29,PPS-DEV-30,PPS-DEV-31,PPS-DEV-32",
+    "phase": "thinking_batch",
+    "seconds": 11.728425820998382,
+    "requests": 8
+  },
+  {
+    "record_id": "PPS-DEV-033,PPS-DEV-034",
+    "phase": "instant_first",
+    "seconds": 1.7265145249984926,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-033,PPS-DEV-034",
+    "phase": "instant_cached",
+    "seconds": 1.0027928850031458,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-035,PPS-DEV-036",
+    "phase": "instant_first",
+    "seconds": 2.016166311004781,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-035,PPS-DEV-036",
+    "phase": "instant_cached",
+    "seconds": 1.21615374799876,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-037,PPS-DEV-038",
+    "phase": "instant_first",
+    "seconds": 1.7210413189895917,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-037,PPS-DEV-038",
+    "phase": "instant_cached",
+    "seconds": 0.89133500099706,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-039,PPS-DEV-040",
+    "phase": "instant_first",
+    "seconds": 1.7317293329979293,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-039,PPS-DEV-040",
+    "phase": "instant_cached",
+    "seconds": 0.880785069995909,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-033,PPS-DEV-034,PPS-DEV-035,PPS-DEV-036,PPS-DEV-037,PPS-DEV-038,PPS-DEV-039,PPS-DEV-040",
+    "phase": "thinking_batch",
+    "seconds": 7.443912103000912,
+    "requests": 8
+  },
+  {
+    "record_id": "PPS-DEV-041,PPS-DEV-042",
+    "phase": "instant_first",
+    "seconds": 1.2678269150055712,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-041,PPS-DEV-042",
+    "phase": "instant_cached",
+    "seconds": 2.4112752989894943,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-043,PPS-DEV-044",
+    "phase": "instant_first",
+    "seconds": 2.0832653140096227,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-043,PPS-DEV-044",
+    "phase": "instant_cached",
+    "seconds": 1.7166319039970404,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-045,PPS-DEV-046",
+    "phase": "instant_first",
+    "seconds": 1.2625482599978568,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-045,PPS-DEV-046",
+    "phase": "instant_cached",
+    "seconds": 0.8742501810047543,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-047,PPS-DEV-048",
+    "phase": "instant_first",
+    "seconds": 1.5081680120056262,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-047,PPS-DEV-048",
+    "phase": "instant_cached",
+    "seconds": 0.8516672200057656,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-041,PPS-DEV-042,PPS-DEV-043,PPS-DEV-044,PPS-DEV-045,PPS-DEV-046,PPS-DEV-047,PPS-DEV-048",
+    "phase": "thinking_batch",
+    "seconds": 7.470236641995143,
+    "requests": 8
+  },
+  {
+    "record_id": "PPS-DEV-049,PPS-DEV-050",
+    "phase": "instant_first",
+    "seconds": 2.025239540002076,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-049,PPS-DEV-050",
+    "phase": "instant_cached",
+    "seconds": 0.9057204580021789,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-051,PPS-DEV-052",
+    "phase": "instant_first",
+    "seconds": 2.113325658006943,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-051,PPS-DEV-052",
+    "phase": "instant_cached",
+    "seconds": 0.9116369999974268,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-053,PPS-DEV-054",
+    "phase": "instant_first",
+    "seconds": 2.3862751859996933,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-053,PPS-DEV-054",
+    "phase": "instant_cached",
+    "seconds": 1.1130261549988063,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-055,PPS-DEV-056",
+    "phase": "instant_first",
+    "seconds": 1.3017693930014502,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-055,PPS-DEV-056",
+    "phase": "instant_cached",
+    "seconds": 0.9167462970071938,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-049,PPS-DEV-050,PPS-DEV-051,PPS-DEV-052,PPS-DEV-053,PPS-DEV-054,PPS-DEV-055,PPS-DEV-056",
+    "phase": "thinking_batch",
+    "seconds": 7.7087918979959795,
+    "requests": 8
+  },
+  {
+    "record_id": "PPS-DEV-057,PPS-DEV-058",
+    "phase": "instant_first",
+    "seconds": 1.4486406560026808,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-057,PPS-DEV-058",
+    "phase": "instant_cached",
+    "seconds": 0.8451193109940505,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-059,PPS-DEV-060",
+    "phase": "instant_first",
+    "seconds": 1.8887907269963762,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-059,PPS-DEV-060",
+    "phase": "instant_cached",
+    "seconds": 0.8425392119970638,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-061,PPS-DEV-062",
+    "phase": "instant_first",
+    "seconds": 1.4833703699987382,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-061,PPS-DEV-062",
+    "phase": "instant_cached",
+    "seconds": 0.8339446030004183,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-063,PPS-DEV-064",
+    "phase": "instant_first",
+    "seconds": 2.2368917990097543,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-063,PPS-DEV-064",
+    "phase": "instant_cached",
+    "seconds": 0.9403784640016966,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-057,PPS-DEV-058,PPS-DEV-059,PPS-DEV-060,PPS-DEV-061,PPS-DEV-062,PPS-DEV-063,PPS-DEV-064",
+    "phase": "thinking_batch",
+    "seconds": 7.11843919599778,
+    "requests": 8
+  },
+  {
+    "record_id": "PPS-DEV-065,PPS-DEV-066",
+    "phase": "instant_first",
+    "seconds": 3.5314548470050795,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-065,PPS-DEV-066",
+    "phase": "instant_cached",
+    "seconds": 1.078618233994348,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-067,PPS-DEV-068",
+    "phase": "instant_first",
+    "seconds": 1.0578639909945196,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-067,PPS-DEV-068",
+    "phase": "instant_cached",
+    "seconds": 0.8566493870021077,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-069,PPS-DEV-070",
+    "phase": "instant_first",
+    "seconds": 1.250337812001817,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-069,PPS-DEV-070",
+    "phase": "instant_cached",
+    "seconds": 0.9146307569899363,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-071,PPS-DEV-072",
+    "phase": "instant_first",
+    "seconds": 1.5612326249975013,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-071,PPS-DEV-072",
+    "phase": "instant_cached",
+    "seconds": 0.8098156150081195,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-065,PPS-DEV-066,PPS-DEV-067,PPS-DEV-068,PPS-DEV-069,PPS-DEV-070,PPS-DEV-071,PPS-DEV-072",
+    "phase": "thinking_batch",
+    "seconds": 7.735428274987498,
+    "requests": 8
+  },
+  {
+    "record_id": "PPS-DEV-073,PPS-DEV-074",
+    "phase": "instant_first",
+    "seconds": 1.2606555200036382,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-073,PPS-DEV-074",
+    "phase": "instant_cached",
+    "seconds": 0.9022608660015976,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-075,PPS-DEV-076",
+    "phase": "instant_first",
+    "seconds": 3.399466731993016,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-075,PPS-DEV-076",
+    "phase": "instant_cached",
+    "seconds": 1.0193569399998523,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-077,PPS-DEV-078",
+    "phase": "instant_first",
+    "seconds": 1.1923796230112202,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-077,PPS-DEV-078",
+    "phase": "instant_cached",
+    "seconds": 0.8745931979938177,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-079,PPS-DEV-080",
+    "phase": "instant_first",
+    "seconds": 1.2721475430007558,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-079,PPS-DEV-080",
+    "phase": "instant_cached",
+    "seconds": 0.8627807140001096,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-073,PPS-DEV-074,PPS-DEV-075,PPS-DEV-076,PPS-DEV-077,PPS-DEV-078,PPS-DEV-079,PPS-DEV-080",
+    "phase": "thinking_batch",
+    "seconds": 7.631046808004612,
+    "requests": 8
+  },
+  {
+    "record_id": "PPS-DEV-081,PPS-DEV-082",
+    "phase": "instant_first",
+    "seconds": 4.196648234006716,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-081,PPS-DEV-082",
+    "phase": "instant_cached",
+    "seconds": 1.1277672819996951,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-083,PPS-DEV-084",
+    "phase": "instant_first",
+    "seconds": 2.040168100007577,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-083,PPS-DEV-084",
+    "phase": "instant_cached",
+    "seconds": 0.8777109179936815,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-085,PPS-DEV-086",
+    "phase": "instant_first",
+    "seconds": 2.445904858992435,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-085,PPS-DEV-086",
+    "phase": "instant_cached",
+    "seconds": 15.978596311004367,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-085,PPS-DEV-086",
+    "phase": "instant_cached",
+    "seconds": 0.6677105440030573,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-087,PPS-DEV-088",
+    "phase": "instant_first",
+    "seconds": 2.6652791349915788,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-087,PPS-DEV-088",
+    "phase": "instant_cached",
+    "seconds": 1.0442131050076568,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-081,PPS-DEV-082,PPS-DEV-083,PPS-DEV-084,PPS-DEV-085,PPS-DEV-086,PPS-DEV-087,PPS-DEV-088",
+    "phase": "thinking_batch",
+    "seconds": 12.37476139998762,
+    "requests": 8
+  },
+  {
+    "record_id": "PPS-DEV-089,PPS-DEV-090",
+    "phase": "instant_first",
+    "seconds": 1.4693714309978532,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-089,PPS-DEV-090",
+    "phase": "instant_cached",
+    "seconds": 0.9325046579906484,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-091,PPS-DEV-092",
+    "phase": "instant_first",
+    "seconds": 1.9267213939892827,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-091,PPS-DEV-092",
+    "phase": "instant_cached",
+    "seconds": 0.9053784429997904,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-093,PPS-DEV-094",
+    "phase": "instant_first",
+    "seconds": 2.391940671004704,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-093,PPS-DEV-094",
+    "phase": "instant_cached",
+    "seconds": 1.0559658679994754,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-095,PPS-DEV-096",
+    "phase": "instant_first",
+    "seconds": 2.116561674993136,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-095,PPS-DEV-096",
+    "phase": "instant_cached",
+    "seconds": 0.9797059160046047,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-089,PPS-DEV-090,PPS-DEV-091,PPS-DEV-092,PPS-DEV-093,PPS-DEV-094,PPS-DEV-095,PPS-DEV-096",
+    "phase": "thinking_batch",
+    "seconds": 10.054997838000418,
+    "requests": 8
+  },
+  {
+    "record_id": "PPS-DEV-097,PPS-DEV-098",
+    "phase": "instant_first",
+    "seconds": 1.4713651039928664,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-097,PPS-DEV-098",
+    "phase": "instant_cached",
+    "seconds": 0.9231844050082145,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-099,PPS-DEV-100",
+    "phase": "instant_first",
+    "seconds": 3.62814203700691,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-099,PPS-DEV-100",
+    "phase": "instant_cached",
+    "seconds": 1.0637754209892591,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-101,PPS-DEV-102",
+    "phase": "instant_first",
+    "seconds": 2.211767240005429,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-101,PPS-DEV-102",
+    "phase": "instant_cached",
+    "seconds": 0.9165292190009495,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-103,PPS-DEV-104",
+    "phase": "instant_first",
+    "seconds": 4.666596317998483,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-103,PPS-DEV-104",
+    "phase": "instant_cached",
+    "seconds": 1.0405250180047005,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-097,PPS-DEV-098,PPS-DEV-099,PPS-DEV-100,PPS-DEV-101,PPS-DEV-102,PPS-DEV-103,PPS-DEV-104",
+    "phase": "thinking_batch",
+    "seconds": 11.916745673006517,
+    "requests": 8
+  },
+  {
+    "record_id": "PPS-DEV-105,PPS-DEV-106",
+    "phase": "instant_first",
+    "seconds": 2.0932125370018184,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-105,PPS-DEV-106",
+    "phase": "instant_cached",
+    "seconds": 0.9855260629992699,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-107,PPS-DEV-108",
+    "phase": "instant_first",
+    "seconds": 1.1984991709905444,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-107,PPS-DEV-108",
+    "phase": "instant_cached",
+    "seconds": 0.8475065890088445,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-109,PPS-DEV-110",
+    "phase": "instant_first",
+    "seconds": 4.516961651999736,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-109,PPS-DEV-110",
+    "phase": "instant_cached",
+    "seconds": 1.0726426350011025,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-111,PPS-DEV-112",
+    "phase": "instant_first",
+    "seconds": 1.965639629997895,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-111,PPS-DEV-112",
+    "phase": "instant_cached",
+    "seconds": 0.9321533480106154,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-105,PPS-DEV-106,PPS-DEV-107,PPS-DEV-108,PPS-DEV-109,PPS-DEV-110,PPS-DEV-111,PPS-DEV-112",
+    "phase": "thinking_batch",
+    "seconds": 10.321310915998765,
+    "requests": 8
+  },
+  {
+    "record_id": "PPS-DEV-113,PPS-DEV-114",
+    "phase": "instant_first",
+    "seconds": 1.4473454000108177,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-113,PPS-DEV-114",
+    "phase": "instant_cached",
+    "seconds": 0.8595796169975074,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-115,PPS-DEV-116",
+    "phase": "instant_first",
+    "seconds": 1.118060937995324,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-115,PPS-DEV-116",
+    "phase": "instant_cached",
+    "seconds": 0.8700704500079155,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-117,PPS-DEV-118",
+    "phase": "instant_first",
+    "seconds": 1.5126366299955407,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-117,PPS-DEV-118",
+    "phase": "instant_cached",
+    "seconds": 0.91770830200403,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-119,PPS-DEV-120",
+    "phase": "instant_first",
+    "seconds": 2.7490069670020603,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-119,PPS-DEV-120",
+    "phase": "instant_cached",
+    "seconds": 1.078184213998611,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-113,PPS-DEV-114,PPS-DEV-115,PPS-DEV-116,PPS-DEV-117,PPS-DEV-118,PPS-DEV-119,PPS-DEV-120",
+    "phase": "thinking_batch",
+    "seconds": 8.905204132010113,
+    "requests": 8
+  },
+  {
+    "record_id": "PPS-DEV-121,PPS-DEV-122",
+    "phase": "instant_first",
+    "seconds": 4.358292016011546,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-121,PPS-DEV-122",
+    "phase": "instant_cached",
+    "seconds": 1.0899010940047447,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-123,PPS-DEV-124",
+    "phase": "instant_first",
+    "seconds": 3.101884852992953,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-123,PPS-DEV-124",
+    "phase": "instant_cached",
+    "seconds": 1.0115266619977774,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-125,PPS-DEV-126",
+    "phase": "instant_first",
+    "seconds": 2.1829105819924735,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-125,PPS-DEV-126",
+    "phase": "instant_cached",
+    "seconds": 0.985357302997727,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-127,PPS-DEV-128",
+    "phase": "instant_first",
+    "seconds": 1.3022313839901472,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-127,PPS-DEV-128",
+    "phase": "instant_cached",
+    "seconds": 0.8945857750077266,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-121,PPS-DEV-122,PPS-DEV-123,PPS-DEV-124,PPS-DEV-125,PPS-DEV-126,PPS-DEV-127,PPS-DEV-128",
+    "phase": "thinking_batch",
+    "seconds": 10.738880416000029,
+    "requests": 8
+  },
+  {
+    "record_id": "PPS-DEV-129,PPS-DEV-130",
+    "phase": "instant_first",
+    "seconds": 2.1120049160090275,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-129,PPS-DEV-130",
+    "phase": "instant_cached",
+    "seconds": 0.9736287230043672,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-131,PPS-DEV-132",
+    "phase": "instant_first",
+    "seconds": 1.4648737359966617,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-131,PPS-DEV-132",
+    "phase": "instant_cached",
+    "seconds": 0.9420895849907538,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-133,PPS-DEV-134",
+    "phase": "instant_first",
+    "seconds": 1.473624184000073,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-133,PPS-DEV-134",
+    "phase": "instant_cached",
+    "seconds": 0.9286291710013757,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-135,PPS-DEV-136",
+    "phase": "instant_first",
+    "seconds": 2.8936482020071708,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-135,PPS-DEV-136",
+    "phase": "instant_cached",
+    "seconds": 1.0197479119960917,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-129,PPS-DEV-130,PPS-DEV-131,PPS-DEV-132,PPS-DEV-133,PPS-DEV-134,PPS-DEV-135,PPS-DEV-136",
+    "phase": "thinking_batch",
+    "seconds": 10.562382221003645,
+    "requests": 8
+  },
+  {
+    "record_id": "PPS-DEV-137,PPS-DEV-138",
+    "phase": "instant_first",
+    "seconds": 3.814285134008969,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-137,PPS-DEV-138",
+    "phase": "instant_cached",
+    "seconds": 1.406817802999285,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-139,PPS-DEV-140",
+    "phase": "instant_first",
+    "seconds": 3.0075530460017035,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-139,PPS-DEV-140",
+    "phase": "instant_cached",
+    "seconds": 1.4569378120067995,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-141,PPS-DEV-142",
+    "phase": "instant_first",
+    "seconds": 1.4531346069998108,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-141,PPS-DEV-142",
+    "phase": "instant_cached",
+    "seconds": 1.1008795959933195,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-143,PPS-DEV-144",
+    "phase": "instant_first",
+    "seconds": 3.0916365420125658,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-143,PPS-DEV-144",
+    "phase": "instant_cached",
+    "seconds": 1.1114394579926739,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-137,PPS-DEV-138,PPS-DEV-139,PPS-DEV-140,PPS-DEV-141,PPS-DEV-142,PPS-DEV-143,PPS-DEV-144",
+    "phase": "thinking_batch",
+    "seconds": 13.83372814199538,
+    "requests": 8
+  },
+  {
+    "record_id": "PPS-DEV-145,PPS-DEV-146",
+    "phase": "instant_first",
+    "seconds": 3.5724436940072337,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-145,PPS-DEV-146",
+    "phase": "instant_cached",
+    "seconds": 18.506719060998876,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-145,PPS-DEV-146",
+    "phase": "instant_cached",
+    "seconds": 0.7616630249976879,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-147,PPS-DEV-148",
+    "phase": "instant_first",
+    "seconds": 2.941309406000073,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-147,PPS-DEV-148",
+    "phase": "instant_cached",
+    "seconds": 1.0890466580021894,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-149,PPS-DEV-150",
+    "phase": "instant_first",
+    "seconds": 1.1259768820018508,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-149,PPS-DEV-150",
+    "phase": "instant_cached",
+    "seconds": 0.8506560289970366,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-151,PPS-DEV-152",
+    "phase": "instant_first",
+    "seconds": 1.4074788870057091,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-151,PPS-DEV-152",
+    "phase": "instant_cached",
+    "seconds": 2.2502824049879564,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-145,PPS-DEV-146,PPS-DEV-147,PPS-DEV-148,PPS-DEV-149,PPS-DEV-150,PPS-DEV-151,PPS-DEV-152",
+    "phase": "thinking_batch",
+    "seconds": 12.058117177002714,
+    "requests": 8
+  },
+  {
+    "record_id": "PPS-DEV-153,PPS-DEV-154",
+    "phase": "instant_first",
+    "seconds": 2.8545154859893955,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-153,PPS-DEV-154",
+    "phase": "instant_cached",
+    "seconds": 1.4332520119933179,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-155,PPS-DEV-156",
+    "phase": "instant_first",
+    "seconds": 3.3979402530094376,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-155,PPS-DEV-156",
+    "phase": "instant_cached",
+    "seconds": 1.0549485350056784,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-157,PPS-DEV-158",
+    "phase": "instant_first",
+    "seconds": 3.7120199289929587,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-157,PPS-DEV-158",
+    "phase": "instant_cached",
+    "seconds": 1.1110119890072383,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-159,PPS-DEV-160",
+    "phase": "instant_first",
+    "seconds": 1.9028156720014522,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-159,PPS-DEV-160",
+    "phase": "instant_cached",
+    "seconds": 1.017032832998666,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-153,PPS-DEV-154,PPS-DEV-155,PPS-DEV-156,PPS-DEV-157,PPS-DEV-158,PPS-DEV-159,PPS-DEV-160",
+    "phase": "thinking_batch",
+    "seconds": 14.317402178989141,
+    "requests": 8
+  },
+  {
+    "record_id": "PPS-DEV-161,PPS-DEV-162",
+    "phase": "instant_first",
+    "seconds": 2.5555851440003607,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-161,PPS-DEV-162",
+    "phase": "instant_cached",
+    "seconds": 0.9898183779878309,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-163,PPS-DEV-164",
+    "phase": "instant_first",
+    "seconds": 1.383486962004099,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-163,PPS-DEV-164",
+    "phase": "instant_cached",
+    "seconds": 0.8965655450010672,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-165,PPS-DEV-166",
+    "phase": "instant_first",
+    "seconds": 2.5476802560006035,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-165,PPS-DEV-166",
+    "phase": "instant_cached",
+    "seconds": 1.018214009993244,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-167,PPS-DEV-168",
+    "phase": "instant_first",
+    "seconds": 2.7309400720114354,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-167,PPS-DEV-168",
+    "phase": "instant_cached",
+    "seconds": 0.860620204010047,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-161,PPS-DEV-162,PPS-DEV-163,PPS-DEV-164,PPS-DEV-165,PPS-DEV-166,PPS-DEV-167,PPS-DEV-168",
+    "phase": "thinking_batch",
+    "seconds": 22.63583272199321,
+    "requests": 8
+  },
+  {
+    "record_id": "PPS-DEV-161,PPS-DEV-162,PPS-DEV-163,PPS-DEV-164,PPS-DEV-165,PPS-DEV-166,PPS-DEV-167,PPS-DEV-168",
+    "phase": "thinking_batch",
+    "seconds": 3.077147474003141,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-169,PPS-DEV-170",
+    "phase": "instant_first",
+    "seconds": 4.684856866995688,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-169,PPS-DEV-170",
+    "phase": "instant_cached",
+    "seconds": 18.5302527469903,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-169,PPS-DEV-170",
+    "phase": "instant_cached",
+    "seconds": 0.7611920650087995,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-171,PPS-DEV-172",
+    "phase": "instant_first",
+    "seconds": 3.9931249570072396,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-171,PPS-DEV-172",
+    "phase": "instant_cached",
+    "seconds": 1.0885687740083085,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-173,PPS-DEV-174",
+    "phase": "instant_first",
+    "seconds": 2.3283900810056366,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-173,PPS-DEV-174",
+    "phase": "instant_cached",
+    "seconds": 1.0160490589914843,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-175,PPS-DEV-176",
+    "phase": "instant_first",
+    "seconds": 1.7849068259965861,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-175,PPS-DEV-176",
+    "phase": "instant_cached",
+    "seconds": 0.9239288160024444,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-169,PPS-DEV-170,PPS-DEV-171,PPS-DEV-172,PPS-DEV-173,PPS-DEV-174,PPS-DEV-175,PPS-DEV-176",
+    "phase": "thinking_batch",
+    "seconds": 13.52982896300091,
+    "requests": 8
+  },
+  {
+    "record_id": "PPS-DEV-177,PPS-DEV-178",
+    "phase": "instant_first",
+    "seconds": 2.109465593006462,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-177,PPS-DEV-178",
+    "phase": "instant_cached",
+    "seconds": 1.0014439200022025,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-179,PPS-DEV-180",
+    "phase": "instant_first",
+    "seconds": 1.26726285800396,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-179,PPS-DEV-180",
+    "phase": "instant_cached",
+    "seconds": 0.8896315749880159,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-181,PPS-DEV-182",
+    "phase": "instant_first",
+    "seconds": 1.256552778009791,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-181,PPS-DEV-182",
+    "phase": "instant_cached",
+    "seconds": 0.9084695040073711,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-183,PPS-DEV-184",
+    "phase": "instant_first",
+    "seconds": 2.132249285990838,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-183,PPS-DEV-184",
+    "phase": "instant_cached",
+    "seconds": 0.9149237069941591,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-177,PPS-DEV-178,PPS-DEV-179,PPS-DEV-180,PPS-DEV-181,PPS-DEV-182,PPS-DEV-183,PPS-DEV-184",
+    "phase": "thinking_batch",
+    "seconds": 8.448587749007856,
+    "requests": 8
+  },
+  {
+    "record_id": "PPS-DEV-185,PPS-DEV-186",
+    "phase": "instant_first",
+    "seconds": 2.0344977990025654,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-185,PPS-DEV-186",
+    "phase": "instant_cached",
+    "seconds": 0.9841962200007401,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-187,PPS-DEV-188",
+    "phase": "instant_first",
+    "seconds": 3.122914662992116,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-187,PPS-DEV-188",
+    "phase": "instant_cached",
+    "seconds": 1.0562977669906104,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-189,PPS-DEV-190",
+    "phase": "instant_first",
+    "seconds": 1.5509406100027263,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-189,PPS-DEV-190",
+    "phase": "instant_cached",
+    "seconds": 0.9297761950001586,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-191,PPS-DEV-192",
+    "phase": "instant_first",
+    "seconds": 3.417855409992626,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-191,PPS-DEV-192",
+    "phase": "instant_cached",
+    "seconds": 1.0153162039932795,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-185,PPS-DEV-186,PPS-DEV-187,PPS-DEV-188,PPS-DEV-189,PPS-DEV-190,PPS-DEV-191,PPS-DEV-192",
+    "phase": "thinking_batch",
+    "seconds": 10.734893295011716,
+    "requests": 8
+  },
+  {
+    "record_id": "PPS-DEV-193,PPS-DEV-194",
+    "phase": "instant_first",
+    "seconds": 1.6326651769923046,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-193,PPS-DEV-194",
+    "phase": "instant_cached",
+    "seconds": 0.9303304700006265,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-195,PPS-DEV-196",
+    "phase": "instant_first",
+    "seconds": 2.0930263670015847,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-195,PPS-DEV-196",
+    "phase": "instant_cached",
+    "seconds": 0.9769751640124014,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-197,PPS-DEV-198",
+    "phase": "instant_first",
+    "seconds": 3.1267534340004204,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-197,PPS-DEV-198",
+    "phase": "instant_cached",
+    "seconds": 1.105028712991043,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-199,PPS-DEV-200",
+    "phase": "instant_first",
+    "seconds": 3.027503422999871,
+    "requests": 2
+  },
+  {
+    "record_id": "PPS-DEV-199,PPS-DEV-200",
+    "phase": "instant_cached",
+    "seconds": 18.311572727005114,
+    "requests": 6
+  },
+  {
+    "record_id": "PPS-DEV-199,PPS-DEV-200",
+    "phase": "instant_cached",
+    "seconds": 0.744010182999773,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-193,PPS-DEV-194,PPS-DEV-195,PPS-DEV-196,PPS-DEV-197,PPS-DEV-198,PPS-DEV-199,PPS-DEV-200",
+    "phase": "thinking_batch",
+    "seconds": 12.865481743006967,
+    "requests": 8
+  }
+]

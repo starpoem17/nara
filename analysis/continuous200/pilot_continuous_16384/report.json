@@ -1,0 +1,57 @@
+{
+  "name": "pilot_continuous_16384",
+  "records": 48,
+  "schedule": "continuous",
+  "groups": [
+    [
+      "v1",
+      "v5",
+      "v9",
+      "v14",
+      "v22",
+      "v24"
+    ]
+  ],
+  "engine": {
+    "load_seconds": 65.90835802600486,
+    "max_num_batched_tokens": 16384,
+    "max_num_seqs": 8,
+    "enable_chunked_prefill": true,
+    "gpu_memory_utilization": 0.86,
+    "scheduler_reserve_full_isl": null
+  },
+  "prediction_seconds": 130.33525043498958,
+  "load_seconds": 65.90835802600486,
+  "total_seconds": 196.24360846099444,
+  "options": {
+    "thinking": true,
+    "item_group_size": 6
+  },
+  "limits": {
+    "batch_size": 8,
+    "search_rounds": 2,
+    "queries_per_round": 4,
+    "top_k": 5,
+    "round_tokens": 4096,
+    "total_retrieval_tokens": 8192,
+    "output_tokens": 2048,
+    "retries": 1,
+    "require_search": false
+  },
+  "failed_ids": [],
+  "model_turns": 48,
+  "search_rounds": 0,
+  "invalid_responses": 0,
+  "input_tokens": 562243,
+  "output_tokens": 55357,
+  "thinking_tokens": 49050,
+  "metrics": [
+    {
+      "model_seconds": 129.6767087784101,
+      "retrieval_seconds": 0.0,
+      "model_batches": 48,
+      "retrieval_batches": 0,
+      "total_seconds": 130.335025280001
+    }
+  ]
+}

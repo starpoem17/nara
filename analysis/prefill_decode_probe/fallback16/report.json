@@ -1,0 +1,70 @@
+{
+  "name": "mixed_batch_fallback",
+  "records": 16,
+  "schedule": "batch_barrier",
+  "groups": [
+    [
+      "v4",
+      "v6",
+      "v7",
+      "v8"
+    ],
+    [
+      "v10",
+      "v11",
+      "v12",
+      "v13"
+    ],
+    [
+      "v15",
+      "v16",
+      "v17",
+      "v18"
+    ],
+    [
+      "v19",
+      "v20",
+      "v21",
+      "v23"
+    ],
+    [
+      "v1",
+      "v5",
+      "v9",
+      "v14",
+      "v22",
+      "v24"
+    ]
+  ],
+  "prediction_seconds": 145.38175761500315,
+  "load_seconds": 27.552480240003206,
+  "total_seconds": 172.93423785500636,
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "options": {
+    "model_dir": "models/gemma-4-26B-A4B-it-NVFP4",
+    "max_model_len": 32768,
+    "thinking": "four OFF + six-feature ON1024",
+    "item_group_size": 6
+  },
+  "limits": {
+    "batch_size": 8,
+    "search_rounds": 2,
+    "queries_per_round": 4,
+    "top_k": 5,
+    "round_tokens": 4096,
+    "total_retrieval_tokens": 8192,
+    "output_tokens": 2048,
+    "retries": 1,
+    "require_search": false
+  },
+  "failed_ids": [],
+  "metrics": {
+    "model_seconds": 144.1435602206475,
+    "retrieval_seconds": 0.0,
+    "model_batches": 81,
+    "retrieval_batches": 0,
+    "total_seconds": 145.38157986900478
+  },
+  "batch_barrier_verified": true,
+  "waves": 11
+}

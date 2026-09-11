@@ -1,0 +1,1 @@
+uv run --locked python script.py --input data/dev.jsonl --limit 200 --output-dir analysis/gemma4_rag_dev200_v1 --max-model-len 32768 --search-rounds 2 --item-group-size 24 --batch-size 8 --output-tokens 2048

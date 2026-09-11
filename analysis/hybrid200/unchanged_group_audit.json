@@ -1,0 +1,17 @@
+{
+  "same_group": [
+    "v10",
+    "v11",
+    "v12",
+    "v13"
+  ],
+  "changed_bits": {
+    "v10": 18,
+    "v11": 9,
+    "v12": 0,
+    "v13": 0
+  },
+  "total_changed": 27,
+  "total_bits": 800,
+  "scope": "Same group assignment, prompt builder and frozen criteria; changed execution schedule/cache seed/stats setting. Historical comparison is not pure grouping causality."
+}

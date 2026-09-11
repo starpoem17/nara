@@ -1,0 +1,114 @@
+{
+  "name": "groups7_off",
+  "plan": "groups7",
+  "hypothesis6": false,
+  "options": {
+    "model_dir": "models/gemma-4-26B-A4B-it-NVFP4",
+    "max_model_len": 32768,
+    "thinking": false,
+    "item_group_size": 9
+  },
+  "limits": {
+    "batch_size": 8,
+    "search_rounds": 2,
+    "queries_per_round": 4,
+    "top_k": 5,
+    "round_tokens": 4096,
+    "total_retrieval_tokens": 8192,
+    "output_tokens": 2048,
+    "retries": 1,
+    "require_search": false
+  },
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "groups": [
+    [
+      "v1",
+      "v2",
+      "v3",
+      "v4",
+      "v5",
+      "v6",
+      "v7",
+      "v8"
+    ],
+    [
+      "v9",
+      "v19"
+    ],
+    [
+      "v10",
+      "v11",
+      "v12",
+      "v13",
+      "v14",
+      "v15",
+      "v16",
+      "v17",
+      "v18"
+    ],
+    [
+      "v20"
+    ],
+    [
+      "v21"
+    ],
+    [
+      "v22",
+      "v23"
+    ],
+    [
+      "v24"
+    ]
+  ],
+  "records": 200,
+  "load_seconds": 28.31007102700096,
+  "prediction_seconds": 1259.2010847670026,
+  "total_seconds": 1314.721505860005,
+  "rule_seconds": 0,
+  "failed_ids": [],
+  "model_turns": 1409,
+  "search_rounds": 0,
+  "invalid_responses": 3,
+  "context_failures": 0,
+  "input_tokens": 16240615,
+  "output_tokens": 117167,
+  "thinking_tokens": 0,
+  "predictor_metrics": {
+    "model_seconds": 1242.4947206140132,
+    "retrieval_seconds": 0.0,
+    "model_batches": 176,
+    "retrieval_batches": 0,
+    "total_seconds": 1250.6653932260015
+  },
+  "first_pass": {
+    "failed_ids": [
+      "PPS-DEV-063"
+    ],
+    "prediction_seconds": 1250.669860465001,
+    "model_turns": 1402,
+    "invalid_responses": 3
+  },
+  "recovery": {
+    "policy": {
+      "output_tokens": 2048,
+      "thinking_budget": 1024,
+      "search_rounds": 0,
+      "retries": 1,
+      "evidence_max_chars": 80,
+      "scope": "rerun every group of failed notices only; preserve full source and legal criteria",
+      "instruction": "Return final JSON. Use the shortest sufficient exact evidence quote, at most 80 characters."
+    },
+    "prediction_seconds": 8.531224302001647,
+    "separate_process_load_seconds": 27.21035006600141,
+    "ids": [
+      "PPS-DEV-063"
+    ],
+    "predictor_metrics": {
+      "model_seconds": 8.466685248997237,
+      "retrieval_seconds": 0.0,
+      "model_batches": 1,
+      "retrieval_batches": 0,
+      "total_seconds": 8.531135393997829
+    }
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "status": "passed",
+  "unit_tests_pre_run": 35,
+  "source_hashes_unchanged": true,
+  "rule_sha256": "850ebdceff80371dc8bd4859813e86e017552941b44dfdb4773b672576c925ba",
+  "records_per_run": 200,
+  "runs": [
+    {
+      "name": "groups7_off",
+      "complete_records": 200,
+      "model_turns": 1409,
+      "maximum_input_tokens": 29462,
+      "maximum_reserved_context": 31638,
+      "output_budgets": [
+        2048
+      ],
+      "thinking_enabled": false,
+      "mode_verified": true,
+      "rule_isolation_verified": null
+    },
+    {
+      "name": "groups9_off",
+      "complete_records": 200,
+      "model_turns": 1802,
+      "maximum_input_tokens": 29300,
+      "maximum_reserved_context": 31476,
+      "output_budgets": [
+        2048
+      ],
+      "thinking_enabled": false,
+      "mode_verified": true,
+      "rule_isolation_verified": null
+    },
+    {
+      "name": "groups12_off",
+      "complete_records": 200,
+      "model_turns": 2418,
+      "maximum_input_tokens": 29246,
+      "maximum_reserved_context": 31422,
+      "output_budgets": [
+        2048
+      ],
+      "thinking_enabled": false,
+      "mode_verified": true,
+      "rule_isolation_verified": null
+    },
+    {
+      "name": "ungrouped_on",
+      "complete_records": 200,
+      "model_turns": 218,
+      "maximum_input_tokens": 30232,
+      "maximum_reserved_context": 32408,
+      "output_budgets": [
+        2048,
+        4096
+      ],
+      "thinking_enabled": true,
+      "mode_verified": true,
+      "rule_isolation_verified": null
+    },
+    {
+      "name": "groups12_off_h6",
+      "complete_records": 200,
+      "model_turns": 2402,
+      "maximum_input_tokens": 29246,
+      "maximum_reserved_context": 31422,
+      "output_budgets": [
+        2048
+      ],
+      "thinking_enabled": false,
+      "mode_verified": true,
+      "rule_isolation_verified": true
+    },
+    {
+      "name": "ungrouped_on_h6",
+      "complete_records": 200,
+      "model_turns": 213,
+      "maximum_input_tokens": 30140,
+      "maximum_reserved_context": 32316,
+      "output_budgets": [
+        2048
+      ],
+      "thinking_enabled": true,
+      "mode_verified": true,
+      "rule_isolation_verified": true
+    }
+  ]
+}

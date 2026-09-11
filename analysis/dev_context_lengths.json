@@ -1,0 +1,817 @@
+{
+  "records": 200,
+  "measurement": "Untruncated baseline prompts with all record documents, metadata, item instructions and Gemma chat formatting; excludes future tool definitions, calls/results and generated answers.",
+  "model": "local Gemma4 tokenizer",
+  "min": 3062,
+  "median": 9411.0,
+  "p90": 25554,
+  "max": 29812,
+  "above": {
+    "22528": 28,
+    "24576": 22,
+    "32768": 0
+  },
+  "records_by_id": {
+    "PPS-DEV-01": {
+      "tokens": 14408,
+      "documents": 2
+    },
+    "PPS-DEV-02": {
+      "tokens": 3325,
+      "documents": 1
+    },
+    "PPS-DEV-03": {
+      "tokens": 17083,
+      "documents": 2
+    },
+    "PPS-DEV-04": {
+      "tokens": 20354,
+      "documents": 3
+    },
+    "PPS-DEV-05": {
+      "tokens": 11834,
+      "documents": 2
+    },
+    "PPS-DEV-06": {
+      "tokens": 19304,
+      "documents": 2
+    },
+    "PPS-DEV-07": {
+      "tokens": 11386,
+      "documents": 2
+    },
+    "PPS-DEV-08": {
+      "tokens": 23246,
+      "documents": 2
+    },
+    "PPS-DEV-09": {
+      "tokens": 7824,
+      "documents": 2
+    },
+    "PPS-DEV-10": {
+      "tokens": 11882,
+      "documents": 2
+    },
+    "PPS-DEV-11": {
+      "tokens": 29812,
+      "documents": 3
+    },
+    "PPS-DEV-12": {
+      "tokens": 9278,
+      "documents": 2
+    },
+    "PPS-DEV-13": {
+      "tokens": 10308,
+      "documents": 3
+    },
+    "PPS-DEV-14": {
+      "tokens": 8076,
+      "documents": 1
+    },
+    "PPS-DEV-15": {
+      "tokens": 19583,
+      "documents": 2
+    },
+    "PPS-DEV-16": {
+      "tokens": 8421,
+      "documents": 2
+    },
+    "PPS-DEV-17": {
+      "tokens": 25996,
+      "documents": 3
+    },
+    "PPS-DEV-18": {
+      "tokens": 6062,
+      "documents": 1
+    },
+    "PPS-DEV-19": {
+      "tokens": 12647,
+      "documents": 2
+    },
+    "PPS-DEV-20": {
+      "tokens": 10949,
+      "documents": 2
+    },
+    "PPS-DEV-21": {
+      "tokens": 6157,
+      "documents": 1
+    },
+    "PPS-DEV-22": {
+      "tokens": 11427,
+      "documents": 2
+    },
+    "PPS-DEV-23": {
+      "tokens": 10851,
+      "documents": 2
+    },
+    "PPS-DEV-24": {
+      "tokens": 8484,
+      "documents": 1
+    },
+    "PPS-DEV-25": {
+      "tokens": 11607,
+      "documents": 2
+    },
+    "PPS-DEV-26": {
+      "tokens": 14173,
+      "documents": 3
+    },
+    "PPS-DEV-27": {
+      "tokens": 28497,
+      "documents": 3
+    },
+    "PPS-DEV-28": {
+      "tokens": 27648,
+      "documents": 3
+    },
+    "PPS-DEV-29": {
+      "tokens": 4394,
+      "documents": 1
+    },
+    "PPS-DEV-30": {
+      "tokens": 14265,
+      "documents": 2
+    },
+    "PPS-DEV-31": {
+      "tokens": 6966,
+      "documents": 2
+    },
+    "PPS-DEV-32": {
+      "tokens": 13923,
+      "documents": 2
+    },
+    "PPS-DEV-033": {
+      "tokens": 5869,
+      "documents": 1
+    },
+    "PPS-DEV-034": {
+      "tokens": 15797,
+      "documents": 2
+    },
+    "PPS-DEV-035": {
+      "tokens": 3812,
+      "documents": 1
+    },
+    "PPS-DEV-036": {
+      "tokens": 5115,
+      "documents": 1
+    },
+    "PPS-DEV-037": {
+      "tokens": 8818,
+      "documents": 1
+    },
+    "PPS-DEV-038": {
+      "tokens": 7210,
+      "documents": 2
+    },
+    "PPS-DEV-039": {
+      "tokens": 8358,
+      "documents": 1
+    },
+    "PPS-DEV-040": {
+      "tokens": 4691,
+      "documents": 1
+    },
+    "PPS-DEV-041": {
+      "tokens": 3844,
+      "documents": 1
+    },
+    "PPS-DEV-042": {
+      "tokens": 6288,
+      "documents": 1
+    },
+    "PPS-DEV-043": {
+      "tokens": 6087,
+      "documents": 1
+    },
+    "PPS-DEV-044": {
+      "tokens": 19926,
+      "documents": 2
+    },
+    "PPS-DEV-045": {
+      "tokens": 10231,
+      "documents": 1
+    },
+    "PPS-DEV-046": {
+      "tokens": 5794,
+      "documents": 2
+    },
+    "PPS-DEV-047": {
+      "tokens": 4780,
+      "documents": 1
+    },
+    "PPS-DEV-048": {
+      "tokens": 4538,
+      "documents": 1
+    },
+    "PPS-DEV-049": {
+      "tokens": 7662,
+      "documents": 1
+    },
+    "PPS-DEV-050": {
+      "tokens": 9192,
+      "documents": 2
+    },
+    "PPS-DEV-051": {
+      "tokens": 7276,
+      "documents": 1
+    },
+    "PPS-DEV-052": {
+      "tokens": 9722,
+      "documents": 2
+    },
+    "PPS-DEV-053": {
+      "tokens": 8828,
+      "documents": 1
+    },
+    "PPS-DEV-054": {
+      "tokens": 3911,
+      "documents": 1
+    },
+    "PPS-DEV-055": {
+      "tokens": 8309,
+      "documents": 1
+    },
+    "PPS-DEV-056": {
+      "tokens": 8436,
+      "documents": 1
+    },
+    "PPS-DEV-057": {
+      "tokens": 4201,
+      "documents": 1
+    },
+    "PPS-DEV-058": {
+      "tokens": 6296,
+      "documents": 1
+    },
+    "PPS-DEV-059": {
+      "tokens": 4907,
+      "documents": 1
+    },
+    "PPS-DEV-060": {
+      "tokens": 3751,
+      "documents": 1
+    },
+    "PPS-DEV-061": {
+      "tokens": 3284,
+      "documents": 1
+    },
+    "PPS-DEV-062": {
+      "tokens": 3300,
+      "documents": 1
+    },
+    "PPS-DEV-063": {
+      "tokens": 14949,
+      "documents": 1
+    },
+    "PPS-DEV-064": {
+      "tokens": 8046,
+      "documents": 1
+    },
+    "PPS-DEV-065": {
+      "tokens": 4284,
+      "documents": 1
+    },
+    "PPS-DEV-066": {
+      "tokens": 24544,
+      "documents": 1
+    },
+    "PPS-DEV-067": {
+      "tokens": 6126,
+      "documents": 1
+    },
+    "PPS-DEV-068": {
+      "tokens": 6107,
+      "documents": 1
+    },
+    "PPS-DEV-069": {
+      "tokens": 11028,
+      "documents": 1
+    },
+    "PPS-DEV-070": {
+      "tokens": 3531,
+      "documents": 1
+    },
+    "PPS-DEV-071": {
+      "tokens": 4793,
+      "documents": 1
+    },
+    "PPS-DEV-072": {
+      "tokens": 5201,
+      "documents": 1
+    },
+    "PPS-DEV-073": {
+      "tokens": 9229,
+      "documents": 1
+    },
+    "PPS-DEV-074": {
+      "tokens": 6590,
+      "documents": 1
+    },
+    "PPS-DEV-075": {
+      "tokens": 5888,
+      "documents": 1
+    },
+    "PPS-DEV-076": {
+      "tokens": 18383,
+      "documents": 2
+    },
+    "PPS-DEV-077": {
+      "tokens": 3062,
+      "documents": 1
+    },
+    "PPS-DEV-078": {
+      "tokens": 6303,
+      "documents": 1
+    },
+    "PPS-DEV-079": {
+      "tokens": 5872,
+      "documents": 1
+    },
+    "PPS-DEV-080": {
+      "tokens": 4102,
+      "documents": 1
+    },
+    "PPS-DEV-081": {
+      "tokens": 23720,
+      "documents": 3
+    },
+    "PPS-DEV-082": {
+      "tokens": 27743,
+      "documents": 3
+    },
+    "PPS-DEV-083": {
+      "tokens": 6825,
+      "documents": 2
+    },
+    "PPS-DEV-084": {
+      "tokens": 7402,
+      "documents": 2
+    },
+    "PPS-DEV-085": {
+      "tokens": 20103,
+      "documents": 2
+    },
+    "PPS-DEV-086": {
+      "tokens": 12808,
+      "documents": 3
+    },
+    "PPS-DEV-087": {
+      "tokens": 19811,
+      "documents": 2
+    },
+    "PPS-DEV-088": {
+      "tokens": 15557,
+      "documents": 3
+    },
+    "PPS-DEV-089": {
+      "tokens": 8283,
+      "documents": 2
+    },
+    "PPS-DEV-090": {
+      "tokens": 10938,
+      "documents": 1
+    },
+    "PPS-DEV-091": {
+      "tokens": 12732,
+      "documents": 2
+    },
+    "PPS-DEV-092": {
+      "tokens": 7252,
+      "documents": 2
+    },
+    "PPS-DEV-093": {
+      "tokens": 23757,
+      "documents": 2
+    },
+    "PPS-DEV-094": {
+      "tokens": 3960,
+      "documents": 1
+    },
+    "PPS-DEV-095": {
+      "tokens": 9194,
+      "documents": 2
+    },
+    "PPS-DEV-096": {
+      "tokens": 18455,
+      "documents": 3
+    },
+    "PPS-DEV-097": {
+      "tokens": 10117,
+      "documents": 2
+    },
+    "PPS-DEV-098": {
+      "tokens": 7111,
+      "documents": 3
+    },
+    "PPS-DEV-099": {
+      "tokens": 25554,
+      "documents": 3
+    },
+    "PPS-DEV-100": {
+      "tokens": 20130,
+      "documents": 2
+    },
+    "PPS-DEV-101": {
+      "tokens": 12848,
+      "documents": 2
+    },
+    "PPS-DEV-102": {
+      "tokens": 9721,
+      "documents": 3
+    },
+    "PPS-DEV-103": {
+      "tokens": 26419,
+      "documents": 3
+    },
+    "PPS-DEV-104": {
+      "tokens": 6407,
+      "documents": 3
+    },
+    "PPS-DEV-105": {
+      "tokens": 10757,
+      "documents": 2
+    },
+    "PPS-DEV-106": {
+      "tokens": 16989,
+      "documents": 3
+    },
+    "PPS-DEV-107": {
+      "tokens": 8212,
+      "documents": 2
+    },
+    "PPS-DEV-108": {
+      "tokens": 6881,
+      "documents": 3
+    },
+    "PPS-DEV-109": {
+      "tokens": 25493,
+      "documents": 2
+    },
+    "PPS-DEV-110": {
+      "tokens": 7752,
+      "documents": 3
+    },
+    "PPS-DEV-111": {
+      "tokens": 9084,
+      "documents": 2
+    },
+    "PPS-DEV-112": {
+      "tokens": 12063,
+      "documents": 2
+    },
+    "PPS-DEV-113": {
+      "tokens": 4629,
+      "documents": 1
+    },
+    "PPS-DEV-114": {
+      "tokens": 4464,
+      "documents": 1
+    },
+    "PPS-DEV-115": {
+      "tokens": 6045,
+      "documents": 1
+    },
+    "PPS-DEV-116": {
+      "tokens": 7176,
+      "documents": 2
+    },
+    "PPS-DEV-117": {
+      "tokens": 13294,
+      "documents": 2
+    },
+    "PPS-DEV-118": {
+      "tokens": 5904,
+      "documents": 1
+    },
+    "PPS-DEV-119": {
+      "tokens": 27390,
+      "documents": 3
+    },
+    "PPS-DEV-120": {
+      "tokens": 3985,
+      "documents": 1
+    },
+    "PPS-DEV-121": {
+      "tokens": 24889,
+      "documents": 3
+    },
+    "PPS-DEV-122": {
+      "tokens": 15756,
+      "documents": 3
+    },
+    "PPS-DEV-123": {
+      "tokens": 22725,
+      "documents": 3
+    },
+    "PPS-DEV-124": {
+      "tokens": 7328,
+      "documents": 1
+    },
+    "PPS-DEV-125": {
+      "tokens": 16939,
+      "documents": 2
+    },
+    "PPS-DEV-126": {
+      "tokens": 8112,
+      "documents": 2
+    },
+    "PPS-DEV-127": {
+      "tokens": 10079,
+      "documents": 2
+    },
+    "PPS-DEV-128": {
+      "tokens": 6235,
+      "documents": 3
+    },
+    "PPS-DEV-129": {
+      "tokens": 16224,
+      "documents": 2
+    },
+    "PPS-DEV-130": {
+      "tokens": 4811,
+      "documents": 2
+    },
+    "PPS-DEV-131": {
+      "tokens": 5099,
+      "documents": 2
+    },
+    "PPS-DEV-132": {
+      "tokens": 13347,
+      "documents": 2
+    },
+    "PPS-DEV-133": {
+      "tokens": 12293,
+      "documents": 3
+    },
+    "PPS-DEV-134": {
+      "tokens": 6862,
+      "documents": 1
+    },
+    "PPS-DEV-135": {
+      "tokens": 19224,
+      "documents": 3
+    },
+    "PPS-DEV-136": {
+      "tokens": 19039,
+      "documents": 2
+    },
+    "PPS-DEV-137": {
+      "tokens": 21625,
+      "documents": 2
+    },
+    "PPS-DEV-138": {
+      "tokens": 25875,
+      "documents": 2
+    },
+    "PPS-DEV-139": {
+      "tokens": 12134,
+      "documents": 1
+    },
+    "PPS-DEV-140": {
+      "tokens": 25847,
+      "documents": 3
+    },
+    "PPS-DEV-141": {
+      "tokens": 6828,
+      "documents": 1
+    },
+    "PPS-DEV-142": {
+      "tokens": 3956,
+      "documents": 1
+    },
+    "PPS-DEV-143": {
+      "tokens": 29050,
+      "documents": 2
+    },
+    "PPS-DEV-144": {
+      "tokens": 7117,
+      "documents": 2
+    },
+    "PPS-DEV-145": {
+      "tokens": 28935,
+      "documents": 2
+    },
+    "PPS-DEV-146": {
+      "tokens": 7508,
+      "documents": 2
+    },
+    "PPS-DEV-147": {
+      "tokens": 27572,
+      "documents": 3
+    },
+    "PPS-DEV-148": {
+      "tokens": 7287,
+      "documents": 2
+    },
+    "PPS-DEV-149": {
+      "tokens": 9273,
+      "documents": 2
+    },
+    "PPS-DEV-150": {
+      "tokens": 3942,
+      "documents": 1
+    },
+    "PPS-DEV-151": {
+      "tokens": 10237,
+      "documents": 2
+    },
+    "PPS-DEV-152": {
+      "tokens": 7818,
+      "documents": 2
+    },
+    "PPS-DEV-153": {
+      "tokens": 27153,
+      "documents": 3
+    },
+    "PPS-DEV-154": {
+      "tokens": 6316,
+      "documents": 2
+    },
+    "PPS-DEV-155": {
+      "tokens": 28173,
+      "documents": 3
+    },
+    "PPS-DEV-156": {
+      "tokens": 5205,
+      "documents": 2
+    },
+    "PPS-DEV-157": {
+      "tokens": 18831,
+      "documents": 2
+    },
+    "PPS-DEV-158": {
+      "tokens": 27685,
+      "documents": 3
+    },
+    "PPS-DEV-159": {
+      "tokens": 18277,
+      "documents": 2
+    },
+    "PPS-DEV-160": {
+      "tokens": 6455,
+      "documents": 2
+    },
+    "PPS-DEV-161": {
+      "tokens": 18022,
+      "documents": 3
+    },
+    "PPS-DEV-162": {
+      "tokens": 16575,
+      "documents": 3
+    },
+    "PPS-DEV-163": {
+      "tokens": 12153,
+      "documents": 2
+    },
+    "PPS-DEV-164": {
+      "tokens": 5768,
+      "documents": 2
+    },
+    "PPS-DEV-165": {
+      "tokens": 22029,
+      "documents": 3
+    },
+    "PPS-DEV-166": {
+      "tokens": 4268,
+      "documents": 1
+    },
+    "PPS-DEV-167": {
+      "tokens": 5987,
+      "documents": 2
+    },
+    "PPS-DEV-168": {
+      "tokens": 5251,
+      "documents": 1
+    },
+    "PPS-DEV-169": {
+      "tokens": 28858,
+      "documents": 2
+    },
+    "PPS-DEV-170": {
+      "tokens": 14594,
+      "documents": 3
+    },
+    "PPS-DEV-171": {
+      "tokens": 27483,
+      "documents": 2
+    },
+    "PPS-DEV-172": {
+      "tokens": 10334,
+      "documents": 2
+    },
+    "PPS-DEV-173": {
+      "tokens": 23346,
+      "documents": 3
+    },
+    "PPS-DEV-174": {
+      "tokens": 4386,
+      "documents": 1
+    },
+    "PPS-DEV-175": {
+      "tokens": 15035,
+      "documents": 2
+    },
+    "PPS-DEV-176": {
+      "tokens": 9544,
+      "documents": 2
+    },
+    "PPS-DEV-177": {
+      "tokens": 7403,
+      "documents": 1
+    },
+    "PPS-DEV-178": {
+      "tokens": 19107,
+      "documents": 2
+    },
+    "PPS-DEV-179": {
+      "tokens": 3545,
+      "documents": 1
+    },
+    "PPS-DEV-180": {
+      "tokens": 11541,
+      "documents": 2
+    },
+    "PPS-DEV-181": {
+      "tokens": 10332,
+      "documents": 2
+    },
+    "PPS-DEV-182": {
+      "tokens": 4721,
+      "documents": 1
+    },
+    "PPS-DEV-183": {
+      "tokens": 11564,
+      "documents": 2
+    },
+    "PPS-DEV-184": {
+      "tokens": 6404,
+      "documents": 2
+    },
+    "PPS-DEV-185": {
+      "tokens": 17731,
+      "documents": 2
+    },
+    "PPS-DEV-186": {
+      "tokens": 8906,
+      "documents": 2
+    },
+    "PPS-DEV-187": {
+      "tokens": 6695,
+      "documents": 1
+    },
+    "PPS-DEV-188": {
+      "tokens": 22451,
+      "documents": 2
+    },
+    "PPS-DEV-189": {
+      "tokens": 12038,
+      "documents": 2
+    },
+    "PPS-DEV-190": {
+      "tokens": 9037,
+      "documents": 2
+    },
+    "PPS-DEV-191": {
+      "tokens": 21722,
+      "documents": 3
+    },
+    "PPS-DEV-192": {
+      "tokens": 7313,
+      "documents": 2
+    },
+    "PPS-DEV-193": {
+      "tokens": 11028,
+      "documents": 3
+    },
+    "PPS-DEV-194": {
+      "tokens": 11072,
+      "documents": 2
+    },
+    "PPS-DEV-195": {
+      "tokens": 17373,
+      "documents": 2
+    },
+    "PPS-DEV-196": {
+      "tokens": 10661,
+      "documents": 2
+    },
+    "PPS-DEV-197": {
+      "tokens": 29424,
+      "documents": 3
+    },
+    "PPS-DEV-198": {
+      "tokens": 6058,
+      "documents": 2
+    },
+    "PPS-DEV-199": {
+      "tokens": 26685,
+      "documents": 3
+    },
+    "PPS-DEV-200": {
+      "tokens": 7921,
+      "documents": 2
+    }
+  },
+  "seconds": 1.285
+}

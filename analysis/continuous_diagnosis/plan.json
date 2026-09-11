@@ -1,0 +1,46 @@
+{
+  "ids": [
+    "PPS-DEV-01",
+    "PPS-DEV-02",
+    "PPS-DEV-03",
+    "PPS-DEV-04",
+    "PPS-DEV-05",
+    "PPS-DEV-06",
+    "PPS-DEV-07",
+    "PPS-DEV-08",
+    "PPS-DEV-09",
+    "PPS-DEV-10",
+    "PPS-DEV-11",
+    "PPS-DEV-12",
+    "PPS-DEV-13",
+    "PPS-DEV-14",
+    "PPS-DEV-15",
+    "PPS-DEV-16",
+    "PPS-DEV-17",
+    "PPS-DEV-18",
+    "PPS-DEV-19",
+    "PPS-DEV-20",
+    "PPS-DEV-21",
+    "PPS-DEV-22",
+    "PPS-DEV-23",
+    "PPS-DEV-24"
+  ],
+  "selection": "First24 in original input order; no selection by labels or output differences",
+  "stages": [
+    "old_barrier_1",
+    "old_barrier_2",
+    "new_barrier",
+    "new_continuous_1",
+    "new_continuous_2"
+  ],
+  "scope": "Same-engine raw-token diagnostics; same frozen Turn inputs; no full evaluation claim; reset prefix each stage, other warm state persists",
+  "source_sha256": {
+    "scripts/diagnose_continuous.py": "43d2cd63dec8327e5ee266f965ced259a86092850484a9949509309e858d8feb",
+    "nara/continuous.py": "25b0f25cf05721cb4a74faa26777ddea8df1cf81917ce6d9f34f0a38d83e24fe",
+    "nara/vllm_model.py": "c3ae5a8f7bd75365e0d685018fab22733a917fca423eacf2fb7f623e4e8c1e0d",
+    "nara/inference.py": "e09a87a3113399f2656d119b18536a59b70128242547fbd92774eee5c07dd226",
+    "nara/prefix_predictor.py": "aee83eb0ce46cef8f2cbc7bc8697a94282d0b7908306fff55b5416d271ed19b7",
+    "nara/compact_criteria.json": "84cc8ca7f625f51e55206fc581a28e36df4551999c4009de84188f273bd06a04",
+    "data/dev.jsonl": "5507f5ab0ba53b708f87211ed050dbe531b48a626ace6084c3ccaefb53147534"
+  }
+}

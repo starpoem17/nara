@@ -1,0 +1,9 @@
+{
+  "record_id": "PPS-DEV-01",
+  "off_instant_vs_on_think_prefix": 4,
+  "on_instant_vs_on_think_prefix": 13640,
+  "think_input_tokens": 13928,
+  "on_instant_input_tokens": 13787,
+  "zero_budget_accepted": true,
+  "scope": "Tokenizer and parameter validation only; no GPU generation or cache timing"
+}

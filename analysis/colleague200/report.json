@@ -1,0 +1,59 @@
+{
+  "건수": 200,
+  "모델로드_s": 76.7,
+  "추론_s": 243.6,
+  "건당_s": 1.22,
+  "전체_s": 408.9,
+  "유효JSON": 200,
+  "메운_항목수": 0,
+  "근거_유지": 154,
+  "근거_원문불일치_폐기": 45,
+  "출력": "/home/hwajoong/projects/nara/analysis/colleague200/submission.csv",
+  "자가검증": "PASS",
+  "run_seconds_precise": 410.14906423499633,
+  "wrapper_seconds_before_artifact_serialization": 410.1584340850095,
+  "stage_times": {
+    "runner_load_seconds": 76.73550939559937,
+    "law_index_seconds": 0.21297179700923152,
+    "law_articles": 2538,
+    "inference_start": 165.227660346005
+  },
+  "engine": {
+    "requested_options": {
+      "model": "/home/hwajoong/projects/nara/models/gemma-4-26B-A4B-it-NVFP4",
+      "tokenizer": "/home/hwajoong/projects/nara/models/gemma-4-26B-A4B-it-NVFP4",
+      "max_model_len": 16384,
+      "gpu_memory_utilization": 0.92,
+      "seed": 20260826,
+      "tensor_parallel_size": 1,
+      "dtype": "auto",
+      "kernel_config": {
+        "moe_backend": "cutlass"
+      }
+    },
+    "resolved": {
+      "max_model_len": 16384,
+      "quantization": "compressed-tensors",
+      "max_num_seqs": 256,
+      "max_num_batched_tokens": 8192,
+      "enable_prefix_caching": true,
+      "gpu_memory_utilization": 0.92,
+      "reasoning_parser": ""
+    },
+    "default_template_matches_thinking_off": true
+  },
+  "local_adaptations": [
+    "PPS model path uses existing local NVFP4 checkpoint; quant=None auto-detects checkpoint quantization.",
+    "kernel_config.moe_backend=cutlass for local Blackwell NVFP4.",
+    "Pass-through observers record prompts, requests and durations; original source unchanged."
+  ],
+  "reported_competition_minutes": 75,
+  "competition_timing_source": "user report; timing scope/count pending clarification",
+  "model_chat_seconds": 243.602215987994,
+  "model_calls": 2,
+  "successful_outputs": 200,
+  "input_tokens": 2465856,
+  "output_tokens": 127553,
+  "cached_input_tokens": 451200,
+  "cache_counts_available": true
+}

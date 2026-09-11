@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "records": 200,
+  "judgments": 4800,
+  "frozen_sources_match": true,
+  "rule_rows_identical": true,
+  "trace_and_cache_totals_match": true,
+  "thinking_tokens": 0,
+  "context_overflows": 0,
+  "evidence_invalid": 0
+}

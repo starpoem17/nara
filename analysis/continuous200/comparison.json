@@ -1,0 +1,1260 @@
+{
+  "pilot_barrier_8192": {
+    "report": {
+      "name": "pilot_barrier_8192",
+      "records": 48,
+      "schedule": "barrier",
+      "groups": [
+        [
+          "v1",
+          "v5",
+          "v9",
+          "v14",
+          "v22",
+          "v24"
+        ]
+      ],
+      "engine": {
+        "load_seconds": 27.35851100400032,
+        "max_num_batched_tokens": 8192,
+        "max_num_seqs": 8,
+        "enable_chunked_prefill": true,
+        "gpu_memory_utilization": 0.86,
+        "scheduler_reserve_full_isl": null
+      },
+      "prediction_seconds": 121.21445500499976,
+      "load_seconds": 27.35851100400032,
+      "total_seconds": 148.57296600900008,
+      "options": {
+        "thinking": true,
+        "item_group_size": 6
+      },
+      "limits": {
+        "batch_size": 8,
+        "search_rounds": 2,
+        "queries_per_round": 4,
+        "top_k": 5,
+        "round_tokens": 4096,
+        "total_retrieval_tokens": 8192,
+        "output_tokens": 2048,
+        "retries": 1,
+        "require_search": false
+      },
+      "failed_ids": [],
+      "model_turns": 48,
+      "search_rounds": 0,
+      "invalid_responses": 0,
+      "input_tokens": 562243,
+      "output_tokens": 55740,
+      "thinking_tokens": 49046,
+      "metrics": [
+        {
+          "model_seconds": 21.899875830000383,
+          "retrieval_seconds": 0.0,
+          "model_batches": 1,
+          "retrieval_batches": 0,
+          "total_seconds": 21.94749086900265
+        },
+        {
+          "model_seconds": 15.900582850998035,
+          "retrieval_seconds": 0.0,
+          "model_batches": 1,
+          "retrieval_batches": 0,
+          "total_seconds": 15.92893694700615
+        },
+        {
+          "model_seconds": 17.05549061000056,
+          "retrieval_seconds": 0.0,
+          "model_batches": 1,
+          "retrieval_batches": 0,
+          "total_seconds": 17.090324450997286
+        },
+        {
+          "model_seconds": 22.23338603701268,
+          "retrieval_seconds": 0.0,
+          "model_batches": 1,
+          "retrieval_batches": 0,
+          "total_seconds": 22.293876345996978
+        },
+        {
+          "model_seconds": 23.45396629899915,
+          "retrieval_seconds": 0.0,
+          "model_batches": 1,
+          "retrieval_batches": 0,
+          "total_seconds": 23.517021744002705
+        },
+        {
+          "model_seconds": 20.378578187999665,
+          "retrieval_seconds": 0.0,
+          "model_batches": 1,
+          "retrieval_batches": 0,
+          "total_seconds": 20.434786890997202
+        }
+      ]
+    },
+    "timing": {
+      "requests": 48,
+      "prefill_request_seconds": 63.01741184598359,
+      "decode_request_seconds": 786.2948974349565,
+      "prefill_request_fraction": 0.07419816145056994,
+      "decode_request_fraction": 0.9258018385494301,
+      "mean_prefill_seconds": 1.3128627467913248,
+      "mean_decode_seconds": 16.381143696561594,
+      "mean_queue_seconds": 1.962863815124668,
+      "p95_prefill_seconds": 2.469604733798769,
+      "input_tokens": 562243,
+      "output_tokens": 55740,
+      "cached_fraction": 0.015708510377185667,
+      "aggregate_decode_tokens_per_request_second": 70.82838790087268,
+      "interval_union": {
+        "prefill_only_seconds": 4.1843489770108135,
+        "decode_only_seconds": 88.12434588899487,
+        "overlap_seconds": 26.620092298995587
+      }
+    },
+    "quality": {
+      "macro_f1": 0.42777777777777776,
+      "micro_f1": 0.5882352941176471,
+      "per_feature": [
+        {
+          "feature": "v1",
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "f1": 0.0
+        },
+        {
+          "feature": "v5",
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "f1": 1.0
+        },
+        {
+          "feature": "v9",
+          "tp": 1,
+          "fp": 1,
+          "fn": 1,
+          "f1": 0.5
+        },
+        {
+          "feature": "v14",
+          "tp": 1,
+          "fp": 1,
+          "fn": 2,
+          "f1": 0.4
+        },
+        {
+          "feature": "v22",
+          "tp": 1,
+          "fp": 1,
+          "fn": 0,
+          "f1": 0.6666666666666666
+        },
+        {
+          "feature": "v24",
+          "tp": 0,
+          "fp": 0,
+          "fn": 1,
+          "f1": 0.0
+        }
+      ]
+    },
+    "scheduler": {
+      "samples": 7941,
+      "sampled_span_seconds": 121.1079112610023,
+      "time_weighted_mean": {
+        "running": 6.859939627639597,
+        "waiting": 0.0,
+        "deferred": 0.8742497031911517,
+        "kv_usage": 0.37502976376961045
+      },
+      "peak_running": 8,
+      "peak_kv_usage": 0.7238530387431934,
+      "idle_fraction": 0.024930136260733787
+    },
+    "thinking_length_quantiles": [
+      1020.0,
+      1022.0,
+      1022.0,
+      1022.0,
+      1022.0
+    ]
+  },
+  "pilot_continuous_2048": {
+    "report": {
+      "name": "pilot_continuous_2048",
+      "records": 48,
+      "schedule": "continuous",
+      "groups": [
+        [
+          "v1",
+          "v5",
+          "v9",
+          "v14",
+          "v22",
+          "v24"
+        ]
+      ],
+      "engine": {
+        "load_seconds": 57.88640769199992,
+        "max_num_batched_tokens": 2048,
+        "max_num_seqs": 8,
+        "enable_chunked_prefill": true,
+        "gpu_memory_utilization": 0.86,
+        "scheduler_reserve_full_isl": null
+      },
+      "prediction_seconds": 119.59700937698653,
+      "load_seconds": 57.88640769199992,
+      "total_seconds": 177.48341706898645,
+      "options": {
+        "thinking": true,
+        "item_group_size": 6
+      },
+      "limits": {
+        "batch_size": 8,
+        "search_rounds": 2,
+        "queries_per_round": 4,
+        "top_k": 5,
+        "round_tokens": 4096,
+        "total_retrieval_tokens": 8192,
+        "output_tokens": 2048,
+        "retries": 1,
+        "require_search": false
+      },
+      "failed_ids": [],
+      "model_turns": 48,
+      "search_rounds": 0,
+      "invalid_responses": 0,
+      "input_tokens": 562243,
+      "output_tokens": 55338,
+      "thinking_tokens": 49037,
+      "metrics": [
+        {
+          "model_seconds": 118.9774090742867,
+          "retrieval_seconds": 0.0,
+          "model_batches": 48,
+          "retrieval_batches": 0,
+          "total_seconds": 119.59676574601326
+        }
+      ]
+    },
+    "timing": {
+      "requests": 48,
+      "prefill_request_seconds": 39.3070264019334,
+      "decode_request_seconds": 857.1365301659971,
+      "prefill_request_fraction": 0.04384774268713794,
+      "decode_request_fraction": 0.956152257312862,
+      "mean_prefill_seconds": 0.8188963833736125,
+      "mean_decode_seconds": 17.85701104512494,
+      "mean_queue_seconds": 1.044745005438017,
+      "p95_prefill_seconds": 2.1858833735954244,
+      "input_tokens": 562243,
+      "output_tokens": 55338,
+      "cached_fraction": 0.015708510377185667,
+      "aggregate_decode_tokens_per_request_second": 64.50547614543073,
+      "interval_union": {
+        "prefill_only_seconds": 2.906816382004763,
+        "decode_only_seconds": 84.03660750502604,
+        "overlap_seconds": 31.00071380197187
+      }
+    },
+    "quality": {
+      "macro_f1": 0.3611111111111111,
+      "micro_f1": 0.375,
+      "per_feature": [
+        {
+          "feature": "v1",
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "f1": 0.0
+        },
+        {
+          "feature": "v5",
+          "tp": 1,
+          "fp": 0,
+          "fn": 1,
+          "f1": 0.6666666666666666
+        },
+        {
+          "feature": "v9",
+          "tp": 1,
+          "fp": 1,
+          "fn": 1,
+          "f1": 0.5
+        },
+        {
+          "feature": "v14",
+          "tp": 0,
+          "fp": 2,
+          "fn": 3,
+          "f1": 0.0
+        },
+        {
+          "feature": "v22",
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "f1": 1.0
+        },
+        {
+          "feature": "v24",
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "f1": 0.0
+        }
+      ]
+    },
+    "scheduler": {
+      "samples": 7758,
+      "sampled_span_seconds": 119.49221312800364,
+      "time_weighted_mean": {
+        "running": 7.4644395127116265,
+        "waiting": 0.0,
+        "deferred": 0.4354609617635203,
+        "kv_usage": 0.3372837383854776
+      },
+      "peak_running": 8,
+      "peak_kv_usage": 0.5204667863554757,
+      "idle_fraction": 0.018192945582786835
+    },
+    "thinking_length_quantiles": [
+      1018.0,
+      1021.75,
+      1022.0,
+      1022.0,
+      1022.0
+    ],
+    "refill": {
+      "max_inflight": 8,
+      "ninth_submit_before_first_eight_all_finish": true,
+      "ninth_submit_seconds_after_first_completion": 0.008813280990580097,
+      "remaining_first_eight_at_ninth_submit": 7
+    }
+  },
+  "pilot_continuous_8192": {
+    "report": {
+      "name": "pilot_continuous_8192",
+      "records": 48,
+      "schedule": "continuous",
+      "groups": [
+        [
+          "v1",
+          "v5",
+          "v9",
+          "v14",
+          "v22",
+          "v24"
+        ]
+      ],
+      "engine": {
+        "load_seconds": 27.35851100400032,
+        "max_num_batched_tokens": 8192,
+        "max_num_seqs": 8,
+        "enable_chunked_prefill": true,
+        "gpu_memory_utilization": 0.86,
+        "scheduler_reserve_full_isl": null
+      },
+      "prediction_seconds": 117.61366838100366,
+      "load_seconds": 27.35851100400032,
+      "total_seconds": 144.97217938500398,
+      "options": {
+        "thinking": true,
+        "item_group_size": 6
+      },
+      "limits": {
+        "batch_size": 8,
+        "search_rounds": 2,
+        "queries_per_round": 4,
+        "top_k": 5,
+        "round_tokens": 4096,
+        "total_retrieval_tokens": 8192,
+        "output_tokens": 2048,
+        "retries": 1,
+        "require_search": false
+      },
+      "failed_ids": [],
+      "model_turns": 48,
+      "search_rounds": 0,
+      "invalid_responses": 0,
+      "input_tokens": 562243,
+      "output_tokens": 55646,
+      "thinking_tokens": 49048,
+      "metrics": [
+        {
+          "model_seconds": 116.98778526367096,
+          "retrieval_seconds": 0.0,
+          "model_batches": 48,
+          "retrieval_batches": 0,
+          "total_seconds": 117.6133913579979
+        }
+      ]
+    },
+    "timing": {
+      "requests": 48,
+      "prefill_request_seconds": 39.576198830938665,
+      "decode_request_seconds": 872.6053812120808,
+      "prefill_request_fraction": 0.04338631660274504,
+      "decode_request_fraction": 0.9566136833972549,
+      "mean_prefill_seconds": 0.8245041423112222,
+      "mean_decode_seconds": 18.179278775251685,
+      "mean_queue_seconds": 0.39518970470817294,
+      "p95_prefill_seconds": 2.012529038800858,
+      "input_tokens": 562243,
+      "output_tokens": 55646,
+      "cached_fraction": 0.015708510377185667,
+      "aggregate_decode_tokens_per_request_second": 63.71494056428158,
+      "interval_union": {
+        "prefill_only_seconds": 0.7665464629972121,
+        "decode_only_seconds": 86.15697363304207,
+        "overlap_seconds": 30.67006749396387
+      }
+    },
+    "quality": {
+      "macro_f1": 0.4444444444444444,
+      "micro_f1": 0.4,
+      "per_feature": [
+        {
+          "feature": "v1",
+          "tp": 0,
+          "fp": 1,
+          "fn": 0,
+          "f1": 0.0
+        },
+        {
+          "feature": "v5",
+          "tp": 1,
+          "fp": 1,
+          "fn": 1,
+          "f1": 0.5
+        },
+        {
+          "feature": "v9",
+          "tp": 1,
+          "fp": 1,
+          "fn": 1,
+          "f1": 0.5
+        },
+        {
+          "feature": "v14",
+          "tp": 0,
+          "fp": 3,
+          "fn": 3,
+          "f1": 0.0
+        },
+        {
+          "feature": "v22",
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "f1": 1.0
+        },
+        {
+          "feature": "v24",
+          "tp": 1,
+          "fp": 1,
+          "fn": 0,
+          "f1": 0.6666666666666666
+        }
+      ]
+    },
+    "scheduler": {
+      "samples": 7067,
+      "sampled_span_seconds": 117.5066586210014,
+      "time_weighted_mean": {
+        "running": 7.706166006962629,
+        "waiting": 0.0,
+        "deferred": 0.16999836953428613,
+        "kv_usage": 0.40461294570438877
+      },
+      "peak_running": 8,
+      "peak_kv_usage": 0.749890467547099,
+      "idle_fraction": 0.002572050661287106
+    },
+    "thinking_length_quantiles": [
+      1020.0,
+      1022.0,
+      1022.0,
+      1022.0,
+      1022.0
+    ],
+    "refill": {
+      "max_inflight": 8,
+      "ninth_submit_before_first_eight_all_finish": true,
+      "ninth_submit_seconds_after_first_completion": 0.007183422989328392,
+      "remaining_first_eight_at_ninth_submit": 7
+    }
+  },
+  "pilot_continuous_16384": {
+    "report": {
+      "name": "pilot_continuous_16384",
+      "records": 48,
+      "schedule": "continuous",
+      "groups": [
+        [
+          "v1",
+          "v5",
+          "v9",
+          "v14",
+          "v22",
+          "v24"
+        ]
+      ],
+      "engine": {
+        "load_seconds": 65.90835802600486,
+        "max_num_batched_tokens": 16384,
+        "max_num_seqs": 8,
+        "enable_chunked_prefill": true,
+        "gpu_memory_utilization": 0.86,
+        "scheduler_reserve_full_isl": null
+      },
+      "prediction_seconds": 130.33525043498958,
+      "load_seconds": 65.90835802600486,
+      "total_seconds": 196.24360846099444,
+      "options": {
+        "thinking": true,
+        "item_group_size": 6
+      },
+      "limits": {
+        "batch_size": 8,
+        "search_rounds": 2,
+        "queries_per_round": 4,
+        "top_k": 5,
+        "round_tokens": 4096,
+        "total_retrieval_tokens": 8192,
+        "output_tokens": 2048,
+        "retries": 1,
+        "require_search": false
+      },
+      "failed_ids": [],
+      "model_turns": 48,
+      "search_rounds": 0,
+      "invalid_responses": 0,
+      "input_tokens": 562243,
+      "output_tokens": 55357,
+      "thinking_tokens": 49050,
+      "metrics": [
+        {
+          "model_seconds": 129.6767087784101,
+          "retrieval_seconds": 0.0,
+          "model_batches": 48,
+          "retrieval_batches": 0,
+          "total_seconds": 130.335025280001
+        }
+      ]
+    },
+    "timing": {
+      "requests": 48,
+      "prefill_request_seconds": 45.39254793903092,
+      "decode_request_seconds": 815.8038903340785,
+      "prefill_request_fraction": 0.05270870375410874,
+      "decode_request_fraction": 0.9472912962458913,
+      "mean_prefill_seconds": 0.9456780820631442,
+      "mean_decode_seconds": 16.995914381959967,
+      "mean_queue_seconds": 2.617050156790659,
+      "p95_prefill_seconds": 1.9360549583565443,
+      "input_tokens": 562243,
+      "output_tokens": 55357,
+      "cached_fraction": 0.015708510377185667,
+      "aggregate_decode_tokens_per_request_second": 67.79693092337486,
+      "interval_union": {
+        "prefill_only_seconds": 0.806226507993415,
+        "decode_only_seconds": 97.68179205500928,
+        "overlap_seconds": 30.191347938001854
+      }
+    },
+    "quality": {
+      "macro_f1": 0.5833333333333334,
+      "micro_f1": 0.6666666666666666,
+      "per_feature": [
+        {
+          "feature": "v1",
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "f1": 0.0
+        },
+        {
+          "feature": "v5",
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "f1": 1.0
+        },
+        {
+          "feature": "v9",
+          "tp": 1,
+          "fp": 1,
+          "fn": 1,
+          "f1": 0.5
+        },
+        {
+          "feature": "v14",
+          "tp": 0,
+          "fp": 0,
+          "fn": 3,
+          "f1": 0.0
+        },
+        {
+          "feature": "v22",
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "f1": 1.0
+        },
+        {
+          "feature": "v24",
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "f1": 1.0
+        }
+      ]
+    },
+    "scheduler": {
+      "samples": 8837,
+      "sampled_span_seconds": 130.2263276070007,
+      "time_weighted_mean": {
+        "running": 6.4946083446616525,
+        "waiting": 0.0,
+        "deferred": 1.002564728086183,
+        "kv_usage": 0.4572148593143417
+      },
+      "peak_running": 8,
+      "peak_kv_usage": 0.9811012599160056,
+      "idle_fraction": 0.017493419762749474
+    },
+    "thinking_length_quantiles": [
+      1021.0,
+      1022.0,
+      1022.0,
+      1022.0,
+      1022.0
+    ],
+    "refill": {
+      "max_inflight": 8,
+      "ninth_submit_before_first_eight_all_finish": true,
+      "ninth_submit_seconds_after_first_completion": 0.008719880992430262,
+      "remaining_first_eight_at_ninth_submit": 7
+    }
+  },
+  "six_continuous_8192": {
+    "report": {
+      "name": "six_continuous_8192",
+      "records": 200,
+      "schedule": "continuous",
+      "groups": [
+        [
+          "v1",
+          "v5",
+          "v9",
+          "v14",
+          "v22",
+          "v24"
+        ]
+      ],
+      "engine": {
+        "load_seconds": 27.40053859099862,
+        "max_num_batched_tokens": 8192,
+        "max_num_seqs": 8,
+        "enable_chunked_prefill": true,
+        "gpu_memory_utilization": 0.86,
+        "scheduler_reserve_full_isl": null
+      },
+      "prediction_seconds": 494.4584278830007,
+      "load_seconds": 27.40053859099862,
+      "total_seconds": 521.8589664739993,
+      "options": {
+        "thinking": true,
+        "item_group_size": 6
+      },
+      "limits": {
+        "batch_size": 8,
+        "search_rounds": 2,
+        "queries_per_round": 4,
+        "top_k": 5,
+        "round_tokens": 4096,
+        "total_retrieval_tokens": 8192,
+        "output_tokens": 2048,
+        "retries": 1,
+        "require_search": false
+      },
+      "failed_ids": [],
+      "model_turns": 200,
+      "search_rounds": 0,
+      "invalid_responses": 0,
+      "input_tokens": 2327387,
+      "output_tokens": 232168,
+      "thinking_tokens": 204371,
+      "metrics": [
+        {
+          "model_seconds": 491.6189617886703,
+          "retrieval_seconds": 0.0,
+          "model_batches": 200,
+          "retrieval_batches": 0,
+          "total_seconds": 494.45772184300586
+        }
+      ]
+    },
+    "timing": {
+      "requests": 200,
+      "prefill_request_seconds": 147.85624779803038,
+      "decode_request_seconds": 3739.060119899994,
+      "prefill_request_fraction": 0.03803947237629821,
+      "decode_request_fraction": 0.9619605276237018,
+      "mean_prefill_seconds": 0.7392812389901519,
+      "mean_decode_seconds": 18.69530059949997,
+      "mean_queue_seconds": 0.14138596372475148,
+      "p95_prefill_seconds": 2.0013998633585284,
+      "input_tokens": 2327387,
+      "output_tokens": 232168,
+      "cached_fraction": 0.016334197965357716,
+      "aggregate_decode_tokens_per_request_second": 62.03912014289952,
+      "interval_union": {
+        "prefill_only_seconds": 0.8353321659960784,
+        "decode_only_seconds": 363.4454790259624,
+        "overlap_seconds": 128.86436882404087
+      }
+    },
+    "quality": {
+      "macro_f1": 0.39145299145299145,
+      "micro_f1": 0.39473684210526316,
+      "per_feature": [
+        {
+          "feature": "v1",
+          "tp": 2,
+          "fp": 1,
+          "fn": 5,
+          "f1": 0.4
+        },
+        {
+          "feature": "v5",
+          "tp": 4,
+          "fp": 2,
+          "fn": 3,
+          "f1": 0.6153846153846154
+        },
+        {
+          "feature": "v9",
+          "tp": 3,
+          "fp": 9,
+          "fn": 3,
+          "f1": 0.3333333333333333
+        },
+        {
+          "feature": "v14",
+          "tp": 2,
+          "fp": 2,
+          "fn": 6,
+          "f1": 0.3333333333333333
+        },
+        {
+          "feature": "v22",
+          "tp": 4,
+          "fp": 3,
+          "fn": 1,
+          "f1": 0.6666666666666666
+        },
+        {
+          "feature": "v24",
+          "tp": 0,
+          "fp": 3,
+          "fn": 8,
+          "f1": 0.0
+        }
+      ]
+    },
+    "scheduler": {
+      "samples": 30127,
+      "sampled_span_seconds": 494.31240051198984,
+      "time_weighted_mean": {
+        "running": 7.824589538449513,
+        "waiting": 0.0,
+        "deferred": 0.06707480158423648,
+        "kv_usage": 0.402945027387014
+      },
+      "peak_running": 8,
+      "peak_kv_usage": 0.7590286036177004,
+      "idle_fraction": 0.002513124996878517
+    },
+    "thinking_length_quantiles": [
+      1020.0,
+      1022.0,
+      1022.0,
+      1022.0,
+      1022.0
+    ],
+    "refill": {
+      "max_inflight": 8,
+      "ninth_submit_before_first_eight_all_finish": true,
+      "ninth_submit_seconds_after_first_completion": 0.012352723992080428,
+      "remaining_first_eight_at_ninth_submit": 7
+    }
+  },
+  "mixed_continuous_8192": {
+    "report": {
+      "name": "mixed_continuous_8192",
+      "records": 200,
+      "schedule": "continuous",
+      "groups": [
+        [
+          "v4",
+          "v6",
+          "v7",
+          "v8"
+        ],
+        [
+          "v10",
+          "v11",
+          "v12",
+          "v13"
+        ],
+        [
+          "v15",
+          "v16",
+          "v17",
+          "v18"
+        ],
+        [
+          "v19",
+          "v20",
+          "v21",
+          "v23"
+        ],
+        [
+          "v1",
+          "v5",
+          "v9",
+          "v14",
+          "v22",
+          "v24"
+        ]
+      ],
+      "engine": {
+        "load_seconds": 27.5026819340128,
+        "max_num_batched_tokens": 8192,
+        "max_num_seqs": 8,
+        "enable_chunked_prefill": true,
+        "gpu_memory_utilization": 0.86,
+        "scheduler_reserve_full_isl": null
+      },
+      "prediction_seconds": 798.9159775519947,
+      "load_seconds": 27.5026819340128,
+      "total_seconds": 854.0120589700091,
+      "options": {
+        "thinking": "mixed",
+        "item_group_size": 6,
+        "model_dir": "models/gemma-4-26B-A4B-it-NVFP4",
+        "max_model_len": 32768
+      },
+      "limits": {
+        "batch_size": 8,
+        "search_rounds": 2,
+        "queries_per_round": 4,
+        "top_k": 5,
+        "round_tokens": 4096,
+        "total_retrieval_tokens": 8192,
+        "output_tokens": 2048,
+        "retries": 1,
+        "require_search": false
+      },
+      "failed_ids": [],
+      "model_turns": 1005,
+      "search_rounds": 0,
+      "invalid_responses": 5,
+      "input_tokens": 11615034,
+      "output_tokens": 313919,
+      "thinking_tokens": 204373,
+      "metrics": [
+        {
+          "model_seconds": 767.2084398053412,
+          "retrieval_seconds": 0.0,
+          "model_batches": 1003,
+          "retrieval_batches": 0,
+          "total_seconds": 781.5934521809977
+        }
+      ],
+      "first_pass": {
+        "failed_ids": [
+          "PPS-DEV-049"
+        ],
+        "prediction_seconds": 781.5954880000063
+      },
+      "recovery": {
+        "policy": {
+          "prompt_change": false,
+          "extra_predict_attempts": 1,
+          "scope": "Only failed groups; original mode/output/thinking budget; isolated scheduling",
+          "source_sha256": "5f595194282aeae5e6f965a26457de98ac254b29908498ffc9269320cd6a4574"
+        },
+        "prediction_seconds": 17.32048955198843,
+        "separate_process_load_seconds": 27.593399484001566,
+        "groups": [
+          {
+            "id": "PPS-DEV-049",
+            "items": [
+              "v10",
+              "v11",
+              "v12",
+              "v13"
+            ],
+            "seconds": 17.318728757993085,
+            "error": null
+          }
+        ],
+        "scheduler_stats_scope": "first pass only; recovery scheduler not sampled",
+        "metrics_scope": "metrics list is first pass; recovery walltime is recorded separately",
+        "completion_trace_scope": "first pass only; final merged trace.jsonl"
+      },
+      "gpu": "NVIDIA GeForce RTX 5090",
+      "metadata_repair": "Post-run report fields required by evaluate_dev Markdown writer; no inference repeated."
+    },
+    "timing": {
+      "requests": 1005,
+      "prefill_request_seconds": 333.2692854471388,
+      "decode_request_seconds": 5815.510454696079,
+      "prefill_request_fraction": 0.0542008820500336,
+      "decode_request_fraction": 0.9457991179499664,
+      "mean_prefill_seconds": 0.33161122930063563,
+      "mean_decode_seconds": 5.78657756686177,
+      "mean_queue_seconds": 0.04024890424163586,
+      "p95_prefill_seconds": 1.602732342403032,
+      "input_tokens": 11615034,
+      "output_tokens": 313919,
+      "cached_fraction": 0.5531617040466692,
+      "aggregate_decode_tokens_per_request_second": 53.806798635761886,
+      "interval_union": {
+        "prefill_only_seconds": 1.6923441310063936,
+        "decode_only_seconds": 484.929794970958,
+        "overlap_seconds": 309.2932548060635
+      }
+    },
+    "quality": {
+      "macro_f1": 0.262738642124607,
+      "micro_f1": 0.27246376811594203,
+      "per_feature": [
+        {
+          "feature": "v1",
+          "tp": 4,
+          "fp": 3,
+          "fn": 3,
+          "f1": 0.5714285714285714
+        },
+        {
+          "feature": "v2",
+          "tp": 5,
+          "fp": 3,
+          "fn": 2,
+          "f1": 0.6666666666666666
+        },
+        {
+          "feature": "v3",
+          "tp": 6,
+          "fp": 0,
+          "fn": 2,
+          "f1": 0.8571428571428571
+        },
+        {
+          "feature": "v4",
+          "tp": 3,
+          "fp": 4,
+          "fn": 3,
+          "f1": 0.46153846153846156
+        },
+        {
+          "feature": "v5",
+          "tp": 3,
+          "fp": 1,
+          "fn": 4,
+          "f1": 0.5454545454545454
+        },
+        {
+          "feature": "v6",
+          "tp": 2,
+          "fp": 14,
+          "fn": 4,
+          "f1": 0.18181818181818182
+        },
+        {
+          "feature": "v7",
+          "tp": 1,
+          "fp": 1,
+          "fn": 6,
+          "f1": 0.2222222222222222
+        },
+        {
+          "feature": "v8",
+          "tp": 6,
+          "fp": 45,
+          "fn": 0,
+          "f1": 0.21052631578947367
+        },
+        {
+          "feature": "v9",
+          "tp": 2,
+          "fp": 7,
+          "fn": 4,
+          "f1": 0.26666666666666666
+        },
+        {
+          "feature": "v10",
+          "tp": 2,
+          "fp": 18,
+          "fn": 5,
+          "f1": 0.14814814814814814
+        },
+        {
+          "feature": "v11",
+          "tp": 0,
+          "fp": 10,
+          "fn": 6,
+          "f1": 0.0
+        },
+        {
+          "feature": "v12",
+          "tp": 1,
+          "fp": 0,
+          "fn": 5,
+          "f1": 0.2857142857142857
+        },
+        {
+          "feature": "v13",
+          "tp": 0,
+          "fp": 3,
+          "fn": 6,
+          "f1": 0.0
+        },
+        {
+          "feature": "v14",
+          "tp": 3,
+          "fp": 3,
+          "fn": 5,
+          "f1": 0.42857142857142855
+        },
+        {
+          "feature": "v15",
+          "tp": 0,
+          "fp": 0,
+          "fn": 6,
+          "f1": 0.0
+        },
+        {
+          "feature": "v16",
+          "tp": 0,
+          "fp": 8,
+          "fn": 6,
+          "f1": 0.0
+        },
+        {
+          "feature": "v17",
+          "tp": 0,
+          "fp": 0,
+          "fn": 6,
+          "f1": 0.0
+        },
+        {
+          "feature": "v18",
+          "tp": 0,
+          "fp": 5,
+          "fn": 7,
+          "f1": 0.0
+        },
+        {
+          "feature": "v19",
+          "tp": 2,
+          "fp": 1,
+          "fn": 4,
+          "f1": 0.4444444444444444
+        },
+        {
+          "feature": "v20",
+          "tp": 0,
+          "fp": 1,
+          "fn": 5,
+          "f1": 0.0
+        },
+        {
+          "feature": "v21",
+          "tp": 0,
+          "fp": 1,
+          "fn": 6,
+          "f1": 0.0
+        },
+        {
+          "feature": "v22",
+          "tp": 4,
+          "fp": 4,
+          "fn": 1,
+          "f1": 0.6153846153846154
+        },
+        {
+          "feature": "v23",
+          "tp": 3,
+          "fp": 7,
+          "fn": 2,
+          "f1": 0.4
+        },
+        {
+          "feature": "v24",
+          "tp": 0,
+          "fp": 6,
+          "fn": 8,
+          "f1": 0.0
+        }
+      ]
+    },
+    "scheduler": {
+      "samples": 40618,
+      "sampled_span_seconds": 781.4742243369983,
+      "time_weighted_mean": {
+        "running": 7.782863097054991,
+        "waiting": 0.0,
+        "deferred": 0.07606139965065319,
+        "kv_usage": 0.41232588419543076
+      },
+      "peak_running": 8,
+      "peak_kv_usage": 0.7915127996494962,
+      "idle_fraction": 0.0016302985963245037
+    },
+    "thinking_length_quantiles": [
+      1020.0,
+      1022.0,
+      1022.0,
+      1022.0,
+      1022.0
+    ],
+    "refill": {
+      "max_inflight": 8,
+      "ninth_submit_before_first_eight_all_finish": true,
+      "ninth_submit_seconds_after_first_completion": 0.015201988004264422,
+      "remaining_first_eight_at_ninth_submit": 7
+    },
+    "evidence": {
+      "nonempty": 80,
+      "invalid": 0,
+      "positive_nonabsence_missing": 68
+    },
+    "by_mode": {
+      "instant": {
+        "requests": 805,
+        "prefill_request_seconds": 200.2422386660037,
+        "decode_request_seconds": 1405.0424812191923,
+        "prefill_request_fraction": 0.12473939120302863,
+        "decode_request_fraction": 0.8752606087969713,
+        "mean_prefill_seconds": 0.2487481225664642,
+        "mean_decode_seconds": 1.7453943866076922,
+        "mean_queue_seconds": 0.04602885242352357,
+        "p95_prefill_seconds": 1.3809512993990198,
+        "input_tokens": 9287647,
+        "output_tokens": 81708,
+        "cached_fraction": 0.6890080986066761,
+        "aggregate_decode_tokens_per_request_second": 57.5804654175284,
+        "interval_union": {
+          "prefill_only_seconds": 34.65517243210343,
+          "decode_only_seconds": 591.6056357790367,
+          "overlap_seconds": 153.74106508390105
+        }
+      },
+      "thinking": {
+        "requests": 200,
+        "prefill_request_seconds": 133.02704678113514,
+        "decode_request_seconds": 4410.467973476887,
+        "prefill_request_fraction": 0.02927857215381753,
+        "decode_request_fraction": 0.9707214278461824,
+        "mean_prefill_seconds": 0.6651352339056757,
+        "mean_decode_seconds": 22.052339867384436,
+        "mean_queue_seconds": 0.016984612809537794,
+        "p95_prefill_seconds": 1.943711435296427,
+        "input_tokens": 2327387,
+        "output_tokens": 232211,
+        "cached_fraction": 0.011054457208878455,
+        "aggregate_decode_tokens_per_request_second": 52.60462186671309,
+        "interval_union": {
+          "prefill_only_seconds": 1.4501684510032646,
+          "decode_only_seconds": 636.6174607028661,
+          "overlap_seconds": 130.05197404013597
+        }
+      }
+    }
+  },
+  "previous_six_batch8": {
+    "seconds": 503.5100597050041,
+    "quality": {
+      "macro_f1": 0.5005772005772006,
+      "micro_f1": 0.4864864864864865,
+      "per_feature": [
+        {
+          "feature": "v1",
+          "tp": 4,
+          "fp": 0,
+          "fn": 3,
+          "f1": 0.7272727272727273
+        },
+        {
+          "feature": "v5",
+          "tp": 3,
+          "fp": 0,
+          "fn": 4,
+          "f1": 0.6
+        },
+        {
+          "feature": "v9",
+          "tp": 4,
+          "fp": 5,
+          "fn": 2,
+          "f1": 0.5333333333333333
+        },
+        {
+          "feature": "v14",
+          "tp": 1,
+          "fp": 5,
+          "fn": 7,
+          "f1": 0.14285714285714285
+        },
+        {
+          "feature": "v22",
+          "tp": 5,
+          "fp": 2,
+          "fn": 0,
+          "f1": 0.8333333333333334
+        },
+        {
+          "feature": "v24",
+          "tp": 1,
+          "fp": 3,
+          "fn": 7,
+          "f1": 0.16666666666666666
+        }
+      ]
+    }
+  },
+  "historical_full24": {
+    "hybrid": {
+      "seconds": 2404.8128116279986,
+      "macro_f1": 0.27403603550605277,
+      "micro_f1": 0.29518072289156627
+    },
+    "optimized": {
+      "seconds": 709.0744773319893,
+      "macro_f1": 0.2503856821784453,
+      "micro_f1": 0.26380368098159507
+    },
+    "optimized_off": {
+      "seconds": 447.1389486010012,
+      "macro_f1": 0.19858434294909708,
+      "micro_f1": 0.24624624624624625
+    },
+    "groups12": {
+      "seconds": 600.9577476370032,
+      "macro_f1": 0.2834927277302597,
+      "micro_f1": 0.2773722627737226
+    },
+    "ungrouped": {
+      "seconds": 717.3477461910006,
+      "macro_f1": 0.2552486864986865,
+      "micro_f1": 0.328125
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "prompt_change": false,
+  "extra_predict_attempts": 1,
+  "scope": "Only failed groups; original mode/output/thinking budget; isolated scheduling",
+  "source_sha256": "5f595194282aeae5e6f965a26457de98ac254b29908498ffc9269320cd6a4574"
+}

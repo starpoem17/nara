@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "records_per_variant": 200,
+  "features": 24,
+  "source_hashes_match": true,
+  "rule_rows_identical": true,
+  "request_metrics_available": true,
+  "context_overflows": 0,
+  "scope": "Execution and artifact checks; does not assert all positive judgments have valid evidence"
+}

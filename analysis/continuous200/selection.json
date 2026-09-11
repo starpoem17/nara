@@ -1,0 +1,9 @@
+{
+  "selected_tokens": 8192,
+  "criterion": "Lowest measured continuous pilot walltime among complete runs; scores not used",
+  "pilot_seconds": {
+    "8192": 117.61366838100366,
+    "2048": 119.59700937698653,
+    "16384": 130.33525043498958
+  }
+}

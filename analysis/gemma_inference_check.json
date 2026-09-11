@@ -1,0 +1,56 @@
+{
+  "model": "models/gemma-4-26B-A4B-it-NVFP4",
+  "vllm": "0.26.0",
+  "torch": "2.11.0+cu130",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "max_model_len": 32768,
+  "enforce_eager": true,
+  "moe_backend": "cutlass",
+  "gpu_memory_utilization": 0.9,
+  "max_num_seqs": 1,
+  "load_seconds": 60.95,
+  "checks": [
+    {
+      "name": "korean_short",
+      "input_tokens": 28,
+      "output_tokens": 2,
+      "text": "서울",
+      "finish_reason": "stop",
+      "seconds": 1.8,
+      "passed": true
+    },
+    {
+      "name": "structured_json",
+      "input_tokens": 31,
+      "output_tokens": 7,
+      "text": "{\"answer\": 5}",
+      "finish_reason": "stop",
+      "seconds": 0.77,
+      "passed": true
+    },
+    {
+      "name": "context_16384",
+      "input_tokens": 16320,
+      "output_tokens": 2,
+      "text": "서울",
+      "finish_reason": "stop",
+      "seconds": 0.94,
+      "passed": true
+    },
+    {
+      "name": "context_32768",
+      "input_tokens": 32704,
+      "output_tokens": 2,
+      "text": "서울",
+      "finish_reason": "stop",
+      "seconds": 1.76,
+      "passed": true
+    },
+    {
+      "name": "over_limit_rejected",
+      "passed": true,
+      "error": "This model's maximum context length is 32768 tokens. However, you requested 0 output tokens and your prompt contains at least 32769 input tokens, for a total of at least 32769 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=32769)"
+    }
+  ],
+  "total_seconds": 66.24
+}

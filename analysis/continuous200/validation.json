@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "full200_six_and_mixed": true,
+  "source_hashes_match": true,
+  "postrun_report_metadata_patch": {
+    "scripts/benchmark_continuous.py": {
+      "before": "2787df1973e9f4de2f49b7174552df8acafeb28198885d4d776e544c8b9879e3",
+      "after": "547820866ce7573645b8ce90a66e21bd8076762e8db36a2b31194813a00ce900",
+      "reason": "After all GPU runs, add missing report-only model_dir/max_model_len/gpu fields required by evaluator Markdown renderer; inference unchanged."
+    }
+  },
+  "rules_unchanged": true,
+  "input_output_trace_counts_match": true,
+  "max_inflight": 8,
+  "refill_before_batch_completion_verified": true
+}

@@ -1,0 +1,12 @@
+{
+  "macro_delta_95ci": [
+    0.032499219530469525,
+    0.10186430889409087
+  ],
+  "micro_delta_95ci": [
+    0.01926133194532362,
+    0.08783978778244896
+  ],
+  "resamples": 2000,
+  "unit": "notice; exploratory, same development data"
+}

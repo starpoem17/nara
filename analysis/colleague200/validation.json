@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "records": 200,
+  "judgments": 4800,
+  "original_hashes_match": true,
+  "csv_matches_original_postprocess": true,
+  "prompt_ids_match_actual": true,
+  "actual_minus_counted_tokens": {
+    "1": 200
+  },
+  "context_overflows": 0,
+  "law_index_active": true
+}

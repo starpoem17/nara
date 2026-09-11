@@ -1,0 +1,41 @@
+{
+  "records": [
+    "PPS-DEV-01",
+    "PPS-DEV-02",
+    "PPS-DEV-03",
+    "PPS-DEV-04",
+    "PPS-DEV-05",
+    "PPS-DEV-06",
+    "PPS-DEV-07",
+    "PPS-DEV-08",
+    "PPS-DEV-09",
+    "PPS-DEV-10",
+    "PPS-DEV-11",
+    "PPS-DEV-12",
+    "PPS-DEV-13",
+    "PPS-DEV-14",
+    "PPS-DEV-15",
+    "PPS-DEV-16",
+    "PPS-DEV-17",
+    "PPS-DEV-18",
+    "PPS-DEV-19",
+    "PPS-DEV-20",
+    "PPS-DEV-21",
+    "PPS-DEV-22",
+    "PPS-DEV-23",
+    "PPS-DEV-24"
+  ],
+  "test1": "same24 barrier vs continuous, same engine and params; prefix reset",
+  "test2_targets": "First4 raw-token divergences in test1, independent of labels",
+  "prefill": "Same prompt plus common output prefix, max_tokens1/logprobs10, solo vs batch8, two repetitions",
+  "decode": "Same extended prompt, start solo; after first returned token inject7 requests vs stay solo; compare only shared history; two repetitions",
+  "limits": "No layer/kernel probes; token probes use unconstrained decoding without thinking budget so no forced token masks obscure scores; not a label-quality evaluation",
+  "source_sha256": {
+    "scripts/probe_prefill_decode.py": "64ceed751b09cf14bd370c5445db93b78598bf6982a54d09d4aba3a0b58fca54",
+    "nara/continuous.py": "25b0f25cf05721cb4a74faa26777ddea8df1cf81917ce6d9f34f0a38d83e24fe",
+    "nara/vllm_model.py": "c3ae5a8f7bd75365e0d685018fab22733a917fca423eacf2fb7f623e4e8c1e0d",
+    "nara/inference.py": "e09a87a3113399f2656d119b18536a59b70128242547fbd92774eee5c07dd226",
+    "nara/compact_criteria.json": "84cc8ca7f625f51e55206fc581a28e36df4551999c4009de84188f273bd06a04",
+    "data/dev.jsonl": "5507f5ab0ba53b708f87211ed050dbe531b48a626ace6084c3ccaefb53147534"
+  }
+}

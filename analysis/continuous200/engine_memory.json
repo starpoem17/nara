@@ -1,0 +1,17 @@
+{
+  "2048": {
+    "kv_gib": 10.2,
+    "activation_gib": 1.49,
+    "max32k_concurrency": 6.36
+  },
+  "8192": {
+    "kv_gib": 9.75,
+    "activation_gib": 1.94,
+    "max32k_concurrency": 2.47
+  },
+  "16384": {
+    "kv_gib": 7.85,
+    "activation_gib": 3.84,
+    "max32k_concurrency": 1.14
+  }
+}

@@ -1,0 +1,452 @@
+[
+  {
+    "ids": [
+      "PPS-DEV-01",
+      "PPS-DEV-02",
+      "PPS-DEV-03",
+      "PPS-DEV-04",
+      "PPS-DEV-05",
+      "PPS-DEV-06",
+      "PPS-DEV-07",
+      "PPS-DEV-08"
+    ],
+    "seconds": 23.605233729002066,
+    "model_seconds": 23.55109274100687,
+    "retrieval_seconds": 0.0,
+    "model_batches": 1,
+    "retrieval_batches": 0,
+    "total_seconds": 23.605194954987383
+  },
+  {
+    "ids": [
+      "PPS-DEV-09",
+      "PPS-DEV-10",
+      "PPS-DEV-11",
+      "PPS-DEV-12",
+      "PPS-DEV-13",
+      "PPS-DEV-14",
+      "PPS-DEV-15",
+      "PPS-DEV-16"
+    ],
+    "seconds": 21.191759569992428,
+    "model_seconds": 21.140334076000727,
+    "retrieval_seconds": 0.0,
+    "model_batches": 1,
+    "retrieval_batches": 0,
+    "total_seconds": 21.191731697996147
+  },
+  {
+    "ids": [
+      "PPS-DEV-17",
+      "PPS-DEV-18",
+      "PPS-DEV-19",
+      "PPS-DEV-20",
+      "PPS-DEV-21",
+      "PPS-DEV-22",
+      "PPS-DEV-23",
+      "PPS-DEV-24"
+    ],
+    "seconds": 19.658236180010135,
+    "model_seconds": 19.611853504989995,
+    "retrieval_seconds": 0.0,
+    "model_batches": 1,
+    "retrieval_batches": 0,
+    "total_seconds": 19.658212766007637
+  },
+  {
+    "ids": [
+      "PPS-DEV-25",
+      "PPS-DEV-26",
+      "PPS-DEV-27",
+      "PPS-DEV-28",
+      "PPS-DEV-29",
+      "PPS-DEV-30",
+      "PPS-DEV-31",
+      "PPS-DEV-32"
+    ],
+    "seconds": 21.856590016992413,
+    "model_seconds": 21.798411205993034,
+    "retrieval_seconds": 0.0,
+    "model_batches": 1,
+    "retrieval_batches": 0,
+    "total_seconds": 21.856567112990888
+  },
+  {
+    "ids": [
+      "PPS-DEV-033",
+      "PPS-DEV-034",
+      "PPS-DEV-035",
+      "PPS-DEV-036",
+      "PPS-DEV-037",
+      "PPS-DEV-038",
+      "PPS-DEV-039",
+      "PPS-DEV-040"
+    ],
+    "seconds": 16.12063510499138,
+    "model_seconds": 16.088523814003565,
+    "retrieval_seconds": 0.0,
+    "model_batches": 1,
+    "retrieval_batches": 0,
+    "total_seconds": 16.120612932994845
+  },
+  {
+    "ids": [
+      "PPS-DEV-041",
+      "PPS-DEV-042",
+      "PPS-DEV-043",
+      "PPS-DEV-044",
+      "PPS-DEV-045",
+      "PPS-DEV-046",
+      "PPS-DEV-047",
+      "PPS-DEV-048"
+    ],
+    "seconds": 17.836441641993588,
+    "model_seconds": 17.801953343005152,
+    "retrieval_seconds": 0.0,
+    "model_batches": 1,
+    "retrieval_batches": 0,
+    "total_seconds": 17.83641218599223
+  },
+  {
+    "ids": [
+      "PPS-DEV-049",
+      "PPS-DEV-050",
+      "PPS-DEV-051",
+      "PPS-DEV-052",
+      "PPS-DEV-053",
+      "PPS-DEV-054",
+      "PPS-DEV-055",
+      "PPS-DEV-056"
+    ],
+    "seconds": 16.63999636900553,
+    "model_seconds": 16.60664959900896,
+    "retrieval_seconds": 0.0,
+    "model_batches": 1,
+    "retrieval_batches": 0,
+    "total_seconds": 16.639972573990235
+  },
+  {
+    "ids": [
+      "PPS-DEV-057",
+      "PPS-DEV-058",
+      "PPS-DEV-059",
+      "PPS-DEV-060",
+      "PPS-DEV-061",
+      "PPS-DEV-062",
+      "PPS-DEV-063",
+      "PPS-DEV-064"
+    ],
+    "seconds": 15.807248622004408,
+    "model_seconds": 15.781133037002292,
+    "retrieval_seconds": 0.0,
+    "model_batches": 1,
+    "retrieval_batches": 0,
+    "total_seconds": 15.807226199991419
+  },
+  {
+    "ids": [
+      "PPS-DEV-065",
+      "PPS-DEV-066",
+      "PPS-DEV-067",
+      "PPS-DEV-068",
+      "PPS-DEV-069",
+      "PPS-DEV-070",
+      "PPS-DEV-071",
+      "PPS-DEV-072"
+    ],
+    "seconds": 18.050284491997445,
+    "model_seconds": 18.014734729993506,
+    "retrieval_seconds": 0.0,
+    "model_batches": 1,
+    "retrieval_batches": 0,
+    "total_seconds": 18.050261958996998
+  },
+  {
+    "ids": [
+      "PPS-DEV-073",
+      "PPS-DEV-074",
+      "PPS-DEV-075",
+      "PPS-DEV-076",
+      "PPS-DEV-077",
+      "PPS-DEV-078",
+      "PPS-DEV-079",
+      "PPS-DEV-080"
+    ],
+    "seconds": 16.441389494997566,
+    "model_seconds": 16.409011709998595,
+    "retrieval_seconds": 0.0,
+    "model_batches": 1,
+    "retrieval_batches": 0,
+    "total_seconds": 16.441359449003357
+  },
+  {
+    "ids": [
+      "PPS-DEV-081",
+      "PPS-DEV-082",
+      "PPS-DEV-083",
+      "PPS-DEV-084",
+      "PPS-DEV-085",
+      "PPS-DEV-086",
+      "PPS-DEV-087",
+      "PPS-DEV-088"
+    ],
+    "seconds": 23.137365252012387,
+    "model_seconds": 23.071922041999642,
+    "retrieval_seconds": 0.0,
+    "model_batches": 1,
+    "retrieval_batches": 0,
+    "total_seconds": 23.137341627996648
+  },
+  {
+    "ids": [
+      "PPS-DEV-089",
+      "PPS-DEV-090",
+      "PPS-DEV-091",
+      "PPS-DEV-092",
+      "PPS-DEV-093",
+      "PPS-DEV-094",
+      "PPS-DEV-095",
+      "PPS-DEV-096"
+    ],
+    "seconds": 19.056904380995547,
+    "model_seconds": 19.009122527990257,
+    "retrieval_seconds": 0.0,
+    "model_batches": 1,
+    "retrieval_batches": 0,
+    "total_seconds": 19.05688287000521
+  },
+  {
+    "ids": [
+      "PPS-DEV-097",
+      "PPS-DEV-098",
+      "PPS-DEV-099",
+      "PPS-DEV-100",
+      "PPS-DEV-101",
+      "PPS-DEV-102",
+      "PPS-DEV-103",
+      "PPS-DEV-104"
+    ],
+    "seconds": 23.929146927999682,
+    "model_seconds": 23.870557189002284,
+    "retrieval_seconds": 0.0,
+    "model_batches": 1,
+    "retrieval_batches": 0,
+    "total_seconds": 23.929122853005538
+  },
+  {
+    "ids": [
+      "PPS-DEV-105",
+      "PPS-DEV-106",
+      "PPS-DEV-107",
+      "PPS-DEV-108",
+      "PPS-DEV-109",
+      "PPS-DEV-110",
+      "PPS-DEV-111",
+      "PPS-DEV-112"
+    ],
+    "seconds": 20.039976296000532,
+    "model_seconds": 19.992583012994146,
+    "retrieval_seconds": 0.0,
+    "model_batches": 1,
+    "retrieval_batches": 0,
+    "total_seconds": 20.039952441002242
+  },
+  {
+    "ids": [
+      "PPS-DEV-113",
+      "PPS-DEV-114",
+      "PPS-DEV-115",
+      "PPS-DEV-116",
+      "PPS-DEV-117",
+      "PPS-DEV-118",
+      "PPS-DEV-119",
+      "PPS-DEV-120"
+    ],
+    "seconds": 18.530283216008684,
+    "model_seconds": 18.49360282899579,
+    "retrieval_seconds": 0.0,
+    "model_batches": 1,
+    "retrieval_batches": 0,
+    "total_seconds": 18.53026052399946
+  },
+  {
+    "ids": [
+      "PPS-DEV-121",
+      "PPS-DEV-122",
+      "PPS-DEV-123",
+      "PPS-DEV-124",
+      "PPS-DEV-125",
+      "PPS-DEV-126",
+      "PPS-DEV-127",
+      "PPS-DEV-128"
+    ],
+    "seconds": 20.416793184995186,
+    "model_seconds": 20.357931098988047,
+    "retrieval_seconds": 0.0,
+    "model_batches": 1,
+    "retrieval_batches": 0,
+    "total_seconds": 20.416770511990762
+  },
+  {
+    "ids": [
+      "PPS-DEV-129",
+      "PPS-DEV-130",
+      "PPS-DEV-131",
+      "PPS-DEV-132",
+      "PPS-DEV-133",
+      "PPS-DEV-134",
+      "PPS-DEV-135",
+      "PPS-DEV-136"
+    ],
+    "seconds": 19.867759838991333,
+    "model_seconds": 19.81732349099184,
+    "retrieval_seconds": 0.0,
+    "model_batches": 1,
+    "retrieval_batches": 0,
+    "total_seconds": 19.867734913001186
+  },
+  {
+    "ids": [
+      "PPS-DEV-137",
+      "PPS-DEV-138",
+      "PPS-DEV-139",
+      "PPS-DEV-140",
+      "PPS-DEV-141",
+      "PPS-DEV-142",
+      "PPS-DEV-143",
+      "PPS-DEV-144"
+    ],
+    "seconds": 23.540303190995473,
+    "model_seconds": 23.47513452199928,
+    "retrieval_seconds": 0.0,
+    "model_batches": 1,
+    "retrieval_batches": 0,
+    "total_seconds": 23.540279876993736
+  },
+  {
+    "ids": [
+      "PPS-DEV-145",
+      "PPS-DEV-146",
+      "PPS-DEV-147",
+      "PPS-DEV-148",
+      "PPS-DEV-149",
+      "PPS-DEV-150",
+      "PPS-DEV-151",
+      "PPS-DEV-152"
+    ],
+    "seconds": 21.491613580990816,
+    "model_seconds": 21.44086511399655,
+    "retrieval_seconds": 0.0,
+    "model_batches": 1,
+    "retrieval_batches": 0,
+    "total_seconds": 21.49159228100325
+  },
+  {
+    "ids": [
+      "PPS-DEV-153",
+      "PPS-DEV-154",
+      "PPS-DEV-155",
+      "PPS-DEV-156",
+      "PPS-DEV-157",
+      "PPS-DEV-158",
+      "PPS-DEV-159",
+      "PPS-DEV-160"
+    ],
+    "seconds": 24.039614449997316,
+    "model_seconds": 23.971930738000083,
+    "retrieval_seconds": 0.0,
+    "model_batches": 1,
+    "retrieval_batches": 0,
+    "total_seconds": 24.03959209698951
+  },
+  {
+    "ids": [
+      "PPS-DEV-161",
+      "PPS-DEV-162",
+      "PPS-DEV-163",
+      "PPS-DEV-164",
+      "PPS-DEV-165",
+      "PPS-DEV-166",
+      "PPS-DEV-167",
+      "PPS-DEV-168"
+    ],
+    "seconds": 18.73030411300715,
+    "model_seconds": 18.684097342003952,
+    "retrieval_seconds": 0.0,
+    "model_batches": 1,
+    "retrieval_batches": 0,
+    "total_seconds": 18.730278023009305
+  },
+  {
+    "ids": [
+      "PPS-DEV-169",
+      "PPS-DEV-170",
+      "PPS-DEV-171",
+      "PPS-DEV-172",
+      "PPS-DEV-173",
+      "PPS-DEV-174",
+      "PPS-DEV-175",
+      "PPS-DEV-176"
+    ],
+    "seconds": 22.76308957800211,
+    "model_seconds": 22.697636145996512,
+    "retrieval_seconds": 0.0,
+    "model_batches": 1,
+    "retrieval_batches": 0,
+    "total_seconds": 22.76306494200253
+  },
+  {
+    "ids": [
+      "PPS-DEV-177",
+      "PPS-DEV-178",
+      "PPS-DEV-179",
+      "PPS-DEV-180",
+      "PPS-DEV-181",
+      "PPS-DEV-182",
+      "PPS-DEV-183",
+      "PPS-DEV-184"
+    ],
+    "seconds": 17.860446437989594,
+    "model_seconds": 17.820486149998032,
+    "retrieval_seconds": 0.0,
+    "model_batches": 1,
+    "retrieval_batches": 0,
+    "total_seconds": 17.860424858008628
+  },
+  {
+    "ids": [
+      "PPS-DEV-185",
+      "PPS-DEV-186",
+      "PPS-DEV-187",
+      "PPS-DEV-188",
+      "PPS-DEV-189",
+      "PPS-DEV-190",
+      "PPS-DEV-191",
+      "PPS-DEV-192"
+    ],
+    "seconds": 21.259878258002573,
+    "model_seconds": 21.207074530990212,
+    "retrieval_seconds": 0.0,
+    "model_batches": 1,
+    "retrieval_batches": 0,
+    "total_seconds": 21.25985573499929
+  },
+  {
+    "ids": [
+      "PPS-DEV-193",
+      "PPS-DEV-194",
+      "PPS-DEV-195",
+      "PPS-DEV-196",
+      "PPS-DEV-197",
+      "PPS-DEV-198",
+      "PPS-DEV-199",
+      "PPS-DEV-200"
+    ],
+    "seconds": 21.631725824001478,
+    "model_seconds": 21.57034191400453,
+    "retrieval_seconds": 0.0,
+    "model_batches": 1,
+    "retrieval_batches": 0,
+    "total_seconds": 21.63170106599864
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "phase": "six_on256",
+  "records": 200,
+  "seconds": 720.6536806639924,
+  "failed_ids": [],
+  "thinking": true,
+  "budget": 256,
+  "same_features": [
+    "v1",
+    "v5",
+    "v9",
+    "v14",
+    "v22",
+    "v24"
+  ]
+}

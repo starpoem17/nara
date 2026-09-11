@@ -1,0 +1,350 @@
+[
+  {
+    "a": "new_barrier",
+    "b": "new_continuous_1",
+    "id": "PPS-DEV-09",
+    "first_divergent_output_token_0based": 11,
+    "inside_thinking": true,
+    "changed_features": [
+      "v9",
+      "v24"
+    ],
+    "a_text_near_divergence": "<|channel>thought\nThe user wants me to audit a specific list of items against the provided law snapshot and documents.\n\n    *   `[공",
+    "b_text_near_divergence": "<|channel>thought\nThe user wants me to audit a specific set of items based on the provided law snapshot and documents.\n\n    *   `PPS"
+  },
+  {
+    "a": "new_barrier",
+    "b": "new_continuous_1",
+    "id": "PPS-DEV-10",
+    "first_divergent_output_token_0based": 3,
+    "inside_thinking": true,
+    "changed_features": [],
+    "a_text_near_divergence": "<|channel>thought\nThe user wants me to audit a specific set of items from the provided document based on the",
+    "b_text_near_divergence": "<|channel>thought\n*   Goal: Audit the provided items against the supplied law/meta/document to check"
+  },
+  {
+    "a": "new_barrier",
+    "b": "new_continuous_1",
+    "id": "PPS-DEV-11",
+    "first_divergent_output_token_0based": 11,
+    "inside_thinking": true,
+    "changed_features": [
+      "v5",
+      "v24"
+    ],
+    "a_text_near_divergence": "<|channel>thought\nThe user wants me to audit a specific set of items based on the provided law snapshot and documents.\n\n    *   `[",
+    "b_text_near_divergence": "<|channel>thought\nThe user wants me to audit a specific list of items (though the list is empty in the prompt, I should check the provided"
+  },
+  {
+    "a": "new_barrier",
+    "b": "new_continuous_1",
+    "id": "PPS-DEV-12",
+    "first_divergent_output_token_0based": 17,
+    "inside_thinking": true,
+    "changed_features": [
+      "v9"
+    ],
+    "a_text_near_divergence": " wants me to audit a specific list of items (though the \"Absence items\" list is empty in the prompt, I should check the provided documents",
+    "b_text_near_divergence": " wants me to audit a specific list of items (though the list is empty in the prompt, I should look for the \"Absence items\" or"
+  },
+  {
+    "a": "new_barrier",
+    "b": "new_continuous_1",
+    "id": "PPS-DEV-13",
+    "first_divergent_output_token_0based": 5,
+    "inside_thinking": true,
+    "changed_features": [],
+    "a_text_near_divergence": "<|channel>thought\n*   Project ID: PPS-DEV-13\n    *   Budget (배정예",
+    "b_text_near_divergence": "<|channel>thought\n*   Goal: Audit specific items in the provided documents against the \"Law Snapshot\" (implied"
+  },
+  {
+    "a": "new_barrier",
+    "b": "new_continuous_1",
+    "id": "PPS-DEV-14",
+    "first_divergent_output_token_0based": 3,
+    "inside_thinking": true,
+    "changed_features": [],
+    "a_text_near_divergence": "<|channel>thought\nThe user wants me to audit a specific set of items based on the provided document and metadata",
+    "b_text_near_divergence": "<|channel>thought\n*   Goal: Audit listed items against the provided law snapshot and document.\n    *"
+  },
+  {
+    "a": "new_barrier",
+    "b": "new_continuous_1",
+    "id": "PPS-DEV-15",
+    "first_divergent_output_token_0based": 14,
+    "inside_thinking": true,
+    "changed_features": [
+      "v24"
+    ],
+    "a_text_near_divergence": "\nThe user wants me to audit a specific list of items based on the provided law snapshot and documents.\n\n    *   `[공고 ID",
+    "b_text_near_divergence": "\nThe user wants me to audit a specific list of items (though no list was explicitly provided in the prompt, I should look for the \"Abs"
+  },
+  {
+    "a": "new_barrier",
+    "b": "new_continuous_1",
+    "id": "PPS-DEV-16",
+    "first_divergent_output_token_0based": 21,
+    "inside_thinking": true,
+    "changed_features": [],
+    "a_text_near_divergence": " a specific procurement notice (PPS-DEV-16) against a set of provided laws/rules (though the actual laws are not provided in the",
+    "b_text_near_divergence": " a specific procurement notice (PPS-DEV-16) based on a set of provided laws and rules.\n\n    *   `[공고"
+  },
+  {
+    "a": "new_barrier",
+    "b": "new_continuous_1",
+    "id": "PPS-DEV-17",
+    "first_divergent_output_token_0based": 11,
+    "inside_thinking": true,
+    "changed_features": [],
+    "a_text_near_divergence": "<|channel>thought\nThe user wants me to audit a specific procurement notice (PPS-DEV-17) based on the provided law snapshot and judgment",
+    "b_text_near_divergence": "<|channel>thought\nThe user wants me to audit a specific list of items (though no list was provided in the prompt, I must look for the"
+  },
+  {
+    "a": "new_barrier",
+    "b": "new_continuous_1",
+    "id": "PPS-DEV-18",
+    "first_divergent_output_token_0based": 3,
+    "inside_thinking": true,
+    "changed_features": [],
+    "a_text_near_divergence": "<|channel>thought\n*   Goal: Audit the listed items in the provided document against the \"Judgment Criteria\"",
+    "b_text_near_divergence": "<|channel>thought\nThe user wants me to audit a specific procurement notice (PPS-DEV-18)"
+  },
+  {
+    "a": "new_barrier",
+    "b": "new_continuous_1",
+    "id": "PPS-DEV-19",
+    "first_divergent_output_token_0based": 8,
+    "inside_thinking": true,
+    "changed_features": [],
+    "a_text_near_divergence": "<|channel>thought\n*   Goal: Audit listed items against the provided law snapshot.\n    *   Input: [공고 ID",
+    "b_text_near_divergence": "<|channel>thought\n*   Goal: Audit the listed items against the provided law snapshot.\n    *   Input: A procurement notice"
+  },
+  {
+    "a": "new_barrier",
+    "b": "new_continuous_1",
+    "id": "PPS-DEV-20",
+    "first_divergent_output_token_0based": 12,
+    "inside_thinking": true,
+    "changed_features": [],
+    "a_text_near_divergence": "<|channel>thought\nThe user wants me to audit a specific procurement announcement (PPS-DEV-20) based on a provided set of laws/rules",
+    "b_text_near_divergence": "<|channel>thought\nThe user wants me to audit a specific procurement notice (PPS-DEV-20) against a set of provided rules (v1"
+  },
+  {
+    "a": "new_barrier",
+    "b": "new_continuous_1",
+    "id": "PPS-DEV-21",
+    "first_divergent_output_token_0based": 21,
+    "inside_thinking": true,
+    "changed_features": [],
+    "a_text_near_divergence": " a specific procurement notice (PPS-DEV-21) based on provided \"judgment criteria\" (laws/rules).\n\n    *   `[",
+    "b_text_near_divergence": " a specific procurement notice (PPS-DEV-21) against a set of provided laws/rules (the \"judgment criteria\").\n\n    *   "
+  },
+  {
+    "a": "new_barrier",
+    "b": "new_continuous_1",
+    "id": "PPS-DEV-22",
+    "first_divergent_output_token_0based": 3,
+    "inside_thinking": true,
+    "changed_features": [
+      "v9"
+    ],
+    "a_text_near_divergence": "<|channel>thought\nThe user wants me to audit a specific set of items based on the provided law snapshot and",
+    "b_text_near_divergence": "<|channel>thought\n*   [공고 ID] PPS-DEV-22\n    *   ["
+  },
+  {
+    "a": "new_barrier",
+    "b": "new_continuous_1",
+    "id": "PPS-DEV-23",
+    "first_divergent_output_token_0based": 3,
+    "inside_thinking": true,
+    "changed_features": [
+      "v5"
+    ],
+    "a_text_near_divergence": "<|channel>thought\nThe user wants me to audit a procurement notice (PPS-DEV-23) for",
+    "b_text_near_divergence": "<|channel>thought\n*   Project ID: PPS-DEV-23\n    *   Contract Law:"
+  },
+  {
+    "a": "new_barrier",
+    "b": "new_continuous_1",
+    "id": "PPS-DEV-24",
+    "first_divergent_output_token_0based": 3,
+    "inside_thinking": true,
+    "changed_features": [],
+    "a_text_near_divergence": "<|channel>thought\nThe user wants me to audit a specific set of items (though no specific items were listed",
+    "b_text_near_divergence": "<|channel>thought\n*   Project ID: PPS-DEV-24\n    *   Contract Law:"
+  },
+  {
+    "a": "old_barrier_1",
+    "b": "new_continuous_1",
+    "id": "PPS-DEV-09",
+    "first_divergent_output_token_0based": 11,
+    "inside_thinking": true,
+    "changed_features": [
+      "v9",
+      "v24"
+    ],
+    "a_text_near_divergence": "<|channel>thought\nThe user wants me to audit a specific list of items against the provided law snapshot and documents.\n\n    *   `[공",
+    "b_text_near_divergence": "<|channel>thought\nThe user wants me to audit a specific set of items based on the provided law snapshot and documents.\n\n    *   `PPS"
+  },
+  {
+    "a": "old_barrier_1",
+    "b": "new_continuous_1",
+    "id": "PPS-DEV-10",
+    "first_divergent_output_token_0based": 3,
+    "inside_thinking": true,
+    "changed_features": [],
+    "a_text_near_divergence": "<|channel>thought\nThe user wants me to audit a specific set of items from the provided document based on the",
+    "b_text_near_divergence": "<|channel>thought\n*   Goal: Audit the provided items against the supplied law/meta/document to check"
+  },
+  {
+    "a": "old_barrier_1",
+    "b": "new_continuous_1",
+    "id": "PPS-DEV-11",
+    "first_divergent_output_token_0based": 11,
+    "inside_thinking": true,
+    "changed_features": [
+      "v5",
+      "v24"
+    ],
+    "a_text_near_divergence": "<|channel>thought\nThe user wants me to audit a specific set of items based on the provided law snapshot and documents.\n\n    *   `[",
+    "b_text_near_divergence": "<|channel>thought\nThe user wants me to audit a specific list of items (though the list is empty in the prompt, I should check the provided"
+  },
+  {
+    "a": "old_barrier_1",
+    "b": "new_continuous_1",
+    "id": "PPS-DEV-12",
+    "first_divergent_output_token_0based": 17,
+    "inside_thinking": true,
+    "changed_features": [
+      "v9"
+    ],
+    "a_text_near_divergence": " wants me to audit a specific list of items (though the \"Absence items\" list is empty in the prompt, I should check the provided documents",
+    "b_text_near_divergence": " wants me to audit a specific list of items (though the list is empty in the prompt, I should look for the \"Absence items\" or"
+  },
+  {
+    "a": "old_barrier_1",
+    "b": "new_continuous_1",
+    "id": "PPS-DEV-13",
+    "first_divergent_output_token_0based": 5,
+    "inside_thinking": true,
+    "changed_features": [],
+    "a_text_near_divergence": "<|channel>thought\n*   Project ID: PPS-DEV-13\n    *   Budget (배정예",
+    "b_text_near_divergence": "<|channel>thought\n*   Goal: Audit specific items in the provided documents against the \"Law Snapshot\" (implied"
+  },
+  {
+    "a": "old_barrier_1",
+    "b": "new_continuous_1",
+    "id": "PPS-DEV-14",
+    "first_divergent_output_token_0based": 3,
+    "inside_thinking": true,
+    "changed_features": [],
+    "a_text_near_divergence": "<|channel>thought\nThe user wants me to audit a specific set of items based on the provided document and metadata",
+    "b_text_near_divergence": "<|channel>thought\n*   Goal: Audit listed items against the provided law snapshot and document.\n    *"
+  },
+  {
+    "a": "old_barrier_1",
+    "b": "new_continuous_1",
+    "id": "PPS-DEV-15",
+    "first_divergent_output_token_0based": 14,
+    "inside_thinking": true,
+    "changed_features": [
+      "v24"
+    ],
+    "a_text_near_divergence": "\nThe user wants me to audit a specific list of items based on the provided law snapshot and documents.\n\n    *   `[공고 ID",
+    "b_text_near_divergence": "\nThe user wants me to audit a specific list of items (though no list was explicitly provided in the prompt, I should look for the \"Abs"
+  },
+  {
+    "a": "old_barrier_1",
+    "b": "new_continuous_1",
+    "id": "PPS-DEV-16",
+    "first_divergent_output_token_0based": 21,
+    "inside_thinking": true,
+    "changed_features": [],
+    "a_text_near_divergence": " a specific procurement notice (PPS-DEV-16) against a set of provided laws/rules (though the actual laws are not provided in the",
+    "b_text_near_divergence": " a specific procurement notice (PPS-DEV-16) based on a set of provided laws and rules.\n\n    *   `[공고"
+  },
+  {
+    "a": "old_barrier_1",
+    "b": "new_continuous_1",
+    "id": "PPS-DEV-17",
+    "first_divergent_output_token_0based": 11,
+    "inside_thinking": true,
+    "changed_features": [],
+    "a_text_near_divergence": "<|channel>thought\nThe user wants me to audit a specific procurement notice (PPS-DEV-17) based on the provided law snapshot and judgment",
+    "b_text_near_divergence": "<|channel>thought\nThe user wants me to audit a specific list of items (though no list was provided in the prompt, I must look for the"
+  },
+  {
+    "a": "old_barrier_1",
+    "b": "new_continuous_1",
+    "id": "PPS-DEV-18",
+    "first_divergent_output_token_0based": 3,
+    "inside_thinking": true,
+    "changed_features": [],
+    "a_text_near_divergence": "<|channel>thought\n*   Goal: Audit the listed items in the provided document against the \"Judgment Criteria\"",
+    "b_text_near_divergence": "<|channel>thought\nThe user wants me to audit a specific procurement notice (PPS-DEV-18)"
+  },
+  {
+    "a": "old_barrier_1",
+    "b": "new_continuous_1",
+    "id": "PPS-DEV-19",
+    "first_divergent_output_token_0based": 8,
+    "inside_thinking": true,
+    "changed_features": [],
+    "a_text_near_divergence": "<|channel>thought\n*   Goal: Audit listed items against the provided law snapshot.\n    *   Input: [공고 ID",
+    "b_text_near_divergence": "<|channel>thought\n*   Goal: Audit the listed items against the provided law snapshot.\n    *   Input: A procurement notice"
+  },
+  {
+    "a": "old_barrier_1",
+    "b": "new_continuous_1",
+    "id": "PPS-DEV-20",
+    "first_divergent_output_token_0based": 12,
+    "inside_thinking": true,
+    "changed_features": [],
+    "a_text_near_divergence": "<|channel>thought\nThe user wants me to audit a specific procurement announcement (PPS-DEV-20) based on a provided set of laws/rules",
+    "b_text_near_divergence": "<|channel>thought\nThe user wants me to audit a specific procurement notice (PPS-DEV-20) against a set of provided rules (v1"
+  },
+  {
+    "a": "old_barrier_1",
+    "b": "new_continuous_1",
+    "id": "PPS-DEV-21",
+    "first_divergent_output_token_0based": 21,
+    "inside_thinking": true,
+    "changed_features": [],
+    "a_text_near_divergence": " a specific procurement notice (PPS-DEV-21) based on provided \"judgment criteria\" (laws/rules).\n\n    *   `[",
+    "b_text_near_divergence": " a specific procurement notice (PPS-DEV-21) against a set of provided laws/rules (the \"judgment criteria\").\n\n    *   "
+  },
+  {
+    "a": "old_barrier_1",
+    "b": "new_continuous_1",
+    "id": "PPS-DEV-22",
+    "first_divergent_output_token_0based": 3,
+    "inside_thinking": true,
+    "changed_features": [
+      "v9"
+    ],
+    "a_text_near_divergence": "<|channel>thought\nThe user wants me to audit a specific set of items based on the provided law snapshot and",
+    "b_text_near_divergence": "<|channel>thought\n*   [공고 ID] PPS-DEV-22\n    *   ["
+  },
+  {
+    "a": "old_barrier_1",
+    "b": "new_continuous_1",
+    "id": "PPS-DEV-23",
+    "first_divergent_output_token_0based": 3,
+    "inside_thinking": true,
+    "changed_features": [
+      "v5"
+    ],
+    "a_text_near_divergence": "<|channel>thought\nThe user wants me to audit a procurement notice (PPS-DEV-23) for",
+    "b_text_near_divergence": "<|channel>thought\n*   Project ID: PPS-DEV-23\n    *   Contract Law:"
+  },
+  {
+    "a": "old_barrier_1",
+    "b": "new_continuous_1",
+    "id": "PPS-DEV-24",
+    "first_divergent_output_token_0based": 3,
+    "inside_thinking": true,
+    "changed_features": [],
+    "a_text_near_divergence": "<|channel>thought\nThe user wants me to audit a specific set of items (though no specific items were listed",
+    "b_text_near_divergence": "<|channel>thought\n*   Project ID: PPS-DEV-24\n    *   Contract Law:"
+  }
+]

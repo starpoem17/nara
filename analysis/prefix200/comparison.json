@@ -1,0 +1,209 @@
+{
+  "baseline": "analysis/compact200/groups12_off_h6",
+  "candidate": "analysis/prefix200",
+  "records": 200,
+  "old_seconds": 1819.6749309439983,
+  "new_seconds": 600.9577476370032,
+  "speedup": 3.0279581852452253,
+  "time_reduction_fraction": 0.6697444486278423,
+  "old_macro_f1": 0.28444814667801316,
+  "new_macro_f1": 0.2834927277302597,
+  "macro_f1_delta": -0.0009554189477534725,
+  "cached_fraction": 0.9094257177870533,
+  "phase_cache": {
+    "first": {
+      "requests": 200,
+      "input_tokens": 2279787,
+      "cached_tokens": 38208,
+      "output_tokens": 9819,
+      "cached_fraction": 0.016759460423276386
+    },
+    "remaining": {
+      "requests": 2205,
+      "input_tokens": 25302314,
+      "cached_tokens": 25045664,
+      "output_tokens": 110756,
+      "cached_fraction": 0.9898566589601252
+    }
+  },
+  "request_stats_available": false,
+  "new_projected_1853_minutes": 93.24827623528057,
+  "old_projected_1853_minutes": 281.4578152103858,
+  "changed_bits": 390,
+  "per_item": [
+    {
+      "item": "v1",
+      "old_f1": 0.625,
+      "new_f1": 0.3333333333333333,
+      "delta": -0.2916666666666667,
+      "changed_bits": 8
+    },
+    {
+      "item": "v2",
+      "old_f1": 0.6666666666666666,
+      "new_f1": 0.6666666666666666,
+      "delta": 0.0,
+      "changed_bits": 0
+    },
+    {
+      "item": "v3",
+      "old_f1": 0.8571428571428571,
+      "new_f1": 0.8571428571428571,
+      "delta": 0.0,
+      "changed_bits": 0
+    },
+    {
+      "item": "v4",
+      "old_f1": 0.4,
+      "new_f1": 0.7142857142857143,
+      "delta": 0.3142857142857143,
+      "changed_bits": 18
+    },
+    {
+      "item": "v5",
+      "old_f1": 0.43478260869565216,
+      "new_f1": 0.38095238095238093,
+      "delta": -0.05383022774327123,
+      "changed_bits": 14
+    },
+    {
+      "item": "v6",
+      "old_f1": 0.0,
+      "new_f1": 0.23529411764705882,
+      "delta": 0.23529411764705882,
+      "changed_bits": 12
+    },
+    {
+      "item": "v7",
+      "old_f1": 0.0,
+      "new_f1": 0.46153846153846156,
+      "delta": 0.46153846153846156,
+      "changed_bits": 8
+    },
+    {
+      "item": "v8",
+      "old_f1": 0.125,
+      "new_f1": 0.38461538461538464,
+      "delta": 0.25961538461538464,
+      "changed_bits": 76
+    },
+    {
+      "item": "v9",
+      "old_f1": 0.3125,
+      "new_f1": 0.35714285714285715,
+      "delta": 0.04464285714285715,
+      "changed_bits": 12
+    },
+    {
+      "item": "v10",
+      "old_f1": 0.0,
+      "new_f1": 0.14285714285714285,
+      "delta": 0.14285714285714285,
+      "changed_bits": 19
+    },
+    {
+      "item": "v11",
+      "old_f1": 0.0,
+      "new_f1": 0.0,
+      "delta": 0.0,
+      "changed_bits": 8
+    },
+    {
+      "item": "v12",
+      "old_f1": 0.2222222222222222,
+      "new_f1": 0.0,
+      "delta": -0.2222222222222222,
+      "changed_bits": 3
+    },
+    {
+      "item": "v13",
+      "old_f1": 0.0,
+      "new_f1": 0.0,
+      "delta": 0.0,
+      "changed_bits": 1
+    },
+    {
+      "item": "v14",
+      "old_f1": 0.15789473684210525,
+      "new_f1": 0.09523809523809523,
+      "delta": -0.06265664160401002,
+      "changed_bits": 33
+    },
+    {
+      "item": "v15",
+      "old_f1": 0.0,
+      "new_f1": 0.0,
+      "delta": 0.0,
+      "changed_bits": 6
+    },
+    {
+      "item": "v16",
+      "old_f1": 0.0,
+      "new_f1": 0.2,
+      "delta": 0.2,
+      "changed_bits": 37
+    },
+    {
+      "item": "v17",
+      "old_f1": 0.0,
+      "new_f1": 0.0,
+      "delta": 0.0,
+      "changed_bits": 22
+    },
+    {
+      "item": "v18",
+      "old_f1": 0.3333333333333333,
+      "new_f1": 0.08888888888888889,
+      "delta": -0.2444444444444444,
+      "changed_bits": 37
+    },
+    {
+      "item": "v19",
+      "old_f1": 0.7142857142857143,
+      "new_f1": 0.4,
+      "delta": -0.3142857142857143,
+      "changed_bits": 9
+    },
+    {
+      "item": "v20",
+      "old_f1": 0.3076923076923077,
+      "new_f1": 0.5,
+      "delta": 0.1923076923076923,
+      "changed_bits": 9
+    },
+    {
+      "item": "v21",
+      "old_f1": 0.35294117647058826,
+      "new_f1": 0.0,
+      "delta": -0.35294117647058826,
+      "changed_bits": 12
+    },
+    {
+      "item": "v22",
+      "old_f1": 0.7692307692307693,
+      "new_f1": 0.6,
+      "delta": -0.1692307692307693,
+      "changed_bits": 5
+    },
+    {
+      "item": "v23",
+      "old_f1": 0.35294117647058826,
+      "new_f1": 0.2608695652173913,
+      "delta": -0.09207161125319696,
+      "changed_bits": 14
+    },
+    {
+      "item": "v24",
+      "old_f1": 0.1951219512195122,
+      "new_f1": 0.125,
+      "delta": -0.0701219512195122,
+      "changed_bits": 27
+    }
+  ],
+  "caveats": [
+    "Historical baseline; no measured baseline cache hits or matched uncached control.",
+    "Prompt role/order and scheduling changed together; not a cache-only causal accuracy comparison.",
+    "Rendered token counts include cache hits; unavailable request timing is not zero.",
+    "Single local RTX5090 run; linear1853 projection is not measured L40S latency."
+  ]
+}

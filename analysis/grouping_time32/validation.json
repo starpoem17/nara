@@ -1,0 +1,25 @@
+{
+  "source_hashes": "matched",
+  "trace_report_consistency": [
+    {
+      "name": "ungrouped",
+      "matched_ids": 32,
+      "status": "passed"
+    },
+    {
+      "name": "groups7",
+      "matched_ids": 32,
+      "status": "passed"
+    },
+    {
+      "name": "groups9",
+      "matched_ids": 32,
+      "status": "passed"
+    },
+    {
+      "name": "groups12",
+      "matched_ids": 32,
+      "status": "passed"
+    }
+  ]
+}

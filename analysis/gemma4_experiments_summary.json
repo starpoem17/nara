@@ -1,0 +1,43 @@
+{
+  "experiments": [
+    {
+      "experiment": "Thinking OFF · 자율 검색",
+      "folder": "gemma4_rag_dev200_v1",
+      "macro_f1": 0.1652370809934727,
+      "micro_f1": 0.20728291316526612,
+      "true_positives": 37,
+      "false_positives": 167,
+      "false_negatives": 116,
+      "exact_match_records": 49,
+      "searched_records": 0,
+      "seconds": 325.7495721330015
+    },
+    {
+      "experiment": "Thinking OFF · 검색 1회 강제",
+      "folder": "gemma4_rag_dev200_forced1",
+      "macro_f1": 0.164157024998556,
+      "micro_f1": 0.21935483870967742,
+      "true_positives": 34,
+      "false_positives": 123,
+      "false_negatives": 119,
+      "exact_match_records": 66,
+      "searched_records": 200,
+      "seconds": 563.9723304700019
+    },
+    {
+      "experiment": "Thinking ON · 자율 검색",
+      "folder": "gemma4_rag_dev200_thinking_recovered",
+      "macro_f1": 0.20920359665830682,
+      "micro_f1": 0.2625482625482625,
+      "true_positives": 34,
+      "false_positives": 72,
+      "false_negatives": 119,
+      "exact_match_records": 86,
+      "searched_records": 0,
+      "seconds": 745.186278647001
+    }
+  ],
+  "best_macro_f1": "Thinking ON · 자율 검색",
+  "forced_vs_optional_delta": -0.001080055994916701,
+  "thinking_vs_off_delta": 0.043966515664834116
+}

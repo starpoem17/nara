@@ -1,0 +1,140 @@
+{
+  "anyOf": [
+    {
+      "type": "object",
+      "properties": {
+        "action": {
+          "const": "search"
+        },
+        "queries": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 4,
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 256
+          }
+        }
+      },
+      "required": [
+        "action",
+        "queries"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "action": {
+          "const": "final"
+        },
+        "judgments": {
+          "type": "object",
+          "properties": {
+            "v10": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "위반여부",
+                "근거문구"
+              ],
+              "properties": {
+                "위반여부": {
+                  "type": "integer",
+                  "enum": [
+                    0,
+                    1
+                  ]
+                },
+                "근거문구": {
+                  "type": "null"
+                }
+              }
+            },
+            "v11": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "위반여부",
+                "근거문구"
+              ],
+              "properties": {
+                "위반여부": {
+                  "type": "integer",
+                  "enum": [
+                    0,
+                    1
+                  ]
+                },
+                "근거문구": {
+                  "type": "null"
+                }
+              }
+            },
+            "v12": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "위반여부",
+                "근거문구"
+              ],
+              "properties": {
+                "위반여부": {
+                  "type": "integer",
+                  "enum": [
+                    0,
+                    1
+                  ]
+                },
+                "근거문구": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "maxLength": 500
+                }
+              }
+            },
+            "v13": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "위반여부",
+                "근거문구"
+              ],
+              "properties": {
+                "위반여부": {
+                  "type": "integer",
+                  "enum": [
+                    0,
+                    1
+                  ]
+                },
+                "근거문구": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "maxLength": 500
+                }
+              }
+            }
+          },
+          "required": [
+            "v10",
+            "v11",
+            "v12",
+            "v13"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "action",
+        "judgments"
+      ],
+      "additionalProperties": false
+    }
+  ]
+}

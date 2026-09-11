@@ -1,0 +1,1 @@
+uv run --locked python script.py --input analysis/gemma4_thinking_recovery/input.jsonl --output-dir analysis/gemma4_thinking_recovery/output4096 --max-model-len 32768 --thinking --search-rounds 2 --item-group-size 24 --batch-size 8 --output-tokens 4096

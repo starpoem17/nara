@@ -1,0 +1,5 @@
+{
+  "sha256": "850ebdceff80371dc8bd4859813e86e017552941b44dfdb4773b672576c925ba",
+  "tests": "33 passed before any GPU evaluation",
+  "selection_similarity": 0.01
+}

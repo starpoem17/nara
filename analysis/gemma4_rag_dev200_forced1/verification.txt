@@ -1,0 +1,2 @@
+24 unittests passed. Long-record GPU preflight: 7/7 successful with retrieved passages; no label scoring performed. No notice or retrieved passage truncation.
+Full run exited 0. 200 records each made exactly one search and received nonempty passages. Every model request stayed within 32768 tokens. Frozen file hashes unchanged.

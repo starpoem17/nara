@@ -1,0 +1,62 @@
+{
+  "groups": [
+    {
+      "group": 2,
+      "prompt_identical": true,
+      "schema_identical": true
+    },
+    {
+      "group": 3,
+      "prompt_identical": true,
+      "schema_identical": true
+    },
+    {
+      "group": 4,
+      "prompt_identical": true,
+      "schema_identical": true
+    },
+    {
+      "group": 5,
+      "prompt_identical": true,
+      "schema_identical": true
+    },
+    {
+      "group": 6,
+      "prompt_identical": true,
+      "schema_identical": true
+    },
+    {
+      "group": 7,
+      "prompt_identical": true,
+      "schema_identical": true
+    },
+    {
+      "group": 8,
+      "prompt_identical": true,
+      "schema_identical": true
+    },
+    {
+      "group": 9,
+      "prompt_identical": true,
+      "schema_identical": true
+    },
+    {
+      "group": 10,
+      "prompt_identical": true,
+      "schema_identical": true
+    },
+    {
+      "group": 11,
+      "prompt_identical": true,
+      "schema_identical": true
+    },
+    {
+      "group": 12,
+      "prompt_identical": true,
+      "schema_identical": true
+    }
+  ],
+  "changed_bits": 195,
+  "total_bits": 4000,
+  "cause": "not isolated; batch composition/numerical backend sensitivity is a hypothesis, not verified"
+}

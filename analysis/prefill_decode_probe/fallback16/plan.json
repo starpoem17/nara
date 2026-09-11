@@ -1,0 +1,54 @@
+{
+  "schedule": "batch_barrier",
+  "max_requests": 8,
+  "groups": [
+    [
+      "v4",
+      "v6",
+      "v7",
+      "v8"
+    ],
+    [
+      "v10",
+      "v11",
+      "v12",
+      "v13"
+    ],
+    [
+      "v15",
+      "v16",
+      "v17",
+      "v18"
+    ],
+    [
+      "v19",
+      "v20",
+      "v21",
+      "v23"
+    ],
+    [
+      "v1",
+      "v5",
+      "v9",
+      "v14",
+      "v22",
+      "v24"
+    ]
+  ],
+  "thinking": [
+    false,
+    false,
+    false,
+    false,
+    true
+  ],
+  "source_sha256": {
+    "scripts/run_batch_fallback.py": "6ee7dcdd80a1ce70196f8d9248acc4ca684e43fffdc8adde2fa5777b1c15c29d",
+    "nara/batch_barrier.py": "09e5d7abf2a3e6a14f87cfa86c3fcef0a7aab5531d98bb7bd5be9400c1092474",
+    "nara/continuous.py": "25b0f25cf05721cb4a74faa26777ddea8df1cf81917ce6d9f34f0a38d83e24fe",
+    "nara/vllm_model.py": "c3ae5a8f7bd75365e0d685018fab22733a917fca423eacf2fb7f623e4e8c1e0d",
+    "nara/hypothesis6.py": "850ebdceff80371dc8bd4859813e86e017552941b44dfdb4773b672576c925ba",
+    "nara/compact_criteria.json": "84cc8ca7f625f51e55206fc581a28e36df4551999c4009de84188f273bd06a04",
+    "data/dev.jsonl": "5507f5ab0ba53b708f87211ed050dbe531b48a626ace6084c3ccaefb53147534"
+  }
+}

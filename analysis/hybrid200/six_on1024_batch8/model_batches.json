@@ -1,0 +1,152 @@
+[
+  {
+    "record_id": "PPS-DEV-01,PPS-DEV-02,PPS-DEV-03,PPS-DEV-04,PPS-DEV-05,PPS-DEV-06,PPS-DEV-07,PPS-DEV-08",
+    "phase": "six_on1024_batch8",
+    "seconds": 23.496543132991064,
+    "requests": 8
+  },
+  {
+    "record_id": "PPS-DEV-09,PPS-DEV-10,PPS-DEV-11,PPS-DEV-12,PPS-DEV-13,PPS-DEV-14,PPS-DEV-15,PPS-DEV-16",
+    "phase": "six_on1024_batch8",
+    "seconds": 21.0831723040028,
+    "requests": 8
+  },
+  {
+    "record_id": "PPS-DEV-17,PPS-DEV-18,PPS-DEV-19,PPS-DEV-20,PPS-DEV-21,PPS-DEV-22,PPS-DEV-23,PPS-DEV-24",
+    "phase": "six_on1024_batch8",
+    "seconds": 19.560040367985494,
+    "requests": 8
+  },
+  {
+    "record_id": "PPS-DEV-25,PPS-DEV-26,PPS-DEV-27,PPS-DEV-28,PPS-DEV-29,PPS-DEV-30,PPS-DEV-31,PPS-DEV-32",
+    "phase": "six_on1024_batch8",
+    "seconds": 21.733842264002305,
+    "requests": 8
+  },
+  {
+    "record_id": "PPS-DEV-033,PPS-DEV-034,PPS-DEV-035,PPS-DEV-036,PPS-DEV-037,PPS-DEV-038,PPS-DEV-039,PPS-DEV-040",
+    "phase": "six_on1024_batch8",
+    "seconds": 16.051142805998097,
+    "requests": 8
+  },
+  {
+    "record_id": "PPS-DEV-041,PPS-DEV-042,PPS-DEV-043,PPS-DEV-044,PPS-DEV-045,PPS-DEV-046,PPS-DEV-047,PPS-DEV-048",
+    "phase": "six_on1024_batch8",
+    "seconds": 17.762666541995713,
+    "requests": 8
+  },
+  {
+    "record_id": "PPS-DEV-049,PPS-DEV-050,PPS-DEV-051,PPS-DEV-052,PPS-DEV-053,PPS-DEV-054,PPS-DEV-055,PPS-DEV-056",
+    "phase": "six_on1024_batch8",
+    "seconds": 16.566805827998905,
+    "requests": 8
+  },
+  {
+    "record_id": "PPS-DEV-057,PPS-DEV-058,PPS-DEV-059,PPS-DEV-060,PPS-DEV-061,PPS-DEV-062,PPS-DEV-063,PPS-DEV-064",
+    "phase": "six_on1024_batch8",
+    "seconds": 15.748253596990253,
+    "requests": 8
+  },
+  {
+    "record_id": "PPS-DEV-065,PPS-DEV-066,PPS-DEV-067,PPS-DEV-068,PPS-DEV-069,PPS-DEV-070,PPS-DEV-071,PPS-DEV-072",
+    "phase": "six_on1024_batch8",
+    "seconds": 17.974231154003064,
+    "requests": 8
+  },
+  {
+    "record_id": "PPS-DEV-073,PPS-DEV-074,PPS-DEV-075,PPS-DEV-076,PPS-DEV-077,PPS-DEV-078,PPS-DEV-079,PPS-DEV-080",
+    "phase": "six_on1024_batch8",
+    "seconds": 16.371431070001563,
+    "requests": 8
+  },
+  {
+    "record_id": "PPS-DEV-081,PPS-DEV-082,PPS-DEV-083,PPS-DEV-084,PPS-DEV-085,PPS-DEV-086,PPS-DEV-087,PPS-DEV-088",
+    "phase": "six_on1024_batch8",
+    "seconds": 23.002328282003873,
+    "requests": 8
+  },
+  {
+    "record_id": "PPS-DEV-089,PPS-DEV-090,PPS-DEV-091,PPS-DEV-092,PPS-DEV-093,PPS-DEV-094,PPS-DEV-095,PPS-DEV-096",
+    "phase": "six_on1024_batch8",
+    "seconds": 18.955046645991388,
+    "requests": 8
+  },
+  {
+    "record_id": "PPS-DEV-097,PPS-DEV-098,PPS-DEV-099,PPS-DEV-100,PPS-DEV-101,PPS-DEV-102,PPS-DEV-103,PPS-DEV-104",
+    "phase": "six_on1024_batch8",
+    "seconds": 23.806958431989187,
+    "requests": 8
+  },
+  {
+    "record_id": "PPS-DEV-105,PPS-DEV-106,PPS-DEV-107,PPS-DEV-108,PPS-DEV-109,PPS-DEV-110,PPS-DEV-111,PPS-DEV-112",
+    "phase": "six_on1024_batch8",
+    "seconds": 19.93874202000734,
+    "requests": 8
+  },
+  {
+    "record_id": "PPS-DEV-113,PPS-DEV-114,PPS-DEV-115,PPS-DEV-116,PPS-DEV-117,PPS-DEV-118,PPS-DEV-119,PPS-DEV-120",
+    "phase": "six_on1024_batch8",
+    "seconds": 18.451409361994592,
+    "requests": 8
+  },
+  {
+    "record_id": "PPS-DEV-121,PPS-DEV-122,PPS-DEV-123,PPS-DEV-124,PPS-DEV-125,PPS-DEV-126,PPS-DEV-127,PPS-DEV-128",
+    "phase": "six_on1024_batch8",
+    "seconds": 20.293694373991457,
+    "requests": 8
+  },
+  {
+    "record_id": "PPS-DEV-129,PPS-DEV-130,PPS-DEV-131,PPS-DEV-132,PPS-DEV-133,PPS-DEV-134,PPS-DEV-135,PPS-DEV-136",
+    "phase": "six_on1024_batch8",
+    "seconds": 19.761006404005457,
+    "requests": 8
+  },
+  {
+    "record_id": "PPS-DEV-137,PPS-DEV-138,PPS-DEV-139,PPS-DEV-140,PPS-DEV-141,PPS-DEV-142,PPS-DEV-143,PPS-DEV-144",
+    "phase": "six_on1024_batch8",
+    "seconds": 23.404156503995182,
+    "requests": 8
+  },
+  {
+    "record_id": "PPS-DEV-145,PPS-DEV-146,PPS-DEV-147,PPS-DEV-148,PPS-DEV-149,PPS-DEV-150,PPS-DEV-151,PPS-DEV-152",
+    "phase": "six_on1024_batch8",
+    "seconds": 21.384691956001916,
+    "requests": 8
+  },
+  {
+    "record_id": "PPS-DEV-153,PPS-DEV-154,PPS-DEV-155,PPS-DEV-156,PPS-DEV-157,PPS-DEV-158,PPS-DEV-159,PPS-DEV-160",
+    "phase": "six_on1024_batch8",
+    "seconds": 23.89921081099601,
+    "requests": 8
+  },
+  {
+    "record_id": "PPS-DEV-161,PPS-DEV-162,PPS-DEV-163,PPS-DEV-164,PPS-DEV-165,PPS-DEV-166,PPS-DEV-167,PPS-DEV-168",
+    "phase": "six_on1024_batch8",
+    "seconds": 18.632650321989786,
+    "requests": 8
+  },
+  {
+    "record_id": "PPS-DEV-169,PPS-DEV-170,PPS-DEV-171,PPS-DEV-172,PPS-DEV-173,PPS-DEV-174,PPS-DEV-175,PPS-DEV-176",
+    "phase": "six_on1024_batch8",
+    "seconds": 22.627233253995655,
+    "requests": 8
+  },
+  {
+    "record_id": "PPS-DEV-177,PPS-DEV-178,PPS-DEV-179,PPS-DEV-180,PPS-DEV-181,PPS-DEV-182,PPS-DEV-183,PPS-DEV-184",
+    "phase": "six_on1024_batch8",
+    "seconds": 17.775170905995765,
+    "requests": 8
+  },
+  {
+    "record_id": "PPS-DEV-185,PPS-DEV-186,PPS-DEV-187,PPS-DEV-188,PPS-DEV-189,PPS-DEV-190,PPS-DEV-191,PPS-DEV-192",
+    "phase": "six_on1024_batch8",
+    "seconds": 21.14884309199988,
+    "requests": 8
+  },
+  {
+    "record_id": "PPS-DEV-193,PPS-DEV-194,PPS-DEV-195,PPS-DEV-196,PPS-DEV-197,PPS-DEV-198,PPS-DEV-199,PPS-DEV-200",
+    "phase": "six_on1024_batch8",
+    "seconds": 21.504065286004334,
+    "requests": 8
+  }
+]

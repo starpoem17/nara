@@ -1,0 +1,48 @@
+[
+  {
+    "item": "v2",
+    "tp": 5,
+    "fp": 3,
+    "fn": 2,
+    "f1": 0.6666666666666666,
+    "errors": [
+      {
+        "id": "PPS-DEV-053",
+        "error": "FN"
+      },
+      {
+        "id": "PPS-DEV-059",
+        "error": "FP"
+      },
+      {
+        "id": "PPS-DEV-062",
+        "error": "FN"
+      },
+      {
+        "id": "PPS-DEV-099",
+        "error": "FP"
+      },
+      {
+        "id": "PPS-DEV-165",
+        "error": "FP"
+      }
+    ]
+  },
+  {
+    "item": "v3",
+    "tp": 6,
+    "fp": 0,
+    "fn": 2,
+    "f1": 0.8571428571428571,
+    "errors": [
+      {
+        "id": "PPS-DEV-053",
+        "error": "FN"
+      },
+      {
+        "id": "PPS-DEV-062",
+        "error": "FN"
+      }
+    ]
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "schedule": "batch_barrier",
+  "max_requests": 8,
+  "entrypoint": "scripts/run_batch_fallback.py",
+  "thinking_groups": [
+    false,
+    false,
+    false,
+    false,
+    true
+  ],
+  "thinking_budget": 1024,
+  "reason": "User-authorized fallback after prefill/decode sensitivity; no layer/kernel investigation"
+}

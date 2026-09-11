@@ -1,0 +1,12 @@
+[
+  {
+    "batch_size": 128,
+    "seconds": 151.48815510899294,
+    "error": null
+  },
+  {
+    "batch_size": 72,
+    "seconds": 92.11406087900104,
+    "error": null
+  }
+]

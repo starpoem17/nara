@@ -1,0 +1,1832 @@
+{
+  "kind": "post-hoc evaluation of frozen predictions; no new inference",
+  "common_records": 31,
+  "common_ids": [
+    "PPS-DEV-14",
+    "PPS-DEV-20",
+    "PPS-DEV-21",
+    "PPS-DEV-26",
+    "PPS-DEV-29",
+    "PPS-DEV-033",
+    "PPS-DEV-036",
+    "PPS-DEV-039",
+    "PPS-DEV-041",
+    "PPS-DEV-047",
+    "PPS-DEV-049",
+    "PPS-DEV-062",
+    "PPS-DEV-073",
+    "PPS-DEV-091",
+    "PPS-DEV-093",
+    "PPS-DEV-115",
+    "PPS-DEV-120",
+    "PPS-DEV-125",
+    "PPS-DEV-127",
+    "PPS-DEV-141",
+    "PPS-DEV-144",
+    "PPS-DEV-148",
+    "PPS-DEV-161",
+    "PPS-DEV-165",
+    "PPS-DEV-175",
+    "PPS-DEV-178",
+    "PPS-DEV-180",
+    "PPS-DEV-181",
+    "PPS-DEV-184",
+    "PPS-DEV-186",
+    "PPS-DEV-189"
+  ],
+  "excluded_from_common": [
+    "PPS-DEV-085"
+  ],
+  "sample_records": 32,
+  "zero_division": 0,
+  "score_items": [
+    "v1",
+    "v2",
+    "v3",
+    "v4",
+    "v5",
+    "v6",
+    "v7",
+    "v8",
+    "v9",
+    "v10",
+    "v11",
+    "v12",
+    "v13",
+    "v14",
+    "v15",
+    "v16",
+    "v17",
+    "v18",
+    "v19",
+    "v20",
+    "v21",
+    "v22",
+    "v23",
+    "v24"
+  ],
+  "official_evaluation": {
+    "url": "https://dacon.io/competitions/official/236754/overview/evaluation",
+    "verified_date": "2026-09-10",
+    "test_records": 1853,
+    "script_limit_seconds": 7200,
+    "metric": "mean positive-class F1 over all 24 items"
+  },
+  "results": {
+    "ungrouped": {
+      "records": 31,
+      "positive_labels": 28,
+      "macro_f1": 0.24305555555555555,
+      "micro_f1": 0.2978723404255319,
+      "tp": 7,
+      "fp": 12,
+      "fn": 21,
+      "label_accuracy": 0.9556451612903226,
+      "exact_records": 13,
+      "zero_support_items": [
+        "v6",
+        "v8",
+        "v9",
+        "v13",
+        "v20"
+      ],
+      "per_item": [
+        {
+          "item": "v1",
+          "support": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1,
+          "f1": 0.0
+        },
+        {
+          "item": "v2",
+          "support": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "f1": 1.0
+        },
+        {
+          "item": "v3",
+          "support": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "f1": 1.0
+        },
+        {
+          "item": "v4",
+          "support": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "f1": 1.0
+        },
+        {
+          "item": "v5",
+          "support": 2,
+          "tp": 1,
+          "fp": 0,
+          "fn": 1,
+          "f1": 0.6666666666666666
+        },
+        {
+          "item": "v6",
+          "support": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "f1": 0.0
+        },
+        {
+          "item": "v7",
+          "support": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1,
+          "f1": 0.0
+        },
+        {
+          "item": "v8",
+          "support": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "f1": 0.0
+        },
+        {
+          "item": "v9",
+          "support": 0,
+          "tp": 0,
+          "fp": 2,
+          "fn": 0,
+          "f1": 0.0
+        },
+        {
+          "item": "v10",
+          "support": 1,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "f1": 0.0
+        },
+        {
+          "item": "v11",
+          "support": 2,
+          "tp": 0,
+          "fp": 0,
+          "fn": 2,
+          "f1": 0.0
+        },
+        {
+          "item": "v12",
+          "support": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1,
+          "f1": 0.0
+        },
+        {
+          "item": "v13",
+          "support": 0,
+          "tp": 0,
+          "fp": 5,
+          "fn": 0,
+          "f1": 0.0
+        },
+        {
+          "item": "v14",
+          "support": 2,
+          "tp": 0,
+          "fp": 0,
+          "fn": 2,
+          "f1": 0.0
+        },
+        {
+          "item": "v15",
+          "support": 1,
+          "tp": 1,
+          "fp": 2,
+          "fn": 0,
+          "f1": 0.5
+        },
+        {
+          "item": "v16",
+          "support": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1,
+          "f1": 0.0
+        },
+        {
+          "item": "v17",
+          "support": 3,
+          "tp": 0,
+          "fp": 2,
+          "fn": 3,
+          "f1": 0.0
+        },
+        {
+          "item": "v18",
+          "support": 2,
+          "tp": 0,
+          "fp": 0,
+          "fn": 2,
+          "f1": 0.0
+        },
+        {
+          "item": "v19",
+          "support": 2,
+          "tp": 1,
+          "fp": 0,
+          "fn": 1,
+          "f1": 0.6666666666666666
+        },
+        {
+          "item": "v20",
+          "support": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "f1": 0.0
+        },
+        {
+          "item": "v21",
+          "support": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "f1": 1.0
+        },
+        {
+          "item": "v22",
+          "support": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1,
+          "f1": 0.0
+        },
+        {
+          "item": "v23",
+          "support": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1,
+          "f1": 0.0
+        },
+        {
+          "item": "v24",
+          "support": 3,
+          "tp": 0,
+          "fp": 0,
+          "fn": 3,
+          "f1": 0.0
+        }
+      ],
+      "delta_macro_f1": 0.0,
+      "seconds_32": 109.86469457699786,
+      "relative_time": 1.0,
+      "normal_output_records": 32,
+      "failed_ids": [],
+      "projected_1853_seconds_with_model_load": 6388.676200275282,
+      "paired_labels": {
+        "corrected": 0,
+        "regressed": 0,
+        "still_correct": 711,
+        "still_wrong": 33
+      }
+    },
+    "groups7": {
+      "records": 31,
+      "positive_labels": 28,
+      "macro_f1": 0.25902777777777775,
+      "micro_f1": 0.2898550724637681,
+      "tp": 10,
+      "fp": 31,
+      "fn": 18,
+      "label_accuracy": 0.9341397849462365,
+      "exact_records": 9,
+      "zero_support_items": [
+        "v6",
+        "v8",
+        "v9",
+        "v13",
+        "v20"
+      ],
+      "per_item": [
+        {
+          "item": "v1",
+          "support": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "f1": 1.0
+        },
+        {
+          "item": "v2",
+          "support": 1,
+          "tp": 1,
+          "fp": 1,
+          "fn": 0,
+          "f1": 0.6666666666666666
+        },
+        {
+          "item": "v3",
+          "support": 1,
+          "tp": 1,
+          "fp": 1,
+          "fn": 0,
+          "f1": 0.6666666666666666
+        },
+        {
+          "item": "v4",
+          "support": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "f1": 1.0
+        },
+        {
+          "item": "v5",
+          "support": 2,
+          "tp": 1,
+          "fp": 0,
+          "fn": 1,
+          "f1": 0.6666666666666666
+        },
+        {
+          "item": "v6",
+          "support": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "f1": 0.0
+        },
+        {
+          "item": "v7",
+          "support": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1,
+          "f1": 0.0
+        },
+        {
+          "item": "v8",
+          "support": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "f1": 0.0
+        },
+        {
+          "item": "v9",
+          "support": 0,
+          "tp": 0,
+          "fp": 2,
+          "fn": 0,
+          "f1": 0.0
+        },
+        {
+          "item": "v10",
+          "support": 1,
+          "tp": 0,
+          "fp": 3,
+          "fn": 1,
+          "f1": 0.0
+        },
+        {
+          "item": "v11",
+          "support": 2,
+          "tp": 0,
+          "fp": 0,
+          "fn": 2,
+          "f1": 0.0
+        },
+        {
+          "item": "v12",
+          "support": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1,
+          "f1": 0.0
+        },
+        {
+          "item": "v13",
+          "support": 0,
+          "tp": 0,
+          "fp": 6,
+          "fn": 0,
+          "f1": 0.0
+        },
+        {
+          "item": "v14",
+          "support": 2,
+          "tp": 0,
+          "fp": 0,
+          "fn": 2,
+          "f1": 0.0
+        },
+        {
+          "item": "v15",
+          "support": 1,
+          "tp": 1,
+          "fp": 2,
+          "fn": 0,
+          "f1": 0.5
+        },
+        {
+          "item": "v16",
+          "support": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1,
+          "f1": 0.0
+        },
+        {
+          "item": "v17",
+          "support": 3,
+          "tp": 0,
+          "fp": 7,
+          "fn": 3,
+          "f1": 0.0
+        },
+        {
+          "item": "v18",
+          "support": 2,
+          "tp": 0,
+          "fp": 1,
+          "fn": 2,
+          "f1": 0.0
+        },
+        {
+          "item": "v19",
+          "support": 2,
+          "tp": 2,
+          "fp": 1,
+          "fn": 0,
+          "f1": 0.8
+        },
+        {
+          "item": "v20",
+          "support": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "f1": 0.0
+        },
+        {
+          "item": "v21",
+          "support": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1,
+          "f1": 0.0
+        },
+        {
+          "item": "v22",
+          "support": 1,
+          "tp": 1,
+          "fp": 1,
+          "fn": 0,
+          "f1": 0.6666666666666666
+        },
+        {
+          "item": "v23",
+          "support": 1,
+          "tp": 0,
+          "fp": 2,
+          "fn": 1,
+          "f1": 0.0
+        },
+        {
+          "item": "v24",
+          "support": 3,
+          "tp": 1,
+          "fp": 4,
+          "fn": 2,
+          "f1": 0.25
+        }
+      ],
+      "delta_macro_f1": 0.015972222222222193,
+      "seconds_32": 544.8966436490009,
+      "relative_time": 4.9597065349061165,
+      "normal_output_records": 32,
+      "failed_ids": [],
+      "projected_1853_seconds_with_model_load": 31579.745001225958,
+      "paired_labels": {
+        "corrected": 10,
+        "regressed": 26,
+        "still_correct": 685,
+        "still_wrong": 23
+      }
+    },
+    "groups9": {
+      "records": 31,
+      "positive_labels": 28,
+      "macro_f1": 0.32870370370370366,
+      "micro_f1": 0.2894736842105263,
+      "tp": 11,
+      "fp": 37,
+      "fn": 17,
+      "label_accuracy": 0.9274193548387096,
+      "exact_records": 6,
+      "zero_support_items": [
+        "v6",
+        "v8",
+        "v9",
+        "v13",
+        "v20"
+      ],
+      "per_item": [
+        {
+          "item": "v1",
+          "support": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "f1": 1.0
+        },
+        {
+          "item": "v2",
+          "support": 1,
+          "tp": 0,
+          "fp": 2,
+          "fn": 1,
+          "f1": 0.0
+        },
+        {
+          "item": "v3",
+          "support": 1,
+          "tp": 1,
+          "fp": 1,
+          "fn": 0,
+          "f1": 0.6666666666666666
+        },
+        {
+          "item": "v4",
+          "support": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "f1": 1.0
+        },
+        {
+          "item": "v5",
+          "support": 2,
+          "tp": 1,
+          "fp": 0,
+          "fn": 1,
+          "f1": 0.6666666666666666
+        },
+        {
+          "item": "v6",
+          "support": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "f1": 0.0
+        },
+        {
+          "item": "v7",
+          "support": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1,
+          "f1": 0.0
+        },
+        {
+          "item": "v8",
+          "support": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "f1": 0.0
+        },
+        {
+          "item": "v9",
+          "support": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 0,
+          "f1": 0.0
+        },
+        {
+          "item": "v10",
+          "support": 1,
+          "tp": 0,
+          "fp": 5,
+          "fn": 1,
+          "f1": 0.0
+        },
+        {
+          "item": "v11",
+          "support": 2,
+          "tp": 0,
+          "fp": 0,
+          "fn": 2,
+          "f1": 0.0
+        },
+        {
+          "item": "v12",
+          "support": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "f1": 1.0
+        },
+        {
+          "item": "v13",
+          "support": 0,
+          "tp": 0,
+          "fp": 7,
+          "fn": 0,
+          "f1": 0.0
+        },
+        {
+          "item": "v14",
+          "support": 2,
+          "tp": 0,
+          "fp": 0,
+          "fn": 2,
+          "f1": 0.0
+        },
+        {
+          "item": "v15",
+          "support": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "f1": 1.0
+        },
+        {
+          "item": "v16",
+          "support": 1,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "f1": 0.0
+        },
+        {
+          "item": "v17",
+          "support": 3,
+          "tp": 0,
+          "fp": 9,
+          "fn": 3,
+          "f1": 0.0
+        },
+        {
+          "item": "v18",
+          "support": 2,
+          "tp": 0,
+          "fp": 3,
+          "fn": 2,
+          "f1": 0.0
+        },
+        {
+          "item": "v19",
+          "support": 2,
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "f1": 1.0
+        },
+        {
+          "item": "v20",
+          "support": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 0,
+          "f1": 0.0
+        },
+        {
+          "item": "v21",
+          "support": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1,
+          "f1": 0.0
+        },
+        {
+          "item": "v22",
+          "support": 1,
+          "tp": 1,
+          "fp": 1,
+          "fn": 0,
+          "f1": 0.6666666666666666
+        },
+        {
+          "item": "v23",
+          "support": 1,
+          "tp": 1,
+          "fp": 1,
+          "fn": 0,
+          "f1": 0.6666666666666666
+        },
+        {
+          "item": "v24",
+          "support": 3,
+          "tp": 1,
+          "fp": 5,
+          "fn": 2,
+          "f1": 0.2222222222222222
+        }
+      ],
+      "delta_macro_f1": 0.08564814814814811,
+      "seconds_32": 675.2500372289978,
+      "relative_time": 6.146196827186861,
+      "normal_output_records": 31,
+      "failed_ids": [
+        "PPS-DEV-085"
+      ],
+      "projected_1853_seconds_with_model_load": 39128.021198217655,
+      "paired_labels": {
+        "corrected": 12,
+        "regressed": 33,
+        "still_correct": 678,
+        "still_wrong": 21
+      }
+    },
+    "groups12": {
+      "records": 31,
+      "positive_labels": 28,
+      "macro_f1": 0.3597222222222222,
+      "micro_f1": 0.40540540540540543,
+      "tp": 15,
+      "fp": 31,
+      "fn": 13,
+      "label_accuracy": 0.9408602150537635,
+      "exact_records": 10,
+      "zero_support_items": [
+        "v6",
+        "v8",
+        "v9",
+        "v13",
+        "v20"
+      ],
+      "per_item": [
+        {
+          "item": "v1",
+          "support": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "f1": 1.0
+        },
+        {
+          "item": "v2",
+          "support": 1,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "f1": 0.0
+        },
+        {
+          "item": "v3",
+          "support": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "f1": 1.0
+        },
+        {
+          "item": "v4",
+          "support": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "f1": 1.0
+        },
+        {
+          "item": "v5",
+          "support": 2,
+          "tp": 1,
+          "fp": 0,
+          "fn": 1,
+          "f1": 0.6666666666666666
+        },
+        {
+          "item": "v6",
+          "support": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "f1": 0.0
+        },
+        {
+          "item": "v7",
+          "support": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1,
+          "f1": 0.0
+        },
+        {
+          "item": "v8",
+          "support": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "f1": 0.0
+        },
+        {
+          "item": "v9",
+          "support": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 0,
+          "f1": 0.0
+        },
+        {
+          "item": "v10",
+          "support": 1,
+          "tp": 0,
+          "fp": 7,
+          "fn": 1,
+          "f1": 0.0
+        },
+        {
+          "item": "v11",
+          "support": 2,
+          "tp": 0,
+          "fp": 0,
+          "fn": 2,
+          "f1": 0.0
+        },
+        {
+          "item": "v12",
+          "support": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "f1": 1.0
+        },
+        {
+          "item": "v13",
+          "support": 0,
+          "tp": 0,
+          "fp": 8,
+          "fn": 0,
+          "f1": 0.0
+        },
+        {
+          "item": "v14",
+          "support": 2,
+          "tp": 1,
+          "fp": 0,
+          "fn": 1,
+          "f1": 0.6666666666666666
+        },
+        {
+          "item": "v15",
+          "support": 1,
+          "tp": 1,
+          "fp": 2,
+          "fn": 0,
+          "f1": 0.5
+        },
+        {
+          "item": "v16",
+          "support": 1,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "f1": 0.0
+        },
+        {
+          "item": "v17",
+          "support": 3,
+          "tp": 3,
+          "fp": 4,
+          "fn": 0,
+          "f1": 0.6
+        },
+        {
+          "item": "v18",
+          "support": 2,
+          "tp": 1,
+          "fp": 2,
+          "fn": 1,
+          "f1": 0.4
+        },
+        {
+          "item": "v19",
+          "support": 2,
+          "tp": 2,
+          "fp": 1,
+          "fn": 0,
+          "f1": 0.8
+        },
+        {
+          "item": "v20",
+          "support": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "f1": 0.0
+        },
+        {
+          "item": "v21",
+          "support": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1,
+          "f1": 0.0
+        },
+        {
+          "item": "v22",
+          "support": 1,
+          "tp": 1,
+          "fp": 1,
+          "fn": 0,
+          "f1": 0.6666666666666666
+        },
+        {
+          "item": "v23",
+          "support": 1,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "f1": 0.0
+        },
+        {
+          "item": "v24",
+          "support": 3,
+          "tp": 1,
+          "fp": 2,
+          "fn": 2,
+          "f1": 0.3333333333333333
+        }
+      ],
+      "delta_macro_f1": 0.11666666666666667,
+      "seconds_32": 854.3016778630008,
+      "relative_time": 7.77594368374883,
+      "normal_output_records": 32,
+      "failed_ids": [],
+      "projected_1853_seconds_with_model_load": 49496.23026368039,
+      "paired_labels": {
+        "corrected": 18,
+        "regressed": 29,
+        "still_correct": 682,
+        "still_wrong": 15
+      }
+    }
+  },
+  "supplementary_all_successful": {
+    "ungrouped": {
+      "records": 32,
+      "positive_labels": 28,
+      "macro_f1": 0.24305555555555555,
+      "micro_f1": 0.2916666666666667,
+      "tp": 7,
+      "fp": 13,
+      "fn": 21,
+      "label_accuracy": 0.9557291666666666,
+      "exact_records": 13,
+      "zero_support_items": [
+        "v6",
+        "v8",
+        "v9",
+        "v13",
+        "v20"
+      ],
+      "per_item": [
+        {
+          "item": "v1",
+          "support": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1,
+          "f1": 0.0
+        },
+        {
+          "item": "v2",
+          "support": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "f1": 1.0
+        },
+        {
+          "item": "v3",
+          "support": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "f1": 1.0
+        },
+        {
+          "item": "v4",
+          "support": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "f1": 1.0
+        },
+        {
+          "item": "v5",
+          "support": 2,
+          "tp": 1,
+          "fp": 0,
+          "fn": 1,
+          "f1": 0.6666666666666666
+        },
+        {
+          "item": "v6",
+          "support": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "f1": 0.0
+        },
+        {
+          "item": "v7",
+          "support": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1,
+          "f1": 0.0
+        },
+        {
+          "item": "v8",
+          "support": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "f1": 0.0
+        },
+        {
+          "item": "v9",
+          "support": 0,
+          "tp": 0,
+          "fp": 2,
+          "fn": 0,
+          "f1": 0.0
+        },
+        {
+          "item": "v10",
+          "support": 1,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "f1": 0.0
+        },
+        {
+          "item": "v11",
+          "support": 2,
+          "tp": 0,
+          "fp": 0,
+          "fn": 2,
+          "f1": 0.0
+        },
+        {
+          "item": "v12",
+          "support": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1,
+          "f1": 0.0
+        },
+        {
+          "item": "v13",
+          "support": 0,
+          "tp": 0,
+          "fp": 5,
+          "fn": 0,
+          "f1": 0.0
+        },
+        {
+          "item": "v14",
+          "support": 2,
+          "tp": 0,
+          "fp": 0,
+          "fn": 2,
+          "f1": 0.0
+        },
+        {
+          "item": "v15",
+          "support": 1,
+          "tp": 1,
+          "fp": 2,
+          "fn": 0,
+          "f1": 0.5
+        },
+        {
+          "item": "v16",
+          "support": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1,
+          "f1": 0.0
+        },
+        {
+          "item": "v17",
+          "support": 3,
+          "tp": 0,
+          "fp": 3,
+          "fn": 3,
+          "f1": 0.0
+        },
+        {
+          "item": "v18",
+          "support": 2,
+          "tp": 0,
+          "fp": 0,
+          "fn": 2,
+          "f1": 0.0
+        },
+        {
+          "item": "v19",
+          "support": 2,
+          "tp": 1,
+          "fp": 0,
+          "fn": 1,
+          "f1": 0.6666666666666666
+        },
+        {
+          "item": "v20",
+          "support": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "f1": 0.0
+        },
+        {
+          "item": "v21",
+          "support": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "f1": 1.0
+        },
+        {
+          "item": "v22",
+          "support": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1,
+          "f1": 0.0
+        },
+        {
+          "item": "v23",
+          "support": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1,
+          "f1": 0.0
+        },
+        {
+          "item": "v24",
+          "support": 3,
+          "tp": 0,
+          "fp": 0,
+          "fn": 3,
+          "f1": 0.0
+        }
+      ]
+    },
+    "groups7": {
+      "records": 32,
+      "positive_labels": 28,
+      "macro_f1": 0.25902777777777775,
+      "micro_f1": 0.2857142857142857,
+      "tp": 10,
+      "fp": 32,
+      "fn": 18,
+      "label_accuracy": 0.9348958333333334,
+      "exact_records": 9,
+      "zero_support_items": [
+        "v6",
+        "v8",
+        "v9",
+        "v13",
+        "v20"
+      ],
+      "per_item": [
+        {
+          "item": "v1",
+          "support": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "f1": 1.0
+        },
+        {
+          "item": "v2",
+          "support": 1,
+          "tp": 1,
+          "fp": 1,
+          "fn": 0,
+          "f1": 0.6666666666666666
+        },
+        {
+          "item": "v3",
+          "support": 1,
+          "tp": 1,
+          "fp": 1,
+          "fn": 0,
+          "f1": 0.6666666666666666
+        },
+        {
+          "item": "v4",
+          "support": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "f1": 1.0
+        },
+        {
+          "item": "v5",
+          "support": 2,
+          "tp": 1,
+          "fp": 0,
+          "fn": 1,
+          "f1": 0.6666666666666666
+        },
+        {
+          "item": "v6",
+          "support": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "f1": 0.0
+        },
+        {
+          "item": "v7",
+          "support": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1,
+          "f1": 0.0
+        },
+        {
+          "item": "v8",
+          "support": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "f1": 0.0
+        },
+        {
+          "item": "v9",
+          "support": 0,
+          "tp": 0,
+          "fp": 2,
+          "fn": 0,
+          "f1": 0.0
+        },
+        {
+          "item": "v10",
+          "support": 1,
+          "tp": 0,
+          "fp": 3,
+          "fn": 1,
+          "f1": 0.0
+        },
+        {
+          "item": "v11",
+          "support": 2,
+          "tp": 0,
+          "fp": 0,
+          "fn": 2,
+          "f1": 0.0
+        },
+        {
+          "item": "v12",
+          "support": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1,
+          "f1": 0.0
+        },
+        {
+          "item": "v13",
+          "support": 0,
+          "tp": 0,
+          "fp": 6,
+          "fn": 0,
+          "f1": 0.0
+        },
+        {
+          "item": "v14",
+          "support": 2,
+          "tp": 0,
+          "fp": 0,
+          "fn": 2,
+          "f1": 0.0
+        },
+        {
+          "item": "v15",
+          "support": 1,
+          "tp": 1,
+          "fp": 2,
+          "fn": 0,
+          "f1": 0.5
+        },
+        {
+          "item": "v16",
+          "support": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1,
+          "f1": 0.0
+        },
+        {
+          "item": "v17",
+          "support": 3,
+          "tp": 0,
+          "fp": 8,
+          "fn": 3,
+          "f1": 0.0
+        },
+        {
+          "item": "v18",
+          "support": 2,
+          "tp": 0,
+          "fp": 1,
+          "fn": 2,
+          "f1": 0.0
+        },
+        {
+          "item": "v19",
+          "support": 2,
+          "tp": 2,
+          "fp": 1,
+          "fn": 0,
+          "f1": 0.8
+        },
+        {
+          "item": "v20",
+          "support": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "f1": 0.0
+        },
+        {
+          "item": "v21",
+          "support": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1,
+          "f1": 0.0
+        },
+        {
+          "item": "v22",
+          "support": 1,
+          "tp": 1,
+          "fp": 1,
+          "fn": 0,
+          "f1": 0.6666666666666666
+        },
+        {
+          "item": "v23",
+          "support": 1,
+          "tp": 0,
+          "fp": 2,
+          "fn": 1,
+          "f1": 0.0
+        },
+        {
+          "item": "v24",
+          "support": 3,
+          "tp": 1,
+          "fp": 4,
+          "fn": 2,
+          "f1": 0.25
+        }
+      ]
+    },
+    "groups9": {
+      "records": 31,
+      "positive_labels": 28,
+      "macro_f1": 0.32870370370370366,
+      "micro_f1": 0.2894736842105263,
+      "tp": 11,
+      "fp": 37,
+      "fn": 17,
+      "label_accuracy": 0.9274193548387096,
+      "exact_records": 6,
+      "zero_support_items": [
+        "v6",
+        "v8",
+        "v9",
+        "v13",
+        "v20"
+      ],
+      "per_item": [
+        {
+          "item": "v1",
+          "support": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "f1": 1.0
+        },
+        {
+          "item": "v2",
+          "support": 1,
+          "tp": 0,
+          "fp": 2,
+          "fn": 1,
+          "f1": 0.0
+        },
+        {
+          "item": "v3",
+          "support": 1,
+          "tp": 1,
+          "fp": 1,
+          "fn": 0,
+          "f1": 0.6666666666666666
+        },
+        {
+          "item": "v4",
+          "support": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "f1": 1.0
+        },
+        {
+          "item": "v5",
+          "support": 2,
+          "tp": 1,
+          "fp": 0,
+          "fn": 1,
+          "f1": 0.6666666666666666
+        },
+        {
+          "item": "v6",
+          "support": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "f1": 0.0
+        },
+        {
+          "item": "v7",
+          "support": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1,
+          "f1": 0.0
+        },
+        {
+          "item": "v8",
+          "support": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "f1": 0.0
+        },
+        {
+          "item": "v9",
+          "support": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 0,
+          "f1": 0.0
+        },
+        {
+          "item": "v10",
+          "support": 1,
+          "tp": 0,
+          "fp": 5,
+          "fn": 1,
+          "f1": 0.0
+        },
+        {
+          "item": "v11",
+          "support": 2,
+          "tp": 0,
+          "fp": 0,
+          "fn": 2,
+          "f1": 0.0
+        },
+        {
+          "item": "v12",
+          "support": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "f1": 1.0
+        },
+        {
+          "item": "v13",
+          "support": 0,
+          "tp": 0,
+          "fp": 7,
+          "fn": 0,
+          "f1": 0.0
+        },
+        {
+          "item": "v14",
+          "support": 2,
+          "tp": 0,
+          "fp": 0,
+          "fn": 2,
+          "f1": 0.0
+        },
+        {
+          "item": "v15",
+          "support": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "f1": 1.0
+        },
+        {
+          "item": "v16",
+          "support": 1,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "f1": 0.0
+        },
+        {
+          "item": "v17",
+          "support": 3,
+          "tp": 0,
+          "fp": 9,
+          "fn": 3,
+          "f1": 0.0
+        },
+        {
+          "item": "v18",
+          "support": 2,
+          "tp": 0,
+          "fp": 3,
+          "fn": 2,
+          "f1": 0.0
+        },
+        {
+          "item": "v19",
+          "support": 2,
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "f1": 1.0
+        },
+        {
+          "item": "v20",
+          "support": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 0,
+          "f1": 0.0
+        },
+        {
+          "item": "v21",
+          "support": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1,
+          "f1": 0.0
+        },
+        {
+          "item": "v22",
+          "support": 1,
+          "tp": 1,
+          "fp": 1,
+          "fn": 0,
+          "f1": 0.6666666666666666
+        },
+        {
+          "item": "v23",
+          "support": 1,
+          "tp": 1,
+          "fp": 1,
+          "fn": 0,
+          "f1": 0.6666666666666666
+        },
+        {
+          "item": "v24",
+          "support": 3,
+          "tp": 1,
+          "fp": 5,
+          "fn": 2,
+          "f1": 0.2222222222222222
+        }
+      ]
+    },
+    "groups12": {
+      "records": 32,
+      "positive_labels": 28,
+      "macro_f1": 0.3597222222222222,
+      "micro_f1": 0.40540540540540543,
+      "tp": 15,
+      "fp": 31,
+      "fn": 13,
+      "label_accuracy": 0.9427083333333334,
+      "exact_records": 11,
+      "zero_support_items": [
+        "v6",
+        "v8",
+        "v9",
+        "v13",
+        "v20"
+      ],
+      "per_item": [
+        {
+          "item": "v1",
+          "support": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "f1": 1.0
+        },
+        {
+          "item": "v2",
+          "support": 1,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "f1": 0.0
+        },
+        {
+          "item": "v3",
+          "support": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "f1": 1.0
+        },
+        {
+          "item": "v4",
+          "support": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "f1": 1.0
+        },
+        {
+          "item": "v5",
+          "support": 2,
+          "tp": 1,
+          "fp": 0,
+          "fn": 1,
+          "f1": 0.6666666666666666
+        },
+        {
+          "item": "v6",
+          "support": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "f1": 0.0
+        },
+        {
+          "item": "v7",
+          "support": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1,
+          "f1": 0.0
+        },
+        {
+          "item": "v8",
+          "support": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "f1": 0.0
+        },
+        {
+          "item": "v9",
+          "support": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 0,
+          "f1": 0.0
+        },
+        {
+          "item": "v10",
+          "support": 1,
+          "tp": 0,
+          "fp": 7,
+          "fn": 1,
+          "f1": 0.0
+        },
+        {
+          "item": "v11",
+          "support": 2,
+          "tp": 0,
+          "fp": 0,
+          "fn": 2,
+          "f1": 0.0
+        },
+        {
+          "item": "v12",
+          "support": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "f1": 1.0
+        },
+        {
+          "item": "v13",
+          "support": 0,
+          "tp": 0,
+          "fp": 8,
+          "fn": 0,
+          "f1": 0.0
+        },
+        {
+          "item": "v14",
+          "support": 2,
+          "tp": 1,
+          "fp": 0,
+          "fn": 1,
+          "f1": 0.6666666666666666
+        },
+        {
+          "item": "v15",
+          "support": 1,
+          "tp": 1,
+          "fp": 2,
+          "fn": 0,
+          "f1": 0.5
+        },
+        {
+          "item": "v16",
+          "support": 1,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "f1": 0.0
+        },
+        {
+          "item": "v17",
+          "support": 3,
+          "tp": 3,
+          "fp": 4,
+          "fn": 0,
+          "f1": 0.6
+        },
+        {
+          "item": "v18",
+          "support": 2,
+          "tp": 1,
+          "fp": 2,
+          "fn": 1,
+          "f1": 0.4
+        },
+        {
+          "item": "v19",
+          "support": 2,
+          "tp": 2,
+          "fp": 1,
+          "fn": 0,
+          "f1": 0.8
+        },
+        {
+          "item": "v20",
+          "support": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "f1": 0.0
+        },
+        {
+          "item": "v21",
+          "support": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1,
+          "f1": 0.0
+        },
+        {
+          "item": "v22",
+          "support": 1,
+          "tp": 1,
+          "fp": 1,
+          "fn": 0,
+          "f1": 0.6666666666666666
+        },
+        {
+          "item": "v23",
+          "support": 1,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "f1": 0.0
+        },
+        {
+          "item": "v24",
+          "support": 3,
+          "tp": 1,
+          "fp": 2,
+          "fn": 2,
+          "f1": 0.3333333333333333
+        }
+      ]
+    }
+  },
+  "sha256": {
+    "data/dev_labels.csv": "84c79302ac190b45b2487ec8e02aab73e59071ee745828e813a7db96d3a97a35",
+    "analysis/grouping_time32/ungrouped/trace.jsonl": "ef25641f50184c567e01dff532ed79f9410378bb36e8b9d69bd2c2cc808fee84",
+    "analysis/grouping_time32/groups7/trace.jsonl": "f3a53e0a99e4ba9698e2e5132552f4acd0b3137e01a3d25cee1dc5a85da67ecd",
+    "analysis/grouping_time32/groups9/trace.jsonl": "ccdab43a47f3c85ca6085a99c872716e94fb1556083e012603b2e18014c804cb",
+    "analysis/grouping_time32/groups12/trace.jsonl": "2641b018adc1e807b83bb595ada63f03e39749a3f0cf167832e5f8ea799d20e2"
+  }
+}

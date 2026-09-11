@@ -1,0 +1,57 @@
+{
+  "load_seconds": 64.324737723,
+  "checks": [
+    {
+      "name": "two_search_rounds",
+      "passed": true,
+      "model_seconds": 10.993360565997136,
+      "retrieval_seconds": 0.1620189349996508,
+      "model_batches": 3,
+      "retrieval_batches": 2,
+      "total_seconds": 11.378563488000509,
+      "search_rounds": [
+        2,
+        2
+      ],
+      "input_tokens": 71555,
+      "output_tokens": 1307
+    },
+    {
+      "name": "groups_of_six",
+      "passed": true,
+      "model_seconds": 4.384827627996856,
+      "retrieval_seconds": 0.0,
+      "model_batches": 1,
+      "retrieval_batches": 0,
+      "total_seconds": 4.415668497000297,
+      "search_rounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "input_tokens": 55674,
+      "output_tokens": 572
+    },
+    {
+      "name": "longest_source",
+      "passed": true,
+      "model_seconds": 6.280323465998663,
+      "retrieval_seconds": 0.0,
+      "model_batches": 1,
+      "retrieval_batches": 0,
+      "total_seconds": 6.291097082001215,
+      "search_rounds": [
+        0
+      ],
+      "input_tokens": 29846,
+      "output_tokens": 471
+    },
+    {
+      "name": "thinking_json",
+      "passed": true,
+      "output_tokens": 108
+    }
+  ],
+  "total_seconds": 88.00464547799857
+}

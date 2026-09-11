@@ -1,0 +1,112 @@
+{
+  "name": "optimized_off",
+  "options": {
+    "model_dir": "models/gemma-4-26B-A4B-it-NVFP4",
+    "max_model_len": 32768,
+    "thinking": false,
+    "item_group_size": 6
+  },
+  "limits": {
+    "batch_size": 8,
+    "search_rounds": 2,
+    "queries_per_round": 4,
+    "top_k": 5,
+    "round_tokens": 4096,
+    "total_retrieval_tokens": 8192,
+    "output_tokens": 2048,
+    "retries": 1,
+    "require_search": false
+  },
+  "groups": [
+    [
+      "v4",
+      "v6",
+      "v7",
+      "v8"
+    ],
+    [
+      "v10",
+      "v11",
+      "v12",
+      "v13"
+    ],
+    [
+      "v15",
+      "v16",
+      "v17",
+      "v18"
+    ],
+    [
+      "v19",
+      "v20",
+      "v21",
+      "v23"
+    ],
+    [
+      "v1",
+      "v5",
+      "v9",
+      "v14",
+      "v22",
+      "v24"
+    ]
+  ],
+  "records": 200,
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "prediction_seconds": 447.1389486010012,
+  "load_seconds": 27.721229032002157,
+  "total_seconds": 502.3292853930034,
+  "failed_ids": [],
+  "model_turns": 1003,
+  "search_rounds": 0,
+  "invalid_responses": 3,
+  "context_failures": 0,
+  "input_tokens": 11603303,
+  "output_tokens": 104929,
+  "thinking_tokens": 0,
+  "model_seconds": 440.8628098579793,
+  "retrieval_seconds": 0.0,
+  "first_pass": {
+    "failed_ids": [
+      "PPS-DEV-049"
+    ],
+    "prediction_seconds": 444.6137995989993
+  },
+  "recovery": {
+    "policy": {
+      "scope": "Only groups without a final event on failed records; all successful groups replayed through original postprocessing",
+      "prompt_change": false,
+      "mode": "OFF",
+      "output_tokens": 2048,
+      "batch_size": 1,
+      "extra_predict_attempts": 1,
+      "source_sha256": "04650e0294ffd1476c47551d37528ff8bd3511d2836ffa484980b030f05f3611"
+    },
+    "prediction_seconds": 2.5251490020018537,
+    "separate_process_load_seconds": 27.469107760000043,
+    "groups": [
+      {
+        "id": "PPS-DEV-049",
+        "items": [
+          "v10",
+          "v11",
+          "v12",
+          "v13"
+        ],
+        "phases": [
+          {
+            "phase": "instant_recovery",
+            "seconds": 2.523479341994971,
+            "model_seconds": 2.4907010270108003,
+            "retrieval_seconds": 0.0,
+            "model_batches": 1,
+            "retrieval_batches": 0,
+            "total_seconds": 2.523466266997275
+          }
+        ],
+        "error": null
+      }
+    ],
+    "success_replay_verified_records": 199
+  }
+}

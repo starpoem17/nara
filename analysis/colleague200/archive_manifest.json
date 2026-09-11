@@ -1,0 +1,20 @@
+{
+  "archive_sha256": "f207f87e85c1ebf403f7631c8374a90b6ad2b7dbf89fd9892310ed37699a0e61",
+  "files": [
+    {
+      "archive_path": "model\\casebook.json",
+      "local_path": "model/casebook.json",
+      "sha256": "52cebb4fa35d0de1a5e69f84764e7f14b40b961998b0d5ec7ecee1cf03d12ed7"
+    },
+    {
+      "archive_path": "script.py",
+      "local_path": "script.py",
+      "sha256": "a6c6ef78ef59c84a4969a56f99aa63fa420c5ec836fb5277ed7e44996669c660"
+    },
+    {
+      "archive_path": "requirements.txt",
+      "local_path": "requirements.txt",
+      "sha256": "5740d52bbd587c05f02b72dfebf0059712ea68605f9e00092e5a058faf49de0f"
+    }
+  ]
+}

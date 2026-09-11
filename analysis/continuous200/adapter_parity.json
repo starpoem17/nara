@@ -1,0 +1,12 @@
+{
+  "token_ids_identical": true,
+  "sampling_differences": {
+    "output_kind": [
+      "RequestOutputKind.CUMULATIVE",
+      "RequestOutputKind.FINAL_ONLY"
+    ]
+  },
+  "scope": "Same real tokenizer and actual SamplingParams; only returned-output delivery mode differs; no GPU output-equivalence claim",
+  "effective_sampling_differences": {},
+  "normalization_source": "Installed vllm/entrypoints/offline_utils.py: OfflineInferenceMixin._add_request sets output_kind=FINAL_ONLY before LLMEngine.add_request, matching StreamingModel"
+}

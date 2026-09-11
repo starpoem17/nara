@@ -1,0 +1,46 @@
+{
+  "type": "object",
+  "properties": {
+    "action": {
+      "const": "final"
+    },
+    "judgments": {
+      "type": "object",
+      "properties": {
+        "v8": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "위반여부",
+            "근거문구"
+          ],
+          "properties": {
+            "위반여부": {
+              "type": "integer",
+              "enum": [
+                0,
+                1
+              ]
+            },
+            "근거문구": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "maxLength": 80
+            }
+          }
+        }
+      },
+      "required": [
+        "v8"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "action",
+    "judgments"
+  ],
+  "additionalProperties": false
+}

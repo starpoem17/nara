@@ -1,0 +1,434 @@
+[
+  {
+    "record_id": "PPS-DEV-077",
+    "phase": "probe_cold",
+    "seconds": 0.905513860998326,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-077",
+    "phase": "probe_seed",
+    "seconds": 0.9039589839958353,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-077",
+    "phase": "probe_warm",
+    "seconds": 0.8519841230008751,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-174",
+    "phase": "probe_seed",
+    "seconds": 0.9803677559975768,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-174",
+    "phase": "probe_warm",
+    "seconds": 0.8755254810093902,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-174",
+    "phase": "probe_cold",
+    "seconds": 0.9807363339932635,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-033",
+    "phase": "probe_cold",
+    "seconds": 1.0712871230061864,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-033",
+    "phase": "probe_seed",
+    "seconds": 1.0704181000037352,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-033",
+    "phase": "probe_warm",
+    "seconds": 0.9024340369942365,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-104",
+    "phase": "probe_seed",
+    "seconds": 1.1052914949978003,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-104",
+    "phase": "probe_warm",
+    "seconds": 0.9118370720098028,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-104",
+    "phase": "probe_cold",
+    "seconds": 1.1059347219998017,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-177",
+    "phase": "probe_cold",
+    "seconds": 1.172974785004044,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-177",
+    "phase": "probe_seed",
+    "seconds": 1.1718471770000178,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-177",
+    "phase": "probe_warm",
+    "seconds": 0.9290442549972795,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-037",
+    "phase": "probe_seed",
+    "seconds": 1.2877880570013076,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-037",
+    "phase": "probe_warm",
+    "seconds": 0.9579304820072139,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-037",
+    "phase": "probe_cold",
+    "seconds": 1.2885331779980334,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-181",
+    "phase": "probe_cold",
+    "seconds": 1.394300783998915,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-181",
+    "phase": "probe_seed",
+    "seconds": 1.3906632970029023,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-181",
+    "phase": "probe_warm",
+    "seconds": 0.9848429989942815,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-139",
+    "phase": "probe_seed",
+    "seconds": 1.4949214379885234,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-139",
+    "phase": "probe_warm",
+    "seconds": 0.979149167003925,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-139",
+    "phase": "probe_cold",
+    "seconds": 1.4965336009918246,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-034",
+    "phase": "probe_cold",
+    "seconds": 1.8361103299976094,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-034",
+    "phase": "probe_seed",
+    "seconds": 1.8307427639956586,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-034",
+    "phase": "probe_warm",
+    "seconds": 1.0637568870006362,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-087",
+    "phase": "probe_seed",
+    "seconds": 2.218691495989333,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-087",
+    "phase": "probe_warm",
+    "seconds": 1.120435761011322,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-087",
+    "phase": "probe_cold",
+    "seconds": 2.218099288002122,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-140",
+    "phase": "probe_cold",
+    "seconds": 2.8355459660087945,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-140",
+    "phase": "probe_seed",
+    "seconds": 2.8347815250017447,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-140",
+    "phase": "probe_warm",
+    "seconds": 1.1596894990070723,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-11",
+    "phase": "probe_seed",
+    "seconds": 3.285965651011793,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-11",
+    "phase": "probe_warm",
+    "seconds": 1.184430989989778,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-11",
+    "phase": "probe_cold",
+    "seconds": 3.2907539300067583,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-077",
+    "phase": "probe_seed",
+    "seconds": 0.903888693996123,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-077",
+    "phase": "probe_warm",
+    "seconds": 0.8527275130036287,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-077",
+    "phase": "probe_cold",
+    "seconds": 0.9052985909947893,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-174",
+    "phase": "probe_cold",
+    "seconds": 0.980659046996152,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-174",
+    "phase": "probe_seed",
+    "seconds": 0.9800263680081116,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-174",
+    "phase": "probe_warm",
+    "seconds": 0.875984458005405,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-033",
+    "phase": "probe_seed",
+    "seconds": 1.0701202280033613,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-033",
+    "phase": "probe_warm",
+    "seconds": 0.9031546740006888,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-033",
+    "phase": "probe_cold",
+    "seconds": 1.0716626070061466,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-104",
+    "phase": "probe_cold",
+    "seconds": 1.1057884530018782,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-104",
+    "phase": "probe_seed",
+    "seconds": 1.1046356970036868,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-104",
+    "phase": "probe_warm",
+    "seconds": 0.913026409005397,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-177",
+    "phase": "probe_seed",
+    "seconds": 1.172222591994796,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-177",
+    "phase": "probe_warm",
+    "seconds": 0.9306641029979801,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-177",
+    "phase": "probe_cold",
+    "seconds": 1.1726176030060742,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-037",
+    "phase": "probe_cold",
+    "seconds": 1.2885866379947402,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-037",
+    "phase": "probe_seed",
+    "seconds": 1.2857116099912673,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-037",
+    "phase": "probe_warm",
+    "seconds": 0.9564473479986191,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-181",
+    "phase": "probe_seed",
+    "seconds": 1.392678251999314,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-181",
+    "phase": "probe_warm",
+    "seconds": 0.9843747130071279,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-181",
+    "phase": "probe_cold",
+    "seconds": 1.3951021620014217,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-139",
+    "phase": "probe_cold",
+    "seconds": 1.4974674060067628,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-139",
+    "phase": "probe_seed",
+    "seconds": 1.4960605780070182,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-139",
+    "phase": "probe_warm",
+    "seconds": 0.9808935229957569,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-034",
+    "phase": "probe_seed",
+    "seconds": 1.8314278969919542,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-034",
+    "phase": "probe_warm",
+    "seconds": 1.0645137440005783,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-034",
+    "phase": "probe_cold",
+    "seconds": 1.836096572005772,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-087",
+    "phase": "probe_cold",
+    "seconds": 2.2198327770020114,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-087",
+    "phase": "probe_seed",
+    "seconds": 2.217281853008899,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-087",
+    "phase": "probe_warm",
+    "seconds": 1.1202670900092926,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-140",
+    "phase": "probe_seed",
+    "seconds": 2.8363162470050156,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-140",
+    "phase": "probe_warm",
+    "seconds": 1.15982301600161,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-140",
+    "phase": "probe_cold",
+    "seconds": 2.8377318889979506,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-11",
+    "phase": "probe_cold",
+    "seconds": 3.2864588250085944,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-11",
+    "phase": "probe_seed",
+    "seconds": 3.284031351999147,
+    "requests": 1
+  },
+  {
+    "record_id": "PPS-DEV-11",
+    "phase": "probe_warm",
+    "seconds": 1.1835050270019565,
+    "requests": 1
+  }
+]
