@@ -24,6 +24,7 @@ class Limits:
     output_tokens: int = 2048
     retries: int = 1
     require_search: bool = False
+    instant_output_tokens: int | None = None
 
     def __post_init__(self):
         if type(self.require_search) is not bool or (self.require_search and self.search_rounds < 1):
@@ -31,9 +32,13 @@ class Limits:
         for name, value in vars(self).items():
             if name == "require_search":
                 continue
+            if name == "instant_output_tokens" and value is None:
+                continue
             minimum = 0 if name in ("search_rounds", "retries") else 1
             if type(value) is not int or value < minimum:
                 raise ValueError(f"{name} must be an integer >= {minimum}")
+        if self.instant_output_tokens is not None and self.instant_output_tokens > self.output_tokens:
+            raise ValueError("instant_output_tokens must not exceed output_tokens")
 
 
 @dataclass(frozen=True)
@@ -114,6 +119,12 @@ class Predictor:
         if set(judgment_schema["properties"]) != set(item_table):
             raise ValueError("Item table and judgment schema disagree")
         self.metrics = {}
+
+    def _generation_limit(self):
+        if (self.limits.instant_output_tokens is not None
+                and not getattr(self.model, "thinking", False)):
+            return self.limits.instant_output_tokens
+        return self.limits.output_tokens
 
     def _schema(self, items, search, search_only=False):
         judgments = _object({key: self.judgment_schema["properties"][key] for key in items})
@@ -203,7 +214,7 @@ class Predictor:
                           and tokens + 2 * self.limits.output_tokens + 256
                           <= self.model.max_model_len)
                 required = self.limits.require_search and task.rounds == 0
-                output_tokens = self.limits.output_tokens
+                output_tokens = self._generation_limit()
                 if required:
                     # A search-only action can use a smaller generation budget than final JSON.
                     output_tokens = min(output_tokens, self.model.max_model_len - tokens

@@ -74,7 +74,7 @@ class ContinuousPredictor(SourceFirstPredictor):
                 and task.retrieval_tokens<self.limits.total_retrieval_tokens
                 and tokens+2*self.limits.output_tokens+256<=self.model.max_model_len)
         required=self.limits.require_search and task.rounds==0
-        output=self.limits.output_tokens
+        output=self._generation_limit()
         if required:
             output=min(output,self.model.max_model_len-tokens-self.limits.output_tokens-256)
             if output<32:

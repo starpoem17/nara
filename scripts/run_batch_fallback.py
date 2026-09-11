@@ -23,13 +23,17 @@ def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output-dir',required=True,type=Path)
     parser.add_argument('--limit',type=int,default=200,help='First N dev notices; fewer than200 is execution validation only')
+    parser.add_argument('--instant-output-tokens',type=int,default=512,
+                        help='Instant response and retry limit (default 512); thinking retains 2048')
     args=parser.parse_args()
     if not 1<=args.limit<=200:parser.error('--limit must be in1..200')
+    if not 1<=args.instant_output_tokens<=2048:parser.error('--instant-output-tokens must be in1..2048')
     folder=args.output_dir;folder.mkdir(parents=True,exist_ok=False);records=read_records('data/dev.jsonl')[:args.limit]
     table=json.loads(Path('data/항목표.json').read_text())['항목'];schema=json.loads(Path('data/정답스키마_디코딩.json').read_text())['properties']['판정']
     table,schema,_=configuration(table,schema,'groups12',True)
     dump(folder/'plan.json',{'schedule':'batch_barrier','max_requests':8,'groups':GROUPS,'thinking':[False]*4+[True],
-        'source_sha256':{p:hashlib.sha256(Path(p).read_bytes()).hexdigest() for p in ['scripts/run_batch_fallback.py','nara/batch_barrier.py','nara/continuous.py','nara/vllm_model.py','nara/hypothesis6.py','nara/compact_criteria.json','data/dev.jsonl']}})
+        'instant_output_tokens':args.instant_output_tokens,'output_tokens':2048,
+        'source_sha256':{p:hashlib.sha256(Path(p).read_bytes()).hexdigest() for p in ['scripts/run_batch_fallback.py','nara/inference.py','nara/batch_barrier.py','nara/continuous.py','nara/vllm_model.py','nara/hypothesis6.py','nara/compact_criteria.json','data/dev.jsonl']}})
     from nara.retrieval import BGEEncoder,LegalRetriever
     import vllm,torch
     tick=time.monotonic();retriever=LegalRetriever('model/legal_index',BGEEncoder('models/bge-m3',device='cuda'))
@@ -42,7 +46,7 @@ def main():
     simple={'type':'object','properties':{'answer':{'type':'integer'}},'required':['answer'],'additionalProperties':False}
     base.generate([Turn(str(i),[{'role':'user','content':'2+3을 계산하고 {"answer":5}로 답하라.'}],simple,512) for i in range(8)])
     assert base.llm.reset_prefix_cache()
-    stream=StreamingModel(base);limits=Limits(output_tokens=2048,batch_size=8)
+    stream=StreamingModel(base);limits=Limits(output_tokens=2048,batch_size=8,instant_output_tokens=args.instant_output_tokens)
     predictor=BatchedPredictor(stream,retriever,table,schema,limits=limits)
     tick=time.monotonic();out=predictor.predict(records,item_groups=GROUPS,thinking_groups=[False]*4+[True],cache_seed=True)
     elapsed=time.monotonic()-tick

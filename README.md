@@ -59,6 +59,10 @@ Thinking의 최초 전체 실행은 199/200 성공했고, 실패 1건을 출력 
 현재 혼합 5그룹 실험은 최대 8개 요청이 모두 끝난 뒤 다음 묶음을 처리합니다.
 Instant 4그룹은 thinking OFF, 나머지 6개 feature 그룹은 thinking ON/1,024토큰이며,
 v2·v3는 규칙으로 판정합니다.
+Instant 응답과 재시도 한도는 모두 512토큰입니다. 잘림·형식 오류 시 1회 재시도합니다.
+Thinking 그룹의 전체 출력 한도는 2,048토큰(thinking 최대 1,024)입니다.
+`--instant-output-tokens 2048`로 이전 instant 한도를 사용할 수 있습니다.
+이 설정은 아래 혼합 실행에 적용하며, `script.py`의 24항목 일괄 실행 기본값은 별도입니다.
 
 ```bash
 uv run --locked python scripts/run_batch_fallback.py --output-dir output/batch200
