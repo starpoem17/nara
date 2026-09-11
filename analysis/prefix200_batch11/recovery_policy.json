@@ -1,0 +1,9 @@
+{
+  "scope": "One whole-notice 1→11 retry for each failed notice, then one isolated retry per still-failed group",
+  "prompt_change": false,
+  "output_tokens": 2048,
+  "thinking": false,
+  "max_num_seqs": 11,
+  "internal_retries_per_predict": 1,
+  "source_sha256": "914269d418c2b40c2d2843ccad4028a337de2c79b15da20511207ee785a6a3a6"
+}

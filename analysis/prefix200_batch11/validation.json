@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "records": 200,
+  "judgments": 4800,
+  "same_prompts_schemas_groups": true,
+  "same_input_token_counts": true,
+  "same_rules": true,
+  "source_hashes_match": true,
+  "all_notices_first_1_then_11": true,
+  "trace_cache_token_totals_match": true,
+  "context_overflows": 0,
+  "csv_rows": 200,
+  "csv_columns": 49,
+  "evidence_invalid": 0
+}

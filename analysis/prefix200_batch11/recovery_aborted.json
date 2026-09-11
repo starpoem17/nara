@@ -1,0 +1,5 @@
+{
+  "reason": "Recovery helper compared JSON list with in-memory tuple; assertion failed after inference and before result writing. Original run artifacts unchanged.",
+  "inference_seconds": null,
+  "note": "Aborted helper overhead was not separately timed and is excluded from successful benchmark/recovery timing. Log retained."
+}

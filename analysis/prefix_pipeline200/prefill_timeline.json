@@ -1,0 +1,3358 @@
+[
+  {
+    "record_id": "PPS-DEV-01",
+    "reason": "startup",
+    "older_live_ids": [],
+    "seed_submit": 95114.624056996,
+    "prefill_scheduled": 95114.655324203,
+    "prefill_first_token": 95115.431198998,
+    "prior_live_last_token": null,
+    "prefill_starts_before_old_drained": false,
+    "prefill_overlaps_old_follower_decode": false,
+    "max_pair_overlap_seconds": 0,
+    "prefill_start_lead_seconds": null,
+    "prefill_finish_lead_seconds": null
+  },
+  {
+    "record_id": "PPS-DEV-02",
+    "reason": "startup",
+    "older_live_ids": [
+      "PPS-DEV-01"
+    ],
+    "seed_submit": 95114.624143649,
+    "prefill_scheduled": 95114.69574431,
+    "prefill_first_token": 95115.431198998,
+    "prior_live_last_token": 95117.861591892,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": false,
+    "max_pair_overlap_seconds": 0,
+    "prefill_start_lead_seconds": 3.165847582000424,
+    "prefill_finish_lead_seconds": 2.430392893991666
+  },
+  {
+    "record_id": "PPS-DEV-03",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-01",
+      "PPS-DEV-02"
+    ],
+    "seed_submit": 95116.338183074,
+    "prefill_scheduled": 95116.371938232,
+    "prefill_first_token": 95117.283969343,
+    "prior_live_last_token": 95117.96892505,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.912031111001852,
+    "prefill_start_lead_seconds": 1.5969868179963669,
+    "prefill_finish_lead_seconds": 0.6849557069945149
+  },
+  {
+    "record_id": "PPS-DEV-04",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-02",
+      "PPS-DEV-03"
+    ],
+    "seed_submit": 95117.965720637,
+    "prefill_scheduled": 95118.00437801,
+    "prefill_first_token": 95119.202340704,
+    "prior_live_last_token": 95121.395569265,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 1.1979626940010348,
+    "prefill_start_lead_seconds": 3.391191255010199,
+    "prefill_finish_lead_seconds": 2.193228561009164
+  },
+  {
+    "record_id": "PPS-DEV-05",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-03",
+      "PPS-DEV-04"
+    ],
+    "seed_submit": 95119.705117102,
+    "prefill_scheduled": 95119.725082007,
+    "prefill_first_token": 95120.296440463,
+    "prior_live_last_token": 95121.72888668,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.5713584559998708,
+    "prefill_start_lead_seconds": 2.003804672989645,
+    "prefill_finish_lead_seconds": 1.4324462169897743
+  },
+  {
+    "record_id": "PPS-DEV-06",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-05"
+    ],
+    "seed_submit": 95121.73314538,
+    "prefill_scheduled": 95121.771593598,
+    "prefill_first_token": 95122.855740819,
+    "prior_live_last_token": 95122.98658021,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 1.0841472210013308,
+    "prefill_start_lead_seconds": 1.2149866120016668,
+    "prefill_finish_lead_seconds": 0.13083939100033604
+  },
+  {
+    "record_id": "PPS-DEV-07",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-06"
+    ],
+    "seed_submit": 95123.456505813,
+    "prefill_scheduled": 95123.468769328,
+    "prefill_first_token": 95124.00826434,
+    "prior_live_last_token": 95125.115170104,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": false,
+    "max_pair_overlap_seconds": 0,
+    "prefill_start_lead_seconds": 1.6464007760077948,
+    "prefill_finish_lead_seconds": 1.106905764012481
+  },
+  {
+    "record_id": "PPS-DEV-08",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-07"
+    ],
+    "seed_submit": 95125.119960647,
+    "prefill_scheduled": 95125.157770771,
+    "prefill_first_token": 95126.60362197,
+    "prior_live_last_token": 95127.546097051,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 1.4458511990087572,
+    "prefill_start_lead_seconds": 2.3883262800081866,
+    "prefill_finish_lead_seconds": 0.9424750809994293
+  },
+  {
+    "record_id": "PPS-DEV-09",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-07",
+      "PPS-DEV-08"
+    ],
+    "seed_submit": 95127.060709033,
+    "prefill_scheduled": 95127.072304147,
+    "prefill_first_token": 95127.369029092,
+    "prior_live_last_token": 95129.07503705,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.29672494500118773,
+    "prefill_start_lead_seconds": 2.0027329029981047,
+    "prefill_finish_lead_seconds": 1.706007957996917
+  },
+  {
+    "record_id": "PPS-DEV-10",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-08",
+      "PPS-DEV-09"
+    ],
+    "seed_submit": 95128.072641894,
+    "prefill_scheduled": 95128.107293604,
+    "prefill_first_token": 95128.666994736,
+    "prior_live_last_token": 95133.214975151,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.5597011320060119,
+    "prefill_start_lead_seconds": 5.107681547000539,
+    "prefill_finish_lead_seconds": 4.547980414994527
+  },
+  {
+    "record_id": "PPS-DEV-11",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-09",
+      "PPS-DEV-10"
+    ],
+    "seed_submit": 95129.281605185,
+    "prefill_scheduled": 95129.325876303,
+    "prefill_first_token": 95131.490767208,
+    "prior_live_last_token": 95135.459826575,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 2.164890904998174,
+    "prefill_start_lead_seconds": 6.133950271992944,
+    "prefill_finish_lead_seconds": 3.9690593669947702
+  },
+  {
+    "record_id": "PPS-DEV-12",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-10"
+    ],
+    "seed_submit": 95133.388466085,
+    "prefill_scheduled": 95133.412613637,
+    "prefill_first_token": 95133.79874201,
+    "prior_live_last_token": 95135.459826575,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.386128372992971,
+    "prefill_start_lead_seconds": 2.047212937992299,
+    "prefill_finish_lead_seconds": 1.661084564999328
+  },
+  {
+    "record_id": "PPS-DEV-13",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-10",
+      "PPS-DEV-12"
+    ],
+    "seed_submit": 95134.187228008,
+    "prefill_scheduled": 95134.202185652,
+    "prefill_first_token": 95134.674582001,
+    "prior_live_last_token": 95135.982497902,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.4723963489959715,
+    "prefill_start_lead_seconds": 1.7803122500044992,
+    "prefill_finish_lead_seconds": 1.3079159010085277
+  },
+  {
+    "record_id": "PPS-DEV-14",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-12",
+      "PPS-DEV-13"
+    ],
+    "seed_submit": 95135.463576316,
+    "prefill_scheduled": 95135.483597488,
+    "prefill_first_token": 95135.795556977,
+    "prior_live_last_token": 95137.609306375,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.31195948900131043,
+    "prefill_start_lead_seconds": 2.1257088870042935,
+    "prefill_finish_lead_seconds": 1.813749398002983
+  },
+  {
+    "record_id": "PPS-DEV-15",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-13",
+      "PPS-DEV-14"
+    ],
+    "seed_submit": 95136.23536623,
+    "prefill_scheduled": 95136.265750703,
+    "prefill_first_token": 95137.443982692,
+    "prior_live_last_token": 95138.828775991,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 1.1782319890044164,
+    "prefill_start_lead_seconds": 2.5630252880073385,
+    "prefill_finish_lead_seconds": 1.3847932990029221
+  },
+  {
+    "record_id": "PPS-DEV-16",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-14",
+      "PPS-DEV-15"
+    ],
+    "seed_submit": 95138.093888281,
+    "prefill_scheduled": 95138.114172518,
+    "prefill_first_token": 95138.465882641,
+    "prior_live_last_token": 95139.799790891,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.3517101229954278,
+    "prefill_start_lead_seconds": 1.685618372997851,
+    "prefill_finish_lead_seconds": 1.3339082500024233
+  },
+  {
+    "record_id": "PPS-DEV-17",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-16"
+    ],
+    "seed_submit": 95139.806836206,
+    "prefill_scheduled": 95139.850785436,
+    "prefill_first_token": 95141.587287734,
+    "prior_live_last_token": 95145.227427293,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 1.7365022979938658,
+    "prefill_start_lead_seconds": 5.37664185698668,
+    "prefill_finish_lead_seconds": 3.6401395589928143
+  },
+  {
+    "record_id": "PPS-DEV-18",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-16",
+      "PPS-DEV-17"
+    ],
+    "seed_submit": 95142.017851271,
+    "prefill_scheduled": 95142.026639412,
+    "prefill_first_token": 95142.233489137,
+    "prior_live_last_token": 95145.227427293,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.20684972500021104,
+    "prefill_start_lead_seconds": 3.2007878809963586,
+    "prefill_finish_lead_seconds": 2.9939381559961475
+  },
+  {
+    "record_id": "PPS-DEV-19",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-16",
+      "PPS-DEV-18"
+    ],
+    "seed_submit": 95143.514660764,
+    "prefill_scheduled": 95143.540891745,
+    "prefill_first_token": 95144.124528797,
+    "prior_live_last_token": 95145.227427293,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.583637051997357,
+    "prefill_start_lead_seconds": 1.6865355479967548,
+    "prefill_finish_lead_seconds": 1.1028984959993977
+  },
+  {
+    "record_id": "PPS-DEV-20",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-16",
+      "PPS-DEV-19"
+    ],
+    "seed_submit": 95144.552946608,
+    "prefill_scheduled": 95144.568604021,
+    "prefill_first_token": 95145.080581832,
+    "prior_live_last_token": 95146.29768409,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.511977810994722,
+    "prefill_start_lead_seconds": 1.7290800689952448,
+    "prefill_finish_lead_seconds": 1.2171022580005229
+  },
+  {
+    "record_id": "PPS-DEV-21",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-19",
+      "PPS-DEV-20"
+    ],
+    "seed_submit": 95145.604880616,
+    "prefill_scheduled": 95145.623057951,
+    "prefill_first_token": 95145.840377667,
+    "prior_live_last_token": 95147.383427247,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.21731971600092947,
+    "prefill_start_lead_seconds": 1.7603692959964974,
+    "prefill_finish_lead_seconds": 1.543049579995568
+  },
+  {
+    "record_id": "PPS-DEV-22",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-20",
+      "PPS-DEV-21"
+    ],
+    "seed_submit": 95146.451234844,
+    "prefill_scheduled": 95146.491949906,
+    "prefill_first_token": 95147.016192733,
+    "prior_live_last_token": 95148.399102875,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.524242826999398,
+    "prefill_start_lead_seconds": 1.9071529689972522,
+    "prefill_finish_lead_seconds": 1.3829101419978542
+  },
+  {
+    "record_id": "PPS-DEV-23",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-21",
+      "PPS-DEV-22"
+    ],
+    "seed_submit": 95147.484588216,
+    "prefill_scheduled": 95147.502211997,
+    "prefill_first_token": 95148.009998634,
+    "prior_live_last_token": 95149.348767814,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.5077866370120319,
+    "prefill_start_lead_seconds": 1.846555816999171,
+    "prefill_finish_lead_seconds": 1.338769179987139
+  },
+  {
+    "record_id": "PPS-DEV-24",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-22",
+      "PPS-DEV-23"
+    ],
+    "seed_submit": 95148.606274296,
+    "prefill_scheduled": 95148.651460869,
+    "prefill_first_token": 95148.993121351,
+    "prior_live_last_token": 95151.466347729,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.3416604819940403,
+    "prefill_start_lead_seconds": 2.814886859996477,
+    "prefill_finish_lead_seconds": 2.473226378002437
+  },
+  {
+    "record_id": "PPS-DEV-25",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-23",
+      "PPS-DEV-24"
+    ],
+    "seed_submit": 95149.557554019,
+    "prefill_scheduled": 95149.578795962,
+    "prefill_first_token": 95150.122224315,
+    "prior_live_last_token": 95151.466347729,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.5434283529903041,
+    "prefill_start_lead_seconds": 1.887551766994875,
+    "prefill_finish_lead_seconds": 1.3441234140045708
+  },
+  {
+    "record_id": "PPS-DEV-26",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-25"
+    ],
+    "seed_submit": 95151.940944694,
+    "prefill_scheduled": 95151.960438351,
+    "prefill_first_token": 95152.67800159,
+    "prior_live_last_token": 95153.720721339,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": false,
+    "max_pair_overlap_seconds": 0,
+    "prefill_start_lead_seconds": 1.7602829880052013,
+    "prefill_finish_lead_seconds": 1.04271974900621
+  },
+  {
+    "record_id": "PPS-DEV-27",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-26"
+    ],
+    "seed_submit": 95153.724023485,
+    "prefill_scheduled": 95153.763152406,
+    "prefill_first_token": 95155.764122089,
+    "prior_live_last_token": 95156.176539879,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 2.0009696829947643,
+    "prefill_start_lead_seconds": 2.4133874730032403,
+    "prefill_finish_lead_seconds": 0.412417790008476
+  },
+  {
+    "record_id": "PPS-DEV-28",
+    "reason": "empty_pipeline",
+    "older_live_ids": [],
+    "seed_submit": 95157.468242877,
+    "prefill_scheduled": 95157.511248698,
+    "prefill_first_token": 95159.407139532,
+    "prior_live_last_token": null,
+    "prefill_starts_before_old_drained": false,
+    "prefill_overlaps_old_follower_decode": false,
+    "max_pair_overlap_seconds": 0,
+    "prefill_start_lead_seconds": null,
+    "prefill_finish_lead_seconds": null
+  },
+  {
+    "record_id": "PPS-DEV-29",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-28"
+    ],
+    "seed_submit": 95159.777093531,
+    "prefill_scheduled": 95159.784293508,
+    "prefill_first_token": 95159.914260762,
+    "prior_live_last_token": 95161.829728176,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": false,
+    "max_pair_overlap_seconds": 0,
+    "prefill_start_lead_seconds": 2.0454346680053277,
+    "prefill_finish_lead_seconds": 1.9154674140008865
+  },
+  {
+    "record_id": "PPS-DEV-30",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-28",
+      "PPS-DEV-29"
+    ],
+    "seed_submit": 95160.647810612,
+    "prefill_scheduled": 95160.679356204,
+    "prefill_first_token": 95161.408908776,
+    "prior_live_last_token": 95162.661582497,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.7295525719964644,
+    "prefill_start_lead_seconds": 1.9822262930101715,
+    "prefill_finish_lead_seconds": 1.252673721013707
+  },
+  {
+    "record_id": "PPS-DEV-31",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-29",
+      "PPS-DEV-30"
+    ],
+    "seed_submit": 95161.944135821,
+    "prefill_scheduled": 95161.953481343,
+    "prefill_first_token": 95162.208520771,
+    "prior_live_last_token": 95163.944371833,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.25503942801151425,
+    "prefill_start_lead_seconds": 1.9908904900075868,
+    "prefill_finish_lead_seconds": 1.7358510619960725
+  },
+  {
+    "record_id": "PPS-DEV-32",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-30",
+      "PPS-DEV-31"
+    ],
+    "seed_submit": 95162.848670097,
+    "prefill_scheduled": 95162.881595781,
+    "prefill_first_token": 95163.566636752,
+    "prior_live_last_token": 95164.723380939,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.6850409710023087,
+    "prefill_start_lead_seconds": 1.841785158001585,
+    "prefill_finish_lead_seconds": 1.1567441869992763
+  },
+  {
+    "record_id": "PPS-DEV-033",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-31",
+      "PPS-DEV-32"
+    ],
+    "seed_submit": 95164.049455307,
+    "prefill_scheduled": 95164.057277055,
+    "prefill_first_token": 95164.262572507,
+    "prior_live_last_token": 95166.117225417,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.20529545198951382,
+    "prefill_start_lead_seconds": 2.059948361988063,
+    "prefill_finish_lead_seconds": 1.8546529099985491
+  },
+  {
+    "record_id": "PPS-DEV-034",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-32",
+      "PPS-DEV-033"
+    ],
+    "seed_submit": 95164.900102963,
+    "prefill_scheduled": 95164.946537199,
+    "prefill_first_token": 95165.767185598,
+    "prior_live_last_token": 95166.876232537,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.820648399007041,
+    "prefill_start_lead_seconds": 1.929695338010788,
+    "prefill_finish_lead_seconds": 1.109046939003747
+  },
+  {
+    "record_id": "PPS-DEV-035",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-033",
+      "PPS-DEV-034"
+    ],
+    "seed_submit": 95166.243784144,
+    "prefill_scheduled": 95166.252217085,
+    "prefill_first_token": 95166.37086227,
+    "prior_live_last_token": 95169.879682885,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.11864518500806298,
+    "prefill_start_lead_seconds": 3.627465800003847,
+    "prefill_finish_lead_seconds": 3.508820614995784
+  },
+  {
+    "record_id": "PPS-DEV-036",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-034",
+      "PPS-DEV-035"
+    ],
+    "seed_submit": 95167.148572967,
+    "prefill_scheduled": 95167.169939425,
+    "prefill_first_token": 95167.350911593,
+    "prior_live_last_token": 95169.879682885,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.180972168003791,
+    "prefill_start_lead_seconds": 2.709743460000027,
+    "prefill_finish_lead_seconds": 2.528771291996236
+  },
+  {
+    "record_id": "PPS-DEV-037",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-034",
+      "PPS-DEV-036"
+    ],
+    "seed_submit": 95168.634697806,
+    "prefill_scheduled": 95168.663259631,
+    "prefill_first_token": 95169.010903051,
+    "prior_live_last_token": 95169.879682885,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.3476434200129006,
+    "prefill_start_lead_seconds": 1.216423254008987,
+    "prefill_finish_lead_seconds": 0.8687798339960864
+  },
+  {
+    "record_id": "PPS-DEV-038",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-034",
+      "PPS-DEV-037"
+    ],
+    "seed_submit": 95169.433636198,
+    "prefill_scheduled": 95169.449527853,
+    "prefill_first_token": 95169.716447281,
+    "prior_live_last_token": 95172.3677057,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.2669194280024385,
+    "prefill_start_lead_seconds": 2.9181778470083373,
+    "prefill_finish_lead_seconds": 2.6512584190058988
+  },
+  {
+    "record_id": "PPS-DEV-039",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-037",
+      "PPS-DEV-038"
+    ],
+    "seed_submit": 95170.317050346,
+    "prefill_scheduled": 95170.350031845,
+    "prefill_first_token": 95170.691268305,
+    "prior_live_last_token": 95172.3677057,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.3412364600080764,
+    "prefill_start_lead_seconds": 2.0176738550071605,
+    "prefill_finish_lead_seconds": 1.676437394999084
+  },
+  {
+    "record_id": "PPS-DEV-040",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-037",
+      "PPS-DEV-039"
+    ],
+    "seed_submit": 95171.656430585,
+    "prefill_scheduled": 95171.673815075,
+    "prefill_first_token": 95171.824283024,
+    "prior_live_last_token": 95172.38323383,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.15046794900263194,
+    "prefill_start_lead_seconds": 0.7094187549955677,
+    "prefill_finish_lead_seconds": 0.5589508059929358
+  },
+  {
+    "record_id": "PPS-DEV-041",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-039",
+      "PPS-DEV-040"
+    ],
+    "seed_submit": 95172.380925788,
+    "prefill_scheduled": 95172.393668034,
+    "prefill_first_token": 95172.509263699,
+    "prior_live_last_token": 95173.549267708,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.11559566500363871,
+    "prefill_start_lead_seconds": 1.1555996740062255,
+    "prefill_finish_lead_seconds": 1.0400040090025868
+  },
+  {
+    "record_id": "PPS-DEV-042",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-040",
+      "PPS-DEV-041"
+    ],
+    "seed_submit": 95172.933737587,
+    "prefill_scheduled": 95172.950578823,
+    "prefill_first_token": 95173.177649893,
+    "prior_live_last_token": 95174.343988105,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.22707106999587268,
+    "prefill_start_lead_seconds": 1.3934092819981743,
+    "prefill_finish_lead_seconds": 1.1663382120023016
+  },
+  {
+    "record_id": "PPS-DEV-043",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-041",
+      "PPS-DEV-042"
+    ],
+    "seed_submit": 95173.728826239,
+    "prefill_scheduled": 95173.768296093,
+    "prefill_first_token": 95173.999191203,
+    "prior_live_last_token": 95176.0685556,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.23089510999852791,
+    "prefill_start_lead_seconds": 2.300259506999282,
+    "prefill_finish_lead_seconds": 2.0693643970007543
+  },
+  {
+    "record_id": "PPS-DEV-044",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-042",
+      "PPS-DEV-043"
+    ],
+    "seed_submit": 95174.51338712,
+    "prefill_scheduled": 95174.555160627,
+    "prefill_first_token": 95175.717648067,
+    "prior_live_last_token": 95177.449303667,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 1.1624874400004046,
+    "prefill_start_lead_seconds": 2.8941430400009267,
+    "prefill_finish_lead_seconds": 1.731655600000522
+  },
+  {
+    "record_id": "PPS-DEV-045",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-043",
+      "PPS-DEV-044"
+    ],
+    "seed_submit": 95176.226843364,
+    "prefill_scheduled": 95176.244916843,
+    "prefill_first_token": 95176.712206764,
+    "prior_live_last_token": 95178.084797349,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.46728992099815514,
+    "prefill_start_lead_seconds": 1.8398805059987353,
+    "prefill_finish_lead_seconds": 1.3725905850005802
+  },
+  {
+    "record_id": "PPS-DEV-046",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-044",
+      "PPS-DEV-045"
+    ],
+    "seed_submit": 95177.468136788,
+    "prefill_scheduled": 95177.503862822,
+    "prefill_first_token": 95177.705760205,
+    "prior_live_last_token": 95178.773978182,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.20189738299814053,
+    "prefill_start_lead_seconds": 1.2701153599919053,
+    "prefill_finish_lead_seconds": 1.0682179769937648
+  },
+  {
+    "record_id": "PPS-DEV-047",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-045",
+      "PPS-DEV-046"
+    ],
+    "seed_submit": 95178.20654322,
+    "prefill_scheduled": 95178.214451452,
+    "prefill_first_token": 95178.371131234,
+    "prior_live_last_token": 95179.479872178,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.1566797819978092,
+    "prefill_start_lead_seconds": 1.2654207259911345,
+    "prefill_finish_lead_seconds": 1.1087409439933253
+  },
+  {
+    "record_id": "PPS-DEV-048",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-046",
+      "PPS-DEV-047"
+    ],
+    "seed_submit": 95178.902992127,
+    "prefill_scheduled": 95178.919442917,
+    "prefill_first_token": 95179.068799009,
+    "prior_live_last_token": 95180.400488491,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.149356091991649,
+    "prefill_start_lead_seconds": 1.4810455739934696,
+    "prefill_finish_lead_seconds": 1.3316894820018206
+  },
+  {
+    "record_id": "PPS-DEV-049",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-048"
+    ],
+    "seed_submit": 95180.528186355,
+    "prefill_scheduled": 95180.550435467,
+    "prefill_first_token": 95180.848996546,
+    "prior_live_last_token": 95183.106259975,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": false,
+    "max_pair_overlap_seconds": 0,
+    "prefill_start_lead_seconds": 2.5558245080028428,
+    "prefill_finish_lead_seconds": 2.2572634289972484
+  },
+  {
+    "record_id": "PPS-DEV-050",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-048",
+      "PPS-DEV-049"
+    ],
+    "seed_submit": 95181.506964525,
+    "prefill_scheduled": 95181.531124961,
+    "prefill_first_token": 95181.961464438,
+    "prior_live_last_token": 95183.106259975,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.4303394770104205,
+    "prefill_start_lead_seconds": 1.5751350140053546,
+    "prefill_finish_lead_seconds": 1.144795536994934
+  },
+  {
+    "record_id": "PPS-DEV-051",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-050"
+    ],
+    "seed_submit": 95183.363503848,
+    "prefill_scheduled": 95183.387115038,
+    "prefill_first_token": 95183.656127591,
+    "prior_live_last_token": 95186.035042528,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": false,
+    "max_pair_overlap_seconds": 0,
+    "prefill_start_lead_seconds": 2.647927490004804,
+    "prefill_finish_lead_seconds": 2.378914936998626
+  },
+  {
+    "record_id": "PPS-DEV-052",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-050",
+      "PPS-DEV-051"
+    ],
+    "seed_submit": 95184.52028833,
+    "prefill_scheduled": 95184.548003388,
+    "prefill_first_token": 95185.008683795,
+    "prior_live_last_token": 95187.233832945,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.4606804069917416,
+    "prefill_start_lead_seconds": 2.6858295569982147,
+    "prefill_finish_lead_seconds": 2.225149150006473
+  },
+  {
+    "record_id": "PPS-DEV-053",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-051",
+      "PPS-DEV-052"
+    ],
+    "seed_submit": 95186.03899454,
+    "prefill_scheduled": 95186.059081876,
+    "prefill_first_token": 95186.410098674,
+    "prior_live_last_token": 95187.932510191,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.3510167979984544,
+    "prefill_start_lead_seconds": 1.8734283150115516,
+    "prefill_finish_lead_seconds": 1.5224115170130972
+  },
+  {
+    "record_id": "PPS-DEV-054",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-052",
+      "PPS-DEV-053"
+    ],
+    "seed_submit": 95187.354117691,
+    "prefill_scheduled": 95187.361754951,
+    "prefill_first_token": 95187.480534298,
+    "prior_live_last_token": 95188.81157978,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.11877934700169135,
+    "prefill_start_lead_seconds": 1.4498248290037736,
+    "prefill_finish_lead_seconds": 1.3310454820020823
+  },
+  {
+    "record_id": "PPS-DEV-055",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-053",
+      "PPS-DEV-054"
+    ],
+    "seed_submit": 95188.043720596,
+    "prefill_scheduled": 95188.091076149,
+    "prefill_first_token": 95188.433273717,
+    "prior_live_last_token": 95189.728462738,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.342197568010306,
+    "prefill_start_lead_seconds": 1.637386589005473,
+    "prefill_finish_lead_seconds": 1.295189020995167
+  },
+  {
+    "record_id": "PPS-DEV-056",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-054",
+      "PPS-DEV-055"
+    ],
+    "seed_submit": 95188.911340907,
+    "prefill_scheduled": 95188.929409256,
+    "prefill_first_token": 95189.260201539,
+    "prior_live_last_token": 95190.413671297,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.3307922829990275,
+    "prefill_start_lead_seconds": 1.4842620410054224,
+    "prefill_finish_lead_seconds": 1.1534697580063948
+  },
+  {
+    "record_id": "PPS-DEV-057",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-055",
+      "PPS-DEV-056"
+    ],
+    "seed_submit": 95189.880535452,
+    "prefill_scheduled": 95189.903555538,
+    "prefill_first_token": 95190.066151163,
+    "prior_live_last_token": 95191.181207911,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.16259562500636093,
+    "prefill_start_lead_seconds": 1.2776523729990004,
+    "prefill_finish_lead_seconds": 1.1150567479926394
+  },
+  {
+    "record_id": "PPS-DEV-058",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-056",
+      "PPS-DEV-057"
+    ],
+    "seed_submit": 95190.562919034,
+    "prefill_scheduled": 95190.585168858,
+    "prefill_first_token": 95190.8425882,
+    "prior_live_last_token": 95193.076274472,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.2574193420005031,
+    "prefill_start_lead_seconds": 2.491105613997206,
+    "prefill_finish_lead_seconds": 2.233686271996703
+  },
+  {
+    "record_id": "PPS-DEV-059",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-057",
+      "PPS-DEV-058"
+    ],
+    "seed_submit": 95191.368851166,
+    "prefill_scheduled": 95191.408063894,
+    "prefill_first_token": 95191.584906904,
+    "prior_live_last_token": 95193.076274472,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.17684300999098923,
+    "prefill_start_lead_seconds": 1.6682105779909762,
+    "prefill_finish_lead_seconds": 1.491367567999987
+  },
+  {
+    "record_id": "PPS-DEV-060",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-057",
+      "PPS-DEV-059"
+    ],
+    "seed_submit": 95192.450610389,
+    "prefill_scheduled": 95192.457963985,
+    "prefill_first_token": 95192.57096714,
+    "prior_live_last_token": 95193.619163036,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.11300315499829594,
+    "prefill_start_lead_seconds": 1.1611990509991301,
+    "prefill_finish_lead_seconds": 1.0481958960008342
+  },
+  {
+    "record_id": "PPS-DEV-061",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-059",
+      "PPS-DEV-060"
+    ],
+    "seed_submit": 95193.141607442,
+    "prefill_scheduled": 95193.173176598,
+    "prefill_first_token": 95193.273392021,
+    "prior_live_last_token": 95195.26969712,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.1002154230081942,
+    "prefill_start_lead_seconds": 2.0965205220127245,
+    "prefill_finish_lead_seconds": 1.9963050990045303
+  },
+  {
+    "record_id": "PPS-DEV-062",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-060",
+      "PPS-DEV-061"
+    ],
+    "seed_submit": 95193.761694098,
+    "prefill_scheduled": 95193.787897126,
+    "prefill_first_token": 95193.917797081,
+    "prior_live_last_token": 95197.81519614,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.12989995499083307,
+    "prefill_start_lead_seconds": 4.027299013992888,
+    "prefill_finish_lead_seconds": 3.897399059002055
+  },
+  {
+    "record_id": "PPS-DEV-063",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-061",
+      "PPS-DEV-062"
+    ],
+    "seed_submit": 95195.297526756,
+    "prefill_scheduled": 95195.321063415,
+    "prefill_first_token": 95196.105294987,
+    "prior_live_last_token": 95197.81519614,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.7842315720045008,
+    "prefill_start_lead_seconds": 2.494132724998053,
+    "prefill_finish_lead_seconds": 1.7099011529935524
+  },
+  {
+    "record_id": "PPS-DEV-064",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-061",
+      "PPS-DEV-063"
+    ],
+    "seed_submit": 95197.2109,
+    "prefill_scheduled": 95197.230361295,
+    "prefill_first_token": 95197.538598457,
+    "prior_live_last_token": 95197.918865735,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.30823716199665796,
+    "prefill_start_lead_seconds": 0.6885044399969047,
+    "prefill_finish_lead_seconds": 0.38026727800024673
+  },
+  {
+    "record_id": "PPS-DEV-065",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-064"
+    ],
+    "seed_submit": 95197.935246432,
+    "prefill_scheduled": 95197.941927901,
+    "prefill_first_token": 95198.072725218,
+    "prior_live_last_token": 95200.657604368,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": false,
+    "max_pair_overlap_seconds": 0,
+    "prefill_start_lead_seconds": 2.7156764669925906,
+    "prefill_finish_lead_seconds": 2.584879150002962
+  },
+  {
+    "record_id": "PPS-DEV-066",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-064",
+      "PPS-DEV-065"
+    ],
+    "seed_submit": 95198.622117132,
+    "prefill_scheduled": 95198.682549442,
+    "prefill_first_token": 95200.265407265,
+    "prior_live_last_token": 95201.185213811,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 1.5828578229993582,
+    "prefill_start_lead_seconds": 2.502664368992555,
+    "prefill_finish_lead_seconds": 0.9198065459931968
+  },
+  {
+    "record_id": "PPS-DEV-067",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-066"
+    ],
+    "seed_submit": 95202.445290225,
+    "prefill_scheduled": 95202.454581836,
+    "prefill_first_token": 95202.66143992,
+    "prior_live_last_token": 95232.270615066,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": false,
+    "max_pair_overlap_seconds": 0,
+    "prefill_start_lead_seconds": 29.816033229988534,
+    "prefill_finish_lead_seconds": 29.609175145989866
+  },
+  {
+    "record_id": "PPS-DEV-068",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-066",
+      "PPS-DEV-067"
+    ],
+    "seed_submit": 95203.430117911,
+    "prefill_scheduled": 95203.447249404,
+    "prefill_first_token": 95203.662432295,
+    "prior_live_last_token": 95232.270615066,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.2151828909991309,
+    "prefill_start_lead_seconds": 28.82336566199956,
+    "prefill_finish_lead_seconds": 28.60818277100043
+  },
+  {
+    "record_id": "PPS-DEV-069",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-066",
+      "PPS-DEV-068"
+    ],
+    "seed_submit": 95204.773139945,
+    "prefill_scheduled": 95204.807782596,
+    "prefill_first_token": 95205.294081644,
+    "prior_live_last_token": 95232.270615066,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.48629904798872303,
+    "prefill_start_lead_seconds": 27.462832469987916,
+    "prefill_finish_lead_seconds": 26.976533421999193
+  },
+  {
+    "record_id": "PPS-DEV-070",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-066",
+      "PPS-DEV-069"
+    ],
+    "seed_submit": 95205.892554864,
+    "prefill_scheduled": 95205.919908301,
+    "prefill_first_token": 95206.043939189,
+    "prior_live_last_token": 95232.270615066,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.12403088799328543,
+    "prefill_start_lead_seconds": 26.350706764991628,
+    "prefill_finish_lead_seconds": 26.226675876998343
+  },
+  {
+    "record_id": "PPS-DEV-071",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-066",
+      "PPS-DEV-070"
+    ],
+    "seed_submit": 95207.118558721,
+    "prefill_scheduled": 95207.138595592,
+    "prefill_first_token": 95207.295025921,
+    "prior_live_last_token": 95232.270615066,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.15643032900698017,
+    "prefill_start_lead_seconds": 25.13201947399648,
+    "prefill_finish_lead_seconds": 24.9755891449895
+  },
+  {
+    "record_id": "PPS-DEV-072",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-066",
+      "PPS-DEV-071"
+    ],
+    "seed_submit": 95209.462725882,
+    "prefill_scheduled": 95209.471287085,
+    "prefill_first_token": 95209.647670978,
+    "prior_live_last_token": 95245.219890096,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.176383892990998,
+    "prefill_start_lead_seconds": 35.74860301100125,
+    "prefill_finish_lead_seconds": 35.57221911801025
+  },
+  {
+    "record_id": "PPS-DEV-073",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-066",
+      "PPS-DEV-071"
+    ],
+    "seed_submit": 95211.389875261,
+    "prefill_scheduled": 95211.420273408,
+    "prefill_first_token": 95211.81002555,
+    "prior_live_last_token": 95245.219890096,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.38975214200036135,
+    "prefill_start_lead_seconds": 33.79961668800388,
+    "prefill_finish_lead_seconds": 33.40986454600352
+  },
+  {
+    "record_id": "PPS-DEV-074",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-066",
+      "PPS-DEV-071"
+    ],
+    "seed_submit": 95213.365758488,
+    "prefill_scheduled": 95213.392673448,
+    "prefill_first_token": 95213.62684363,
+    "prior_live_last_token": 95245.219890096,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.23417018199688755,
+    "prefill_start_lead_seconds": 31.827216648001922,
+    "prefill_finish_lead_seconds": 31.593046466005035
+  },
+  {
+    "record_id": "PPS-DEV-075",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-066",
+      "PPS-DEV-071"
+    ],
+    "seed_submit": 95215.179430453,
+    "prefill_scheduled": 95215.207472609,
+    "prefill_first_token": 95215.409266663,
+    "prior_live_last_token": 95245.219890096,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.20179405399539974,
+    "prefill_start_lead_seconds": 30.012417486999766,
+    "prefill_finish_lead_seconds": 29.810623433004366
+  },
+  {
+    "record_id": "PPS-DEV-076",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-066",
+      "PPS-DEV-071"
+    ],
+    "seed_submit": 95216.940077727,
+    "prefill_scheduled": 95216.977893971,
+    "prefill_first_token": 95217.996656769,
+    "prior_live_last_token": 95245.219890096,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 1.0187627980049,
+    "prefill_start_lead_seconds": 28.24199612501252,
+    "prefill_finish_lead_seconds": 27.22323332700762
+  },
+  {
+    "record_id": "PPS-DEV-077",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-066",
+      "PPS-DEV-071"
+    ],
+    "seed_submit": 95219.761681444,
+    "prefill_scheduled": 95219.786065652,
+    "prefill_first_token": 95219.878548824,
+    "prior_live_last_token": 95245.219890096,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.09248317198944278,
+    "prefill_start_lead_seconds": 25.433824444000493,
+    "prefill_finish_lead_seconds": 25.34134127201105
+  },
+  {
+    "record_id": "PPS-DEV-078",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-066",
+      "PPS-DEV-071"
+    ],
+    "seed_submit": 95221.527060936,
+    "prefill_scheduled": 95221.554788317,
+    "prefill_first_token": 95221.776194601,
+    "prior_live_last_token": 95245.219890096,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.22140628400666174,
+    "prefill_start_lead_seconds": 23.66510177901364,
+    "prefill_finish_lead_seconds": 23.443695495006978
+  },
+  {
+    "record_id": "PPS-DEV-079",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-066",
+      "PPS-DEV-071"
+    ],
+    "seed_submit": 95223.326828398,
+    "prefill_scheduled": 95223.354708769,
+    "prefill_first_token": 95223.556282957,
+    "prior_live_last_token": 95245.219890096,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.20157418800226878,
+    "prefill_start_lead_seconds": 21.86518132701167,
+    "prefill_finish_lead_seconds": 21.6636071390094
+  },
+  {
+    "record_id": "PPS-DEV-080",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-066",
+      "PPS-DEV-071"
+    ],
+    "seed_submit": 95225.112688536,
+    "prefill_scheduled": 95225.138928833,
+    "prefill_first_token": 95225.266731883,
+    "prior_live_last_token": 95245.219890096,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.12780305001069792,
+    "prefill_start_lead_seconds": 20.080961263010977,
+    "prefill_finish_lead_seconds": 19.95315821300028
+  },
+  {
+    "record_id": "PPS-DEV-081",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-071"
+    ],
+    "seed_submit": 95232.275833084,
+    "prefill_scheduled": 95232.314686354,
+    "prefill_first_token": 95233.802935235,
+    "prior_live_last_token": 95245.219890096,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 1.4882488809962524,
+    "prefill_start_lead_seconds": 12.905203742004232,
+    "prefill_finish_lead_seconds": 11.41695486100798
+  },
+  {
+    "record_id": "PPS-DEV-082",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-071"
+    ],
+    "seed_submit": 95235.381578307,
+    "prefill_scheduled": 95235.427126791,
+    "prefill_first_token": 95237.344293789,
+    "prior_live_last_token": 95245.219890096,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 1.917166998013272,
+    "prefill_start_lead_seconds": 9.792763305013068,
+    "prefill_finish_lead_seconds": 7.875596306999796
+  },
+  {
+    "record_id": "PPS-DEV-083",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-071",
+      "PPS-DEV-082"
+    ],
+    "seed_submit": 95237.762471454,
+    "prefill_scheduled": 95237.770889737,
+    "prefill_first_token": 95238.020191418,
+    "prior_live_last_token": 95245.219890096,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.24930168100399897,
+    "prefill_start_lead_seconds": 7.4490003590035485,
+    "prefill_finish_lead_seconds": 7.1996986779995495
+  },
+  {
+    "record_id": "PPS-DEV-084",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-071",
+      "PPS-DEV-083"
+    ],
+    "seed_submit": 95239.289677939,
+    "prefill_scheduled": 95239.31394724,
+    "prefill_first_token": 95239.589295754,
+    "prior_live_last_token": 95245.219890096,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.27534851399832405,
+    "prefill_start_lead_seconds": 5.905942855999456,
+    "prefill_finish_lead_seconds": 5.630594342001132
+  },
+  {
+    "record_id": "PPS-DEV-085",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-071",
+      "PPS-DEV-084"
+    ],
+    "seed_submit": 95239.981913775,
+    "prefill_scheduled": 95240.010077198,
+    "prefill_first_token": 95241.23083651,
+    "prior_live_last_token": 95245.219890096,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 1.2207593119965168,
+    "prefill_start_lead_seconds": 5.2098128979996545,
+    "prefill_finish_lead_seconds": 3.9890535860031378
+  },
+  {
+    "record_id": "PPS-DEV-086",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-071",
+      "PPS-DEV-085"
+    ],
+    "seed_submit": 95242.343611001,
+    "prefill_scheduled": 95242.374257066,
+    "prefill_first_token": 95242.972754171,
+    "prior_live_last_token": 95245.219890096,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.5984971050056629,
+    "prefill_start_lead_seconds": 2.8456330300105037,
+    "prefill_finish_lead_seconds": 2.247135925004841
+  },
+  {
+    "record_id": "PPS-DEV-087",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-071",
+      "PPS-DEV-086"
+    ],
+    "seed_submit": 95243.607260915,
+    "prefill_scheduled": 95243.634729799,
+    "prefill_first_token": 95244.848831496,
+    "prior_live_last_token": 95247.26238127,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 1.2141016969981138,
+    "prefill_start_lead_seconds": 3.6276514710043557,
+    "prefill_finish_lead_seconds": 2.413549774006242
+  },
+  {
+    "record_id": "PPS-DEV-088",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-086",
+      "PPS-DEV-087"
+    ],
+    "seed_submit": 95245.4975677,
+    "prefill_scheduled": 95245.548579755,
+    "prefill_first_token": 95246.363719029,
+    "prior_live_last_token": 95247.733223875,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.8151392739964649,
+    "prefill_start_lead_seconds": 2.1846441199886613,
+    "prefill_finish_lead_seconds": 1.3695048459921964
+  },
+  {
+    "record_id": "PPS-DEV-089",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-087",
+      "PPS-DEV-088"
+    ],
+    "seed_submit": 95247.267153227,
+    "prefill_scheduled": 95247.288870426,
+    "prefill_first_token": 95247.612898766,
+    "prior_live_last_token": 95256.563957456,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.3240283400082262,
+    "prefill_start_lead_seconds": 9.275087030007853,
+    "prefill_finish_lead_seconds": 8.951058689999627
+  },
+  {
+    "record_id": "PPS-DEV-090",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-088",
+      "PPS-DEV-089"
+    ],
+    "seed_submit": 95248.080091641,
+    "prefill_scheduled": 95248.099346848,
+    "prefill_first_token": 95248.610384673,
+    "prior_live_last_token": 95256.563957456,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.5110378249955829,
+    "prefill_start_lead_seconds": 8.464610608003568,
+    "prefill_finish_lead_seconds": 7.953572783007985
+  },
+  {
+    "record_id": "PPS-DEV-091",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-088",
+      "PPS-DEV-090"
+    ],
+    "seed_submit": 95249.660791285,
+    "prefill_scheduled": 95249.688967252,
+    "prefill_first_token": 95250.2798561,
+    "prior_live_last_token": 95256.563957456,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.5908888479898451,
+    "prefill_start_lead_seconds": 6.874990203999914,
+    "prefill_finish_lead_seconds": 6.284101356010069
+  },
+  {
+    "record_id": "PPS-DEV-092",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-088",
+      "PPS-DEV-091"
+    ],
+    "seed_submit": 95250.70719114,
+    "prefill_scheduled": 95250.721087923,
+    "prefill_first_token": 95250.990573581,
+    "prior_live_last_token": 95256.563957456,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.26948565800557844,
+    "prefill_start_lead_seconds": 5.842869533007615,
+    "prefill_finish_lead_seconds": 5.573383875002037
+  },
+  {
+    "record_id": "PPS-DEV-093",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-088",
+      "PPS-DEV-092"
+    ],
+    "seed_submit": 95252.109961388,
+    "prefill_scheduled": 95252.149311023,
+    "prefill_first_token": 95253.648666736,
+    "prior_live_last_token": 95256.563957456,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 1.4993557130073896,
+    "prefill_start_lead_seconds": 4.414646433011512,
+    "prefill_finish_lead_seconds": 2.9152907200041227
+  },
+  {
+    "record_id": "PPS-DEV-094",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-088",
+      "PPS-DEV-093"
+    ],
+    "seed_submit": 95254.108484894,
+    "prefill_scheduled": 95254.115821267,
+    "prefill_first_token": 95254.233077789,
+    "prior_live_last_token": 95256.563957456,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.11725652200402692,
+    "prefill_start_lead_seconds": 2.4481361890066182,
+    "prefill_finish_lead_seconds": 2.3308796670025913
+  },
+  {
+    "record_id": "PPS-DEV-095",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-088",
+      "PPS-DEV-094"
+    ],
+    "seed_submit": 95255.518152485,
+    "prefill_scheduled": 95255.546007166,
+    "prefill_first_token": 95255.934419805,
+    "prior_live_last_token": 95257.912616462,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.3884126389893936,
+    "prefill_start_lead_seconds": 2.3666092959902016,
+    "prefill_finish_lead_seconds": 1.978196657000808
+  },
+  {
+    "record_id": "PPS-DEV-096",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-094",
+      "PPS-DEV-095"
+    ],
+    "seed_submit": 95256.568460217,
+    "prefill_scheduled": 95256.598430597,
+    "prefill_first_token": 95257.627147107,
+    "prior_live_last_token": 95258.957627055,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 1.0287165100016864,
+    "prefill_start_lead_seconds": 2.3591964579973137,
+    "prefill_finish_lead_seconds": 1.3304799479956273
+  },
+  {
+    "record_id": "PPS-DEV-097",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-095",
+      "PPS-DEV-096"
+    ],
+    "seed_submit": 95258.122054356,
+    "prefill_scheduled": 95258.140293607,
+    "prefill_first_token": 95258.600670297,
+    "prior_live_last_token": 95263.085405126,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.46037669001088943,
+    "prefill_start_lead_seconds": 4.945111519002239,
+    "prefill_finish_lead_seconds": 4.48473482899135
+  },
+  {
+    "record_id": "PPS-DEV-098",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-096",
+      "PPS-DEV-097"
+    ],
+    "seed_submit": 95259.270890587,
+    "prefill_scheduled": 95259.287694201,
+    "prefill_first_token": 95259.579663312,
+    "prior_live_last_token": 95263.085405126,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.2919691110000713,
+    "prefill_start_lead_seconds": 3.7977109249914065,
+    "prefill_finish_lead_seconds": 3.505741813991335
+  },
+  {
+    "record_id": "PPS-DEV-099",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-096"
+    ],
+    "seed_submit": 95261.261052192,
+    "prefill_scheduled": 95261.306730541,
+    "prefill_first_token": 95262.99724159,
+    "prior_live_last_token": 95263.085405126,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 1.6905110490042716,
+    "prefill_start_lead_seconds": 1.778674585002591,
+    "prefill_finish_lead_seconds": 0.08816353599831928
+  },
+  {
+    "record_id": "PPS-DEV-100",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-099"
+    ],
+    "seed_submit": 95263.374881767,
+    "prefill_scheduled": 95263.394774926,
+    "prefill_first_token": 95264.695376124,
+    "prior_live_last_token": 95265.857017093,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": false,
+    "max_pair_overlap_seconds": 0,
+    "prefill_start_lead_seconds": 2.4622421670064796,
+    "prefill_finish_lead_seconds": 1.1616409690032015
+  },
+  {
+    "record_id": "PPS-DEV-101",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-100"
+    ],
+    "seed_submit": 95265.863004493,
+    "prefill_scheduled": 95265.889865119,
+    "prefill_first_token": 95266.489942309,
+    "prior_live_last_token": 95266.878658318,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.6000771899998654,
+    "prefill_start_lead_seconds": 0.9887931990087964,
+    "prefill_finish_lead_seconds": 0.388716009008931
+  },
+  {
+    "record_id": "PPS-DEV-102",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-101"
+    ],
+    "seed_submit": 95266.904023665,
+    "prefill_scheduled": 95266.915600374,
+    "prefill_first_token": 95267.35851682,
+    "prior_live_last_token": 95270.932980392,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": false,
+    "max_pair_overlap_seconds": 0,
+    "prefill_start_lead_seconds": 4.017380017990945,
+    "prefill_finish_lead_seconds": 3.5744635720038787
+  },
+  {
+    "record_id": "PPS-DEV-103",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-101",
+      "PPS-DEV-102"
+    ],
+    "seed_submit": 95267.933629989,
+    "prefill_scheduled": 95267.96799705,
+    "prefill_first_token": 95269.788679849,
+    "prior_live_last_token": 95270.945759438,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 1.820682799007045,
+    "prefill_start_lead_seconds": 2.9777623879926978,
+    "prefill_finish_lead_seconds": 1.1570795889856527
+  },
+  {
+    "record_id": "PPS-DEV-104",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-102",
+      "PPS-DEV-103"
+    ],
+    "seed_submit": 95270.93642113,
+    "prefill_scheduled": 95270.958339508,
+    "prefill_first_token": 95271.189867553,
+    "prior_live_last_token": 95272.235486857,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.23152804499841295,
+    "prefill_start_lead_seconds": 1.2771473489992786,
+    "prefill_finish_lead_seconds": 1.0456193040008657
+  },
+  {
+    "record_id": "PPS-DEV-105",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-103",
+      "PPS-DEV-104"
+    ],
+    "seed_submit": 95271.666695399,
+    "prefill_scheduled": 95271.684625197,
+    "prefill_first_token": 95272.185439872,
+    "prior_live_last_token": 95280.505745147,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.5008146750042215,
+    "prefill_start_lead_seconds": 8.821119950007414,
+    "prefill_finish_lead_seconds": 8.320305275003193
+  },
+  {
+    "record_id": "PPS-DEV-106",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-104",
+      "PPS-DEV-105"
+    ],
+    "seed_submit": 95272.74929912,
+    "prefill_scheduled": 95272.776304791,
+    "prefill_first_token": 95273.715742596,
+    "prior_live_last_token": 95280.505745147,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.939437805005582,
+    "prefill_start_lead_seconds": 7.729440356008126,
+    "prefill_finish_lead_seconds": 6.790002551002544
+  },
+  {
+    "record_id": "PPS-DEV-107",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-104",
+      "PPS-DEV-106"
+    ],
+    "seed_submit": 95274.783426755,
+    "prefill_scheduled": 95274.802807297,
+    "prefill_first_token": 95275.120891226,
+    "prior_live_last_token": 95280.505745147,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.3180839289998403,
+    "prefill_start_lead_seconds": 5.702937850001035,
+    "prefill_finish_lead_seconds": 5.384853921001195
+  },
+  {
+    "record_id": "PPS-DEV-108",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-104",
+      "PPS-DEV-107"
+    ],
+    "seed_submit": 95275.650363256,
+    "prefill_scheduled": 95275.680408979,
+    "prefill_first_token": 95275.952828145,
+    "prior_live_last_token": 95280.505745147,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.27241916600905824,
+    "prefill_start_lead_seconds": 4.8253361680108355,
+    "prefill_finish_lead_seconds": 4.552917002001777
+  },
+  {
+    "record_id": "PPS-DEV-109",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-104",
+      "PPS-DEV-108"
+    ],
+    "seed_submit": 95276.901713234,
+    "prefill_scheduled": 95276.937414229,
+    "prefill_first_token": 95278.632849743,
+    "prior_live_last_token": 95280.505745147,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 1.6954355139896506,
+    "prefill_start_lead_seconds": 3.568330918002175,
+    "prefill_finish_lead_seconds": 1.8728954040125245
+  },
+  {
+    "record_id": "PPS-DEV-110",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-104",
+      "PPS-DEV-109"
+    ],
+    "seed_submit": 95279.717125345,
+    "prefill_scheduled": 95279.740163946,
+    "prefill_first_token": 95280.038291857,
+    "prior_live_last_token": 95281.014133431,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.29812791099539027,
+    "prefill_start_lead_seconds": 1.2739694850024534,
+    "prefill_finish_lead_seconds": 0.9758415740070632
+  },
+  {
+    "record_id": "PPS-DEV-111",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-109",
+      "PPS-DEV-110"
+    ],
+    "seed_submit": 95280.509149937,
+    "prefill_scheduled": 95280.52527971,
+    "prefill_first_token": 95280.890789812,
+    "prior_live_last_token": 95283.913623813,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.3655101019976428,
+    "prefill_start_lead_seconds": 3.3883441030047834,
+    "prefill_finish_lead_seconds": 3.0228340010071406
+  },
+  {
+    "record_id": "PPS-DEV-112",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-110",
+      "PPS-DEV-111"
+    ],
+    "seed_submit": 95281.513374418,
+    "prefill_scheduled": 95281.53693424,
+    "prefill_first_token": 95282.104210951,
+    "prior_live_last_token": 95283.913623813,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.5672767110081622,
+    "prefill_start_lead_seconds": 2.376689573007752,
+    "prefill_finish_lead_seconds": 1.80941286199959
+  },
+  {
+    "record_id": "PPS-DEV-113",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-110",
+      "PPS-DEV-112"
+    ],
+    "seed_submit": 95283.101587149,
+    "prefill_scheduled": 95283.120526039,
+    "prefill_first_token": 95283.269036541,
+    "prior_live_last_token": 95284.37644092,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.14851050199649762,
+    "prefill_start_lead_seconds": 1.255914880995988,
+    "prefill_finish_lead_seconds": 1.1074043789994903
+  },
+  {
+    "record_id": "PPS-DEV-114",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-112",
+      "PPS-DEV-113"
+    ],
+    "seed_submit": 95283.917041587,
+    "prefill_scheduled": 95283.936491431,
+    "prefill_first_token": 95284.07984507,
+    "prior_live_last_token": 95285.020907084,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.14335363899590448,
+    "prefill_start_lead_seconds": 1.0844156530074542,
+    "prefill_finish_lead_seconds": 0.9410620140115498
+  },
+  {
+    "record_id": "PPS-DEV-115",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-113",
+      "PPS-DEV-114"
+    ],
+    "seed_submit": 95284.504752997,
+    "prefill_scheduled": 95284.514441445,
+    "prefill_first_token": 95284.728087141,
+    "prior_live_last_token": 95285.910116529,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.21364569599973038,
+    "prefill_start_lead_seconds": 1.3956750840006862,
+    "prefill_finish_lead_seconds": 1.1820293880009558
+  },
+  {
+    "record_id": "PPS-DEV-116",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-114",
+      "PPS-DEV-115"
+    ],
+    "seed_submit": 95285.228577042,
+    "prefill_scheduled": 95285.254608876,
+    "prefill_first_token": 95285.53833968,
+    "prior_live_last_token": 95287.154944806,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.2837308040034259,
+    "prefill_start_lead_seconds": 1.9003359299967997,
+    "prefill_finish_lead_seconds": 1.6166051259933738
+  },
+  {
+    "record_id": "PPS-DEV-117",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-115",
+      "PPS-DEV-116"
+    ],
+    "seed_submit": 95286.07632491,
+    "prefill_scheduled": 95286.114817319,
+    "prefill_first_token": 95286.759290104,
+    "prior_live_last_token": 95287.922485058,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.6444727850030176,
+    "prefill_start_lead_seconds": 1.8076677390054101,
+    "prefill_finish_lead_seconds": 1.1631949540023925
+  },
+  {
+    "record_id": "PPS-DEV-118",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-116",
+      "PPS-DEV-117"
+    ],
+    "seed_submit": 95287.227229641,
+    "prefill_scheduled": 95287.235785243,
+    "prefill_first_token": 95287.443713028,
+    "prior_live_last_token": 95291.574002919,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.2079277849989012,
+    "prefill_start_lead_seconds": 4.338217676006025,
+    "prefill_finish_lead_seconds": 4.1302898910071235
+  },
+  {
+    "record_id": "PPS-DEV-119",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-117",
+      "PPS-DEV-118"
+    ],
+    "seed_submit": 95288.115601907,
+    "prefill_scheduled": 95288.155510907,
+    "prefill_first_token": 95290.054704305,
+    "prior_live_last_token": 95291.574002919,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 1.8991933979996247,
+    "prefill_start_lead_seconds": 3.418492012002389,
+    "prefill_finish_lead_seconds": 1.5192986140027642
+  },
+  {
+    "record_id": "PPS-DEV-120",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-117",
+      "PPS-DEV-119"
+    ],
+    "seed_submit": 95291.17696332,
+    "prefill_scheduled": 95291.200133257,
+    "prefill_first_token": 95291.329022181,
+    "prior_live_last_token": 95293.106086064,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.128888923994964,
+    "prefill_start_lead_seconds": 1.9059528069919907,
+    "prefill_finish_lead_seconds": 1.7770638829970267
+  },
+  {
+    "record_id": "PPS-DEV-121",
+    "reason": "empty_pipeline",
+    "older_live_ids": [],
+    "seed_submit": 95293.112101486,
+    "prefill_scheduled": 95293.152536628,
+    "prefill_first_token": 95294.755297128,
+    "prior_live_last_token": null,
+    "prefill_starts_before_old_drained": false,
+    "prefill_overlaps_old_follower_decode": false,
+    "max_pair_overlap_seconds": 0,
+    "prefill_start_lead_seconds": null,
+    "prefill_finish_lead_seconds": null
+  },
+  {
+    "record_id": "PPS-DEV-122",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-121"
+    ],
+    "seed_submit": 95295.120631546,
+    "prefill_scheduled": 95295.138051863,
+    "prefill_first_token": 95295.978199195,
+    "prior_live_last_token": 95297.20083598,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": false,
+    "max_pair_overlap_seconds": 0,
+    "prefill_start_lead_seconds": 2.062784116991679,
+    "prefill_finish_lead_seconds": 1.2226367849943927
+  },
+  {
+    "record_id": "PPS-DEV-123",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-122"
+    ],
+    "seed_submit": 95297.205799489,
+    "prefill_scheduled": 95297.244230552,
+    "prefill_first_token": 95298.64853692,
+    "prior_live_last_token": 95298.999373231,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 1.4043063680001069,
+    "prefill_start_lead_seconds": 1.7551426790014375,
+    "prefill_finish_lead_seconds": 0.3508363110013306
+  },
+  {
+    "record_id": "PPS-DEV-124",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-123"
+    ],
+    "seed_submit": 95299.757985871,
+    "prefill_scheduled": 95299.76840639,
+    "prefill_first_token": 95300.041918134,
+    "prior_live_last_token": 95302.130133245,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": false,
+    "max_pair_overlap_seconds": 0,
+    "prefill_start_lead_seconds": 2.3617268550005974,
+    "prefill_finish_lead_seconds": 2.088215110998135
+  },
+  {
+    "record_id": "PPS-DEV-125",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-123",
+      "PPS-DEV-124"
+    ],
+    "seed_submit": 95300.779638273,
+    "prefill_scheduled": 95300.810135326,
+    "prefill_first_token": 95301.729611061,
+    "prior_live_last_token": 95303.044639528,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.9194757350051077,
+    "prefill_start_lead_seconds": 2.2345042020024266,
+    "prefill_finish_lead_seconds": 1.315028466997319
+  },
+  {
+    "record_id": "PPS-DEV-126",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-124",
+      "PPS-DEV-125"
+    ],
+    "seed_submit": 95302.240856937,
+    "prefill_scheduled": 95302.258526503,
+    "prefill_first_token": 95302.571449989,
+    "prior_live_last_token": 95305.42152187,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.3129234859952703,
+    "prefill_start_lead_seconds": 3.162995366990799,
+    "prefill_finish_lead_seconds": 2.8500718809955288
+  },
+  {
+    "record_id": "PPS-DEV-127",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-125",
+      "PPS-DEV-126"
+    ],
+    "seed_submit": 95303.26544355,
+    "prefill_scheduled": 95303.301132923,
+    "prefill_first_token": 95303.752109942,
+    "prior_live_last_token": 95305.42152187,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.45097701899067033,
+    "prefill_start_lead_seconds": 2.1203889469907153,
+    "prefill_finish_lead_seconds": 1.669411928000045
+  },
+  {
+    "record_id": "PPS-DEV-128",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-125",
+      "PPS-DEV-127"
+    ],
+    "seed_submit": 95304.781889366,
+    "prefill_scheduled": 95304.799213763,
+    "prefill_first_token": 95305.019325489,
+    "prior_live_last_token": 95305.512375466,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.22011172599741258,
+    "prefill_start_lead_seconds": 0.7131617029954214,
+    "prefill_finish_lead_seconds": 0.4930499769980088
+  },
+  {
+    "record_id": "PPS-DEV-129",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-127",
+      "PPS-DEV-128"
+    ],
+    "seed_submit": 95305.441096037,
+    "prefill_scheduled": 95305.463728101,
+    "prefill_first_token": 95306.335670701,
+    "prior_live_last_token": 95307.897110073,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.04864736500894651,
+    "prefill_start_lead_seconds": 2.4333819720050087,
+    "prefill_finish_lead_seconds": 1.5614393720024964
+  },
+  {
+    "record_id": "PPS-DEV-130",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-128",
+      "PPS-DEV-129"
+    ],
+    "seed_submit": 95306.957089532,
+    "prefill_scheduled": 95307.002091525,
+    "prefill_first_token": 95307.168543333,
+    "prior_live_last_token": 95308.307323419,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.16645180799241643,
+    "prefill_start_lead_seconds": 1.3052318939880934,
+    "prefill_finish_lead_seconds": 1.138780085995677
+  },
+  {
+    "record_id": "PPS-DEV-131",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-129",
+      "PPS-DEV-130"
+    ],
+    "seed_submit": 95307.901555384,
+    "prefill_scheduled": 95307.920165354,
+    "prefill_first_token": 95308.090338229,
+    "prior_live_last_token": 95311.870483209,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.17017287500493694,
+    "prefill_start_lead_seconds": 3.9503178550075972,
+    "prefill_finish_lead_seconds": 3.7801449800026603
+  },
+  {
+    "record_id": "PPS-DEV-132",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-130",
+      "PPS-DEV-131"
+    ],
+    "seed_submit": 95308.532746921,
+    "prefill_scheduled": 95308.551424167,
+    "prefill_first_token": 95309.221120096,
+    "prior_live_last_token": 95311.870483209,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.6696959289984079,
+    "prefill_start_lead_seconds": 3.3190590419981163,
+    "prefill_finish_lead_seconds": 2.6493631129997084
+  },
+  {
+    "record_id": "PPS-DEV-133",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-130",
+      "PPS-DEV-132"
+    ],
+    "seed_submit": 95310.267783423,
+    "prefill_scheduled": 95310.297017845,
+    "prefill_first_token": 95310.860344752,
+    "prior_live_last_token": 95311.870483209,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.5633269069949165,
+    "prefill_start_lead_seconds": 1.5734653639956377,
+    "prefill_finish_lead_seconds": 1.0101384570007212
+  },
+  {
+    "record_id": "PPS-DEV-134",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-130",
+      "PPS-DEV-133"
+    ],
+    "seed_submit": 95311.286165405,
+    "prefill_scheduled": 95311.298273084,
+    "prefill_first_token": 95311.547303667,
+    "prior_live_last_token": 95313.845770417,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.24903058299969416,
+    "prefill_start_lead_seconds": 2.5474973329983186,
+    "prefill_finish_lead_seconds": 2.2984667499986244
+  },
+  {
+    "record_id": "PPS-DEV-135",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-133",
+      "PPS-DEV-134"
+    ],
+    "seed_submit": 95312.175573674,
+    "prefill_scheduled": 95312.211258219,
+    "prefill_first_token": 95313.313946162,
+    "prior_live_last_token": 95315.426826774,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 1.1026879429991823,
+    "prefill_start_lead_seconds": 3.215568554995116,
+    "prefill_finish_lead_seconds": 2.1128806119959336
+  },
+  {
+    "record_id": "PPS-DEV-136",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-134",
+      "PPS-DEV-135"
+    ],
+    "seed_submit": 95314.002539178,
+    "prefill_scheduled": 95314.037737896,
+    "prefill_first_token": 95315.139843391,
+    "prior_live_last_token": 95316.816733651,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 1.102105495010619,
+    "prefill_start_lead_seconds": 2.778995754997595,
+    "prefill_finish_lead_seconds": 1.6768902599869762
+  },
+  {
+    "record_id": "PPS-DEV-137",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-136"
+    ],
+    "seed_submit": 95316.822788357,
+    "prefill_scheduled": 95316.859892167,
+    "prefill_first_token": 95318.151657318,
+    "prior_live_last_token": 95316.841581762,
+    "prefill_starts_before_old_drained": false,
+    "prefill_overlaps_old_follower_decode": false,
+    "max_pair_overlap_seconds": 0,
+    "prefill_start_lead_seconds": -0.01831040500837844,
+    "prefill_finish_lead_seconds": -1.310075556000811
+  },
+  {
+    "record_id": "PPS-DEV-138",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-137"
+    ],
+    "seed_submit": 95318.511691479,
+    "prefill_scheduled": 95318.536512059,
+    "prefill_first_token": 95320.379962253,
+    "prior_live_last_token": 95321.590983608,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": false,
+    "max_pair_overlap_seconds": 0,
+    "prefill_start_lead_seconds": 3.0544715489959344,
+    "prefill_finish_lead_seconds": 1.211021354989498
+  },
+  {
+    "record_id": "PPS-DEV-139",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-138"
+    ],
+    "seed_submit": 95321.596730103,
+    "prefill_scheduled": 95321.625711589,
+    "prefill_first_token": 95322.178389704,
+    "prior_live_last_token": 95322.787457452,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.5526781149965245,
+    "prefill_start_lead_seconds": 1.1617458629916655,
+    "prefill_finish_lead_seconds": 0.609067747995141
+  },
+  {
+    "record_id": "PPS-DEV-140",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-139"
+    ],
+    "seed_submit": 95322.806016215,
+    "prefill_scheduled": 95322.847731951,
+    "prefill_first_token": 95324.581046339,
+    "prior_live_last_token": 95326.614774642,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 1.7333143879950512,
+    "prefill_start_lead_seconds": 3.7670426910044625,
+    "prefill_finish_lead_seconds": 2.0337283030094113
+  },
+  {
+    "record_id": "PPS-DEV-141",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-139",
+      "PPS-DEV-140"
+    ],
+    "seed_submit": 95325.098249876,
+    "prefill_scheduled": 95325.108081704,
+    "prefill_first_token": 95325.359646214,
+    "prior_live_last_token": 95326.638011495,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.25156450999202207,
+    "prefill_start_lead_seconds": 1.5299297909950837,
+    "prefill_finish_lead_seconds": 1.2783652810030617
+  },
+  {
+    "record_id": "PPS-DEV-142",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-140",
+      "PPS-DEV-141"
+    ],
+    "seed_submit": 95326.61852855,
+    "prefill_scheduled": 95326.63912272,
+    "prefill_first_token": 95326.760725635,
+    "prior_live_last_token": 95327.163988735,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.12160291500913445,
+    "prefill_start_lead_seconds": 0.5248660150100477,
+    "prefill_finish_lead_seconds": 0.40326310000091325
+  },
+  {
+    "record_id": "PPS-DEV-143",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-141",
+      "PPS-DEV-142"
+    ],
+    "seed_submit": 95327.148163185,
+    "prefill_scheduled": 95327.181869669,
+    "prefill_first_token": 95329.291243431,
+    "prior_live_last_token": 95330.727699985,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": false,
+    "max_pair_overlap_seconds": 0,
+    "prefill_start_lead_seconds": 3.5458303159975912,
+    "prefill_finish_lead_seconds": 1.4364565540017793
+  },
+  {
+    "record_id": "PPS-DEV-144",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-142",
+      "PPS-DEV-143"
+    ],
+    "seed_submit": 95330.023335042,
+    "prefill_scheduled": 95330.069621246,
+    "prefill_first_token": 95330.379148345,
+    "prior_live_last_token": 95331.705864571,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.3095270990015706,
+    "prefill_start_lead_seconds": 1.6362433250033064,
+    "prefill_finish_lead_seconds": 1.3267162260017358
+  },
+  {
+    "record_id": "PPS-DEV-145",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-144"
+    ],
+    "seed_submit": 95331.712168688,
+    "prefill_scheduled": 95331.763148732,
+    "prefill_first_token": 95333.814790456,
+    "prior_live_last_token": 95338.197189459,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 2.051641723999637,
+    "prefill_start_lead_seconds": 6.434040726991952,
+    "prefill_finish_lead_seconds": 4.382399002992315
+  },
+  {
+    "record_id": "PPS-DEV-146",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-144",
+      "PPS-DEV-145"
+    ],
+    "seed_submit": 95334.283661069,
+    "prefill_scheduled": 95334.293684258,
+    "prefill_first_token": 95334.57096782,
+    "prior_live_last_token": 95338.197189459,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.27728356199804693,
+    "prefill_start_lead_seconds": 3.903505201000371,
+    "prefill_finish_lead_seconds": 3.626221639002324
+  },
+  {
+    "record_id": "PPS-DEV-147",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-144",
+      "PPS-DEV-146"
+    ],
+    "seed_submit": 95335.863758568,
+    "prefill_scheduled": 95335.906171568,
+    "prefill_first_token": 95337.809947748,
+    "prior_live_last_token": 95338.208094159,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 1.903776179999113,
+    "prefill_start_lead_seconds": 2.301922590995673,
+    "prefill_finish_lead_seconds": 0.39814641099656
+  },
+  {
+    "record_id": "PPS-DEV-148",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-147"
+    ],
+    "seed_submit": 95338.263118378,
+    "prefill_scheduled": 95338.272104332,
+    "prefill_first_token": 95338.540355363,
+    "prior_live_last_token": 95340.140497934,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": false,
+    "max_pair_overlap_seconds": 0,
+    "prefill_start_lead_seconds": 1.8683936019951943,
+    "prefill_finish_lead_seconds": 1.6001425709982868
+  },
+  {
+    "record_id": "PPS-DEV-149",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-147",
+      "PPS-DEV-148"
+    ],
+    "seed_submit": 95339.268998119,
+    "prefill_scheduled": 95339.31117819,
+    "prefill_first_token": 95339.733640309,
+    "prior_live_last_token": 95341.329873379,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.42246211900783237,
+    "prefill_start_lead_seconds": 2.0186951890063938,
+    "prefill_finish_lead_seconds": 1.5962330699985614
+  },
+  {
+    "record_id": "PPS-DEV-150",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-148",
+      "PPS-DEV-149"
+    ],
+    "seed_submit": 95340.24610074,
+    "prefill_scheduled": 95340.254622898,
+    "prefill_first_token": 95340.379176446,
+    "prior_live_last_token": 95341.841582062,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.1245535479974933,
+    "prefill_start_lead_seconds": 1.586959163993015,
+    "prefill_finish_lead_seconds": 1.4624056159955217
+  },
+  {
+    "record_id": "PPS-DEV-151",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-149",
+      "PPS-DEV-150"
+    ],
+    "seed_submit": 95341.333528611,
+    "prefill_scheduled": 95341.362070817,
+    "prefill_first_token": 95341.801434594,
+    "prior_live_last_token": 95342.612695868,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.4393637769971974,
+    "prefill_start_lead_seconds": 1.250625050990493,
+    "prefill_finish_lead_seconds": 0.8112612739932956
+  },
+  {
+    "record_id": "PPS-DEV-152",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-150",
+      "PPS-DEV-151"
+    ],
+    "seed_submit": 95342.199768107,
+    "prefill_scheduled": 95342.213981777,
+    "prefill_first_token": 95342.510904619,
+    "prior_live_last_token": 95345.451933277,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.29692284201155417,
+    "prefill_start_lead_seconds": 3.237951500006602,
+    "prefill_finish_lead_seconds": 2.941028657995048
+  },
+  {
+    "record_id": "PPS-DEV-153",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-151",
+      "PPS-DEV-152"
+    ],
+    "seed_submit": 95343.109689937,
+    "prefill_scheduled": 95343.151113682,
+    "prefill_first_token": 95345.022133694,
+    "prior_live_last_token": 95357.391420021,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 1.871020011996734,
+    "prefill_start_lead_seconds": 14.240306338993832,
+    "prefill_finish_lead_seconds": 12.369286326997099
+  },
+  {
+    "record_id": "PPS-DEV-154",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-152",
+      "PPS-DEV-153"
+    ],
+    "seed_submit": 95345.545465934,
+    "prefill_scheduled": 95345.555814546,
+    "prefill_first_token": 95345.785516051,
+    "prior_live_last_token": 95357.391420021,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.2297015049989568,
+    "prefill_start_lead_seconds": 11.835605475003831,
+    "prefill_finish_lead_seconds": 11.605903970004874
+  },
+  {
+    "record_id": "PPS-DEV-155",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-152",
+      "PPS-DEV-154"
+    ],
+    "seed_submit": 95347.076551956,
+    "prefill_scheduled": 95347.111911768,
+    "prefill_first_token": 95349.080577511,
+    "prior_live_last_token": 95357.391420021,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 1.968665742999292,
+    "prefill_start_lead_seconds": 10.279508252991945,
+    "prefill_finish_lead_seconds": 8.310842509992654
+  },
+  {
+    "record_id": "PPS-DEV-156",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-152",
+      "PPS-DEV-155"
+    ],
+    "seed_submit": 95349.543352198,
+    "prefill_scheduled": 95349.551919151,
+    "prefill_first_token": 95349.728708129,
+    "prior_live_last_token": 95357.391420021,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.17678897800215054,
+    "prefill_start_lead_seconds": 7.8395008700026665,
+    "prefill_finish_lead_seconds": 7.662711892000516
+  },
+  {
+    "record_id": "PPS-DEV-157",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-152",
+      "PPS-DEV-156"
+    ],
+    "seed_submit": 95351.051848664,
+    "prefill_scheduled": 95351.086920683,
+    "prefill_first_token": 95352.142400942,
+    "prior_live_last_token": 95360.034464306,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 1.0554802590049803,
+    "prefill_start_lead_seconds": 8.947543622998637,
+    "prefill_finish_lead_seconds": 7.892063363993657
+  },
+  {
+    "record_id": "PPS-DEV-158",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-152",
+      "PPS-DEV-156"
+    ],
+    "seed_submit": 95353.800262407,
+    "prefill_scheduled": 95353.846519375,
+    "prefill_first_token": 95355.758014558,
+    "prior_live_last_token": 95360.034464306,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 1.9114951829978963,
+    "prefill_start_lead_seconds": 6.187944930992671,
+    "prefill_finish_lead_seconds": 4.276449747994775
+  },
+  {
+    "record_id": "PPS-DEV-159",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-156"
+    ],
+    "seed_submit": 95357.468707548,
+    "prefill_scheduled": 95357.50672507,
+    "prefill_first_token": 95358.510495087,
+    "prior_live_last_token": 95360.034464306,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 1.0037700170069002,
+    "prefill_start_lead_seconds": 2.5277392360003432,
+    "prefill_finish_lead_seconds": 1.523969218993443
+  },
+  {
+    "record_id": "PPS-DEV-160",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-156",
+      "PPS-DEV-159"
+    ],
+    "seed_submit": 95358.899208972,
+    "prefill_scheduled": 95358.908019764,
+    "prefill_first_token": 95359.137926135,
+    "prior_live_last_token": 95361.321564836,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.22990637099428568,
+    "prefill_start_lead_seconds": 2.4135450720059453,
+    "prefill_finish_lead_seconds": 2.1836387010116596
+  },
+  {
+    "record_id": "PPS-DEV-161",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-159",
+      "PPS-DEV-160"
+    ],
+    "seed_submit": 95360.037240971,
+    "prefill_scheduled": 95360.073202497,
+    "prefill_first_token": 95361.070884444,
+    "prior_live_last_token": 95362.709998118,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.9976819469884504,
+    "prefill_start_lead_seconds": 2.636795621001511,
+    "prefill_finish_lead_seconds": 1.6391136740130605
+  },
+  {
+    "record_id": "PPS-DEV-162",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-160",
+      "PPS-DEV-161"
+    ],
+    "seed_submit": 95361.549933538,
+    "prefill_scheduled": 95361.568667881,
+    "prefill_first_token": 95362.468191259,
+    "prior_live_last_token": 95364.128935906,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.8995233780005947,
+    "prefill_start_lead_seconds": 2.560268025001278,
+    "prefill_finish_lead_seconds": 1.6607446470006835
+  },
+  {
+    "record_id": "PPS-DEV-163",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-161",
+      "PPS-DEV-162"
+    ],
+    "seed_submit": 95363.149664472,
+    "prefill_scheduled": 95363.1908671,
+    "prefill_first_token": 95363.758764835,
+    "prior_live_last_token": 95364.922265014,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.5678977350034984,
+    "prefill_start_lead_seconds": 1.7313979140017182,
+    "prefill_finish_lead_seconds": 1.1635001789982198
+  },
+  {
+    "record_id": "PPS-DEV-164",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-162",
+      "PPS-DEV-163"
+    ],
+    "seed_submit": 95364.265484369,
+    "prefill_scheduled": 95364.275448015,
+    "prefill_first_token": 95364.47604388,
+    "prior_live_last_token": 95366.869116625,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.20059586499701254,
+    "prefill_start_lead_seconds": 2.5936686100030784,
+    "prefill_finish_lead_seconds": 2.393072745006066
+  },
+  {
+    "record_id": "PPS-DEV-165",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-163",
+      "PPS-DEV-164"
+    ],
+    "seed_submit": 95365.116200802,
+    "prefill_scheduled": 95365.160031314,
+    "prefill_first_token": 95366.50497234,
+    "prior_live_last_token": 95367.70305379,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 1.344941026007291,
+    "prefill_start_lead_seconds": 2.543022476005717,
+    "prefill_finish_lead_seconds": 1.1980814499984263
+  },
+  {
+    "record_id": "PPS-DEV-166",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-164",
+      "PPS-DEV-165"
+    ],
+    "seed_submit": 95367.01540351,
+    "prefill_scheduled": 95367.025021535,
+    "prefill_first_token": 95367.163990552,
+    "prior_live_last_token": 95368.570829486,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.13896901700354647,
+    "prefill_start_lead_seconds": 1.5458079509990057,
+    "prefill_finish_lead_seconds": 1.4068389339954592
+  },
+  {
+    "record_id": "PPS-DEV-167",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-165",
+      "PPS-DEV-166"
+    ],
+    "seed_submit": 95367.88175405,
+    "prefill_scheduled": 95367.913822495,
+    "prefill_first_token": 95368.143674893,
+    "prior_live_last_token": 95369.249009588,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.22985239799891133,
+    "prefill_start_lead_seconds": 1.3351870930055156,
+    "prefill_finish_lead_seconds": 1.1053346950066043
+  },
+  {
+    "record_id": "PPS-DEV-168",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-166",
+      "PPS-DEV-167"
+    ],
+    "seed_submit": 95368.649204903,
+    "prefill_scheduled": 95368.65777392,
+    "prefill_first_token": 95368.835747119,
+    "prior_live_last_token": 95371.809990831,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.17797319899545982,
+    "prefill_start_lead_seconds": 3.152216910995776,
+    "prefill_finish_lead_seconds": 2.974243712000316
+  },
+  {
+    "record_id": "PPS-DEV-169",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-167",
+      "PPS-DEV-168"
+    ],
+    "seed_submit": 95369.346264513,
+    "prefill_scheduled": 95369.387704598,
+    "prefill_first_token": 95371.474411504,
+    "prior_live_last_token": 95373.36710637,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 2.0867069059895584,
+    "prefill_start_lead_seconds": 3.9794017719978,
+    "prefill_finish_lead_seconds": 1.8926948660082417
+  },
+  {
+    "record_id": "PPS-DEV-170",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-168",
+      "PPS-DEV-169"
+    ],
+    "seed_submit": 95372.204661314,
+    "prefill_scheduled": 95372.26323217,
+    "prefill_first_token": 95373.032350407,
+    "prior_live_last_token": 95374.089268349,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.7691182370035676,
+    "prefill_start_lead_seconds": 1.826036179001676,
+    "prefill_finish_lead_seconds": 1.0569179419981083
+  },
+  {
+    "record_id": "PPS-DEV-171",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-170"
+    ],
+    "seed_submit": 95374.096146368,
+    "prefill_scheduled": 95374.13194141,
+    "prefill_first_token": 95376.0259349,
+    "prior_live_last_token": 95377.016393333,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 1.8939934899972286,
+    "prefill_start_lead_seconds": 2.884451923004235,
+    "prefill_finish_lead_seconds": 0.9904584330070065
+  },
+  {
+    "record_id": "PPS-DEV-172",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-171"
+    ],
+    "seed_submit": 95377.021920455,
+    "prefill_scheduled": 95377.04249087,
+    "prefill_first_token": 95377.490861084,
+    "prior_live_last_token": 95378.231050074,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.4483702140132664,
+    "prefill_start_lead_seconds": 1.188559204005287,
+    "prefill_finish_lead_seconds": 0.7401889899920207
+  },
+  {
+    "record_id": "PPS-DEV-173",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-172"
+    ],
+    "seed_submit": 95378.238192921,
+    "prefill_scheduled": 95378.276032538,
+    "prefill_first_token": 95379.741392149,
+    "prior_live_last_token": 95380.764495091,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 1.4653596110001672,
+    "prefill_start_lead_seconds": 2.488462553010322,
+    "prefill_finish_lead_seconds": 1.023102942010155
+  },
+  {
+    "record_id": "PPS-DEV-174",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-172",
+      "PPS-DEV-173"
+    ],
+    "seed_submit": 95380.229440074,
+    "prefill_scheduled": 95380.237606252,
+    "prefill_first_token": 95380.373262001,
+    "prior_live_last_token": 95382.32636723,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.13565574899257626,
+    "prefill_start_lead_seconds": 2.0887609779892955,
+    "prefill_finish_lead_seconds": 1.9531052289967192
+  },
+  {
+    "record_id": "PPS-DEV-175",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-173",
+      "PPS-DEV-174"
+    ],
+    "seed_submit": 95381.11379668,
+    "prefill_scheduled": 95381.164619176,
+    "prefill_first_token": 95381.935742961,
+    "prior_live_last_token": 95383.307592461,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.7711237850016914,
+    "prefill_start_lead_seconds": 2.1429732850083383,
+    "prefill_finish_lead_seconds": 1.3718495000066468
+  },
+  {
+    "record_id": "PPS-DEV-176",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-174",
+      "PPS-DEV-175"
+    ],
+    "seed_submit": 95382.442665681,
+    "prefill_scheduled": 95382.460483677,
+    "prefill_first_token": 95382.887961286,
+    "prior_live_last_token": 95384.193506521,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.42747760900238063,
+    "prefill_start_lead_seconds": 1.7330228439968778,
+    "prefill_finish_lead_seconds": 1.3055452349944972
+  },
+  {
+    "record_id": "PPS-DEV-177",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-175",
+      "PPS-DEV-176"
+    ],
+    "seed_submit": 95383.441700482,
+    "prefill_scheduled": 95383.460680479,
+    "prefill_first_token": 95383.74030413,
+    "prior_live_last_token": 95389.883312985,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.2796236510039307,
+    "prefill_start_lead_seconds": 6.422632506000809,
+    "prefill_finish_lead_seconds": 6.143008854996879
+  },
+  {
+    "record_id": "PPS-DEV-178",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-176",
+      "PPS-DEV-177"
+    ],
+    "seed_submit": 95384.360033617,
+    "prefill_scheduled": 95384.395414949,
+    "prefill_first_token": 95385.494307961,
+    "prior_live_last_token": 95389.883312985,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 1.0988930119929137,
+    "prefill_start_lead_seconds": 5.487898035993567,
+    "prefill_finish_lead_seconds": 4.389005024000653
+  },
+  {
+    "record_id": "PPS-DEV-179",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-176",
+      "PPS-DEV-178"
+    ],
+    "seed_submit": 95386.598604237,
+    "prefill_scheduled": 95386.619239886,
+    "prefill_first_token": 95386.726294396,
+    "prior_live_last_token": 95389.883312985,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.10705450999375898,
+    "prefill_start_lead_seconds": 3.2640730989951408,
+    "prefill_finish_lead_seconds": 3.1570185890013818
+  },
+  {
+    "record_id": "PPS-DEV-180",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-176",
+      "PPS-DEV-179"
+    ],
+    "seed_submit": 95387.310565647,
+    "prefill_scheduled": 95387.34125919,
+    "prefill_first_token": 95387.85850177,
+    "prior_live_last_token": 95389.883312985,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.5172425799974008,
+    "prefill_start_lead_seconds": 2.542053794997628,
+    "prefill_finish_lead_seconds": 2.024811215000227
+  },
+  {
+    "record_id": "PPS-DEV-181",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-176",
+      "PPS-DEV-180"
+    ],
+    "seed_submit": 95388.770942825,
+    "prefill_scheduled": 95388.791747312,
+    "prefill_first_token": 95389.240150064,
+    "prior_live_last_token": 95401.785427218,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.4484027519938536,
+    "prefill_start_lead_seconds": 12.993679905994213,
+    "prefill_finish_lead_seconds": 12.54527715400036
+  },
+  {
+    "record_id": "PPS-DEV-182",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-180",
+      "PPS-DEV-181"
+    ],
+    "seed_submit": 95389.887703954,
+    "prefill_scheduled": 95389.906970321,
+    "prefill_first_token": 95390.061201854,
+    "prior_live_last_token": 95401.785427218,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.15423153300071135,
+    "prefill_start_lead_seconds": 11.878456897000433,
+    "prefill_finish_lead_seconds": 11.724225363999722
+  },
+  {
+    "record_id": "PPS-DEV-183",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-180",
+      "PPS-DEV-182"
+    ],
+    "seed_submit": 95390.886208883,
+    "prefill_scheduled": 95390.915892491,
+    "prefill_first_token": 95391.432654905,
+    "prior_live_last_token": 95401.785427218,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.5167624140012776,
+    "prefill_start_lead_seconds": 10.86953472699679,
+    "prefill_finish_lead_seconds": 10.352772312995512
+  },
+  {
+    "record_id": "PPS-DEV-184",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-180",
+      "PPS-DEV-183"
+    ],
+    "seed_submit": 95392.070232537,
+    "prefill_scheduled": 95392.094722402,
+    "prefill_first_token": 95392.324382244,
+    "prior_live_last_token": 95401.785427218,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.22965984199254308,
+    "prefill_start_lead_seconds": 9.690704815991921,
+    "prefill_finish_lead_seconds": 9.461044973999378
+  },
+  {
+    "record_id": "PPS-DEV-185",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-180",
+      "PPS-DEV-184"
+    ],
+    "seed_submit": 95393.219621484,
+    "prefill_scheduled": 95393.250187416,
+    "prefill_first_token": 95394.223844073,
+    "prior_live_last_token": 95401.785427218,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.9736566570063587,
+    "prefill_start_lead_seconds": 8.535239802004071,
+    "prefill_finish_lead_seconds": 7.561583144997712
+  },
+  {
+    "record_id": "PPS-DEV-186",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-180",
+      "PPS-DEV-185"
+    ],
+    "seed_submit": 95394.845018846,
+    "prefill_scheduled": 95394.882654137,
+    "prefill_first_token": 95395.249754293,
+    "prior_live_last_token": 95401.785427218,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.3671001559996512,
+    "prefill_start_lead_seconds": 6.9027730809903005,
+    "prefill_finish_lead_seconds": 6.535672924990649
+  },
+  {
+    "record_id": "PPS-DEV-187",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-180",
+      "PPS-DEV-186"
+    ],
+    "seed_submit": 95396.301576889,
+    "prefill_scheduled": 95396.327866438,
+    "prefill_first_token": 95396.568436691,
+    "prior_live_last_token": 95401.785427218,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.24057025299407542,
+    "prefill_start_lead_seconds": 5.457560779992491,
+    "prefill_finish_lead_seconds": 5.216990526998416
+  },
+  {
+    "record_id": "PPS-DEV-188",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-180",
+      "PPS-DEV-187"
+    ],
+    "seed_submit": 95396.988157912,
+    "prefill_scheduled": 95397.017294209,
+    "prefill_first_token": 95398.4485376,
+    "prior_live_last_token": 95401.785427218,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 1.4312433909944957,
+    "prefill_start_lead_seconds": 4.76813300899812,
+    "prefill_finish_lead_seconds": 3.3368896180036245
+  },
+  {
+    "record_id": "PPS-DEV-189",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-180",
+      "PPS-DEV-188"
+    ],
+    "seed_submit": 95399.580239828,
+    "prefill_scheduled": 95399.601039616,
+    "prefill_first_token": 95400.151469939,
+    "prior_live_last_token": 95401.785427218,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.550430322997272,
+    "prefill_start_lead_seconds": 2.184387601999333,
+    "prefill_finish_lead_seconds": 1.6339572790020611
+  },
+  {
+    "record_id": "PPS-DEV-190",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-180",
+      "PPS-DEV-189"
+    ],
+    "seed_submit": 95400.735437277,
+    "prefill_scheduled": 95400.768202165,
+    "prefill_first_token": 95401.156742586,
+    "prior_live_last_token": 95403.380386073,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.3885404210013803,
+    "prefill_start_lead_seconds": 2.6121839080005884,
+    "prefill_finish_lead_seconds": 2.223643486999208
+  },
+  {
+    "record_id": "PPS-DEV-191",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-189",
+      "PPS-DEV-190"
+    ],
+    "seed_submit": 95401.789960746,
+    "prefill_scheduled": 95401.820435726,
+    "prefill_first_token": 95403.130329403,
+    "prior_live_last_token": 95404.340643341,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 1.3098936769965803,
+    "prefill_start_lead_seconds": 2.520207615001709,
+    "prefill_finish_lead_seconds": 1.2103139380051289
+  },
+  {
+    "record_id": "PPS-DEV-192",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-190",
+      "PPS-DEV-191"
+    ],
+    "seed_submit": 95403.618650507,
+    "prefill_scheduled": 95403.628232775,
+    "prefill_first_token": 95403.901702671,
+    "prior_live_last_token": 95406.075390505,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.27346989601210225,
+    "prefill_start_lead_seconds": 2.4471577299991623,
+    "prefill_finish_lead_seconds": 2.17368783398706
+  },
+  {
+    "record_id": "PPS-DEV-193",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-191",
+      "PPS-DEV-192"
+    ],
+    "seed_submit": 95404.595130043,
+    "prefill_scheduled": 95404.630549256,
+    "prefill_first_token": 95405.135998137,
+    "prior_live_last_token": 95406.669134907,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.5054488809983013,
+    "prefill_start_lead_seconds": 2.038585650996538,
+    "prefill_finish_lead_seconds": 1.5331367699982366
+  },
+  {
+    "record_id": "PPS-DEV-194",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-192",
+      "PPS-DEV-193"
+    ],
+    "seed_submit": 95406.081299476,
+    "prefill_scheduled": 95406.111016939,
+    "prefill_first_token": 95406.601167565,
+    "prior_live_last_token": 95408.125712495,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.4901506259921007,
+    "prefill_start_lead_seconds": 2.014695556004881,
+    "prefill_finish_lead_seconds": 1.5245449300127802
+  },
+  {
+    "record_id": "PPS-DEV-195",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-193",
+      "PPS-DEV-194"
+    ],
+    "seed_submit": 95407.02171781,
+    "prefill_scheduled": 95407.044212934,
+    "prefill_first_token": 95408.048784959,
+    "prior_live_last_token": 95409.524912986,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 1.0045720250054728,
+    "prefill_start_lead_seconds": 2.480700052008615,
+    "prefill_finish_lead_seconds": 1.476128027003142
+  },
+  {
+    "record_id": "PPS-DEV-196",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-194",
+      "PPS-DEV-195"
+    ],
+    "seed_submit": 95408.665624283,
+    "prefill_scheduled": 95408.691567138,
+    "prefill_first_token": 95409.18692357,
+    "prior_live_last_token": 95410.205511198,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.4953564320021542,
+    "prefill_start_lead_seconds": 1.5139440600032685,
+    "prefill_finish_lead_seconds": 1.0185876280011144
+  },
+  {
+    "record_id": "PPS-DEV-197",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-196"
+    ],
+    "seed_submit": 95410.209574018,
+    "prefill_scheduled": 95410.247451155,
+    "prefill_first_token": 95412.358411324,
+    "prior_live_last_token": 95413.516196728,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 2.1109601690113777,
+    "prefill_start_lead_seconds": 3.2687455730047077,
+    "prefill_finish_lead_seconds": 1.15778540399333
+  },
+  {
+    "record_id": "PPS-DEV-198",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-196",
+      "PPS-DEV-197"
+    ],
+    "seed_submit": 95412.832222351,
+    "prefill_scheduled": 95412.855910965,
+    "prefill_first_token": 95413.068299081,
+    "prior_live_last_token": 95414.35642943,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 0.21238811600778718,
+    "prefill_start_lead_seconds": 1.5005184650071897,
+    "prefill_finish_lead_seconds": 1.2881303489994025
+  },
+  {
+    "record_id": "PPS-DEV-199",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-198"
+    ],
+    "seed_submit": 95414.362133224,
+    "prefill_scheduled": 95414.39536922,
+    "prefill_first_token": 95416.205431237,
+    "prior_live_last_token": 95416.577848414,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": true,
+    "max_pair_overlap_seconds": 1.810062017000746,
+    "prefill_start_lead_seconds": 2.182479194001644,
+    "prefill_finish_lead_seconds": 0.37241717700089794
+  },
+  {
+    "record_id": "PPS-DEV-200",
+    "reason": "lookahead",
+    "older_live_ids": [
+      "PPS-DEV-199"
+    ],
+    "seed_submit": 95416.63283994,
+    "prefill_scheduled": 95416.641920071,
+    "prefill_first_token": 95416.94255244,
+    "prior_live_last_token": 95418.164365826,
+    "prefill_starts_before_old_drained": true,
+    "prefill_overlaps_old_follower_decode": false,
+    "max_pair_overlap_seconds": 0,
+    "prefill_start_lead_seconds": 1.522445755006629,
+    "prefill_finish_lead_seconds": 1.2218133860005764
+  }
+]

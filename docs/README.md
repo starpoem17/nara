@@ -24,6 +24,7 @@ Read this index, then only the documents relevant to the current task.
 | Compare ungrouped and 7/9/12-group inference latency | [Grouping time](experiments/grouping-time.md) |
 | Full200 compressed-criteria OFF groups and v2/v3 rule experiments | [Compact dev200](experiments/compact200.md) |
 | Source-first KV prefix reuse: grouped OFF speed and accuracy | [Prefix cache](experiments/prefix-cache.md) |
+| Twelve-group cross-notice engine16; early next-source prefill and actual FULL graphs | [Prefix pipeline](experiments/prefix-pipeline.md) |
 | Five-group mixed thinking/instant: per-feature effects, prefill/decode, cache and batching controls | [Hybrid five](experiments/hybrid-five.md) |
 | Current mixed-five execution: batch8 barrier fallback; prefill/decode cause probes | [Prefill/decode and fallback](experiments/prefill-decode-fallback.md) |
 | Completion-driven refill and per-step prefill token budgets | [Continuous prefill](experiments/continuous-prefill.md) |

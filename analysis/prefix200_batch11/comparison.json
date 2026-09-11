@@ -1,0 +1,268 @@
+{
+  "baseline": "analysis/prefix200",
+  "candidate": "analysis/prefix200_batch11",
+  "old_seconds": 600.9577476370032,
+  "new_seconds": 561.6152729370078,
+  "time_reduction_fraction": 0.06546629085770506,
+  "speedup": 1.0700523589649744,
+  "macro_f1_delta": -0.015828214910692806,
+  "micro_f1_delta": -0.018835677407868956,
+  "changed_bits": 251,
+  "per_item": [
+    {
+      "item": "v1",
+      "old_f1": 0.3333333333333333,
+      "new_f1": 0.46153846153846156,
+      "delta": 0.12820512820512825,
+      "changed_bits": 3
+    },
+    {
+      "item": "v2",
+      "old_f1": 0.6666666666666666,
+      "new_f1": 0.6666666666666666,
+      "delta": 0.0,
+      "changed_bits": 0
+    },
+    {
+      "item": "v3",
+      "old_f1": 0.8571428571428571,
+      "new_f1": 0.8571428571428571,
+      "delta": 0.0,
+      "changed_bits": 0
+    },
+    {
+      "item": "v4",
+      "old_f1": 0.7142857142857143,
+      "new_f1": 0.46153846153846156,
+      "delta": -0.25274725274725274,
+      "changed_bits": 3
+    },
+    {
+      "item": "v5",
+      "old_f1": 0.38095238095238093,
+      "new_f1": 0.4,
+      "delta": 0.01904761904761909,
+      "changed_bits": 14
+    },
+    {
+      "item": "v6",
+      "old_f1": 0.23529411764705882,
+      "new_f1": 0.3157894736842105,
+      "delta": 0.08049535603715169,
+      "changed_bits": 14
+    },
+    {
+      "item": "v7",
+      "old_f1": 0.46153846153846156,
+      "new_f1": 0.18181818181818182,
+      "delta": -0.27972027972027974,
+      "changed_bits": 10
+    },
+    {
+      "item": "v8",
+      "old_f1": 0.38461538461538464,
+      "new_f1": 0.42105263157894735,
+      "delta": 0.03643724696356271,
+      "changed_bits": 13
+    },
+    {
+      "item": "v9",
+      "old_f1": 0.35714285714285715,
+      "new_f1": 0.3333333333333333,
+      "delta": -0.023809523809523836,
+      "changed_bits": 6
+    },
+    {
+      "item": "v10",
+      "old_f1": 0.14285714285714285,
+      "new_f1": 0.15384615384615385,
+      "delta": 0.010989010989011005,
+      "changed_bits": 20
+    },
+    {
+      "item": "v11",
+      "old_f1": 0.0,
+      "new_f1": 0.0,
+      "delta": 0.0,
+      "changed_bits": 10
+    },
+    {
+      "item": "v12",
+      "old_f1": 0.0,
+      "new_f1": 0.0,
+      "delta": 0.0,
+      "changed_bits": 0
+    },
+    {
+      "item": "v13",
+      "old_f1": 0.0,
+      "new_f1": 0.0,
+      "delta": 0.0,
+      "changed_bits": 1
+    },
+    {
+      "item": "v14",
+      "old_f1": 0.09523809523809523,
+      "new_f1": 0.27586206896551724,
+      "delta": 0.180623973727422,
+      "changed_bits": 20
+    },
+    {
+      "item": "v15",
+      "old_f1": 0.0,
+      "new_f1": 0.15384615384615385,
+      "delta": 0.15384615384615385,
+      "changed_bits": 8
+    },
+    {
+      "item": "v16",
+      "old_f1": 0.2,
+      "new_f1": 0.09090909090909091,
+      "delta": -0.1090909090909091,
+      "changed_bits": 22
+    },
+    {
+      "item": "v17",
+      "old_f1": 0.0,
+      "new_f1": 0.09523809523809523,
+      "delta": 0.09523809523809523,
+      "changed_bits": 23
+    },
+    {
+      "item": "v18",
+      "old_f1": 0.08888888888888889,
+      "new_f1": 0.047619047619047616,
+      "delta": -0.041269841269841276,
+      "changed_bits": 43
+    },
+    {
+      "item": "v19",
+      "old_f1": 0.4,
+      "new_f1": 0.42857142857142855,
+      "delta": 0.028571428571428525,
+      "changed_bits": 3
+    },
+    {
+      "item": "v20",
+      "old_f1": 0.5,
+      "new_f1": 0.4,
+      "delta": -0.09999999999999998,
+      "changed_bits": 4
+    },
+    {
+      "item": "v21",
+      "old_f1": 0.0,
+      "new_f1": 0.0,
+      "delta": 0.0,
+      "changed_bits": 1
+    },
+    {
+      "item": "v22",
+      "old_f1": 0.6,
+      "new_f1": 0.4,
+      "delta": -0.19999999999999996,
+      "changed_bits": 6
+    },
+    {
+      "item": "v23",
+      "old_f1": 0.2608695652173913,
+      "new_f1": 0.17391304347826086,
+      "delta": -0.08695652173913043,
+      "changed_bits": 20
+    },
+    {
+      "item": "v24",
+      "old_f1": 0.125,
+      "new_f1": 0.10526315789473684,
+      "delta": -0.019736842105263164,
+      "changed_bits": 7
+    }
+  ],
+  "batch_timings": {
+    "batch8": {
+      "first_1": {
+        "calls": 200,
+        "seconds": 198.18616057996405
+      },
+      "remaining_8": {
+        "calls": 200,
+        "seconds": 271.0801834759477
+      },
+      "remaining_3": {
+        "calls": 196,
+        "seconds": 102.93889306894562
+      },
+      "remaining_1": {
+        "calls": 1,
+        "seconds": 0.4177043039962882
+      },
+      "remaining_4": {
+        "calls": 4,
+        "seconds": 4.09773228901031
+      }
+    },
+    "batch11": {
+      "first_1": {
+        "calls": 201,
+        "seconds": 196.4555526098993
+      },
+      "remaining_11": {
+        "calls": 200,
+        "seconds": 281.8250969299115
+      },
+      "remaining_1": {
+        "calls": 5,
+        "seconds": 48.97054185700836
+      },
+      "recovery_first_1": {
+        "calls": 3,
+        "seconds": 6.279188780012191
+      },
+      "recovery_remaining_11": {
+        "calls": 3,
+        "seconds": 4.050011330007692
+      }
+    }
+  },
+  "first_pass": {
+    "failed_ids": [
+      "PPS-DEV-22",
+      "PPS-DEV-066",
+      "PPS-DEV-075"
+    ],
+    "prediction_seconds": 550.8362028060073
+  },
+  "recovery": {
+    "policy": {
+      "scope": "One whole-notice 1→11 retry for each failed notice, then one isolated retry per still-failed group",
+      "prompt_change": false,
+      "output_tokens": 2048,
+      "thinking": false,
+      "max_num_seqs": 11,
+      "internal_retries_per_predict": 1,
+      "source_sha256": "914269d418c2b40c2d2843ccad4028a337de2c79b15da20511207ee785a6a3a6"
+    },
+    "prediction_seconds": 10.77907013100048,
+    "separate_process_load_seconds": 28.045015989002422,
+    "records": [
+      {
+        "id": "PPS-DEV-22",
+        "seconds": 3.566586532993824,
+        "whole_notice_retry_error": null,
+        "final_error": null
+      },
+      {
+        "id": "PPS-DEV-066",
+        "seconds": 5.668477306011482,
+        "whole_notice_retry_error": null,
+        "final_error": null
+      },
+      {
+        "id": "PPS-DEV-075",
+        "seconds": 1.5438062360044569,
+        "whole_notice_retry_error": null,
+        "final_error": null
+      }
+    ]
+  }
+}

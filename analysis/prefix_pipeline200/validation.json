@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "records": 200,
+  "judgments": 4800,
+  "same_frozen_sources": true,
+  "same_rules": true,
+  "all_seed_dependencies_verified": true,
+  "max16_inflight_verified": true,
+  "request_trace_totals_verified": true,
+  "csv_columns": 49,
+  "full_graph_observed": true,
+  "early_prefill_observed": true,
+  "failed_ids": []
+}

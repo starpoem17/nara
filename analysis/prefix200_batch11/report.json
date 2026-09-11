@@ -1,0 +1,131 @@
+{
+  "name": "source_first_groups12_off_h6",
+  "options": {
+    "model_dir": "models/gemma-4-26B-A4B-it-NVFP4",
+    "max_model_len": 32768,
+    "thinking": false,
+    "item_group_size": 4
+  },
+  "max_num_seqs": 11,
+  "limits": {
+    "batch_size": 11,
+    "search_rounds": 2,
+    "queries_per_round": 4,
+    "top_k": 5,
+    "round_tokens": 4096,
+    "total_retrieval_tokens": 8192,
+    "output_tokens": 2048,
+    "retries": 1,
+    "require_search": false
+  },
+  "groups": [
+    [
+      "v1",
+      "v4"
+    ],
+    [
+      "v5",
+      "v6",
+      "v7"
+    ],
+    [
+      "v8"
+    ],
+    [
+      "v9",
+      "v19"
+    ],
+    [
+      "v10",
+      "v11",
+      "v12",
+      "v13"
+    ],
+    [
+      "v14"
+    ],
+    [
+      "v15",
+      "v16"
+    ],
+    [
+      "v17",
+      "v18"
+    ],
+    [
+      "v20"
+    ],
+    [
+      "v21"
+    ],
+    [
+      "v22",
+      "v23"
+    ],
+    [
+      "v24"
+    ]
+  ],
+  "records": 200,
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "prediction_seconds": 561.6152729370078,
+  "load_seconds": 27.05076279200148,
+  "warmup_seconds": 0.4502453649911331,
+  "total_seconds": 616.7110517180117,
+  "rule_seconds": 0.3686201688105939,
+  "failed_ids": [],
+  "model_turns": 2442,
+  "search_rounds": 0,
+  "invalid_responses": 9,
+  "context_failures": 0,
+  "input_tokens": 28011886,
+  "output_tokens": 127704,
+  "thinking_tokens": 0,
+  "cached_input_tokens": 25470368,
+  "cached_fraction": 0.909270014878684,
+  "cache_counts_available": true,
+  "request_stats_available": false,
+  "model_seconds": 549.0488691848004,
+  "retrieval_seconds": 0.0,
+  "first_pass": {
+    "failed_ids": [
+      "PPS-DEV-22",
+      "PPS-DEV-066",
+      "PPS-DEV-075"
+    ],
+    "prediction_seconds": 550.8362028060073
+  },
+  "recovery": {
+    "policy": {
+      "scope": "One whole-notice 1→11 retry for each failed notice, then one isolated retry per still-failed group",
+      "prompt_change": false,
+      "output_tokens": 2048,
+      "thinking": false,
+      "max_num_seqs": 11,
+      "internal_retries_per_predict": 1,
+      "source_sha256": "914269d418c2b40c2d2843ccad4028a337de2c79b15da20511207ee785a6a3a6"
+    },
+    "prediction_seconds": 10.77907013100048,
+    "separate_process_load_seconds": 28.045015989002422,
+    "records": [
+      {
+        "id": "PPS-DEV-22",
+        "seconds": 3.566586532993824,
+        "whole_notice_retry_error": null,
+        "final_error": null
+      },
+      {
+        "id": "PPS-DEV-066",
+        "seconds": 5.668477306011482,
+        "whole_notice_retry_error": null,
+        "final_error": null
+      },
+      {
+        "id": "PPS-DEV-075",
+        "seconds": 1.5438062360044569,
+        "whole_notice_retry_error": null,
+        "final_error": null
+      }
+    ]
+  }
+}

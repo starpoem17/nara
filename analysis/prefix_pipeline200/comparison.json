@@ -1,0 +1,113 @@
+{
+  "runs": [
+    {
+      "path": "analysis/prefix200",
+      "seconds": 600.9577476370032,
+      "load_and_inference_seconds": 627.980789897003,
+      "macro_f1": 0.2834927277302597,
+      "micro_f1": 0.2773722627737226,
+      "fp": 201,
+      "fn": 96
+    },
+    {
+      "path": "analysis/prefix200_batch11",
+      "seconds": 561.6152729370078,
+      "load_and_inference_seconds": 616.7110517180117,
+      "macro_f1": 0.2676645128195669,
+      "micro_f1": 0.25853658536585367,
+      "fp": 204,
+      "fn": 100
+    },
+    {
+      "path": "analysis/prefix_pipeline200",
+      "seconds": 303.9152993119933,
+      "load_and_inference_seconds": 367.5637345379946,
+      "macro_f1": 0.26820459734577634,
+      "micro_f1": 0.263681592039801,
+      "fp": 196,
+      "fn": 100
+    }
+  ],
+  "delta": {
+    "time_reduction_vs_batch11": 0.4588549956580664,
+    "macro_delta_vs_batch11": 0.0005400845262094611,
+    "micro_delta_vs_batch11": 0.00514500667394735
+  },
+  "scheduling": {
+    "notices_after_startup": 198,
+    "early_prefill_notices": 195,
+    "overlap_old_follower_decode_notices": 180,
+    "starts_after_old_drained": 3,
+    "prefill_finish_before_old_drained": 195,
+    "admission_block_events": {
+      "record_window": 64,
+      "source_token_budget": 23
+    },
+    "graph_counts": {
+      "FULL": 13675,
+      "NONE": 943
+    },
+    "full_graph_with_16_real_tokens_steps": 206,
+    "peak_inflight_requests": 16,
+    "mean_sampled_running": 7.86069753212319,
+    "peak_sampled_running": 16,
+    "peak_kv_usage": 0.5133588985981015,
+    "preempted_request_events": 0,
+    "max_live_source_tokens": 47226,
+    "late_prefill_details": [
+      {
+        "record_id": "PPS-DEV-28",
+        "reason": "empty_pipeline",
+        "older_live_ids": [],
+        "seed_submit": 95157.468242877,
+        "prefill_scheduled": 95157.511248698,
+        "prefill_first_token": 95159.407139532,
+        "prior_live_last_token": null,
+        "prefill_starts_before_old_drained": false,
+        "prefill_overlaps_old_follower_decode": false,
+        "max_pair_overlap_seconds": 0,
+        "prefill_start_lead_seconds": null,
+        "prefill_finish_lead_seconds": null,
+        "prior_block_reasons": [
+          "source_token_budget"
+        ]
+      },
+      {
+        "record_id": "PPS-DEV-121",
+        "reason": "empty_pipeline",
+        "older_live_ids": [],
+        "seed_submit": 95293.112101486,
+        "prefill_scheduled": 95293.152536628,
+        "prefill_first_token": 95294.755297128,
+        "prior_live_last_token": null,
+        "prefill_starts_before_old_drained": false,
+        "prefill_overlaps_old_follower_decode": false,
+        "max_pair_overlap_seconds": 0,
+        "prefill_start_lead_seconds": null,
+        "prefill_finish_lead_seconds": null,
+        "prior_block_reasons": [
+          "source_token_budget"
+        ]
+      },
+      {
+        "record_id": "PPS-DEV-137",
+        "reason": "lookahead",
+        "older_live_ids": [
+          "PPS-DEV-136"
+        ],
+        "seed_submit": 95316.822788357,
+        "prefill_scheduled": 95316.859892167,
+        "prefill_first_token": 95318.151657318,
+        "prior_live_last_token": 95316.841581762,
+        "prefill_starts_before_old_drained": false,
+        "prefill_overlaps_old_follower_decode": false,
+        "max_pair_overlap_seconds": 0,
+        "prefill_start_lead_seconds": -0.01831040500837844,
+        "prefill_finish_lead_seconds": -1.310075556000811,
+        "prior_block_reasons": [
+          "source_token_budget"
+        ]
+      }
+    ]
+  }
+}
