@@ -33,7 +33,7 @@ def main():
     table,schema,_=configuration(table,schema,'groups12',True)
     dump(folder/'plan.json',{'schedule':'batch_barrier','max_requests':8,'groups':GROUPS,'thinking':[False]*4+[True],
         'instant_output_tokens':args.instant_output_tokens,'output_tokens':2048,
-        'source_sha256':{p:hashlib.sha256(Path(p).read_bytes()).hexdigest() for p in ['scripts/run_batch_fallback.py','nara/inference.py','nara/batch_barrier.py','nara/continuous.py','nara/vllm_model.py','nara/hypothesis6.py','nara/compact_criteria.json','data/dev.jsonl']}})
+        'source_sha256':{p:hashlib.sha256(Path(p).read_bytes()).hexdigest() for p in ['scripts/run_batch_fallback.py','nara/inference.py','nara/conversation.py','nara/batch_barrier.py','nara/continuous.py','nara/vllm_model.py','nara/hypothesis6.py','nara/compact_criteria.json','data/dev.jsonl']}})
     from nara.retrieval import BGEEncoder,LegalRetriever
     import vllm,torch
     tick=time.monotonic();retriever=LegalRetriever('model/legal_index',BGEEncoder('models/bge-m3',device='cuda'))

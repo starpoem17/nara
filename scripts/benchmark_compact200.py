@@ -73,7 +73,7 @@ def preflight(out, records, table, schema, limits):
                 'compression': 'English concise criteria from nara/legal_criteria.json; full documents intact',
                 'source_sha256': {str(p): hashlib.sha256(p.read_bytes()).hexdigest() for p in
                    [Path('scripts/benchmark_compact200.py'), Path('nara/compact_criteria.json'), Path('nara/compact_predictor.py'),
-                    Path('nara/inference.py'), Path('nara/vllm_model.py'), Path('nara/legal_criteria.json'),
+                    Path('nara/inference.py'), Path('nara/conversation.py'), Path('nara/vllm_model.py'), Path('nara/legal_criteria.json'),
                     Path('data/dev.jsonl'), Path('data/항목표.json'), Path('data/정답스키마_디코딩.json')]}}
     (out/'manifest.json').write_text(json.dumps(manifest, ensure_ascii=False, indent=2)+'\n')
     for p in manifest['source_sha256']:

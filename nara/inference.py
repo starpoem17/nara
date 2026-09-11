@@ -1,63 +1,14 @@
 """Batched, independent judgment conversations with bounded dynamic retrieval."""
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from copy import deepcopy
 import json
 import logging
 from pathlib import Path
 import time
 
-from jsonschema import Draft202012Validator, ValidationError
-
-
-def compact(value):
-    return json.dumps(value, ensure_ascii=False, separators=(",", ":"))
-
-
-@dataclass(frozen=True)
-class Limits:
-    batch_size: int = 8
-    search_rounds: int = 2
-    queries_per_round: int = 4
-    top_k: int = 5
-    round_tokens: int = 4096
-    total_retrieval_tokens: int = 8192
-    output_tokens: int = 2048
-    retries: int = 1
-    require_search: bool = False
-    instant_output_tokens: int | None = None
-
-    def __post_init__(self):
-        if type(self.require_search) is not bool or (self.require_search and self.search_rounds < 1):
-            raise ValueError("require_search needs a positive search_rounds limit")
-        for name, value in vars(self).items():
-            if name == "require_search":
-                continue
-            if name == "instant_output_tokens" and value is None:
-                continue
-            minimum = 0 if name in ("search_rounds", "retries") else 1
-            if type(value) is not int or value < minimum:
-                raise ValueError(f"{name} must be an integer >= {minimum}")
-        if self.instant_output_tokens is not None and self.instant_output_tokens > self.output_tokens:
-            raise ValueError("instant_output_tokens must not exceed output_tokens")
-
-
-@dataclass(frozen=True)
-class Turn:
-    task_id: str
-    messages: list
-    schema: dict
-    max_tokens: int
-
-
-@dataclass(frozen=True)
-class Reply:
-    text: str
-    finish_reason: str = "stop"
-    input_tokens: int = 0
-    output_tokens: int = 0
-    error: str | None = None
-    thinking_tokens: int = 0
-    thinking_budget: int | None = None
+from nara.conversation import (
+    Limits, Turn, Reply, _Task, compact, action_schema, JudgmentConversation,
+)
 
 
 @dataclass
@@ -66,31 +17,6 @@ class Prediction:
     judgments: dict | None
     error: str | None
     trace: list
-
-
-@dataclass
-class _Task:
-    task_id: str
-    record: dict
-    items: tuple
-    messages: list
-    rounds: int = 0
-    retrieval_tokens: int = 0
-    seen: set = field(default_factory=set)
-    retries: int = 0
-    force_final: bool = False
-    judgments: dict | None = None
-    error: str | None = None
-    trace: list = field(default_factory=list)
-
-    @property
-    def done(self):
-        return self.judgments is not None or self.error is not None
-
-
-def _object(properties):
-    return {"type": "object", "properties": properties,
-            "required": list(properties), "additionalProperties": False}
 
 
 class Predictor:
@@ -120,24 +46,21 @@ class Predictor:
             raise ValueError("Item table and judgment schema disagree")
         self.metrics = {}
 
-    def _generation_limit(self):
-        if (self.limits.instant_output_tokens is not None
-                and not getattr(self.model, "thinking", False)):
-            return self.limits.instant_output_tokens
-        return self.limits.output_tokens
-
     def _schema(self, items, search, search_only=False):
-        judgments = _object({key: self.judgment_schema["properties"][key] for key in items})
-        final = _object({"action": {"const": "final"}, "judgments": judgments})
-        if not search:
-            return final
-        query = _object({
-            "action": {"const": "search"},
-            "queries": {"type": "array", "minItems": 1,
-                        "maxItems": self.limits.queries_per_round,
-                        "items": {"type": "string", "minLength": 1, "maxLength": 256}},
-        })
-        return query if search_only else {"anyOf": [query, final]}
+        return action_schema(self.judgment_schema, items, self.limits, search, search_only)
+
+    def conversation(self, task_id, record, items):
+        return JudgmentConversation(task_id, record, items, self._messages(record, items),
+            model=self.model, item_table=self.items, judgment_schema=self.judgment_schema,
+            limits=self.limits)
+
+    def _legacy_conversation(self, task):
+        return JudgmentConversation._from_task(task, model=self.model, item_table=self.items,
+            judgment_schema=self.judgment_schema, limits=self.limits)
+
+    def _finish(self, task, judgments):
+        """Compatibility for historical diagnostics; live execution uses conversations."""
+        self._legacy_conversation(task)._finish(judgments)
 
     def _messages(self, record, items):
         rules = "\n".join(
@@ -190,7 +113,7 @@ class Predictor:
         started = time.monotonic()
         self.metrics = {"model_seconds": 0.0, "retrieval_seconds": 0.0,
                         "model_batches": 0, "retrieval_batches": 0}
-        tasks = [_Task(f"{ri}:{gi}", record, group, self._messages(record, group))
+        tasks = [self.conversation(f"{ri}:{gi}", record, group)
                  for ri, record in enumerate(records) for gi, group in enumerate(groups)]
         pending, active = iter(tasks), []
         exhausted = False
@@ -203,29 +126,9 @@ class Predictor:
                     active.append(task)
             requests = []
             for task in active:
-                tokens = self.model.count_messages(task.messages)
-                if tokens + self.limits.output_tokens + 128 > self.model.max_model_len:
-                    task.error = "Source/conversation exceeds context; no text was truncated"
-                    task.trace.append({"event": "context_failure", "input_tokens": tokens})
-                    continue
-                # Reserve a complete search action, a result/control message, and final output.
-                search = (not task.force_final and task.rounds < self.limits.search_rounds
-                          and task.retrieval_tokens < self.limits.total_retrieval_tokens
-                          and tokens + 2 * self.limits.output_tokens + 256
-                          <= self.model.max_model_len)
-                required = self.limits.require_search and task.rounds == 0
-                output_tokens = self._generation_limit()
-                if required:
-                    # A search-only action can use a smaller generation budget than final JSON.
-                    output_tokens = min(output_tokens, self.model.max_model_len - tokens
-                                        - self.limits.output_tokens - 256)
-                    if output_tokens < 32:
-                        task.error = "Required search cannot fit context; no text was truncated"
-                        task.trace.append({"event": "context_failure", "input_tokens": tokens})
-                        continue
-                    search = True
-                requests.append(Turn(task.task_id, task.messages,
-                                     self._schema(task.items, search, required), output_tokens))
+                turn = task.next_turn()
+                if turn is not None:
+                    requests.append(turn)
             if requests:
                 tick = time.monotonic()
                 try:
@@ -241,34 +144,11 @@ class Predictor:
                 searches = {}
                 for request in requests:
                     task, reply = by_id[request.task_id], replies[request.task_id]
-                    task.trace.append({"event": "model", "input_tokens": reply.input_tokens,
-                                       "output_tokens": reply.output_tokens,
-                                       "finish_reason": reply.finish_reason,
-                                       "response": reply.text, "error": reply.error,
-                                       "max_output_tokens": request.max_tokens,
-                                       "thinking_tokens": reply.thinking_tokens,
-                                       "thinking_budget": reply.thinking_budget,
-                                       "required_search": self.limits.require_search and task.rounds == 0})
-                    try:
-                        if reply.error or reply.finish_reason != "stop":
-                            raise ValueError(reply.error or f"Generation ended: {reply.finish_reason}")
-                        action = json.loads(reply.text)
-                        Draft202012Validator(request.schema).validate(action)
-                        if action["action"] == "search":
-                            if any(not query.strip() for query in action["queries"]):
-                                raise ValueError("Empty search query")
-                            task.rounds += 1  # A failed retrieval attempt also consumes one round.
-                            task.messages.append({"role": "assistant", "content": compact(action)})
-                            searches[task.task_id] = {
-                                f"{task.task_id}:{task.rounds}:{i}": query
-                                for i, query in enumerate(action["queries"])
-                            }
-                        else:
-                            self._finish(task, action["judgments"])
-                    except (ValueError, TypeError, KeyError, ValidationError) as exc:
-                        self._retry(task, exc.message if isinstance(exc, ValidationError) else str(exc))
+                    queries = task.accept_reply(request, reply)
+                    if queries:
+                        searches[task.task_id] = queries
                 if searches:
-                    self._retrieve(by_id, searches)
+                    self._search(by_id, searches)
             completed = sum(task.done for task in active)
             if completed:
                 logging.getLogger(__name__).info("Completed %d/%d judgment tasks",
@@ -282,62 +162,17 @@ class Predictor:
             judgments = None if errors else {
                 key: value for task in owned for key, value in task.judgments.items()}
             results.append(Prediction(record["id"], judgments, "; ".join(errors) or None,
-                                      [{"task_id": t.task_id, "items": t.items,
-                                        "search_rounds": t.rounds,
-                                        "retrieval_tokens": t.retrieval_tokens,
-                                        "events": t.trace} for t in owned]))
+                                      [t.snapshot() for t in owned]))
         return results
 
     def replay_judgments(self, record, task_trace):
-        """Revalidate saved successful group output without another model call."""
-        finals = [event for event in task_trace['events'] if event['event'] == 'final']
-        models = [event for event in task_trace['events'] if event['event'] == 'model']
-        if not finals or not models or models[-1]['finish_reason'] != 'stop':
-            raise ValueError('Replay requires a successfully completed final response')
-        action = json.loads(models[-1]['response'])
-        Draft202012Validator(self._schema(task_trace['items'], False)).validate(action)
-        task = _Task('replay', record, tuple(task_trace['items']), [],
-                     retrieval_tokens=task_trace['retrieval_tokens'])
-        self._finish(task, action['judgments'])
-        if task.error or not task.trace or task.trace[-1] != finals[-1]:
-            raise ValueError('Replayed judgment validation differs from the saved final event')
-        return task.judgments
+        """Revalidate saved successful output without token counting or generation."""
+        conversation = JudgmentConversation('replay', record, task_trace['items'], [],
+            model=self.model, item_table=self.items, judgment_schema=self.judgment_schema,
+            limits=self.limits)
+        return conversation.replay_judgments(task_trace)
 
-    def _retry(self, task, error):
-        task.trace.append({"event": "invalid_response", "error": error[:300]})
-        if task.retries >= self.limits.retries:
-            task.error = "Response invalid after retries: " + error[:300]
-            return
-        task.retries += 1
-        required = self.limits.require_search and task.rounds == 0
-        task.force_final = not required
-        # Discard invalid generated text; preserve the original and all successful retrievals.
-        task.messages[-1] = {
-            **task.messages[-1],
-            "content": task.messages[-1]["content"] +
-            ("\n이전 출력은 유효하지 않았다. 반드시 유효한 검색 요청 JSON을 작성하라." if required else
-             "\n이전 출력은 유효하지 않았다. 추가 검색 없이 지정한 모든 항목의 최종 JSON을 완성하라.")
-        }
-
-    def _finish(self, task, judgments):
-        if self.limits.require_search and task.retrieval_tokens == 0:
-            task.error = "Required search yielded no passages in context"
-            return
-        documents = [doc["text"] for doc in task.record["docs"]]
-        dropped = []
-        for key, value in judgments.items():
-            evidence = value["근거문구"]
-            if value["위반여부"] == 0 or self.items[key]["부재탐지"]:
-                evidence = None
-            elif evidence and (evidence.startswith(("=", "+", "@"))
-                               or not any(evidence in text for text in documents)):
-                dropped.append(key)
-                evidence = None
-            value["근거문구"] = evidence
-        task.judgments = judgments
-        task.trace.append({"event": "final", "evidence_dropped": dropped})
-
-    def _retrieve(self, by_id, searches):
+    def _search(self, by_id, searches):
         queries = {key: value for batch in searches.values() for key, value in batch.items()}
         tick = time.monotonic()
         error = None
@@ -349,46 +184,5 @@ class Predictor:
             hits, error = {}, f"{type(exc).__name__}: {exc}"
         self.metrics["retrieval_seconds"] += time.monotonic() - tick
         self.metrics["retrieval_batches"] += 1
-        for task_id, batch in searches.items():
-            task = by_id[task_id]
-            remaining = self.limits.search_rounds - task.rounds
-            instruction = (f"남은 검색 횟수: {remaining}. 필요하면 검색어를 보완하거나 최종 판단하라."
-                           if remaining else "검색 한도에 도달했다. 확보한 자료로 반드시 최종 판단하라.")
-            header = "법령 검색 결과 (판정 참고 자료이며 근거문구 인용 대상이 아님):\n"
-            tail = "\n" + instruction
-            if error:
-                tail = "\n검색 실패. 검색 실패 자체로 위반을 판단하지 말라.\n" + instruction
-            budget = min(self.limits.round_tokens,
-                         self.limits.total_retrieval_tokens - task.retrieval_tokens)
-            selected, new_keys = [], set()
-            # Round-robin rank order prevents the first query consuming the entire text budget.
-            ranked = [hits.get(key, []) for key in batch]
-            for rank in range(max(map(len, ranked), default=0)):
-                for row in ranked:
-                    if rank >= len(row):
-                        continue
-                    hit = row[rank]
-                    key = " ".join(hit.text.split())
-                    if key in task.seen or key in new_keys:
-                        continue
-                    passage = {"passage_id": hit.passage_id, "source": hit.source,
-                               "locator": hit.locator, "title": hit.title,
-                               "section": hit.section, "text": hit.text}
-                    candidate = selected + [passage]
-                    body = compact(candidate)
-                    message = {"role": "user", "content": header + body + tail}
-                    if (self.model.count_text(body) > budget
-                            or self.model.count_messages(task.messages + [message])
-                            + self.limits.output_tokens + 128 > self.model.max_model_len):
-                        continue
-                    selected, new_keys = candidate, new_keys | {key}
-            body = compact(selected)
-            # Empty result has no retrieved material; control text is still context-budgeted.
-            used = self.model.count_text(body) if selected else 0
-            task.seen.update(new_keys)
-            task.retrieval_tokens += used
-            task.messages.append({"role": "user", "content": header + body + tail})
-            task.trace.append({"event": "search", "round": task.rounds, "queries": batch,
-                               "passage_ids": [p["passage_id"] for p in selected],
-                               "tokens": used, "error": error,
-                               "remaining_rounds": remaining})
+        for task_id in searches:
+            by_id[task_id].accept_search(hits, error)

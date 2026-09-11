@@ -3,7 +3,7 @@ from collections import deque
 import time
 
 from nara.continuous import ContinuousPredictor
-from nara.inference import _Task, Prediction
+from nara.inference import Prediction
 
 
 class PrefixPipelinePredictor(ContinuousPredictor):
@@ -33,8 +33,7 @@ class PrefixPipelinePredictor(ContinuousPredictor):
             errors = [f'{t.task_id}: {t.error}' for t in tasks if t.error]
             return Prediction(rid, None if errors else {k: v for t in tasks for k, v in t.judgments.items()},
                 '; '.join(errors) or None,
-                [{'task_id': t.task_id, 'items': t.items, 'search_rounds': t.rounds,
-                  'retrieval_tokens': t.retrieval_tokens, 'events': t.trace} for t in tasks])
+                [t.snapshot() for t in tasks])
 
         def finish(task):
             if not task.done:
@@ -69,7 +68,7 @@ class PrefixPipelinePredictor(ContinuousPredictor):
                         'prospective_source_tokens': total})
                     last_block = key
                 return False
-            tasks = [_Task(f'{rid}:{gi}', record, g, self._messages(record, g))
+            tasks = [self.conversation(f'{rid}:{gi}', record, g)
                      for gi, g in enumerate(groups)]
             self.admission.append({'event': 'admit', 'record_id': rid, 'reason': reason,
                 'time': time.monotonic(), 'older_live_ids': list(live),
@@ -103,7 +102,7 @@ class PrefixPipelinePredictor(ContinuousPredictor):
                     if not ready:
                         break
                     task = next_task(); self.model.thinking = False
-                    turn = self._turn(task)
+                    turn = task.next_turn()
                     if turn is None:
                         finish(task)
                         continue
@@ -117,7 +116,7 @@ class PrefixPipelinePredictor(ContinuousPredictor):
                     for tid, reply in replies:
                         task, turn = flights.pop(tid)
                         self.model.thinking = False
-                        self._accept(task, turn, reply)
+                        self._consume(task, turn, reply)
                         finish(task)
                 elif ready:
                     continue

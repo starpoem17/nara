@@ -21,6 +21,7 @@ Default experiment: `uv run --locked python scripts/run_experiment.py` — curre
 |---|---|
 | Build/query legal index; inspect artifact contract | [Legal retrieval](architecture/legal-retrieval.md) |
 | Change inference, prompts, grouping, budgets or execution | [Dynamic RAG](architecture/dynamic-rag.md) |
+| Change shared conversation state, budgets, validation or replay | [Judgment conversation](architecture/judgment-conversation.md) |
 | Change local engine execution, token rendering, cache or telemetry; preserve historical calls | [Local engine](architecture/local-engine.md) |
 | Change failed-notice recovery, successful replay or retry cost/evidence aggregation | [Recovery](architecture/recovery.md) |
 | Inspect per-feature legal criteria, source provenance and prompt budget | [Legal criteria](architecture/legal-criteria.md) |

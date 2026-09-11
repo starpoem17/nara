@@ -54,7 +54,7 @@ def prepare(records,table,schema,limits):
     ranked=sorted(counts,key=lambda r:r['groups'][0]['False'])
     selected=[ranked[round(i*(len(ranked)-1)/11)]['id'] for i in range(12)]
     paths=['scripts/benchmark_hybrid200.py','nara/hybrid_experiment.py','nara/prefix_predictor.py',
-           'nara/vllm_model.py','nara/inference.py','nara/compact_predictor.py','nara/compact_criteria.json',
+           'nara/vllm_model.py','nara/inference.py','nara/conversation.py','nara/compact_predictor.py','nara/compact_criteria.json',
            'nara/hypothesis6.py','data/dev.jsonl','data/항목표.json','data/정답스키마_디코딩.json']
     hashes={p:hashlib.sha256(Path(p).read_bytes()).hexdigest() for p in paths}
     assert hashes['nara/hypothesis6.py']==json.loads(Path('analysis/compact200/rule_freeze.json').read_text())['sha256']

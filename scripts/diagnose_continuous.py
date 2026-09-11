@@ -62,7 +62,7 @@ def main():
     dump(ROOT/'plan.json',{'ids':[r['id'] for r in records[:24]],'selection':'First24 in original input order; no selection by labels or output differences',
         'stages':['old_barrier_1','old_barrier_2','new_barrier','new_continuous_1','new_continuous_2'],
         'scope':'Same-engine raw-token diagnostics; same frozen Turn inputs; no full evaluation claim; reset prefix each stage, other warm state persists',
-        'source_sha256':{p:hashlib.sha256(Path(p).read_bytes()).hexdigest() for p in ['scripts/diagnose_continuous.py','nara/continuous.py','nara/vllm_model.py','nara/inference.py','nara/prefix_predictor.py','nara/compact_criteria.json','data/dev.jsonl']}})
+        'source_sha256':{p:hashlib.sha256(Path(p).read_bytes()).hexdigest() for p in ['scripts/diagnose_continuous.py','nara/continuous.py','nara/vllm_model.py','nara/inference.py','nara/conversation.py','nara/prefix_predictor.py','nara/compact_criteria.json','data/dev.jsonl']}})
     print(json.dumps({'stage':'input_audit_passed','records':200}),flush=True)
     from nara.retrieval import BGEEncoder,LegalRetriever
     import vllm

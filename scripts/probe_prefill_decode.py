@@ -27,7 +27,7 @@ def main():
         'prefill':'Same prompt plus common output prefix, max_tokens1/logprobs10, solo vs batch8, two repetitions',
         'decode':'Same extended prompt, start solo; after first returned token inject7 requests vs stay solo; compare only shared history; two repetitions',
         'limits':'No layer/kernel probes; token probes use unconstrained decoding without thinking budget so no forced token masks obscure scores; not a label-quality evaluation',
-        'source_sha256':{p:hashlib.sha256(Path(p).read_bytes()).hexdigest() for p in ['scripts/probe_prefill_decode.py','nara/continuous.py','nara/vllm_model.py','nara/inference.py','nara/compact_criteria.json','data/dev.jsonl']}})
+        'source_sha256':{p:hashlib.sha256(Path(p).read_bytes()).hexdigest() for p in ['scripts/probe_prefill_decode.py','nara/continuous.py','nara/vllm_model.py','nara/inference.py','nara/conversation.py','nara/compact_criteria.json','data/dev.jsonl']}})
     from nara.retrieval import BGEEncoder,LegalRetriever
     import vllm
     from vllm import SamplingParams

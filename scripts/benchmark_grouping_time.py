@@ -124,7 +124,7 @@ def main():
                 'plans':PLANS, 'limits':asdict(limits), 'thinking':True, 'thinking_budget':1024,
                 'max_model_len':32768, 'counts':counts,
                 'source_sha256':{str(path):hashlib.sha256(path.read_bytes()).hexdigest() for path in
-                    [Path(__file__),Path('nara/inference.py'),Path('nara/vllm_model.py'),Path('nara/legal_criteria.json'),Path('data/dev.jsonl')]}}
+                    [Path(__file__),Path('nara/inference.py'), Path('nara/conversation.py'),Path('nara/vllm_model.py'),Path('nara/legal_criteria.json'),Path('data/dev.jsonl')]}}
     (out/'manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
     with (out/'input.jsonl').open('w') as stream:
         for r in selected:
@@ -137,7 +137,7 @@ def main():
                       'sample_ids':[r['id'] for r in selected]},ensure_ascii=False),flush=True)
     if args.prepare_only:
         return
-    for path in [Path(__file__),Path('script.py'),Path('nara/inference.py'),Path('nara/vllm_model.py'),
+    for path in [Path(__file__),Path('script.py'),Path('nara/inference.py'), Path('nara/conversation.py'),Path('nara/vllm_model.py'),
                  Path('nara/legal_criteria.json'),Path('nara/retrieval.py'),Path('nara/prompt.txt')]:
         target=out/'source'/path.name
         target.parent.mkdir(exist_ok=True,parents=True);shutil.copy2(path,target)

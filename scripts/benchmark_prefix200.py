@@ -94,7 +94,7 @@ def main():
         (out/f'prompt_{i+1:02}.txt').write_text('[system]\n'+messages[0]['content']+'\n[user]\n{UNCHANGED_NOTICE_ID_META_AND_DOCUMENTS}'+suffix+'\n')
         (out/f'schema_{i+1:02}.json').write_text(json.dumps(predictor._schema(group,True),ensure_ascii=False,indent=2)+'\n')
     sources=['scripts/benchmark_prefix200.py','nara/prefix_predictor.py','nara/compact_predictor.py',
-             'nara/compact_criteria.json','nara/inference.py','nara/vllm_model.py','nara/hypothesis6.py',
+             'nara/compact_criteria.json','nara/inference.py','nara/conversation.py','nara/vllm_model.py','nara/hypothesis6.py',
              'scripts/benchmark_compact200.py','data/dev.jsonl','data/항목표.json','data/정답스키마_디코딩.json']
     hashes={p:hashlib.sha256(Path(p).read_bytes()).hexdigest() for p in sources}
     frozen=json.loads(Path('analysis/compact200/rule_freeze.json').read_text())['sha256']

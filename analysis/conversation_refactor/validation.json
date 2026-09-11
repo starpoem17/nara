@@ -1,0 +1,44 @@
+{
+  "date": "2026-09-11",
+  "cpu_tests_passed": 94,
+  "behavior_parity": {
+    "scenarios": 28,
+    "prediction_trace_request_and_search_batches_identical": true,
+    "payload_sha256": "d631eeb5f5279a003072ad507094801fff690238d8bbf5b782e608729ccd0044",
+    "gpu_inference_performed": false
+  },
+  "saved_replay": {
+    "saved_run": "output/experiments/engine-refactor-after-20260911",
+    "notices": 200,
+    "groups": 2400,
+    "group_judgments_and_evidence_identical": true,
+    "saved_trace_unchanged": true,
+    "scope": "Conversation-owned groups only; separate v2/v3 rule outputs excluded.",
+    "gpu_inference_performed": false
+  },
+  "preflight": {
+    "notices": 200,
+    "groups": 2400,
+    "max_input_tokens": 29252,
+    "current_prompt_lengths_and_prefix_counts_equal_saved_run": true,
+    "grouping_equal_saved_run": true,
+    "all_snapshots_match_manifest_and_current_sources": true
+  },
+  "before_git_commit": "1c90dd88d7419bc2ae49e3c3466a8b412cd0d8cf",
+  "before_source_sha256": {
+    "inference.py": "e10fcbfc88ce104329285b105beab78f5e519b91ab40ccaaedc4824c8f72aca0",
+    "continuous.py": "1bc0a498df16354cfbf0e11097f2bb598ca3aa2de532ea08a36a351114994914",
+    "prefix_pipeline.py": "b7e8c556cb4874a1bd8d700a13f57c76f0e411e4955eb77b9202334cc3cdb8fd"
+  },
+  "source_sha256": {
+    "nara/conversation.py": "273469929c78ded1ecc6a763703ddaeca22a4c74fa35220106bb959b54247ca3",
+    "nara/inference.py": "cc81a106db5db48eea99ba07119e9b537908e78a5aa9afd1cf06402e2057c4d9",
+    "nara/continuous.py": "80364fa8453e58d1176bfdc02c95ba81b5457d790fe0d931b2b582953fdb7ec7",
+    "nara/prefix_pipeline.py": "0ddc8dd026efc9f5480bd5a2837539a385c42da041c0a2aa03cef8de36c631b9",
+    "tests/test_conversation.py": "5409f4c1a24ee910ab73db443af4b8083a0a42b09cf7b69524b477b818c23624",
+    "tests/test_experiment_engine.py": "626b600f45bd25752704d6c6482d81b640d5888b8fc71b6a2559943f08262803"
+  },
+  "gpu_inference_performed": false,
+  "cpu_test_scope": "Full working tree, including pre-existing uncommitted tests.",
+  "isolated_commit_cpu_tests_passed": 83
+}

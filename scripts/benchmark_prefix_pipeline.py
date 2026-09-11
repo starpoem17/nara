@@ -66,7 +66,8 @@ def main(argv=None, *, verify_reference=True, default_output=Path('analysis/pref
     limits = Limits(output_tokens=2048, batch_size=16)
     policy = {'initial_records': 2, 'max_live_records': 3, 'max_live_source_tokens': 48000, 'lookahead_groups': 16}
     sources = ['scripts/benchmark_prefix_pipeline.py', 'nara/prefix_pipeline.py', 'nara/continuous.py',
-               'nara/vllm_model.py', 'nara/inference.py', 'nara/prefix_predictor.py', 'nara/compact_predictor.py',
+               'nara/vllm_model.py', 'nara/inference.py', 'nara/conversation.py',
+               'nara/prefix_predictor.py', 'nara/compact_predictor.py',
                'nara/compact_criteria.json', 'nara/hypothesis6.py', 'scripts/benchmark_compact200.py',
                'nara/recovery.py', 'scripts/benchmark_grouping_time.py',
                'scripts/benchmark_hybrid200.py', 'scripts/evaluate_dev.py', 'script.py',

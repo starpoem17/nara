@@ -15,7 +15,7 @@ Initial and retry trace inputs remain unchanged. The result trace preserves init
 
 ## Validation ownership
 
-`Predictor.replay_judgments` validates the saved successful final response against the group's schema, applies the same evidence/required-search checks as inference, and requires the resulting final-validation event to match the saved event. No inference is performed and the saved trace is not mutated.
+`Predictor.replay_judgments` delegates to the shared [judgment conversation](judgment-conversation.md) to validate the saved successful final response against the group's schema, applies the same evidence/required-search checks as inference, and requires the resulting final-validation event to match the saved event. No inference is performed and the saved trace is not mutated.
 
 Historical `scripts.recover_hybrid200.replay(record, task, predictor)` remains a compatibility adapter; its callers no longer construct private task state or call `_finish` themselves. Historical standalone execution/recovery policies and archived source files are otherwise retained.
 

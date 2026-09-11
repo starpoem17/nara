@@ -4,6 +4,7 @@ from pathlib import Path
 from types import SimpleNamespace as NS
 from unittest.mock import patch
 import io
+import hashlib
 import json
 import sys
 import tempfile
@@ -106,6 +107,11 @@ class ExperimentEngineTests(unittest.TestCase):
             evaluate = stack.enter_context(patch.object(runner, 'evaluate'))
             with redirect_stdout(io.StringIO()):
                 runner.main(['--output-dir', str(out)], verify_reference=False)
+            manifest = json.loads((out / 'manifest.json').read_text())
+            snapshot = out / 'source/nara/conversation.py'
+            self.assertEqual(snapshot.read_bytes(), Path('nara/conversation.py').read_bytes())
+            self.assertEqual(manifest['source_sha256']['nara/conversation.py'],
+                             hashlib.sha256(snapshot.read_bytes()).hexdigest())
             report = json.loads((out / 'report.json').read_text())
             scheduler = [json.loads(s) for s in (out / 'scheduler.jsonl').read_text().splitlines()]
             requests = [json.loads(s) for s in (out / 'request_timings.jsonl').read_text().splitlines()]
