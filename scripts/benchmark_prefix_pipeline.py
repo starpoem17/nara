@@ -16,7 +16,7 @@ from nara.continuous import ContinuousPredictor
 from nara.hypothesis6 import judge
 from scripts.benchmark_compact200 import MODEL, configuration
 from scripts.benchmark_hybrid200 import safe
-from scripts.recover_hybrid200 import replay
+from nara.recovery import Attempt, recover_notices
 from scripts.evaluate_dev import evaluate
 
 
@@ -68,7 +68,7 @@ def main(argv=None, *, verify_reference=True, default_output=Path('analysis/pref
     sources = ['scripts/benchmark_prefix_pipeline.py', 'nara/prefix_pipeline.py', 'nara/continuous.py',
                'nara/vllm_model.py', 'nara/inference.py', 'nara/prefix_predictor.py', 'nara/compact_predictor.py',
                'nara/compact_criteria.json', 'nara/hypothesis6.py', 'scripts/benchmark_compact200.py',
-               'scripts/recover_hybrid200.py', 'scripts/benchmark_grouping_time.py',
+               'nara/recovery.py', 'scripts/benchmark_grouping_time.py',
                'scripts/benchmark_hybrid200.py', 'scripts/evaluate_dev.py', 'script.py',
                'data/dev.jsonl', 'data/항목표.json', 'data/정답스키마_디코딩.json']
     if not verify_reference:
@@ -138,54 +138,33 @@ def main(argv=None, *, verify_reference=True, default_output=Path('analysis/pref
             report = {'prediction_seconds': elapsed, 'failed_ids': [p.record_id for p in results if p.error],
                       'records': len(selected), 'metrics': predictor.metrics, 'rule_seconds': rule_time}
             dump(folder / 'stage_report.json', report)
-            return payload, stream, predictor, report
+            attempt = Attempt(payload, elapsed, list(stream.rows), list(stream.lifecycle), list(scheduler))
+            return attempt, list(predictor.admission), report
 
-        smoke, _, _, _ = run(records[:8], out / 'smoke')
-        smoke_stats = list(scheduler)
-        assert any(s['graph'] and s['graph']['runtime_mode'] == 'FULL' for s in smoke_stats), 'No FULL graph in smoke'
+        smoke, _, _ = run(records[:8], out / 'smoke')
+        assert any(s['graph'] and s['graph']['runtime_mode'] == 'FULL' for s in smoke.scheduler), 'No FULL graph in smoke'
         # Smoke checks execution, never uses labels to choose a candidate.
         if args.smoke_only: return
-        trace, stream, predictor, main_report = run(records, out / 'main')
-        main_scheduler = list(scheduler); main_admission = list(predictor.admission)
-        all_rows = list(stream.rows); lifecycle = list(stream.lifecycle)
-        elapsed = main_report['prediction_seconds']; recovery_time = 0.; repair_reports = []
-        failed = set(main_report['failed_ids'])
-        if failed:
-            selected = [r for r in records if r['id'] in failed]
-            repaired, rs, rp, rr = run(selected, out / 'recovery')
-            recovery_time += rr['prediction_seconds']; all_rows += rs.rows; lifecycle += rs.lifecycle
-            by_id = {r['record_id']: r for r in repaired}
-            # The rare remaining failures retain original prompts and output budgets.
-            isolated = ContinuousPredictor(rs, retriever, table, schema, limits=limits)
-            for r in repaired:
-                if not r['error']: continue
-                record = next(v for v in records if v['id'] == r['record_id'])
-                judgments = {}; errors = []; start = time.monotonic(); nrows = len(rs.rows); nlife = len(rs.lifecycle)
-                for task in r['trace']:
-                    if any(e['event'] == 'final' for e in task['events']):
-                        judgments.update(replay(record, task, full)); continue
-                    worker = split_predictor(isolated, [task['items']]); base.thinking = False
-                    p = worker.predict([record], item_groups=[task['items']])[0]
-                    nt = safe(p)['trace'][0]
-                    task['events'].extend(nt['events']); task['search_rounds'] += nt['search_rounds']
-                    task['retrieval_tokens'] += nt['retrieval_tokens']
-                    if p.error: errors.append(p.error)
-                    else: judgments.update(p.judgments)
-                recovery_time += time.monotonic() - start
-                all_rows += rs.rows[nrows:]; lifecycle += rs.lifecycle[nlife:]
-                r['error'] = '; '.join(errors) or None
-                r['judgments'] = None if errors else {**judgments, **judge(record)['judgments']}
-            main_scheduler += [dict(s, stage='recovery') for s in scheduler]
-            for r in trace:
-                if r['record_id'] not in by_id: continue
-                replacement = by_id[r['record_id']]
-                for old, new in zip(r['trace'], replacement['trace']):
-                    assert old['items'] == new['items']
-                    old['events'].extend(new['events']); old['search_rounds'] += new['search_rounds']
-                    old['retrieval_tokens'] += new['retrieval_tokens']
-                r['error'] = replacement['error']; r['judgments'] = replacement['judgments']
-            repair_reports = repaired
-        elapsed += recovery_time
+        initial, main_admission, main_report = run(records, out / 'main')
+
+        def retry_group(record, items):
+            tick = time.monotonic(); nschedule = len(scheduler)
+            stream = base.stream(); base.thinking = False
+            isolated = ContinuousPredictor(stream, retriever, table, schema, limits=limits)
+            worker = split_predictor(isolated, [items])
+            prediction = worker.predict([record], item_groups=[items])[0]
+            return Attempt([safe(prediction)], time.monotonic() - tick,
+                           list(stream.rows), list(stream.lifecycle), list(scheduler[nschedule:]))
+
+        recovered = recover_notices(records, initial,
+            rerun_notices=lambda selected: run(selected, out / 'recovery')[0],
+            retry_group=retry_group, replay_group=full.replay_judgments,
+            rule_judgments=lambda record: judge(record)['judgments'])
+        jsonl(out / 'recovery_attempts.jsonl', [asdict(attempt) for attempt in recovered.attempts[1:]])
+        trace = recovered.trace; elapsed = recovered.prediction_seconds
+        recovery_time = recovered.recovery_seconds
+        all_rows = recovered.requests; lifecycle = recovered.lifecycle
+        main_scheduler = recovered.scheduler
         events = [e for r in trace for task in r['trace'] for e in task['events']]
         me = [e for e in events if e['event'] == 'model']
         report = {'name': 'source_first_groups12_off_pipeline16', 'gpu': torch.cuda.get_device_name(0),

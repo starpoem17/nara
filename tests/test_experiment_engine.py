@@ -40,7 +40,7 @@ class ExperimentEngineTests(unittest.TestCase):
                 return True
             def stream(self):
                 self.stages += 1
-                return NS(stage={1: 'smoke', 2: 'main', 3: 'recovery'}[self.stages],
+                return NS(stage={1: 'smoke', 2: 'main', 3: 'recovery'}.get(self.stages, 'isolated'),
                           rows=[], lifecycle=[])
             @contextmanager
             def observe_scheduler(self):
@@ -74,9 +74,11 @@ class ExperimentEngineTests(unittest.TestCase):
                     events = [{'event': 'model', 'input_tokens': 1, 'output_tokens': 1, 'thinking_tokens': 0, 'response': '{}'}]
                     if not failed:
                         events.append({'event': 'final'})
-                    result = Prediction(record['id'], None if failed else judgments(),
+                    keys = [key for group in item_groups for key in group]
+                    values = {k: v for k, v in judgments().items() if not isolated or k in keys}
+                    result = Prediction(record['id'], None if failed else values,
                         'retry exhausted' if failed else None,
-                        [{'items': item_groups[0], 'events': events, 'search_rounds': 0, 'retrieval_tokens': 0}])
+                        [{'items': keys, 'events': events, 'search_rounds': 0, 'retrieval_tokens': 0}])
                     results.append(result)
                     if on_record:
                         on_record(result)
@@ -100,7 +102,7 @@ class ExperimentEngineTests(unittest.TestCase):
             stack.enter_context(patch.object(runner, 'PrefixPipelinePredictor', Pipeline))
             stack.enter_context(patch.object(runner, 'ContinuousPredictor', Isolated))
             stack.enter_context(patch.object(runner, 'split_predictor', side_effect=lambda p, groups: p))
-            stack.enter_context(patch.object(runner, 'judge', side_effect=lambda r: {'judgments': {}}))
+            stack.enter_context(patch.object(runner, 'judge', side_effect=lambda r: {'judgments': {k: v for k, v in judgments().items() if k in ('v2', 'v3')}}))
             evaluate = stack.enter_context(patch.object(runner, 'evaluate'))
             with redirect_stdout(io.StringIO()):
                 runner.main(['--output-dir', str(out)], verify_reference=False)
@@ -109,6 +111,10 @@ class ExperimentEngineTests(unittest.TestCase):
             requests = [json.loads(s) for s in (out / 'request_timings.jsonl').read_text().splitlines()]
             trace = [json.loads(s) for s in (out / 'trace.jsonl').read_text().splitlines()]
             expected = 202 if isolated_needed else 201
+            attempts = [json.loads(s) for s in (out / 'recovery_attempts.jsonl').read_text().splitlines()]
+            self.assertEqual(len(attempts), expected - 200)
+            self.assertEqual(bool(attempts[0]['trace'][0]['error']), isolated_needed)
+            self.assertEqual(sum(len(a['requests']) for a in attempts), expected - 200)
             self.assertEqual(len(scheduler), expected)
             self.assertEqual(len(requests), expected)
             self.assertEqual(report['model_turns'], expected)

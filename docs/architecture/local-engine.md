@@ -19,7 +19,7 @@ Implementation: `nara/vllm_model.py`. Default caller: `scripts/benchmark_prefix_
 
 Missing/nonmonotonic request metrics raise explicitly. Pending requests remain available for cancellation if conversion/metrics validation fails. Predictors already abort outstanding work on exceptions. Request/lifecycle field names and time definitions are unchanged.
 
-The default runner retains scheduler evidence after both same-policy and isolated-group recovery; previously the isolated tier's rows were omitted from the root scheduler file.
+Failed-notice recovery selection, replay and cross-attempt accounting are owned by the [recovery module](recovery.md).
 
 ## Validation
 

@@ -5,7 +5,6 @@ from pathlib import Path
 import shutil
 import sys
 import time
-from types import SimpleNamespace
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 from scripts.benchmark_hybrid200 import OUT,MODEL,dump,jsonl,safe
 from script import read_records,write_submission
@@ -18,15 +17,8 @@ from scripts.evaluate_dev import evaluate
 
 
 def replay(record,task,predictor):
-    final=[e for e in task['events'] if e['event']=='final']
-    assert final
-    event=[e for e in task['events'] if e['event']=='model'][-1]
-    assert event['finish_reason']=='stop'
-    action=json.loads(event['response']);assert action['action']=='final'
-    temp=SimpleNamespace(record=record,trace=[],retrieval_tokens=task['retrieval_tokens'])
-    predictor._finish(temp,action['judgments'])
-    assert temp.trace[-1]==final[-1]
-    return temp.judgments
+    """Compatibility for historical recovery scripts."""
+    return predictor.replay_judgments(record, task)
 
 
 def main():

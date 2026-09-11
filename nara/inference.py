@@ -288,6 +288,21 @@ class Predictor:
                                         "events": t.trace} for t in owned]))
         return results
 
+    def replay_judgments(self, record, task_trace):
+        """Revalidate saved successful group output without another model call."""
+        finals = [event for event in task_trace['events'] if event['event'] == 'final']
+        models = [event for event in task_trace['events'] if event['event'] == 'model']
+        if not finals or not models or models[-1]['finish_reason'] != 'stop':
+            raise ValueError('Replay requires a successfully completed final response')
+        action = json.loads(models[-1]['response'])
+        Draft202012Validator(self._schema(task_trace['items'], False)).validate(action)
+        task = _Task('replay', record, tuple(task_trace['items']), [],
+                     retrieval_tokens=task_trace['retrieval_tokens'])
+        self._finish(task, action['judgments'])
+        if task.error or not task.trace or task.trace[-1] != finals[-1]:
+            raise ValueError('Replayed judgment validation differs from the saved final event')
+        return task.judgments
+
     def _retry(self, task, error):
         task.trace.append({"event": "invalid_response", "error": error[:300]})
         if task.retries >= self.limits.retries:

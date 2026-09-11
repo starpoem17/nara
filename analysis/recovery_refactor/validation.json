@@ -1,0 +1,18 @@
+{
+  "saved_run": "output/experiments/engine-refactor-after-20260911",
+  "records": 200,
+  "replayed_groups": 2400,
+  "all_judgments_and_evidence_identical": true,
+  "no_failure_path_unchanged": true,
+  "simulated_failed_notices": 2,
+  "isolated_groups_replayed": 2,
+  "simulation_final_judgments_identical": true,
+  "gpu_inference_performed": false,
+  "original_attempts_preserved": true,
+  "base_trace_sha256": "ac3d2f2806b4a5565b331b546a9c131697448c7836042d7f6546554dee0b2512",
+  "automated_tests_passed": 80,
+  "preflight_run": "output/experiments/recovery-refactor-final-preflight-20260911",
+  "same_prompt_lengths_groups_limits_policy": true,
+  "source_snapshots_valid": true,
+  "recovery_source_sha256": "9c2aef5ba101044c42e2342c84daef592b4be0022bd934e10932c0a7983fd65f"
+}

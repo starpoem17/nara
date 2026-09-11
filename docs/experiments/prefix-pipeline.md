@@ -8,6 +8,8 @@ Completed2026-09-11. User explicitly authorized cross-notice continuous scheduli
 
 Default runs do not require historical analysis manifests or matching old H6/prompt hashes. Current tokens/common-prefix lengths are recomputed, context overflow rejected without clipping, current code copied/hashed in manifest/source. Existing `scripts/benchmark_prefix_pipeline.py` retains historical-reference assertions for explicit reproduction; exact past runs require the archived source versions. `script.py` remains the ungrouped comparison/submission entrypoint; `scripts/run_batch_fallback.py` is historical mixed-five comparison. They are not the default experimental workflow.
 
+Recovery ownership and attempt artifacts: [failed-notice recovery](../architecture/recovery.md). The default runner delegates the existing retry policy to `nara/recovery.py` and saves `recovery_attempts.jsonl` alongside aggregate traces.
+
 ## Schedule and scope
 
 `nara/prefix_pipeline.py` subclasses existing ContinuousPredictor for unchanged turn construction, validation/retry/RAG/postprocessing. First2notices admitted together; per-notice first real group completes before11followers. At outstanding follower count≤16, prioritize the next notice's first group at next free slot; never wait for all16 requests. At most3live notices and48000 summed common-source tokens; input order preserved for admission, final output restored to input order. This is a logical source budget, not a physical KV allocation formula. Modes allOFF; maxseq16, step8192, context32768, output2048, graphs FULL_AND_PIECEWISE, same NVFP4/RTX5090. Main/callback trace, engine request times, lifecycle, admissions, per-step scheduler/actualgraph modes captured. No source/text/results shared across notice prompts.
