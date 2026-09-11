@@ -3,6 +3,8 @@
 Default experimental workflow: [Prefix pipeline](../experiments/prefix-pipeline.md), `scripts/run_experiment.py`. This document describes the shared inference machinery and ungrouped baseline CLI below.
 
 Code: [baseline entry point](../../script.py), [predictor](../../nara/inference.py), [vLLM adapter](../../nara/vllm_model.py), [prompt](../../nara/prompt.txt).
+Engine execution/compatibility: [local engine](local-engine.md).
+
 Dependencies: [retrieval](legal-retrieval.md); official [constraints](../competition/constraints.md), [submission contract](../competition/submission.md).
 
 ## Interface and ownership

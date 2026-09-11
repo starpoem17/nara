@@ -1,66 +1,12 @@
 """Completion-driven scheduling with the existing prompt, RAG and validation rules."""
 from collections import deque
-from dataclasses import asdict
 import json
 import time
 
 from jsonschema import Draft202012Validator, ValidationError
-from nara.inference import _Task, Turn, Reply, Prediction, compact
+from nara.inference import _Task, Turn, Prediction, compact
 from nara.prefix_predictor import SourceFirstPredictor
-
-
-class StreamingModel:
-    """Incremental local engine access; one immutable mode/budget per submitted turn."""
-    def __init__(self, model):
-        self.base=model;self.pending={};self.serial=0;self.rows=[];self.lifecycle=[]
-    def __getattr__(self,name):return getattr(self.base,name)
-    @property
-    def thinking(self):return self.base.thinking
-    @thinking.setter
-    def thinking(self,value):self.base.thinking=value
-
-    def submit(self,turn):
-        from vllm import SamplingParams
-        from vllm.sampling_params import StructuredOutputsParams,RequestOutputKind
-        search=turn.schema.get('properties',{}).get('action',{}).get('const')=='search'
-        budget=(min(256,turn.max_tokens//4) if search else min(1024,turn.max_tokens//2)) if self.thinking else None
-        params=SamplingParams(temperature=0,max_tokens=turn.max_tokens,seed=0,
-            skip_special_tokens=False,thinking_token_budget=budget,
-            output_kind=RequestOutputKind.FINAL_ONLY,
-            structured_outputs=StructuredOutputsParams(json=turn.schema,disable_any_whitespace=True))
-        tokens=self.base._tokens(turn.messages)
-        rid=f'continuous-{self.serial}';self.serial+=1
-        self.base.llm.llm_engine.add_request(rid,{'prompt_token_ids':tokens},params)
-        self.pending[rid]=(turn,budget)
-        self.lifecycle.append({'event':'submit','request_id':rid,'task_id':turn.task_id,
-                               'time':time.monotonic(),'inflight':len(self.pending),'input_tokens':len(tokens),'thinking_budget':budget})
-
-    def poll(self):
-        from vllm.reasoning.gemma4_utils import parse_thinking_output
-        completed=[]
-        for out in self.base.llm.llm_engine.step():
-            if not out.finished:continue
-            turn,budget=self.pending.pop(out.request_id)
-            completion=out.outputs[0];text=self.base.tokenizer.decode(completion.token_ids,skip_special_tokens=False)
-            parsed=parse_thinking_output(text)
-            reply=Reply(parsed['answer'],completion.finish_reason,len(out.prompt_token_ids),len(completion.token_ids),
-                        thinking_tokens=self.base.count_text(parsed['thinking'] or ''),thinking_budget=budget)
-            s=out.metrics
-            if s is None or not 0<s.scheduled_ts<=s.first_token_ts<=s.last_token_ts:
-                raise ValueError('Missing/nonmonotonic request metrics')
-            self.rows.append({'request_id':out.request_id,'task_id':turn.task_id,'input_tokens':len(out.prompt_token_ids),
-                'output_tokens':len(completion.token_ids),'cached_tokens':out.num_cached_tokens,'thinking_budget':budget,
-                'finish_reason':completion.finish_reason,'request_stats':asdict(s),
-                'prefill_seconds':s.first_token_ts-s.scheduled_ts,'decode_seconds':s.last_token_ts-s.first_token_ts,
-                'queue_seconds':s.scheduled_ts-s.queued_ts})
-            self.lifecycle.append({'event':'complete','request_id':out.request_id,'task_id':turn.task_id,
-                                   'time':time.monotonic(),'inflight':len(self.pending)})
-            completed.append((turn.task_id,reply))
-        return completed
-
-    def abort(self):
-        if self.pending:self.base.llm.llm_engine.abort_request(list(self.pending))
-        self.pending.clear()
+from nara.vllm_model import StreamingModel  # Compatibility for existing experiments.
 
 
 class ContinuousPredictor(SourceFirstPredictor):

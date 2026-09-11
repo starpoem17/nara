@@ -6,7 +6,7 @@ from scripts.benchmark_prefix_pipeline import measure_prefix_inputs
 
 class PreflightTests(unittest.TestCase):
     def predictor(self, *, extra='', max_context=1000):
-        model = SimpleNamespace(_tokens=lambda messages: list(messages[1]['content'].encode()),
+        model = SimpleNamespace(render_messages=lambda messages: list(messages[1]['content'].encode()),
                                 max_model_len=max_context)
         return SimpleNamespace(model=model, limits=SimpleNamespace(output_tokens=16),
             _messages=lambda r, g: [{'role': 'system', 'content': ''},

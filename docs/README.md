@@ -21,12 +21,14 @@ Default experiment: `uv run --locked python scripts/run_experiment.py` — curre
 |---|---|
 | Build/query legal index; inspect artifact contract | [Legal retrieval](architecture/legal-retrieval.md) |
 | Change inference, prompts, grouping, budgets or execution | [Dynamic RAG](architecture/dynamic-rag.md) |
+| Change local engine execution, token rendering, cache or telemetry; preserve historical calls | [Local engine](architecture/local-engine.md) |
 | Inspect per-feature legal criteria, source provenance and prompt budget | [Legal criteria](architecture/legal-criteria.md) |
 | Run checks; inspect measured results and validation gaps | [Local validation](experiments/local-validation.md) |
 | Compare ungrouped and 7/9/12-group inference latency | [Grouping time](experiments/grouping-time.md) |
 | Full200 compressed-criteria OFF groups and v2/v3 rule experiments | [Compact dev200](experiments/compact200.md) |
 | Source-first KV prefix reuse: grouped OFF speed and accuracy | [Prefix cache](experiments/prefix-cache.md) |
 | Default experiments: twelve-group cross-notice engine16; early prefill and FULL graphs | [Prefix pipeline](experiments/prefix-pipeline.md) |
+| Engine module refactor: compatibility tests and matched dev200 before/after | [Engine refactor](experiments/engine-refactor.md) |
 | Five-group mixed thinking/instant: per-feature effects, prefill/decode, cache and batching controls | [Hybrid five](experiments/hybrid-five.md) |
 | Historical mixed-five comparison: batch8 barrier fallback; prefill/decode cause probes | [Prefill/decode and fallback](experiments/prefill-decode-fallback.md) |
 | Completion-driven refill and per-step prefill token budgets | [Continuous prefill](experiments/continuous-prefill.md) |

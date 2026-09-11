@@ -1,0 +1,242 @@
+{
+  "before": {
+    "run_dir": "output/experiments/engine-refactor-before-20260911",
+    "records": 200,
+    "prediction_seconds": 296.6102540340071,
+    "load_seconds": 30.14130883400503,
+    "recovery_seconds": 0.0,
+    "macro_f1": 0.26847403649018803,
+    "micro_f1": 0.26634382566585957,
+    "failed_ids": [],
+    "model_turns": 2401,
+    "cached_input_tokens": 24966304,
+    "cached_fraction": 0.9084253221330263,
+    "peak_inflight": 16,
+    "graph_counts": {
+      "FULL": 12923,
+      "NONE": 966,
+      "PIECEWISE": 1
+    },
+    "early_prefill_notices": 197,
+    "notices_after_startup": 198,
+    "full_graph_16_real_tokens_steps": 197,
+    "peak_kv_usage": 0.5201131363922061,
+    "preempted_request_events": 0,
+    "source_snapshots_valid": true,
+    "request_trace_accounting_valid": true,
+    "seed_dependency_valid": true,
+    "submission_shape_valid": true,
+    "input_tokens": 27483056,
+    "output_tokens": 114724,
+    "invalid_responses": 1,
+    "search_rounds": 0
+  },
+  "after": {
+    "run_dir": "output/experiments/engine-refactor-after-20260911",
+    "records": 200,
+    "prediction_seconds": 310.5711399050051,
+    "load_seconds": 27.4460901679995,
+    "recovery_seconds": 0.0,
+    "macro_f1": 0.2598439023890363,
+    "micro_f1": 0.2613065326633166,
+    "failed_ids": [],
+    "model_turns": 2403,
+    "cached_input_tokens": 24966688,
+    "cached_fraction": 0.9077753840322907,
+    "peak_inflight": 16,
+    "graph_counts": {
+      "FULL": 14419,
+      "NONE": 962,
+      "PIECEWISE": 1
+    },
+    "early_prefill_notices": 197,
+    "notices_after_startup": 198,
+    "full_graph_16_real_tokens_steps": 268,
+    "peak_kv_usage": 0.5198617221873036,
+    "preempted_request_events": 0,
+    "source_snapshots_valid": true,
+    "request_trace_accounting_valid": true,
+    "seed_dependency_valid": true,
+    "submission_shape_valid": true,
+    "input_tokens": 27503156,
+    "output_tokens": 117245,
+    "invalid_responses": 3,
+    "search_rounds": 0
+  },
+  "prediction_seconds_delta": 13.960885870998027,
+  "prediction_percent_change": 4.7068116092161105,
+  "label_changes": 227,
+  "label_changes_by_item": {
+    "v1": 4,
+    "v4": 3,
+    "v5": 10,
+    "v6": 15,
+    "v7": 4,
+    "v8": 14,
+    "v9": 5,
+    "v19": 5,
+    "v10": 20,
+    "v11": 14,
+    "v14": 25,
+    "v15": 10,
+    "v16": 11,
+    "v17": 18,
+    "v18": 38,
+    "v20": 4,
+    "v22": 5,
+    "v23": 15,
+    "v24": 7
+  },
+  "evidence_changes": 91,
+  "same_rules": true,
+  "same_rendered_token_counts": true,
+  "same_effective_engine_settings": true,
+  "same_groups_limits_policy": true,
+  "changed_runtime_sources": [
+    "nara/continuous.py",
+    "nara/vllm_model.py",
+    "scripts/benchmark_prefix_pipeline.py"
+  ],
+  "source_sha256_before": {
+    "scripts/benchmark_prefix_pipeline.py": "2608f5326c8260e717e2de4e536c8b107af95055241423055d7cbc37ca2200ea",
+    "nara/prefix_pipeline.py": "b7e8c556cb4874a1bd8d700a13f57c76f0e411e4955eb77b9202334cc3cdb8fd",
+    "nara/continuous.py": "67c9ecaf5d01cba6cc00685ecf4b9e4b07cb30571b78e596b8392d43249c7535",
+    "nara/vllm_model.py": "c3ae5a8f7bd75365e0d685018fab22733a917fca423eacf2fb7f623e4e8c1e0d",
+    "nara/inference.py": "9d83c4857bc3cb7622e30379021ed96808357e96eccfe06c3a406be0f8c6c59c",
+    "nara/prefix_predictor.py": "aee83eb0ce46cef8f2cbc7bc8697a94282d0b7908306fff55b5416d271ed19b7",
+    "nara/compact_predictor.py": "046002710b57ad799ff6f287f016ae215c2109338b66d3706570c8ac8651f969",
+    "nara/compact_criteria.json": "84cc8ca7f625f51e55206fc581a28e36df4551999c4009de84188f273bd06a04",
+    "nara/hypothesis6.py": "737c4c4198d1254b50acc472e653dd513315e216001282ddf8dc7459368c34bf",
+    "scripts/benchmark_compact200.py": "7e1dcb2a706a0c635a6467e61484015567dc2281be37106aef06e6812271f61d",
+    "scripts/recover_hybrid200.py": "04650e0294ffd1476c47551d37528ff8bd3511d2836ffa484980b030f05f3611",
+    "scripts/benchmark_grouping_time.py": "f97573dc13e51ccac92aab731018dbf42d75d80d95dd5c802c1f6f9c4becb835",
+    "scripts/benchmark_hybrid200.py": "b8f17813f4cb8507b237d26a10c244a33d24f277b1a493d449d7908b0253c3e2",
+    "scripts/evaluate_dev.py": "4c2f7414be7411e10e11dff05eddf769c65dea29fb3e689e971bc4b969f48c73",
+    "script.py": "facb2dab4a52e575e1a0bd35ec3d02ecae9beffbb73c92964580bba60cf3e923",
+    "data/dev.jsonl": "5507f5ab0ba53b708f87211ed050dbe531b48a626ace6084c3ccaefb53147534",
+    "data/항목표.json": "368cb41f376d8ad7edbbdf181542e6e959de356f7f70d86e72943325ecad61d9",
+    "data/정답스키마_디코딩.json": "149580162261b446090bec075eb4c13f765a771c827b6bbe06660eb833a3c2ac",
+    "scripts/run_experiment.py": "7222216cb3554e1bfe130489b54f0b687003957f505a6ae6679cb0d31c69af99"
+  },
+  "source_sha256_after": {
+    "scripts/benchmark_prefix_pipeline.py": "9bdf238779c923f27f67893ae40450debfaebfc40e84a1de75480cee4901856c",
+    "nara/prefix_pipeline.py": "b7e8c556cb4874a1bd8d700a13f57c76f0e411e4955eb77b9202334cc3cdb8fd",
+    "nara/continuous.py": "1bc0a498df16354cfbf0e11097f2bb598ca3aa2de532ea08a36a351114994914",
+    "nara/vllm_model.py": "c4811d30d3040780bfe29177b18df231c2d30cb8451db23d804da3283f83c3bb",
+    "nara/inference.py": "9d83c4857bc3cb7622e30379021ed96808357e96eccfe06c3a406be0f8c6c59c",
+    "nara/prefix_predictor.py": "aee83eb0ce46cef8f2cbc7bc8697a94282d0b7908306fff55b5416d271ed19b7",
+    "nara/compact_predictor.py": "046002710b57ad799ff6f287f016ae215c2109338b66d3706570c8ac8651f969",
+    "nara/compact_criteria.json": "84cc8ca7f625f51e55206fc581a28e36df4551999c4009de84188f273bd06a04",
+    "nara/hypothesis6.py": "737c4c4198d1254b50acc472e653dd513315e216001282ddf8dc7459368c34bf",
+    "scripts/benchmark_compact200.py": "7e1dcb2a706a0c635a6467e61484015567dc2281be37106aef06e6812271f61d",
+    "scripts/recover_hybrid200.py": "04650e0294ffd1476c47551d37528ff8bd3511d2836ffa484980b030f05f3611",
+    "scripts/benchmark_grouping_time.py": "f97573dc13e51ccac92aab731018dbf42d75d80d95dd5c802c1f6f9c4becb835",
+    "scripts/benchmark_hybrid200.py": "b8f17813f4cb8507b237d26a10c244a33d24f277b1a493d449d7908b0253c3e2",
+    "scripts/evaluate_dev.py": "4c2f7414be7411e10e11dff05eddf769c65dea29fb3e689e971bc4b969f48c73",
+    "script.py": "facb2dab4a52e575e1a0bd35ec3d02ecae9beffbb73c92964580bba60cf3e923",
+    "data/dev.jsonl": "5507f5ab0ba53b708f87211ed050dbe531b48a626ace6084c3ccaefb53147534",
+    "data/항목표.json": "368cb41f376d8ad7edbbdf181542e6e959de356f7f70d86e72943325ecad61d9",
+    "data/정답스키마_디코딩.json": "149580162261b446090bec075eb4c13f765a771c827b6bbe06660eb833a3c2ac",
+    "scripts/run_experiment.py": "7222216cb3554e1bfe130489b54f0b687003957f505a6ae6679cb0d31c69af99"
+  },
+  "dev_labels_sha256": "84c79302ac190b45b2487ec8e02aab73e59071ee745828e813a7db96d3a97a35",
+  "engine": {
+    "max_num_seqs": 16,
+    "max_num_batched_tokens": 8192,
+    "cudagraph_mode": "FULL_AND_PIECEWISE",
+    "capture_sizes": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      24,
+      32
+    ],
+    "kv_cache_dtype": "auto",
+    "gpu_memory_utilization": 0.86
+  },
+  "groups": [
+    [
+      "v1",
+      "v4"
+    ],
+    [
+      "v5",
+      "v6",
+      "v7"
+    ],
+    [
+      "v8"
+    ],
+    [
+      "v9",
+      "v19"
+    ],
+    [
+      "v10",
+      "v11",
+      "v12",
+      "v13"
+    ],
+    [
+      "v14"
+    ],
+    [
+      "v15",
+      "v16"
+    ],
+    [
+      "v17",
+      "v18"
+    ],
+    [
+      "v20"
+    ],
+    [
+      "v21"
+    ],
+    [
+      "v22",
+      "v23"
+    ],
+    [
+      "v24"
+    ]
+  ],
+  "limits": {
+    "batch_size": 16,
+    "search_rounds": 2,
+    "queries_per_round": 4,
+    "top_k": 5,
+    "round_tokens": 4096,
+    "total_retrieval_tokens": 8192,
+    "output_tokens": 2048,
+    "retries": 1,
+    "require_search": false,
+    "instant_output_tokens": null
+  },
+  "policy": {
+    "initial_records": 2,
+    "max_live_records": 3,
+    "max_live_source_tokens": 48000,
+    "lookahead_groups": 16
+  },
+  "tests": {
+    "before": 64,
+    "after": 74
+  },
+  "scope": "One paired run; baseline includes pre-existing working-copy H6 rules, identical in both runs. Source snapshots and raw evidence retained in the local run directories.",
+  "output_tokens_percent_change": 2.1974477877340304,
+  "macro_f1_delta": -0.00863013410115171,
+  "micro_f1_delta": -0.005037293002542964,
+  "request_parity": {
+    "initial_requests": 2400,
+    "initial_request_token_ids_and_sampling_equal": true,
+    "on_off_search_final_budget_variants": 12,
+    "offline_replies_and_sampling_equal": true,
+    "request_payloads_sha256": "8a24bdb0ac4967c4c59af2b53164767e2e2fd847a067b223009fbe9661d52b30",
+    "gpu_engine_loaded": false,
+    "baseline_run": "output/experiments/engine-refactor-before-20260911"
+  }
+}

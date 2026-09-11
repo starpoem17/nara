@@ -1,0 +1,9 @@
+{
+  "initial_requests": 2400,
+  "initial_request_token_ids_and_sampling_equal": true,
+  "on_off_search_final_budget_variants": 12,
+  "offline_replies_and_sampling_equal": true,
+  "request_payloads_sha256": "8a24bdb0ac4967c4c59af2b53164767e2e2fd847a067b223009fbe9661d52b30",
+  "gpu_engine_loaded": false,
+  "baseline_run": "output/experiments/engine-refactor-before-20260911"
+}

@@ -12,7 +12,7 @@ from script import read_records, write_submission
 from nara.inference import Limits, Turn, Prediction
 from nara.prefix_predictor import SourceFirstPredictor, split_predictor
 from nara.prefix_pipeline import PrefixPipelinePredictor
-from nara.continuous import StreamingModel, ContinuousPredictor
+from nara.continuous import ContinuousPredictor
 from nara.hypothesis6 import judge
 from scripts.benchmark_compact200 import MODEL, configuration
 from scripts.benchmark_hybrid200 import safe
@@ -31,7 +31,7 @@ def measure_prefix_inputs(records, predictor, groups):
         for group in groups:
             messages = predictor._messages(record, group)
             assert all(doc['text'] in messages[1]['content'] for doc in record['docs'])
-            tokens = predictor.model._tokens(messages)
+            tokens = predictor.model.render_messages(messages)
             if len(tokens) + predictor.limits.output_tokens + 128 > predictor.model.max_model_len:
                 raise ValueError(f"{record['id']}: source and output exceed context; no text was truncated")
             rendered.append(tokens)
@@ -82,11 +82,8 @@ def main(argv=None, *, verify_reference=True, default_output=Path('analysis/pref
                 'source_mode': 'frozen_reference' if verify_reference else 'current',
                 'baseline': 'analysis/prefix200_batch11', 'smoke': 'first8 notices; excluded from benchmark',
                 'recovery_policy': 'One same-policy rerun of failed notices, then one same-prompt isolated predict per still-failed group. All internal retries, recovery time and events included.'}
-    from nara.vllm_model import VLLMModel
-    from transformers import AutoTokenizer
-    counter = VLLMModel.__new__(VLLMModel)
-    counter.tokenizer = AutoTokenizer.from_pretrained(MODEL, local_files_only=True)
-    counter.thinking = False; counter.max_model_len = 32768
+    from nara.vllm_model import VLLMModel, TokenCounter
+    counter = TokenCounter(MODEL, thinking=False, max_model_len=32768)
     full = SourceFirstPredictor(counter, None, table, schema, limits=limits)
     counts = measure_prefix_inputs(records, full, groups)
     if old_manifest is not None:
@@ -99,140 +96,119 @@ def main(argv=None, *, verify_reference=True, default_output=Path('analysis/pref
     if args.prepare_only:
         return
     from nara.retrieval import BGEEncoder, LegalRetriever
-    import vllm, torch
+    import torch
     tick = time.monotonic()
     retriever = LegalRetriever('model/legal_index', BGEEncoder('models/bge-m3', device='cuda'))
-    stock = vllm.LLM
-    def configured(**kw):
-        return stock(disable_log_stats=False, max_num_batched_tokens=8192,
-                     enable_chunked_prefill=True, cudagraph_metrics=True, **kw)
-    vllm.LLM = configured
-    try: base = VLLMModel(MODEL, thinking=True, max_num_seqs=16)
-    finally: vllm.LLM = stock
+    base = VLLMModel(MODEL, thinking=True, max_num_seqs=16,
+                     max_num_batched_tokens=8192, enable_chunked_prefill=True,
+                     collect_scheduler_stats=True)
     base.thinking = False; torch.cuda.synchronize(); load = time.monotonic() - tick
-    cfg = base.llm.llm_engine.vllm_config
-    engine = {'max_num_seqs': cfg.scheduler_config.max_num_seqs,
-              'max_num_batched_tokens': cfg.scheduler_config.max_num_batched_tokens,
-              'cudagraph_mode': str(cfg.compilation_config.cudagraph_mode),
-              'capture_sizes': cfg.compilation_config.cudagraph_capture_sizes,
-              'kv_cache_dtype': str(cfg.cache_config.cache_dtype),
-              'gpu_memory_utilization': cfg.cache_config.gpu_memory_utilization}
+    engine = base.engine_info()
     dump(out / 'engine.json', engine)
     full = SourceFirstPredictor(base, retriever, table, schema, limits=limits)
     simple = {'type': 'object', 'properties': {'answer': {'type': 'integer'}}, 'required': ['answer'], 'additionalProperties': False}
     tick = time.monotonic()
     base.generate([Turn(str(i), [{'role': 'user', 'content': '2+3을 계산하고 {"answer":5}로 답하라.'}], simple, 512) for i in range(16)])
     warmup = time.monotonic() - tick
-    scheduler = []; original_get = base.llm.llm_engine.engine_core.get_output
-    def observed_get():
-        output = original_get(); stats = output.scheduler_stats
-        if stats is not None:
-            scheduler.append({'time': time.monotonic(), 'running': stats.num_running_reqs,
-                'waiting': stats.num_waiting_reqs, 'deferred': stats.num_skipped_waiting_reqs,
-                'kv_usage': stats.kv_cache_usage,
-                'preempted_requests': stats.prefix_cache_stats.preempted_requests,
-                'graph': asdict(stats.cudagraph_stats) if stats.cudagraph_stats is not None else None})
-        return output
-    base.llm.llm_engine.engine_core.get_output = observed_get
+    with base.observe_scheduler() as scheduler:
+        def run(selected, folder):
+            folder.mkdir(parents=True, exist_ok=True)
+            assert base.reset_prefix_cache(); scheduler.clear()
+            stream = base.stream()
+            predictor = PrefixPipelinePredictor(stream, retriever, table, schema, limits=limits)
+            tick = time.monotonic(); completed = []; rule_time = 0.
+            with (folder / 'trace_completed.jsonl').open('w') as handle:
+                def saved(p):
+                    nonlocal rule_time
+                    record = next(r for r in selected if r['id'] == p.record_id)
+                    begin = time.monotonic(); rules = judge(record); rule_time += time.monotonic() - begin
+                    if p.judgments is not None: p.judgments.update(rules['judgments'])
+                    handle.write(json.dumps(safe(p), ensure_ascii=False) + '\n'); handle.flush()
+                    completed.append(p)
+                    if len(completed) % 5 == 0 or len(completed) == len(selected):
+                        print(json.dumps({'stage': folder.name, 'records': len(completed),
+                            'seconds': time.monotonic() - tick, 'failures': sum(bool(p.error) for p in completed)}), flush=True)
+                results = predictor.predict(selected, item_groups=groups, source_tokens=source_tokens,
+                                            on_record=saved, **policy)
+            torch.cuda.synchronize(); elapsed = time.monotonic() - tick
+            payload = [safe(p) for p in results]
+            jsonl(folder / 'trace.jsonl', payload); jsonl(folder / 'request_timings.jsonl', stream.rows)
+            jsonl(folder / 'lifecycle.jsonl', stream.lifecycle); jsonl(folder / 'admission.jsonl', predictor.admission)
+            jsonl(folder / 'scheduler.jsonl', scheduler)
+            report = {'prediction_seconds': elapsed, 'failed_ids': [p.record_id for p in results if p.error],
+                      'records': len(selected), 'metrics': predictor.metrics, 'rule_seconds': rule_time}
+            dump(folder / 'stage_report.json', report)
+            return payload, stream, predictor, report
 
-    def run(selected, folder, serial):
-        folder.mkdir(parents=True, exist_ok=True)
-        assert base.llm.reset_prefix_cache(); scheduler.clear()
-        stream = StreamingModel(base); stream.serial = serial
-        predictor = PrefixPipelinePredictor(stream, retriever, table, schema, limits=limits)
-        tick = time.monotonic(); completed = []; rule_time = 0.
-        with (folder / 'trace_completed.jsonl').open('w') as handle:
-            def saved(p):
-                nonlocal rule_time
-                record = next(r for r in selected if r['id'] == p.record_id)
-                begin = time.monotonic(); rules = judge(record); rule_time += time.monotonic() - begin
-                if p.judgments is not None: p.judgments.update(rules['judgments'])
-                handle.write(json.dumps(safe(p), ensure_ascii=False) + '\n'); handle.flush()
-                completed.append(p)
-                if len(completed) % 5 == 0 or len(completed) == len(selected):
-                    print(json.dumps({'stage': folder.name, 'records': len(completed),
-                        'seconds': time.monotonic() - tick, 'failures': sum(bool(p.error) for p in completed)}), flush=True)
-            results = predictor.predict(selected, item_groups=groups, source_tokens=source_tokens,
-                                        on_record=saved, **policy)
-        torch.cuda.synchronize(); elapsed = time.monotonic() - tick
-        payload = [safe(p) for p in results]
-        jsonl(folder / 'trace.jsonl', payload); jsonl(folder / 'request_timings.jsonl', stream.rows)
-        jsonl(folder / 'lifecycle.jsonl', stream.lifecycle); jsonl(folder / 'admission.jsonl', predictor.admission)
-        jsonl(folder / 'scheduler.jsonl', scheduler)
-        report = {'prediction_seconds': elapsed, 'failed_ids': [p.record_id for p in results if p.error],
-                  'records': len(selected), 'metrics': predictor.metrics, 'rule_seconds': rule_time}
-        dump(folder / 'stage_report.json', report)
-        return payload, stream, predictor, report
-
-    smoke, _, _, _ = run(records[:8], out / 'smoke', 0)
-    smoke_stats = list(scheduler)
-    assert any(s['graph'] and s['graph']['runtime_mode'] == 'FULL' for s in smoke_stats), 'No FULL graph in smoke'
-    # Smoke checks execution, never uses labels to choose a candidate.
-    if args.smoke_only: return
-    trace, stream, predictor, main_report = run(records, out / 'main', 10000)
-    main_scheduler = list(scheduler); main_admission = list(predictor.admission)
-    all_rows = list(stream.rows); lifecycle = list(stream.lifecycle)
-    elapsed = main_report['prediction_seconds']; recovery_time = 0.; repair_reports = []
-    failed = set(main_report['failed_ids'])
-    if failed:
-        selected = [r for r in records if r['id'] in failed]
-        repaired, rs, rp, rr = run(selected, out / 'recovery', 20000)
-        recovery_time += rr['prediction_seconds']; all_rows += rs.rows; lifecycle += rs.lifecycle
-        main_scheduler += [dict(s, stage='recovery') for s in scheduler]
-        by_id = {r['record_id']: r for r in repaired}
-        # The rare remaining failures retain original prompts and output budgets.
-        isolated = ContinuousPredictor(rs, retriever, table, schema, limits=limits)
-        for r in repaired:
-            if not r['error']: continue
-            record = next(v for v in records if v['id'] == r['record_id'])
-            judgments = {}; errors = []; start = time.monotonic(); nrows = len(rs.rows); nlife = len(rs.lifecycle)
-            for task in r['trace']:
-                if any(e['event'] == 'final' for e in task['events']):
-                    judgments.update(replay(record, task, full)); continue
-                worker = split_predictor(isolated, [task['items']]); base.thinking = False
-                p = worker.predict([record], item_groups=[task['items']])[0]
-                nt = safe(p)['trace'][0]
-                task['events'].extend(nt['events']); task['search_rounds'] += nt['search_rounds']
-                task['retrieval_tokens'] += nt['retrieval_tokens']
-                if p.error: errors.append(p.error)
-                else: judgments.update(p.judgments)
-            recovery_time += time.monotonic() - start
-            all_rows += rs.rows[nrows:]; lifecycle += rs.lifecycle[nlife:]
-            r['error'] = '; '.join(errors) or None
-            r['judgments'] = None if errors else {**judgments, **judge(record)['judgments']}
-        for r in trace:
-            if r['record_id'] not in by_id: continue
-            replacement = by_id[r['record_id']]
-            for old, new in zip(r['trace'], replacement['trace']):
-                assert old['items'] == new['items']
-                old['events'].extend(new['events']); old['search_rounds'] += new['search_rounds']
-                old['retrieval_tokens'] += new['retrieval_tokens']
-            r['error'] = replacement['error']; r['judgments'] = replacement['judgments']
-        repair_reports = repaired
-    elapsed += recovery_time
-    events = [e for r in trace for task in r['trace'] for e in task['events']]
-    me = [e for e in events if e['event'] == 'model']
-    report = {'name': 'source_first_groups12_off_pipeline16', 'gpu': torch.cuda.get_device_name(0),
-              'records': 200, 'groups': groups, 'limits': asdict(limits), 'policy': policy, 'engine': engine,
-              'options': {'model_dir': MODEL, 'max_model_len': 32768, 'thinking': False, 'item_group_size': 4},
-              'prediction_seconds': elapsed, 'load_seconds': load, 'total_seconds': elapsed + load,
-              'warmup_seconds': warmup, 'first_pass': main_report, 'recovery_seconds': recovery_time,
-              'failed_ids': [r['record_id'] for r in trace if r['error']], 'model_turns': len(me),
-              'search_rounds': sum(e['event'] == 'search' for e in events),
-              'invalid_responses': sum(e['event'] == 'invalid_response' for e in events),
-              'context_failures': sum(e['event'] == 'context_failure' for e in events),
-              'input_tokens': sum(e['input_tokens'] for e in me), 'output_tokens': sum(e['output_tokens'] for e in me),
-              'thinking_tokens': sum(e['thinking_tokens'] for e in me),
-              'cached_input_tokens': sum(r['cached_tokens'] for r in all_rows)}
-    report['cached_fraction'] = report['cached_input_tokens'] / report['input_tokens']
-    dump(out / 'report.json', report); jsonl(out / 'trace.jsonl', trace)
-    jsonl(out / 'request_timings.jsonl', all_rows); jsonl(out / 'lifecycle.jsonl', lifecycle)
-    jsonl(out / 'scheduler.jsonl', main_scheduler); jsonl(out / 'admission.jsonl', main_admission)
-    jsonl(out / 'rules.jsonl', [judge(r) for r in records])
-    if not report['failed_ids']:
-        write_submission([Prediction(**r) for r in trace], out / 'submission.csv')
-        evaluate(out, 'data/dev_labels.csv', 'data/dev.jsonl', 200)
-    print(json.dumps({'stage': 'complete', 'seconds': elapsed, 'failed_ids': report['failed_ids']}), flush=True)
+        smoke, _, _, _ = run(records[:8], out / 'smoke')
+        smoke_stats = list(scheduler)
+        assert any(s['graph'] and s['graph']['runtime_mode'] == 'FULL' for s in smoke_stats), 'No FULL graph in smoke'
+        # Smoke checks execution, never uses labels to choose a candidate.
+        if args.smoke_only: return
+        trace, stream, predictor, main_report = run(records, out / 'main')
+        main_scheduler = list(scheduler); main_admission = list(predictor.admission)
+        all_rows = list(stream.rows); lifecycle = list(stream.lifecycle)
+        elapsed = main_report['prediction_seconds']; recovery_time = 0.; repair_reports = []
+        failed = set(main_report['failed_ids'])
+        if failed:
+            selected = [r for r in records if r['id'] in failed]
+            repaired, rs, rp, rr = run(selected, out / 'recovery')
+            recovery_time += rr['prediction_seconds']; all_rows += rs.rows; lifecycle += rs.lifecycle
+            by_id = {r['record_id']: r for r in repaired}
+            # The rare remaining failures retain original prompts and output budgets.
+            isolated = ContinuousPredictor(rs, retriever, table, schema, limits=limits)
+            for r in repaired:
+                if not r['error']: continue
+                record = next(v for v in records if v['id'] == r['record_id'])
+                judgments = {}; errors = []; start = time.monotonic(); nrows = len(rs.rows); nlife = len(rs.lifecycle)
+                for task in r['trace']:
+                    if any(e['event'] == 'final' for e in task['events']):
+                        judgments.update(replay(record, task, full)); continue
+                    worker = split_predictor(isolated, [task['items']]); base.thinking = False
+                    p = worker.predict([record], item_groups=[task['items']])[0]
+                    nt = safe(p)['trace'][0]
+                    task['events'].extend(nt['events']); task['search_rounds'] += nt['search_rounds']
+                    task['retrieval_tokens'] += nt['retrieval_tokens']
+                    if p.error: errors.append(p.error)
+                    else: judgments.update(p.judgments)
+                recovery_time += time.monotonic() - start
+                all_rows += rs.rows[nrows:]; lifecycle += rs.lifecycle[nlife:]
+                r['error'] = '; '.join(errors) or None
+                r['judgments'] = None if errors else {**judgments, **judge(record)['judgments']}
+            main_scheduler += [dict(s, stage='recovery') for s in scheduler]
+            for r in trace:
+                if r['record_id'] not in by_id: continue
+                replacement = by_id[r['record_id']]
+                for old, new in zip(r['trace'], replacement['trace']):
+                    assert old['items'] == new['items']
+                    old['events'].extend(new['events']); old['search_rounds'] += new['search_rounds']
+                    old['retrieval_tokens'] += new['retrieval_tokens']
+                r['error'] = replacement['error']; r['judgments'] = replacement['judgments']
+            repair_reports = repaired
+        elapsed += recovery_time
+        events = [e for r in trace for task in r['trace'] for e in task['events']]
+        me = [e for e in events if e['event'] == 'model']
+        report = {'name': 'source_first_groups12_off_pipeline16', 'gpu': torch.cuda.get_device_name(0),
+                  'records': 200, 'groups': groups, 'limits': asdict(limits), 'policy': policy, 'engine': engine,
+                  'options': {'model_dir': MODEL, 'max_model_len': 32768, 'thinking': False, 'item_group_size': 4},
+                  'prediction_seconds': elapsed, 'load_seconds': load, 'total_seconds': elapsed + load,
+                  'warmup_seconds': warmup, 'first_pass': main_report, 'recovery_seconds': recovery_time,
+                  'failed_ids': [r['record_id'] for r in trace if r['error']], 'model_turns': len(me),
+                  'search_rounds': sum(e['event'] == 'search' for e in events),
+                  'invalid_responses': sum(e['event'] == 'invalid_response' for e in events),
+                  'context_failures': sum(e['event'] == 'context_failure' for e in events),
+                  'input_tokens': sum(e['input_tokens'] for e in me), 'output_tokens': sum(e['output_tokens'] for e in me),
+                  'thinking_tokens': sum(e['thinking_tokens'] for e in me),
+                  'cached_input_tokens': sum(r['cached_tokens'] for r in all_rows)}
+        report['cached_fraction'] = report['cached_input_tokens'] / report['input_tokens']
+        dump(out / 'report.json', report); jsonl(out / 'trace.jsonl', trace)
+        jsonl(out / 'request_timings.jsonl', all_rows); jsonl(out / 'lifecycle.jsonl', lifecycle)
+        jsonl(out / 'scheduler.jsonl', main_scheduler); jsonl(out / 'admission.jsonl', main_admission)
+        jsonl(out / 'rules.jsonl', [judge(r) for r in records])
+        if not report['failed_ids']:
+            write_submission([Prediction(**r) for r in trace], out / 'submission.csv')
+            evaluate(out, 'data/dev_labels.csv', 'data/dev.jsonl', 200)
+        print(json.dumps({'stage': 'complete', 'seconds': elapsed, 'failed_ids': report['failed_ids']}), flush=True)
 
 
 if __name__ == '__main__': main()
