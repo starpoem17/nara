@@ -1,0 +1,15 @@
+# LJM static-law v2–v8 experiment
+
+[Measured report](../reports/analysis/LJM_static_law_v2_v8_20260912/report.md), [case review](../reports/analysis/LJM_static_law_v2_v8_20260912/case_review.md). Artifacts: `analysis/LJM_static_law_v2_v8_20260912/`; frozen `source/run.py` and `source/score.py`. User requested Gemma plus direct per-feature supplied law, no RAG. Seven singleton groups, including v2/v3 moved from rules for this experiment; not a full groups21 run.
+
+Matched dev200, full source/meta preserved, static law baseline vs same + unmodified LJM scan/extractor flags and deduplicated 1600-character context display. OFF, output512, seed0/temp0, NVFP4/5090, max8. Alternating arm order per notice, reset cache per arm, source-first singleton then six followers. Labels opened only by scoring after both arms passed response replay. No after-score prompt tuning. Existing user code may already be dev-informed.
+
+Macro7 .30306986→.34158568 (+.03851582), Micro .19148936→.23098592. TP45→41, FP378→267, FN2→6. 229 changes:168 old FPs fixed,57 new FPs,4 new FNs; no FN recovery. Per-item F1 baseline→candidate: v2 .1077→.125; v3 .8889→.7619; v4 .2264→.4615; v5 .175→.2059; v6 .1081→.0968; v7 .3846→.5; v8 .2308→.24. Bootstrap2000 paired-notice fixed-output macro delta95CI[-.013814,.079546]; not run-repeat uncertainty. Prioritize v4 follow-up; avoid blanket adoption, especially v3/v6.
+
+Each arm1400 normal model calls,0retry/length/search/failure, all200 complete, no zero-fill. Max initial31207 with512+128 reserve. Input17,144,909→17,774,480; output77,950→72,932. Inference507.5088s→531.9881s (+4.823%); shared load27.2824s. Exact positive quotes203/423→163/308; missing220→145, dropped219→144. Valid JSON does not imply valid evidence.
+
+Original scanner candidate-as-label Macro7 .50055, TP23/FP10/FN24. v2F1 .9333,v3 1.0, v7 recall0; broad extractor v4–7 recall1/.714/.833/.286, v7 111candidates with2TP. Full-context audit:46 v7 candidates with one repeated unique anonymized region token/no adjacency cue; one gold positive, final v7FP3→0 in that subset. Synthetic single-region input reproduces v7 duplication bug. Numeric parser also captures years/counts; parsed-amount array was NOT injected, so no isolated final-effect claim.
+
+Interpretation choices: v3 statute-first >estimated price vs scanner >allocated budget and item-table ≥budget; v4 goods/services experience threshold230m vs scanner local500m. Regional thresholds use supplied law; missing local notice amount not invented. Static-law vs RAG effect, flag vs context effect, hidden distribution, and repeatability remain untested. User source and production src unchanged; experiment helpers archived only as artifacts.
+
+Relocated by user naming decision to `analysis/LJM_static_law_v2_v8_20260912/`. Frozen sources/logs retain historical lowercase paths. Replay via `reproduce.py score` or `reproduce.py audit`; `relocation.json` records immutable snapshot hashes. Full derived evidence authorized for publication by the user on 2026-09-12; root/input dataset copies remain local.

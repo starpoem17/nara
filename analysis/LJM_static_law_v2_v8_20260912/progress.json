@@ -1,0 +1,12 @@
+{
+  "records": 200,
+  "seconds": 1042.2191710029983,
+  "arm_seconds": {
+    "baseline": 507.50877588997173,
+    "candidate": 531.9880866970198
+  },
+  "failures": {
+    "baseline": [],
+    "candidate": []
+  }
+}

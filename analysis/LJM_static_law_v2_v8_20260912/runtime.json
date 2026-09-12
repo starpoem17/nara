@@ -1,0 +1,14 @@
+{
+  "records": 200,
+  "arm_seconds": {
+    "baseline": 507.50877588997173,
+    "candidate": 531.9880866970198
+  },
+  "load_seconds": 27.282376621998992,
+  "elapsed_seconds": 1042.2243386639966,
+  "failures": {
+    "baseline": [],
+    "candidate": []
+  },
+  "search_enabled": false
+}

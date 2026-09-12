@@ -55,6 +55,7 @@ Read summaries first. Open detailed reports or frozen sources only when the task
 | Run checks; inspect measured results and validation gaps | [Local validation](experiments/local-validation.md) |
 | Compare ungrouped and 7/9/12-group inference latency | [Grouping time](experiments/grouping-time.md) |
 | Full200 compressed-criteria OFF groups and v2/v3 rule experiments | [Compact dev200](experiments/compact200.md) |
+| LJM v2–v8 candidates with direct per-feature law and Gemma | [LJM static-law experiment](experiments/ljm-static-law.md) |
 | Source-first KV prefix reuse: grouped OFF speed and accuracy | [Prefix cache](experiments/prefix-cache.md) |
 | Common prompt v2 vs original, output512, matched dev200 | [Common prompt comparison](experiments/common-prompt-512.md) |
 | Default experiments: twelve-group cross-notice engine16; early prefill and FULL graphs | [Prefix pipeline](experiments/prefix-pipeline.md) |
@@ -70,6 +71,7 @@ Read summaries first. Open detailed reports or frozen sources only when the task
 
 - `competition/` contains official requirements only. Its source register is `competition/sources.md`.
 - Generated Markdown reports belong in `reports/`; experiment artifacts remain in `analysis/` or `output/`. Use `nara.evaluation.reporting`; see [maintenance rules](maintenance/structure-audit.md#maintenance-rules).
+- Colleague hypothesis experiments in `analysis/` must use uppercase colleague initials first: `<INITIALS>_<experiment_name>[_<date>]`, e.g. `LJM_static_law_v2_v8_20260912`. Apply this to new runs; preserve historical snapshots. See [maintenance rules](maintenance/structure-audit.md#maintenance-rules).
 - Root `README.md` contains only the user’s objective. Agent notes belong here or in the owning document.
 - Keep each fact in one owning document; link to it elsewhere. Use stable, descriptive filenames and headings.
 - Write concise English; preserve Korean item names, legal titles, filenames, and exact API identifiers.

@@ -8,6 +8,7 @@ Read the concise owner first. Detailed reports live here; JSON/CSV/prompts, raw 
 
 | Artifact folder | Concise owner / scope | Detailed reports |
 |---|---|---|
+| [LJM_static_law_v2_v8_20260912](../../analysis/LJM_static_law_v2_v8_20260912/) | [summary](../experiments/ljm-static-law.md) | [report](analysis/LJM_static_law_v2_v8_20260912/report.md) · [case review](analysis/LJM_static_law_v2_v8_20260912/case_review.md) |
 | [colleague200](../../analysis/colleague200/) | [summary](../experiments/colleague-submission.md) | [comparison](analysis/colleague200/comparison.md) |
 | [cod_legal_gemma](../../analysis/cod_legal_gemma/) | Fictional legal CoD probe inputs and case results. | [current report](output/experiments/cod-legal-gemma-final-20260912/report.md) |
 | [cod_plain_gemma](../../analysis/cod_plain_gemma/) | Verbatim generic Gemma CoD probe configuration. | [current report](output/experiments/cod-plain-gemma-20260912/report.md) |
