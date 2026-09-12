@@ -72,7 +72,7 @@ def main(argv=None, *, verify_reference=True, default_output=Path('analysis/pref
                      'data/dev.jsonl', 'data/항목표.json', 'data/정답스키마_디코딩.json']:
             assert hashlib.sha256(source_path(name).read_bytes()).hexdigest() == old_manifest['source_sha256'][recorded_source_key(old_manifest['source_sha256'], name)], name
         assert groups == old_manifest['groups']
-    limits = Limits(output_tokens=2048, batch_size=16)
+    limits = Limits(output_tokens=2048 if verify_reference else 512, batch_size=16)
     policy = {'initial_records': 2, 'max_live_records': 3, 'max_live_source_tokens': 48000, 'lookahead_groups': 16}
     sources = ['src/experiments/benchmark_prefix_pipeline.py', 'src/inference/prefix_pipeline.py', 'src/inference/continuous.py',
                'src/inference/engine.py', 'src/inference/predictor.py', 'src/inference/conversation.py',

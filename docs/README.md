@@ -3,7 +3,7 @@
 Project objective: achieve a strong result in DACON competition 236754.
 Read this index, then only the documents relevant to the current task.
 
-Default experiment: `uv run --locked nara-experiment` — current sources, twelve OFF groups, cross-notice lookahead, engine16. Submission/RAG CLI: `uv run --locked nara`. See [Prefix pipeline](experiments/prefix-pipeline.md).
+Default experiment: `uv run --locked nara-experiment` — current sources, twelve OFF groups, cross-notice lookahead, engine16, output512 (including retries). Submission/RAG CLI: `uv run --locked nara`. See [Prefix pipeline](experiments/prefix-pipeline.md).
 
 The physical `src/` directory is installed directly as the `nara` package; there is no `src/nara/` layer.
 
