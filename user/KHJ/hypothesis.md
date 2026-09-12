@@ -75,3 +75,7 @@ AND 요구 실적금액 > 배정예산금액
 ## 8. Chain of Draft: Thinking Faster by Writing Less」(2025) 연구에 따르면 각 thinking 단계를 최대 5단어의 짧은 메모로 작성하라고 지시하면 성능을 보존하면서 thinknig token 생성량을 크게 줄일 수 있다. -> 실패
 
 Gemma4 thinking on 에서는 CoD 적용이 애초에 안 되고(프롬프트로 지시해도 짧은 메모 thinking이 나오지 않음) thinking off에서도 적용이 잘 안 됨. 성능 향상은 거의 없고 추론 시간이 2배로 뜀.
+
+## 9. 주최 측에서 제공한 법령 패키지 외의 법률적 내용이 판단에 필요한 경우는 없을 것이다.
+
+이래 버리면 조사할 내용이 꽤 많아질 수도
