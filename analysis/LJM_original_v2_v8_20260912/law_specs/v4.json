@@ -1,0 +1,117 @@
+{
+  "feature": "v4",
+  "excerpts": [
+    {
+      "path": "data/법령패키지/법령/국가를 당사자로 하는 계약에 관한 법률 시행령.txt",
+      "start_line": 186,
+      "end_line": 190,
+      "source_title": "국가를 당사자로 하는 계약에 관한 법률 시행령",
+      "locator": "제21조제1항 본문 및 제1호부터 제3호까지"
+    },
+    {
+      "path": "data/법령패키지/법령/국가를 당사자로 하는 계약에 관한 법률 시행령.txt",
+      "start_line": 197,
+      "end_line": 197,
+      "source_title": "국가를 당사자로 하는 계약에 관한 법률 시행령",
+      "locator": "제21조제1항제5호"
+    },
+    {
+      "path": "data/법령패키지/법령/국가를 당사자로 하는 계약에 관한 법률 시행규칙.txt",
+      "start_line": 223,
+      "end_line": 226,
+      "source_title": "국가를 당사자로 하는 계약에 관한 법률 시행규칙",
+      "locator": "제24조제1항"
+    },
+    {
+      "path": "data/법령패키지/법령/국가를 당사자로 하는 계약에 관한 법률 시행규칙.txt",
+      "start_line": 233,
+      "end_line": 239,
+      "source_title": "국가를 당사자로 하는 계약에 관한 법률 시행규칙",
+      "locator": "제25조제1항 및 제2항"
+    },
+    {
+      "path": "data/법령패키지/법령/(계약예규) 정부 입찰·계약 집행기준.txt",
+      "start_line": 109,
+      "end_line": 109,
+      "source_title": "(계약예규) 정부 입찰·계약 집행기준",
+      "locator": "제2장 제한경쟁입찰의 운용 제5조제1항"
+    },
+    {
+      "path": "data/법령패키지/법령/(계약예규) 정부 입찰·계약 집행기준.txt",
+      "start_line": 115,
+      "end_line": 120,
+      "source_title": "(계약예규) 정부 입찰·계약 집행기준",
+      "locator": "제2장 제한경쟁입찰의 운용 제5조제4항제1호부터 제3호까지"
+    },
+    {
+      "path": "data/법령패키지/법령/국가를 당사자로 하는 계약에 관한 법률 등의 재정경제부장관이 정하는 고시금액.txt",
+      "start_line": 8,
+      "end_line": 13,
+      "source_title": "국가를 당사자로 하는 계약에 관한 법률 등의 재정경제부장관이 정하는 고시금액",
+      "locator": "제1호가목"
+    },
+    {
+      "path": "data/법령패키지/법령/국가를 당사자로 하는 계약에 관한 법률 등의 재정경제부장관이 정하는 고시금액.txt",
+      "start_line": 60,
+      "end_line": 65,
+      "source_title": "국가를 당사자로 하는 계약에 관한 법률 등의 재정경제부장관이 정하는 고시금액",
+      "locator": "제2호가목"
+    },
+    {
+      "path": "data/법령패키지/법령/지방자치단체를 당사자로 하는 계약에 관한 법률 시행령.txt",
+      "start_line": 190,
+      "end_line": 194,
+      "source_title": "지방자치단체를 당사자로 하는 계약에 관한 법률 시행령",
+      "locator": "제20조제1항 본문 및 제1호부터 제3호까지"
+    },
+    {
+      "path": "data/법령패키지/법령/지방자치단체를 당사자로 하는 계약에 관한 법률 시행령.txt",
+      "start_line": 196,
+      "end_line": 196,
+      "source_title": "지방자치단체를 당사자로 하는 계약에 관한 법률 시행령",
+      "locator": "제20조제1항제5호"
+    },
+    {
+      "path": "data/법령패키지/법령/지방자치단체를 당사자로 하는 계약에 관한 법률 시행규칙.txt",
+      "start_line": 246,
+      "end_line": 252,
+      "source_title": "지방자치단체를 당사자로 하는 계약에 관한 법률 시행규칙",
+      "locator": "제25조제1항 및 제2항"
+    },
+    {
+      "path": "data/법령패키지/법령/지방자치단체 입찰 및 계약 집행기준.txt",
+      "start_line": 98,
+      "end_line": 101,
+      "source_title": "지방자치단체 입찰 및 계약 집행기준",
+      "locator": "제1장 입찰 및 계약 일반기준 제1절 총칙 7. 계약담당자 주의사항"
+    },
+    {
+      "path": "data/법령패키지/법령/지방자치단체 입찰 및 계약 집행기준.txt",
+      "start_line": 107,
+      "end_line": 111,
+      "source_title": "지방자치단체 입찰 및 계약 집행기준",
+      "locator": "제1장 입찰 및 계약 일반기준 제1절 총칙 7.나.4)부터 6)까지"
+    },
+    {
+      "path": "data/법령패키지/법령/지방자치단체 입찰 및 계약 집행기준.txt",
+      "start_line": 2432,
+      "end_line": 2444,
+      "source_title": "지방자치단체 입찰 및 계약 집행기준",
+      "locator": "제4장 제한입찰 운영요령 제1절 및 제2절 중 실적제한"
+    },
+    {
+      "path": "data/법령패키지/법령/지방자치단체 입찰 및 계약 집행기준.txt",
+      "start_line": 2466,
+      "end_line": 2480,
+      "source_title": "지방자치단체 입찰 및 계약 집행기준",
+      "locator": "제4장 제한입찰 운영요령 제3절 2.가. 실적제한"
+    }
+  ],
+  "notes": [
+    "Only organizer-supplied files are referenced.",
+    "The two disjoint decree ranges retain the parent paragraph while excluding unrelated certification and regional-restriction clauses.",
+    "The two disjoint Chapter 1 ranges retain the prohibition heading while excluding unrelated examples between it and the v4-specific examples.",
+    "Amendment annotations and source XML markers remain in the selected source lines; the shared renderer is responsible for the user-approved mechanical cleanup.",
+    "Cross-review removed regional-threshold material unrelated to v4; notice paragraph 2 is retained for public-enterprise/quasi-government metadata scope, independently of scanner behavior."
+  ]
+}

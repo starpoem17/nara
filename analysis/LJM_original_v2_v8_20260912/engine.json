@@ -1,0 +1,15 @@
+{
+  "max_num_seqs": 8,
+  "max_num_batched_tokens": 8192,
+  "cudagraph_mode": "FULL_AND_PIECEWISE",
+  "capture_sizes": [
+    1,
+    2,
+    4,
+    8,
+    16
+  ],
+  "kv_cache_dtype": "auto",
+  "gpu_memory_utilization": 0.86,
+  "load_seconds": 59.45577514099932
+}

@@ -1,0 +1,150 @@
+{
+  "feature": "v5",
+  "excerpts": [
+    {
+      "path": "data/법령패키지/법령/국가를 당사자로 하는 계약에 관한 법률.txt",
+      "start_line": 17,
+      "end_line": 24,
+      "locator": "제4조제1항부터 제3항까지"
+    },
+    {
+      "path": "data/법령패키지/법령/국가를 당사자로 하는 계약에 관한 법률.txt",
+      "start_line": 53,
+      "end_line": 54,
+      "locator": "제7조제1항"
+    },
+    {
+      "path": "data/법령패키지/법령/국가를 당사자로 하는 계약에 관한 법률 시행령.txt",
+      "start_line": 12,
+      "end_line": 16,
+      "locator": "제2조 본문 및 제1호부터 제3호까지"
+    },
+    {
+      "path": "data/법령패키지/법령/국가를 당사자로 하는 계약에 관한 법률 시행령.txt",
+      "start_line": 186,
+      "end_line": 187,
+      "locator": "제21조제1항 본문"
+    },
+    {
+      "path": "data/법령패키지/법령/국가를 당사자로 하는 계약에 관한 법률 시행령.txt",
+      "start_line": 198,
+      "end_line": 198,
+      "locator": "제21조제1항제6호"
+    },
+    {
+      "path": "data/법령패키지/법령/국가를 당사자로 하는 계약에 관한 법률 시행규칙.txt",
+      "start_line": 223,
+      "end_line": 223,
+      "locator": "제24조 표제"
+    },
+    {
+      "path": "data/법령패키지/법령/국가를 당사자로 하는 계약에 관한 법률 시행규칙.txt",
+      "start_line": 227,
+      "end_line": 231,
+      "locator": "제24조제2항"
+    },
+    {
+      "path": "data/법령패키지/법령/국가를 당사자로 하는 계약에 관한 법률 시행규칙.txt",
+      "start_line": 233,
+      "end_line": 233,
+      "locator": "제25조 표제"
+    },
+    {
+      "path": "data/법령패키지/법령/국가를 당사자로 하는 계약에 관한 법률 시행규칙.txt",
+      "start_line": 240,
+      "end_line": 242,
+      "locator": "제25조제3항"
+    },
+    {
+      "path": "data/법령패키지/법령/국가를 당사자로 하는 계약에 관한 법률 등의 재정경제부장관이 정하는 고시금액.txt",
+      "start_line": 8,
+      "end_line": 13,
+      "locator": "제1호가목"
+    },
+    {
+      "path": "data/법령패키지/법령/국가를 당사자로 하는 계약에 관한 법률 등의 재정경제부장관이 정하는 고시금액.txt",
+      "start_line": 60,
+      "end_line": 65,
+      "locator": "제2호가목"
+    },
+    {
+      "path": "data/법령패키지/법령/지방자치단체를 당사자로 하는 계약에 관한 법률.txt",
+      "start_line": 19,
+      "end_line": 26,
+      "locator": "제5조제1항부터 제3항까지"
+    },
+    {
+      "path": "data/법령패키지/법령/지방자치단체를 당사자로 하는 계약에 관한 법률.txt",
+      "start_line": 58,
+      "end_line": 60,
+      "locator": "제9조제1항 및 제2항"
+    },
+    {
+      "path": "data/법령패키지/법령/지방자치단체를 당사자로 하는 계약에 관한 법률 시행령.txt",
+      "start_line": 13,
+      "end_line": 17,
+      "locator": "제2조 본문 및 제1호부터 제3호까지"
+    },
+    {
+      "path": "data/법령패키지/법령/지방자치단체를 당사자로 하는 계약에 관한 법률 시행령.txt",
+      "start_line": 190,
+      "end_line": 191,
+      "locator": "제20조제1항 본문"
+    },
+    {
+      "path": "data/법령패키지/법령/지방자치단체를 당사자로 하는 계약에 관한 법률 시행령.txt",
+      "start_line": 197,
+      "end_line": 197,
+      "locator": "제20조제1항제6호"
+    },
+    {
+      "path": "data/법령패키지/법령/지방자치단체를 당사자로 하는 계약에 관한 법률 시행규칙.txt",
+      "start_line": 232,
+      "end_line": 243,
+      "locator": "제24조"
+    },
+    {
+      "path": "data/법령패키지/법령/지방자치단체를 당사자로 하는 계약에 관한 법률 시행규칙.txt",
+      "start_line": 246,
+      "end_line": 246,
+      "locator": "제25조 표제"
+    },
+    {
+      "path": "data/법령패키지/법령/지방자치단체를 당사자로 하는 계약에 관한 법률 시행규칙.txt",
+      "start_line": 253,
+      "end_line": 256,
+      "locator": "제25조제3항"
+    },
+    {
+      "path": "data/법령패키지/법령/지방자치단체 입찰 및 계약 집행기준.txt",
+      "start_line": 2433,
+      "end_line": 2437,
+      "locator": "제4장 제한입찰 운영요령 제1절 1. 목적 및 2.가. 고시금액"
+    },
+    {
+      "path": "data/법령패키지/법령/지방자치단체 입찰 및 계약 집행기준.txt",
+      "start_line": 2440,
+      "end_line": 2441,
+      "locator": "제4장 제한입찰 운영요령 제2절 표제 및 표 머리"
+    },
+    {
+      "path": "data/법령패키지/법령/지방자치단체 입찰 및 계약 집행기준.txt",
+      "start_line": 2448,
+      "end_line": 2450,
+      "locator": "제4장 제한입찰 운영요령 제2절 지역제한"
+    },
+    {
+      "path": "data/법령패키지/법령/지방자치단체 입찰 및 계약 집행기준.txt",
+      "start_line": 2457,
+      "end_line": 2458,
+      "locator": "제4장 제한입찰 운영요령 제2절 지역제한 소재지 기준"
+    },
+    {
+      "path": "data/법령패키지/법령/지방자치단체 입찰 및 계약 집행기준.txt",
+      "start_line": 2459,
+      "end_line": 2465,
+      "locator": "제4장 제한입찰 운영요령 제3절 1. 제한의 기본원칙"
+    }
+  ],
+  "notes": []
+}

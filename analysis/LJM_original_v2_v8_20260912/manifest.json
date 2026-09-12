@@ -1,0 +1,72 @@
+{
+  "records": 200,
+  "scanner_features": [
+    "v2",
+    "v3",
+    "v4",
+    "v5",
+    "v6",
+    "v7",
+    "v8"
+  ],
+  "gemma_features": [
+    "v4",
+    "v5",
+    "v6",
+    "v7"
+  ],
+  "gemma_requests": 800,
+  "model": "models/gemma-4-26B-A4B-it-NVFP4",
+  "model_revision": "5557756b8dce33ac72f2bd702b11729fdba3b839",
+  "python": "3.12.13",
+  "packages": {
+    "vllm": "0.26.0",
+    "torch": "2.11.0+cu130",
+    "transformers": "5.14.1"
+  },
+  "temperature": 0,
+  "seed": 0,
+  "thinking": false,
+  "output_tokens": 2048,
+  "batch_size": 8,
+  "max_model_len": 32768,
+  "structured_decoding": false,
+  "retries": 0,
+  "prompt_replacement": [
+    "관련 법령·고시금액을 검색한 뒤",
+    "제공된 법령·고시금액을 사용한 뒤"
+  ],
+  "message_roles": [
+    "user"
+  ],
+  "candidate_gating": false,
+  "extra_full_documents": false,
+  "extra_system_prompt": false,
+  "additional_extraction_truncation": false,
+  "law_source": "supplied package only",
+  "scanner_seconds": 0.2550985899979423,
+  "extraction_seconds": 0.18902366799738957,
+  "input_hashes": {
+    "data/dev.jsonl": "5507f5ab0ba53b708f87211ed050dbe531b48a626ace6084c3ccaefb53147534",
+    "data/항목표.json": "368cb41f376d8ad7edbbdf181542e6e959de356f7f70d86e72943325ecad61d9",
+    "src/inference/engine.py": "1192d8e4fc6a927cd22cf31b379bfba54aa6c51a0a125cea6793728cd1324111",
+    "user/LJM/scan_candidates.py": "75cefd9c0350f18785119f118af8815ebead8ea1c2d759e0236a11f36da60916",
+    "user/LJM/v4_v7_candidate_extractor.py": "179be8e3eb7395ae00e6dcba3026252dc9077d7695a1b06850c31b5f1350f5a6",
+    "uv.lock": "76089a2b00b237f2c2782d084f1e1c7c8aadfa1849780c1b787d91d7088b7651",
+    "models/gemma-4-26B-A4B-it-NVFP4/config.json": "6b9f7fb34b97dd8bbc7a771982c366a46584d6fb97fa6caf91d845af4a1da377",
+    "models/gemma-4-26B-A4B-it-NVFP4/chat_template.jinja": "6a1015c47ccfcfa67c3b772385bccee357a4d37c3cda37bd202e9047f391ab82",
+    "models/gemma-4-26B-A4B-it-NVFP4/tokenizer.json": "d93b194780d6d3212d02d300123b13009b4e46871c1a8395e3294d7205d349a8"
+  },
+  "artifact_hashes": {
+    "run.py": "aafb23454b7e3a79768cb84a72d8387f2abe249198a7b6329985a9c65d244fb7",
+    "score.py": "724febc343bba2ee61cba9227d4b13e5c3c18ced9f503feb1cf479a198c5c42a",
+    "laws.json": "6280a9d16bd22d2a39d2a10d90b594ee3411456f213ece0b38581a24017f8c71",
+    "law_provenance.json": "904b9c5d6da39d02c441278b0e5561149a9f1f512cd0ea5507c26805f6c3f67d",
+    "extractor/requests.jsonl": "642d64b4b0424b949c669651d5623350dcae8b5a6869d1976a87883548aa13f0",
+    "extractor/extracted.jsonl": "e0e2b6d84bc86536b4ca8152bb1659590efc6c526e326486ad16e78207b7dd9d",
+    "law_specs/v4.json": "70addd36bc42130a48c83b142e2ce9d1d160c807db8c8d1f973f7035cbafbc46",
+    "law_specs/v5.json": "2bb14b4866ccc06b511b27745a619888333c6c3933f507badc13cfdddb4b2365",
+    "law_specs/v6.json": "d1b977dc57278ae991b06d1a71c909d783aa09d2c80d884ea7a3833388ca70fb",
+    "law_specs/v7.json": "9adb892cbd8f9ebbe378ce727086f64d79422859899d9f087076781ba84d993e"
+  }
+}

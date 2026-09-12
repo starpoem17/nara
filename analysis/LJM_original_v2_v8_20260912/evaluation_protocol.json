@@ -1,0 +1,9 @@
+{
+  "frozen_at": "2026-09-12T13:27:53.748669+00:00",
+  "evaluate_sha256": "0ddbe8d363281ab2cb19fb72558c5fa89097987c07611c627f57e19c40153e14",
+  "reason": "Observed complete JSON code-block wrappers during inference; strict JSON diagnostic kept separate from unchanged inner judgment.",
+  "allowed_decoding": "Strict JSON object, or entire response consisting of one json/untyped Markdown code block containing strict JSON.",
+  "forbidden": "No JSON repairs, field filling, decision changes, prompt changes, retries, or parsing arbitrary surrounding prose.",
+  "initial_scorer_preserved": true,
+  "inference_unchanged": true
+}

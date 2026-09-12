@@ -1,0 +1,1 @@
+{"requests_verified": 800, "original_sources_byte_identical": true, "single_allowed_prompt_replacement": true, "full_original_extraction_json": true, "extraction_recomputed_exactly": 200, "no_extra_system_prompt": true, "law_text_exact_allowed_deletions": true, "manifest_hashes_match": true, "responses_verified": 800, "all_input_token_counts_match": true}

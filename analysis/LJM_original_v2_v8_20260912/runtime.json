@@ -1,0 +1,6 @@
+{
+  "load_seconds": 59.45577514099932,
+  "inference_seconds": 838.052927855002,
+  "requests": 800,
+  "retries": 0
+}

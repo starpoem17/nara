@@ -1,0 +1,162 @@
+{
+  "feature": "v7",
+  "excerpts": [
+    {
+      "path": "data/법령패키지/법령/국가를 당사자로 하는 계약에 관한 법률 시행령.txt",
+      "start_line": 12,
+      "end_line": 16,
+      "locator": "제2조제1호·제3호"
+    },
+    {
+      "path": "data/법령패키지/법령/국가를 당사자로 하는 계약에 관한 법률.txt",
+      "start_line": 17,
+      "end_line": 24,
+      "locator": "제4조"
+    },
+    {
+      "path": "data/법령패키지/법령/국가를 당사자로 하는 계약에 관한 법률 등의 재정경제부장관이 정하는 고시금액.txt",
+      "start_line": 8,
+      "end_line": 13,
+      "locator": "1. 가."
+    },
+    {
+      "path": "data/법령패키지/법령/국가를 당사자로 하는 계약에 관한 법률 시행령.txt",
+      "start_line": 243,
+      "end_line": 244,
+      "locator": "제26조제1항"
+    },
+    {
+      "path": "data/법령패키지/법령/국가를 당사자로 하는 계약에 관한 법률 시행령.txt",
+      "start_line": 291,
+      "end_line": 302,
+      "locator": "제26조제1항제5호가목"
+    },
+    {
+      "path": "data/법령패키지/법령/지방자치단체를 당사자로 하는 계약에 관한 법률 시행령.txt",
+      "start_line": 13,
+      "end_line": 17,
+      "locator": "제2조제1호부터 제3호"
+    },
+    {
+      "path": "data/법령패키지/법령/지방자치단체를 당사자로 하는 계약에 관한 법률.txt",
+      "start_line": 19,
+      "end_line": 26,
+      "locator": "제5조"
+    },
+    {
+      "path": "data/법령패키지/법령/국가를 당사자로 하는 계약에 관한 법률 시행령.txt",
+      "start_line": 186,
+      "end_line": 187,
+      "locator": "제21조제1항"
+    },
+    {
+      "path": "data/법령패키지/법령/국가를 당사자로 하는 계약에 관한 법률 시행령.txt",
+      "start_line": 198,
+      "end_line": 198,
+      "locator": "제21조제1항제6호"
+    },
+    {
+      "path": "data/법령패키지/법령/국가를 당사자로 하는 계약에 관한 법률 시행규칙.txt",
+      "start_line": 227,
+      "end_line": 231,
+      "locator": "제24조제2항"
+    },
+    {
+      "path": "data/법령패키지/법령/국가를 당사자로 하는 계약에 관한 법률 시행규칙.txt",
+      "start_line": 240,
+      "end_line": 242,
+      "locator": "제25조제3항"
+    },
+    {
+      "path": "data/법령패키지/법령/국가를 당사자로 하는 계약에 관한 법률 시행령.txt",
+      "start_line": 338,
+      "end_line": 340,
+      "locator": "제30조제2항부터 제4항"
+    },
+    {
+      "path": "data/법령패키지/법령/국가를 당사자로 하는 계약에 관한 법률 시행규칙.txt",
+      "start_line": 280,
+      "end_line": 285,
+      "locator": "제33조제1항·제2항"
+    },
+    {
+      "path": "data/법령패키지/법령/지방자치단체를 당사자로 하는 계약에 관한 법률 시행령.txt",
+      "start_line": 190,
+      "end_line": 191,
+      "locator": "제20조제1항"
+    },
+    {
+      "path": "data/법령패키지/법령/지방자치단체를 당사자로 하는 계약에 관한 법률 시행령.txt",
+      "start_line": 197,
+      "end_line": 197,
+      "locator": "제20조제1항제6호"
+    },
+    {
+      "path": "data/법령패키지/법령/지방자치단체를 당사자로 하는 계약에 관한 법률 시행규칙.txt",
+      "start_line": 232,
+      "end_line": 244,
+      "locator": "제24조"
+    },
+    {
+      "path": "data/법령패키지/법령/지방자치단체를 당사자로 하는 계약에 관한 법률 시행규칙.txt",
+      "start_line": 253,
+      "end_line": 259,
+      "locator": "제25조제3항부터 제6항"
+    },
+    {
+      "path": "data/법령패키지/법령/지방자치단체를 당사자로 하는 계약에 관한 법률 시행령.txt",
+      "start_line": 354,
+      "end_line": 361,
+      "locator": "제30조제1항·제2항"
+    },
+    {
+      "path": "data/법령패키지/법령/지방자치단체 입찰 및 계약 집행기준.txt",
+      "start_line": 2448,
+      "end_line": 2450,
+      "locator": "제4장 제2절"
+    },
+    {
+      "path": "data/법령패키지/법령/지방자치단체 입찰 및 계약 집행기준.txt",
+      "start_line": 2457,
+      "end_line": 2458,
+      "locator": "제4장 제2절"
+    },
+    {
+      "path": "data/법령패키지/법령/지방자치단체 입찰 및 계약 집행기준.txt",
+      "start_line": 2460,
+      "end_line": 2461,
+      "locator": "제4장 제3절 1"
+    },
+    {
+      "path": "data/법령패키지/법령/지방자치단체 입찰 및 계약 집행기준.txt",
+      "start_line": 2465,
+      "end_line": 2465,
+      "locator": "제4장 제3절 1. 다."
+    },
+    {
+      "path": "data/법령패키지/법령/지방자치단체 입찰 및 계약 집행기준.txt",
+      "start_line": 2560,
+      "end_line": 2564,
+      "locator": "제5장 제1절 2"
+    },
+    {
+      "path": "data/법령패키지/법령/지방자치단체 입찰 및 계약 집행기준.txt",
+      "start_line": 2574,
+      "end_line": 2575,
+      "locator": "제5장 제1절 2. 바.·사."
+    },
+    {
+      "path": "data/법령패키지/법령/지방자치단체 입찰 및 계약 집행기준.txt",
+      "start_line": 2586,
+      "end_line": 2592,
+      "locator": "제5장 제3절 1. 가."
+    },
+    {
+      "path": "data/법령패키지/법령/지방자치단체 입찰 및 계약 집행기준.txt",
+      "start_line": 2597,
+      "end_line": 2609,
+      "locator": "제5장 제3절 1. 나. 3)부터 5)"
+    }
+  ],
+  "notes": []
+}

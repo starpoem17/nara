@@ -53,7 +53,7 @@ User approved retaining these five copies at original paths. They are immutable 
 7. `src/tools/jsonl_to_md.py` renders source records, not handover notes. Its explicit data output path remains supported. Preserve `user/`, original distribution data and model/index assets.
 8. Share raw model responses, execution JSONL and logs under `analysis/` as experiment evidence. Keep Python caches and repeated `source/data/dev.jsonl` input snapshots ignored; root datasets, models and indexes still require local setup. `output/` run artifacts remain local even when a report links to them.
 
-9. For future experiments testing a colleague’s hypothesis, name the `analysis/` run directory `<INITIALS>_<experiment_name>[_<date>]`, with uppercase initials first (user decision, 2026-09-12). Example: `LJM_static_law_v2_v8_20260912`. Match the mirrored report directory and update navigation/replay paths. Do not bulk-rename unrelated historical experiments or rewrite frozen source/log evidence.
+9. For future experiments testing a colleague’s hypothesis, name the `analysis/` run directory `<INITIALS>_<experiment_name>[_<date>]`, with uppercase initials first (user decision, 2026-09-12). Example: `LJM_original_v2_v8_20260912`. Match the mirrored report directory and update navigation/replay paths. Do not bulk-rename unrelated historical experiments or rewrite frozen source/log evidence.
 
 ## Original audit validation
 
