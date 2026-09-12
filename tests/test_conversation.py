@@ -4,10 +4,10 @@ from dataclasses import asdict
 import json
 import unittest
 
-from nara.inference import Limits, Predictor, Reply, _Task, compact
-from nara.continuous import ContinuousPredictor
-from nara.batch_barrier import BatchedPredictor
-from nara.prefix_pipeline import PrefixPipelinePredictor
+from nara.inference.predictor import Limits, Predictor, Reply, _Task, compact
+from nara.inference.continuous import ContinuousPredictor
+from nara.inference.batch_barrier import BatchedPredictor
+from nara.inference.prefix_pipeline import PrefixPipelinePredictor
 from test_inference import TABLE, SCHEMA, Retriever, record, final
 
 

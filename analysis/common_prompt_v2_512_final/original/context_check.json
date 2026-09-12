@@ -1,0 +1,8 @@
+{
+  "max_input_tokens": 29252,
+  "initial_search_disabled": [],
+  "source_overflows": 0,
+  "records": 200,
+  "groups_per_record": 12,
+  "output_tokens": 512
+}

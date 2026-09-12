@@ -10,8 +10,8 @@ import sys
 import tempfile
 import unittest
 
-from nara.inference import Prediction
-from scripts import benchmark_prefix_pipeline as runner
+from nara.inference.predictor import Prediction
+from nara.experiments import benchmark_prefix_pipeline as runner
 
 
 class ExperimentEngineTests(unittest.TestCase):
@@ -96,10 +96,10 @@ class ExperimentEngineTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as temp, ExitStack() as stack:
             out = Path(temp) / 'run'
             stack.enter_context(patch.dict(sys.modules, {'torch': torch}))
-            stack.enter_context(patch('nara.vllm_model.TokenCounter', return_value=NS()))
-            stack.enter_context(patch('nara.vllm_model.VLLMModel', return_value=model))
-            stack.enter_context(patch('nara.retrieval.BGEEncoder', return_value=None))
-            stack.enter_context(patch('nara.retrieval.LegalRetriever', return_value=None))
+            stack.enter_context(patch('nara.inference.engine.TokenCounter', return_value=NS()))
+            stack.enter_context(patch('nara.inference.engine.VLLMModel', return_value=model))
+            stack.enter_context(patch('nara.retrieval.search.BGEEncoder', return_value=None))
+            stack.enter_context(patch('nara.retrieval.search.LegalRetriever', return_value=None))
             stack.enter_context(patch.object(runner, 'read_records', return_value=records))
             stack.enter_context(patch.object(runner, 'measure_prefix_inputs', return_value=counts))
             stack.enter_context(patch.object(runner, 'PrefixPipelinePredictor', Pipeline))
@@ -112,10 +112,10 @@ class ExperimentEngineTests(unittest.TestCase):
             self.assertEqual(manifest['groups'][10], ['v23'])
             self.assertEqual(manifest['rule_items'], ['v2', 'v3', 'v22'])
             self.assertNotIn('v22', [k for g in manifest['groups'] for k in g])
-            self.assertIn('nara/briefing_rule.py', manifest['source_sha256'])
-            snapshot = out / 'source/nara/conversation.py'
-            self.assertEqual(snapshot.read_bytes(), Path('nara/conversation.py').read_bytes())
-            self.assertEqual(manifest['source_sha256']['nara/conversation.py'],
+            self.assertIn('src/rules/briefing.py', manifest['source_sha256'])
+            snapshot = out / 'source/src/inference/conversation.py'
+            self.assertEqual(snapshot.read_bytes(), Path('src/inference/conversation.py').read_bytes())
+            self.assertEqual(manifest['source_sha256']['src/inference/conversation.py'],
                              hashlib.sha256(snapshot.read_bytes()).hexdigest())
             report = json.loads((out / 'report.json').read_text())
             scheduler = [json.loads(s) for s in (out / 'scheduler.jsonl').read_text().splitlines()]

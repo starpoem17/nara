@@ -2,9 +2,9 @@
 from copy import deepcopy
 import unittest
 
-from nara.batch_barrier import BatchedPredictor
-from nara.continuous import ContinuousPredictor
-from nara.inference import Limits, Predictor, Reply, compact
+from nara.inference.batch_barrier import BatchedPredictor
+from nara.inference.continuous import ContinuousPredictor
+from nara.inference.predictor import Limits, Predictor, Reply, compact
 from test_continuous import Engine
 from test_inference import Model, TABLE, SCHEMA, record, Retriever, final
 

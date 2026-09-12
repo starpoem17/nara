@@ -1,0 +1,17 @@
+# Continuous scheduling accuracy diagnosis
+
+Artifact base: `analysis/continuous_diagnosis/`; unqualified JSON/CSV/log/source paths below use this base. Detailed Markdown reports: [index](../reports/README.md).
+
+Status: complete; no inference task pending. Report `docs/reports/analysis/continuous_diagnosis/report.md`, summary.json, historical_flips.csv, divergences.json, input_audit.json, validation.json. Diagnostic scripts/source snapshots retained in source/; logs engine.log.
+
+Original200 six-feature comparison:26/1200 label flips across24notices;17 correct→wrong,9 wrong→correct, net8 moreerrors. Only41 positive labels. TP18→15,FP15→20; Macro .500577→.391453,Micro .486486→.394737. v1 TP4→2 among7positives drives large macro change. Paired notice bootstrap5000replicates fixed-output new−old95CI Macro[-.22964,.00675],Micro[-.21377,.02983]; not inference-repeat uncertainty.
+
+Full200 CPU audit: old/new prompt messages, ordered schemas, actual tokenizer IDs identical; historical input lengths match; old/new final outputs replay through original postprocessing identically; historical logged engine config strings identical; original core/compact prompt/data snapshots unchanged. No RAG, retries, context/output failures in these two six-feature200 traces. Previous200 did not store rawthinking/token IDs, so cannot recover their first divergent token.
+
+GPU controls: first24 original input-order notices (not label-selected), same engine/context32768/step8192/maxseq8/ON1024/output2048/temp0/seed0. Prefix reset per stage; other warm state persists. Five stages: old_barrier1,old_barrier2,new_barrier,new_continuous1,new_continuous2. Captured actual returned prompt tokens to independently mapID, raw thinking/token IDs, API effective sampling. All120 route/parse/params checks passed.
+
+Results: old repeat0token/label changes; oldAPI→newAPI withbarrier0changes; newbarrier→continuous16/24 raw sequences changed (first8unchanged),12answers changed,8/144bits changed. All16 first diverge inside thinking at0-based token3–21. Continuous repeats0changes. Six-feature24 Macro/Micro barrier .577778/.714286 vscontinuous .511111/.625; these are diagnostics, not full200 replacement. Current instrumented oldbarrier differs from historical first24 by8labels, so separate-engine/warm/instrumentation/internal scheduling effects also exist. Do not attribute all historical26flips solely to refill.
+
+Inference: evidence points to batch-sensitive engine generation, not application response routing/postprocessing; this controlled run is repeat-stable within a schedule. Newprefill/decode mix changes numerical execution and can change greedytop1 early, then thinking autoregression amplifies differences. Exact GPUkernel cause (NVFP4/MoE/attention) unisolated; no logit margin or kernel-specific ablation. Do not assert quantization is proved sole cause or random runs always vary.
+
+Official docs https://docs.vllm.ai/en/stable/usage/reproducibility/ : default reproducibility not guaranteed; offline multiprocessing0 fixes scheduling or batch invariance reduces schedule sensitivity. Observed engine multiprocessingTrue,batch_invariantFalse. Gemma4 NVFP4 batch-invariant compatibility/cost not tested; no production settings changed. Fixed-schedule reproducibility differs from invariance across scheduling. Future comparisons should log rawtokens, actual routing and repeat/control schedules. Existing1.8% timing delta is single-run evidence, not sufficient reason to accept unstable quality.

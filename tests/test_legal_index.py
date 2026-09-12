@@ -7,8 +7,8 @@ import zipfile
 
 import numpy as np
 
-from nara.legal_index import SourceText, build_index, passages_for, read_sources
-from nara.retrieval import LegalRetriever
+from nara.retrieval.index import SourceText, build_index, passages_for, read_sources
+from nara.retrieval.search import LegalRetriever
 
 
 class CharacterTokenizer:

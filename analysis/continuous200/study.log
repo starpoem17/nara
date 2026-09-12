@@ -1,0 +1,5 @@
+{"stage": "pilot_complete", "tokens": 8192}
+{"stage": "pilot_complete", "tokens": 2048}
+{"stage": "pilot_complete", "tokens": 16384}
+{"stage": "full_complete", "kind": "six", "tokens": 8192}
+{"stage": "full_complete", "kind": "mixed", "tokens": 8192}

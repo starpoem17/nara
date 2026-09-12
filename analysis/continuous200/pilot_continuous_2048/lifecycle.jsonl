@@ -1,0 +1,96 @@
+{"event": "submit", "request_id": "continuous-0", "task_id": "0:0", "time": 85536.195003043, "inflight": 1, "input_tokens": 11367, "thinking_budget": 1024}
+{"event": "submit", "request_id": "continuous-1", "task_id": "1:0", "time": 85536.212577035, "inflight": 2, "input_tokens": 18834, "thinking_budget": 1024}
+{"event": "submit", "request_id": "continuous-2", "task_id": "2:0", "time": 85536.235843258, "inflight": 3, "input_tokens": 29344, "thinking_budget": 1024}
+{"event": "submit", "request_id": "continuous-3", "task_id": "3:0", "time": 85536.245918735, "inflight": 4, "input_tokens": 10478, "thinking_budget": 1024}
+{"event": "submit", "request_id": "continuous-4", "task_id": "4:0", "time": 85536.251854116, "inflight": 5, "input_tokens": 5685, "thinking_budget": 1024}
+{"event": "submit", "request_id": "continuous-5", "task_id": "5:0", "time": 85536.264909075, "inflight": 6, "input_tokens": 10957, "thinking_budget": 1024}
+{"event": "submit", "request_id": "continuous-6", "task_id": "6:0", "time": 85536.276610766, "inflight": 7, "input_tokens": 8000, "thinking_budget": 1024}
+{"event": "submit", "request_id": "continuous-7", "task_id": "7:0", "time": 85536.283237514, "inflight": 8, "input_tokens": 4647, "thinking_budget": 1024}
+{"event": "complete", "request_id": "continuous-0", "task_id": "0:0", "time": 85558.391724186, "inflight": 7}
+{"event": "submit", "request_id": "continuous-8", "task_id": "8:0", "time": 85558.400537467, "inflight": 8, "input_tokens": 3373, "thinking_budget": 1024}
+{"event": "complete", "request_id": "continuous-2", "task_id": "2:0", "time": 85558.405760761, "inflight": 7}
+{"event": "submit", "request_id": "continuous-9", "task_id": "9:0", "time": 85558.413350127, "inflight": 8, "input_tokens": 4312, "thinking_budget": 1024}
+{"event": "complete", "request_id": "continuous-1", "task_id": "1:0", "time": 85558.830942193, "inflight": 7}
+{"event": "submit", "request_id": "continuous-10", "task_id": "10:0", "time": 85558.836530426, "inflight": 8, "input_tokens": 4065, "thinking_budget": 1024}
+{"event": "complete", "request_id": "continuous-4", "task_id": "4:0", "time": 85558.870378903, "inflight": 7}
+{"event": "submit", "request_id": "continuous-11", "task_id": "11:0", "time": 85558.877750087, "inflight": 8, "input_tokens": 6804, "thinking_budget": 1024}
+{"event": "complete", "request_id": "continuous-3", "task_id": "3:0", "time": 85559.098786388, "inflight": 7}
+{"event": "submit", "request_id": "continuous-12", "task_id": "12:0", "time": 85559.108369644, "inflight": 8, "input_tokens": 9251, "thinking_budget": 1024}
+{"event": "complete", "request_id": "continuous-5", "task_id": "5:0", "time": 85559.74898183, "inflight": 7}
+{"event": "submit", "request_id": "continuous-13", "task_id": "13:0", "time": 85559.758194074, "inflight": 8, "input_tokens": 7838, "thinking_budget": 1024}
+{"event": "complete", "request_id": "continuous-6", "task_id": "6:0", "time": 85559.945682677, "inflight": 7}
+{"event": "submit", "request_id": "continuous-14", "task_id": "14:0", "time": 85559.953872419, "inflight": 8, "input_tokens": 7576, "thinking_budget": 1024}
+{"event": "complete", "request_id": "continuous-7", "task_id": "7:0", "time": 85561.186345508, "inflight": 7}
+{"event": "submit", "request_id": "continuous-15", "task_id": "15:0", "time": 85561.192926298, "inflight": 8, "input_tokens": 3808, "thinking_budget": 1024}
+{"event": "complete", "request_id": "continuous-8", "task_id": "8:0", "time": 85573.067591283, "inflight": 7}
+{"event": "submit", "request_id": "continuous-16", "task_id": "16:0", "time": 85573.074477, "inflight": 8, "input_tokens": 3060, "thinking_budget": 1024}
+{"event": "complete", "request_id": "continuous-10", "task_id": "10:0", "time": 85573.392168014, "inflight": 7}
+{"event": "submit", "request_id": "continuous-17", "task_id": "17:0", "time": 85573.406387794, "inflight": 8, "input_tokens": 8758, "thinking_budget": 1024}
+{"event": "complete", "request_id": "continuous-11", "task_id": "11:0", "time": 85573.509955342, "inflight": 7}
+{"event": "submit", "request_id": "continuous-18", "task_id": "18:0", "time": 85573.516855836, "inflight": 8, "input_tokens": 5417, "thinking_budget": 1024}
+{"event": "complete", "request_id": "continuous-13", "task_id": "13:0", "time": 85574.103094777, "inflight": 7}
+{"event": "submit", "request_id": "continuous-19", "task_id": "19:0", "time": 85574.107262997, "inflight": 8, "input_tokens": 2592, "thinking_budget": 1024}
+{"event": "complete", "request_id": "continuous-14", "task_id": "14:0", "time": 85574.229892117, "inflight": 7}
+{"event": "submit", "request_id": "continuous-20", "task_id": "20:0", "time": 85574.236096235, "inflight": 8, "input_tokens": 5830, "thinking_budget": 1024}
+{"event": "complete", "request_id": "continuous-12", "task_id": "12:0", "time": 85574.52628531, "inflight": 7}
+{"event": "submit", "request_id": "continuous-21", "task_id": "21:0", "time": 85574.53244283, "inflight": 8, "input_tokens": 6353, "thinking_budget": 1024}
+{"event": "complete", "request_id": "continuous-15", "task_id": "15:0", "time": 85575.46435624, "inflight": 7}
+{"event": "submit", "request_id": "continuous-22", "task_id": "22:0", "time": 85575.48441613, "inflight": 8, "input_tokens": 19632, "thinking_budget": 1024}
+{"event": "complete", "request_id": "continuous-9", "task_id": "9:0", "time": 85577.218196384, "inflight": 7}
+{"event": "submit", "request_id": "continuous-23", "task_id": "23:0", "time": 85577.23119195, "inflight": 8, "input_tokens": 12263, "thinking_budget": 1024}
+{"event": "complete", "request_id": "continuous-16", "task_id": "16:0", "time": 85590.263315923, "inflight": 7}
+{"event": "complete", "request_id": "continuous-18", "task_id": "18:0", "time": 85590.264668239, "inflight": 6}
+{"event": "submit", "request_id": "continuous-24", "task_id": "24:0", "time": 85590.276537716, "inflight": 7, "input_tokens": 7282, "thinking_budget": 1024}
+{"event": "submit", "request_id": "continuous-25", "task_id": "25:0", "time": 85590.282633218, "inflight": 8, "input_tokens": 3511, "thinking_budget": 1024}
+{"event": "complete", "request_id": "continuous-17", "task_id": "17:0", "time": 85590.388313236, "inflight": 7}
+{"event": "submit", "request_id": "continuous-26", "task_id": "26:0", "time": 85590.412857762, "inflight": 8, "input_tokens": 24420, "thinking_budget": 1024}
+{"event": "complete", "request_id": "continuous-19", "task_id": "19:0", "time": 85591.541448239, "inflight": 7}
+{"event": "submit", "request_id": "continuous-27", "task_id": "27:0", "time": 85591.555334448, "inflight": 8, "input_tokens": 15284, "thinking_budget": 1024}
+{"event": "complete", "request_id": "continuous-20", "task_id": "20:0", "time": 85592.478366585, "inflight": 7}
+{"event": "submit", "request_id": "continuous-28", "task_id": "28:0", "time": 85592.494645547, "inflight": 8, "input_tokens": 16466, "thinking_budget": 1024}
+{"event": "complete", "request_id": "continuous-21", "task_id": "21:0", "time": 85592.74226428, "inflight": 7}
+{"event": "submit", "request_id": "continuous-29", "task_id": "29:0", "time": 85592.754649592, "inflight": 8, "input_tokens": 12875, "thinking_budget": 1024}
+{"event": "complete", "request_id": "continuous-22", "task_id": "22:0", "time": 85595.588062247, "inflight": 7}
+{"event": "submit", "request_id": "continuous-30", "task_id": "30:0", "time": 85595.612264837, "inflight": 8, "input_tokens": 25404, "thinking_budget": 1024}
+{"event": "complete", "request_id": "continuous-23", "task_id": "23:0", "time": 85597.948984433, "inflight": 7}
+{"event": "submit", "request_id": "continuous-31", "task_id": "31:0", "time": 85597.964697245, "inflight": 8, "input_tokens": 11648, "thinking_budget": 1024}
+{"event": "complete", "request_id": "continuous-26", "task_id": "26:0", "time": 85611.389327951, "inflight": 7}
+{"event": "submit", "request_id": "continuous-32", "task_id": "32:0", "time": 85611.400960179, "inflight": 8, "input_tokens": 6644, "thinking_budget": 1024}
+{"event": "complete", "request_id": "continuous-25", "task_id": "25:0", "time": 85611.414490475, "inflight": 7}
+{"event": "submit", "request_id": "continuous-33", "task_id": "33:0", "time": 85611.426898189, "inflight": 8, "input_tokens": 9769, "thinking_budget": 1024}
+{"event": "complete", "request_id": "continuous-27", "task_id": "27:0", "time": 85612.246500268, "inflight": 7}
+{"event": "submit", "request_id": "continuous-34", "task_id": "34:0", "time": 85612.270028793, "inflight": 8, "input_tokens": 26683, "thinking_budget": 1024}
+{"event": "complete", "request_id": "continuous-28", "task_id": "28:0", "time": 85612.275145234, "inflight": 7}
+{"event": "submit", "request_id": "continuous-35", "task_id": "35:0", "time": 85612.290636617, "inflight": 8, "input_tokens": 18360, "thinking_budget": 1024}
+{"event": "complete", "request_id": "continuous-29", "task_id": "29:0", "time": 85613.824714806, "inflight": 7}
+{"event": "submit", "request_id": "continuous-36", "task_id": "36:0", "time": 85613.850537147, "inflight": 8, "input_tokens": 27211, "thinking_budget": 1024}
+{"event": "complete", "request_id": "continuous-24", "task_id": "24:0", "time": 85617.989147872, "inflight": 7}
+{"event": "submit", "request_id": "continuous-37", "task_id": "37:0", "time": 85617.997229989, "inflight": 8, "input_tokens": 5985, "thinking_budget": 1024}
+{"event": "complete", "request_id": "continuous-30", "task_id": "30:0", "time": 85618.740230111, "inflight": 7}
+{"event": "complete", "request_id": "continuous-31", "task_id": "31:0", "time": 85618.741294393, "inflight": 6}
+{"event": "submit", "request_id": "continuous-38", "task_id": "38:0", "time": 85618.749198023, "inflight": 7, "input_tokens": 5296, "thinking_budget": 1024}
+{"event": "submit", "request_id": "continuous-39", "task_id": "39:0", "time": 85618.772586763, "inflight": 8, "input_tokens": 28384, "thinking_budget": 1024}
+{"event": "complete", "request_id": "continuous-32", "task_id": "32:0", "time": 85633.958535912, "inflight": 7}
+{"event": "submit", "request_id": "continuous-40", "task_id": "40:0", "time": 85633.97813045, "inflight": 8, "input_tokens": 14124, "thinking_budget": 1024}
+{"event": "complete", "request_id": "continuous-33", "task_id": "33:0", "time": 85634.087404852, "inflight": 7}
+{"event": "submit", "request_id": "continuous-41", "task_id": "41:0", "time": 85634.112065105, "inflight": 8, "input_tokens": 22875, "thinking_budget": 1024}
+{"event": "complete", "request_id": "continuous-34", "task_id": "34:0", "time": 85636.450302355, "inflight": 7}
+{"event": "submit", "request_id": "continuous-42", "task_id": "42:0", "time": 85636.459975459, "inflight": 8, "input_tokens": 6931, "thinking_budget": 1024}
+{"event": "complete", "request_id": "continuous-35", "task_id": "35:0", "time": 85636.569457784, "inflight": 7}
+{"event": "submit", "request_id": "continuous-43", "task_id": "43:0", "time": 85636.585452758, "inflight": 8, "input_tokens": 17259, "thinking_budget": 1024}
+{"event": "complete", "request_id": "continuous-36", "task_id": "36:0", "time": 85637.94795587, "inflight": 7}
+{"event": "submit", "request_id": "continuous-44", "task_id": "44:0", "time": 85637.958496714, "inflight": 8, "input_tokens": 8563, "thinking_budget": 1024}
+{"event": "complete", "request_id": "continuous-37", "task_id": "37:0", "time": 85638.894299, "inflight": 7}
+{"event": "submit", "request_id": "continuous-45", "task_id": "45:0", "time": 85638.914605383, "inflight": 8, "input_tokens": 21250, "thinking_budget": 1024}
+{"event": "complete", "request_id": "continuous-38", "task_id": "38:0", "time": 85640.61668192, "inflight": 7}
+{"event": "submit", "request_id": "continuous-46", "task_id": "46:0", "time": 85640.629921306, "inflight": 8, "input_tokens": 10190, "thinking_budget": 1024}
+{"event": "complete", "request_id": "continuous-39", "task_id": "39:0", "time": 85641.314052349, "inflight": 7}
+{"event": "submit", "request_id": "continuous-47", "task_id": "47:0", "time": 85641.321809642, "inflight": 8, "input_tokens": 5585, "thinking_budget": 1024}
+{"event": "complete", "request_id": "continuous-40", "task_id": "40:0", "time": 85654.032318919, "inflight": 7}
+{"event": "complete", "request_id": "continuous-41", "task_id": "41:0", "time": 85654.256053456, "inflight": 6}
+{"event": "complete", "request_id": "continuous-42", "task_id": "42:0", "time": 85654.411338641, "inflight": 5}
+{"event": "complete", "request_id": "continuous-43", "task_id": "43:0", "time": 85654.503628616, "inflight": 4}
+{"event": "complete", "request_id": "continuous-44", "task_id": "44:0", "time": 85654.689294886, "inflight": 3}
+{"event": "complete", "request_id": "continuous-45", "task_id": "45:0", "time": 85655.255156315, "inflight": 2}
+{"event": "complete", "request_id": "continuous-46", "task_id": "46:0", "time": 85655.51887503, "inflight": 1}
+{"event": "complete", "request_id": "continuous-47", "task_id": "47:0", "time": 85655.777221099, "inflight": 0}

@@ -9,8 +9,8 @@ import sys
 import tempfile
 import unittest
 
-from nara.inference import Turn
-from nara.vllm_model import StreamingModel, TokenCounter, VLLMModel
+from nara.inference.predictor import Turn
+from nara.inference.engine import StreamingModel, TokenCounter, VLLMModel
 
 
 @dataclass
@@ -139,7 +139,7 @@ class EngineTests(unittest.TestCase):
         return VLLMModel(self.model_dir, **kwargs)
 
     def test_legacy_import_counter_and_constructor_injection(self):
-        from nara.continuous import StreamingModel as OldStreamingModel
+        from nara.inference.continuous import StreamingModel as OldStreamingModel
         self.assertIs(OldStreamingModel, StreamingModel)
         def configured(**kwargs):
             return RawEngine(disable_log_stats=False, cudagraph_metrics=True,
@@ -293,7 +293,7 @@ class EngineTests(unittest.TestCase):
         self.assertFalse(model.reset_prefix_cache())
 
     def test_legacy_offline_observer_can_override_thinking_budget(self):
-        from nara.hybrid_experiment import TimedLLM
+        from nara.inference.hybrid_experiment import TimedLLM
         model = self.model(thinking=True)
         observer = TimedLLM(model.llm)
         observer.thinking_budget = 0

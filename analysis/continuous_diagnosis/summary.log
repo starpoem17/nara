@@ -1,0 +1,85 @@
+{
+  "historical": {
+    "flipped_bits": 26,
+    "changed_records": 24,
+    "lost": 17,
+    "gained": 9,
+    "paired_notice_bootstrap_95ci_new_minus_old": [
+      [
+        -0.22964211162934078,
+        0.006754462857403894
+      ],
+      [
+        -0.21376874062968515,
+        0.029834183144716524
+      ]
+    ],
+    "bootstrap_scope": "Fixed predictions, resample notices; not repeated-inference variance; exploratory development set",
+    "diagnostic_old_barrier_vs_historical_first24_label_flips": 8
+  },
+  "controls": [
+    {
+      "a": "old_barrier_1",
+      "b": "old_barrier_2",
+      "records": 24,
+      "raw_changed_records": 0,
+      "thinking_changed_records": 0,
+      "answer_changed_records": 0,
+      "label_flips": 0,
+      "divergences_inside_thinking": 0,
+      "first_divergence_token_min_median_max": []
+    },
+    {
+      "a": "old_barrier_2",
+      "b": "new_barrier",
+      "records": 24,
+      "raw_changed_records": 0,
+      "thinking_changed_records": 0,
+      "answer_changed_records": 0,
+      "label_flips": 0,
+      "divergences_inside_thinking": 0,
+      "first_divergence_token_min_median_max": []
+    },
+    {
+      "a": "new_barrier",
+      "b": "new_continuous_1",
+      "records": 24,
+      "raw_changed_records": 16,
+      "thinking_changed_records": 16,
+      "answer_changed_records": 12,
+      "label_flips": 8,
+      "divergences_inside_thinking": 16,
+      "first_divergence_token_min_median_max": [
+        3.0,
+        9.5,
+        21.0
+      ]
+    },
+    {
+      "a": "new_continuous_1",
+      "b": "new_continuous_2",
+      "records": 24,
+      "raw_changed_records": 0,
+      "thinking_changed_records": 0,
+      "answer_changed_records": 0,
+      "label_flips": 0,
+      "divergences_inside_thinking": 0,
+      "first_divergence_token_min_median_max": []
+    },
+    {
+      "a": "old_barrier_1",
+      "b": "new_continuous_1",
+      "records": 24,
+      "raw_changed_records": 16,
+      "thinking_changed_records": 16,
+      "answer_changed_records": 12,
+      "label_flips": 8,
+      "divergences_inside_thinking": 16,
+      "first_divergence_token_min_median_max": [
+        3.0,
+        9.5,
+        21.0
+      ]
+    }
+  ]
+}

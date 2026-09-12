@@ -1,0 +1,10 @@
+{
+  "source_sha256": {
+    "scripts/summarize_common_prompt.py": "b3444e15bc8849b1bf970350a3cb28d7fe0e9d736ebf4fceb30c14c6d76f346b"
+  },
+  "validation": "28 relevant unit tests passed before inference; runtime artifact assertions passed after inference",
+  "initialization_failures": [
+    "analysis/common_prompt_v2_512/plan.json",
+    "analysis/common_prompt_v2_512_run/plan.json"
+  ]
+}

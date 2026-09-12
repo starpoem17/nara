@@ -1,0 +1,1768 @@
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 4122.13it/s]
+INFO 09-11 17:11:50 [api_utils.py:273] non-default args: {'tokenizer': 'models/gemma-4-26B-A4B-it-NVFP4', 'max_model_len': 32768, 'enable_prefix_caching': True, 'gpu_memory_utilization': 0.86, 'max_num_batched_tokens': 8192, 'max_num_seqs': 16, 'limit_mm_per_prompt': {'image': 0, 'audio': 0, 'video': 0}, 'enable_chunked_prefill': True, 'structured_outputs_config': StructuredOutputsConfig(backend='xgrammar', disable_any_whitespace=False, disable_additional_properties=False, reasoning_parser='gemma4', reasoning_parser_plugin='', enable_in_reasoning=False), 'reasoning_parser': 'gemma4', 'cudagraph_metrics': True, 'kernel_config': KernelConfig(ir_op_priority=IrOpPriorityConfig(rms_norm=[], fused_add_rms_norm=[]), enable_flashinfer_autotune=None, enable_cutedsl_warmup=True, enable_bf16x3_router_gemm=False, moe_backend='cutlass', linear_backend='auto'), 'model': 'models/gemma-4-26B-A4B-it-NVFP4'}
+INFO 09-11 17:11:50 [model.py:623] Resolved architecture: Gemma4ForConditionalGeneration
+INFO 09-11 17:11:50 [model.py:1788] Using max model len 32768
+INFO 09-11 17:11:51 [scheduler.py:252] Chunked prefill is enabled with max_num_batched_tokens=8192.
+INFO 09-11 17:11:51 [config.py:240] Gemma4 model has heterogeneous head dimensions (head_dim=256, global_head_dim=512). FA4 not available, forcing TRITON_ATTN backend.
+INFO 09-11 17:11:51 [vllm.py:1109] Asynchronous scheduling is enabled.
+INFO 09-11 17:11:51 [kernel.py:295] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['native'], fused_add_rms_norm=['native'])
+WARNING 09-11 17:11:51 [cuda.py:323] Forcing --disable_chunked_mm_input for models with multimodal-bidirectional attention.
+INFO 09-11 17:11:52 [compilation.py:329] Enabled custom fusions: act_quant
+INFO 09-11 17:11:52 [registry.py:134] All limits of multimodal modalities supported by the model are set to 0, running in text-only mode.
+(EngineCore pid=1346247) INFO 09-11 17:11:58 [core.py:116] Initializing a V1 LLM engine (v0.26.0) with config: model='models/gemma-4-26B-A4B-it-NVFP4', speculative_config=None, tokenizer='models/gemma-4-26B-A4B-it-NVFP4', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=32768, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, data_parallel_size=1, decode_context_parallel_size=1, dcp_comm_backend=ag_rs, disable_custom_all_reduce=False, quantization=compressed-tensors, quantization_config=None, enforce_eager=False, enable_return_routed_experts=False, kv_cache_dtype=auto, device_config=cuda, structured_outputs_config=StructuredOutputsConfig(backend='xgrammar', disable_any_whitespace=False, disable_additional_properties=False, reasoning_parser='gemma4', reasoning_parser_plugin='', enable_in_reasoning=False), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None, kv_cache_metrics=False, kv_cache_metrics_sample=0.01, cudagraph_metrics=True, enable_layerwise_nvtx_tracing=False, enable_mfu_metrics=False, enable_mm_processor_stats=False, enable_logging_iteration_details=False, jit_monitor_mode='warn', jit_monitor_verbose=False), seed=0, served_model_name=models/gemma-4-26B-A4B-it-NVFP4, enable_prefix_caching=True, enable_chunked_prefill=True, pooler_config=None, compilation_config={'mode': <CompilationMode.VLLM_COMPILE: 3>, 'debug_dump_path': None, 'cache_dir': '', 'compile_cache_save_format': 'binary', 'backend': 'inductor', 'custom_ops': ['none'], 'ir_enable_torch_wrap': True, 'splitting_ops': ['vllm::unified_attention_with_output', 'vllm::unified_mla_attention_with_output', 'vllm::mamba_mixer2', 'vllm::mamba_mixer', 'vllm::short_conv', 'vllm::linear_attention', 'vllm::plamo2_mamba_mixer', 'vllm::qwen_gdn_attention_core', 'vllm::gdn_attention_core_xpu', 'vllm::olmo_hybrid_gdn_full_forward', 'vllm::kda_attention', 'vllm::sparse_attn_indexer', 'vllm::rocm_aiter_sparse_attn_indexer', 'vllm::deepseek_v4_attention', 'vllm::hpc_rope_norm_forward', 'vllm::unified_kv_cache_update', 'vllm::unified_mla_kv_cache_update'], 'compile_mm_encoder': False, 'cudagraph_mm_encoder': False, 'encoder_cudagraph_token_budgets': [], 'encoder_cudagraph_max_vision_items_per_batch': 0, 'encoder_cudagraph_max_frames_per_batch': None, 'compile_sizes': [], 'compile_ranges_endpoints': [8192], 'inductor_compile_config': {'enable_auto_functionalized_v2': False, 'size_asserts': False, 'alignment_asserts': False, 'scalar_asserts': False, 'combo_kernels': True, 'benchmark_combo_kernel': True}, 'inductor_passes': {}, 'cudagraph_mode': <CUDAGraphMode.FULL_AND_PIECEWISE: (2, 1)>, 'cudagraph_num_of_warmups': 1, 'cudagraph_capture_sizes': [1, 2, 4, 8, 16, 24, 32], 'cudagraph_copy_inputs': False, 'cudagraph_specialize_lora': True, 'use_inductor_graph_partition': False, 'pass_config': {'fuse_norm_quant': False, 'fuse_act_quant': True, 'fuse_attn_quant': False, 'enable_sp': False, 'fuse_gemm_comms': False, 'fuse_allreduce_rms': False, 'enable_qk_norm_rope_fusion': False, 'fuse_rope_kvcache_cat_mla': False, 'fuse_act_padding': False, 'fuse_qk_norm_rope_kvcache': False}, 'max_cudagraph_capture_size': 32, 'dynamic_shapes_config': {'type': <DynamicShapesType.BACKED: 'backed'>, 'evaluate_guards': False, 'assume_32_bit_indexing': False}, 'local_cache_dir': None, 'fast_moe_cold_start': False, 'static_all_moe_layers': []}, kernel_config=KernelConfig(ir_op_priority=IrOpPriorityConfig(rms_norm=['native'], fused_add_rms_norm=['native']), enable_flashinfer_autotune=True, enable_cutedsl_warmup=True, enable_bf16x3_router_gemm=False, moe_backend='cutlass', linear_backend='auto')
+(EngineCore pid=1346247) INFO 09-11 17:11:59 [registry.py:134] All limits of multimodal modalities supported by the model are set to 0, running in text-only mode.
+(EngineCore pid=1346247) INFO 09-11 17:11:59 [parallel_state.py:1615] world_size=1 rank=0 local_rank=0 distributed_init_method=tcp://192.168.219.102:33973 backend=nccl
+(EngineCore pid=1346247) INFO 09-11 17:11:59 [parallel_state.py:1946] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, PCP rank 0, TP rank 0, EP rank 0, EPLB rank N/A
+(EngineCore pid=1346247) INFO 09-11 17:12:00 [topk_topp_sampler.py:55] Using FlashInfer for top-p & top-k sampling.
+(EngineCore pid=1346247) INFO 09-11 17:12:00 [gpu_model_runner.py:5250] Starting to load model models/gemma-4-26B-A4B-it-NVFP4...
+(EngineCore pid=1346247) INFO 09-11 17:12:00 [vllm.py:1109] Asynchronous scheduling is enabled.
+(EngineCore pid=1346247) INFO 09-11 17:12:00 [kernel.py:295] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['native'], fused_add_rms_norm=['native'])
+(EngineCore pid=1346247) INFO 09-11 17:12:00 [compilation.py:329] Enabled custom fusions: act_quant
+(EngineCore pid=1346247) INFO 09-11 17:12:00 [__init__.py:978] Using FlashInferCutlassNvFp4LinearKernel for NVFP4 GEMM
+(EngineCore pid=1346247) INFO 09-11 17:12:00 [cuda.py:422] Using AttentionBackendEnum.TRITON_ATTN backend.
+(EngineCore pid=1346247) INFO 09-11 17:12:00 [nvfp4.py:239] Using 'VLLM_CUTLASS' NvFp4 MoE backend out of potential backends: ['FLASHINFER_TRTLLM', 'FLASHINFER_CUTEDSL', 'FLASHINFER_CUTEDSL_BATCHED', 'FLASHINFER_CUTLASS', 'VLLM_CUTLASS', 'MARLIN', 'HUMMING', 'EMULATION'].
+(EngineCore pid=1346247) INFO 09-11 17:12:00 [cuda.py:422] Using AttentionBackendEnum.TRITON_ATTN backend.
+(EngineCore pid=1346247) INFO 09-11 17:12:00 [weight_utils.py:869] Filesystem type for checkpoints: EXT4. Checkpoint size: 15.30 GiB. Available RAM: 24.25 GiB.
+(EngineCore pid=1346247) INFO 09-11 17:12:00 [weight_utils.py:892] Auto-prefetch is disabled because the filesystem (EXT4) is not a recognized network FS (NFS/Lustre). If you want to force prefetching, start vLLM with --safetensors-load-strategy=prefetch.
+(EngineCore pid=1346247) Loading safetensors checkpoint shards:   0% Completed | 0/1 [00:00<?, ?it/s]
+(EngineCore pid=1346247) Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:02<00:00,  2.98s/it]
+(EngineCore pid=1346247) Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:02<00:00,  2.98s/it]
+(EngineCore pid=1346247) 
+(EngineCore pid=1346247) INFO 09-11 17:12:03 [default_loader.py:430] Loading weights took 3.05 seconds
+(EngineCore pid=1346247) INFO 09-11 17:12:03 [nvfp4.py:544] Using MoEPrepareAndFinalizeNoDPEPModular
+(EngineCore pid=1346247) WARNING 09-11 17:12:03 [compressed_tensors_w4a4_nvfp4.py:102] In NVFP4 linear, the weight global scale is different for parallel layers (e.g. q_proj, k_proj, v_proj). This  will likely result in reduced accuracy. Please verify the model accuracy. Consider using a checkpoint with a shared global NVFP4 scale for fused layers.
+(EngineCore pid=1346247) INFO 09-11 17:12:04 [gpu_model_runner.py:5347] Model loading took 14.8 GiB memory and 3.351063 seconds
+(EngineCore pid=1346247) INFO 09-11 17:12:09 [backends.py:1094] Using cache directory: /home/hwajoong/.cache/vllm/torch_compile_cache/0a4711427d/rank_0_0/backbone for vLLM's torch.compile
+(EngineCore pid=1346247) INFO 09-11 17:12:09 [backends.py:1155] Dynamo bytecode transform time: 5.19 s
+(EngineCore pid=1346247) INFO 09-11 17:12:14 [backends.py:378] Cache the graph of compile range (1, 8192) for later use
+(EngineCore pid=1346247) INFO 09-11 17:12:25 [backends.py:393] Compiling a graph for compile range (1, 8192) takes 15.80 s
+(EngineCore pid=1346247) INFO 09-11 17:12:28 [decorators.py:708] saved AOT compiled function to /home/hwajoong/.cache/vllm/torch_compile_cache/torch_aot_compile/70ca2382f12184458cd87368d0ab9a16986b909779e1627e445796fb49f772ef/rank_0_0/model
+(EngineCore pid=1346247) INFO 09-11 17:12:28 [monitor.py:53] torch.compile took 24.19 s in total
+(EngineCore pid=1346247) INFO 09-11 17:12:30 [monitor.py:81] Initial profiling/warmup run took 1.49 s
+(EngineCore pid=1346247) INFO 09-11 17:12:33 [gpu_model_runner.py:6612] Profiling CUDA graph memory: PIECEWISE=7 (largest=32), FULL=5 (largest=16)
+(EngineCore pid=1346247) INFO 09-11 17:12:36 [gpu_model_runner.py:6737] Estimated CUDA graph memory: 0.33 GiB total
+(EngineCore pid=1346247) INFO 09-11 17:12:36 [gpu_worker.py:560] Available KV cache memory: 9.71 GiB
+(EngineCore pid=1346247) INFO 09-11 17:12:36 [gpu_worker.py:575] CUDA graph memory profiling is enabled (default since v0.21.0). The current --gpu-memory-utilization=0.8600 is equivalent to --gpu-memory-utilization=0.8493 without CUDA graph memory profiling. To maintain the same effective KV cache size as before, increase --gpu-memory-utilization to 0.8707. To disable, set VLLM_MEMORY_PROFILER_ESTIMATE_CUDAGRAPHS=0.
+(EngineCore pid=1346247) INFO 09-11 17:12:36 [kv_cache_utils.py:2177] GPU KV cache size: 80,580 tokens
+(EngineCore pid=1346247) INFO 09-11 17:12:36 [kv_cache_utils.py:2178] Maximum concurrency for 32,768 tokens per request: 2.46x
+(EngineCore pid=1346247) INFO 09-11 17:12:36 [kernel_warmup.py:227] Using FlashInfer autotune cache file: /home/hwajoong/.cache/vllm/flashinfer_autotune_cache/0.6.14/120f/9d0e93f686ae0f25fccb48c868b8d609eaadd8baf8279a65519d9fdbc356d248/autotune_configs.json
+(EngineCore pid=1346247) 2026-09-11 17:12:36,789 - INFO - autotuner.py:651 - flashinfer.jit: [Autotuner]: Autotuning process starts ...
+(EngineCore pid=1346247) [AutoTuner]: Tuning fp4_gemm:   0%|          | 0/21 [00:00<?, ?profile/s][AutoTuner]: Tuning fp4_gemm:  14%|█▍        | 3/21 [00:00<00:00, 24.48profile/s][AutoTuner]: Tuning fp4_gemm:  29%|██▊       | 6/21 [00:00<00:00, 25.94profile/s][AutoTuner]: Tuning fp4_gemm:  43%|████▎     | 9/21 [00:00<00:00, 27.01profile/s][AutoTuner]: Tuning fp4_gemm:  57%|█████▋    | 12/21 [00:00<00:00, 23.80profile/s][AutoTuner]: Tuning fp4_gemm:  71%|███████▏  | 15/21 [00:00<00:00, 19.49profile/s][AutoTuner]: Tuning fp4_gemm:  86%|████████▌ | 18/21 [00:00<00:00, 15.32profile/s][AutoTuner]: Tuning fp4_gemm:  95%|█████████▌| 20/21 [00:01<00:00, 12.49profile/s][AutoTuner]: Tuning fp4_gemm: 100%|██████████| 21/21 [00:01<00:00, 14.43profile/s]
+(EngineCore pid=1346247) [AutoTuner]: Tuning fp4_gemm:   0%|          | 0/21 [00:00<?, ?profile/s][AutoTuner]: Tuning fp4_gemm:  14%|█▍        | 3/21 [00:00<00:00, 28.36profile/s][AutoTuner]: Tuning fp4_gemm:  29%|██▊       | 6/21 [00:00<00:00, 28.39profile/s][AutoTuner]: Tuning fp4_gemm:  43%|████▎     | 9/21 [00:00<00:00, 28.58profile/s][AutoTuner]: Tuning fp4_gemm:  57%|█████▋    | 12/21 [00:00<00:00, 26.92profile/s][AutoTuner]: Tuning fp4_gemm:  71%|███████▏  | 15/21 [00:00<00:00, 24.29profile/s][AutoTuner]: Tuning fp4_gemm:  86%|████████▌ | 18/21 [00:00<00:00, 20.48profile/s][AutoTuner]: Tuning fp4_gemm: 100%|██████████| 21/21 [00:01<00:00, 15.54profile/s][AutoTuner]: Tuning fp4_gemm: 100%|██████████| 21/21 [00:01<00:00, 19.78profile/s]
+(EngineCore pid=1346247) [AutoTuner]: Tuning fp4_gemm:   0%|          | 0/21 [00:00<?, ?profile/s][AutoTuner]: Tuning fp4_gemm:  14%|█▍        | 3/21 [00:00<00:00, 29.16profile/s][AutoTuner]: Tuning fp4_gemm:  29%|██▊       | 6/21 [00:00<00:00, 29.43profile/s][AutoTuner]: Tuning fp4_gemm:  43%|████▎     | 9/21 [00:00<00:00, 29.65profile/s][AutoTuner]: Tuning fp4_gemm:  57%|█████▋    | 12/21 [00:00<00:00, 27.95profile/s][AutoTuner]: Tuning fp4_gemm:  71%|███████▏  | 15/21 [00:00<00:00, 24.46profile/s][AutoTuner]: Tuning fp4_gemm:  86%|████████▌ | 18/21 [00:00<00:00, 20.58profile/s][AutoTuner]: Tuning fp4_gemm: 100%|██████████| 21/21 [00:01<00:00, 15.54profile/s][AutoTuner]: Tuning fp4_gemm: 100%|██████████| 21/21 [00:01<00:00, 19.96profile/s]
+(EngineCore pid=1346247) [AutoTuner]: Tuning fp4_gemm:   0%|          | 0/21 [00:00<?, ?profile/s][AutoTuner]: Tuning fp4_gemm:  19%|█▉        | 4/21 [00:00<00:00, 30.57profile/s][AutoTuner]: Tuning fp4_gemm:  38%|███▊      | 8/21 [00:00<00:00, 30.75profile/s][AutoTuner]: Tuning fp4_gemm:  57%|█████▋    | 12/21 [00:00<00:00, 30.22profile/s][AutoTuner]: Tuning fp4_gemm:  76%|███████▌  | 16/21 [00:00<00:00, 27.46profile/s][AutoTuner]: Tuning fp4_gemm:  90%|█████████ | 19/21 [00:00<00:00, 24.29profile/s][AutoTuner]: Tuning fp4_gemm: 100%|██████████| 21/21 [00:00<00:00, 24.12profile/s]
+(EngineCore pid=1346247) [AutoTuner]: Tuning fp4_gemm:   0%|          | 0/21 [00:00<?, ?profile/s][AutoTuner]: Tuning fp4_gemm:  14%|█▍        | 3/21 [00:00<00:00, 24.13profile/s][AutoTuner]: Tuning fp4_gemm:  29%|██▊       | 6/21 [00:00<00:00, 25.17profile/s][AutoTuner]: Tuning fp4_gemm:  43%|████▎     | 9/21 [00:00<00:00, 26.45profile/s][AutoTuner]: Tuning fp4_gemm:  57%|█████▋    | 12/21 [00:00<00:00, 22.91profile/s][AutoTuner]: Tuning fp4_gemm:  71%|███████▏  | 15/21 [00:00<00:00, 18.02profile/s][AutoTuner]: Tuning fp4_gemm:  81%|████████  | 17/21 [00:00<00:00, 14.97profile/s][AutoTuner]: Tuning fp4_gemm:  90%|█████████ | 19/21 [00:01<00:00, 11.83profile/s][AutoTuner]: Tuning fp4_gemm: 100%|██████████| 21/21 [00:01<00:00,  8.11profile/s][AutoTuner]: Tuning fp4_gemm: 100%|██████████| 21/21 [00:01<00:00, 12.73profile/s]
+(EngineCore pid=1346247) [AutoTuner]: Tuning fp4_gemm:   0%|          | 0/21 [00:00<?, ?profile/s][AutoTuner]: Tuning fp4_gemm:  14%|█▍        | 3/21 [00:00<00:00, 23.07profile/s][AutoTuner]: Tuning fp4_gemm:  29%|██▊       | 6/21 [00:00<00:00, 23.37profile/s][AutoTuner]: Tuning fp4_gemm:  43%|████▎     | 9/21 [00:00<00:00, 23.83profile/s][AutoTuner]: Tuning fp4_gemm:  57%|█████▋    | 12/21 [00:00<00:00, 21.76profile/s][AutoTuner]: Tuning fp4_gemm:  71%|███████▏  | 15/21 [00:00<00:00, 18.49profile/s][AutoTuner]: Tuning fp4_gemm:  81%|████████  | 17/21 [00:00<00:00, 15.70profile/s][AutoTuner]: Tuning fp4_gemm:  90%|█████████ | 19/21 [00:01<00:00, 13.01profile/s][AutoTuner]: Tuning fp4_gemm: 100%|██████████| 21/21 [00:01<00:00,  9.36profile/s][AutoTuner]: Tuning fp4_gemm: 100%|██████████| 21/21 [00:01<00:00, 13.80profile/s]
+(EngineCore pid=1346247) 2026-09-11 17:12:44,605 - INFO - autotuner.py:674 - flashinfer.jit: [Autotuner]: Autotuning process ends
+(EngineCore pid=1346247) 2026-09-11 17:12:44,610 - INFO - autotuner.py:1808 - flashinfer.jit: [Autotuner]: Saved 126 configs to /home/hwajoong/.cache/vllm/flashinfer_autotune_cache/0.6.14/120f/9d0e93f686ae0f25fccb48c868b8d609eaadd8baf8279a65519d9fdbc356d248/autotune_configs.json (126 new, 0 from previous config)
+(EngineCore pid=1346247) 2026-09-11 17:12:44,612 - INFO - autotuner.py:1899 - flashinfer.jit: [Autotuner]: Loaded 126 configs from /home/hwajoong/.cache/vllm/flashinfer_autotune_cache/0.6.14/120f/9d0e93f686ae0f25fccb48c868b8d609eaadd8baf8279a65519d9fdbc356d248/autotune_configs.json
+(EngineCore pid=1346247) INFO 09-11 17:12:44 [kernel_warmup.py:268] FlashInfer autotune cache loaded on rank 0 from /home/hwajoong/.cache/vllm/flashinfer_autotune_cache/0.6.14/120f/9d0e93f686ae0f25fccb48c868b8d609eaadd8baf8279a65519d9fdbc356d248/autotune_configs.json.
+(EngineCore pid=1346247) INFO 09-11 17:12:44 [kernel_warmup.py:65] Warming up ll_bf16 router GEMM kernels.
+(EngineCore pid=1346247) INFO 09-11 17:12:48 [cutedsl_warmup.py:101] Skipping CuTeDSL warmup because no compile units were requested.
+(EngineCore pid=1346247) INFO 09-11 17:12:48 [gpu_model_runner.py:6798] Rank 0: Torch profiler disabled for CUDA graph capture
+(EngineCore pid=1346247) Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):   0%|          | 0/7 [00:00<?, ?it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  29%|██▊       | 2/7 [00:00<00:00, 19.55it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  71%|███████▏  | 5/7 [00:00<00:00, 19.99it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE): 100%|██████████| 7/7 [00:00<00:00, 18.79it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE): 100%|██████████| 7/7 [00:00<00:00, 19.06it/s]
+(EngineCore pid=1346247) Capturing CUDA graphs (decode, FULL):   0%|          | 0/5 [00:00<?, ?it/s]Capturing CUDA graphs (decode, FULL):  40%|████      | 2/5 [00:00<00:00, 19.70it/s]Capturing CUDA graphs (decode, FULL): 100%|██████████| 5/5 [00:01<00:00,  4.43it/s]Capturing CUDA graphs (decode, FULL): 100%|██████████| 5/5 [00:01<00:00,  4.88it/s]
+(EngineCore pid=1346247) INFO 09-11 17:12:50 [gpu_model_runner.py:6844] Graph capturing finished in 2 secs, took 0.31 GiB
+(EngineCore pid=1346247) INFO 09-11 17:12:50 [gpu_worker.py:793] CUDA graph pool memory: 0.31 GiB (actual), 0.33 GiB (estimated), difference: 0.03 GiB (8.2%).
+(EngineCore pid=1346247) INFO 09-11 17:12:50 [gpu_worker.py:857] Free memory on device (29.27/31.35 GiB) on startup. Desired GPU memory utilization is (0.86, 26.96 GiB). Actual usage is 14.8 GiB for weight, 1.94 GiB for peak activation, 0.18 GiB for non-torch memory, and 0.31 GiB for CUDAGraph memory. Replace gpu_memory_utilization config with `--kv-cache-memory=10295518557` (9.59 GiB) to fit into requested memory, or `--kv-cache-memory=12772546048` (11.9 GiB) to fully utilize gpu memory. Current kv cache memory in use is 9.71 GiB.
+(EngineCore pid=1346247) INFO 09-11 17:12:51 [jit_monitor.py:79] Kernel JIT monitor activated; monitored JIT compilations during inference will use mode=warn.
+(EngineCore pid=1346247) INFO 09-11 17:12:51 [core.py:340] init engine (profile, create kv cache, warmup model) took 47.08 s (compilation: 24.19 s)
+(EngineCore pid=1346247) INFO 09-11 17:12:51 [kernel.py:295] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['native'], fused_add_rms_norm=['native'])
+{"stage": "preflight_complete", "records": 200, "same_input_counts": true, "engine": {"max_num_seqs": 16, "max_num_batched_tokens": 8192, "cudagraph_mode": "FULL_AND_PIECEWISE", "capture_sizes": [1, 2, 4, 8, 16, 24, 32], "kv_cache_dtype": "auto", "gpu_memory_utilization": 0.86}}
+(EngineCore pid=1346247) WARNING 09-11 17:13:01 [jit_monitor.py:135] Triton kernel JIT compilation during inference: _compute_slot_mapping_kernel. This causes a latency spike; consider extending warmup to cover this shape/config.
+(EngineCore pid=1346247) WARNING 09-11 17:13:02 [jit_monitor.py:135] Triton kernel JIT compilation during inference: kernel_unified_attention. This causes a latency spike; consider extending warmup to cover this shape/config.
+(EngineCore pid=1346247) WARNING 09-11 17:13:02 [jit_monitor.py:135] Triton kernel JIT compilation during inference: apply_token_bitmask_inplace_kernel. This causes a latency spike; consider extending warmup to cover this shape/config.
+(EngineCore pid=1346247) INFO 09-11 17:13:02 [block_pool.py:790] Successfully reset prefix cache
+WARNING 09-11 17:13:02 [input_processor.py:282] Passing raw prompts to InputProcessor is deprecated and will be removed in v0.18. You should instead pass the outputs of Renderer.render_cmpl() or Renderer.render_chat().
+INFO 09-11 17:13:12 [loggers.py:310] Engine 000: Avg prompt throughput: 3250.7 tokens/s, Avg generation throughput: 119.3 tokens/s, Running: 8 reqs, Waiting: 0 reqs, GPU KV cache usage: 32.3%, Prefix cache hit rate: 90.6%
+INFO 09-11 17:13:12 [cuda_graph.py:123] **CUDAGraph Config Settings:**
+INFO 09-11 17:13:12 [cuda_graph.py:123] 
+INFO 09-11 17:13:12 [cuda_graph.py:123] - Mode: FULL_AND_PIECEWISE
+INFO 09-11 17:13:12 [cuda_graph.py:123] - Capture sizes: [1, 2, 4, 8, 16, 24, 32]
+INFO 09-11 17:13:12 [cuda_graph.py:123] 
+INFO 09-11 17:13:12 [cuda_graph.py:123] **CUDAGraph Stats:**
+INFO 09-11 17:13:12 [cuda_graph.py:123] 
+INFO 09-11 17:13:12 [cuda_graph.py:123] | Unpadded Tokens | Padded Tokens | Num Paddings | Runtime Mode | Count |
+INFO 09-11 17:13:12 [cuda_graph.py:123] |-----------------|---------------|--------------|--------------|-------|
+INFO 09-11 17:13:12 [cuda_graph.py:123] | 12              | 16            | 4            | FULL         | 46    |
+INFO 09-11 17:13:12 [cuda_graph.py:123] | 16              | 16            | 0            | FULL         | 43    |
+INFO 09-11 17:13:12 [cuda_graph.py:123] | 2               | 2             | 0            | FULL         | 43    |
+INFO 09-11 17:13:12 [cuda_graph.py:123] | 13              | 16            | 3            | FULL         | 31    |
+INFO 09-11 17:13:12 [cuda_graph.py:123] | 7               | 8             | 1            | FULL         | 31    |
+INFO 09-11 17:13:12 [cuda_graph.py:123] | 6               | 8             | 2            | FULL         | 17    |
+INFO 09-11 17:13:12 [cuda_graph.py:123] | 14              | 16            | 2            | FULL         | 7     |
+INFO 09-11 17:13:12 [cuda_graph.py:123] | 8192            | 8192          | 0            | NONE         | 7     |
+INFO 09-11 17:13:12 [cuda_graph.py:123] | 8               | 8             | 0            | FULL         | 6     |
+INFO 09-11 17:13:12 [cuda_graph.py:123] | 3               | 4             | 1            | FULL         | 5     |
+INFO 09-11 17:13:12 [cuda_graph.py:123] | 11              | 16            | 5            | FULL         | 4     |
+INFO 09-11 17:13:12 [cuda_graph.py:123] | 10              | 16            | 6            | FULL         | 3     |
+INFO 09-11 17:13:12 [cuda_graph.py:123] | 9               | 16            | 7            | FULL         | 3     |
+INFO 09-11 17:13:12 [cuda_graph.py:123] | 5               | 8             | 3            | FULL         | 3     |
+INFO 09-11 17:13:12 [cuda_graph.py:123] | 4               | 4             | 0            | FULL         | 2     |
+INFO 09-11 17:13:12 [cuda_graph.py:123] | 448             | 448           | 0            | NONE         | 1     |
+INFO 09-11 17:13:12 [cuda_graph.py:123] | 7919            | 7919          | 0            | NONE         | 1     |
+INFO 09-11 17:13:12 [cuda_graph.py:123] | 204             | 204           | 0            | NONE         | 1     |
+INFO 09-11 17:13:12 [cuda_graph.py:123] | 1534            | 1534          | 0            | NONE         | 1     |
+INFO 09-11 17:13:12 [cuda_graph.py:123] | 143             | 143           | 0            | NONE         | 1     |
+INFO 09-11 17:13:12 [cuda_graph.py:123] | 309             | 309           | 0            | NONE         | 1     |
+INFO 09-11 17:13:12 [cuda_graph.py:123] | 68              | 68            | 0            | NONE         | 1     |
+INFO 09-11 17:13:12 [cuda_graph.py:123] | 15              | 16            | 1            | FULL         | 1     |
+INFO 09-11 17:13:12 [cuda_graph.py:123] | 219             | 219           | 0            | NONE         | 1     |
+INFO 09-11 17:13:12 [cuda_graph.py:123] | 158             | 158           | 0            | NONE         | 1     |
+INFO 09-11 17:13:12 [cuda_graph.py:123] | 376             | 376           | 0            | NONE         | 1     |
+INFO 09-11 17:13:12 [cuda_graph.py:123] | 368             | 368           | 0            | NONE         | 1     |
+INFO 09-11 17:13:12 [cuda_graph.py:123] | 218             | 218           | 0            | NONE         | 1     |
+INFO 09-11 17:13:12 [cuda_graph.py:123] | 3100            | 3100          | 0            | NONE         | 1     |
+INFO 09-11 17:13:12 [cuda_graph.py:123] | 3000            | 3000          | 0            | NONE         | 1     |
+INFO 09-11 17:13:12 [cuda_graph.py:123] | 936             | 936           | 0            | NONE         | 1     |
+INFO 09-11 17:13:12 [cuda_graph.py:123] | 249             | 249           | 0            | NONE         | 1     |
+INFO 09-11 17:13:12 [cuda_graph.py:123] | 416             | 416           | 0            | NONE         | 1     |
+INFO 09-11 17:13:12 [cuda_graph.py:123] | 446             | 446           | 0            | NONE         | 1     |
+INFO 09-11 17:13:12 [cuda_graph.py:123] | 75              | 75            | 0            | NONE         | 1     |
+INFO 09-11 17:13:12 [cuda_graph.py:123] 
+{"stage": "smoke", "records": 5, "seconds": 10.940201703007915, "failures": 0}
+{"stage": "smoke", "records": 8, "seconds": 16.699485720004304, "failures": 0}
+(EngineCore pid=1346247) INFO 09-11 17:13:19 [block_pool.py:790] Successfully reset prefix cache
+INFO 09-11 17:13:22 [loggers.py:310] Engine 000: Avg prompt throughput: 8994.0 tokens/s, Avg generation throughput: 289.4 tokens/s, Running: 4 reqs, Waiting: 1 reqs, Deferred: 1 reqs, GPU KV cache usage: 8.6%, Prefix cache hit rate: 92.5%
+INFO 09-11 17:13:22 [cuda_graph.py:123] **CUDAGraph Config Settings:**
+INFO 09-11 17:13:22 [cuda_graph.py:123] 
+INFO 09-11 17:13:22 [cuda_graph.py:123] - Mode: FULL_AND_PIECEWISE
+INFO 09-11 17:13:22 [cuda_graph.py:123] - Capture sizes: [1, 2, 4, 8, 16, 24, 32]
+INFO 09-11 17:13:22 [cuda_graph.py:123] 
+INFO 09-11 17:13:22 [cuda_graph.py:123] **CUDAGraph Stats:**
+INFO 09-11 17:13:22 [cuda_graph.py:123] 
+INFO 09-11 17:13:22 [cuda_graph.py:123] | Unpadded Tokens | Padded Tokens | Num Paddings | Runtime Mode | Count |
+INFO 09-11 17:13:22 [cuda_graph.py:123] |-----------------|---------------|--------------|--------------|-------|
+INFO 09-11 17:13:22 [cuda_graph.py:123] | 1               | 1             | 0            | FULL         | 138   |
+INFO 09-11 17:13:22 [cuda_graph.py:123] | 3               | 4             | 1            | FULL         | 72    |
+INFO 09-11 17:13:22 [cuda_graph.py:123] | 2               | 2             | 0            | FULL         | 69    |
+INFO 09-11 17:13:22 [cuda_graph.py:123] | 12              | 16            | 4            | FULL         | 41    |
+INFO 09-11 17:13:22 [cuda_graph.py:123] | 7               | 8             | 1            | FULL         | 39    |
+INFO 09-11 17:13:22 [cuda_graph.py:123] | 11              | 16            | 5            | FULL         | 35    |
+INFO 09-11 17:13:22 [cuda_graph.py:123] | 16              | 16            | 0            | FULL         | 33    |
+INFO 09-11 17:13:22 [cuda_graph.py:123] | 6               | 8             | 2            | FULL         | 21    |
+INFO 09-11 17:13:22 [cuda_graph.py:123] | 4               | 4             | 0            | FULL         | 14    |
+INFO 09-11 17:13:22 [cuda_graph.py:123] | 13              | 16            | 3            | FULL         | 12    |
+INFO 09-11 17:13:22 [cuda_graph.py:123] | 8               | 8             | 0            | FULL         | 11    |
+INFO 09-11 17:13:22 [cuda_graph.py:123] | 10              | 16            | 6            | FULL         | 5     |
+INFO 09-11 17:13:22 [cuda_graph.py:123] | 8192            | 8192          | 0            | NONE         | 4     |
+INFO 09-11 17:13:22 [cuda_graph.py:123] | 15              | 16            | 1            | FULL         | 4     |
+INFO 09-11 17:13:22 [cuda_graph.py:123] | 5               | 8             | 3            | FULL         | 3     |
+INFO 09-11 17:13:22 [cuda_graph.py:123] | 9               | 16            | 7            | FULL         | 2     |
+INFO 09-11 17:13:22 [cuda_graph.py:123] | 2041            | 2041          | 0            | NONE         | 1     |
+INFO 09-11 17:13:22 [cuda_graph.py:123] | 2558            | 2558          | 0            | NONE         | 1     |
+INFO 09-11 17:13:22 [cuda_graph.py:123] | 1015            | 1015          | 0            | NONE         | 1     |
+INFO 09-11 17:13:22 [cuda_graph.py:123] | 298             | 298           | 0            | NONE         | 1     |
+INFO 09-11 17:13:22 [cuda_graph.py:123] | 512             | 512           | 0            | NONE         | 1     |
+INFO 09-11 17:13:22 [cuda_graph.py:123] | 629             | 629           | 0            | NONE         | 1     |
+INFO 09-11 17:13:22 [cuda_graph.py:123] | 5975            | 5975          | 0            | NONE         | 1     |
+INFO 09-11 17:13:22 [cuda_graph.py:123] | 216             | 216           | 0            | NONE         | 1     |
+INFO 09-11 17:13:22 [cuda_graph.py:123] | 153             | 153           | 0            | NONE         | 1     |
+INFO 09-11 17:13:22 [cuda_graph.py:123] | 251             | 251           | 0            | NONE         | 1     |
+INFO 09-11 17:13:22 [cuda_graph.py:123] | 389             | 389           | 0            | NONE         | 1     |
+INFO 09-11 17:13:22 [cuda_graph.py:123] | 227             | 227           | 0            | NONE         | 1     |
+INFO 09-11 17:13:22 [cuda_graph.py:123] | 85              | 85            | 0            | NONE         | 1     |
+INFO 09-11 17:13:22 [cuda_graph.py:123] | 7919            | 7919          | 0            | NONE         | 1     |
+INFO 09-11 17:13:22 [cuda_graph.py:123] | 204             | 204           | 0            | NONE         | 1     |
+INFO 09-11 17:13:22 [cuda_graph.py:123] | 303             | 303           | 0            | NONE         | 1     |
+INFO 09-11 17:13:22 [cuda_graph.py:123] | 285             | 285           | 0            | NONE         | 1     |
+INFO 09-11 17:13:22 [cuda_graph.py:123] | 327             | 327           | 0            | NONE         | 1     |
+INFO 09-11 17:13:22 [cuda_graph.py:123] | 640             | 640           | 0            | NONE         | 1     |
+INFO 09-11 17:13:22 [cuda_graph.py:123] | 148             | 148           | 0            | NONE         | 1     |
+INFO 09-11 17:13:22 [cuda_graph.py:123] | 309             | 309           | 0            | NONE         | 1     |
+INFO 09-11 17:13:22 [cuda_graph.py:123] | 70              | 70            | 0            | NONE         | 1     |
+INFO 09-11 17:13:22 [cuda_graph.py:123] | 219             | 219           | 0            | NONE         | 1     |
+INFO 09-11 17:13:22 [cuda_graph.py:123] 
+{"stage": "main", "records": 5, "seconds": 8.366362763990765, "failures": 0}
+INFO 09-11 17:13:32 [loggers.py:310] Engine 000: Avg prompt throughput: 9588.9 tokens/s, Avg generation throughput: 314.1 tokens/s, Running: 6 reqs, Waiting: 0 reqs, GPU KV cache usage: 8.7%, Prefix cache hit rate: 92.4%
+INFO 09-11 17:13:32 [cuda_graph.py:123] **CUDAGraph Config Settings:**
+INFO 09-11 17:13:32 [cuda_graph.py:123] 
+INFO 09-11 17:13:32 [cuda_graph.py:123] - Mode: FULL_AND_PIECEWISE
+INFO 09-11 17:13:32 [cuda_graph.py:123] - Capture sizes: [1, 2, 4, 8, 16, 24, 32]
+INFO 09-11 17:13:32 [cuda_graph.py:123] 
+INFO 09-11 17:13:32 [cuda_graph.py:123] **CUDAGraph Stats:**
+INFO 09-11 17:13:32 [cuda_graph.py:123] 
+INFO 09-11 17:13:32 [cuda_graph.py:123] | Unpadded Tokens | Padded Tokens | Num Paddings | Runtime Mode | Count |
+INFO 09-11 17:13:32 [cuda_graph.py:123] |-----------------|---------------|--------------|--------------|-------|
+INFO 09-11 17:13:32 [cuda_graph.py:123] | 12              | 16            | 4            | FULL         | 82    |
+INFO 09-11 17:13:32 [cuda_graph.py:123] | 7               | 8             | 1            | FULL         | 61    |
+INFO 09-11 17:13:32 [cuda_graph.py:123] | 1               | 1             | 0            | FULL         | 60    |
+INFO 09-11 17:13:32 [cuda_graph.py:123] | 3               | 4             | 1            | FULL         | 49    |
+INFO 09-11 17:13:32 [cuda_graph.py:123] | 14              | 16            | 2            | FULL         | 35    |
+INFO 09-11 17:13:32 [cuda_graph.py:123] | 9               | 16            | 7            | FULL         | 17    |
+INFO 09-11 17:13:32 [cuda_graph.py:123] | 2               | 2             | 0            | FULL         | 17    |
+INFO 09-11 17:13:32 [cuda_graph.py:123] | 15              | 16            | 1            | FULL         | 16    |
+INFO 09-11 17:13:32 [cuda_graph.py:123] | 13              | 16            | 3            | FULL         | 15    |
+INFO 09-11 17:13:32 [cuda_graph.py:123] | 6               | 8             | 2            | FULL         | 10    |
+INFO 09-11 17:13:32 [cuda_graph.py:123] | 8               | 8             | 0            | FULL         | 9     |
+INFO 09-11 17:13:32 [cuda_graph.py:123] | 8192            | 8192          | 0            | NONE         | 7     |
+INFO 09-11 17:13:32 [cuda_graph.py:123] | 11              | 16            | 5            | FULL         | 7     |
+INFO 09-11 17:13:32 [cuda_graph.py:123] | 4               | 4             | 0            | FULL         | 4     |
+INFO 09-11 17:13:32 [cuda_graph.py:123] | 10              | 16            | 6            | FULL         | 3     |
+INFO 09-11 17:13:32 [cuda_graph.py:123] | 5               | 8             | 3            | FULL         | 2     |
+INFO 09-11 17:13:32 [cuda_graph.py:123] | 157             | 157           | 0            | NONE         | 1     |
+INFO 09-11 17:13:32 [cuda_graph.py:123] | 375             | 375           | 0            | NONE         | 1     |
+INFO 09-11 17:13:32 [cuda_graph.py:123] | 278             | 278           | 0            | NONE         | 1     |
+INFO 09-11 17:13:32 [cuda_graph.py:123] | 231             | 231           | 0            | NONE         | 1     |
+INFO 09-11 17:13:32 [cuda_graph.py:123] | 3176            | 3176          | 0            | NONE         | 1     |
+INFO 09-11 17:13:32 [cuda_graph.py:123] | 3002            | 3002          | 0            | NONE         | 1     |
+INFO 09-11 17:13:32 [cuda_graph.py:123] | 937             | 937           | 0            | NONE         | 1     |
+INFO 09-11 17:13:32 [cuda_graph.py:123] | 210             | 210           | 0            | NONE         | 1     |
+INFO 09-11 17:13:32 [cuda_graph.py:123] | 356             | 356           | 0            | NONE         | 1     |
+INFO 09-11 17:13:32 [cuda_graph.py:123] | 434             | 434           | 0            | NONE         | 1     |
+INFO 09-11 17:13:32 [cuda_graph.py:123] | 194             | 194           | 0            | NONE         | 1     |
+INFO 09-11 17:13:32 [cuda_graph.py:123] | 2023            | 2023          | 0            | NONE         | 1     |
+INFO 09-11 17:13:32 [cuda_graph.py:123] | 2558            | 2558          | 0            | NONE         | 1     |
+INFO 09-11 17:13:32 [cuda_graph.py:123] | 1015            | 1015          | 0            | NONE         | 1     |
+INFO 09-11 17:13:32 [cuda_graph.py:123] | 297             | 297           | 0            | NONE         | 1     |
+INFO 09-11 17:13:32 [cuda_graph.py:123] | 512             | 512           | 0            | NONE         | 1     |
+INFO 09-11 17:13:32 [cuda_graph.py:123] | 629             | 629           | 0            | NONE         | 1     |
+INFO 09-11 17:13:32 [cuda_graph.py:123] | 5975            | 5975          | 0            | NONE         | 1     |
+INFO 09-11 17:13:32 [cuda_graph.py:123] | 6924            | 6924          | 0            | NONE         | 1     |
+INFO 09-11 17:13:32 [cuda_graph.py:123] | 217             | 217           | 0            | NONE         | 1     |
+INFO 09-11 17:13:32 [cuda_graph.py:123] | 1080            | 1080          | 0            | NONE         | 1     |
+INFO 09-11 17:13:32 [cuda_graph.py:123] 
+{"stage": "main", "records": 10, "seconds": 18.76449934899574, "failures": 0}
+INFO 09-11 17:13:42 [loggers.py:310] Engine 000: Avg prompt throughput: 9048.5 tokens/s, Avg generation throughput: 363.7 tokens/s, Running: 5 reqs, Waiting: 0 reqs, GPU KV cache usage: 5.4%, Prefix cache hit rate: 91.7%
+INFO 09-11 17:13:42 [cuda_graph.py:123] **CUDAGraph Config Settings:**
+INFO 09-11 17:13:42 [cuda_graph.py:123] 
+INFO 09-11 17:13:42 [cuda_graph.py:123] - Mode: FULL_AND_PIECEWISE
+INFO 09-11 17:13:42 [cuda_graph.py:123] - Capture sizes: [1, 2, 4, 8, 16, 24, 32]
+INFO 09-11 17:13:42 [cuda_graph.py:123] 
+INFO 09-11 17:13:42 [cuda_graph.py:123] **CUDAGraph Stats:**
+INFO 09-11 17:13:42 [cuda_graph.py:123] 
+INFO 09-11 17:13:42 [cuda_graph.py:123] | Unpadded Tokens | Padded Tokens | Num Paddings | Runtime Mode | Count |
+INFO 09-11 17:13:42 [cuda_graph.py:123] |-----------------|---------------|--------------|--------------|-------|
+INFO 09-11 17:13:42 [cuda_graph.py:123] | 13              | 16            | 3            | FULL         | 62    |
+INFO 09-11 17:13:42 [cuda_graph.py:123] | 8               | 8             | 0            | FULL         | 37    |
+INFO 09-11 17:13:42 [cuda_graph.py:123] | 16              | 16            | 0            | FULL         | 37    |
+INFO 09-11 17:13:42 [cuda_graph.py:123] | 3               | 4             | 1            | FULL         | 34    |
+INFO 09-11 17:13:42 [cuda_graph.py:123] | 2               | 2             | 0            | FULL         | 28    |
+INFO 09-11 17:13:42 [cuda_graph.py:123] | 9               | 16            | 7            | FULL         | 26    |
+INFO 09-11 17:13:42 [cuda_graph.py:123] | 14              | 16            | 2            | FULL         | 23    |
+INFO 09-11 17:13:42 [cuda_graph.py:123] | 7               | 8             | 1            | FULL         | 21    |
+INFO 09-11 17:13:42 [cuda_graph.py:123] | 4               | 4             | 0            | FULL         | 21    |
+INFO 09-11 17:13:42 [cuda_graph.py:123] | 15              | 16            | 1            | FULL         | 17    |
+INFO 09-11 17:13:42 [cuda_graph.py:123] | 5               | 8             | 3            | FULL         | 15    |
+INFO 09-11 17:13:42 [cuda_graph.py:123] | 11              | 16            | 5            | FULL         | 15    |
+INFO 09-11 17:13:42 [cuda_graph.py:123] | 12              | 16            | 4            | FULL         | 14    |
+INFO 09-11 17:13:42 [cuda_graph.py:123] | 6               | 8             | 2            | FULL         | 8     |
+INFO 09-11 17:13:42 [cuda_graph.py:123] | 8192            | 8192          | 0            | NONE         | 8     |
+INFO 09-11 17:13:42 [cuda_graph.py:123] | 10              | 16            | 6            | FULL         | 6     |
+INFO 09-11 17:13:42 [cuda_graph.py:123] | 1               | 1             | 0            | FULL         | 5     |
+INFO 09-11 17:13:42 [cuda_graph.py:123] | 390             | 390           | 0            | NONE         | 1     |
+INFO 09-11 17:13:42 [cuda_graph.py:123] | 763             | 763           | 0            | NONE         | 1     |
+INFO 09-11 17:13:42 [cuda_graph.py:123] | 3029            | 3029          | 0            | NONE         | 1     |
+INFO 09-11 17:13:42 [cuda_graph.py:123] | 276             | 276           | 0            | NONE         | 1     |
+INFO 09-11 17:13:42 [cuda_graph.py:123] | 350             | 350           | 0            | NONE         | 1     |
+INFO 09-11 17:13:42 [cuda_graph.py:123] | 483             | 483           | 0            | NONE         | 1     |
+INFO 09-11 17:13:42 [cuda_graph.py:123] | 4527            | 4527          | 0            | NONE         | 1     |
+INFO 09-11 17:13:42 [cuda_graph.py:123] | 90              | 90            | 0            | NONE         | 1     |
+INFO 09-11 17:13:42 [cuda_graph.py:123] | 233             | 233           | 0            | NONE         | 1     |
+INFO 09-11 17:13:42 [cuda_graph.py:123] | 75              | 75            | 0            | NONE         | 1     |
+INFO 09-11 17:13:42 [cuda_graph.py:123] | 312             | 312           | 0            | NONE         | 1     |
+INFO 09-11 17:13:42 [cuda_graph.py:123] | 86              | 86            | 0            | NONE         | 1     |
+INFO 09-11 17:13:42 [cuda_graph.py:123] | 286             | 286           | 0            | NONE         | 1     |
+INFO 09-11 17:13:42 [cuda_graph.py:123] | 261             | 261           | 0            | NONE         | 1     |
+INFO 09-11 17:13:42 [cuda_graph.py:123] | 157             | 157           | 0            | NONE         | 1     |
+INFO 09-11 17:13:42 [cuda_graph.py:123] | 103             | 103           | 0            | NONE         | 1     |
+INFO 09-11 17:13:42 [cuda_graph.py:123] | 186             | 186           | 0            | NONE         | 1     |
+INFO 09-11 17:13:42 [cuda_graph.py:123] | 1777            | 1777          | 0            | NONE         | 1     |
+INFO 09-11 17:13:42 [cuda_graph.py:123] | 627             | 627           | 0            | NONE         | 1     |
+INFO 09-11 17:13:42 [cuda_graph.py:123] | 241             | 241           | 0            | NONE         | 1     |
+INFO 09-11 17:13:42 [cuda_graph.py:123] | 462             | 462           | 0            | NONE         | 1     |
+INFO 09-11 17:13:42 [cuda_graph.py:123] | 550             | 550           | 0            | NONE         | 1     |
+INFO 09-11 17:13:42 [cuda_graph.py:123] | 7188            | 7188          | 0            | NONE         | 1     |
+INFO 09-11 17:13:42 [cuda_graph.py:123] | 3614            | 3614          | 0            | NONE         | 1     |
+INFO 09-11 17:13:42 [cuda_graph.py:123] 
+{"stage": "main", "records": 15, "seconds": 25.182692906993907, "failures": 0}
+{"stage": "main", "records": 20, "seconds": 32.762732331000734, "failures": 0}
+INFO 09-11 17:13:52 [loggers.py:310] Engine 000: Avg prompt throughput: 9535.2 tokens/s, Avg generation throughput: 389.2 tokens/s, Running: 14 reqs, Waiting: 0 reqs, GPU KV cache usage: 14.7%, Prefix cache hit rate: 91.7%
+INFO 09-11 17:13:52 [cuda_graph.py:123] **CUDAGraph Config Settings:**
+INFO 09-11 17:13:52 [cuda_graph.py:123] 
+INFO 09-11 17:13:52 [cuda_graph.py:123] - Mode: FULL_AND_PIECEWISE
+INFO 09-11 17:13:52 [cuda_graph.py:123] - Capture sizes: [1, 2, 4, 8, 16, 24, 32]
+INFO 09-11 17:13:52 [cuda_graph.py:123] 
+INFO 09-11 17:13:52 [cuda_graph.py:123] **CUDAGraph Stats:**
+INFO 09-11 17:13:52 [cuda_graph.py:123] 
+INFO 09-11 17:13:52 [cuda_graph.py:123] | Unpadded Tokens | Padded Tokens | Num Paddings | Runtime Mode | Count |
+INFO 09-11 17:13:52 [cuda_graph.py:123] |-----------------|---------------|--------------|--------------|-------|
+INFO 09-11 17:13:52 [cuda_graph.py:123] | 13              | 16            | 3            | FULL         | 104   |
+INFO 09-11 17:13:52 [cuda_graph.py:123] | 8               | 8             | 0            | FULL         | 58    |
+INFO 09-11 17:13:52 [cuda_graph.py:123] | 14              | 16            | 2            | FULL         | 52    |
+INFO 09-11 17:13:52 [cuda_graph.py:123] | 2               | 2             | 0            | FULL         | 45    |
+INFO 09-11 17:13:52 [cuda_graph.py:123] | 7               | 8             | 1            | FULL         | 41    |
+INFO 09-11 17:13:52 [cuda_graph.py:123] | 3               | 4             | 1            | FULL         | 38    |
+INFO 09-11 17:13:52 [cuda_graph.py:123] | 12              | 16            | 4            | FULL         | 25    |
+INFO 09-11 17:13:52 [cuda_graph.py:123] | 4               | 4             | 0            | FULL         | 22    |
+INFO 09-11 17:13:52 [cuda_graph.py:123] | 5               | 8             | 3            | FULL         | 10    |
+INFO 09-11 17:13:52 [cuda_graph.py:123] | 9               | 16            | 7            | FULL         | 10    |
+INFO 09-11 17:13:52 [cuda_graph.py:123] | 8192            | 8192          | 0            | NONE         | 7     |
+INFO 09-11 17:13:52 [cuda_graph.py:123] | 6               | 8             | 2            | FULL         | 5     |
+INFO 09-11 17:13:52 [cuda_graph.py:123] | 10              | 16            | 6            | FULL         | 5     |
+INFO 09-11 17:13:52 [cuda_graph.py:123] | 11              | 16            | 5            | FULL         | 3     |
+INFO 09-11 17:13:52 [cuda_graph.py:123] | 1               | 1             | 0            | FULL         | 3     |
+INFO 09-11 17:13:52 [cuda_graph.py:123] | 205             | 205           | 0            | NONE         | 1     |
+INFO 09-11 17:13:52 [cuda_graph.py:123] | 130             | 130           | 0            | NONE         | 1     |
+INFO 09-11 17:13:52 [cuda_graph.py:123] | 334             | 334           | 0            | NONE         | 1     |
+INFO 09-11 17:13:52 [cuda_graph.py:123] | 251             | 251           | 0            | NONE         | 1     |
+INFO 09-11 17:13:52 [cuda_graph.py:123] | 7725            | 7725          | 0            | NONE         | 1     |
+INFO 09-11 17:13:52 [cuda_graph.py:123] | 76              | 76            | 0            | NONE         | 1     |
+INFO 09-11 17:13:52 [cuda_graph.py:123] | 354             | 354           | 0            | NONE         | 1     |
+INFO 09-11 17:13:52 [cuda_graph.py:123] | 697             | 697           | 0            | NONE         | 1     |
+INFO 09-11 17:13:52 [cuda_graph.py:123] | 207             | 207           | 0            | NONE         | 1     |
+INFO 09-11 17:13:52 [cuda_graph.py:123] | 525             | 525           | 0            | NONE         | 1     |
+INFO 09-11 17:13:52 [cuda_graph.py:123] | 5164            | 5164          | 0            | NONE         | 1     |
+INFO 09-11 17:13:52 [cuda_graph.py:123] | 1219            | 1219          | 0            | NONE         | 1     |
+INFO 09-11 17:13:52 [cuda_graph.py:123] | 87              | 87            | 0            | NONE         | 1     |
+INFO 09-11 17:13:52 [cuda_graph.py:123] | 290             | 290           | 0            | NONE         | 1     |
+INFO 09-11 17:13:52 [cuda_graph.py:123] | 866             | 866           | 0            | NONE         | 1     |
+INFO 09-11 17:13:52 [cuda_graph.py:123] | 148             | 148           | 0            | NONE         | 1     |
+INFO 09-11 17:13:52 [cuda_graph.py:123] | 94              | 94            | 0            | NONE         | 1     |
+INFO 09-11 17:13:52 [cuda_graph.py:123] | 3567            | 3567          | 0            | NONE         | 1     |
+INFO 09-11 17:13:52 [cuda_graph.py:123] | 2212            | 2212          | 0            | NONE         | 1     |
+INFO 09-11 17:13:52 [cuda_graph.py:123] | 899             | 899           | 0            | NONE         | 1     |
+INFO 09-11 17:13:52 [cuda_graph.py:123] | 5257            | 5257          | 0            | NONE         | 1     |
+INFO 09-11 17:13:52 [cuda_graph.py:123] | 533             | 533           | 0            | NONE         | 1     |
+INFO 09-11 17:13:52 [cuda_graph.py:123] | 714             | 714           | 0            | NONE         | 1     |
+INFO 09-11 17:13:52 [cuda_graph.py:123] | 280             | 280           | 0            | NONE         | 1     |
+INFO 09-11 17:13:52 [cuda_graph.py:123] | 837             | 837           | 0            | NONE         | 1     |
+INFO 09-11 17:13:52 [cuda_graph.py:123] | 2569            | 2569          | 0            | NONE         | 1     |
+INFO 09-11 17:13:52 [cuda_graph.py:123] | 2289            | 2289          | 0            | NONE         | 1     |
+INFO 09-11 17:13:52 [cuda_graph.py:123] | 707             | 707           | 0            | NONE         | 1     |
+INFO 09-11 17:13:52 [cuda_graph.py:123] 
+{"stage": "main", "records": 25, "seconds": 39.10004179200041, "failures": 0}
+INFO 09-11 17:14:04 [loggers.py:310] Engine 000: Avg prompt throughput: 8160.8 tokens/s, Avg generation throughput: 306.9 tokens/s, Running: 1 reqs, Waiting: 0 reqs, GPU KV cache usage: 11.6%, Prefix cache hit rate: 91.9%
+INFO 09-11 17:14:04 [cuda_graph.py:123] **CUDAGraph Config Settings:**
+INFO 09-11 17:14:04 [cuda_graph.py:123] 
+INFO 09-11 17:14:04 [cuda_graph.py:123] - Mode: FULL_AND_PIECEWISE
+INFO 09-11 17:14:04 [cuda_graph.py:123] - Capture sizes: [1, 2, 4, 8, 16, 24, 32]
+INFO 09-11 17:14:04 [cuda_graph.py:123] 
+INFO 09-11 17:14:04 [cuda_graph.py:123] **CUDAGraph Stats:**
+INFO 09-11 17:14:04 [cuda_graph.py:123] 
+INFO 09-11 17:14:04 [cuda_graph.py:123] | Unpadded Tokens | Padded Tokens | Num Paddings | Runtime Mode | Count |
+INFO 09-11 17:14:04 [cuda_graph.py:123] |-----------------|---------------|--------------|--------------|-------|
+INFO 09-11 17:14:04 [cuda_graph.py:123] | 2               | 2             | 0            | FULL         | 78    |
+INFO 09-11 17:14:04 [cuda_graph.py:123] | 1               | 1             | 0            | FULL         | 69    |
+INFO 09-11 17:14:04 [cuda_graph.py:123] | 12              | 16            | 4            | FULL         | 47    |
+INFO 09-11 17:14:04 [cuda_graph.py:123] | 6               | 8             | 2            | FULL         | 37    |
+INFO 09-11 17:14:04 [cuda_graph.py:123] | 13              | 16            | 3            | FULL         | 36    |
+INFO 09-11 17:14:04 [cuda_graph.py:123] | 7               | 8             | 1            | FULL         | 34    |
+INFO 09-11 17:14:04 [cuda_graph.py:123] | 11              | 16            | 5            | FULL         | 33    |
+INFO 09-11 17:14:04 [cuda_graph.py:123] | 3               | 4             | 1            | FULL         | 30    |
+INFO 09-11 17:14:04 [cuda_graph.py:123] | 4               | 4             | 0            | FULL         | 25    |
+INFO 09-11 17:14:04 [cuda_graph.py:123] | 16              | 16            | 0            | FULL         | 20    |
+INFO 09-11 17:14:04 [cuda_graph.py:123] | 8               | 8             | 0            | FULL         | 18    |
+INFO 09-11 17:14:04 [cuda_graph.py:123] | 5               | 8             | 3            | FULL         | 17    |
+INFO 09-11 17:14:04 [cuda_graph.py:123] | 15              | 16            | 1            | FULL         | 14    |
+INFO 09-11 17:14:04 [cuda_graph.py:123] | 14              | 16            | 2            | FULL         | 10    |
+INFO 09-11 17:14:04 [cuda_graph.py:123] | 10              | 16            | 6            | FULL         | 9     |
+INFO 09-11 17:14:04 [cuda_graph.py:123] | 9               | 16            | 7            | FULL         | 7     |
+INFO 09-11 17:14:04 [cuda_graph.py:123] | 8192            | 8192          | 0            | NONE         | 4     |
+INFO 09-11 17:14:04 [cuda_graph.py:123] | 262             | 262           | 0            | NONE         | 2     |
+INFO 09-11 17:14:04 [cuda_graph.py:123] | 441             | 441           | 0            | NONE         | 1     |
+INFO 09-11 17:14:04 [cuda_graph.py:123] | 471             | 471           | 0            | NONE         | 1     |
+INFO 09-11 17:14:04 [cuda_graph.py:123] | 7652            | 7652          | 0            | NONE         | 1     |
+INFO 09-11 17:14:04 [cuda_graph.py:123] | 302             | 302           | 0            | NONE         | 1     |
+INFO 09-11 17:14:04 [cuda_graph.py:123] | 665             | 665           | 0            | NONE         | 1     |
+INFO 09-11 17:14:04 [cuda_graph.py:123] | 2922            | 2922          | 0            | NONE         | 1     |
+INFO 09-11 17:14:04 [cuda_graph.py:123] | 103             | 103           | 0            | NONE         | 1     |
+INFO 09-11 17:14:04 [cuda_graph.py:123] | 5451            | 5451          | 0            | NONE         | 1     |
+INFO 09-11 17:14:04 [cuda_graph.py:123] | 946             | 946           | 0            | NONE         | 1     |
+INFO 09-11 17:14:04 [cuda_graph.py:123] | 203             | 203           | 0            | NONE         | 1     |
+INFO 09-11 17:14:04 [cuda_graph.py:123] | 328             | 328           | 0            | NONE         | 1     |
+INFO 09-11 17:14:04 [cuda_graph.py:123] | 398             | 398           | 0            | NONE         | 1     |
+INFO 09-11 17:14:04 [cuda_graph.py:123] | 3045            | 3045          | 0            | NONE         | 1     |
+INFO 09-11 17:14:04 [cuda_graph.py:123] | 223             | 223           | 0            | NONE         | 1     |
+INFO 09-11 17:14:04 [cuda_graph.py:123] | 65              | 65            | 0            | NONE         | 1     |
+INFO 09-11 17:14:04 [cuda_graph.py:123] | 297             | 297           | 0            | NONE         | 1     |
+INFO 09-11 17:14:04 [cuda_graph.py:123] | 201             | 201           | 0            | NONE         | 1     |
+INFO 09-11 17:14:04 [cuda_graph.py:123] | 289             | 289           | 0            | NONE         | 1     |
+INFO 09-11 17:14:04 [cuda_graph.py:123] | 105             | 105           | 0            | NONE         | 1     |
+INFO 09-11 17:14:04 [cuda_graph.py:123] | 230             | 230           | 0            | NONE         | 1     |
+INFO 09-11 17:14:04 [cuda_graph.py:123] | 2166            | 2166          | 0            | NONE         | 1     |
+INFO 09-11 17:14:04 [cuda_graph.py:123] 
+{"stage": "main", "records": 30, "seconds": 49.32429349899758, "failures": 0}
+{"stage": "main", "records": 35, "seconds": 54.67079652599932, "failures": 0}
+INFO 09-11 17:14:14 [loggers.py:310] Engine 000: Avg prompt throughput: 8202.8 tokens/s, Avg generation throughput: 487.2 tokens/s, Running: 2 reqs, Waiting: 0 reqs, GPU KV cache usage: 8.7%, Prefix cache hit rate: 92.0%
+INFO 09-11 17:14:14 [cuda_graph.py:123] **CUDAGraph Config Settings:**
+INFO 09-11 17:14:14 [cuda_graph.py:123] 
+INFO 09-11 17:14:14 [cuda_graph.py:123] - Mode: FULL_AND_PIECEWISE
+INFO 09-11 17:14:14 [cuda_graph.py:123] - Capture sizes: [1, 2, 4, 8, 16, 24, 32]
+INFO 09-11 17:14:14 [cuda_graph.py:123] 
+INFO 09-11 17:14:14 [cuda_graph.py:123] **CUDAGraph Stats:**
+INFO 09-11 17:14:14 [cuda_graph.py:123] 
+INFO 09-11 17:14:14 [cuda_graph.py:123] | Unpadded Tokens | Padded Tokens | Num Paddings | Runtime Mode | Count |
+INFO 09-11 17:14:14 [cuda_graph.py:123] |-----------------|---------------|--------------|--------------|-------|
+INFO 09-11 17:14:14 [cuda_graph.py:123] | 13              | 16            | 3            | FULL         | 85    |
+INFO 09-11 17:14:14 [cuda_graph.py:123] | 7               | 8             | 1            | FULL         | 76    |
+INFO 09-11 17:14:14 [cuda_graph.py:123] | 14              | 16            | 2            | FULL         | 67    |
+INFO 09-11 17:14:14 [cuda_graph.py:123] | 1               | 1             | 0            | FULL         | 43    |
+INFO 09-11 17:14:14 [cuda_graph.py:123] | 12              | 16            | 4            | FULL         | 37    |
+INFO 09-11 17:14:14 [cuda_graph.py:123] | 15              | 16            | 1            | FULL         | 34    |
+INFO 09-11 17:14:14 [cuda_graph.py:123] | 8               | 8             | 0            | FULL         | 31    |
+INFO 09-11 17:14:14 [cuda_graph.py:123] | 3               | 4             | 1            | FULL         | 28    |
+INFO 09-11 17:14:14 [cuda_graph.py:123] | 9               | 16            | 7            | FULL         | 25    |
+INFO 09-11 17:14:14 [cuda_graph.py:123] | 2               | 2             | 0            | FULL         | 14    |
+INFO 09-11 17:14:14 [cuda_graph.py:123] | 4               | 4             | 0            | FULL         | 13    |
+INFO 09-11 17:14:14 [cuda_graph.py:123] | 5               | 8             | 3            | FULL         | 12    |
+INFO 09-11 17:14:14 [cuda_graph.py:123] | 10              | 16            | 6            | FULL         | 10    |
+INFO 09-11 17:14:14 [cuda_graph.py:123] | 6               | 8             | 2            | FULL         | 10    |
+INFO 09-11 17:14:14 [cuda_graph.py:123] | 16              | 16            | 0            | FULL         | 9     |
+INFO 09-11 17:14:14 [cuda_graph.py:123] | 11              | 16            | 5            | FULL         | 7     |
+INFO 09-11 17:14:14 [cuda_graph.py:123] | 8192            | 8192          | 0            | NONE         | 3     |
+INFO 09-11 17:14:14 [cuda_graph.py:123] | 321             | 321           | 0            | NONE         | 2     |
+INFO 09-11 17:14:14 [cuda_graph.py:123] | 3492            | 3492          | 0            | NONE         | 1     |
+INFO 09-11 17:14:14 [cuda_graph.py:123] | 674             | 674           | 0            | NONE         | 1     |
+INFO 09-11 17:14:14 [cuda_graph.py:123] | 276             | 276           | 0            | NONE         | 1     |
+INFO 09-11 17:14:14 [cuda_graph.py:123] | 258             | 258           | 0            | NONE         | 1     |
+INFO 09-11 17:14:14 [cuda_graph.py:123] | 369             | 369           | 0            | NONE         | 1     |
+INFO 09-11 17:14:14 [cuda_graph.py:123] | 852             | 852           | 0            | NONE         | 1     |
+INFO 09-11 17:14:14 [cuda_graph.py:123] | 5274            | 5274          | 0            | NONE         | 1     |
+INFO 09-11 17:14:14 [cuda_graph.py:123] | 6070            | 6070          | 0            | NONE         | 1     |
+INFO 09-11 17:14:14 [cuda_graph.py:123] | 932             | 932           | 0            | NONE         | 1     |
+INFO 09-11 17:14:14 [cuda_graph.py:123] | 752             | 752           | 0            | NONE         | 1     |
+INFO 09-11 17:14:14 [cuda_graph.py:123] | 5024            | 5024          | 0            | NONE         | 1     |
+INFO 09-11 17:14:14 [cuda_graph.py:123] | 4967            | 4967          | 0            | NONE         | 1     |
+INFO 09-11 17:14:14 [cuda_graph.py:123] | 260             | 260           | 0            | NONE         | 1     |
+INFO 09-11 17:14:14 [cuda_graph.py:123] | 963             | 963           | 0            | NONE         | 1     |
+INFO 09-11 17:14:14 [cuda_graph.py:123] | 368             | 368           | 0            | NONE         | 1     |
+INFO 09-11 17:14:14 [cuda_graph.py:123] | 856             | 856           | 0            | NONE         | 1     |
+INFO 09-11 17:14:14 [cuda_graph.py:123] | 6801            | 6801          | 0            | NONE         | 1     |
+INFO 09-11 17:14:14 [cuda_graph.py:123] | 2913            | 2913          | 0            | NONE         | 1     |
+INFO 09-11 17:14:14 [cuda_graph.py:123] | 292             | 292           | 0            | NONE         | 1     |
+INFO 09-11 17:14:14 [cuda_graph.py:123] | 884             | 884           | 0            | NONE         | 1     |
+INFO 09-11 17:14:14 [cuda_graph.py:123] | 235             | 235           | 0            | NONE         | 1     |
+INFO 09-11 17:14:14 [cuda_graph.py:123] | 4269            | 4269          | 0            | NONE         | 1     |
+INFO 09-11 17:14:14 [cuda_graph.py:123] | 1171            | 1171          | 0            | NONE         | 1     |
+INFO 09-11 17:14:14 [cuda_graph.py:123] | 255             | 255           | 0            | NONE         | 1     |
+INFO 09-11 17:14:14 [cuda_graph.py:123] | 663             | 663           | 0            | NONE         | 1     |
+INFO 09-11 17:14:14 [cuda_graph.py:123] | 209             | 209           | 0            | NONE         | 1     |
+INFO 09-11 17:14:14 [cuda_graph.py:123] | 78              | 78            | 0            | NONE         | 1     |
+INFO 09-11 17:14:14 [cuda_graph.py:123] | 7920            | 7920          | 0            | NONE         | 1     |
+INFO 09-11 17:14:14 [cuda_graph.py:123] 
+{"stage": "main", "records": 40, "seconds": 58.92750725199585, "failures": 0}
+{"stage": "main", "records": 45, "seconds": 64.1531175729906, "failures": 0}
+INFO 09-11 17:14:24 [loggers.py:310] Engine 000: Avg prompt throughput: 8628.2 tokens/s, Avg generation throughput: 556.1 tokens/s, Running: 9 reqs, Waiting: 0 reqs, GPU KV cache usage: 11.1%, Prefix cache hit rate: 91.9%
+INFO 09-11 17:14:24 [cuda_graph.py:123] **CUDAGraph Config Settings:**
+INFO 09-11 17:14:24 [cuda_graph.py:123] 
+INFO 09-11 17:14:24 [cuda_graph.py:123] - Mode: FULL_AND_PIECEWISE
+INFO 09-11 17:14:24 [cuda_graph.py:123] - Capture sizes: [1, 2, 4, 8, 16, 24, 32]
+INFO 09-11 17:14:24 [cuda_graph.py:123] 
+INFO 09-11 17:14:24 [cuda_graph.py:123] **CUDAGraph Stats:**
+INFO 09-11 17:14:24 [cuda_graph.py:123] 
+INFO 09-11 17:14:24 [cuda_graph.py:123] | Unpadded Tokens | Padded Tokens | Num Paddings | Runtime Mode | Count |
+INFO 09-11 17:14:24 [cuda_graph.py:123] |-----------------|---------------|--------------|--------------|-------|
+INFO 09-11 17:14:24 [cuda_graph.py:123] | 13              | 16            | 3            | FULL         | 116   |
+INFO 09-11 17:14:24 [cuda_graph.py:123] | 14              | 16            | 2            | FULL         | 85    |
+INFO 09-11 17:14:24 [cuda_graph.py:123] | 7               | 8             | 1            | FULL         | 84    |
+INFO 09-11 17:14:24 [cuda_graph.py:123] | 8               | 8             | 0            | FULL         | 56    |
+INFO 09-11 17:14:24 [cuda_graph.py:123] | 12              | 16            | 4            | FULL         | 47    |
+INFO 09-11 17:14:24 [cuda_graph.py:123] | 15              | 16            | 1            | FULL         | 30    |
+INFO 09-11 17:14:24 [cuda_graph.py:123] | 3               | 4             | 1            | FULL         | 25    |
+INFO 09-11 17:14:24 [cuda_graph.py:123] | 9               | 16            | 7            | FULL         | 21    |
+INFO 09-11 17:14:24 [cuda_graph.py:123] | 4               | 4             | 0            | FULL         | 15    |
+INFO 09-11 17:14:24 [cuda_graph.py:123] | 6               | 8             | 2            | FULL         | 11    |
+INFO 09-11 17:14:24 [cuda_graph.py:123] | 11              | 16            | 5            | FULL         | 7     |
+INFO 09-11 17:14:24 [cuda_graph.py:123] | 5               | 8             | 3            | FULL         | 7     |
+INFO 09-11 17:14:24 [cuda_graph.py:123] | 2               | 2             | 0            | FULL         | 6     |
+INFO 09-11 17:14:24 [cuda_graph.py:123] | 10              | 16            | 6            | FULL         | 3     |
+INFO 09-11 17:14:24 [cuda_graph.py:123] | 8192            | 8192          | 0            | NONE         | 3     |
+INFO 09-11 17:14:24 [cuda_graph.py:123] | 1               | 1             | 0            | FULL         | 2     |
+INFO 09-11 17:14:24 [cuda_graph.py:123] | 6308            | 6308          | 0            | NONE         | 1     |
+INFO 09-11 17:14:24 [cuda_graph.py:123] | 656             | 656           | 0            | NONE         | 1     |
+INFO 09-11 17:14:24 [cuda_graph.py:123] | 733             | 733           | 0            | NONE         | 1     |
+INFO 09-11 17:14:24 [cuda_graph.py:123] | 366             | 366           | 0            | NONE         | 1     |
+INFO 09-11 17:14:24 [cuda_graph.py:123] | 715             | 715           | 0            | NONE         | 1     |
+INFO 09-11 17:14:24 [cuda_graph.py:123] | 7669            | 7669          | 0            | NONE         | 1     |
+INFO 09-11 17:14:24 [cuda_graph.py:123] | 213             | 213           | 0            | NONE         | 1     |
+INFO 09-11 17:14:24 [cuda_graph.py:123] | 495             | 495           | 0            | NONE         | 1     |
+INFO 09-11 17:14:24 [cuda_graph.py:123] | 545             | 545           | 0            | NONE         | 1     |
+INFO 09-11 17:14:24 [cuda_graph.py:123] | 3795            | 3795          | 0            | NONE         | 1     |
+INFO 09-11 17:14:24 [cuda_graph.py:123] | 287             | 287           | 0            | NONE         | 1     |
+INFO 09-11 17:14:24 [cuda_graph.py:123] | 1006            | 1006          | 0            | NONE         | 1     |
+INFO 09-11 17:14:24 [cuda_graph.py:123] | 94              | 94            | 0            | NONE         | 1     |
+INFO 09-11 17:14:24 [cuda_graph.py:123] | 2954            | 2954          | 0            | NONE         | 1     |
+INFO 09-11 17:14:24 [cuda_graph.py:123] | 5391            | 5391          | 0            | NONE         | 1     |
+INFO 09-11 17:14:24 [cuda_graph.py:123] | 1037            | 1037          | 0            | NONE         | 1     |
+INFO 09-11 17:14:24 [cuda_graph.py:123] | 206             | 206           | 0            | NONE         | 1     |
+INFO 09-11 17:14:24 [cuda_graph.py:123] | 391             | 391           | 0            | NONE         | 1     |
+INFO 09-11 17:14:24 [cuda_graph.py:123] | 768             | 768           | 0            | NONE         | 1     |
+INFO 09-11 17:14:24 [cuda_graph.py:123] | 5417            | 5417          | 0            | NONE         | 1     |
+INFO 09-11 17:14:24 [cuda_graph.py:123] | 270             | 270           | 0            | NONE         | 1     |
+INFO 09-11 17:14:24 [cuda_graph.py:123] | 807             | 807           | 0            | NONE         | 1     |
+INFO 09-11 17:14:24 [cuda_graph.py:123] | 2878            | 2878          | 0            | NONE         | 1     |
+INFO 09-11 17:14:24 [cuda_graph.py:123] | 1435            | 1435          | 0            | NONE         | 1     |
+INFO 09-11 17:14:24 [cuda_graph.py:123] | 1117            | 1117          | 0            | NONE         | 1     |
+INFO 09-11 17:14:24 [cuda_graph.py:123] | 234             | 234           | 0            | NONE         | 1     |
+INFO 09-11 17:14:24 [cuda_graph.py:123] | 586             | 586           | 0            | NONE         | 1     |
+INFO 09-11 17:14:24 [cuda_graph.py:123] | 405             | 405           | 0            | NONE         | 1     |
+INFO 09-11 17:14:24 [cuda_graph.py:123] | 242             | 242           | 0            | NONE         | 1     |
+INFO 09-11 17:14:24 [cuda_graph.py:123] | 4905            | 4905          | 0            | NONE         | 1     |
+INFO 09-11 17:14:24 [cuda_graph.py:123] | 3884            | 3884          | 0            | NONE         | 1     |
+INFO 09-11 17:14:24 [cuda_graph.py:123] | 680             | 680           | 0            | NONE         | 1     |
+INFO 09-11 17:14:24 [cuda_graph.py:123] | 525             | 525           | 0            | NONE         | 1     |
+INFO 09-11 17:14:24 [cuda_graph.py:123] | 3638            | 3638          | 0            | NONE         | 1     |
+INFO 09-11 17:14:24 [cuda_graph.py:123] | 1136            | 1136          | 0            | NONE         | 1     |
+INFO 09-11 17:14:24 [cuda_graph.py:123] | 227             | 227           | 0            | NONE         | 1     |
+INFO 09-11 17:14:24 [cuda_graph.py:123] 
+{"stage": "main", "records": 50, "seconds": 71.41505093799788, "failures": 0}
+INFO 09-11 17:14:34 [loggers.py:310] Engine 000: Avg prompt throughput: 6647.5 tokens/s, Avg generation throughput: 513.9 tokens/s, Running: 15 reqs, Waiting: 0 reqs, GPU KV cache usage: 14.1%, Prefix cache hit rate: 91.9%
+INFO 09-11 17:14:34 [cuda_graph.py:123] **CUDAGraph Config Settings:**
+INFO 09-11 17:14:34 [cuda_graph.py:123] 
+INFO 09-11 17:14:34 [cuda_graph.py:123] - Mode: FULL_AND_PIECEWISE
+INFO 09-11 17:14:34 [cuda_graph.py:123] - Capture sizes: [1, 2, 4, 8, 16, 24, 32]
+INFO 09-11 17:14:34 [cuda_graph.py:123] 
+INFO 09-11 17:14:34 [cuda_graph.py:123] **CUDAGraph Stats:**
+INFO 09-11 17:14:34 [cuda_graph.py:123] 
+INFO 09-11 17:14:34 [cuda_graph.py:123] | Unpadded Tokens | Padded Tokens | Num Paddings | Runtime Mode | Count |
+INFO 09-11 17:14:34 [cuda_graph.py:123] |-----------------|---------------|--------------|--------------|-------|
+INFO 09-11 17:14:34 [cuda_graph.py:123] | 2               | 2             | 0            | FULL         | 81    |
+INFO 09-11 17:14:34 [cuda_graph.py:123] | 4               | 4             | 0            | FULL         | 77    |
+INFO 09-11 17:14:34 [cuda_graph.py:123] | 3               | 4             | 1            | FULL         | 77    |
+INFO 09-11 17:14:34 [cuda_graph.py:123] | 8               | 8             | 0            | FULL         | 64    |
+INFO 09-11 17:14:34 [cuda_graph.py:123] | 12              | 16            | 4            | FULL         | 57    |
+INFO 09-11 17:14:34 [cuda_graph.py:123] | 1               | 1             | 0            | FULL         | 53    |
+INFO 09-11 17:14:34 [cuda_graph.py:123] | 13              | 16            | 3            | FULL         | 52    |
+INFO 09-11 17:14:34 [cuda_graph.py:123] | 15              | 16            | 1            | FULL         | 37    |
+INFO 09-11 17:14:34 [cuda_graph.py:123] | 14              | 16            | 2            | FULL         | 31    |
+INFO 09-11 17:14:34 [cuda_graph.py:123] | 6               | 8             | 2            | FULL         | 31    |
+INFO 09-11 17:14:34 [cuda_graph.py:123] | 5               | 8             | 3            | FULL         | 30    |
+INFO 09-11 17:14:34 [cuda_graph.py:123] | 7               | 8             | 1            | FULL         | 29    |
+INFO 09-11 17:14:34 [cuda_graph.py:123] | 9               | 16            | 7            | FULL         | 24    |
+INFO 09-11 17:14:34 [cuda_graph.py:123] | 10              | 16            | 6            | FULL         | 18    |
+INFO 09-11 17:14:34 [cuda_graph.py:123] | 11              | 16            | 5            | FULL         | 18    |
+INFO 09-11 17:14:34 [cuda_graph.py:123] | 16              | 16            | 0            | FULL         | 13    |
+INFO 09-11 17:14:34 [cuda_graph.py:123] | 8192            | 8192          | 0            | NONE         | 2     |
+INFO 09-11 17:14:34 [cuda_graph.py:123] | 46              | 46            | 0            | NONE         | 1     |
+INFO 09-11 17:14:34 [cuda_graph.py:123] | 6759            | 6759          | 0            | NONE         | 1     |
+INFO 09-11 17:14:34 [cuda_graph.py:123] | 1351            | 1351          | 0            | NONE         | 1     |
+INFO 09-11 17:14:34 [cuda_graph.py:123] | 1119            | 1119          | 0            | NONE         | 1     |
+INFO 09-11 17:14:34 [cuda_graph.py:123] | 311             | 311           | 0            | NONE         | 1     |
+INFO 09-11 17:14:34 [cuda_graph.py:123] | 6374            | 6374          | 0            | NONE         | 1     |
+INFO 09-11 17:14:34 [cuda_graph.py:123] | 720             | 720           | 0            | NONE         | 1     |
+INFO 09-11 17:14:34 [cuda_graph.py:123] | 558             | 558           | 0            | NONE         | 1     |
+INFO 09-11 17:14:34 [cuda_graph.py:123] | 1643            | 1643          | 0            | NONE         | 1     |
+INFO 09-11 17:14:34 [cuda_graph.py:123] | 310             | 310           | 0            | NONE         | 1     |
+INFO 09-11 17:14:34 [cuda_graph.py:123] | 246             | 246           | 0            | NONE         | 1     |
+INFO 09-11 17:14:34 [cuda_graph.py:123] | 469             | 469           | 0            | NONE         | 1     |
+INFO 09-11 17:14:34 [cuda_graph.py:123] | 384             | 384           | 0            | NONE         | 1     |
+INFO 09-11 17:14:34 [cuda_graph.py:123] | 129             | 129           | 0            | NONE         | 1     |
+INFO 09-11 17:14:34 [cuda_graph.py:123] | 74              | 74            | 0            | NONE         | 1     |
+INFO 09-11 17:14:34 [cuda_graph.py:123] | 7940            | 7940          | 0            | NONE         | 1     |
+INFO 09-11 17:14:34 [cuda_graph.py:123] | 3012            | 3012          | 0            | NONE         | 1     |
+INFO 09-11 17:14:34 [cuda_graph.py:123] | 335             | 335           | 0            | NONE         | 1     |
+INFO 09-11 17:14:34 [cuda_graph.py:123] | 843             | 843           | 0            | NONE         | 1     |
+INFO 09-11 17:14:34 [cuda_graph.py:123] | 59              | 59            | 0            | NONE         | 1     |
+INFO 09-11 17:14:34 [cuda_graph.py:123] | 1149            | 1149          | 0            | NONE         | 1     |
+INFO 09-11 17:14:34 [cuda_graph.py:123] | 7420            | 7420          | 0            | NONE         | 1     |
+INFO 09-11 17:14:34 [cuda_graph.py:123] | 86              | 86            | 0            | NONE         | 1     |
+INFO 09-11 17:14:34 [cuda_graph.py:123] | 7538            | 7538          | 0            | NONE         | 1     |
+INFO 09-11 17:14:34 [cuda_graph.py:123] | 673             | 673           | 0            | NONE         | 1     |
+INFO 09-11 17:14:34 [cuda_graph.py:123] | 753             | 753           | 0            | NONE         | 1     |
+INFO 09-11 17:14:34 [cuda_graph.py:123] 
+{"stage": "main", "records": 55, "seconds": 75.7929189419956, "failures": 0}
+{"stage": "main", "records": 60, "seconds": 80.64897612499772, "failures": 0}
+INFO 09-11 17:14:44 [loggers.py:310] Engine 000: Avg prompt throughput: 5668.7 tokens/s, Avg generation throughput: 594.1 tokens/s, Running: 14 reqs, Waiting: 0 reqs, GPU KV cache usage: 47.2%, Prefix cache hit rate: 91.6%
+INFO 09-11 17:14:44 [cuda_graph.py:123] **CUDAGraph Config Settings:**
+INFO 09-11 17:14:44 [cuda_graph.py:123] 
+INFO 09-11 17:14:44 [cuda_graph.py:123] - Mode: FULL_AND_PIECEWISE
+INFO 09-11 17:14:44 [cuda_graph.py:123] - Capture sizes: [1, 2, 4, 8, 16, 24, 32]
+INFO 09-11 17:14:44 [cuda_graph.py:123] 
+INFO 09-11 17:14:44 [cuda_graph.py:123] **CUDAGraph Stats:**
+INFO 09-11 17:14:44 [cuda_graph.py:123] 
+INFO 09-11 17:14:44 [cuda_graph.py:123] | Unpadded Tokens | Padded Tokens | Num Paddings | Runtime Mode | Count |
+INFO 09-11 17:14:44 [cuda_graph.py:123] |-----------------|---------------|--------------|--------------|-------|
+INFO 09-11 17:14:44 [cuda_graph.py:123] | 14              | 16            | 2            | FULL         | 77    |
+INFO 09-11 17:14:44 [cuda_graph.py:123] | 13              | 16            | 3            | FULL         | 77    |
+INFO 09-11 17:14:44 [cuda_graph.py:123] | 9               | 16            | 7            | FULL         | 62    |
+INFO 09-11 17:14:44 [cuda_graph.py:123] | 7               | 8             | 1            | FULL         | 53    |
+INFO 09-11 17:14:44 [cuda_graph.py:123] | 15              | 16            | 1            | FULL         | 46    |
+INFO 09-11 17:14:44 [cuda_graph.py:123] | 4               | 4             | 0            | FULL         | 45    |
+INFO 09-11 17:14:44 [cuda_graph.py:123] | 5               | 8             | 3            | FULL         | 43    |
+INFO 09-11 17:14:44 [cuda_graph.py:123] | 8               | 8             | 0            | FULL         | 37    |
+INFO 09-11 17:14:44 [cuda_graph.py:123] | 12              | 16            | 4            | FULL         | 36    |
+INFO 09-11 17:14:44 [cuda_graph.py:123] | 3               | 4             | 1            | FULL         | 36    |
+INFO 09-11 17:14:44 [cuda_graph.py:123] | 6               | 8             | 2            | FULL         | 33    |
+INFO 09-11 17:14:44 [cuda_graph.py:123] | 16              | 16            | 0            | FULL         | 26    |
+INFO 09-11 17:14:44 [cuda_graph.py:123] | 2               | 2             | 0            | FULL         | 22    |
+INFO 09-11 17:14:44 [cuda_graph.py:123] | 10              | 16            | 6            | FULL         | 20    |
+INFO 09-11 17:14:44 [cuda_graph.py:123] | 11              | 16            | 5            | FULL         | 7     |
+INFO 09-11 17:14:44 [cuda_graph.py:123] | 8192            | 8192          | 0            | NONE         | 3     |
+INFO 09-11 17:14:44 [cuda_graph.py:123] | 1               | 1             | 0            | FULL         | 2     |
+INFO 09-11 17:14:44 [cuda_graph.py:123] | 297             | 297           | 0            | NONE         | 1     |
+INFO 09-11 17:14:44 [cuda_graph.py:123] | 648             | 648           | 0            | NONE         | 1     |
+INFO 09-11 17:14:44 [cuda_graph.py:123] | 3777            | 3777          | 0            | NONE         | 1     |
+INFO 09-11 17:14:44 [cuda_graph.py:123] | 363             | 363           | 0            | NONE         | 1     |
+INFO 09-11 17:14:44 [cuda_graph.py:123] | 6311            | 6311          | 0            | NONE         | 1     |
+INFO 09-11 17:14:44 [cuda_graph.py:123] | 242             | 242           | 0            | NONE         | 1     |
+INFO 09-11 17:14:44 [cuda_graph.py:123] | 832             | 832           | 0            | NONE         | 1     |
+INFO 09-11 17:14:44 [cuda_graph.py:123] | 4131            | 4131          | 0            | NONE         | 1     |
+INFO 09-11 17:14:44 [cuda_graph.py:123] | 73              | 73            | 0            | NONE         | 1     |
+INFO 09-11 17:14:44 [cuda_graph.py:123] | 2847            | 2847          | 0            | NONE         | 1     |
+INFO 09-11 17:14:44 [cuda_graph.py:123] | 727             | 727           | 0            | NONE         | 1     |
+INFO 09-11 17:14:44 [cuda_graph.py:123] | 564             | 564           | 0            | NONE         | 1     |
+INFO 09-11 17:14:44 [cuda_graph.py:123] | 351             | 351           | 0            | NONE         | 1     |
+INFO 09-11 17:14:44 [cuda_graph.py:123] | 809             | 809           | 0            | NONE         | 1     |
+INFO 09-11 17:14:44 [cuda_graph.py:123] | 2463            | 2463          | 0            | NONE         | 1     |
+INFO 09-11 17:14:44 [cuda_graph.py:123] | 394             | 394           | 0            | NONE         | 1     |
+INFO 09-11 17:14:44 [cuda_graph.py:123] | 3397            | 3397          | 0            | NONE         | 1     |
+INFO 09-11 17:14:44 [cuda_graph.py:123] | 7097            | 7097          | 0            | NONE         | 1     |
+INFO 09-11 17:14:44 [cuda_graph.py:123] | 215             | 215           | 0            | NONE         | 1     |
+INFO 09-11 17:14:44 [cuda_graph.py:123] | 325             | 325           | 0            | NONE         | 1     |
+INFO 09-11 17:14:44 [cuda_graph.py:123] | 436             | 436           | 0            | NONE         | 1     |
+INFO 09-11 17:14:44 [cuda_graph.py:123] | 291             | 291           | 0            | NONE         | 1     |
+INFO 09-11 17:14:44 [cuda_graph.py:123] | 7153            | 7153          | 0            | NONE         | 1     |
+INFO 09-11 17:14:44 [cuda_graph.py:123] | 3378            | 3378          | 0            | NONE         | 1     |
+INFO 09-11 17:14:44 [cuda_graph.py:123] | 382             | 382           | 0            | NONE         | 1     |
+INFO 09-11 17:14:44 [cuda_graph.py:123] | 970             | 970           | 0            | NONE         | 1     |
+INFO 09-11 17:14:44 [cuda_graph.py:123] | 410             | 410           | 0            | NONE         | 1     |
+INFO 09-11 17:14:44 [cuda_graph.py:123] | 947             | 947           | 0            | NONE         | 1     |
+INFO 09-11 17:14:44 [cuda_graph.py:123] 
+{"stage": "main", "records": 65, "seconds": 86.56429937099165, "failures": 0}
+INFO 09-11 17:14:54 [loggers.py:310] Engine 000: Avg prompt throughput: 6138.0 tokens/s, Avg generation throughput: 415.6 tokens/s, Running: 9 reqs, Waiting: 0 reqs, GPU KV cache usage: 21.3%, Prefix cache hit rate: 91.7%
+INFO 09-11 17:14:54 [cuda_graph.py:123] **CUDAGraph Config Settings:**
+INFO 09-11 17:14:54 [cuda_graph.py:123] 
+INFO 09-11 17:14:54 [cuda_graph.py:123] - Mode: FULL_AND_PIECEWISE
+INFO 09-11 17:14:54 [cuda_graph.py:123] - Capture sizes: [1, 2, 4, 8, 16, 24, 32]
+INFO 09-11 17:14:54 [cuda_graph.py:123] 
+INFO 09-11 17:14:54 [cuda_graph.py:123] **CUDAGraph Stats:**
+INFO 09-11 17:14:54 [cuda_graph.py:123] 
+INFO 09-11 17:14:54 [cuda_graph.py:123] | Unpadded Tokens | Padded Tokens | Num Paddings | Runtime Mode | Count |
+INFO 09-11 17:14:54 [cuda_graph.py:123] |-----------------|---------------|--------------|--------------|-------|
+INFO 09-11 17:14:54 [cuda_graph.py:123] | 2               | 2             | 0            | FULL         | 193   |
+INFO 09-11 17:14:54 [cuda_graph.py:123] | 1               | 1             | 0            | FULL         | 146   |
+INFO 09-11 17:14:54 [cuda_graph.py:123] | 14              | 16            | 2            | FULL         | 59    |
+INFO 09-11 17:14:54 [cuda_graph.py:123] | 9               | 16            | 7            | FULL         | 43    |
+INFO 09-11 17:14:54 [cuda_graph.py:123] | 12              | 16            | 4            | FULL         | 37    |
+INFO 09-11 17:14:54 [cuda_graph.py:123] | 4               | 4             | 0            | FULL         | 34    |
+INFO 09-11 17:14:54 [cuda_graph.py:123] | 5               | 8             | 3            | FULL         | 29    |
+INFO 09-11 17:14:54 [cuda_graph.py:123] | 16              | 16            | 0            | FULL         | 27    |
+INFO 09-11 17:14:54 [cuda_graph.py:123] | 13              | 16            | 3            | FULL         | 26    |
+INFO 09-11 17:14:54 [cuda_graph.py:123] | 8               | 8             | 0            | FULL         | 26    |
+INFO 09-11 17:14:54 [cuda_graph.py:123] | 3               | 4             | 1            | FULL         | 24    |
+INFO 09-11 17:14:54 [cuda_graph.py:123] | 15              | 16            | 1            | FULL         | 21    |
+INFO 09-11 17:14:54 [cuda_graph.py:123] | 7               | 8             | 1            | FULL         | 12    |
+INFO 09-11 17:14:54 [cuda_graph.py:123] | 10              | 16            | 6            | FULL         | 4     |
+INFO 09-11 17:14:54 [cuda_graph.py:123] | 6               | 8             | 2            | FULL         | 3     |
+INFO 09-11 17:14:54 [cuda_graph.py:123] | 11              | 16            | 5            | FULL         | 2     |
+INFO 09-11 17:14:54 [cuda_graph.py:123] | 7380            | 7380          | 0            | NONE         | 1     |
+INFO 09-11 17:14:54 [cuda_graph.py:123] | 5226            | 5226          | 0            | NONE         | 1     |
+INFO 09-11 17:14:54 [cuda_graph.py:123] | 971             | 971           | 0            | NONE         | 1     |
+INFO 09-11 17:14:54 [cuda_graph.py:123] | 189             | 189           | 0            | NONE         | 1     |
+INFO 09-11 17:14:54 [cuda_graph.py:123] | 288             | 288           | 0            | NONE         | 1     |
+INFO 09-11 17:14:54 [cuda_graph.py:123] | 860             | 860           | 0            | NONE         | 1     |
+INFO 09-11 17:14:54 [cuda_graph.py:123] | 149             | 149           | 0            | NONE         | 1     |
+INFO 09-11 17:14:54 [cuda_graph.py:123] | 5221            | 5221          | 0            | NONE         | 1     |
+INFO 09-11 17:14:54 [cuda_graph.py:123] | 93              | 93            | 0            | NONE         | 1     |
+INFO 09-11 17:14:54 [cuda_graph.py:123] | 327             | 327           | 0            | NONE         | 1     |
+INFO 09-11 17:14:54 [cuda_graph.py:123] | 819             | 819           | 0            | NONE         | 1     |
+INFO 09-11 17:14:54 [cuda_graph.py:123] | 75              | 75            | 0            | NONE         | 1     |
+INFO 09-11 17:14:54 [cuda_graph.py:123] | 8192            | 8192          | 0            | NONE         | 1     |
+INFO 09-11 17:14:54 [cuda_graph.py:123] | 1950            | 1950          | 0            | NONE         | 1     |
+INFO 09-11 17:14:54 [cuda_graph.py:123] | 289             | 289           | 0            | NONE         | 1     |
+INFO 09-11 17:14:54 [cuda_graph.py:123] | 496             | 496           | 0            | NONE         | 1     |
+INFO 09-11 17:14:54 [cuda_graph.py:123] | 388             | 388           | 0            | NONE         | 1     |
+INFO 09-11 17:14:54 [cuda_graph.py:123] | 2862            | 2862          | 0            | NONE         | 1     |
+INFO 09-11 17:14:54 [cuda_graph.py:123] | 277             | 277           | 0            | NONE         | 1     |
+INFO 09-11 17:14:54 [cuda_graph.py:123] | 1036            | 1036          | 0            | NONE         | 1     |
+INFO 09-11 17:14:54 [cuda_graph.py:123] | 3900            | 3900          | 0            | NONE         | 1     |
+INFO 09-11 17:14:54 [cuda_graph.py:123] | 4297            | 4297          | 0            | NONE         | 1     |
+INFO 09-11 17:14:54 [cuda_graph.py:123] 
+{"stage": "main", "records": 70, "seconds": 96.76590187200054, "failures": 0}
+INFO 09-11 17:15:04 [loggers.py:310] Engine 000: Avg prompt throughput: 4403.9 tokens/s, Avg generation throughput: 445.3 tokens/s, Running: 3 reqs, Waiting: 0 reqs, GPU KV cache usage: 15.4%, Prefix cache hit rate: 91.7%
+INFO 09-11 17:15:04 [cuda_graph.py:123] **CUDAGraph Config Settings:**
+INFO 09-11 17:15:04 [cuda_graph.py:123] 
+INFO 09-11 17:15:04 [cuda_graph.py:123] - Mode: FULL_AND_PIECEWISE
+INFO 09-11 17:15:04 [cuda_graph.py:123] - Capture sizes: [1, 2, 4, 8, 16, 24, 32]
+INFO 09-11 17:15:04 [cuda_graph.py:123] 
+INFO 09-11 17:15:04 [cuda_graph.py:123] **CUDAGraph Stats:**
+INFO 09-11 17:15:04 [cuda_graph.py:123] 
+INFO 09-11 17:15:04 [cuda_graph.py:123] | Unpadded Tokens | Padded Tokens | Num Paddings | Runtime Mode | Count |
+INFO 09-11 17:15:04 [cuda_graph.py:123] |-----------------|---------------|--------------|--------------|-------|
+INFO 09-11 17:15:04 [cuda_graph.py:123] | 3               | 4             | 1            | FULL         | 225   |
+INFO 09-11 17:15:04 [cuda_graph.py:123] | 13              | 16            | 3            | FULL         | 123   |
+INFO 09-11 17:15:04 [cuda_graph.py:123] | 4               | 4             | 0            | FULL         | 84    |
+INFO 09-11 17:15:04 [cuda_graph.py:123] | 8               | 8             | 0            | FULL         | 49    |
+INFO 09-11 17:15:04 [cuda_graph.py:123] | 9               | 16            | 7            | FULL         | 34    |
+INFO 09-11 17:15:04 [cuda_graph.py:123] | 5               | 8             | 3            | FULL         | 29    |
+INFO 09-11 17:15:04 [cuda_graph.py:123] | 2               | 2             | 0            | FULL         | 23    |
+INFO 09-11 17:15:04 [cuda_graph.py:123] | 10              | 16            | 6            | FULL         | 15    |
+INFO 09-11 17:15:04 [cuda_graph.py:123] | 16              | 16            | 0            | FULL         | 12    |
+INFO 09-11 17:15:04 [cuda_graph.py:123] | 6               | 8             | 2            | FULL         | 12    |
+INFO 09-11 17:15:04 [cuda_graph.py:123] | 15              | 16            | 1            | FULL         | 11    |
+INFO 09-11 17:15:04 [cuda_graph.py:123] | 12              | 16            | 4            | FULL         | 9     |
+INFO 09-11 17:15:04 [cuda_graph.py:123] | 7               | 8             | 1            | FULL         | 8     |
+INFO 09-11 17:15:04 [cuda_graph.py:123] | 11              | 16            | 5            | FULL         | 3     |
+INFO 09-11 17:15:04 [cuda_graph.py:123] | 8192            | 8192          | 0            | NONE         | 3     |
+INFO 09-11 17:15:04 [cuda_graph.py:123] | 14              | 16            | 2            | FULL         | 2     |
+INFO 09-11 17:15:04 [cuda_graph.py:123] | 843             | 843           | 0            | NONE         | 1     |
+INFO 09-11 17:15:04 [cuda_graph.py:123] | 401             | 401           | 0            | NONE         | 1     |
+INFO 09-11 17:15:04 [cuda_graph.py:123] | 284             | 284           | 0            | NONE         | 1     |
+INFO 09-11 17:15:04 [cuda_graph.py:123] | 845             | 845           | 0            | NONE         | 1     |
+INFO 09-11 17:15:04 [cuda_graph.py:123] | 147             | 147           | 0            | NONE         | 1     |
+INFO 09-11 17:15:04 [cuda_graph.py:123] | 93              | 93            | 0            | NONE         | 1     |
+INFO 09-11 17:15:04 [cuda_graph.py:123] | 142             | 142           | 0            | NONE         | 1     |
+INFO 09-11 17:15:04 [cuda_graph.py:123] | 279             | 279           | 0            | NONE         | 1     |
+INFO 09-11 17:15:04 [cuda_graph.py:123] | 476             | 476           | 0            | NONE         | 1     |
+INFO 09-11 17:15:04 [cuda_graph.py:123] | 506             | 506           | 0            | NONE         | 1     |
+INFO 09-11 17:15:04 [cuda_graph.py:123] | 90              | 90            | 0            | NONE         | 1     |
+INFO 09-11 17:15:04 [cuda_graph.py:123] | 5691            | 5691          | 0            | NONE         | 1     |
+INFO 09-11 17:15:04 [cuda_graph.py:123] | 249             | 249           | 0            | NONE         | 1     |
+INFO 09-11 17:15:04 [cuda_graph.py:123] | 736             | 736           | 0            | NONE         | 1     |
+INFO 09-11 17:15:04 [cuda_graph.py:123] | 192             | 192           | 0            | NONE         | 1     |
+INFO 09-11 17:15:04 [cuda_graph.py:123] | 4989            | 4989          | 0            | NONE         | 1     |
+INFO 09-11 17:15:04 [cuda_graph.py:123] | 338             | 338           | 0            | NONE         | 1     |
+INFO 09-11 17:15:04 [cuda_graph.py:123] | 851             | 851           | 0            | NONE         | 1     |
+INFO 09-11 17:15:04 [cuda_graph.py:123] | 1104            | 1104          | 0            | NONE         | 1     |
+INFO 09-11 17:15:04 [cuda_graph.py:123] | 222             | 222           | 0            | NONE         | 1     |
+INFO 09-11 17:15:04 [cuda_graph.py:123] | 353             | 353           | 0            | NONE         | 1     |
+INFO 09-11 17:15:04 [cuda_graph.py:123] | 197             | 197           | 0            | NONE         | 1     |
+INFO 09-11 17:15:04 [cuda_graph.py:123] | 379             | 379           | 0            | NONE         | 1     |
+INFO 09-11 17:15:04 [cuda_graph.py:123] | 226             | 226           | 0            | NONE         | 1     |
+INFO 09-11 17:15:04 [cuda_graph.py:123] 
+{"stage": "main", "records": 75, "seconds": 106.90308943099808, "failures": 0}
+INFO 09-11 17:15:14 [loggers.py:310] Engine 000: Avg prompt throughput: 2091.3 tokens/s, Avg generation throughput: 379.6 tokens/s, Running: 2 reqs, Waiting: 0 reqs, GPU KV cache usage: 10.3%, Prefix cache hit rate: 91.8%
+INFO 09-11 17:15:14 [cuda_graph.py:123] **CUDAGraph Config Settings:**
+INFO 09-11 17:15:14 [cuda_graph.py:123] 
+INFO 09-11 17:15:14 [cuda_graph.py:123] - Mode: FULL_AND_PIECEWISE
+INFO 09-11 17:15:14 [cuda_graph.py:123] - Capture sizes: [1, 2, 4, 8, 16, 24, 32]
+INFO 09-11 17:15:14 [cuda_graph.py:123] 
+INFO 09-11 17:15:14 [cuda_graph.py:123] **CUDAGraph Stats:**
+INFO 09-11 17:15:14 [cuda_graph.py:123] 
+INFO 09-11 17:15:14 [cuda_graph.py:123] | Unpadded Tokens | Padded Tokens | Num Paddings | Runtime Mode | Count |
+INFO 09-11 17:15:14 [cuda_graph.py:123] |-----------------|---------------|--------------|--------------|-------|
+INFO 09-11 17:15:14 [cuda_graph.py:123] | 2               | 2             | 0            | FULL         | 320   |
+INFO 09-11 17:15:14 [cuda_graph.py:123] | 3               | 4             | 1            | FULL         | 233   |
+INFO 09-11 17:15:14 [cuda_graph.py:123] | 13              | 16            | 3            | FULL         | 100   |
+INFO 09-11 17:15:14 [cuda_graph.py:123] | 4               | 4             | 0            | FULL         | 61    |
+INFO 09-11 17:15:14 [cuda_graph.py:123] | 8               | 8             | 0            | FULL         | 49    |
+INFO 09-11 17:15:14 [cuda_graph.py:123] | 5               | 8             | 3            | FULL         | 37    |
+INFO 09-11 17:15:14 [cuda_graph.py:123] | 9               | 16            | 7            | FULL         | 17    |
+INFO 09-11 17:15:14 [cuda_graph.py:123] | 12              | 16            | 4            | FULL         | 6     |
+INFO 09-11 17:15:14 [cuda_graph.py:123] | 7               | 8             | 1            | FULL         | 4     |
+INFO 09-11 17:15:14 [cuda_graph.py:123] | 10              | 16            | 6            | FULL         | 2     |
+INFO 09-11 17:15:14 [cuda_graph.py:123] | 6               | 8             | 2            | FULL         | 2     |
+INFO 09-11 17:15:14 [cuda_graph.py:123] | 2164            | 2164          | 0            | NONE         | 1     |
+INFO 09-11 17:15:14 [cuda_graph.py:123] | 71              | 71            | 0            | NONE         | 1     |
+INFO 09-11 17:15:14 [cuda_graph.py:123] | 1369            | 1369          | 0            | NONE         | 1     |
+INFO 09-11 17:15:14 [cuda_graph.py:123] | 5402            | 5402          | 0            | NONE         | 1     |
+INFO 09-11 17:15:14 [cuda_graph.py:123] | 247             | 247           | 0            | NONE         | 1     |
+INFO 09-11 17:15:14 [cuda_graph.py:123] | 729             | 729           | 0            | NONE         | 1     |
+INFO 09-11 17:15:14 [cuda_graph.py:123] | 190             | 190           | 0            | NONE         | 1     |
+INFO 09-11 17:15:14 [cuda_graph.py:123] | 4972            | 4972          | 0            | NONE         | 1     |
+INFO 09-11 17:15:14 [cuda_graph.py:123] | 283             | 283           | 0            | NONE         | 1     |
+INFO 09-11 17:15:14 [cuda_graph.py:123] | 855             | 855           | 0            | NONE         | 1     |
+INFO 09-11 17:15:14 [cuda_graph.py:123] | 226             | 226           | 0            | NONE         | 1     |
+INFO 09-11 17:15:14 [cuda_graph.py:123] | 3204            | 3204          | 0            | NONE         | 1     |
+INFO 09-11 17:15:14 [cuda_graph.py:123] | 359             | 359           | 0            | NONE         | 1     |
+INFO 09-11 17:15:14 [cuda_graph.py:123] | 907             | 907           | 0            | NONE         | 1     |
+INFO 09-11 17:15:14 [cuda_graph.py:123] 
+{"stage": "main", "records": 80, "seconds": 120.75754131899157, "failures": 0}
+INFO 09-11 17:15:24 [loggers.py:310] Engine 000: Avg prompt throughput: 8948.8 tokens/s, Avg generation throughput: 196.5 tokens/s, Running: 4 reqs, Waiting: 0 reqs, GPU KV cache usage: 10.4%, Prefix cache hit rate: 91.2%
+INFO 09-11 17:15:24 [cuda_graph.py:123] **CUDAGraph Config Settings:**
+INFO 09-11 17:15:24 [cuda_graph.py:123] 
+INFO 09-11 17:15:24 [cuda_graph.py:123] - Mode: FULL_AND_PIECEWISE
+INFO 09-11 17:15:24 [cuda_graph.py:123] - Capture sizes: [1, 2, 4, 8, 16, 24, 32]
+INFO 09-11 17:15:24 [cuda_graph.py:123] 
+INFO 09-11 17:15:24 [cuda_graph.py:123] **CUDAGraph Stats:**
+INFO 09-11 17:15:24 [cuda_graph.py:123] 
+INFO 09-11 17:15:24 [cuda_graph.py:123] | Unpadded Tokens | Padded Tokens | Num Paddings | Runtime Mode | Count |
+INFO 09-11 17:15:24 [cuda_graph.py:123] |-----------------|---------------|--------------|--------------|-------|
+INFO 09-11 17:15:24 [cuda_graph.py:123] | 2               | 2             | 0            | FULL         | 212   |
+INFO 09-11 17:15:24 [cuda_graph.py:123] | 13              | 16            | 3            | FULL         | 36    |
+INFO 09-11 17:15:24 [cuda_graph.py:123] | 1               | 1             | 0            | FULL         | 27    |
+INFO 09-11 17:15:24 [cuda_graph.py:123] | 12              | 16            | 4            | FULL         | 26    |
+INFO 09-11 17:15:24 [cuda_graph.py:123] | 8               | 8             | 0            | FULL         | 26    |
+INFO 09-11 17:15:24 [cuda_graph.py:123] | 7               | 8             | 1            | FULL         | 19    |
+INFO 09-11 17:15:24 [cuda_graph.py:123] | 14              | 16            | 2            | FULL         | 12    |
+INFO 09-11 17:15:24 [cuda_graph.py:123] | 3               | 4             | 1            | FULL         | 10    |
+INFO 09-11 17:15:24 [cuda_graph.py:123] | 8192            | 8192          | 0            | NONE         | 7     |
+INFO 09-11 17:15:24 [cuda_graph.py:123] | 4               | 4             | 0            | FULL         | 4     |
+INFO 09-11 17:15:24 [cuda_graph.py:123] | 10              | 16            | 6            | FULL         | 3     |
+INFO 09-11 17:15:24 [cuda_graph.py:123] | 6               | 8             | 2            | FULL         | 3     |
+INFO 09-11 17:15:24 [cuda_graph.py:123] | 11              | 16            | 5            | FULL         | 2     |
+INFO 09-11 17:15:24 [cuda_graph.py:123] | 7347            | 7347          | 0            | NONE         | 1     |
+INFO 09-11 17:15:24 [cuda_graph.py:123] | 6439            | 6439          | 0            | NONE         | 1     |
+INFO 09-11 17:15:24 [cuda_graph.py:123] | 215             | 215           | 0            | NONE         | 1     |
+INFO 09-11 17:15:24 [cuda_graph.py:123] | 151             | 151           | 0            | NONE         | 1     |
+INFO 09-11 17:15:24 [cuda_graph.py:123] | 250             | 250           | 0            | NONE         | 1     |
+INFO 09-11 17:15:24 [cuda_graph.py:123] | 254             | 254           | 0            | NONE         | 1     |
+INFO 09-11 17:15:24 [cuda_graph.py:123] | 229             | 229           | 0            | NONE         | 1     |
+INFO 09-11 17:15:24 [cuda_graph.py:123] | 213             | 213           | 0            | NONE         | 1     |
+INFO 09-11 17:15:24 [cuda_graph.py:123] | 2268            | 2268          | 0            | NONE         | 1     |
+INFO 09-11 17:15:24 [cuda_graph.py:123] | 5924            | 5924          | 0            | NONE         | 1     |
+INFO 09-11 17:15:24 [cuda_graph.py:123] | 247             | 247           | 0            | NONE         | 1     |
+INFO 09-11 17:15:24 [cuda_graph.py:123] | 908             | 908           | 0            | NONE         | 1     |
+INFO 09-11 17:15:24 [cuda_graph.py:123] | 61              | 61            | 0            | NONE         | 1     |
+INFO 09-11 17:15:24 [cuda_graph.py:123] | 935             | 935           | 0            | NONE         | 1     |
+INFO 09-11 17:15:24 [cuda_graph.py:123] | 226             | 226           | 0            | NONE         | 1     |
+INFO 09-11 17:15:24 [cuda_graph.py:123] | 86              | 86            | 0            | NONE         | 1     |
+INFO 09-11 17:15:24 [cuda_graph.py:123] | 9               | 16            | 7            | FULL         | 1     |
+INFO 09-11 17:15:24 [cuda_graph.py:123] | 6509            | 6509          | 0            | NONE         | 1     |
+INFO 09-11 17:15:24 [cuda_graph.py:123] | 5               | 8             | 3            | FULL         | 1     |
+INFO 09-11 17:15:24 [cuda_graph.py:123] 
+{"stage": "main", "records": 85, "seconds": 130.5988449689903, "failures": 0}
+INFO 09-11 17:15:34 [loggers.py:310] Engine 000: Avg prompt throughput: 9486.9 tokens/s, Avg generation throughput: 387.6 tokens/s, Running: 7 reqs, Waiting: 0 reqs, GPU KV cache usage: 11.4%, Prefix cache hit rate: 91.1%
+INFO 09-11 17:15:34 [cuda_graph.py:123] **CUDAGraph Config Settings:**
+INFO 09-11 17:15:34 [cuda_graph.py:123] 
+INFO 09-11 17:15:34 [cuda_graph.py:123] - Mode: FULL_AND_PIECEWISE
+INFO 09-11 17:15:34 [cuda_graph.py:123] - Capture sizes: [1, 2, 4, 8, 16, 24, 32]
+INFO 09-11 17:15:34 [cuda_graph.py:123] 
+INFO 09-11 17:15:34 [cuda_graph.py:123] **CUDAGraph Stats:**
+INFO 09-11 17:15:34 [cuda_graph.py:123] 
+INFO 09-11 17:15:34 [cuda_graph.py:123] | Unpadded Tokens | Padded Tokens | Num Paddings | Runtime Mode | Count |
+INFO 09-11 17:15:34 [cuda_graph.py:123] |-----------------|---------------|--------------|--------------|-------|
+INFO 09-11 17:15:34 [cuda_graph.py:123] | 13              | 16            | 3            | FULL         | 96    |
+INFO 09-11 17:15:34 [cuda_graph.py:123] | 8               | 8             | 0            | FULL         | 81    |
+INFO 09-11 17:15:34 [cuda_graph.py:123] | 14              | 16            | 2            | FULL         | 60    |
+INFO 09-11 17:15:34 [cuda_graph.py:123] | 3               | 4             | 1            | FULL         | 53    |
+INFO 09-11 17:15:34 [cuda_graph.py:123] | 4               | 4             | 0            | FULL         | 23    |
+INFO 09-11 17:15:34 [cuda_graph.py:123] | 5               | 8             | 3            | FULL         | 15    |
+INFO 09-11 17:15:34 [cuda_graph.py:123] | 12              | 16            | 4            | FULL         | 12    |
+INFO 09-11 17:15:34 [cuda_graph.py:123] | 7               | 8             | 1            | FULL         | 10    |
+INFO 09-11 17:15:34 [cuda_graph.py:123] | 15              | 16            | 1            | FULL         | 10    |
+INFO 09-11 17:15:34 [cuda_graph.py:123] | 1               | 1             | 0            | FULL         | 8     |
+INFO 09-11 17:15:34 [cuda_graph.py:123] | 6               | 8             | 2            | FULL         | 8     |
+INFO 09-11 17:15:34 [cuda_graph.py:123] | 8192            | 8192          | 0            | NONE         | 7     |
+INFO 09-11 17:15:34 [cuda_graph.py:123] | 9               | 16            | 7            | FULL         | 6     |
+INFO 09-11 17:15:34 [cuda_graph.py:123] | 2               | 2             | 0            | FULL         | 5     |
+INFO 09-11 17:15:34 [cuda_graph.py:123] | 11              | 16            | 5            | FULL         | 5     |
+INFO 09-11 17:15:34 [cuda_graph.py:123] | 10              | 16            | 6            | FULL         | 5     |
+INFO 09-11 17:15:34 [cuda_graph.py:123] | 211             | 211           | 0            | NONE         | 2     |
+INFO 09-11 17:15:34 [cuda_graph.py:123] | 4124            | 4124          | 0            | NONE         | 1     |
+INFO 09-11 17:15:34 [cuda_graph.py:123] | 215             | 215           | 0            | NONE         | 1     |
+INFO 09-11 17:15:34 [cuda_graph.py:123] | 149             | 149           | 0            | NONE         | 1     |
+INFO 09-11 17:15:34 [cuda_graph.py:123] | 248             | 248           | 0            | NONE         | 1     |
+INFO 09-11 17:15:34 [cuda_graph.py:123] | 252             | 252           | 0            | NONE         | 1     |
+INFO 09-11 17:15:34 [cuda_graph.py:123] | 227             | 227           | 0            | NONE         | 1     |
+INFO 09-11 17:15:34 [cuda_graph.py:123] | 3730            | 3730          | 0            | NONE         | 1     |
+INFO 09-11 17:15:34 [cuda_graph.py:123] | 4038            | 4038          | 0            | NONE         | 1     |
+INFO 09-11 17:15:34 [cuda_graph.py:123] | 3810            | 3810          | 0            | NONE         | 1     |
+INFO 09-11 17:15:34 [cuda_graph.py:123] | 141             | 141           | 0            | NONE         | 1     |
+INFO 09-11 17:15:34 [cuda_graph.py:123] | 350             | 350           | 0            | NONE         | 1     |
+INFO 09-11 17:15:34 [cuda_graph.py:123] | 262             | 262           | 0            | NONE         | 1     |
+INFO 09-11 17:15:34 [cuda_graph.py:123] | 216             | 216           | 0            | NONE         | 1     |
+INFO 09-11 17:15:34 [cuda_graph.py:123] | 6557            | 6557          | 0            | NONE         | 1     |
+INFO 09-11 17:15:34 [cuda_graph.py:123] | 212             | 212           | 0            | NONE         | 1     |
+INFO 09-11 17:15:34 [cuda_graph.py:123] | 321             | 321           | 0            | NONE         | 1     |
+INFO 09-11 17:15:34 [cuda_graph.py:123] | 303             | 303           | 0            | NONE         | 1     |
+INFO 09-11 17:15:34 [cuda_graph.py:123] | 345             | 345           | 0            | NONE         | 1     |
+INFO 09-11 17:15:34 [cuda_graph.py:123] | 82              | 82            | 0            | NONE         | 1     |
+INFO 09-11 17:15:34 [cuda_graph.py:123] | 7395            | 7395          | 0            | NONE         | 1     |
+INFO 09-11 17:15:34 [cuda_graph.py:123] | 2425            | 2425          | 0            | NONE         | 1     |
+INFO 09-11 17:15:34 [cuda_graph.py:123] | 603             | 603           | 0            | NONE         | 1     |
+INFO 09-11 17:15:34 [cuda_graph.py:123] | 302             | 302           | 0            | NONE         | 1     |
+INFO 09-11 17:15:34 [cuda_graph.py:123] | 489             | 489           | 0            | NONE         | 1     |
+INFO 09-11 17:15:34 [cuda_graph.py:123] | 519             | 519           | 0            | NONE         | 1     |
+INFO 09-11 17:15:34 [cuda_graph.py:123] | 70              | 70            | 0            | NONE         | 1     |
+INFO 09-11 17:15:34 [cuda_graph.py:123] 
+{"stage": "main", "records": 90, "seconds": 137.48597217998758, "failures": 0}
+{"stage": "main", "records": 95, "seconds": 144.33699926499685, "failures": 0}
+INFO 09-11 17:15:44 [loggers.py:310] Engine 000: Avg prompt throughput: 9437.6 tokens/s, Avg generation throughput: 369.0 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 17.2%, Prefix cache hit rate: 91.1%
+INFO 09-11 17:15:44 [cuda_graph.py:123] **CUDAGraph Config Settings:**
+INFO 09-11 17:15:44 [cuda_graph.py:123] 
+INFO 09-11 17:15:44 [cuda_graph.py:123] - Mode: FULL_AND_PIECEWISE
+INFO 09-11 17:15:44 [cuda_graph.py:123] - Capture sizes: [1, 2, 4, 8, 16, 24, 32]
+INFO 09-11 17:15:44 [cuda_graph.py:123] 
+INFO 09-11 17:15:44 [cuda_graph.py:123] **CUDAGraph Stats:**
+INFO 09-11 17:15:44 [cuda_graph.py:123] 
+INFO 09-11 17:15:44 [cuda_graph.py:123] | Unpadded Tokens | Padded Tokens | Num Paddings | Runtime Mode | Count |
+INFO 09-11 17:15:44 [cuda_graph.py:123] |-----------------|---------------|--------------|--------------|-------|
+INFO 09-11 17:15:44 [cuda_graph.py:123] | 13              | 16            | 3            | FULL         | 110   |
+INFO 09-11 17:15:44 [cuda_graph.py:123] | 3               | 4             | 1            | FULL         | 56    |
+INFO 09-11 17:15:44 [cuda_graph.py:123] | 8               | 8             | 0            | FULL         | 48    |
+INFO 09-11 17:15:44 [cuda_graph.py:123] | 4               | 4             | 0            | FULL         | 46    |
+INFO 09-11 17:15:44 [cuda_graph.py:123] | 7               | 8             | 1            | FULL         | 38    |
+INFO 09-11 17:15:44 [cuda_graph.py:123] | 14              | 16            | 2            | FULL         | 26    |
+INFO 09-11 17:15:44 [cuda_graph.py:123] | 5               | 8             | 3            | FULL         | 19    |
+INFO 09-11 17:15:44 [cuda_graph.py:123] | 12              | 16            | 4            | FULL         | 13    |
+INFO 09-11 17:15:44 [cuda_graph.py:123] | 9               | 16            | 7            | FULL         | 12    |
+INFO 09-11 17:15:44 [cuda_graph.py:123] | 16              | 16            | 0            | FULL         | 8     |
+INFO 09-11 17:15:44 [cuda_graph.py:123] | 8192            | 8192          | 0            | NONE         | 7     |
+INFO 09-11 17:15:44 [cuda_graph.py:123] | 6               | 8             | 2            | FULL         | 6     |
+INFO 09-11 17:15:44 [cuda_graph.py:123] | 2               | 2             | 0            | FULL         | 6     |
+INFO 09-11 17:15:44 [cuda_graph.py:123] | 10              | 16            | 6            | FULL         | 5     |
+INFO 09-11 17:15:44 [cuda_graph.py:123] | 11              | 16            | 5            | FULL         | 4     |
+INFO 09-11 17:15:44 [cuda_graph.py:123] | 1               | 1             | 0            | FULL         | 3     |
+INFO 09-11 17:15:44 [cuda_graph.py:123] | 3655            | 3655          | 0            | NONE         | 1     |
+INFO 09-11 17:15:44 [cuda_graph.py:123] | 6349            | 6349          | 0            | NONE         | 1     |
+INFO 09-11 17:15:44 [cuda_graph.py:123] | 556             | 556           | 0            | NONE         | 1     |
+INFO 09-11 17:15:44 [cuda_graph.py:123] | 613             | 613           | 0            | NONE         | 1     |
+INFO 09-11 17:15:44 [cuda_graph.py:123] | 291             | 291           | 0            | NONE         | 1     |
+INFO 09-11 17:15:44 [cuda_graph.py:123] | 777             | 777           | 0            | NONE         | 1     |
+INFO 09-11 17:15:44 [cuda_graph.py:123] | 245             | 245           | 0            | NONE         | 1     |
+INFO 09-11 17:15:44 [cuda_graph.py:123] | 96              | 96            | 0            | NONE         | 1     |
+INFO 09-11 17:15:44 [cuda_graph.py:123] | 6491            | 6491          | 0            | NONE         | 1     |
+INFO 09-11 17:15:44 [cuda_graph.py:123] | 3057            | 3057          | 0            | NONE         | 1     |
+INFO 09-11 17:15:44 [cuda_graph.py:123] | 621             | 621           | 0            | NONE         | 1     |
+INFO 09-11 17:15:44 [cuda_graph.py:123] | 394             | 394           | 0            | NONE         | 1     |
+INFO 09-11 17:15:44 [cuda_graph.py:123] | 231             | 231           | 0            | NONE         | 1     |
+INFO 09-11 17:15:44 [cuda_graph.py:123] | 88              | 88            | 0            | NONE         | 1     |
+INFO 09-11 17:15:44 [cuda_graph.py:123] | 406             | 406           | 0            | NONE         | 1     |
+INFO 09-11 17:15:44 [cuda_graph.py:123] | 796             | 796           | 0            | NONE         | 1     |
+INFO 09-11 17:15:44 [cuda_graph.py:123] | 156             | 156           | 0            | NONE         | 1     |
+INFO 09-11 17:15:44 [cuda_graph.py:123] | 99              | 99            | 0            | NONE         | 1     |
+INFO 09-11 17:15:44 [cuda_graph.py:123] | 114             | 114           | 0            | NONE         | 1     |
+INFO 09-11 17:15:44 [cuda_graph.py:123] | 267             | 267           | 0            | NONE         | 1     |
+INFO 09-11 17:15:44 [cuda_graph.py:123] | 452             | 452           | 0            | NONE         | 1     |
+INFO 09-11 17:15:44 [cuda_graph.py:123] | 554             | 554           | 0            | NONE         | 1     |
+INFO 09-11 17:15:44 [cuda_graph.py:123] | 1203            | 1203          | 0            | NONE         | 1     |
+INFO 09-11 17:15:44 [cuda_graph.py:123] | 1318            | 1318          | 0            | NONE         | 1     |
+INFO 09-11 17:15:44 [cuda_graph.py:123] | 1116            | 1116          | 0            | NONE         | 1     |
+INFO 09-11 17:15:44 [cuda_graph.py:123] | 263             | 263           | 0            | NONE         | 1     |
+INFO 09-11 17:15:44 [cuda_graph.py:123] | 569             | 569           | 0            | NONE         | 1     |
+INFO 09-11 17:15:44 [cuda_graph.py:123] | 6626            | 6626          | 0            | NONE         | 1     |
+INFO 09-11 17:15:44 [cuda_graph.py:123] 
+{"stage": "main", "records": 100, "seconds": 152.2591311439901, "failures": 0}
+INFO 09-11 17:15:54 [loggers.py:310] Engine 000: Avg prompt throughput: 9560.0 tokens/s, Avg generation throughput: 269.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 22.2%, Prefix cache hit rate: 90.8%
+INFO 09-11 17:15:54 [cuda_graph.py:123] **CUDAGraph Config Settings:**
+INFO 09-11 17:15:54 [cuda_graph.py:123] 
+INFO 09-11 17:15:54 [cuda_graph.py:123] - Mode: FULL_AND_PIECEWISE
+INFO 09-11 17:15:54 [cuda_graph.py:123] - Capture sizes: [1, 2, 4, 8, 16, 24, 32]
+INFO 09-11 17:15:54 [cuda_graph.py:123] 
+INFO 09-11 17:15:54 [cuda_graph.py:123] **CUDAGraph Stats:**
+INFO 09-11 17:15:54 [cuda_graph.py:123] 
+INFO 09-11 17:15:54 [cuda_graph.py:123] | Unpadded Tokens | Padded Tokens | Num Paddings | Runtime Mode | Count |
+INFO 09-11 17:15:54 [cuda_graph.py:123] |-----------------|---------------|--------------|--------------|-------|
+INFO 09-11 17:15:54 [cuda_graph.py:123] | 12              | 16            | 4            | FULL         | 65    |
+INFO 09-11 17:15:54 [cuda_graph.py:123] | 2               | 2             | 0            | FULL         | 42    |
+INFO 09-11 17:15:54 [cuda_graph.py:123] | 1               | 1             | 0            | FULL         | 40    |
+INFO 09-11 17:15:54 [cuda_graph.py:123] | 7               | 8             | 1            | FULL         | 34    |
+INFO 09-11 17:15:54 [cuda_graph.py:123] | 3               | 4             | 1            | FULL         | 34    |
+INFO 09-11 17:15:54 [cuda_graph.py:123] | 8               | 8             | 0            | FULL         | 23    |
+INFO 09-11 17:15:54 [cuda_graph.py:123] | 15              | 16            | 1            | FULL         | 22    |
+INFO 09-11 17:15:54 [cuda_graph.py:123] | 14              | 16            | 2            | FULL         | 17    |
+INFO 09-11 17:15:54 [cuda_graph.py:123] | 9               | 16            | 7            | FULL         | 15    |
+INFO 09-11 17:15:54 [cuda_graph.py:123] | 4               | 4             | 0            | FULL         | 13    |
+INFO 09-11 17:15:54 [cuda_graph.py:123] | 13              | 16            | 3            | FULL         | 11    |
+INFO 09-11 17:15:54 [cuda_graph.py:123] | 6               | 8             | 2            | FULL         | 8     |
+INFO 09-11 17:15:54 [cuda_graph.py:123] | 10              | 16            | 6            | FULL         | 7     |
+INFO 09-11 17:15:54 [cuda_graph.py:123] | 8192            | 8192          | 0            | NONE         | 7     |
+INFO 09-11 17:15:54 [cuda_graph.py:123] | 11              | 16            | 5            | FULL         | 6     |
+INFO 09-11 17:15:54 [cuda_graph.py:123] | 5               | 8             | 3            | FULL         | 4     |
+INFO 09-11 17:15:54 [cuda_graph.py:123] | 16              | 16            | 0            | FULL         | 3     |
+INFO 09-11 17:15:54 [cuda_graph.py:123] | 364             | 364           | 0            | NONE         | 1     |
+INFO 09-11 17:15:54 [cuda_graph.py:123] | 716             | 716           | 0            | NONE         | 1     |
+INFO 09-11 17:15:54 [cuda_graph.py:123] | 214             | 214           | 0            | NONE         | 1     |
+INFO 09-11 17:15:54 [cuda_graph.py:123] | 78              | 78            | 0            | NONE         | 1     |
+INFO 09-11 17:15:54 [cuda_graph.py:123] | 4192            | 4192          | 0            | NONE         | 1     |
+INFO 09-11 17:15:54 [cuda_graph.py:123] | 209             | 209           | 0            | NONE         | 1     |
+INFO 09-11 17:15:54 [cuda_graph.py:123] | 138             | 138           | 0            | NONE         | 1     |
+INFO 09-11 17:15:54 [cuda_graph.py:123] | 237             | 237           | 0            | NONE         | 1     |
+INFO 09-11 17:15:54 [cuda_graph.py:123] | 367             | 367           | 0            | NONE         | 1     |
+INFO 09-11 17:15:54 [cuda_graph.py:123] | 213             | 213           | 0            | NONE         | 1     |
+INFO 09-11 17:15:54 [cuda_graph.py:123] | 79              | 79            | 0            | NONE         | 1     |
+INFO 09-11 17:15:54 [cuda_graph.py:123] | 3765            | 3765          | 0            | NONE         | 1     |
+INFO 09-11 17:15:54 [cuda_graph.py:123] | 1003            | 1003          | 0            | NONE         | 1     |
+INFO 09-11 17:15:54 [cuda_graph.py:123] | 962             | 962           | 0            | NONE         | 1     |
+INFO 09-11 17:15:54 [cuda_graph.py:123] | 299             | 299           | 0            | NONE         | 1     |
+INFO 09-11 17:15:54 [cuda_graph.py:123] | 805             | 805           | 0            | NONE         | 1     |
+INFO 09-11 17:15:54 [cuda_graph.py:123] | 1323            | 1323          | 0            | NONE         | 1     |
+INFO 09-11 17:15:54 [cuda_graph.py:123] 
+{"stage": "main", "records": 105, "seconds": 161.02639390599506, "failures": 0}
+INFO 09-11 17:16:04 [loggers.py:310] Engine 000: Avg prompt throughput: 7841.6 tokens/s, Avg generation throughput: 425.9 tokens/s, Running: 9 reqs, Waiting: 0 reqs, GPU KV cache usage: 27.9%, Prefix cache hit rate: 91.0%
+INFO 09-11 17:16:04 [cuda_graph.py:123] **CUDAGraph Config Settings:**
+INFO 09-11 17:16:04 [cuda_graph.py:123] 
+INFO 09-11 17:16:04 [cuda_graph.py:123] - Mode: FULL_AND_PIECEWISE
+INFO 09-11 17:16:04 [cuda_graph.py:123] - Capture sizes: [1, 2, 4, 8, 16, 24, 32]
+INFO 09-11 17:16:04 [cuda_graph.py:123] 
+INFO 09-11 17:16:04 [cuda_graph.py:123] **CUDAGraph Stats:**
+INFO 09-11 17:16:04 [cuda_graph.py:123] 
+INFO 09-11 17:16:04 [cuda_graph.py:123] | Unpadded Tokens | Padded Tokens | Num Paddings | Runtime Mode | Count |
+INFO 09-11 17:16:04 [cuda_graph.py:123] |-----------------|---------------|--------------|--------------|-------|
+INFO 09-11 17:16:04 [cuda_graph.py:123] | 13              | 16            | 3            | FULL         | 103   |
+INFO 09-11 17:16:04 [cuda_graph.py:123] | 8               | 8             | 0            | FULL         | 54    |
+INFO 09-11 17:16:04 [cuda_graph.py:123] | 4               | 4             | 0            | FULL         | 40    |
+INFO 09-11 17:16:04 [cuda_graph.py:123] | 7               | 8             | 1            | FULL         | 37    |
+INFO 09-11 17:16:04 [cuda_graph.py:123] | 3               | 4             | 1            | FULL         | 34    |
+INFO 09-11 17:16:04 [cuda_graph.py:123] | 12              | 16            | 4            | FULL         | 32    |
+INFO 09-11 17:16:04 [cuda_graph.py:123] | 14              | 16            | 2            | FULL         | 30    |
+INFO 09-11 17:16:04 [cuda_graph.py:123] | 2               | 2             | 0            | FULL         | 25    |
+INFO 09-11 17:16:04 [cuda_graph.py:123] | 15              | 16            | 1            | FULL         | 22    |
+INFO 09-11 17:16:04 [cuda_graph.py:123] | 5               | 8             | 3            | FULL         | 16    |
+INFO 09-11 17:16:04 [cuda_graph.py:123] | 9               | 16            | 7            | FULL         | 12    |
+INFO 09-11 17:16:04 [cuda_graph.py:123] | 6               | 8             | 2            | FULL         | 9     |
+INFO 09-11 17:16:04 [cuda_graph.py:123] | 16              | 16            | 0            | FULL         | 8     |
+INFO 09-11 17:16:04 [cuda_graph.py:123] | 10              | 16            | 6            | FULL         | 8     |
+INFO 09-11 17:16:04 [cuda_graph.py:123] | 11              | 16            | 5            | FULL         | 7     |
+INFO 09-11 17:16:04 [cuda_graph.py:123] | 8192            | 8192          | 0            | NONE         | 6     |
+INFO 09-11 17:16:04 [cuda_graph.py:123] | 1               | 1             | 0            | FULL         | 2     |
+INFO 09-11 17:16:04 [cuda_graph.py:123] | 258             | 258           | 0            | NONE         | 2     |
+INFO 09-11 17:16:04 [cuda_graph.py:123] | 227             | 227           | 0            | NONE         | 1     |
+INFO 09-11 17:16:04 [cuda_graph.py:123] | 173             | 173           | 0            | NONE         | 1     |
+INFO 09-11 17:16:04 [cuda_graph.py:123] | 272             | 272           | 0            | NONE         | 1     |
+INFO 09-11 17:16:04 [cuda_graph.py:123] | 276             | 276           | 0            | NONE         | 1     |
+INFO 09-11 17:16:04 [cuda_graph.py:123] | 153             | 153           | 0            | NONE         | 1     |
+INFO 09-11 17:16:04 [cuda_graph.py:123] | 248             | 248           | 0            | NONE         | 1     |
+INFO 09-11 17:16:04 [cuda_graph.py:123] | 97              | 97            | 0            | NONE         | 1     |
+INFO 09-11 17:16:04 [cuda_graph.py:123] | 5513            | 5513          | 0            | NONE         | 1     |
+INFO 09-11 17:16:04 [cuda_graph.py:123] | 2366            | 2366          | 0            | NONE         | 1     |
+INFO 09-11 17:16:04 [cuda_graph.py:123] | 544             | 544           | 0            | NONE         | 1     |
+INFO 09-11 17:16:04 [cuda_graph.py:123] | 263             | 263           | 0            | NONE         | 1     |
+INFO 09-11 17:16:04 [cuda_graph.py:123] | 569             | 569           | 0            | NONE         | 1     |
+INFO 09-11 17:16:04 [cuda_graph.py:123] | 140             | 140           | 0            | NONE         | 1     |
+INFO 09-11 17:16:04 [cuda_graph.py:123] | 201             | 201           | 0            | NONE         | 1     |
+INFO 09-11 17:16:04 [cuda_graph.py:123] | 320             | 320           | 0            | NONE         | 1     |
+INFO 09-11 17:16:04 [cuda_graph.py:123] | 334             | 334           | 0            | NONE         | 1     |
+INFO 09-11 17:16:04 [cuda_graph.py:123] | 344             | 344           | 0            | NONE         | 1     |
+INFO 09-11 17:16:04 [cuda_graph.py:123] | 71              | 71            | 0            | NONE         | 1     |
+INFO 09-11 17:16:04 [cuda_graph.py:123] | 7317            | 7317          | 0            | NONE         | 1     |
+INFO 09-11 17:16:04 [cuda_graph.py:123] | 291             | 291           | 0            | NONE         | 1     |
+INFO 09-11 17:16:04 [cuda_graph.py:123] | 784             | 784           | 0            | NONE         | 1     |
+INFO 09-11 17:16:04 [cuda_graph.py:123] | 6311            | 6311          | 0            | NONE         | 1     |
+INFO 09-11 17:16:04 [cuda_graph.py:123] | 684             | 684           | 0            | NONE         | 1     |
+INFO 09-11 17:16:04 [cuda_graph.py:123] | 281             | 281           | 0            | NONE         | 1     |
+INFO 09-11 17:16:04 [cuda_graph.py:123] | 46              | 46            | 0            | NONE         | 1     |
+INFO 09-11 17:16:04 [cuda_graph.py:123] | 230             | 230           | 0            | NONE         | 1     |
+INFO 09-11 17:16:04 [cuda_graph.py:123] | 180             | 180           | 0            | NONE         | 1     |
+INFO 09-11 17:16:04 [cuda_graph.py:123] | 279             | 279           | 0            | NONE         | 1     |
+INFO 09-11 17:16:04 [cuda_graph.py:123] | 283             | 283           | 0            | NONE         | 1     |
+INFO 09-11 17:16:04 [cuda_graph.py:123] | 242             | 242           | 0            | NONE         | 1     |
+INFO 09-11 17:16:04 [cuda_graph.py:123] 
+{"stage": "main", "records": 110, "seconds": 168.47763502100133, "failures": 0}
+{"stage": "main", "records": 115, "seconds": 172.5336299999908, "failures": 0}
+INFO 09-11 17:16:14 [loggers.py:310] Engine 000: Avg prompt throughput: 7309.5 tokens/s, Avg generation throughput: 447.7 tokens/s, Running: 15 reqs, Waiting: 0 reqs, GPU KV cache usage: 39.1%, Prefix cache hit rate: 90.3%
+INFO 09-11 17:16:14 [cuda_graph.py:123] **CUDAGraph Config Settings:**
+INFO 09-11 17:16:14 [cuda_graph.py:123] 
+INFO 09-11 17:16:14 [cuda_graph.py:123] - Mode: FULL_AND_PIECEWISE
+INFO 09-11 17:16:14 [cuda_graph.py:123] - Capture sizes: [1, 2, 4, 8, 16, 24, 32]
+INFO 09-11 17:16:14 [cuda_graph.py:123] 
+INFO 09-11 17:16:14 [cuda_graph.py:123] **CUDAGraph Stats:**
+INFO 09-11 17:16:14 [cuda_graph.py:123] 
+INFO 09-11 17:16:14 [cuda_graph.py:123] | Unpadded Tokens | Padded Tokens | Num Paddings | Runtime Mode | Count |
+INFO 09-11 17:16:14 [cuda_graph.py:123] |-----------------|---------------|--------------|--------------|-------|
+INFO 09-11 17:16:14 [cuda_graph.py:123] | 13              | 16            | 3            | FULL         | 109   |
+INFO 09-11 17:16:14 [cuda_graph.py:123] | 8               | 8             | 0            | FULL         | 74    |
+INFO 09-11 17:16:14 [cuda_graph.py:123] | 7               | 8             | 1            | FULL         | 61    |
+INFO 09-11 17:16:14 [cuda_graph.py:123] | 14              | 16            | 2            | FULL         | 53    |
+INFO 09-11 17:16:14 [cuda_graph.py:123] | 12              | 16            | 4            | FULL         | 37    |
+INFO 09-11 17:16:14 [cuda_graph.py:123] | 3               | 4             | 1            | FULL         | 29    |
+INFO 09-11 17:16:14 [cuda_graph.py:123] | 4               | 4             | 0            | FULL         | 28    |
+INFO 09-11 17:16:14 [cuda_graph.py:123] | 5               | 8             | 3            | FULL         | 18    |
+INFO 09-11 17:16:14 [cuda_graph.py:123] | 9               | 16            | 7            | FULL         | 12    |
+INFO 09-11 17:16:14 [cuda_graph.py:123] | 15              | 16            | 1            | FULL         | 9     |
+INFO 09-11 17:16:14 [cuda_graph.py:123] | 6               | 8             | 2            | FULL         | 8     |
+INFO 09-11 17:16:14 [cuda_graph.py:123] | 8192            | 8192          | 0            | NONE         | 5     |
+INFO 09-11 17:16:14 [cuda_graph.py:123] | 11              | 16            | 5            | FULL         | 4     |
+INFO 09-11 17:16:14 [cuda_graph.py:123] | 10              | 16            | 6            | FULL         | 3     |
+INFO 09-11 17:16:14 [cuda_graph.py:123] | 1               | 1             | 0            | FULL         | 2     |
+INFO 09-11 17:16:14 [cuda_graph.py:123] | 2               | 2             | 0            | FULL         | 2     |
+INFO 09-11 17:16:14 [cuda_graph.py:123] | 6862            | 6862          | 0            | NONE         | 1     |
+INFO 09-11 17:16:14 [cuda_graph.py:123] | 8184            | 8184          | 0            | NONE         | 1     |
+INFO 09-11 17:16:14 [cuda_graph.py:123] | 611             | 611           | 0            | NONE         | 1     |
+INFO 09-11 17:16:14 [cuda_graph.py:123] | 679             | 679           | 0            | NONE         | 1     |
+INFO 09-11 17:16:14 [cuda_graph.py:123] | 247             | 247           | 0            | NONE         | 1     |
+INFO 09-11 17:16:14 [cuda_graph.py:123] | 560             | 560           | 0            | NONE         | 1     |
+INFO 09-11 17:16:14 [cuda_graph.py:123] | 3364            | 3364          | 0            | NONE         | 1     |
+INFO 09-11 17:16:14 [cuda_graph.py:123] | 250             | 250           | 0            | NONE         | 1     |
+INFO 09-11 17:16:14 [cuda_graph.py:123] | 312             | 312           | 0            | NONE         | 1     |
+INFO 09-11 17:16:14 [cuda_graph.py:123] | 433             | 433           | 0            | NONE         | 1     |
+INFO 09-11 17:16:14 [cuda_graph.py:123] | 193             | 193           | 0            | NONE         | 1     |
+INFO 09-11 17:16:14 [cuda_graph.py:123] | 3737            | 3737          | 0            | NONE         | 1     |
+INFO 09-11 17:16:14 [cuda_graph.py:123] | 408             | 408           | 0            | NONE         | 1     |
+INFO 09-11 17:16:14 [cuda_graph.py:123] | 1035            | 1035          | 0            | NONE         | 1     |
+INFO 09-11 17:16:14 [cuda_graph.py:123] | 3575            | 3575          | 0            | NONE         | 1     |
+INFO 09-11 17:16:14 [cuda_graph.py:123] | 5147            | 5147          | 0            | NONE         | 1     |
+INFO 09-11 17:16:14 [cuda_graph.py:123] | 1049            | 1049          | 0            | NONE         | 1     |
+INFO 09-11 17:16:14 [cuda_graph.py:123] | 323             | 323           | 0            | NONE         | 1     |
+INFO 09-11 17:16:14 [cuda_graph.py:123] | 6522            | 6522          | 0            | NONE         | 1     |
+INFO 09-11 17:16:14 [cuda_graph.py:123] | 918             | 918           | 0            | NONE         | 1     |
+INFO 09-11 17:16:14 [cuda_graph.py:123] | 266             | 266           | 0            | NONE         | 1     |
+INFO 09-11 17:16:14 [cuda_graph.py:123] | 793             | 793           | 0            | NONE         | 1     |
+INFO 09-11 17:16:14 [cuda_graph.py:123] | 4422            | 4422          | 0            | NONE         | 1     |
+INFO 09-11 17:16:14 [cuda_graph.py:123] | 5006            | 5006          | 0            | NONE         | 1     |
+INFO 09-11 17:16:14 [cuda_graph.py:123] | 285             | 285           | 0            | NONE         | 1     |
+INFO 09-11 17:16:14 [cuda_graph.py:123] | 1071            | 1071          | 0            | NONE         | 1     |
+INFO 09-11 17:16:14 [cuda_graph.py:123] | 69              | 69            | 0            | NONE         | 1     |
+INFO 09-11 17:16:14 [cuda_graph.py:123] | 1087            | 1087          | 0            | NONE         | 1     |
+INFO 09-11 17:16:14 [cuda_graph.py:123] 
+{"stage": "main", "records": 120, "seconds": 178.48807193199173, "failures": 0}
+INFO 09-11 17:16:24 [loggers.py:310] Engine 000: Avg prompt throughput: 10000.7 tokens/s, Avg generation throughput: 278.5 tokens/s, Running: 2 reqs, Waiting: 0 reqs, GPU KV cache usage: 21.1%, Prefix cache hit rate: 90.7%
+INFO 09-11 17:16:24 [cuda_graph.py:123] **CUDAGraph Config Settings:**
+INFO 09-11 17:16:24 [cuda_graph.py:123] 
+INFO 09-11 17:16:24 [cuda_graph.py:123] - Mode: FULL_AND_PIECEWISE
+INFO 09-11 17:16:24 [cuda_graph.py:123] - Capture sizes: [1, 2, 4, 8, 16, 24, 32]
+INFO 09-11 17:16:24 [cuda_graph.py:123] 
+INFO 09-11 17:16:24 [cuda_graph.py:123] **CUDAGraph Stats:**
+INFO 09-11 17:16:24 [cuda_graph.py:123] 
+INFO 09-11 17:16:24 [cuda_graph.py:123] | Unpadded Tokens | Padded Tokens | Num Paddings | Runtime Mode | Count |
+INFO 09-11 17:16:24 [cuda_graph.py:123] |-----------------|---------------|--------------|--------------|-------|
+INFO 09-11 17:16:24 [cuda_graph.py:123] | 1               | 1             | 0            | FULL         | 154   |
+INFO 09-11 17:16:24 [cuda_graph.py:123] | 12              | 16            | 4            | FULL         | 62    |
+INFO 09-11 17:16:24 [cuda_graph.py:123] | 2               | 2             | 0            | FULL         | 47    |
+INFO 09-11 17:16:24 [cuda_graph.py:123] | 7               | 8             | 1            | FULL         | 38    |
+INFO 09-11 17:16:24 [cuda_graph.py:123] | 3               | 4             | 1            | FULL         | 37    |
+INFO 09-11 17:16:24 [cuda_graph.py:123] | 13              | 16            | 3            | FULL         | 36    |
+INFO 09-11 17:16:24 [cuda_graph.py:123] | 8               | 8             | 0            | FULL         | 20    |
+INFO 09-11 17:16:24 [cuda_graph.py:123] | 4               | 4             | 0            | FULL         | 17    |
+INFO 09-11 17:16:24 [cuda_graph.py:123] | 9               | 16            | 7            | FULL         | 16    |
+INFO 09-11 17:16:24 [cuda_graph.py:123] | 14              | 16            | 2            | FULL         | 11    |
+INFO 09-11 17:16:24 [cuda_graph.py:123] | 15              | 16            | 1            | FULL         | 8     |
+INFO 09-11 17:16:24 [cuda_graph.py:123] | 10              | 16            | 6            | FULL         | 8     |
+INFO 09-11 17:16:24 [cuda_graph.py:123] | 11              | 16            | 5            | FULL         | 8     |
+INFO 09-11 17:16:24 [cuda_graph.py:123] | 5               | 8             | 3            | FULL         | 7     |
+INFO 09-11 17:16:24 [cuda_graph.py:123] | 6               | 8             | 2            | FULL         | 5     |
+INFO 09-11 17:16:24 [cuda_graph.py:123] | 206             | 206           | 0            | NONE         | 2     |
+INFO 09-11 17:16:24 [cuda_graph.py:123] | 8192            | 8192          | 0            | NONE         | 2     |
+INFO 09-11 17:16:24 [cuda_graph.py:123] | 2178            | 2178          | 0            | NONE         | 1     |
+INFO 09-11 17:16:24 [cuda_graph.py:123] | 131             | 131           | 0            | NONE         | 1     |
+INFO 09-11 17:16:24 [cuda_graph.py:123] | 178             | 178           | 0            | NONE         | 1     |
+INFO 09-11 17:16:24 [cuda_graph.py:123] | 164             | 164           | 0            | NONE         | 1     |
+INFO 09-11 17:16:24 [cuda_graph.py:123] | 252             | 252           | 0            | NONE         | 1     |
+INFO 09-11 17:16:24 [cuda_graph.py:123] | 76              | 76            | 0            | NONE         | 1     |
+INFO 09-11 17:16:24 [cuda_graph.py:123] | 3092            | 3092          | 0            | NONE         | 1     |
+INFO 09-11 17:16:24 [cuda_graph.py:123] | 380             | 380           | 0            | NONE         | 1     |
+INFO 09-11 17:16:24 [cuda_graph.py:123] | 963             | 963           | 0            | NONE         | 1     |
+INFO 09-11 17:16:24 [cuda_graph.py:123] | 7606            | 7606          | 0            | NONE         | 1     |
+INFO 09-11 17:16:24 [cuda_graph.py:123] | 6862            | 6862          | 0            | NONE         | 1     |
+INFO 09-11 17:16:24 [cuda_graph.py:123] | 993             | 993           | 0            | NONE         | 1     |
+INFO 09-11 17:16:24 [cuda_graph.py:123] | 275             | 275           | 0            | NONE         | 1     |
+INFO 09-11 17:16:24 [cuda_graph.py:123] | 350             | 350           | 0            | NONE         | 1     |
+INFO 09-11 17:16:24 [cuda_graph.py:123] | 484             | 484           | 0            | NONE         | 1     |
+INFO 09-11 17:16:24 [cuda_graph.py:123] | 218             | 218           | 0            | NONE         | 1     |
+INFO 09-11 17:16:24 [cuda_graph.py:123] | 5458            | 5458          | 0            | NONE         | 1     |
+INFO 09-11 17:16:24 [cuda_graph.py:123] | 6429            | 6429          | 0            | NONE         | 1     |
+INFO 09-11 17:16:24 [cuda_graph.py:123] 
+{"stage": "main", "records": 125, "seconds": 190.15791024798818, "failures": 0}
+INFO 09-11 17:16:34 [loggers.py:310] Engine 000: Avg prompt throughput: 8584.0 tokens/s, Avg generation throughput: 492.3 tokens/s, Running: 13 reqs, Waiting: 0 reqs, GPU KV cache usage: 13.2%, Prefix cache hit rate: 91.0%
+INFO 09-11 17:16:34 [cuda_graph.py:123] **CUDAGraph Config Settings:**
+INFO 09-11 17:16:34 [cuda_graph.py:123] 
+INFO 09-11 17:16:34 [cuda_graph.py:123] - Mode: FULL_AND_PIECEWISE
+INFO 09-11 17:16:34 [cuda_graph.py:123] - Capture sizes: [1, 2, 4, 8, 16, 24, 32]
+INFO 09-11 17:16:34 [cuda_graph.py:123] 
+INFO 09-11 17:16:34 [cuda_graph.py:123] **CUDAGraph Stats:**
+INFO 09-11 17:16:34 [cuda_graph.py:123] 
+INFO 09-11 17:16:34 [cuda_graph.py:123] | Unpadded Tokens | Padded Tokens | Num Paddings | Runtime Mode | Count |
+INFO 09-11 17:16:34 [cuda_graph.py:123] |-----------------|---------------|--------------|--------------|-------|
+INFO 09-11 17:16:34 [cuda_graph.py:123] | 14              | 16            | 2            | FULL         | 94    |
+INFO 09-11 17:16:34 [cuda_graph.py:123] | 7               | 8             | 1            | FULL         | 72    |
+INFO 09-11 17:16:34 [cuda_graph.py:123] | 13              | 16            | 3            | FULL         | 68    |
+INFO 09-11 17:16:34 [cuda_graph.py:123] | 12              | 16            | 4            | FULL         | 62    |
+INFO 09-11 17:16:34 [cuda_graph.py:123] | 8               | 8             | 0            | FULL         | 62    |
+INFO 09-11 17:16:34 [cuda_graph.py:123] | 4               | 4             | 0            | FULL         | 26    |
+INFO 09-11 17:16:34 [cuda_graph.py:123] | 3               | 4             | 1            | FULL         | 22    |
+INFO 09-11 17:16:34 [cuda_graph.py:123] | 15              | 16            | 1            | FULL         | 19    |
+INFO 09-11 17:16:34 [cuda_graph.py:123] | 9               | 16            | 7            | FULL         | 9     |
+INFO 09-11 17:16:34 [cuda_graph.py:123] | 10              | 16            | 6            | FULL         | 7     |
+INFO 09-11 17:16:34 [cuda_graph.py:123] | 6               | 8             | 2            | FULL         | 6     |
+INFO 09-11 17:16:34 [cuda_graph.py:123] | 5               | 8             | 3            | FULL         | 6     |
+INFO 09-11 17:16:34 [cuda_graph.py:123] | 11              | 16            | 5            | FULL         | 4     |
+INFO 09-11 17:16:34 [cuda_graph.py:123] | 8192            | 8192          | 0            | NONE         | 3     |
+INFO 09-11 17:16:34 [cuda_graph.py:123] | 1               | 1             | 0            | FULL         | 3     |
+INFO 09-11 17:16:34 [cuda_graph.py:123] | 2               | 2             | 0            | FULL         | 2     |
+INFO 09-11 17:16:34 [cuda_graph.py:123] | 209             | 209           | 0            | NONE         | 1     |
+INFO 09-11 17:16:34 [cuda_graph.py:123] | 941             | 941           | 0            | NONE         | 1     |
+INFO 09-11 17:16:34 [cuda_graph.py:123] | 79              | 79            | 0            | NONE         | 1     |
+INFO 09-11 17:16:34 [cuda_graph.py:123] | 54              | 54            | 0            | NONE         | 1     |
+INFO 09-11 17:16:34 [cuda_graph.py:123] | 893             | 893           | 0            | NONE         | 1     |
+INFO 09-11 17:16:34 [cuda_graph.py:123] | 215             | 215           | 0            | NONE         | 1     |
+INFO 09-11 17:16:34 [cuda_graph.py:123] | 7936            | 7936          | 0            | NONE         | 1     |
+INFO 09-11 17:16:34 [cuda_graph.py:123] | 7213            | 7213          | 0            | NONE         | 1     |
+INFO 09-11 17:16:34 [cuda_graph.py:123] | 272             | 272           | 0            | NONE         | 1     |
+INFO 09-11 17:16:34 [cuda_graph.py:123] | 1017            | 1017          | 0            | NONE         | 1     |
+INFO 09-11 17:16:34 [cuda_graph.py:123] | 388             | 388           | 0            | NONE         | 1     |
+INFO 09-11 17:16:34 [cuda_graph.py:123] | 763             | 763           | 0            | NONE         | 1     |
+INFO 09-11 17:16:34 [cuda_graph.py:123] | 1230            | 1230          | 0            | NONE         | 1     |
+INFO 09-11 17:16:34 [cuda_graph.py:123] | 256             | 256           | 0            | NONE         | 1     |
+INFO 09-11 17:16:34 [cuda_graph.py:123] | 429             | 429           | 0            | NONE         | 1     |
+INFO 09-11 17:16:34 [cuda_graph.py:123] | 525             | 525           | 0            | NONE         | 1     |
+INFO 09-11 17:16:34 [cuda_graph.py:123] | 5343            | 5343          | 0            | NONE         | 1     |
+INFO 09-11 17:16:34 [cuda_graph.py:123] | 7902            | 7902          | 0            | NONE         | 1     |
+INFO 09-11 17:16:34 [cuda_graph.py:123] | 384             | 384           | 0            | NONE         | 1     |
+INFO 09-11 17:16:34 [cuda_graph.py:123] | 249             | 249           | 0            | NONE         | 1     |
+INFO 09-11 17:16:34 [cuda_graph.py:123] | 258             | 258           | 0            | NONE         | 1     |
+INFO 09-11 17:16:34 [cuda_graph.py:123] | 282             | 282           | 0            | NONE         | 1     |
+INFO 09-11 17:16:34 [cuda_graph.py:123] | 324             | 324           | 0            | NONE         | 1     |
+INFO 09-11 17:16:34 [cuda_graph.py:123] | 3985            | 3985          | 0            | NONE         | 1     |
+INFO 09-11 17:16:34 [cuda_graph.py:123] | 60              | 60            | 0            | NONE         | 1     |
+INFO 09-11 17:16:34 [cuda_graph.py:123] | 1250            | 1250          | 0            | NONE         | 1     |
+INFO 09-11 17:16:34 [cuda_graph.py:123] | 4195            | 4195          | 0            | NONE         | 1     |
+INFO 09-11 17:16:34 [cuda_graph.py:123] | 5177            | 5177          | 0            | NONE         | 1     |
+INFO 09-11 17:16:34 [cuda_graph.py:123] | 264             | 264           | 0            | NONE         | 1     |
+INFO 09-11 17:16:34 [cuda_graph.py:123] | 210             | 210           | 0            | NONE         | 1     |
+INFO 09-11 17:16:34 [cuda_graph.py:123] | 371             | 371           | 0            | NONE         | 1     |
+INFO 09-11 17:16:34 [cuda_graph.py:123] | 368             | 368           | 0            | NONE         | 1     |
+INFO 09-11 17:16:34 [cuda_graph.py:123] | 281             | 281           | 0            | NONE         | 1     |
+INFO 09-11 17:16:34 [cuda_graph.py:123] 
+{"stage": "main", "records": 130, "seconds": 195.6437953269924, "failures": 0}
+{"stage": "main", "records": 135, "seconds": 202.19875528599368, "failures": 0}
+INFO 09-11 17:16:45 [loggers.py:310] Engine 000: Avg prompt throughput: 10199.1 tokens/s, Avg generation throughput: 252.1 tokens/s, Running: 12 reqs, Waiting: 0 reqs, GPU KV cache usage: 17.0%, Prefix cache hit rate: 91.0%
+INFO 09-11 17:16:45 [cuda_graph.py:123] **CUDAGraph Config Settings:**
+INFO 09-11 17:16:45 [cuda_graph.py:123] 
+INFO 09-11 17:16:45 [cuda_graph.py:123] - Mode: FULL_AND_PIECEWISE
+INFO 09-11 17:16:45 [cuda_graph.py:123] - Capture sizes: [1, 2, 4, 8, 16, 24, 32]
+INFO 09-11 17:16:45 [cuda_graph.py:123] 
+INFO 09-11 17:16:45 [cuda_graph.py:123] **CUDAGraph Stats:**
+INFO 09-11 17:16:45 [cuda_graph.py:123] 
+INFO 09-11 17:16:45 [cuda_graph.py:123] | Unpadded Tokens | Padded Tokens | Num Paddings | Runtime Mode | Count |
+INFO 09-11 17:16:45 [cuda_graph.py:123] |-----------------|---------------|--------------|--------------|-------|
+INFO 09-11 17:16:45 [cuda_graph.py:123] | 13              | 16            | 3            | FULL         | 74    |
+INFO 09-11 17:16:45 [cuda_graph.py:123] | 3               | 4             | 1            | FULL         | 51    |
+INFO 09-11 17:16:45 [cuda_graph.py:123] | 7               | 8             | 1            | FULL         | 49    |
+INFO 09-11 17:16:45 [cuda_graph.py:123] | 1               | 1             | 0            | FULL         | 46    |
+INFO 09-11 17:16:45 [cuda_graph.py:123] | 4               | 4             | 0            | FULL         | 24    |
+INFO 09-11 17:16:45 [cuda_graph.py:123] | 8               | 8             | 0            | FULL         | 21    |
+INFO 09-11 17:16:45 [cuda_graph.py:123] | 14              | 16            | 2            | FULL         | 14    |
+INFO 09-11 17:16:45 [cuda_graph.py:123] | 15              | 16            | 1            | FULL         | 10    |
+INFO 09-11 17:16:45 [cuda_graph.py:123] | 12              | 16            | 4            | FULL         | 9     |
+INFO 09-11 17:16:45 [cuda_graph.py:123] | 5               | 8             | 3            | FULL         | 6     |
+INFO 09-11 17:16:45 [cuda_graph.py:123] | 9               | 16            | 7            | FULL         | 6     |
+INFO 09-11 17:16:45 [cuda_graph.py:123] | 11              | 16            | 5            | FULL         | 5     |
+INFO 09-11 17:16:45 [cuda_graph.py:123] | 10              | 16            | 6            | FULL         | 5     |
+INFO 09-11 17:16:45 [cuda_graph.py:123] | 8192            | 8192          | 0            | NONE         | 5     |
+INFO 09-11 17:16:45 [cuda_graph.py:123] | 6               | 8             | 2            | FULL         | 5     |
+INFO 09-11 17:16:45 [cuda_graph.py:123] | 2               | 2             | 0            | FULL         | 3     |
+INFO 09-11 17:16:45 [cuda_graph.py:123] | 3215            | 3215          | 0            | NONE         | 1     |
+INFO 09-11 17:16:45 [cuda_graph.py:123] | 5946            | 5946          | 0            | NONE         | 1     |
+INFO 09-11 17:16:45 [cuda_graph.py:123] | 536             | 536           | 0            | NONE         | 1     |
+INFO 09-11 17:16:45 [cuda_graph.py:123] | 720             | 720           | 0            | NONE         | 1     |
+INFO 09-11 17:16:45 [cuda_graph.py:123] | 336             | 336           | 0            | NONE         | 1     |
+INFO 09-11 17:16:45 [cuda_graph.py:123] | 655             | 655           | 0            | NONE         | 1     |
+INFO 09-11 17:16:45 [cuda_graph.py:123] | 2157            | 2157          | 0            | NONE         | 1     |
+INFO 09-11 17:16:45 [cuda_graph.py:123] | 230             | 230           | 0            | NONE         | 1     |
+INFO 09-11 17:16:45 [cuda_graph.py:123] | 180             | 180           | 0            | NONE         | 1     |
+INFO 09-11 17:16:45 [cuda_graph.py:123] | 409             | 409           | 0            | NONE         | 1     |
+INFO 09-11 17:16:45 [cuda_graph.py:123] | 301             | 301           | 0            | NONE         | 1     |
+INFO 09-11 17:16:45 [cuda_graph.py:123] | 255             | 255           | 0            | NONE         | 1     |
+INFO 09-11 17:16:45 [cuda_graph.py:123] | 1866            | 1866          | 0            | NONE         | 1     |
+INFO 09-11 17:16:45 [cuda_graph.py:123] | 225             | 225           | 0            | NONE         | 1     |
+INFO 09-11 17:16:45 [cuda_graph.py:123] | 360             | 360           | 0            | NONE         | 1     |
+INFO 09-11 17:16:45 [cuda_graph.py:123] | 202             | 202           | 0            | NONE         | 1     |
+INFO 09-11 17:16:45 [cuda_graph.py:123] | 290             | 290           | 0            | NONE         | 1     |
+INFO 09-11 17:16:45 [cuda_graph.py:123] | 326             | 326           | 0            | NONE         | 1     |
+INFO 09-11 17:16:45 [cuda_graph.py:123] | 4339            | 4339          | 0            | NONE         | 1     |
+INFO 09-11 17:16:45 [cuda_graph.py:123] | 1748            | 1748          | 0            | NONE         | 1     |
+INFO 09-11 17:16:45 [cuda_graph.py:123] 
+{"stage": "main", "records": 140, "seconds": 212.02000194200082, "failures": 0}
+INFO 09-11 17:16:55 [loggers.py:310] Engine 000: Avg prompt throughput: 8763.2 tokens/s, Avg generation throughput: 330.7 tokens/s, Running: 13 reqs, Waiting: 0 reqs, GPU KV cache usage: 16.7%, Prefix cache hit rate: 91.3%
+INFO 09-11 17:16:55 [cuda_graph.py:123] **CUDAGraph Config Settings:**
+INFO 09-11 17:16:55 [cuda_graph.py:123] 
+INFO 09-11 17:16:55 [cuda_graph.py:123] - Mode: FULL_AND_PIECEWISE
+INFO 09-11 17:16:55 [cuda_graph.py:123] - Capture sizes: [1, 2, 4, 8, 16, 24, 32]
+INFO 09-11 17:16:55 [cuda_graph.py:123] 
+INFO 09-11 17:16:55 [cuda_graph.py:123] **CUDAGraph Stats:**
+INFO 09-11 17:16:55 [cuda_graph.py:123] 
+INFO 09-11 17:16:55 [cuda_graph.py:123] | Unpadded Tokens | Padded Tokens | Num Paddings | Runtime Mode | Count |
+INFO 09-11 17:16:55 [cuda_graph.py:123] |-----------------|---------------|--------------|--------------|-------|
+INFO 09-11 17:16:55 [cuda_graph.py:123] | 12              | 16            | 4            | FULL         | 75    |
+INFO 09-11 17:16:55 [cuda_graph.py:123] | 7               | 8             | 1            | FULL         | 66    |
+INFO 09-11 17:16:55 [cuda_graph.py:123] | 3               | 4             | 1            | FULL         | 46    |
+INFO 09-11 17:16:55 [cuda_graph.py:123] | 14              | 16            | 2            | FULL         | 40    |
+INFO 09-11 17:16:55 [cuda_graph.py:123] | 4               | 4             | 0            | FULL         | 32    |
+INFO 09-11 17:16:55 [cuda_graph.py:123] | 8               | 8             | 0            | FULL         | 21    |
+INFO 09-11 17:16:55 [cuda_graph.py:123] | 13              | 16            | 3            | FULL         | 19    |
+INFO 09-11 17:16:55 [cuda_graph.py:123] | 15              | 16            | 1            | FULL         | 19    |
+INFO 09-11 17:16:55 [cuda_graph.py:123] | 6               | 8             | 2            | FULL         | 9     |
+INFO 09-11 17:16:55 [cuda_graph.py:123] | 11              | 16            | 5            | FULL         | 7     |
+INFO 09-11 17:16:55 [cuda_graph.py:123] | 9               | 16            | 7            | FULL         | 4     |
+INFO 09-11 17:16:55 [cuda_graph.py:123] | 8192            | 8192          | 0            | NONE         | 4     |
+INFO 09-11 17:16:55 [cuda_graph.py:123] | 5               | 8             | 3            | FULL         | 3     |
+INFO 09-11 17:16:55 [cuda_graph.py:123] | 2               | 2             | 0            | FULL         | 3     |
+INFO 09-11 17:16:55 [cuda_graph.py:123] | 1               | 1             | 0            | FULL         | 3     |
+INFO 09-11 17:16:55 [cuda_graph.py:123] | 227             | 227           | 0            | NONE         | 1     |
+INFO 09-11 17:16:55 [cuda_graph.py:123] | 173             | 173           | 0            | NONE         | 1     |
+INFO 09-11 17:16:55 [cuda_graph.py:123] | 272             | 272           | 0            | NONE         | 1     |
+INFO 09-11 17:16:55 [cuda_graph.py:123] | 276             | 276           | 0            | NONE         | 1     |
+INFO 09-11 17:16:55 [cuda_graph.py:123] | 251             | 251           | 0            | NONE         | 1     |
+INFO 09-11 17:16:55 [cuda_graph.py:123] | 235             | 235           | 0            | NONE         | 1     |
+INFO 09-11 17:16:55 [cuda_graph.py:123] | 3038            | 3038          | 0            | NONE         | 1     |
+INFO 09-11 17:16:55 [cuda_graph.py:123] | 229             | 229           | 0            | NONE         | 1     |
+INFO 09-11 17:16:55 [cuda_graph.py:123] | 376             | 376           | 0            | NONE         | 1     |
+INFO 09-11 17:16:55 [cuda_graph.py:123] | 505             | 505           | 0            | NONE         | 1     |
+INFO 09-11 17:16:55 [cuda_graph.py:123] | 341             | 341           | 0            | NONE         | 1     |
+INFO 09-11 17:16:55 [cuda_graph.py:123] | 414             | 414           | 0            | NONE         | 1     |
+INFO 09-11 17:16:55 [cuda_graph.py:123] | 5917            | 5917          | 0            | NONE         | 1     |
+INFO 09-11 17:16:55 [cuda_graph.py:123] | 301             | 301           | 0            | NONE         | 1     |
+INFO 09-11 17:16:55 [cuda_graph.py:123] | 1144            | 1144          | 0            | NONE         | 1     |
+INFO 09-11 17:16:55 [cuda_graph.py:123] | 52              | 52            | 0            | NONE         | 1     |
+INFO 09-11 17:16:55 [cuda_graph.py:123] | 950             | 950           | 0            | NONE         | 1     |
+INFO 09-11 17:16:55 [cuda_graph.py:123] | 132             | 132           | 0            | NONE         | 1     |
+INFO 09-11 17:16:55 [cuda_graph.py:123] | 78              | 78            | 0            | NONE         | 1     |
+INFO 09-11 17:16:55 [cuda_graph.py:123] | 3058            | 3058          | 0            | NONE         | 1     |
+INFO 09-11 17:16:55 [cuda_graph.py:123] | 4940            | 4940          | 0            | NONE         | 1     |
+INFO 09-11 17:16:55 [cuda_graph.py:123] | 232             | 232           | 0            | NONE         | 1     |
+INFO 09-11 17:16:55 [cuda_graph.py:123] | 74              | 74            | 0            | NONE         | 1     |
+INFO 09-11 17:16:55 [cuda_graph.py:123] | 312             | 312           | 0            | NONE         | 1     |
+INFO 09-11 17:16:55 [cuda_graph.py:123] | 184             | 184           | 0            | NONE         | 1     |
+INFO 09-11 17:16:55 [cuda_graph.py:123] | 304             | 304           | 0            | NONE         | 1     |
+INFO 09-11 17:16:55 [cuda_graph.py:123] | 114             | 114           | 0            | NONE         | 1     |
+INFO 09-11 17:16:55 [cuda_graph.py:123] | 6395            | 6395          | 0            | NONE         | 1     |
+INFO 09-11 17:16:55 [cuda_graph.py:123] 
+{"stage": "main", "records": 145, "seconds": 223.5762929420016, "failures": 0}
+INFO 09-11 17:17:05 [loggers.py:310] Engine 000: Avg prompt throughput: 8674.1 tokens/s, Avg generation throughput: 323.7 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 13.9%, Prefix cache hit rate: 91.4%
+INFO 09-11 17:17:05 [cuda_graph.py:123] **CUDAGraph Config Settings:**
+INFO 09-11 17:17:05 [cuda_graph.py:123] 
+INFO 09-11 17:17:05 [cuda_graph.py:123] - Mode: FULL_AND_PIECEWISE
+INFO 09-11 17:17:05 [cuda_graph.py:123] - Capture sizes: [1, 2, 4, 8, 16, 24, 32]
+INFO 09-11 17:17:05 [cuda_graph.py:123] 
+INFO 09-11 17:17:05 [cuda_graph.py:123] **CUDAGraph Stats:**
+INFO 09-11 17:17:05 [cuda_graph.py:123] 
+INFO 09-11 17:17:05 [cuda_graph.py:123] | Unpadded Tokens | Padded Tokens | Num Paddings | Runtime Mode | Count |
+INFO 09-11 17:17:05 [cuda_graph.py:123] |-----------------|---------------|--------------|--------------|-------|
+INFO 09-11 17:17:05 [cuda_graph.py:123] | 13              | 16            | 3            | FULL         | 63    |
+INFO 09-11 17:17:05 [cuda_graph.py:123] | 3               | 4             | 1            | FULL         | 50    |
+INFO 09-11 17:17:05 [cuda_graph.py:123] | 14              | 16            | 2            | FULL         | 49    |
+INFO 09-11 17:17:05 [cuda_graph.py:123] | 8               | 8             | 0            | FULL         | 46    |
+INFO 09-11 17:17:05 [cuda_graph.py:123] | 4               | 4             | 0            | FULL         | 44    |
+INFO 09-11 17:17:05 [cuda_graph.py:123] | 7               | 8             | 1            | FULL         | 37    |
+INFO 09-11 17:17:05 [cuda_graph.py:123] | 12              | 16            | 4            | FULL         | 36    |
+INFO 09-11 17:17:05 [cuda_graph.py:123] | 9               | 16            | 7            | FULL         | 10    |
+INFO 09-11 17:17:05 [cuda_graph.py:123] | 8192            | 8192          | 0            | NONE         | 7     |
+INFO 09-11 17:17:05 [cuda_graph.py:123] | 6               | 8             | 2            | FULL         | 6     |
+INFO 09-11 17:17:05 [cuda_graph.py:123] | 1               | 1             | 0            | FULL         | 5     |
+INFO 09-11 17:17:05 [cuda_graph.py:123] | 11              | 16            | 5            | FULL         | 3     |
+INFO 09-11 17:17:05 [cuda_graph.py:123] | 5               | 8             | 3            | FULL         | 3     |
+INFO 09-11 17:17:05 [cuda_graph.py:123] | 10              | 16            | 6            | FULL         | 2     |
+INFO 09-11 17:17:05 [cuda_graph.py:123] | 2               | 2             | 0            | FULL         | 2     |
+INFO 09-11 17:17:05 [cuda_graph.py:123] | 372             | 372           | 0            | NONE         | 1     |
+INFO 09-11 17:17:05 [cuda_graph.py:123] | 733             | 733           | 0            | NONE         | 1     |
+INFO 09-11 17:17:05 [cuda_graph.py:123] | 219             | 219           | 0            | NONE         | 1     |
+INFO 09-11 17:17:05 [cuda_graph.py:123] | 3467            | 3467          | 0            | NONE         | 1     |
+INFO 09-11 17:17:05 [cuda_graph.py:123] | 6608            | 6608          | 0            | NONE         | 1     |
+INFO 09-11 17:17:05 [cuda_graph.py:123] | 1229            | 1229          | 0            | NONE         | 1     |
+INFO 09-11 17:17:05 [cuda_graph.py:123] | 399             | 399           | 0            | NONE         | 1     |
+INFO 09-11 17:17:05 [cuda_graph.py:123] | 920             | 920           | 0            | NONE         | 1     |
+INFO 09-11 17:17:05 [cuda_graph.py:123] | 97              | 97            | 0            | NONE         | 1     |
+INFO 09-11 17:17:05 [cuda_graph.py:123] | 2124            | 2124          | 0            | NONE         | 1     |
+INFO 09-11 17:17:05 [cuda_graph.py:123] | 6382            | 6382          | 0            | NONE         | 1     |
+INFO 09-11 17:17:05 [cuda_graph.py:123] | 288             | 288           | 0            | NONE         | 1     |
+INFO 09-11 17:17:05 [cuda_graph.py:123] | 1096            | 1096          | 0            | NONE         | 1     |
+INFO 09-11 17:17:05 [cuda_graph.py:123] | 398             | 398           | 0            | NONE         | 1     |
+INFO 09-11 17:17:05 [cuda_graph.py:123] | 780             | 780           | 0            | NONE         | 1     |
+INFO 09-11 17:17:05 [cuda_graph.py:123] | 432             | 432           | 0            | NONE         | 1     |
+INFO 09-11 17:17:05 [cuda_graph.py:123] | 3042            | 3042          | 0            | NONE         | 1     |
+INFO 09-11 17:17:05 [cuda_graph.py:123] | 338             | 338           | 0            | NONE         | 1     |
+INFO 09-11 17:17:05 [cuda_graph.py:123] | 846             | 846           | 0            | NONE         | 1     |
+INFO 09-11 17:17:05 [cuda_graph.py:123] 
+{"stage": "main", "records": 150, "seconds": 228.00098417900153, "failures": 0}
+INFO 09-11 17:17:15 [loggers.py:310] Engine 000: Avg prompt throughput: 8712.2 tokens/s, Avg generation throughput: 374.9 tokens/s, Running: 8 reqs, Waiting: 2 reqs, Deferred: 2 reqs, GPU KV cache usage: 16.4%, Prefix cache hit rate: 91.3%
+INFO 09-11 17:17:15 [cuda_graph.py:123] **CUDAGraph Config Settings:**
+INFO 09-11 17:17:15 [cuda_graph.py:123] 
+INFO 09-11 17:17:15 [cuda_graph.py:123] - Mode: FULL_AND_PIECEWISE
+INFO 09-11 17:17:15 [cuda_graph.py:123] - Capture sizes: [1, 2, 4, 8, 16, 24, 32]
+INFO 09-11 17:17:15 [cuda_graph.py:123] 
+INFO 09-11 17:17:15 [cuda_graph.py:123] **CUDAGraph Stats:**
+INFO 09-11 17:17:15 [cuda_graph.py:123] 
+INFO 09-11 17:17:15 [cuda_graph.py:123] | Unpadded Tokens | Padded Tokens | Num Paddings | Runtime Mode | Count |
+INFO 09-11 17:17:15 [cuda_graph.py:123] |-----------------|---------------|--------------|--------------|-------|
+INFO 09-11 17:17:15 [cuda_graph.py:123] | 13              | 16            | 3            | FULL         | 62    |
+INFO 09-11 17:17:15 [cuda_graph.py:123] | 14              | 16            | 2            | FULL         | 53    |
+INFO 09-11 17:17:15 [cuda_graph.py:123] | 8               | 8             | 0            | FULL         | 51    |
+INFO 09-11 17:17:15 [cuda_graph.py:123] | 7               | 8             | 1            | FULL         | 38    |
+INFO 09-11 17:17:15 [cuda_graph.py:123] | 3               | 4             | 1            | FULL         | 36    |
+INFO 09-11 17:17:15 [cuda_graph.py:123] | 12              | 16            | 4            | FULL         | 29    |
+INFO 09-11 17:17:15 [cuda_graph.py:123] | 15              | 16            | 1            | FULL         | 23    |
+INFO 09-11 17:17:15 [cuda_graph.py:123] | 2               | 2             | 0            | FULL         | 20    |
+INFO 09-11 17:17:15 [cuda_graph.py:123] | 9               | 16            | 7            | FULL         | 18    |
+INFO 09-11 17:17:15 [cuda_graph.py:123] | 4               | 4             | 0            | FULL         | 14    |
+INFO 09-11 17:17:15 [cuda_graph.py:123] | 16              | 16            | 0            | FULL         | 10    |
+INFO 09-11 17:17:15 [cuda_graph.py:123] | 8192            | 8192          | 0            | NONE         | 7     |
+INFO 09-11 17:17:15 [cuda_graph.py:123] | 6               | 8             | 2            | FULL         | 4     |
+INFO 09-11 17:17:15 [cuda_graph.py:123] | 5               | 8             | 3            | FULL         | 4     |
+INFO 09-11 17:17:15 [cuda_graph.py:123] | 11              | 16            | 5            | FULL         | 3     |
+INFO 09-11 17:17:15 [cuda_graph.py:123] | 1               | 1             | 0            | FULL         | 3     |
+INFO 09-11 17:17:15 [cuda_graph.py:123] | 10              | 16            | 6            | FULL         | 2     |
+INFO 09-11 17:17:15 [cuda_graph.py:123] | 56              | 56            | 0            | NONE         | 1     |
+INFO 09-11 17:17:15 [cuda_graph.py:123] | 983             | 983           | 0            | NONE         | 1     |
+INFO 09-11 17:17:15 [cuda_graph.py:123] | 204             | 204           | 0            | NONE         | 1     |
+INFO 09-11 17:17:15 [cuda_graph.py:123] | 1161            | 1161          | 0            | NONE         | 1     |
+INFO 09-11 17:17:15 [cuda_graph.py:123] | 6916            | 6916          | 0            | NONE         | 1     |
+INFO 09-11 17:17:15 [cuda_graph.py:123] | 338             | 338           | 0            | NONE         | 1     |
+INFO 09-11 17:17:15 [cuda_graph.py:123] | 851             | 851           | 0            | NONE         | 1     |
+INFO 09-11 17:17:15 [cuda_graph.py:123] | 366             | 366           | 0            | NONE         | 1     |
+INFO 09-11 17:17:15 [cuda_graph.py:123] | 715             | 715           | 0            | NONE         | 1     |
+INFO 09-11 17:17:15 [cuda_graph.py:123] | 1926            | 1926          | 0            | NONE         | 1     |
+INFO 09-11 17:17:15 [cuda_graph.py:123] | 5417            | 5417          | 0            | NONE         | 1     |
+INFO 09-11 17:17:15 [cuda_graph.py:123] | 227             | 227           | 0            | NONE         | 1     |
+INFO 09-11 17:17:15 [cuda_graph.py:123] | 1162            | 1162          | 0            | NONE         | 1     |
+INFO 09-11 17:17:15 [cuda_graph.py:123] | 280             | 280           | 0            | NONE         | 1     |
+INFO 09-11 17:17:15 [cuda_graph.py:123] | 831             | 831           | 0            | NONE         | 1     |
+INFO 09-11 17:17:15 [cuda_graph.py:123] | 143             | 143           | 0            | NONE         | 1     |
+INFO 09-11 17:17:15 [cuda_graph.py:123] | 89              | 89            | 0            | NONE         | 1     |
+INFO 09-11 17:17:15 [cuda_graph.py:123] | 2721            | 2721          | 0            | NONE         | 1     |
+INFO 09-11 17:17:15 [cuda_graph.py:123] | 4306            | 4306          | 0            | NONE         | 1     |
+INFO 09-11 17:17:15 [cuda_graph.py:123] | 217             | 217           | 0            | NONE         | 1     |
+INFO 09-11 17:17:15 [cuda_graph.py:123] | 786             | 786           | 0            | NONE         | 1     |
+INFO 09-11 17:17:15 [cuda_graph.py:123] | 229             | 229           | 0            | NONE         | 1     |
+INFO 09-11 17:17:15 [cuda_graph.py:123] | 87              | 87            | 0            | NONE         | 1     |
+INFO 09-11 17:17:15 [cuda_graph.py:123] 
+{"stage": "main", "records": 155, "seconds": 239.17619525198825, "failures": 0}
+INFO 09-11 17:17:25 [loggers.py:310] Engine 000: Avg prompt throughput: 7058.4 tokens/s, Avg generation throughput: 288.7 tokens/s, Running: 13 reqs, Waiting: 0 reqs, GPU KV cache usage: 35.0%, Prefix cache hit rate: 91.3%
+INFO 09-11 17:17:25 [cuda_graph.py:123] **CUDAGraph Config Settings:**
+INFO 09-11 17:17:25 [cuda_graph.py:123] 
+INFO 09-11 17:17:25 [cuda_graph.py:123] - Mode: FULL_AND_PIECEWISE
+INFO 09-11 17:17:25 [cuda_graph.py:123] - Capture sizes: [1, 2, 4, 8, 16, 24, 32]
+INFO 09-11 17:17:25 [cuda_graph.py:123] 
+INFO 09-11 17:17:25 [cuda_graph.py:123] **CUDAGraph Stats:**
+INFO 09-11 17:17:25 [cuda_graph.py:123] 
+INFO 09-11 17:17:25 [cuda_graph.py:123] | Unpadded Tokens | Padded Tokens | Num Paddings | Runtime Mode | Count |
+INFO 09-11 17:17:25 [cuda_graph.py:123] |-----------------|---------------|--------------|--------------|-------|
+INFO 09-11 17:17:25 [cuda_graph.py:123] | 3               | 4             | 1            | FULL         | 89    |
+INFO 09-11 17:17:25 [cuda_graph.py:123] | 13              | 16            | 3            | FULL         | 62    |
+INFO 09-11 17:17:25 [cuda_graph.py:123] | 2               | 2             | 0            | FULL         | 61    |
+INFO 09-11 17:17:25 [cuda_graph.py:123] | 14              | 16            | 2            | FULL         | 45    |
+INFO 09-11 17:17:25 [cuda_graph.py:123] | 8               | 8             | 0            | FULL         | 39    |
+INFO 09-11 17:17:25 [cuda_graph.py:123] | 5               | 8             | 3            | FULL         | 27    |
+INFO 09-11 17:17:25 [cuda_graph.py:123] | 4               | 4             | 0            | FULL         | 24    |
+INFO 09-11 17:17:25 [cuda_graph.py:123] | 9               | 16            | 7            | FULL         | 17    |
+INFO 09-11 17:17:25 [cuda_graph.py:123] | 6               | 8             | 2            | FULL         | 12    |
+INFO 09-11 17:17:25 [cuda_graph.py:123] | 8192            | 8192          | 0            | NONE         | 9     |
+INFO 09-11 17:17:25 [cuda_graph.py:123] | 7               | 8             | 1            | FULL         | 8     |
+INFO 09-11 17:17:25 [cuda_graph.py:123] | 12              | 16            | 4            | FULL         | 7     |
+INFO 09-11 17:17:25 [cuda_graph.py:123] | 1               | 1             | 0            | FULL         | 7     |
+INFO 09-11 17:17:25 [cuda_graph.py:123] | 11              | 16            | 5            | FULL         | 3     |
+INFO 09-11 17:17:25 [cuda_graph.py:123] | 10              | 16            | 6            | FULL         | 3     |
+INFO 09-11 17:17:25 [cuda_graph.py:123] | 302             | 302           | 0            | NONE         | 1     |
+INFO 09-11 17:17:25 [cuda_graph.py:123] | 908             | 908           | 0            | NONE         | 1     |
+INFO 09-11 17:17:25 [cuda_graph.py:123] | 155             | 155           | 0            | NONE         | 1     |
+INFO 09-11 17:17:25 [cuda_graph.py:123] | 100             | 100           | 0            | NONE         | 1     |
+INFO 09-11 17:17:25 [cuda_graph.py:123] | 1570            | 1570          | 0            | NONE         | 1     |
+INFO 09-11 17:17:25 [cuda_graph.py:123] | 223             | 223           | 0            | NONE         | 1     |
+INFO 09-11 17:17:25 [cuda_graph.py:123] | 354             | 354           | 0            | NONE         | 1     |
+INFO 09-11 17:17:25 [cuda_graph.py:123] | 336             | 336           | 0            | NONE         | 1     |
+INFO 09-11 17:17:25 [cuda_graph.py:123] | 243             | 243           | 0            | NONE         | 1     |
+INFO 09-11 17:17:25 [cuda_graph.py:123] | 227             | 227           | 0            | NONE         | 1     |
+INFO 09-11 17:17:25 [cuda_graph.py:123] | 2213            | 2213          | 0            | NONE         | 1     |
+INFO 09-11 17:17:25 [cuda_graph.py:123] | 209             | 209           | 0            | NONE         | 1     |
+INFO 09-11 17:17:25 [cuda_graph.py:123] | 138             | 138           | 0            | NONE         | 1     |
+INFO 09-11 17:17:25 [cuda_graph.py:123] | 237             | 237           | 0            | NONE         | 1     |
+INFO 09-11 17:17:25 [cuda_graph.py:123] | 116             | 116           | 0            | NONE         | 1     |
+INFO 09-11 17:17:25 [cuda_graph.py:123] | 259             | 259           | 0            | NONE         | 1     |
+INFO 09-11 17:17:25 [cuda_graph.py:123] | 213             | 213           | 0            | NONE         | 1     |
+INFO 09-11 17:17:25 [cuda_graph.py:123] | 79              | 79            | 0            | NONE         | 1     |
+INFO 09-11 17:17:25 [cuda_graph.py:123] | 995             | 995           | 0            | NONE         | 1     |
+INFO 09-11 17:17:25 [cuda_graph.py:123] | 5556            | 5556          | 0            | NONE         | 1     |
+INFO 09-11 17:17:25 [cuda_graph.py:123] | 212             | 212           | 0            | NONE         | 1     |
+INFO 09-11 17:17:25 [cuda_graph.py:123] | 1030            | 1030          | 0            | NONE         | 1     |
+INFO 09-11 17:17:25 [cuda_graph.py:123] | 77              | 77            | 0            | NONE         | 1     |
+INFO 09-11 17:17:25 [cuda_graph.py:123] | 1015            | 1015          | 0            | NONE         | 1     |
+INFO 09-11 17:17:25 [cuda_graph.py:123] | 226             | 226           | 0            | NONE         | 1     |
+INFO 09-11 17:17:25 [cuda_graph.py:123] | 70              | 70            | 0            | NONE         | 1     |
+INFO 09-11 17:17:25 [cuda_graph.py:123] 
+{"stage": "main", "records": 160, "seconds": 248.08906675600156, "failures": 0}
+{"stage": "main", "records": 165, "seconds": 253.95300073298858, "failures": 0}
+INFO 09-11 17:17:36 [loggers.py:310] Engine 000: Avg prompt throughput: 9038.8 tokens/s, Avg generation throughput: 379.1 tokens/s, Running: 14 reqs, Waiting: 0 reqs, GPU KV cache usage: 39.6%, Prefix cache hit rate: 91.4%
+INFO 09-11 17:17:36 [cuda_graph.py:123] **CUDAGraph Config Settings:**
+INFO 09-11 17:17:36 [cuda_graph.py:123] 
+INFO 09-11 17:17:36 [cuda_graph.py:123] - Mode: FULL_AND_PIECEWISE
+INFO 09-11 17:17:36 [cuda_graph.py:123] - Capture sizes: [1, 2, 4, 8, 16, 24, 32]
+INFO 09-11 17:17:36 [cuda_graph.py:123] 
+INFO 09-11 17:17:36 [cuda_graph.py:123] **CUDAGraph Stats:**
+INFO 09-11 17:17:36 [cuda_graph.py:123] 
+INFO 09-11 17:17:36 [cuda_graph.py:123] | Unpadded Tokens | Padded Tokens | Num Paddings | Runtime Mode | Count |
+INFO 09-11 17:17:36 [cuda_graph.py:123] |-----------------|---------------|--------------|--------------|-------|
+INFO 09-11 17:17:36 [cuda_graph.py:123] | 13              | 16            | 3            | FULL         | 97    |
+INFO 09-11 17:17:36 [cuda_graph.py:123] | 7               | 8             | 1            | FULL         | 72    |
+INFO 09-11 17:17:36 [cuda_graph.py:123] | 14              | 16            | 2            | FULL         | 65    |
+INFO 09-11 17:17:36 [cuda_graph.py:123] | 8               | 8             | 0            | FULL         | 38    |
+INFO 09-11 17:17:36 [cuda_graph.py:123] | 12              | 16            | 4            | FULL         | 24    |
+INFO 09-11 17:17:36 [cuda_graph.py:123] | 4               | 4             | 0            | FULL         | 13    |
+INFO 09-11 17:17:36 [cuda_graph.py:123] | 9               | 16            | 7            | FULL         | 12    |
+INFO 09-11 17:17:36 [cuda_graph.py:123] | 6               | 8             | 2            | FULL         | 10    |
+INFO 09-11 17:17:36 [cuda_graph.py:123] | 5               | 8             | 3            | FULL         | 7     |
+INFO 09-11 17:17:36 [cuda_graph.py:123] | 8192            | 8192          | 0            | NONE         | 7     |
+INFO 09-11 17:17:36 [cuda_graph.py:123] | 10              | 16            | 6            | FULL         | 6     |
+INFO 09-11 17:17:36 [cuda_graph.py:123] | 2               | 2             | 0            | FULL         | 6     |
+INFO 09-11 17:17:36 [cuda_graph.py:123] | 3               | 4             | 1            | FULL         | 3     |
+INFO 09-11 17:17:36 [cuda_graph.py:123] | 11              | 16            | 5            | FULL         | 2     |
+INFO 09-11 17:17:36 [cuda_graph.py:123] | 204             | 204           | 0            | NONE         | 2     |
+INFO 09-11 17:17:36 [cuda_graph.py:123] | 772             | 772           | 0            | NONE         | 1     |
+INFO 09-11 17:17:36 [cuda_graph.py:123] | 7744            | 7744          | 0            | NONE         | 1     |
+INFO 09-11 17:17:36 [cuda_graph.py:123] | 981             | 981           | 0            | NONE         | 1     |
+INFO 09-11 17:17:36 [cuda_graph.py:123] | 328             | 328           | 0            | NONE         | 1     |
+INFO 09-11 17:17:36 [cuda_graph.py:123] | 278             | 278           | 0            | NONE         | 1     |
+INFO 09-11 17:17:36 [cuda_graph.py:123] | 3260            | 3260          | 0            | NONE         | 1     |
+INFO 09-11 17:17:36 [cuda_graph.py:123] | 4868            | 4868          | 0            | NONE         | 1     |
+INFO 09-11 17:17:36 [cuda_graph.py:123] | 240             | 240           | 0            | NONE         | 1     |
+INFO 09-11 17:17:36 [cuda_graph.py:123] | 1001            | 1001          | 0            | NONE         | 1     |
+INFO 09-11 17:17:36 [cuda_graph.py:123] | 359             | 359           | 0            | NONE         | 1     |
+INFO 09-11 17:17:36 [cuda_graph.py:123] | 835             | 835           | 0            | NONE         | 1     |
+INFO 09-11 17:17:36 [cuda_graph.py:123] | 4850            | 4850          | 0            | NONE         | 1     |
+INFO 09-11 17:17:36 [cuda_graph.py:123] | 3373            | 3373          | 0            | NONE         | 1     |
+INFO 09-11 17:17:36 [cuda_graph.py:123] | 219             | 219           | 0            | NONE         | 1     |
+INFO 09-11 17:17:36 [cuda_graph.py:123] | 794             | 794           | 0            | NONE         | 1     |
+INFO 09-11 17:17:36 [cuda_graph.py:123] | 232             | 232           | 0            | NONE         | 1     |
+INFO 09-11 17:17:36 [cuda_graph.py:123] | 89              | 89            | 0            | NONE         | 1     |
+INFO 09-11 17:17:36 [cuda_graph.py:123] | 390             | 390           | 0            | NONE         | 1     |
+INFO 09-11 17:17:36 [cuda_graph.py:123] | 901             | 901           | 0            | NONE         | 1     |
+INFO 09-11 17:17:36 [cuda_graph.py:123] | 5098            | 5098          | 0            | NONE         | 1     |
+INFO 09-11 17:17:36 [cuda_graph.py:123] | 95              | 95            | 0            | NONE         | 1     |
+INFO 09-11 17:17:36 [cuda_graph.py:123] | 15              | 16            | 1            | FULL         | 1     |
+INFO 09-11 17:17:36 [cuda_graph.py:123] | 4350            | 4350          | 0            | NONE         | 1     |
+INFO 09-11 17:17:36 [cuda_graph.py:123] | 686             | 686           | 0            | NONE         | 1     |
+INFO 09-11 17:17:36 [cuda_graph.py:123] | 530             | 530           | 0            | NONE         | 1     |
+INFO 09-11 17:17:36 [cuda_graph.py:123] 
+{"stage": "main", "records": 170, "seconds": 262.3979345330008, "failures": 0}
+INFO 09-11 17:17:46 [loggers.py:310] Engine 000: Avg prompt throughput: 11111.1 tokens/s, Avg generation throughput: 302.1 tokens/s, Running: 13 reqs, Waiting: 1 reqs, Deferred: 1 reqs, GPU KV cache usage: 13.1%, Prefix cache hit rate: 91.7%
+INFO 09-11 17:17:46 [cuda_graph.py:123] **CUDAGraph Config Settings:**
+INFO 09-11 17:17:46 [cuda_graph.py:123] 
+INFO 09-11 17:17:46 [cuda_graph.py:123] - Mode: FULL_AND_PIECEWISE
+INFO 09-11 17:17:46 [cuda_graph.py:123] - Capture sizes: [1, 2, 4, 8, 16, 24, 32]
+INFO 09-11 17:17:46 [cuda_graph.py:123] 
+INFO 09-11 17:17:46 [cuda_graph.py:123] **CUDAGraph Stats:**
+INFO 09-11 17:17:46 [cuda_graph.py:123] 
+INFO 09-11 17:17:46 [cuda_graph.py:123] | Unpadded Tokens | Padded Tokens | Num Paddings | Runtime Mode | Count |
+INFO 09-11 17:17:46 [cuda_graph.py:123] |-----------------|---------------|--------------|--------------|-------|
+INFO 09-11 17:17:46 [cuda_graph.py:123] | 7               | 8             | 1            | FULL         | 79    |
+INFO 09-11 17:17:46 [cuda_graph.py:123] | 12              | 16            | 4            | FULL         | 67    |
+INFO 09-11 17:17:46 [cuda_graph.py:123] | 13              | 16            | 3            | FULL         | 53    |
+INFO 09-11 17:17:46 [cuda_graph.py:123] | 3               | 4             | 1            | FULL         | 53    |
+INFO 09-11 17:17:46 [cuda_graph.py:123] | 2               | 2             | 0            | FULL         | 15    |
+INFO 09-11 17:17:46 [cuda_graph.py:123] | 11              | 16            | 5            | FULL         | 14    |
+INFO 09-11 17:17:46 [cuda_graph.py:123] | 14              | 16            | 2            | FULL         | 12    |
+INFO 09-11 17:17:46 [cuda_graph.py:123] | 6               | 8             | 2            | FULL         | 11    |
+INFO 09-11 17:17:46 [cuda_graph.py:123] | 8192            | 8192          | 0            | NONE         | 7     |
+INFO 09-11 17:17:46 [cuda_graph.py:123] | 4               | 4             | 0            | FULL         | 7     |
+INFO 09-11 17:17:46 [cuda_graph.py:123] | 1               | 1             | 0            | FULL         | 7     |
+INFO 09-11 17:17:46 [cuda_graph.py:123] | 10              | 16            | 6            | FULL         | 6     |
+INFO 09-11 17:17:46 [cuda_graph.py:123] | 8               | 8             | 0            | FULL         | 5     |
+INFO 09-11 17:17:46 [cuda_graph.py:123] | 5               | 8             | 3            | FULL         | 4     |
+INFO 09-11 17:17:46 [cuda_graph.py:123] | 4579            | 4579          | 0            | NONE         | 1     |
+INFO 09-11 17:17:46 [cuda_graph.py:123] | 230             | 230           | 0            | NONE         | 1     |
+INFO 09-11 17:17:46 [cuda_graph.py:123] | 72              | 72            | 0            | NONE         | 1     |
+INFO 09-11 17:17:46 [cuda_graph.py:123] | 309             | 309           | 0            | NONE         | 1     |
+INFO 09-11 17:17:46 [cuda_graph.py:123] | 213             | 213           | 0            | NONE         | 1     |
+INFO 09-11 17:17:46 [cuda_graph.py:123] | 301             | 301           | 0            | NONE         | 1     |
+INFO 09-11 17:17:46 [cuda_graph.py:123] | 255             | 255           | 0            | NONE         | 1     |
+INFO 09-11 17:17:46 [cuda_graph.py:123] | 5614            | 5614          | 0            | NONE         | 1     |
+INFO 09-11 17:17:46 [cuda_graph.py:123] | 210             | 210           | 0            | NONE         | 1     |
+INFO 09-11 17:17:46 [cuda_graph.py:123] | 317             | 317           | 0            | NONE         | 1     |
+INFO 09-11 17:17:46 [cuda_graph.py:123] | 426             | 426           | 0            | NONE         | 1     |
+INFO 09-11 17:17:46 [cuda_graph.py:123] | 283             | 283           | 0            | NONE         | 1     |
+INFO 09-11 17:17:46 [cuda_graph.py:123] | 2031            | 2031          | 0            | NONE         | 1     |
+INFO 09-11 17:17:46 [cuda_graph.py:123] | 202             | 202           | 0            | NONE         | 1     |
+INFO 09-11 17:17:46 [cuda_graph.py:123] | 44              | 44            | 0            | NONE         | 1     |
+INFO 09-11 17:17:46 [cuda_graph.py:123] | 286             | 286           | 0            | NONE         | 1     |
+INFO 09-11 17:17:46 [cuda_graph.py:123] | 158             | 158           | 0            | NONE         | 1     |
+INFO 09-11 17:17:46 [cuda_graph.py:123] | 246             | 246           | 0            | NONE         | 1     |
+INFO 09-11 17:17:46 [cuda_graph.py:123] | 84              | 84            | 0            | NONE         | 1     |
+INFO 09-11 17:17:46 [cuda_graph.py:123] | 187             | 187           | 0            | NONE         | 1     |
+INFO 09-11 17:17:46 [cuda_graph.py:123] | 1258            | 1258          | 0            | NONE         | 1     |
+INFO 09-11 17:17:46 [cuda_graph.py:123] | 9               | 16            | 7            | FULL         | 1     |
+INFO 09-11 17:17:46 [cuda_graph.py:123] | 199             | 199           | 0            | NONE         | 1     |
+INFO 09-11 17:17:46 [cuda_graph.py:123] | 365             | 365           | 0            | NONE         | 1     |
+INFO 09-11 17:17:46 [cuda_graph.py:123] | 507             | 507           | 0            | NONE         | 1     |
+INFO 09-11 17:17:46 [cuda_graph.py:123] | 181             | 181           | 0            | NONE         | 1     |
+INFO 09-11 17:17:46 [cuda_graph.py:123] | 6094            | 6094          | 0            | NONE         | 1     |
+INFO 09-11 17:17:46 [cuda_graph.py:123] | 3491            | 3491          | 0            | NONE         | 1     |
+INFO 09-11 17:17:46 [cuda_graph.py:123] | 781             | 781           | 0            | NONE         | 1     |
+INFO 09-11 17:17:46 [cuda_graph.py:123] | 388             | 388           | 0            | NONE         | 1     |
+INFO 09-11 17:17:46 [cuda_graph.py:123] | 232             | 232           | 0            | NONE         | 1     |
+INFO 09-11 17:17:46 [cuda_graph.py:123] | 269             | 269           | 0            | NONE         | 1     |
+INFO 09-11 17:17:46 [cuda_graph.py:123] 
+{"stage": "main", "records": 175, "seconds": 269.5736050199921, "failures": 0}
+{"stage": "main", "records": 180, "seconds": 276.2622036549874, "failures": 0}
+INFO 09-11 17:17:56 [loggers.py:310] Engine 000: Avg prompt throughput: 8410.5 tokens/s, Avg generation throughput: 468.4 tokens/s, Running: 8 reqs, Waiting: 0 reqs, GPU KV cache usage: 32.6%, Prefix cache hit rate: 91.5%
+INFO 09-11 17:17:56 [cuda_graph.py:123] **CUDAGraph Config Settings:**
+INFO 09-11 17:17:56 [cuda_graph.py:123] 
+INFO 09-11 17:17:56 [cuda_graph.py:123] - Mode: FULL_AND_PIECEWISE
+INFO 09-11 17:17:56 [cuda_graph.py:123] - Capture sizes: [1, 2, 4, 8, 16, 24, 32]
+INFO 09-11 17:17:56 [cuda_graph.py:123] 
+INFO 09-11 17:17:56 [cuda_graph.py:123] **CUDAGraph Stats:**
+INFO 09-11 17:17:56 [cuda_graph.py:123] 
+INFO 09-11 17:17:56 [cuda_graph.py:123] | Unpadded Tokens | Padded Tokens | Num Paddings | Runtime Mode | Count |
+INFO 09-11 17:17:56 [cuda_graph.py:123] |-----------------|---------------|--------------|--------------|-------|
+INFO 09-11 17:17:56 [cuda_graph.py:123] | 13              | 16            | 3            | FULL         | 145   |
+INFO 09-11 17:17:56 [cuda_graph.py:123] | 8               | 8             | 0            | FULL         | 83    |
+INFO 09-11 17:17:56 [cuda_graph.py:123] | 14              | 16            | 2            | FULL         | 50    |
+INFO 09-11 17:17:56 [cuda_graph.py:123] | 7               | 8             | 1            | FULL         | 38    |
+INFO 09-11 17:17:56 [cuda_graph.py:123] | 4               | 4             | 0            | FULL         | 34    |
+INFO 09-11 17:17:56 [cuda_graph.py:123] | 3               | 4             | 1            | FULL         | 31    |
+INFO 09-11 17:17:56 [cuda_graph.py:123] | 12              | 16            | 4            | FULL         | 20    |
+INFO 09-11 17:17:56 [cuda_graph.py:123] | 5               | 8             | 3            | FULL         | 19    |
+INFO 09-11 17:17:56 [cuda_graph.py:123] | 15              | 16            | 1            | FULL         | 10    |
+INFO 09-11 17:17:56 [cuda_graph.py:123] | 9               | 16            | 7            | FULL         | 9     |
+INFO 09-11 17:17:56 [cuda_graph.py:123] | 8192            | 8192          | 0            | NONE         | 7     |
+INFO 09-11 17:17:56 [cuda_graph.py:123] | 6               | 8             | 2            | FULL         | 6     |
+INFO 09-11 17:17:56 [cuda_graph.py:123] | 11              | 16            | 5            | FULL         | 6     |
+INFO 09-11 17:17:56 [cuda_graph.py:123] | 10              | 16            | 6            | FULL         | 4     |
+INFO 09-11 17:17:56 [cuda_graph.py:123] | 2               | 2             | 0            | FULL         | 3     |
+INFO 09-11 17:17:56 [cuda_graph.py:123] | 927             | 927           | 0            | NONE         | 1     |
+INFO 09-11 17:17:56 [cuda_graph.py:123] | 6042            | 6042          | 0            | NONE         | 1     |
+INFO 09-11 17:17:56 [cuda_graph.py:123] | 780             | 780           | 0            | NONE         | 1     |
+INFO 09-11 17:17:56 [cuda_graph.py:123] | 828             | 828           | 0            | NONE         | 1     |
+INFO 09-11 17:17:56 [cuda_graph.py:123] | 6504            | 6504          | 0            | NONE         | 1     |
+INFO 09-11 17:17:56 [cuda_graph.py:123] | 597             | 597           | 0            | NONE         | 1     |
+INFO 09-11 17:17:56 [cuda_graph.py:123] | 662             | 662           | 0            | NONE         | 1     |
+INFO 09-11 17:17:56 [cuda_graph.py:123] | 372             | 372           | 0            | NONE         | 1     |
+INFO 09-11 17:17:56 [cuda_graph.py:123] | 638             | 638           | 0            | NONE         | 1     |
+INFO 09-11 17:17:56 [cuda_graph.py:123] | 2154            | 2154          | 0            | NONE         | 1     |
+INFO 09-11 17:17:56 [cuda_graph.py:123] | 212             | 212           | 0            | NONE         | 1     |
+INFO 09-11 17:17:56 [cuda_graph.py:123] | 321             | 321           | 0            | NONE         | 1     |
+INFO 09-11 17:17:56 [cuda_graph.py:123] | 176             | 176           | 0            | NONE         | 1     |
+INFO 09-11 17:17:56 [cuda_graph.py:123] | 347             | 347           | 0            | NONE         | 1     |
+INFO 09-11 17:17:56 [cuda_graph.py:123] | 205             | 205           | 0            | NONE         | 1     |
+INFO 09-11 17:17:56 [cuda_graph.py:123] | 2651            | 2651          | 0            | NONE         | 1     |
+INFO 09-11 17:17:56 [cuda_graph.py:123] | 317             | 317           | 0            | NONE         | 1     |
+INFO 09-11 17:17:56 [cuda_graph.py:123] | 923             | 923           | 0            | NONE         | 1     |
+INFO 09-11 17:17:56 [cuda_graph.py:123] | 2470            | 2470          | 0            | NONE         | 1     |
+INFO 09-11 17:17:56 [cuda_graph.py:123] | 292             | 292           | 0            | NONE         | 1     |
+INFO 09-11 17:17:56 [cuda_graph.py:123] | 375             | 375           | 0            | NONE         | 1     |
+INFO 09-11 17:17:56 [cuda_graph.py:123] | 419             | 419           | 0            | NONE         | 1     |
+INFO 09-11 17:17:56 [cuda_graph.py:123] | 332             | 332           | 0            | NONE         | 1     |
+INFO 09-11 17:17:56 [cuda_graph.py:123] | 1254            | 1254          | 0            | NONE         | 1     |
+INFO 09-11 17:17:56 [cuda_graph.py:123] | 242             | 242           | 0            | NONE         | 1     |
+INFO 09-11 17:17:56 [cuda_graph.py:123] | 465             | 465           | 0            | NONE         | 1     |
+INFO 09-11 17:17:56 [cuda_graph.py:123] | 495             | 495           | 0            | NONE         | 1     |
+INFO 09-11 17:17:56 [cuda_graph.py:123] | 72              | 72            | 0            | NONE         | 1     |
+INFO 09-11 17:17:56 [cuda_graph.py:123] | 3832            | 3832          | 0            | NONE         | 1     |
+INFO 09-11 17:17:56 [cuda_graph.py:123] | 390             | 390           | 0            | NONE         | 1     |
+INFO 09-11 17:17:56 [cuda_graph.py:123] | 988             | 988           | 0            | NONE         | 1     |
+INFO 09-11 17:17:56 [cuda_graph.py:123] 
+{"stage": "main", "records": 185, "seconds": 282.36397515000135, "failures": 0}
+INFO 09-11 17:18:06 [loggers.py:310] Engine 000: Avg prompt throughput: 9660.0 tokens/s, Avg generation throughput: 385.1 tokens/s, Running: 13 reqs, Waiting: 0 reqs, GPU KV cache usage: 15.4%, Prefix cache hit rate: 91.5%
+INFO 09-11 17:18:06 [cuda_graph.py:123] **CUDAGraph Config Settings:**
+INFO 09-11 17:18:06 [cuda_graph.py:123] 
+INFO 09-11 17:18:06 [cuda_graph.py:123] - Mode: FULL_AND_PIECEWISE
+INFO 09-11 17:18:06 [cuda_graph.py:123] - Capture sizes: [1, 2, 4, 8, 16, 24, 32]
+INFO 09-11 17:18:06 [cuda_graph.py:123] 
+INFO 09-11 17:18:06 [cuda_graph.py:123] **CUDAGraph Stats:**
+INFO 09-11 17:18:06 [cuda_graph.py:123] 
+INFO 09-11 17:18:06 [cuda_graph.py:123] | Unpadded Tokens | Padded Tokens | Num Paddings | Runtime Mode | Count |
+INFO 09-11 17:18:06 [cuda_graph.py:123] |-----------------|---------------|--------------|--------------|-------|
+INFO 09-11 17:18:06 [cuda_graph.py:123] | 13              | 16            | 3            | FULL         | 133   |
+INFO 09-11 17:18:06 [cuda_graph.py:123] | 8               | 8             | 0            | FULL         | 96    |
+INFO 09-11 17:18:06 [cuda_graph.py:123] | 3               | 4             | 1            | FULL         | 77    |
+INFO 09-11 17:18:06 [cuda_graph.py:123] | 4               | 4             | 0            | FULL         | 52    |
+INFO 09-11 17:18:06 [cuda_graph.py:123] | 7               | 8             | 1            | FULL         | 16    |
+INFO 09-11 17:18:06 [cuda_graph.py:123] | 14              | 16            | 2            | FULL         | 16    |
+INFO 09-11 17:18:06 [cuda_graph.py:123] | 12              | 16            | 4            | FULL         | 13    |
+INFO 09-11 17:18:06 [cuda_graph.py:123] | 2               | 2             | 0            | FULL         | 10    |
+INFO 09-11 17:18:06 [cuda_graph.py:123] | 5               | 8             | 3            | FULL         | 8     |
+INFO 09-11 17:18:06 [cuda_graph.py:123] | 11              | 16            | 5            | FULL         | 6     |
+INFO 09-11 17:18:06 [cuda_graph.py:123] | 8192            | 8192          | 0            | NONE         | 6     |
+INFO 09-11 17:18:06 [cuda_graph.py:123] | 1               | 1             | 0            | FULL         | 4     |
+INFO 09-11 17:18:06 [cuda_graph.py:123] | 9               | 16            | 7            | FULL         | 3     |
+INFO 09-11 17:18:06 [cuda_graph.py:123] | 6               | 8             | 2            | FULL         | 2     |
+INFO 09-11 17:18:06 [cuda_graph.py:123] | 2489            | 2489          | 0            | NONE         | 1     |
+INFO 09-11 17:18:06 [cuda_graph.py:123] | 277             | 277           | 0            | NONE         | 1     |
+INFO 09-11 17:18:06 [cuda_graph.py:123] | 353             | 353           | 0            | NONE         | 1     |
+INFO 09-11 17:18:06 [cuda_graph.py:123] | 488             | 488           | 0            | NONE         | 1     |
+INFO 09-11 17:18:06 [cuda_graph.py:123] | 220             | 220           | 0            | NONE         | 1     |
+INFO 09-11 17:18:06 [cuda_graph.py:123] | 5512            | 5512          | 0            | NONE         | 1     |
+INFO 09-11 17:18:06 [cuda_graph.py:123] | 256             | 256           | 0            | NONE         | 1     |
+INFO 09-11 17:18:06 [cuda_graph.py:123] | 678             | 678           | 0            | NONE         | 1     |
+INFO 09-11 17:18:06 [cuda_graph.py:123] | 278             | 278           | 0            | NONE         | 1     |
+INFO 09-11 17:18:06 [cuda_graph.py:123] | 466             | 466           | 0            | NONE         | 1     |
+INFO 09-11 17:18:06 [cuda_graph.py:123] | 209             | 209           | 0            | NONE         | 1     |
+INFO 09-11 17:18:06 [cuda_graph.py:123] | 138             | 138           | 0            | NONE         | 1     |
+INFO 09-11 17:18:06 [cuda_graph.py:123] | 345             | 345           | 0            | NONE         | 1     |
+INFO 09-11 17:18:06 [cuda_graph.py:123] | 258             | 258           | 0            | NONE         | 1     |
+INFO 09-11 17:18:06 [cuda_graph.py:123] | 279             | 279           | 0            | NONE         | 1     |
+INFO 09-11 17:18:06 [cuda_graph.py:123] | 8017            | 8017          | 0            | NONE         | 1     |
+INFO 09-11 17:18:06 [cuda_graph.py:123] | 10              | 16            | 6            | FULL         | 1     |
+INFO 09-11 17:18:06 [cuda_graph.py:123] | 274             | 274           | 0            | NONE         | 1     |
+INFO 09-11 17:18:06 [cuda_graph.py:123] | 465             | 465           | 0            | NONE         | 1     |
+INFO 09-11 17:18:06 [cuda_graph.py:123] | 570             | 570           | 0            | NONE         | 1     |
+INFO 09-11 17:18:06 [cuda_graph.py:123] | 5802            | 5802          | 0            | NONE         | 1     |
+INFO 09-11 17:18:06 [cuda_graph.py:123] | 6443            | 6443          | 0            | NONE         | 1     |
+INFO 09-11 17:18:06 [cuda_graph.py:123] | 231             | 231           | 0            | NONE         | 1     |
+INFO 09-11 17:18:06 [cuda_graph.py:123] | 181             | 181           | 0            | NONE         | 1     |
+INFO 09-11 17:18:06 [cuda_graph.py:123] | 280             | 280           | 0            | NONE         | 1     |
+INFO 09-11 17:18:06 [cuda_graph.py:123] | 284             | 284           | 0            | NONE         | 1     |
+INFO 09-11 17:18:06 [cuda_graph.py:123] | 259             | 259           | 0            | NONE         | 1     |
+INFO 09-11 17:18:06 [cuda_graph.py:123] | 243             | 243           | 0            | NONE         | 1     |
+INFO 09-11 17:18:06 [cuda_graph.py:123] | 2962            | 2962          | 0            | NONE         | 1     |
+INFO 09-11 17:18:06 [cuda_graph.py:123] | 270             | 270           | 0            | NONE         | 1     |
+INFO 09-11 17:18:06 [cuda_graph.py:123] | 459             | 459           | 0            | NONE         | 1     |
+INFO 09-11 17:18:06 [cuda_graph.py:123] | 489             | 489           | 0            | NONE         | 1     |
+INFO 09-11 17:18:06 [cuda_graph.py:123] | 38              | 38            | 0            | NONE         | 1     |
+INFO 09-11 17:18:06 [cuda_graph.py:123] 
+{"stage": "main", "records": 190, "seconds": 289.7208173629915, "failures": 0}
+{"stage": "main", "records": 195, "seconds": 295.585548240997, "failures": 0}
+INFO 09-11 17:18:16 [loggers.py:310] Engine 000: Avg prompt throughput: 7714.1 tokens/s, Avg generation throughput: 355.3 tokens/s, Running: 7 reqs, Waiting: 0 reqs, GPU KV cache usage: 37.7%, Prefix cache hit rate: 91.4%
+INFO 09-11 17:18:16 [cuda_graph.py:123] **CUDAGraph Config Settings:**
+INFO 09-11 17:18:16 [cuda_graph.py:123] 
+INFO 09-11 17:18:16 [cuda_graph.py:123] - Mode: FULL_AND_PIECEWISE
+INFO 09-11 17:18:16 [cuda_graph.py:123] - Capture sizes: [1, 2, 4, 8, 16, 24, 32]
+INFO 09-11 17:18:16 [cuda_graph.py:123] 
+INFO 09-11 17:18:16 [cuda_graph.py:123] **CUDAGraph Stats:**
+INFO 09-11 17:18:16 [cuda_graph.py:123] 
+INFO 09-11 17:18:16 [cuda_graph.py:123] | Unpadded Tokens | Padded Tokens | Num Paddings | Runtime Mode | Count |
+INFO 09-11 17:18:16 [cuda_graph.py:123] |-----------------|---------------|--------------|--------------|-------|
+INFO 09-11 17:18:16 [cuda_graph.py:123] | 13              | 16            | 3            | FULL         | 90    |
+INFO 09-11 17:18:16 [cuda_graph.py:123] | 7               | 8             | 1            | FULL         | 70    |
+INFO 09-11 17:18:16 [cuda_graph.py:123] | 12              | 16            | 4            | FULL         | 48    |
+INFO 09-11 17:18:16 [cuda_graph.py:123] | 15              | 16            | 1            | FULL         | 27    |
+INFO 09-11 17:18:16 [cuda_graph.py:123] | 3               | 4             | 1            | FULL         | 23    |
+INFO 09-11 17:18:16 [cuda_graph.py:123] | 8               | 8             | 0            | FULL         | 21    |
+INFO 09-11 17:18:16 [cuda_graph.py:123] | 14              | 16            | 2            | FULL         | 18    |
+INFO 09-11 17:18:16 [cuda_graph.py:123] | 9               | 16            | 7            | FULL         | 13    |
+INFO 09-11 17:18:16 [cuda_graph.py:123] | 2               | 2             | 0            | FULL         | 13    |
+INFO 09-11 17:18:16 [cuda_graph.py:123] | 6               | 8             | 2            | FULL         | 12    |
+INFO 09-11 17:18:16 [cuda_graph.py:123] | 11              | 16            | 5            | FULL         | 10    |
+INFO 09-11 17:18:16 [cuda_graph.py:123] | 8192            | 8192          | 0            | NONE         | 10    |
+INFO 09-11 17:18:16 [cuda_graph.py:123] | 10              | 16            | 6            | FULL         | 9     |
+INFO 09-11 17:18:16 [cuda_graph.py:123] | 5               | 8             | 3            | FULL         | 4     |
+INFO 09-11 17:18:16 [cuda_graph.py:123] | 4               | 4             | 0            | FULL         | 3     |
+INFO 09-11 17:18:16 [cuda_graph.py:123] | 1               | 1             | 0            | FULL         | 3     |
+INFO 09-11 17:18:16 [cuda_graph.py:123] | 274             | 274           | 0            | NONE         | 1     |
+INFO 09-11 17:18:16 [cuda_graph.py:123] | 465             | 465           | 0            | NONE         | 1     |
+INFO 09-11 17:18:16 [cuda_graph.py:123] | 570             | 570           | 0            | NONE         | 1     |
+INFO 09-11 17:18:16 [cuda_graph.py:123] | 4474            | 4474          | 0            | NONE         | 1     |
+INFO 09-11 17:18:16 [cuda_graph.py:123] | 6412            | 6412          | 0            | NONE         | 1     |
+INFO 09-11 17:18:16 [cuda_graph.py:123] | 240             | 240           | 0            | NONE         | 1     |
+INFO 09-11 17:18:16 [cuda_graph.py:123] | 1001            | 1001          | 0            | NONE         | 1     |
+INFO 09-11 17:18:16 [cuda_graph.py:123] | 287             | 287           | 0            | NONE         | 1     |
+INFO 09-11 17:18:16 [cuda_graph.py:123] | 764             | 764           | 0            | NONE         | 1     |
+INFO 09-11 17:18:16 [cuda_graph.py:123] | 2266            | 2266          | 0            | NONE         | 1     |
+INFO 09-11 17:18:16 [cuda_graph.py:123] | 291             | 291           | 0            | NONE         | 1     |
+INFO 09-11 17:18:16 [cuda_graph.py:123] | 639             | 639           | 0            | NONE         | 1     |
+INFO 09-11 17:18:16 [cuda_graph.py:123] | 471             | 471           | 0            | NONE         | 1     |
+INFO 09-11 17:18:16 [cuda_graph.py:123] | 1999            | 1999          | 0            | NONE         | 1     |
+INFO 09-11 17:18:16 [cuda_graph.py:123] | 1259            | 1259          | 0            | NONE         | 1     |
+INFO 09-11 17:18:16 [cuda_graph.py:123] | 202             | 202           | 0            | NONE         | 1     |
+INFO 09-11 17:18:16 [cuda_graph.py:123] | 124             | 124           | 0            | NONE         | 1     |
+INFO 09-11 17:18:16 [cuda_graph.py:123] | 357             | 357           | 0            | NONE         | 1     |
+INFO 09-11 17:18:16 [cuda_graph.py:123] | 277             | 277           | 0            | NONE         | 1     |
+INFO 09-11 17:18:16 [cuda_graph.py:123] | 1839            | 1839          | 0            | NONE         | 1     |
+INFO 09-11 17:18:16 [cuda_graph.py:123] | 263             | 263           | 0            | NONE         | 1     |
+INFO 09-11 17:18:16 [cuda_graph.py:123] | 332             | 332           | 0            | NONE         | 1     |
+INFO 09-11 17:18:16 [cuda_graph.py:123] | 376             | 376           | 0            | NONE         | 1     |
+INFO 09-11 17:18:16 [cuda_graph.py:123] | 289             | 289           | 0            | NONE         | 1     |
+INFO 09-11 17:18:16 [cuda_graph.py:123] 
+{"stage": "main", "records": 200, "seconds": 303.91261928799213, "failures": 0}
+{
+  "records": 200,
+  "judgments": 4800,
+  "macro_f1": 0.26820459734577634,
+  "micro_f1": 0.263681592039801,
+  "macro_precision": 0.23708600986826792,
+  "macro_recall": 0.34880952380952374,
+  "label_accuracy": 0.9383333333333334,
+  "exact_match_accuracy": 0.37,
+  "exact_match_records": 74,
+  "false_positives": 196,
+  "false_negatives": 100,
+  "zero_positive_items": [],
+  "zero_division": 0,
+  "searched_records": 0,
+  "retrieved_records": 0,
+  "search_rate": 0.0,
+  "search_rounds": 0,
+  "search_queries": 0,
+  "search_errors": 0,
+  "empty_search_rounds": 0,
+  "invalid_model_responses": 3,
+  "thinking_turns": 0,
+  "thinking_text_tokens": 0,
+  "thinking_budgets": [],
+  "evidence_dropped": 76,
+  "evidence": {
+    "nonempty": 89,
+    "invalid": 0,
+    "positive_nonabsence_missing": 77
+  }
+}
+{"stage": "complete", "seconds": 303.9152993119933, "failed_ids": []}
+(EngineCore pid=1346247) INFO 09-11 17:18:23 [core.py:1313] [shutdown] EngineCore: trigger received signal=SIGTERM
+(EngineCore pid=1346247) INFO 09-11 17:18:23 [core.py:1432] [shutdown] EngineCore: start mode=abort timeout=0s
+(EngineCore pid=1346247) INFO 09-11 17:18:23 [core.py:1463] [shutdown] EngineCore: request processing complete; starting resource teardown
+(EngineCore pid=1346247) INFO 09-11 17:18:23 [core.py:1326] [shutdown] EngineCore: exiting busy loop
+WARNING 09-11 17:18:26 [core_client.py:702] [shutdown] MPClient: engine core exited unexpectedly; starting cleanup
+INFO 09-11 17:18:26 [core_client.py:655] [shutdown] MPClient: start timeout=default
+INFO 09-11 17:18:26 [core_client.py:657] [shutdown] MPClient: stopping engine manager
+INFO 09-11 17:18:26 [core_client.py:659] [shutdown] MPClient: engine manager stopped
+INFO 09-11 17:18:26 [core_client.py:660] [shutdown] MPClient: cleaning up background resources
+INFO 09-11 17:18:26 [core_client.py:662] [shutdown] MPClient: complete

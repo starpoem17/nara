@@ -1,0 +1,155 @@
+{
+  "paired_records": 198,
+  "paired_judgments": 4752,
+  "excluded_ids": [
+    "PPS-DEV-066",
+    "PPS-DEV-075"
+  ],
+  "counts": {
+    "new_fn": 24,
+    "resolved_fp": 146,
+    "new_fp": 37,
+    "resolved_fn": 7
+  },
+  "distinct_notices": {
+    "new_fn": 21,
+    "resolved_fp": 87,
+    "new_fp": 33,
+    "resolved_fn": 5
+  },
+  "matrix_gold_original_candidate": {
+    "110": 24,
+    "000": 4376,
+    "011": 43,
+    "010": 146,
+    "111": 31,
+    "100": 88,
+    "001": 37,
+    "101": 7
+  },
+  "per_item": {
+    "v1": {
+      "new_fn": 3,
+      "new_fp": 1,
+      "resolved_fp": 2
+    },
+    "v2": {},
+    "v3": {},
+    "v4": {
+      "new_fn": 1,
+      "new_fp": 1,
+      "resolved_fp": 1
+    },
+    "v5": {
+      "new_fp": 4,
+      "resolved_fp": 6,
+      "new_fn": 1
+    },
+    "v6": {
+      "resolved_fp": 10,
+      "resolved_fn": 1
+    },
+    "v7": {
+      "resolved_fp": 2,
+      "new_fn": 1
+    },
+    "v8": {
+      "new_fn": 3,
+      "resolved_fp": 7
+    },
+    "v9": {
+      "new_fn": 3,
+      "resolved_fp": 13
+    },
+    "v10": {
+      "resolved_fp": 6,
+      "new_fp": 10,
+      "resolved_fn": 1
+    },
+    "v11": {
+      "resolved_fp": 6,
+      "new_fp": 5,
+      "resolved_fn": 1
+    },
+    "v12": {
+      "resolved_fn": 1
+    },
+    "v13": {},
+    "v14": {
+      "resolved_fp": 18,
+      "new_fn": 3
+    },
+    "v15": {
+      "resolved_fp": 3,
+      "new_fn": 1
+    },
+    "v16": {
+      "resolved_fp": 11,
+      "new_fn": 1
+    },
+    "v17": {
+      "resolved_fp": 14,
+      "new_fp": 1
+    },
+    "v18": {
+      "resolved_fp": 29,
+      "new_fp": 10,
+      "new_fn": 3,
+      "resolved_fn": 2
+    },
+    "v19": {
+      "resolved_fp": 1
+    },
+    "v20": {
+      "resolved_fp": 2,
+      "new_fn": 2
+    },
+    "v21": {},
+    "v22": {
+      "new_fn": 1,
+      "resolved_fp": 2,
+      "resolved_fn": 1
+    },
+    "v23": {
+      "resolved_fp": 12,
+      "new_fn": 1
+    },
+    "v24": {
+      "new_fp": 5,
+      "resolved_fp": 1
+    }
+  },
+  "resolved_fp_outside_amount_band": 60,
+  "resolved_fp_outside_amount_band_per_item": {
+    "v18": 24,
+    "v16": 9,
+    "v17": 10,
+    "v14": 14,
+    "v15": 3
+  },
+  "manually_noted_cases": 117,
+  "all_31_positive_transitions_stop_only_no_search": true,
+  "all_31_candidate_positive_transitions_single_turn": true,
+  "positive_transition_retries": [
+    {
+      "id": "PPS-DEV-049",
+      "item": "v1",
+      "arm": "original",
+      "turns": 2
+    }
+  ],
+  "positive_transition_max_output_tokens": 190,
+  "source_sha256": {
+    "data/dev.jsonl": "5507f5ab0ba53b708f87211ed050dbe531b48a626ace6084c3ccaefb53147534",
+    "data/dev_labels.csv": "84c79302ac190b45b2487ec8e02aab73e59071ee745828e813a7db96d3a97a35",
+    "data/항목표.json": "368cb41f376d8ad7edbbdf181542e6e959de356f7f70d86e72943325ecad61d9",
+    "analysis/common_prompt_v2_512_final/source/nara/compact_criteria.json": "84cc8ca7f625f51e55206fc581a28e36df4551999c4009de84188f273bd06a04",
+    "analysis/common_prompt_v2_512_final/changed_judgments.csv": "0591102f44a815e5eaf21a541cd445876533be18b05a152d934463bbefe97f29",
+    "analysis/common_prompt_v2_512_final/error_review/build.py": "7ce541aee5dcc31ea2c77c0cf214320dcefc83760d0eed69245ffec7927fec0c",
+    "analysis/common_prompt_v2_512_final/error_review/review_notes.json": "d0b955d9d6b32a74ff3c68ec42f1f38003f320ed9b6781b63c1d0889c083aa39",
+    "analysis/common_prompt_v2_512_final/original/trace.jsonl": "3063d2fea4b1415c99b3420797faa6290a76dabe9a4b5dd0f9c659e46b2b5729",
+    "analysis/common_prompt_v2_512_final/original/common_prompt.txt": "e3506ad32205c524c5a2873f3dae0206935cb73a711b3dfb13bcb402cf88d9dc",
+    "analysis/common_prompt_v2_512_final/candidate/trace.jsonl": "c913e74d5673f74ab0f409785b2b28dcf7e11fe15a60ff63bdf1f5c62f5ec17c",
+    "analysis/common_prompt_v2_512_final/candidate/common_prompt.txt": "a3848d235bd5b818b14048a3cc5e72ed31628eab0233f2de7ed6cbc58ce92ae1"
+  }
+}

@@ -4,7 +4,7 @@ import tempfile
 import unittest
 from unittest.mock import patch
 
-from scripts.reporting import report_path, write_report
+from nara.evaluation.reporting import report_path, write_report
 
 
 class ReportingTests(unittest.TestCase):
@@ -13,7 +13,7 @@ class ReportingTests(unittest.TestCase):
         self.addCleanup(self.temp.cleanup)
         self.root = Path(self.temp.name) / 'project'
         self.root.mkdir()
-        self.root_patch = patch('scripts.reporting.ROOT', self.root)
+        self.root_patch = patch('nara.evaluation.reporting.ROOT', self.root)
         self.root_patch.start()
         self.addCleanup(self.root_patch.stop)
 

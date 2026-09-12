@@ -2,8 +2,8 @@
 from copy import deepcopy
 import json
 import unittest
-from nara.continuous import ContinuousPredictor
-from nara.inference import Limits,Reply
+from nara.inference.continuous import ContinuousPredictor
+from nara.inference.predictor import Limits,Reply
 from test_inference import CELL,record,Retriever,final
 
 class Engine:

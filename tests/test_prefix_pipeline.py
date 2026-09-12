@@ -3,8 +3,8 @@ from copy import deepcopy
 import unittest
 from test_continuous import Engine
 from test_inference import CELL, Retriever, record
-from nara.inference import Limits
-from nara.prefix_pipeline import PrefixPipelinePredictor
+from nara.inference.predictor import Limits
+from nara.inference.prefix_pipeline import PrefixPipelinePredictor
 
 
 class PipelineTests(unittest.TestCase):

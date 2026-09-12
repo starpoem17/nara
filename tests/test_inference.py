@@ -4,9 +4,9 @@ from pathlib import Path
 import tempfile
 import unittest
 
-from nara.inference import Limits, Predictor, Reply, compact
-from nara.retrieval import SearchHit
-from script import write_submission
+from nara.inference.predictor import Limits, Predictor, Reply, compact
+from nara.retrieval.search import SearchHit
+from nara.records import write_submission
 
 
 TABLE = {f"v{i}": {"항목명": f"항목{i}", "비고": "", "부재탐지": i == 2}

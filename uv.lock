@@ -1064,7 +1064,7 @@ wheels = [
 [[package]]
 name = "nara"
 version = "0.1.0"
-source = { virtual = "." }
+source = { editable = "." }
 dependencies = [
     { name = "jsonschema", marker = "platform_machine == 'x86_64' and sys_platform == 'linux'" },
     { name = "kiwipiepy", marker = "platform_machine == 'x86_64' and sys_platform == 'linux'" },

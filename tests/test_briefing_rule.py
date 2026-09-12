@@ -5,13 +5,13 @@ from pathlib import Path
 import tempfile
 import unittest
 
-from nara.briefing_rule import judge
-from nara.hypothesis6 import judge as experience_judge
-from nara.hybrid_experiment import THINK
-from nara.prefix_predictor import SourceFirstPredictor, predict_notice
-from scripts.benchmark_compact200 import configuration
-from scripts.benchmark_grouping_time import PLANS
-from script import write_submission
+from nara.rules.briefing import judge
+from nara.rules.qualification import judge as experience_judge
+from nara.inference.hybrid_experiment import THINK
+from nara.inference.prefix_predictor import SourceFirstPredictor, predict_notice
+from nara.experiments.config import configuration
+from nara.experiments.config import PLANS
+from nara.records import write_submission
 from test_inference import Model, Retriever, final
 
 

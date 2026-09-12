@@ -1,0 +1,1 @@
+scripts/benchmark_prefix200.py --output /home/hwajoong/projects/nara/analysis/common_prompt_v2_512_run/candidate --batch-size 11 --output-tokens 512 --common-prompt /home/hwajoong/projects/nara/analysis/common_prompt_v2_512_run/candidate_common.txt --prepare-only

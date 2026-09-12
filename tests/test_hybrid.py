@@ -1,8 +1,8 @@
 """Mixed-mode groups must stay independent and complete before merging."""
 import unittest
 from copy import deepcopy
-from nara.hybrid_experiment import GROUPS,INSTANT,THINK,predict_hybrid
-from nara.prefix_predictor import SourceFirstPredictor
+from nara.inference.hybrid_experiment import GROUPS,INSTANT,THINK,predict_hybrid
+from nara.inference.prefix_predictor import SourceFirstPredictor
 from test_inference import Model,Retriever,CELL,final,record
 
 

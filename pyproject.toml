@@ -27,8 +27,23 @@ dependencies = [
     "orjson==3.10.18",
 ]
 
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project.scripts]
+nara = "nara.cli:main"
+nara-experiment = "nara.experiments.run_experiment:main"
+
+[tool.setuptools]
+packages = ["nara", "nara.inference", "nara.retrieval", "nara.rules", "nara.experiments", "nara.evaluation", "nara.tools"]
+package-dir = {nara = "src"}
+
+[tool.setuptools.package-data]
+"nara.inference" = ["*.json", "*.txt"]
+
 [tool.uv]
-package = false
+package = true
 environments = ["sys_platform == 'linux' and platform_machine == 'x86_64'"]
 
 [[tool.uv.index]]

@@ -1,9 +1,9 @@
 import json
 from pathlib import Path
 import unittest
-from nara.compact_predictor import CompactPredictor
-from scripts.benchmark_compact200 import configuration
-from scripts.benchmark_grouping_time import PLANS
+from nara.inference.compact_predictor import CompactPredictor
+from nara.experiments.config import configuration
+from nara.experiments.config import PLANS
 
 class CompactExperimentTests(unittest.TestCase):
     @classmethod

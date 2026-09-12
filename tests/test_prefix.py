@@ -1,7 +1,7 @@
 """Verify prefix reuse scheduling preserves independent complete predictions."""
 import unittest
-from nara.compact_predictor import CompactPredictor, CRITERIA
-from nara.prefix_predictor import SourceFirstPredictor, predict_notice
+from nara.inference.compact_predictor import CompactPredictor, CRITERIA
+from nara.inference.prefix_predictor import SourceFirstPredictor, predict_notice
 from test_inference import TABLE, SCHEMA, Model, Retriever, final, record
 
 

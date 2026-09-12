@@ -1,0 +1,442 @@
+{
+  "records": 200,
+  "judgments": 4800,
+  "macro_f1": 0.2363677100190258,
+  "micro_f1": 0.2783882783882784,
+  "macro_precision": 0.29768007455507456,
+  "macro_recall": 0.24231150793650794,
+  "label_accuracy": 0.9589583333333334,
+  "exact_match_accuracy": 0.46,
+  "exact_match_records": 92,
+  "false_positives": 82,
+  "false_negatives": 115,
+  "zero_positive_items": [],
+  "zero_division": 0,
+  "searched_records": 0,
+  "retrieved_records": 0,
+  "search_rate": 0.0,
+  "search_rounds": 0,
+  "search_queries": 0,
+  "search_errors": 0,
+  "empty_search_rounds": 0,
+  "invalid_model_responses": 4,
+  "thinking_turns": 0,
+  "thinking_text_tokens": 0,
+  "thinking_budgets": [],
+  "evidence_dropped": 26,
+  "evidence": {
+    "nonempty": 44,
+    "invalid": 0,
+    "positive_nonabsence_missing": 26
+  },
+  "runtime": {
+    "name": "source_first_groups12_off_h6",
+    "options": {
+      "model_dir": "models/gemma-4-26B-A4B-it-NVFP4",
+      "max_model_len": 32768,
+      "thinking": false,
+      "item_group_size": 4
+    },
+    "max_num_seqs": 11,
+    "limits": {
+      "batch_size": 11,
+      "search_rounds": 2,
+      "queries_per_round": 4,
+      "top_k": 5,
+      "round_tokens": 4096,
+      "total_retrieval_tokens": 8192,
+      "output_tokens": 512,
+      "retries": 1,
+      "require_search": false,
+      "instant_output_tokens": null
+    },
+    "groups": [
+      [
+        "v1",
+        "v4"
+      ],
+      [
+        "v5",
+        "v6",
+        "v7"
+      ],
+      [
+        "v8"
+      ],
+      [
+        "v9",
+        "v19"
+      ],
+      [
+        "v10",
+        "v11",
+        "v12",
+        "v13"
+      ],
+      [
+        "v14"
+      ],
+      [
+        "v15",
+        "v16"
+      ],
+      [
+        "v17",
+        "v18"
+      ],
+      [
+        "v20"
+      ],
+      [
+        "v21"
+      ],
+      [
+        "v22",
+        "v23"
+      ],
+      [
+        "v24"
+      ]
+    ],
+    "records": 200,
+    "gpu": "NVIDIA GeForce RTX 5090",
+    "prediction_seconds": 436.9260741640028,
+    "load_seconds": 27.157941789002507,
+    "warmup_seconds": 0.4363426019990584,
+    "total_seconds": 464.0840159530053,
+    "rule_seconds": 0.44175589304359164,
+    "failed_ids": [],
+    "model_turns": 2404,
+    "search_rounds": 0,
+    "invalid_responses": 4,
+    "context_failures": 0,
+    "input_tokens": 28022459,
+    "output_tokens": 106725,
+    "thinking_tokens": 0,
+    "cached_input_tokens": 25522784,
+    "cached_fraction": 0.9107974428653817,
+    "cache_counts_available": true,
+    "request_stats_available": false,
+    "model_seconds": 424.12089305011614,
+    "retrieval_seconds": 0.0
+  },
+  "per_item": [
+    {
+      "item": "v1",
+      "name": "참가자격 특정기관 제한",
+      "support": 7,
+      "predicted_positive": 1,
+      "tp": 0,
+      "fp": 1,
+      "fn": 7,
+      "tn": 192,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "item": "v2",
+      "name": "고시금액 미만 실적제한",
+      "support": 7,
+      "predicted_positive": 8,
+      "tp": 7,
+      "fp": 1,
+      "fn": 0,
+      "tn": 192,
+      "precision": 0.875,
+      "recall": 1.0,
+      "f1": 0.9333333333333333
+    },
+    {
+      "item": "v3",
+      "name": "실적제한 1배수 이상",
+      "support": 8,
+      "predicted_positive": 8,
+      "tp": 8,
+      "fp": 0,
+      "fn": 0,
+      "tn": 192,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    {
+      "item": "v4",
+      "name": "고시금액 이상 특정기관, 특정실적",
+      "support": 6,
+      "predicted_positive": 5,
+      "tp": 2,
+      "fp": 3,
+      "fn": 4,
+      "tn": 191,
+      "precision": 0.4,
+      "recall": 0.3333333333333333,
+      "f1": 0.36363636363636365
+    },
+    {
+      "item": "v5",
+      "name": "고시금액 이상 지역제한",
+      "support": 7,
+      "predicted_positive": 8,
+      "tp": 2,
+      "fp": 6,
+      "fn": 5,
+      "tn": 187,
+      "precision": 0.25,
+      "recall": 0.2857142857142857,
+      "f1": 0.26666666666666666
+    },
+    {
+      "item": "v6",
+      "name": "고시금액 미만 지역제한 시,군,구",
+      "support": 6,
+      "predicted_positive": 1,
+      "tp": 1,
+      "fp": 0,
+      "fn": 5,
+      "tn": 194,
+      "precision": 1.0,
+      "recall": 0.16666666666666666,
+      "f1": 0.2857142857142857
+    },
+    {
+      "item": "v7",
+      "name": "고시금액 미만 지역제한 인접 확대",
+      "support": 7,
+      "predicted_positive": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 7,
+      "tn": 193,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "item": "v8",
+      "name": "중복제한 (실적+지역)",
+      "support": 6,
+      "predicted_positive": 1,
+      "tp": 0,
+      "fp": 1,
+      "fn": 6,
+      "tn": 193,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "item": "v9",
+      "name": "과업지시서 특정 모델명 명시",
+      "support": 6,
+      "predicted_positive": 8,
+      "tp": 2,
+      "fp": 6,
+      "fn": 4,
+      "tn": 188,
+      "precision": 0.25,
+      "recall": 0.3333333333333333,
+      "f1": 0.2857142857142857
+    },
+    {
+      "item": "v10",
+      "name": "중기간 경쟁제품 입찰 직생 없음",
+      "support": 7,
+      "predicted_positive": 25,
+      "tp": 2,
+      "fp": 23,
+      "fn": 5,
+      "tn": 170,
+      "precision": 0.08,
+      "recall": 0.2857142857142857,
+      "f1": 0.125
+    },
+    {
+      "item": "v11",
+      "name": "중기간 경쟁제품 입찰 중소 없음",
+      "support": 6,
+      "predicted_positive": 7,
+      "tp": 1,
+      "fp": 6,
+      "fn": 5,
+      "tn": 188,
+      "precision": 0.14285714285714285,
+      "recall": 0.16666666666666666,
+      "f1": 0.15384615384615385
+    },
+    {
+      "item": "v12",
+      "name": "일반제품 직생 제한",
+      "support": 6,
+      "predicted_positive": 1,
+      "tp": 1,
+      "fp": 0,
+      "fn": 5,
+      "tn": 194,
+      "precision": 1.0,
+      "recall": 0.16666666666666666,
+      "f1": 0.2857142857142857
+    },
+    {
+      "item": "v13",
+      "name": "중기간 경쟁제품 소기업, 소상공인 제한",
+      "support": 6,
+      "predicted_positive": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 6,
+      "tn": 194,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "item": "v14",
+      "name": "고시금액 이상 일반물품 중소기업 제한",
+      "support": 8,
+      "predicted_positive": 2,
+      "tp": 0,
+      "fp": 2,
+      "fn": 8,
+      "tn": 190,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "item": "v15",
+      "name": "1억 이상- 고시금액미만 소기업 제한",
+      "support": 6,
+      "predicted_positive": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 6,
+      "tn": 194,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "item": "v16",
+      "name": "1억 이상- 고시금액미만 중소기업 제한 없음",
+      "support": 6,
+      "predicted_positive": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 6,
+      "tn": 194,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "item": "v17",
+      "name": "1억원 미만 일반물품 중소기업 제한",
+      "support": 6,
+      "predicted_positive": 1,
+      "tp": 0,
+      "fp": 1,
+      "fn": 6,
+      "tn": 193,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "item": "v18",
+      "name": "1억원 미만 일반물품 소기업 제한 없음",
+      "support": 7,
+      "predicted_positive": 18,
+      "tp": 2,
+      "fp": 16,
+      "fn": 5,
+      "tn": 177,
+      "precision": 0.1111111111111111,
+      "recall": 0.2857142857142857,
+      "f1": 0.16
+    },
+    {
+      "item": "v19",
+      "name": "물품공급 확약서 입찰 시 제출",
+      "support": 6,
+      "predicted_positive": 9,
+      "tp": 4,
+      "fp": 5,
+      "fn": 2,
+      "tn": 189,
+      "precision": 0.4444444444444444,
+      "recall": 0.6666666666666666,
+      "f1": 0.5333333333333333
+    },
+    {
+      "item": "v20",
+      "name": "입찰참가자격 (SW)",
+      "support": 5,
+      "predicted_positive": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 5,
+      "tn": 195,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "item": "v21",
+      "name": "공동 5% (10%)",
+      "support": 6,
+      "predicted_positive": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 6,
+      "tn": 194,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "item": "v22",
+      "name": "현장설명회 참석업체 (자격으로 제한 여부) * 계약방법 협상만 적용",
+      "support": 5,
+      "predicted_positive": 4,
+      "tp": 4,
+      "fp": 0,
+      "fn": 1,
+      "tn": 195,
+      "precision": 1.0,
+      "recall": 0.8,
+      "f1": 0.8888888888888888
+    },
+    {
+      "item": "v23",
+      "name": "현장설명회 (공고기간) * 계약방법 협상 + 계약법 지방만 적용",
+      "support": 5,
+      "predicted_positive": 2,
+      "tp": 1,
+      "fp": 1,
+      "fn": 4,
+      "tn": 194,
+      "precision": 0.5,
+      "recall": 0.2,
+      "f1": 0.2857142857142857
+    },
+    {
+      "item": "v24",
+      "name": "공고서와 나라장터 입력값 상이",
+      "support": 8,
+      "predicted_positive": 11,
+      "tp": 1,
+      "fp": 10,
+      "fn": 7,
+      "tn": 182,
+      "precision": 0.09090909090909091,
+      "recall": 0.125,
+      "f1": 0.10526315789473684
+    }
+  ],
+  "sha256": {
+    "data/dev_labels.csv": "84c79302ac190b45b2487ec8e02aab73e59071ee745828e813a7db96d3a97a35",
+    "data/dev.jsonl": "5507f5ab0ba53b708f87211ed050dbe531b48a626ace6084c3ccaefb53147534",
+    "/home/hwajoong/projects/nara/analysis/common_prompt_v2_512_final/candidate/submission.csv": "fa286530c23f9cb7041e38f6d326953f7b0fe4ee20285486b8056d22b411d36d"
+  }
+}

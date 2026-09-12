@@ -1,0 +1,94 @@
+{
+  "name": "source_first_groups12_off_h6",
+  "options": {
+    "model_dir": "models/gemma-4-26B-A4B-it-NVFP4",
+    "max_model_len": 32768,
+    "thinking": false,
+    "item_group_size": 4
+  },
+  "max_num_seqs": 11,
+  "limits": {
+    "batch_size": 11,
+    "search_rounds": 2,
+    "queries_per_round": 4,
+    "top_k": 5,
+    "round_tokens": 4096,
+    "total_retrieval_tokens": 8192,
+    "output_tokens": 512,
+    "retries": 1,
+    "require_search": false,
+    "instant_output_tokens": null
+  },
+  "groups": [
+    [
+      "v1",
+      "v4"
+    ],
+    [
+      "v5",
+      "v6",
+      "v7"
+    ],
+    [
+      "v8"
+    ],
+    [
+      "v9",
+      "v19"
+    ],
+    [
+      "v10",
+      "v11",
+      "v12",
+      "v13"
+    ],
+    [
+      "v14"
+    ],
+    [
+      "v15",
+      "v16"
+    ],
+    [
+      "v17",
+      "v18"
+    ],
+    [
+      "v20"
+    ],
+    [
+      "v21"
+    ],
+    [
+      "v22",
+      "v23"
+    ],
+    [
+      "v24"
+    ]
+  ],
+  "records": 200,
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "prediction_seconds": 452.3289925559948,
+  "load_seconds": 27.298787776002428,
+  "warmup_seconds": 0.4447444399993401,
+  "total_seconds": 479.6277803319972,
+  "rule_seconds": 0.4415380579739576,
+  "failed_ids": [
+    "PPS-DEV-066",
+    "PPS-DEV-075"
+  ],
+  "model_turns": 2403,
+  "search_rounds": 0,
+  "invalid_responses": 5,
+  "context_failures": 0,
+  "input_tokens": 27500199,
+  "output_tokens": 111826,
+  "thinking_tokens": 0,
+  "cached_input_tokens": 25002112,
+  "cached_fraction": 0.9091611300703678,
+  "cache_counts_available": true,
+  "request_stats_available": false,
+  "model_seconds": 439.6543135279062,
+  "retrieval_seconds": 0.0
+}

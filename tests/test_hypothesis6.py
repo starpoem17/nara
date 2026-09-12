@@ -1,5 +1,5 @@
 import unittest
-from nara.hypothesis6 import judge, money_value
+from nara.rules.qualification import judge, money_value
 
 
 def record(text, estimate=90_000_000, budget=100_000_000, law='국가계약법'):

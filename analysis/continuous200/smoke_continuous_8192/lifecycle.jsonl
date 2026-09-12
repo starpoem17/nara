@@ -1,0 +1,16 @@
+{"event": "submit", "request_id": "continuous-0", "task_id": "0:0", "time": 85133.169725222, "inflight": 1, "input_tokens": 11367, "thinking_budget": 1024}
+{"event": "submit", "request_id": "continuous-1", "task_id": "1:0", "time": 85133.188802304, "inflight": 2, "input_tokens": 18834, "thinking_budget": 1024}
+{"event": "submit", "request_id": "continuous-2", "task_id": "2:0", "time": 85133.212909182, "inflight": 3, "input_tokens": 29344, "thinking_budget": 1024}
+{"event": "submit", "request_id": "continuous-3", "task_id": "3:0", "time": 85133.223157621, "inflight": 4, "input_tokens": 10478, "thinking_budget": 1024}
+{"event": "submit", "request_id": "continuous-4", "task_id": "4:0", "time": 85133.229080727, "inflight": 5, "input_tokens": 5685, "thinking_budget": 1024}
+{"event": "submit", "request_id": "continuous-5", "task_id": "5:0", "time": 85133.242044323, "inflight": 6, "input_tokens": 10957, "thinking_budget": 1024}
+{"event": "submit", "request_id": "continuous-6", "task_id": "6:0", "time": 85133.252655838, "inflight": 7, "input_tokens": 8000, "thinking_budget": 1024}
+{"event": "submit", "request_id": "continuous-7", "task_id": "7:0", "time": 85133.259413914, "inflight": 8, "input_tokens": 4647, "thinking_budget": 1024}
+{"event": "complete", "request_id": "continuous-3", "task_id": "3:0", "time": 85154.743858612, "inflight": 7}
+{"event": "complete", "request_id": "continuous-2", "task_id": "2:0", "time": 85154.756276324, "inflight": 6}
+{"event": "complete", "request_id": "continuous-4", "task_id": "4:0", "time": 85154.768683405, "inflight": 5}
+{"event": "complete", "request_id": "continuous-1", "task_id": "1:0", "time": 85154.779121582, "inflight": 4}
+{"event": "complete", "request_id": "continuous-7", "task_id": "7:0", "time": 85154.789794142, "inflight": 3}
+{"event": "complete", "request_id": "continuous-5", "task_id": "5:0", "time": 85154.839787649, "inflight": 2}
+{"event": "complete", "request_id": "continuous-6", "task_id": "6:0", "time": 85154.849576598, "inflight": 1}
+{"event": "complete", "request_id": "continuous-0", "task_id": "0:0", "time": 85155.088596142, "inflight": 0}

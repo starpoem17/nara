@@ -1,0 +1,13 @@
+{
+  "selected_tokens": 8192,
+  "pilot_seconds": {
+    "pilot_barrier_8192": 121.21445500499976,
+    "pilot_continuous_2048": 119.59700937698653,
+    "pilot_continuous_8192": 117.61366838100366,
+    "pilot_continuous_16384": 130.33525043498958
+  },
+  "full_seconds": {
+    "six_continuous_8192": 494.4584278830007,
+    "mixed_continuous_8192": 798.9159775519947
+  }
+}

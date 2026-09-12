@@ -1,0 +1,1107 @@
+{
+  "arms": {
+    "original": {
+      "full_score": null,
+      "runtime": {
+        "name": "source_first_groups12_off_h6",
+        "options": {
+          "model_dir": "models/gemma-4-26B-A4B-it-NVFP4",
+          "max_model_len": 32768,
+          "thinking": false,
+          "item_group_size": 4
+        },
+        "max_num_seqs": 11,
+        "limits": {
+          "batch_size": 11,
+          "search_rounds": 2,
+          "queries_per_round": 4,
+          "top_k": 5,
+          "round_tokens": 4096,
+          "total_retrieval_tokens": 8192,
+          "output_tokens": 512,
+          "retries": 1,
+          "require_search": false,
+          "instant_output_tokens": null
+        },
+        "groups": [
+          [
+            "v1",
+            "v4"
+          ],
+          [
+            "v5",
+            "v6",
+            "v7"
+          ],
+          [
+            "v8"
+          ],
+          [
+            "v9",
+            "v19"
+          ],
+          [
+            "v10",
+            "v11",
+            "v12",
+            "v13"
+          ],
+          [
+            "v14"
+          ],
+          [
+            "v15",
+            "v16"
+          ],
+          [
+            "v17",
+            "v18"
+          ],
+          [
+            "v20"
+          ],
+          [
+            "v21"
+          ],
+          [
+            "v22",
+            "v23"
+          ],
+          [
+            "v24"
+          ]
+        ],
+        "records": 200,
+        "gpu": "NVIDIA GeForce RTX 5090",
+        "prediction_seconds": 452.3289925559948,
+        "load_seconds": 27.298787776002428,
+        "warmup_seconds": 0.4447444399993401,
+        "total_seconds": 479.6277803319972,
+        "rule_seconds": 0.4415380579739576,
+        "failed_ids": [
+          "PPS-DEV-066",
+          "PPS-DEV-075"
+        ],
+        "model_turns": 2403,
+        "search_rounds": 0,
+        "invalid_responses": 5,
+        "context_failures": 0,
+        "input_tokens": 27500199,
+        "output_tokens": 111826,
+        "thinking_tokens": 0,
+        "cached_input_tokens": 25002112,
+        "cached_fraction": 0.9091611300703678,
+        "cache_counts_available": true,
+        "request_stats_available": false,
+        "model_seconds": 439.6543135279062,
+        "retrieval_seconds": 0.0
+      },
+      "failed_ids": [
+        "PPS-DEV-066",
+        "PPS-DEV-075"
+      ],
+      "evidence_successful_notices": {
+        "nonempty": 85,
+        "invalid": 0,
+        "positive_nonabsence_missing": 78
+      },
+      "search_queries": 0,
+      "searched_records": 0,
+      "search_errors": 0,
+      "empty_search_rounds": 0,
+      "length_terminated_responses": 3,
+      "evidence_dropped": 82
+    },
+    "candidate": {
+      "full_score": {
+        "records": 200,
+        "macro_f1": 0.2363677100190258,
+        "micro_f1": 0.2783882783882784,
+        "llm22_macro_f1": 0.16997689577833117,
+        "false_positives": 82,
+        "false_negatives": 115,
+        "per_item": [
+          {
+            "item": "v1",
+            "name": "참가자격 특정기관 제한",
+            "support": 7,
+            "tp": 0,
+            "fp": 1,
+            "fn": 7,
+            "f1": 0.0
+          },
+          {
+            "item": "v2",
+            "name": "고시금액 미만 실적제한",
+            "support": 7,
+            "tp": 7,
+            "fp": 1,
+            "fn": 0,
+            "f1": 0.9333333333333333
+          },
+          {
+            "item": "v3",
+            "name": "실적제한 1배수 이상",
+            "support": 8,
+            "tp": 8,
+            "fp": 0,
+            "fn": 0,
+            "f1": 1.0
+          },
+          {
+            "item": "v4",
+            "name": "고시금액 이상 특정기관, 특정실적",
+            "support": 6,
+            "tp": 2,
+            "fp": 3,
+            "fn": 4,
+            "f1": 0.36363636363636365
+          },
+          {
+            "item": "v5",
+            "name": "고시금액 이상 지역제한",
+            "support": 7,
+            "tp": 2,
+            "fp": 6,
+            "fn": 5,
+            "f1": 0.26666666666666666
+          },
+          {
+            "item": "v6",
+            "name": "고시금액 미만 지역제한 시,군,구",
+            "support": 6,
+            "tp": 1,
+            "fp": 0,
+            "fn": 5,
+            "f1": 0.2857142857142857
+          },
+          {
+            "item": "v7",
+            "name": "고시금액 미만 지역제한 인접 확대",
+            "support": 7,
+            "tp": 0,
+            "fp": 0,
+            "fn": 7,
+            "f1": 0.0
+          },
+          {
+            "item": "v8",
+            "name": "중복제한 (실적+지역)",
+            "support": 6,
+            "tp": 0,
+            "fp": 1,
+            "fn": 6,
+            "f1": 0.0
+          },
+          {
+            "item": "v9",
+            "name": "과업지시서 특정 모델명 명시",
+            "support": 6,
+            "tp": 2,
+            "fp": 6,
+            "fn": 4,
+            "f1": 0.2857142857142857
+          },
+          {
+            "item": "v10",
+            "name": "중기간 경쟁제품 입찰 직생 없음",
+            "support": 7,
+            "tp": 2,
+            "fp": 23,
+            "fn": 5,
+            "f1": 0.125
+          },
+          {
+            "item": "v11",
+            "name": "중기간 경쟁제품 입찰 중소 없음",
+            "support": 6,
+            "tp": 1,
+            "fp": 6,
+            "fn": 5,
+            "f1": 0.15384615384615385
+          },
+          {
+            "item": "v12",
+            "name": "일반제품 직생 제한",
+            "support": 6,
+            "tp": 1,
+            "fp": 0,
+            "fn": 5,
+            "f1": 0.2857142857142857
+          },
+          {
+            "item": "v13",
+            "name": "중기간 경쟁제품 소기업, 소상공인 제한",
+            "support": 6,
+            "tp": 0,
+            "fp": 0,
+            "fn": 6,
+            "f1": 0.0
+          },
+          {
+            "item": "v14",
+            "name": "고시금액 이상 일반물품 중소기업 제한",
+            "support": 8,
+            "tp": 0,
+            "fp": 2,
+            "fn": 8,
+            "f1": 0.0
+          },
+          {
+            "item": "v15",
+            "name": "1억 이상- 고시금액미만 소기업 제한",
+            "support": 6,
+            "tp": 0,
+            "fp": 0,
+            "fn": 6,
+            "f1": 0.0
+          },
+          {
+            "item": "v16",
+            "name": "1억 이상- 고시금액미만 중소기업 제한 없음",
+            "support": 6,
+            "tp": 0,
+            "fp": 0,
+            "fn": 6,
+            "f1": 0.0
+          },
+          {
+            "item": "v17",
+            "name": "1억원 미만 일반물품 중소기업 제한",
+            "support": 6,
+            "tp": 0,
+            "fp": 1,
+            "fn": 6,
+            "f1": 0.0
+          },
+          {
+            "item": "v18",
+            "name": "1억원 미만 일반물품 소기업 제한 없음",
+            "support": 7,
+            "tp": 2,
+            "fp": 16,
+            "fn": 5,
+            "f1": 0.16
+          },
+          {
+            "item": "v19",
+            "name": "물품공급 확약서 입찰 시 제출",
+            "support": 6,
+            "tp": 4,
+            "fp": 5,
+            "fn": 2,
+            "f1": 0.5333333333333333
+          },
+          {
+            "item": "v20",
+            "name": "입찰참가자격 (SW)",
+            "support": 5,
+            "tp": 0,
+            "fp": 0,
+            "fn": 5,
+            "f1": 0.0
+          },
+          {
+            "item": "v21",
+            "name": "공동 5% (10%)",
+            "support": 6,
+            "tp": 0,
+            "fp": 0,
+            "fn": 6,
+            "f1": 0.0
+          },
+          {
+            "item": "v22",
+            "name": "현장설명회 참석업체 (자격으로 제한 여부) * 계약방법 협상만 적용",
+            "support": 5,
+            "tp": 4,
+            "fp": 0,
+            "fn": 1,
+            "f1": 0.8888888888888888
+          },
+          {
+            "item": "v23",
+            "name": "현장설명회 (공고기간) * 계약방법 협상 + 계약법 지방만 적용",
+            "support": 5,
+            "tp": 1,
+            "fp": 1,
+            "fn": 4,
+            "f1": 0.2857142857142857
+          },
+          {
+            "item": "v24",
+            "name": "공고서와 나라장터 입력값 상이",
+            "support": 8,
+            "tp": 1,
+            "fp": 10,
+            "fn": 7,
+            "f1": 0.10526315789473684
+          }
+        ]
+      },
+      "runtime": {
+        "name": "source_first_groups12_off_h6",
+        "options": {
+          "model_dir": "models/gemma-4-26B-A4B-it-NVFP4",
+          "max_model_len": 32768,
+          "thinking": false,
+          "item_group_size": 4
+        },
+        "max_num_seqs": 11,
+        "limits": {
+          "batch_size": 11,
+          "search_rounds": 2,
+          "queries_per_round": 4,
+          "top_k": 5,
+          "round_tokens": 4096,
+          "total_retrieval_tokens": 8192,
+          "output_tokens": 512,
+          "retries": 1,
+          "require_search": false,
+          "instant_output_tokens": null
+        },
+        "groups": [
+          [
+            "v1",
+            "v4"
+          ],
+          [
+            "v5",
+            "v6",
+            "v7"
+          ],
+          [
+            "v8"
+          ],
+          [
+            "v9",
+            "v19"
+          ],
+          [
+            "v10",
+            "v11",
+            "v12",
+            "v13"
+          ],
+          [
+            "v14"
+          ],
+          [
+            "v15",
+            "v16"
+          ],
+          [
+            "v17",
+            "v18"
+          ],
+          [
+            "v20"
+          ],
+          [
+            "v21"
+          ],
+          [
+            "v22",
+            "v23"
+          ],
+          [
+            "v24"
+          ]
+        ],
+        "records": 200,
+        "gpu": "NVIDIA GeForce RTX 5090",
+        "prediction_seconds": 436.9260741640028,
+        "load_seconds": 27.157941789002507,
+        "warmup_seconds": 0.4363426019990584,
+        "total_seconds": 464.0840159530053,
+        "rule_seconds": 0.44175589304359164,
+        "failed_ids": [],
+        "model_turns": 2404,
+        "search_rounds": 0,
+        "invalid_responses": 4,
+        "context_failures": 0,
+        "input_tokens": 28022459,
+        "output_tokens": 106725,
+        "thinking_tokens": 0,
+        "cached_input_tokens": 25522784,
+        "cached_fraction": 0.9107974428653817,
+        "cache_counts_available": true,
+        "request_stats_available": false,
+        "model_seconds": 424.12089305011614,
+        "retrieval_seconds": 0.0
+      },
+      "failed_ids": [],
+      "evidence_successful_notices": {
+        "nonempty": 44,
+        "invalid": 0,
+        "positive_nonabsence_missing": 26
+      },
+      "search_queries": 0,
+      "searched_records": 0,
+      "search_errors": 0,
+      "empty_search_rounds": 0,
+      "length_terminated_responses": 4,
+      "evidence_dropped": 26
+    }
+  },
+  "paired_successful_records": [
+    "PPS-DEV-01",
+    "PPS-DEV-02",
+    "PPS-DEV-03",
+    "PPS-DEV-04",
+    "PPS-DEV-05",
+    "PPS-DEV-06",
+    "PPS-DEV-07",
+    "PPS-DEV-08",
+    "PPS-DEV-09",
+    "PPS-DEV-10",
+    "PPS-DEV-11",
+    "PPS-DEV-12",
+    "PPS-DEV-13",
+    "PPS-DEV-14",
+    "PPS-DEV-15",
+    "PPS-DEV-16",
+    "PPS-DEV-17",
+    "PPS-DEV-18",
+    "PPS-DEV-19",
+    "PPS-DEV-20",
+    "PPS-DEV-21",
+    "PPS-DEV-22",
+    "PPS-DEV-23",
+    "PPS-DEV-24",
+    "PPS-DEV-25",
+    "PPS-DEV-26",
+    "PPS-DEV-27",
+    "PPS-DEV-28",
+    "PPS-DEV-29",
+    "PPS-DEV-30",
+    "PPS-DEV-31",
+    "PPS-DEV-32",
+    "PPS-DEV-033",
+    "PPS-DEV-034",
+    "PPS-DEV-035",
+    "PPS-DEV-036",
+    "PPS-DEV-037",
+    "PPS-DEV-038",
+    "PPS-DEV-039",
+    "PPS-DEV-040",
+    "PPS-DEV-041",
+    "PPS-DEV-042",
+    "PPS-DEV-043",
+    "PPS-DEV-044",
+    "PPS-DEV-045",
+    "PPS-DEV-046",
+    "PPS-DEV-047",
+    "PPS-DEV-048",
+    "PPS-DEV-049",
+    "PPS-DEV-050",
+    "PPS-DEV-051",
+    "PPS-DEV-052",
+    "PPS-DEV-053",
+    "PPS-DEV-054",
+    "PPS-DEV-055",
+    "PPS-DEV-056",
+    "PPS-DEV-057",
+    "PPS-DEV-058",
+    "PPS-DEV-059",
+    "PPS-DEV-060",
+    "PPS-DEV-061",
+    "PPS-DEV-062",
+    "PPS-DEV-063",
+    "PPS-DEV-064",
+    "PPS-DEV-065",
+    "PPS-DEV-067",
+    "PPS-DEV-068",
+    "PPS-DEV-069",
+    "PPS-DEV-070",
+    "PPS-DEV-071",
+    "PPS-DEV-072",
+    "PPS-DEV-073",
+    "PPS-DEV-074",
+    "PPS-DEV-076",
+    "PPS-DEV-077",
+    "PPS-DEV-078",
+    "PPS-DEV-079",
+    "PPS-DEV-080",
+    "PPS-DEV-081",
+    "PPS-DEV-082",
+    "PPS-DEV-083",
+    "PPS-DEV-084",
+    "PPS-DEV-085",
+    "PPS-DEV-086",
+    "PPS-DEV-087",
+    "PPS-DEV-088",
+    "PPS-DEV-089",
+    "PPS-DEV-090",
+    "PPS-DEV-091",
+    "PPS-DEV-092",
+    "PPS-DEV-093",
+    "PPS-DEV-094",
+    "PPS-DEV-095",
+    "PPS-DEV-096",
+    "PPS-DEV-097",
+    "PPS-DEV-098",
+    "PPS-DEV-099",
+    "PPS-DEV-100",
+    "PPS-DEV-101",
+    "PPS-DEV-102",
+    "PPS-DEV-103",
+    "PPS-DEV-104",
+    "PPS-DEV-105",
+    "PPS-DEV-106",
+    "PPS-DEV-107",
+    "PPS-DEV-108",
+    "PPS-DEV-109",
+    "PPS-DEV-110",
+    "PPS-DEV-111",
+    "PPS-DEV-112",
+    "PPS-DEV-113",
+    "PPS-DEV-114",
+    "PPS-DEV-115",
+    "PPS-DEV-116",
+    "PPS-DEV-117",
+    "PPS-DEV-118",
+    "PPS-DEV-119",
+    "PPS-DEV-120",
+    "PPS-DEV-121",
+    "PPS-DEV-122",
+    "PPS-DEV-123",
+    "PPS-DEV-124",
+    "PPS-DEV-125",
+    "PPS-DEV-126",
+    "PPS-DEV-127",
+    "PPS-DEV-128",
+    "PPS-DEV-129",
+    "PPS-DEV-130",
+    "PPS-DEV-131",
+    "PPS-DEV-132",
+    "PPS-DEV-133",
+    "PPS-DEV-134",
+    "PPS-DEV-135",
+    "PPS-DEV-136",
+    "PPS-DEV-137",
+    "PPS-DEV-138",
+    "PPS-DEV-139",
+    "PPS-DEV-140",
+    "PPS-DEV-141",
+    "PPS-DEV-142",
+    "PPS-DEV-143",
+    "PPS-DEV-144",
+    "PPS-DEV-145",
+    "PPS-DEV-146",
+    "PPS-DEV-147",
+    "PPS-DEV-148",
+    "PPS-DEV-149",
+    "PPS-DEV-150",
+    "PPS-DEV-151",
+    "PPS-DEV-152",
+    "PPS-DEV-153",
+    "PPS-DEV-154",
+    "PPS-DEV-155",
+    "PPS-DEV-156",
+    "PPS-DEV-157",
+    "PPS-DEV-158",
+    "PPS-DEV-159",
+    "PPS-DEV-160",
+    "PPS-DEV-161",
+    "PPS-DEV-162",
+    "PPS-DEV-163",
+    "PPS-DEV-164",
+    "PPS-DEV-165",
+    "PPS-DEV-166",
+    "PPS-DEV-167",
+    "PPS-DEV-168",
+    "PPS-DEV-169",
+    "PPS-DEV-170",
+    "PPS-DEV-171",
+    "PPS-DEV-172",
+    "PPS-DEV-173",
+    "PPS-DEV-174",
+    "PPS-DEV-175",
+    "PPS-DEV-176",
+    "PPS-DEV-177",
+    "PPS-DEV-178",
+    "PPS-DEV-179",
+    "PPS-DEV-180",
+    "PPS-DEV-181",
+    "PPS-DEV-182",
+    "PPS-DEV-183",
+    "PPS-DEV-184",
+    "PPS-DEV-185",
+    "PPS-DEV-186",
+    "PPS-DEV-187",
+    "PPS-DEV-188",
+    "PPS-DEV-189",
+    "PPS-DEV-190",
+    "PPS-DEV-191",
+    "PPS-DEV-192",
+    "PPS-DEV-193",
+    "PPS-DEV-194",
+    "PPS-DEV-195",
+    "PPS-DEV-196",
+    "PPS-DEV-197",
+    "PPS-DEV-198",
+    "PPS-DEV-199",
+    "PPS-DEV-200"
+  ],
+  "paired_scores": {
+    "original": {
+      "records": 198,
+      "macro_f1": 0.2878572995982864,
+      "micro_f1": 0.27918781725888325,
+      "llm22_macro_f1": 0.22614735713752446,
+      "false_positives": 189,
+      "false_negatives": 95,
+      "per_item": [
+        {
+          "item": "v1",
+          "name": "참가자격 특정기관 제한",
+          "support": 7,
+          "tp": 3,
+          "fp": 2,
+          "fn": 4,
+          "f1": 0.5
+        },
+        {
+          "item": "v2",
+          "name": "고시금액 미만 실적제한",
+          "support": 7,
+          "tp": 7,
+          "fp": 1,
+          "fn": 0,
+          "f1": 0.9333333333333333
+        },
+        {
+          "item": "v3",
+          "name": "실적제한 1배수 이상",
+          "support": 8,
+          "tp": 8,
+          "fp": 0,
+          "fn": 0,
+          "f1": 1.0
+        },
+        {
+          "item": "v4",
+          "name": "고시금액 이상 특정기관, 특정실적",
+          "support": 6,
+          "tp": 3,
+          "fp": 3,
+          "fn": 3,
+          "f1": 0.5
+        },
+        {
+          "item": "v5",
+          "name": "고시금액 이상 지역제한",
+          "support": 7,
+          "tp": 3,
+          "fp": 7,
+          "fn": 4,
+          "f1": 0.35294117647058826
+        },
+        {
+          "item": "v6",
+          "name": "고시금액 미만 지역제한 시,군,구",
+          "support": 5,
+          "tp": 0,
+          "fp": 10,
+          "fn": 5,
+          "f1": 0.0
+        },
+        {
+          "item": "v7",
+          "name": "고시금액 미만 지역제한 인접 확대",
+          "support": 7,
+          "tp": 1,
+          "fp": 2,
+          "fn": 6,
+          "f1": 0.2
+        },
+        {
+          "item": "v8",
+          "name": "중복제한 (실적+지역)",
+          "support": 6,
+          "tp": 3,
+          "fp": 8,
+          "fn": 3,
+          "f1": 0.35294117647058826
+        },
+        {
+          "item": "v9",
+          "name": "과업지시서 특정 모델명 명시",
+          "support": 6,
+          "tp": 5,
+          "fp": 19,
+          "fn": 1,
+          "f1": 0.3333333333333333
+        },
+        {
+          "item": "v10",
+          "name": "중기간 경쟁제품 입찰 직생 없음",
+          "support": 6,
+          "tp": 1,
+          "fp": 19,
+          "fn": 5,
+          "f1": 0.07692307692307693
+        },
+        {
+          "item": "v11",
+          "name": "중기간 경쟁제품 입찰 중소 없음",
+          "support": 6,
+          "tp": 0,
+          "fp": 7,
+          "fn": 6,
+          "f1": 0.0
+        },
+        {
+          "item": "v12",
+          "name": "일반제품 직생 제한",
+          "support": 6,
+          "tp": 0,
+          "fp": 0,
+          "fn": 6,
+          "f1": 0.0
+        },
+        {
+          "item": "v13",
+          "name": "중기간 경쟁제품 소기업, 소상공인 제한",
+          "support": 6,
+          "tp": 0,
+          "fp": 0,
+          "fn": 6,
+          "f1": 0.0
+        },
+        {
+          "item": "v14",
+          "name": "고시금액 이상 일반물품 중소기업 제한",
+          "support": 8,
+          "tp": 3,
+          "fp": 20,
+          "fn": 5,
+          "f1": 0.1935483870967742
+        },
+        {
+          "item": "v15",
+          "name": "1억 이상- 고시금액미만 소기업 제한",
+          "support": 6,
+          "tp": 1,
+          "fp": 3,
+          "fn": 5,
+          "f1": 0.2
+        },
+        {
+          "item": "v16",
+          "name": "1억 이상- 고시금액미만 중소기업 제한 없음",
+          "support": 5,
+          "tp": 1,
+          "fp": 11,
+          "fn": 4,
+          "f1": 0.11764705882352941
+        },
+        {
+          "item": "v17",
+          "name": "1억원 미만 일반물품 중소기업 제한",
+          "support": 6,
+          "tp": 0,
+          "fp": 14,
+          "fn": 6,
+          "f1": 0.0
+        },
+        {
+          "item": "v18",
+          "name": "1억원 미만 일반물품 소기업 제한 없음",
+          "support": 7,
+          "tp": 3,
+          "fp": 35,
+          "fn": 4,
+          "f1": 0.13333333333333333
+        },
+        {
+          "item": "v19",
+          "name": "물품공급 확약서 입찰 시 제출",
+          "support": 6,
+          "tp": 4,
+          "fp": 6,
+          "fn": 2,
+          "f1": 0.5
+        },
+        {
+          "item": "v20",
+          "name": "입찰참가자격 (SW)",
+          "support": 5,
+          "tp": 2,
+          "fp": 2,
+          "fn": 3,
+          "f1": 0.4444444444444444
+        },
+        {
+          "item": "v21",
+          "name": "공동 5% (10%)",
+          "support": 6,
+          "tp": 0,
+          "fp": 0,
+          "fn": 6,
+          "f1": 0.0
+        },
+        {
+          "item": "v22",
+          "name": "현장설명회 참석업체 (자격으로 제한 여부) * 계약방법 협상만 적용",
+          "support": 5,
+          "tp": 4,
+          "fp": 2,
+          "fn": 1,
+          "f1": 0.7272727272727273
+        },
+        {
+          "item": "v23",
+          "name": "현장설명회 (공고기간) * 계약방법 협상 + 계약법 지방만 적용",
+          "support": 5,
+          "tp": 2,
+          "fp": 13,
+          "fn": 3,
+          "f1": 0.2
+        },
+        {
+          "item": "v24",
+          "name": "공고서와 나라장터 입력값 상이",
+          "support": 8,
+          "tp": 1,
+          "fp": 5,
+          "fn": 7,
+          "f1": 0.14285714285714285
+        }
+      ]
+    },
+    "candidate": {
+      "records": 198,
+      "macro_f1": 0.23955716326684065,
+      "micro_f1": 0.2835820895522388,
+      "llm22_macro_f1": 0.17345629932140197,
+      "false_positives": 80,
+      "false_negatives": 112,
+      "per_item": [
+        {
+          "item": "v1",
+          "name": "참가자격 특정기관 제한",
+          "support": 7,
+          "tp": 0,
+          "fp": 1,
+          "fn": 7,
+          "f1": 0.0
+        },
+        {
+          "item": "v2",
+          "name": "고시금액 미만 실적제한",
+          "support": 7,
+          "tp": 7,
+          "fp": 1,
+          "fn": 0,
+          "f1": 0.9333333333333333
+        },
+        {
+          "item": "v3",
+          "name": "실적제한 1배수 이상",
+          "support": 8,
+          "tp": 8,
+          "fp": 0,
+          "fn": 0,
+          "f1": 1.0
+        },
+        {
+          "item": "v4",
+          "name": "고시금액 이상 특정기관, 특정실적",
+          "support": 6,
+          "tp": 2,
+          "fp": 3,
+          "fn": 4,
+          "f1": 0.36363636363636365
+        },
+        {
+          "item": "v5",
+          "name": "고시금액 이상 지역제한",
+          "support": 7,
+          "tp": 2,
+          "fp": 5,
+          "fn": 5,
+          "f1": 0.2857142857142857
+        },
+        {
+          "item": "v6",
+          "name": "고시금액 미만 지역제한 시,군,구",
+          "support": 5,
+          "tp": 1,
+          "fp": 0,
+          "fn": 4,
+          "f1": 0.3333333333333333
+        },
+        {
+          "item": "v7",
+          "name": "고시금액 미만 지역제한 인접 확대",
+          "support": 7,
+          "tp": 0,
+          "fp": 0,
+          "fn": 7,
+          "f1": 0.0
+        },
+        {
+          "item": "v8",
+          "name": "중복제한 (실적+지역)",
+          "support": 6,
+          "tp": 0,
+          "fp": 1,
+          "fn": 6,
+          "f1": 0.0
+        },
+        {
+          "item": "v9",
+          "name": "과업지시서 특정 모델명 명시",
+          "support": 6,
+          "tp": 2,
+          "fp": 6,
+          "fn": 4,
+          "f1": 0.2857142857142857
+        },
+        {
+          "item": "v10",
+          "name": "중기간 경쟁제품 입찰 직생 없음",
+          "support": 6,
+          "tp": 2,
+          "fp": 23,
+          "fn": 4,
+          "f1": 0.12903225806451613
+        },
+        {
+          "item": "v11",
+          "name": "중기간 경쟁제품 입찰 중소 없음",
+          "support": 6,
+          "tp": 1,
+          "fp": 6,
+          "fn": 5,
+          "f1": 0.15384615384615385
+        },
+        {
+          "item": "v12",
+          "name": "일반제품 직생 제한",
+          "support": 6,
+          "tp": 1,
+          "fp": 0,
+          "fn": 5,
+          "f1": 0.2857142857142857
+        },
+        {
+          "item": "v13",
+          "name": "중기간 경쟁제품 소기업, 소상공인 제한",
+          "support": 6,
+          "tp": 0,
+          "fp": 0,
+          "fn": 6,
+          "f1": 0.0
+        },
+        {
+          "item": "v14",
+          "name": "고시금액 이상 일반물품 중소기업 제한",
+          "support": 8,
+          "tp": 0,
+          "fp": 2,
+          "fn": 8,
+          "f1": 0.0
+        },
+        {
+          "item": "v15",
+          "name": "1억 이상- 고시금액미만 소기업 제한",
+          "support": 6,
+          "tp": 0,
+          "fp": 0,
+          "fn": 6,
+          "f1": 0.0
+        },
+        {
+          "item": "v16",
+          "name": "1억 이상- 고시금액미만 중소기업 제한 없음",
+          "support": 5,
+          "tp": 0,
+          "fp": 0,
+          "fn": 5,
+          "f1": 0.0
+        },
+        {
+          "item": "v17",
+          "name": "1억원 미만 일반물품 중소기업 제한",
+          "support": 6,
+          "tp": 0,
+          "fp": 1,
+          "fn": 6,
+          "f1": 0.0
+        },
+        {
+          "item": "v18",
+          "name": "1억원 미만 일반물품 소기업 제한 없음",
+          "support": 7,
+          "tp": 2,
+          "fp": 16,
+          "fn": 5,
+          "f1": 0.16
+        },
+        {
+          "item": "v19",
+          "name": "물품공급 확약서 입찰 시 제출",
+          "support": 6,
+          "tp": 4,
+          "fp": 5,
+          "fn": 2,
+          "f1": 0.5333333333333333
+        },
+        {
+          "item": "v20",
+          "name": "입찰참가자격 (SW)",
+          "support": 5,
+          "tp": 0,
+          "fp": 0,
+          "fn": 5,
+          "f1": 0.0
+        },
+        {
+          "item": "v21",
+          "name": "공동 5% (10%)",
+          "support": 6,
+          "tp": 0,
+          "fp": 0,
+          "fn": 6,
+          "f1": 0.0
+        },
+        {
+          "item": "v22",
+          "name": "현장설명회 참석업체 (자격으로 제한 여부) * 계약방법 협상만 적용",
+          "support": 5,
+          "tp": 4,
+          "fp": 0,
+          "fn": 1,
+          "f1": 0.8888888888888888
+        },
+        {
+          "item": "v23",
+          "name": "현장설명회 (공고기간) * 계약방법 협상 + 계약법 지방만 적용",
+          "support": 5,
+          "tp": 1,
+          "fp": 1,
+          "fn": 4,
+          "f1": 0.2857142857142857
+        },
+        {
+          "item": "v24",
+          "name": "공고서와 나라장터 입력값 상이",
+          "support": 8,
+          "tp": 1,
+          "fp": 9,
+          "fn": 7,
+          "f1": 0.1111111111111111
+        }
+      ]
+    }
+  },
+  "paired_score_scope": "Diagnostic only; excludes notices with a failure in either arm",
+  "changed_judgments": 214,
+  "fixed": 153,
+  "regressed": 61,
+  "single_pass": true,
+  "validation_passed": true
+}

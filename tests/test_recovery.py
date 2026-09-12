@@ -5,8 +5,8 @@ import json
 import unittest
 from jsonschema import ValidationError
 
-from nara.inference import Limits, Predictor
-from nara.recovery import Attempt, recover_notices
+from nara.inference.predictor import Limits, Predictor
+from nara.inference.recovery import Attempt, recover_notices
 from test_inference import Model, Retriever, TABLE, SCHEMA, record, final
 
 
@@ -166,7 +166,7 @@ class RecoveryTests(unittest.TestCase):
         self.assertEqual(isolated_calls, [['v1']])
         self.assertEqual(result.trace[0]['judgments'], successful['judgments'])
         self.assertIsNone(result.trace[0]['error'])
-        from scripts.recover_hybrid200 import replay
+        from nara.experiments.recover_hybrid200 import replay
         self.assertEqual(replay(rec, successful['trace'][1], predictor),
                          predictor.replay_judgments(rec, successful['trace'][1]))
 

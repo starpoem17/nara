@@ -1,0 +1,300 @@
+{
+  "records": 200,
+  "judgments": 4800,
+  "macro_f1": 0.205367395136561,
+  "micro_f1": 0.2433234421364985,
+  "macro_precision": 0.2436435432758962,
+  "macro_recall": 0.26999007936507935,
+  "label_accuracy": 0.946875,
+  "exact_match_accuracy": 0.38,
+  "exact_match_records": 76,
+  "false_positives": 143,
+  "false_negatives": 112,
+  "zero_positive_items": [],
+  "zero_division": 0,
+  "searched_records": 0,
+  "retrieved_records": 0,
+  "search_rate": 0.0,
+  "search_rounds": 0,
+  "search_queries": 0,
+  "search_errors": 0,
+  "empty_search_rounds": 0,
+  "invalid_model_responses": 2,
+  "thinking_turns": 0,
+  "thinking_text_tokens": 0,
+  "thinking_budgets": [],
+  "evidence_dropped": 65,
+  "evidence": {
+    "nonempty": 89,
+    "invalid": 0,
+    "positive_nonabsence_missing": 65
+  }
+}
+{
+  "records": 200,
+  "judgments": 4800,
+  "macro_f1": 0.21336817023292434,
+  "micro_f1": 0.2507836990595611,
+  "macro_precision": 0.24653706179441473,
+  "macro_recall": 0.2630456349206349,
+  "label_accuracy": 0.9502083333333333,
+  "exact_match_accuracy": 0.4,
+  "exact_match_records": 80,
+  "false_positives": 126,
+  "false_negatives": 113,
+  "zero_positive_items": [],
+  "zero_division": 0,
+  "searched_records": 0,
+  "retrieved_records": 0,
+  "search_rate": 0.0,
+  "search_rounds": 0,
+  "search_queries": 0,
+  "search_errors": 0,
+  "empty_search_rounds": 0,
+  "invalid_model_responses": 2,
+  "thinking_turns": 200,
+  "thinking_text_tokens": 50767,
+  "thinking_budgets": [
+    256
+  ],
+  "evidence_dropped": 56,
+  "evidence": {
+    "nonempty": 80,
+    "invalid": 0,
+    "positive_nonabsence_missing": 56
+  }
+}
+{
+  "records": 200,
+  "judgments": 4800,
+  "macro_f1": 0.2721307039954581,
+  "micro_f1": 0.2926829268292683,
+  "macro_precision": 0.30176192951928243,
+  "macro_recall": 0.3132936507936508,
+  "label_accuracy": 0.9516666666666667,
+  "exact_match_accuracy": 0.4,
+  "exact_match_records": 80,
+  "false_positives": 127,
+  "false_negatives": 105,
+  "zero_positive_items": [],
+  "zero_division": 0,
+  "searched_records": 0,
+  "retrieved_records": 0,
+  "search_rate": 0.0,
+  "search_rounds": 0,
+  "search_queries": 0,
+  "search_errors": 0,
+  "empty_search_rounds": 0,
+  "invalid_model_responses": 2,
+  "thinking_turns": 200,
+  "thinking_text_tokens": 204376,
+  "thinking_budgets": [
+    1024
+  ],
+  "evidence_dropped": 62,
+  "evidence": {
+    "nonempty": 83,
+    "invalid": 0,
+    "positive_nonabsence_missing": 62
+  }
+}
+{
+  "scores": {
+    "hybrid": {
+      "macro_f1": 0.27403603550605277,
+      "micro_f1": 0.29518072289156627,
+      "false_positives": 130,
+      "false_negatives": 104,
+      "exact_match_records": 80,
+      "evidence": {
+        "nonempty": 84,
+        "invalid": 0,
+        "positive_nonabsence_missing": 65
+      },
+      "searched_records": 0,
+      "invalid_model_responses": 2
+    },
+    "optimized": {
+      "macro_f1": 0.2503856821784453,
+      "micro_f1": 0.26380368098159507,
+      "false_positives": 130,
+      "false_negatives": 110,
+      "exact_match_records": 80,
+      "evidence": {
+        "nonempty": 73,
+        "invalid": 0,
+        "positive_nonabsence_missing": 60
+      },
+      "searched_records": 0,
+      "invalid_model_responses": 6
+    },
+    "optimized_off": {
+      "macro_f1": 0.19858434294909708,
+      "micro_f1": 0.24624624624624625,
+      "false_positives": 139,
+      "false_negatives": 112,
+      "exact_match_records": 76,
+      "evidence": {
+        "nonempty": 73,
+        "invalid": 0,
+        "positive_nonabsence_missing": 72
+      },
+      "searched_records": 0,
+      "invalid_model_responses": 3
+    },
+    "six_off": {
+      "macro_f1": 0.205367395136561,
+      "micro_f1": 0.2433234421364985,
+      "false_positives": 143,
+      "false_negatives": 112,
+      "exact_match_records": 76,
+      "evidence": {
+        "nonempty": 89,
+        "invalid": 0,
+        "positive_nonabsence_missing": 65
+      },
+      "searched_records": 0,
+      "invalid_model_responses": 2
+    },
+    "six_on256": {
+      "macro_f1": 0.21336817023292434,
+      "micro_f1": 0.2507836990595611,
+      "false_positives": 126,
+      "false_negatives": 113,
+      "exact_match_records": 80,
+      "evidence": {
+        "nonempty": 80,
+        "invalid": 0,
+        "positive_nonabsence_missing": 56
+      },
+      "searched_records": 0,
+      "invalid_model_responses": 2
+    },
+    "six_on1024_batch8": {
+      "macro_f1": 0.2721307039954581,
+      "micro_f1": 0.2926829268292683,
+      "false_positives": 127,
+      "false_negatives": 105,
+      "exact_match_records": 80,
+      "evidence": {
+        "nonempty": 83,
+        "invalid": 0,
+        "positive_nonabsence_missing": 62
+      },
+      "searched_records": 0,
+      "invalid_model_responses": 2
+    },
+    "groups12": {
+      "macro_f1": 0.2834927277302597,
+      "micro_f1": 0.2773722627737226,
+      "false_positives": 201,
+      "false_negatives": 96,
+      "exact_match_records": 64,
+      "evidence": {
+        "nonempty": 97,
+        "invalid": 0,
+        "positive_nonabsence_missing": 75
+      },
+      "searched_records": 0,
+      "invalid_model_responses": 5
+    },
+    "ungrouped": {
+      "macro_f1": 0.2552486864986865,
+      "micro_f1": 0.328125,
+      "false_positives": 61,
+      "false_negatives": 111,
+      "exact_match_records": 96,
+      "evidence": {
+        "nonempty": 66,
+        "invalid": 0,
+        "positive_nonabsence_missing": 27
+      },
+      "searched_records": 0,
+      "invalid_model_responses": 13
+    }
+  },
+  "pipeline_seconds": {
+    "hybrid": 2404.8128116279986,
+    "optimized": 709.0744773319893,
+    "optimized_off": 447.1389486010012,
+    "six_off": 844.3501488150796,
+    "six_on256": 1240.6639501640748,
+    "six_on1024_batch8": 1023.5203292050865,
+    "groups12": 600.9577476370032,
+    "ungrouped": 717.3477461910006
+  },
+  "six_feature_seconds": {
+    "on1024_serial": 1884.8025421279162,
+    "six_off": 324.33987931499723,
+    "six_on256": 720.6536806639924,
+    "six_on1024_batch8": 503.5100597050041,
+    "on256_batch8": 277.5232334680477
+  },
+  "control_bootstrap": {
+    "on1024": {
+      "macro_delta_95ci": [
+        0.032499219530469525,
+        0.10186430889409087
+      ],
+      "micro_delta_95ci": [
+        0.01926133194532362,
+        0.08783978778244896
+      ],
+      "resamples": 2000,
+      "unit": "notice; exploratory, same development data"
+    },
+    "on256": {
+      "macro_delta_95ci": [
+        -0.016189444236319243,
+        0.030646393411339058
+      ],
+      "micro_delta_95ci": [
+        -0.011973697902687227,
+        0.024577327995491168
+      ],
+      "resamples": 2000,
+      "unit": "notice; exploratory, same development data"
+    },
+    "on1024_batch8_vs_serial": {
+      "macro_delta_95ci": [
+        -0.037286945081062735,
+        0.032638461684514286
+      ],
+      "micro_delta_95ci": [
+        -0.03598811584239605,
+        0.02728708277830056
+      ],
+      "resamples": 2000,
+      "unit": "notice; exploratory, same development data"
+    },
+    "optimized_vs_optimized_off": {
+      "macro_delta_95ci": [
+        0.00018538138130421233,
+        0.09207113163981503
+      ],
+      "micro_delta_95ci": [
+        -0.021903890237370067,
+        0.05590629416668211
+      ],
+      "resamples": 2000,
+      "unit": "notice; exploratory, same development data"
+    }
+  },
+  "instant_bits_changed_between_optimized_on_off": 71,
+  "six_feature_macro_f1": {
+    "hybrid": 0.5081985266195792,
+    "optimized": 0.31878331220436484,
+    "optimized_off": 0.22193732193732196,
+    "six_off": 0.2335239651416122,
+    "six_on256": 0.26552706552706556,
+    "six_on1024_batch8": 0.5005772005772006,
+    "groups12": 0.31527777777777777,
+    "ungrouped": 0.4656084656084656
+  },
+  "caveats": [
+    "Previous group/mode comparisons are historical and confounded; new same-six controls reuse other predictions.",
+    "Composite times are summed-stage estimates; optimized and main times are measured end to end.",
+    "Batching can change greedy outputs numerically. Same dev200 used for earlier feature selection; not held-out proof.",
+    "Request prefill/decode are engine intervals, not pure GPU kernel times. Concurrent intervals must not be added as exclusive walltime."
+  ]
+}

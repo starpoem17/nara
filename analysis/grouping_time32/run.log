@@ -1,0 +1,204 @@
+{"stage": "preflight", "eligible": 179, "selected": 32, "sample_ids": ["PPS-DEV-14", "PPS-DEV-20", "PPS-DEV-21", "PPS-DEV-26", "PPS-DEV-29", "PPS-DEV-033", "PPS-DEV-036", "PPS-DEV-039", "PPS-DEV-041", "PPS-DEV-047", "PPS-DEV-049", "PPS-DEV-062", "PPS-DEV-073", "PPS-DEV-085", "PPS-DEV-091", "PPS-DEV-093", "PPS-DEV-115", "PPS-DEV-120", "PPS-DEV-125", "PPS-DEV-127", "PPS-DEV-141", "PPS-DEV-144", "PPS-DEV-148", "PPS-DEV-161", "PPS-DEV-165", "PPS-DEV-175", "PPS-DEV-178", "PPS-DEV-180", "PPS-DEV-181", "PPS-DEV-184", "PPS-DEV-186", "PPS-DEV-189"]}
+[timing] Load pretrained SentenceTransformer: models/bge-m3
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 4511.37it/s]
+INFO 09-10 23:14:06 [api_utils.py:273] non-default args: {'tokenizer': 'models/gemma-4-26B-A4B-it-NVFP4', 'max_model_len': 32768, 'enable_prefix_caching': True, 'gpu_memory_utilization': 0.86, 'max_num_seqs': 8, 'disable_log_stats': True, 'limit_mm_per_prompt': {'image': 0, 'audio': 0, 'video': 0}, 'structured_outputs_config': StructuredOutputsConfig(backend='xgrammar', disable_any_whitespace=False, disable_additional_properties=False, reasoning_parser='gemma4', reasoning_parser_plugin='', enable_in_reasoning=False), 'reasoning_parser': 'gemma4', 'kernel_config': KernelConfig(ir_op_priority=IrOpPriorityConfig(rms_norm=[], fused_add_rms_norm=[]), enable_flashinfer_autotune=None, enable_cutedsl_warmup=True, enable_bf16x3_router_gemm=False, moe_backend='cutlass', linear_backend='auto'), 'model': 'models/gemma-4-26B-A4B-it-NVFP4'}
+INFO 09-10 23:14:06 [model.py:623] Resolved architecture: Gemma4ForConditionalGeneration
+INFO 09-10 23:14:06 [model.py:1788] Using max model len 32768
+INFO 09-10 23:14:08 [scheduler.py:252] Chunked prefill is enabled with max_num_batched_tokens=8192.
+INFO 09-10 23:14:08 [config.py:240] Gemma4 model has heterogeneous head dimensions (head_dim=256, global_head_dim=512). FA4 not available, forcing TRITON_ATTN backend.
+INFO 09-10 23:14:08 [vllm.py:1109] Asynchronous scheduling is enabled.
+INFO 09-10 23:14:08 [kernel.py:295] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['native'], fused_add_rms_norm=['native'])
+WARNING 09-10 23:14:08 [cuda.py:323] Forcing --disable_chunked_mm_input for models with multimodal-bidirectional attention.
+INFO 09-10 23:14:08 [compilation.py:329] Enabled custom fusions: act_quant
+INFO 09-10 23:14:08 [registry.py:134] All limits of multimodal modalities supported by the model are set to 0, running in text-only mode.
+(EngineCore pid=449267) INFO 09-10 23:14:14 [core.py:116] Initializing a V1 LLM engine (v0.26.0) with config: model='models/gemma-4-26B-A4B-it-NVFP4', speculative_config=None, tokenizer='models/gemma-4-26B-A4B-it-NVFP4', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=32768, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, data_parallel_size=1, decode_context_parallel_size=1, dcp_comm_backend=ag_rs, disable_custom_all_reduce=False, quantization=compressed-tensors, quantization_config=None, enforce_eager=False, enable_return_routed_experts=False, kv_cache_dtype=auto, device_config=cuda, structured_outputs_config=StructuredOutputsConfig(backend='xgrammar', disable_any_whitespace=False, disable_additional_properties=False, reasoning_parser='gemma4', reasoning_parser_plugin='', enable_in_reasoning=False), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None, kv_cache_metrics=False, kv_cache_metrics_sample=0.01, cudagraph_metrics=False, enable_layerwise_nvtx_tracing=False, enable_mfu_metrics=False, enable_mm_processor_stats=False, enable_logging_iteration_details=False, jit_monitor_mode='warn', jit_monitor_verbose=False), seed=0, served_model_name=models/gemma-4-26B-A4B-it-NVFP4, enable_prefix_caching=True, enable_chunked_prefill=True, pooler_config=None, compilation_config={'mode': <CompilationMode.VLLM_COMPILE: 3>, 'debug_dump_path': None, 'cache_dir': '', 'compile_cache_save_format': 'binary', 'backend': 'inductor', 'custom_ops': ['none'], 'ir_enable_torch_wrap': True, 'splitting_ops': ['vllm::unified_attention_with_output', 'vllm::unified_mla_attention_with_output', 'vllm::mamba_mixer2', 'vllm::mamba_mixer', 'vllm::short_conv', 'vllm::linear_attention', 'vllm::plamo2_mamba_mixer', 'vllm::qwen_gdn_attention_core', 'vllm::gdn_attention_core_xpu', 'vllm::olmo_hybrid_gdn_full_forward', 'vllm::kda_attention', 'vllm::sparse_attn_indexer', 'vllm::rocm_aiter_sparse_attn_indexer', 'vllm::deepseek_v4_attention', 'vllm::hpc_rope_norm_forward', 'vllm::unified_kv_cache_update', 'vllm::unified_mla_kv_cache_update'], 'compile_mm_encoder': False, 'cudagraph_mm_encoder': False, 'encoder_cudagraph_token_budgets': [], 'encoder_cudagraph_max_vision_items_per_batch': 0, 'encoder_cudagraph_max_frames_per_batch': None, 'compile_sizes': [], 'compile_ranges_endpoints': [8192], 'inductor_compile_config': {'enable_auto_functionalized_v2': False, 'size_asserts': False, 'alignment_asserts': False, 'scalar_asserts': False, 'combo_kernels': True, 'benchmark_combo_kernel': True}, 'inductor_passes': {}, 'cudagraph_mode': <CUDAGraphMode.FULL_AND_PIECEWISE: (2, 1)>, 'cudagraph_num_of_warmups': 1, 'cudagraph_capture_sizes': [1, 2, 4, 8, 16], 'cudagraph_copy_inputs': False, 'cudagraph_specialize_lora': True, 'use_inductor_graph_partition': False, 'pass_config': {'fuse_norm_quant': False, 'fuse_act_quant': True, 'fuse_attn_quant': False, 'enable_sp': False, 'fuse_gemm_comms': False, 'fuse_allreduce_rms': False, 'enable_qk_norm_rope_fusion': False, 'fuse_rope_kvcache_cat_mla': False, 'fuse_act_padding': False, 'fuse_qk_norm_rope_kvcache': False}, 'max_cudagraph_capture_size': 16, 'dynamic_shapes_config': {'type': <DynamicShapesType.BACKED: 'backed'>, 'evaluate_guards': False, 'assume_32_bit_indexing': False}, 'local_cache_dir': None, 'fast_moe_cold_start': False, 'static_all_moe_layers': []}, kernel_config=KernelConfig(ir_op_priority=IrOpPriorityConfig(rms_norm=['native'], fused_add_rms_norm=['native']), enable_flashinfer_autotune=True, enable_cutedsl_warmup=True, enable_bf16x3_router_gemm=False, moe_backend='cutlass', linear_backend='auto')
+(EngineCore pid=449267) INFO 09-10 23:14:15 [registry.py:134] All limits of multimodal modalities supported by the model are set to 0, running in text-only mode.
+(EngineCore pid=449267) INFO 09-10 23:14:15 [parallel_state.py:1615] world_size=1 rank=0 local_rank=0 distributed_init_method=tcp://192.168.219.102:40267 backend=nccl
+(EngineCore pid=449267) INFO 09-10 23:14:15 [parallel_state.py:1946] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, PCP rank 0, TP rank 0, EP rank 0, EPLB rank N/A
+(EngineCore pid=449267) INFO 09-10 23:14:15 [topk_topp_sampler.py:55] Using FlashInfer for top-p & top-k sampling.
+(EngineCore pid=449267) INFO 09-10 23:14:15 [gpu_model_runner.py:5250] Starting to load model models/gemma-4-26B-A4B-it-NVFP4...
+(EngineCore pid=449267) INFO 09-10 23:14:16 [vllm.py:1109] Asynchronous scheduling is enabled.
+(EngineCore pid=449267) INFO 09-10 23:14:16 [kernel.py:295] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['native'], fused_add_rms_norm=['native'])
+(EngineCore pid=449267) INFO 09-10 23:14:16 [compilation.py:329] Enabled custom fusions: act_quant
+(EngineCore pid=449267) INFO 09-10 23:14:16 [__init__.py:978] Using FlashInferCutlassNvFp4LinearKernel for NVFP4 GEMM
+(EngineCore pid=449267) INFO 09-10 23:14:16 [cuda.py:422] Using AttentionBackendEnum.TRITON_ATTN backend.
+(EngineCore pid=449267) INFO 09-10 23:14:16 [nvfp4.py:239] Using 'VLLM_CUTLASS' NvFp4 MoE backend out of potential backends: ['FLASHINFER_TRTLLM', 'FLASHINFER_CUTEDSL', 'FLASHINFER_CUTEDSL_BATCHED', 'FLASHINFER_CUTLASS', 'VLLM_CUTLASS', 'MARLIN', 'HUMMING', 'EMULATION'].
+(EngineCore pid=449267) INFO 09-10 23:14:16 [cuda.py:422] Using AttentionBackendEnum.TRITON_ATTN backend.
+(EngineCore pid=449267) INFO 09-10 23:14:16 [weight_utils.py:869] Filesystem type for checkpoints: EXT4. Checkpoint size: 15.30 GiB. Available RAM: 24.25 GiB.
+(EngineCore pid=449267) INFO 09-10 23:14:16 [weight_utils.py:892] Auto-prefetch is disabled because the filesystem (EXT4) is not a recognized network FS (NFS/Lustre). If you want to force prefetching, start vLLM with --safetensors-load-strategy=prefetch.
+(EngineCore pid=449267) Loading safetensors checkpoint shards:   0% Completed | 0/1 [00:00<?, ?it/s]
+(EngineCore pid=449267) Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:02<00:00,  2.97s/it]
+(EngineCore pid=449267) Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:02<00:00,  2.97s/it]
+(EngineCore pid=449267) 
+(EngineCore pid=449267) INFO 09-10 23:14:19 [default_loader.py:430] Loading weights took 3.04 seconds
+(EngineCore pid=449267) INFO 09-10 23:14:19 [nvfp4.py:544] Using MoEPrepareAndFinalizeNoDPEPModular
+(EngineCore pid=449267) WARNING 09-10 23:14:19 [compressed_tensors_w4a4_nvfp4.py:102] In NVFP4 linear, the weight global scale is different for parallel layers (e.g. q_proj, k_proj, v_proj). This  will likely result in reduced accuracy. Please verify the model accuracy. Consider using a checkpoint with a shared global NVFP4 scale for fused layers.
+(EngineCore pid=449267) INFO 09-10 23:14:19 [gpu_model_runner.py:5347] Model loading took 14.8 GiB memory and 3.338447 seconds
+(EngineCore pid=449267) INFO 09-10 23:14:21 [backends.py:1094] Using cache directory: /home/hwajoong/.cache/vllm/torch_compile_cache/b36619fad5/rank_0_0/backbone for vLLM's torch.compile
+(EngineCore pid=449267) INFO 09-10 23:14:21 [backends.py:1155] Dynamo bytecode transform time: 1.64 s
+(EngineCore pid=449267) INFO 09-10 23:14:22 [backends.py:292] Directly load the compiled graph(s) for compile range (1, 8192) from the cache, took 0.730 s
+(EngineCore pid=449267) INFO 09-10 23:14:22 [decorators.py:311] Directly load AOT compilation from path /home/hwajoong/.cache/vllm/torch_compile_cache/torch_aot_compile/426d01efbb8eb481267db15b3968cefcbcb50dda699417e77f854acca3b10e29/rank_0_0/model
+(EngineCore pid=449267) INFO 09-10 23:14:22 [monitor.py:53] torch.compile took 2.70 s in total
+(EngineCore pid=449267) INFO 09-10 23:14:23 [monitor.py:81] Initial profiling/warmup run took 0.37 s
+(EngineCore pid=449267) INFO 09-10 23:14:23 [gpu_model_runner.py:6612] Profiling CUDA graph memory: PIECEWISE=5 (largest=16), FULL=4 (largest=8)
+(EngineCore pid=449267) INFO 09-10 23:14:24 [gpu_model_runner.py:6737] Estimated CUDA graph memory: 0.29 GiB total
+(EngineCore pid=449267) INFO 09-10 23:14:24 [gpu_worker.py:560] Available KV cache memory: 9.75 GiB
+(EngineCore pid=449267) INFO 09-10 23:14:24 [gpu_worker.py:575] CUDA graph memory profiling is enabled (default since v0.21.0). The current --gpu-memory-utilization=0.8600 is equivalent to --gpu-memory-utilization=0.8507 without CUDA graph memory profiling. To maintain the same effective KV cache size as before, increase --gpu-memory-utilization to 0.8693. To disable, set VLLM_MEMORY_PROFILER_ESTIMATE_CUDAGRAPHS=0.
+(EngineCore pid=449267) INFO 09-10 23:14:24 [kv_cache_utils.py:2177] GPU KV cache size: 80,934 tokens
+(EngineCore pid=449267) INFO 09-10 23:14:24 [kv_cache_utils.py:2178] Maximum concurrency for 32,768 tokens per request: 2.47x
+(EngineCore pid=449267) INFO 09-10 23:14:24 [kernel_warmup.py:227] Using FlashInfer autotune cache file: /home/hwajoong/.cache/vllm/flashinfer_autotune_cache/0.6.14/120f/a82cca2a5b32bf0ea9ceb5e0c4bcfe5ca716b5f6f330a1a5ec409ba6ccec332a/autotune_configs.json
+(EngineCore pid=449267) 2026-09-10 23:14:24,789 - INFO - autotuner.py:1899 - flashinfer.jit: [Autotuner]: Loaded 126 configs from /home/hwajoong/.cache/vllm/flashinfer_autotune_cache/0.6.14/120f/a82cca2a5b32bf0ea9ceb5e0c4bcfe5ca716b5f6f330a1a5ec409ba6ccec332a/autotune_configs.json
+(EngineCore pid=449267) 2026-09-10 23:14:24,789 - INFO - autotuner.py:651 - flashinfer.jit: [Autotuner]: Autotuning process starts ...
+(EngineCore pid=449267) 2026-09-10 23:14:24,792 - INFO - autotuner.py:1009 - flashinfer.jit: [Autotuner]: Config cache hit for fp4_gemm (runner=CutlassFp4GemmRunner, source=config file)
+(EngineCore pid=449267) 2026-09-10 23:14:24,995 - INFO - autotuner.py:674 - flashinfer.jit: [Autotuner]: Autotuning process ends
+(EngineCore pid=449267) 2026-09-10 23:14:24,998 - INFO - autotuner.py:1899 - flashinfer.jit: [Autotuner]: Loaded 126 configs from /home/hwajoong/.cache/vllm/flashinfer_autotune_cache/0.6.14/120f/a82cca2a5b32bf0ea9ceb5e0c4bcfe5ca716b5f6f330a1a5ec409ba6ccec332a/autotune_configs.json
+(EngineCore pid=449267) INFO 09-10 23:14:24 [kernel_warmup.py:268] FlashInfer autotune cache loaded on rank 0 from /home/hwajoong/.cache/vllm/flashinfer_autotune_cache/0.6.14/120f/a82cca2a5b32bf0ea9ceb5e0c4bcfe5ca716b5f6f330a1a5ec409ba6ccec332a/autotune_configs.json.
+(EngineCore pid=449267) INFO 09-10 23:14:24 [kernel_warmup.py:65] Warming up ll_bf16 router GEMM kernels.
+(EngineCore pid=449267) INFO 09-10 23:14:29 [cutedsl_warmup.py:101] Skipping CuTeDSL warmup because no compile units were requested.
+(EngineCore pid=449267) INFO 09-10 23:14:29 [gpu_model_runner.py:6798] Rank 0: Torch profiler disabled for CUDA graph capture
+(EngineCore pid=449267) Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):   0%|          | 0/5 [00:00<?, ?it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  40%|████      | 2/5 [00:00<00:00, 19.90it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE): 100%|██████████| 5/5 [00:00<00:00, 18.96it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE): 100%|██████████| 5/5 [00:00<00:00, 19.06it/s]
+(EngineCore pid=449267) Capturing CUDA graphs (decode, FULL):   0%|          | 0/4 [00:00<?, ?it/s]Capturing CUDA graphs (decode, FULL):  75%|███████▌  | 3/4 [00:00<00:00, 20.24it/s]Capturing CUDA graphs (decode, FULL): 100%|██████████| 4/4 [00:00<00:00, 19.33it/s]
+(EngineCore pid=449267) INFO 09-10 23:14:30 [gpu_model_runner.py:6844] Graph capturing finished in 1 secs, took 0.27 GiB
+(EngineCore pid=449267) INFO 09-10 23:14:30 [gpu_worker.py:793] CUDA graph pool memory: 0.27 GiB (actual), 0.29 GiB (estimated), difference: 0.02 GiB (8.7%).
+(EngineCore pid=449267) INFO 09-10 23:14:30 [gpu_worker.py:857] Free memory on device (29.27/31.35 GiB) on startup. Desired GPU memory utilization is (0.86, 26.96 GiB). Actual usage is 14.8 GiB for weight, 1.94 GiB for peak activation, 0.18 GiB for non-torch memory, and 0.27 GiB for CUDAGraph memory. Replace gpu_memory_utilization config with `--kv-cache-memory=10339558749` (9.63 GiB) to fit into requested memory, or `--kv-cache-memory=12816586240` (11.94 GiB) to fully utilize gpu memory. Current kv cache memory in use is 9.75 GiB.
+(EngineCore pid=449267) INFO 09-10 23:14:30 [jit_monitor.py:79] Kernel JIT monitor activated; monitored JIT compilations during inference will use mode=warn.
+(EngineCore pid=449267) INFO 09-10 23:14:30 [core.py:340] init engine (profile, create kv cache, warmup model) took 10.78 s (compilation: 2.70 s)
+(EngineCore pid=449267) INFO 09-10 23:14:30 [kernel.py:295] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['native'], fused_add_rms_norm=['native'])
+(EngineCore pid=449267) WARNING 09-10 23:14:31 [jit_monitor.py:135] Triton kernel JIT compilation during inference: _compute_slot_mapping_kernel. This causes a latency spike; consider extending warmup to cover this shape/config.
+(EngineCore pid=449267) WARNING 09-10 23:14:31 [jit_monitor.py:135] Triton kernel JIT compilation during inference: kernel_unified_attention. This causes a latency spike; consider extending warmup to cover this shape/config.
+(EngineCore pid=449267) WARNING 09-10 23:14:31 [jit_monitor.py:135] Triton kernel JIT compilation during inference: apply_token_bitmask_inplace_kernel. This causes a latency spike; consider extending warmup to cover this shape/config.
+(EngineCore pid=449267) INFO 09-10 23:14:31 [block_pool.py:790] Successfully reset prefix cache
+{"stage": "start", "name": "ungrouped", "tasks": 32}
+[timing] Completed 8/32 judgment tasks
+[timing] Completed 16/32 judgment tasks
+[timing] Completed 24/32 judgment tasks
+[timing] Completed 32/32 judgment tasks
+{"name": "ungrouped", "groups": 1, "initial_tasks": 32, "seconds": 109.86469457699786, "seconds_per_notice": 3.433271705531183, "failed_records": 0, "failed_ids": [], "model_turns": 32, "search_rounds": 0, "invalid_responses": 0, "context_failures": 0, "input_tokens": 493397, "output_tokens": 52552, "thinking_tokens": 32692, "model_seconds": 109.62671345799754, "retrieval_seconds": 0.0, "model_batches": 4, "retrieval_batches": 0, "total_seconds": 109.86449683400133}
+(EngineCore pid=449267) INFO 09-10 23:16:21 [block_pool.py:790] Successfully reset prefix cache
+{"stage": "start", "name": "groups7", "tasks": 224}
+[timing] Completed 8/224 judgment tasks
+[timing] Completed 16/224 judgment tasks
+[timing] Completed 24/224 judgment tasks
+[timing] Completed 32/224 judgment tasks
+[timing] Completed 40/224 judgment tasks
+[timing] Completed 48/224 judgment tasks
+[timing] Completed 56/224 judgment tasks
+[timing] Completed 64/224 judgment tasks
+[timing] Completed 72/224 judgment tasks
+[timing] Completed 80/224 judgment tasks
+[timing] Completed 88/224 judgment tasks
+[timing] Completed 96/224 judgment tasks
+[timing] Completed 104/224 judgment tasks
+[timing] Completed 112/224 judgment tasks
+[timing] Completed 120/224 judgment tasks
+[timing] Completed 128/224 judgment tasks
+[timing] Completed 136/224 judgment tasks
+[timing] Completed 144/224 judgment tasks
+[timing] Completed 152/224 judgment tasks
+[timing] Completed 159/224 judgment tasks
+[timing] Completed 167/224 judgment tasks
+[timing] Completed 175/224 judgment tasks
+[timing] Completed 183/224 judgment tasks
+[timing] Completed 191/224 judgment tasks
+[timing] Completed 199/224 judgment tasks
+[timing] Completed 207/224 judgment tasks
+[timing] Completed 215/224 judgment tasks
+[timing] Completed 223/224 judgment tasks
+[timing] Completed 224/224 judgment tasks
+{"name": "groups7", "groups": 7, "initial_tasks": 224, "seconds": 544.8966436490009, "seconds_per_notice": 17.02802011403128, "failed_records": 0, "failed_ids": [], "model_turns": 225, "search_rounds": 0, "invalid_responses": 1, "context_failures": 0, "input_tokens": 2393973, "output_tokens": 253199, "thinking_tokens": 228897, "model_seconds": 543.7142967270229, "retrieval_seconds": 0.0, "model_batches": 29, "retrieval_batches": 0, "total_seconds": 544.8960095960028}
+(EngineCore pid=449267) INFO 09-10 23:25:26 [block_pool.py:790] Successfully reset prefix cache
+{"stage": "start", "name": "groups9", "tasks": 288}
+[timing] Completed 8/288 judgment tasks
+[timing] Completed 16/288 judgment tasks
+[timing] Completed 24/288 judgment tasks
+[timing] Completed 31/288 judgment tasks
+[timing] Completed 39/288 judgment tasks
+[timing] Completed 47/288 judgment tasks
+[timing] Completed 54/288 judgment tasks
+[timing] Completed 62/288 judgment tasks
+[timing] Completed 70/288 judgment tasks
+[timing] Completed 78/288 judgment tasks
+[timing] Completed 86/288 judgment tasks
+[timing] Completed 94/288 judgment tasks
+[timing] Completed 102/288 judgment tasks
+[timing] Completed 110/288 judgment tasks
+[timing] Completed 117/288 judgment tasks
+[timing] Completed 125/288 judgment tasks
+[timing] Completed 133/288 judgment tasks
+[timing] Completed 141/288 judgment tasks
+[timing] Completed 149/288 judgment tasks
+[timing] Completed 157/288 judgment tasks
+[timing] Completed 165/288 judgment tasks
+[timing] Completed 173/288 judgment tasks
+[timing] Completed 181/288 judgment tasks
+[timing] Completed 189/288 judgment tasks
+[timing] Completed 197/288 judgment tasks
+[timing] Completed 205/288 judgment tasks
+[timing] Completed 212/288 judgment tasks
+[timing] Completed 219/288 judgment tasks
+[timing] Completed 227/288 judgment tasks
+[timing] Completed 235/288 judgment tasks
+[timing] Completed 243/288 judgment tasks
+[timing] Completed 251/288 judgment tasks
+[timing] Completed 259/288 judgment tasks
+[timing] Completed 267/288 judgment tasks
+[timing] Completed 275/288 judgment tasks
+[timing] Completed 282/288 judgment tasks
+[timing] Completed 288/288 judgment tasks
+{"name": "groups9", "groups": 9, "initial_tasks": 288, "seconds": 675.2500372289978, "seconds_per_notice": 21.101563663406182, "failed_records": 1, "failed_ids": ["PPS-DEV-085"], "model_turns": 294, "search_rounds": 1, "invalid_responses": 6, "context_failures": 0, "input_tokens": 3116826, "output_tokens": 327497, "thinking_tokens": 294288, "model_seconds": 673.4914936280038, "retrieval_seconds": 0.1721145340015937, "model_batches": 37, "retrieval_batches": 1, "total_seconds": 675.249217695}
+(EngineCore pid=449267) INFO 09-10 23:36:41 [block_pool.py:790] Successfully reset prefix cache
+{"stage": "start", "name": "groups12", "tasks": 384}
+[timing] Completed 8/384 judgment tasks
+[timing] Completed 16/384 judgment tasks
+[timing] Completed 24/384 judgment tasks
+[timing] Completed 32/384 judgment tasks
+[timing] Completed 40/384 judgment tasks
+[timing] Completed 48/384 judgment tasks
+[timing] Completed 56/384 judgment tasks
+[timing] Completed 64/384 judgment tasks
+[timing] Completed 71/384 judgment tasks
+[timing] Completed 79/384 judgment tasks
+[timing] Completed 87/384 judgment tasks
+[timing] Completed 95/384 judgment tasks
+[timing] Completed 103/384 judgment tasks
+[timing] Completed 111/384 judgment tasks
+[timing] Completed 119/384 judgment tasks
+[timing] Completed 127/384 judgment tasks
+[timing] Completed 135/384 judgment tasks
+[timing] Completed 143/384 judgment tasks
+[timing] Completed 151/384 judgment tasks
+[timing] Completed 159/384 judgment tasks
+[timing] Completed 167/384 judgment tasks
+[timing] Completed 175/384 judgment tasks
+[timing] Completed 183/384 judgment tasks
+[timing] Completed 191/384 judgment tasks
+[timing] Completed 199/384 judgment tasks
+[timing] Completed 207/384 judgment tasks
+[timing] Completed 215/384 judgment tasks
+[timing] Completed 222/384 judgment tasks
+[timing] Completed 230/384 judgment tasks
+[timing] Completed 238/384 judgment tasks
+[timing] Completed 246/384 judgment tasks
+[timing] Completed 254/384 judgment tasks
+[timing] Completed 262/384 judgment tasks
+[timing] Completed 269/384 judgment tasks
+[timing] Completed 277/384 judgment tasks
+[timing] Completed 284/384 judgment tasks
+[timing] Completed 291/384 judgment tasks
+[timing] Completed 299/384 judgment tasks
+[timing] Completed 307/384 judgment tasks
+[timing] Completed 315/384 judgment tasks
+[timing] Completed 323/384 judgment tasks
+[timing] Completed 331/384 judgment tasks
+[timing] Completed 339/384 judgment tasks
+[timing] Completed 347/384 judgment tasks
+[timing] Completed 355/384 judgment tasks
+[timing] Completed 363/384 judgment tasks
+[timing] Completed 371/384 judgment tasks
+[timing] Completed 378/384 judgment tasks
+[timing] Completed 384/384 judgment tasks
+{"name": "groups12", "groups": 12, "initial_tasks": 384, "seconds": 854.3016778630008, "seconds_per_notice": 26.696927433218775, "failed_records": 0, "failed_ids": [], "model_turns": 390, "search_rounds": 1, "invalid_responses": 5, "context_failures": 0, "input_tokens": 4054143, "output_tokens": 427619, "thinking_tokens": 393398, "model_seconds": 852.2383169899949, "retrieval_seconds": 0.009943965000275057, "model_batches": 49, "retrieval_batches": 1, "total_seconds": 854.3006825900011}
+(EngineCore pid=449267) INFO 09-10 23:50:56 [core.py:1313] [shutdown] EngineCore: trigger received signal=SIGTERM
+(EngineCore pid=449267) INFO 09-10 23:50:56 [core.py:1432] [shutdown] EngineCore: start mode=abort timeout=0s
+(EngineCore pid=449267) INFO 09-10 23:50:56 [core.py:1463] [shutdown] EngineCore: request processing complete; starting resource teardown
+(EngineCore pid=449267) INFO 09-10 23:50:56 [core.py:1326] [shutdown] EngineCore: exiting busy loop

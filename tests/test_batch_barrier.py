@@ -1,8 +1,8 @@
 """The fallback must never admit a successor while an earlier batch is active."""
 from copy import deepcopy
 import unittest
-from nara.batch_barrier import BatchedPredictor
-from nara.inference import Limits
+from nara.inference.batch_barrier import BatchedPredictor
+from nara.inference.predictor import Limits
 from test_continuous import Engine
 from test_inference import CELL, record, Retriever, final
 

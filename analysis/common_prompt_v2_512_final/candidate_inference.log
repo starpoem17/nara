@@ -1,0 +1,146 @@
+{"stage": "preflight", "records": 200, "max_input": 29448, "overflow": 0}
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 4451.20it/s]
+INFO 09-11 21:36:57 [api_utils.py:273] non-default args: {'tokenizer': 'models/gemma-4-26B-A4B-it-NVFP4', 'max_model_len': 32768, 'enable_prefix_caching': True, 'gpu_memory_utilization': 0.86, 'max_num_seqs': 11, 'disable_log_stats': True, 'limit_mm_per_prompt': {'image': 0, 'audio': 0, 'video': 0}, 'structured_outputs_config': StructuredOutputsConfig(backend='xgrammar', disable_any_whitespace=False, disable_additional_properties=False, reasoning_parser='gemma4', reasoning_parser_plugin='', enable_in_reasoning=False), 'reasoning_parser': 'gemma4', 'kernel_config': KernelConfig(ir_op_priority=IrOpPriorityConfig(rms_norm=[], fused_add_rms_norm=[]), enable_flashinfer_autotune=None, enable_cutedsl_warmup=True, enable_bf16x3_router_gemm=False, moe_backend='cutlass', linear_backend='auto'), 'model': 'models/gemma-4-26B-A4B-it-NVFP4'}
+INFO 09-11 21:36:57 [model.py:623] Resolved architecture: Gemma4ForConditionalGeneration
+INFO 09-11 21:36:57 [model.py:1788] Using max model len 32768
+INFO 09-11 21:36:58 [scheduler.py:252] Chunked prefill is enabled with max_num_batched_tokens=8192.
+INFO 09-11 21:36:58 [config.py:240] Gemma4 model has heterogeneous head dimensions (head_dim=256, global_head_dim=512). FA4 not available, forcing TRITON_ATTN backend.
+INFO 09-11 21:36:58 [vllm.py:1109] Asynchronous scheduling is enabled.
+INFO 09-11 21:36:58 [kernel.py:295] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['native'], fused_add_rms_norm=['native'])
+WARNING 09-11 21:36:58 [cuda.py:323] Forcing --disable_chunked_mm_input for models with multimodal-bidirectional attention.
+INFO 09-11 21:36:58 [compilation.py:329] Enabled custom fusions: act_quant
+INFO 09-11 21:36:58 [registry.py:134] All limits of multimodal modalities supported by the model are set to 0, running in text-only mode.
+(EngineCore pid=1662356) INFO 09-11 21:37:04 [core.py:116] Initializing a V1 LLM engine (v0.26.0) with config: model='models/gemma-4-26B-A4B-it-NVFP4', speculative_config=None, tokenizer='models/gemma-4-26B-A4B-it-NVFP4', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=32768, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, data_parallel_size=1, decode_context_parallel_size=1, dcp_comm_backend=ag_rs, disable_custom_all_reduce=False, quantization=compressed-tensors, quantization_config=None, enforce_eager=False, enable_return_routed_experts=False, kv_cache_dtype=auto, device_config=cuda, structured_outputs_config=StructuredOutputsConfig(backend='xgrammar', disable_any_whitespace=False, disable_additional_properties=False, reasoning_parser='gemma4', reasoning_parser_plugin='', enable_in_reasoning=False), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None, kv_cache_metrics=False, kv_cache_metrics_sample=0.01, cudagraph_metrics=False, enable_layerwise_nvtx_tracing=False, enable_mfu_metrics=False, enable_mm_processor_stats=False, enable_logging_iteration_details=False, jit_monitor_mode='warn', jit_monitor_verbose=False), seed=0, served_model_name=models/gemma-4-26B-A4B-it-NVFP4, enable_prefix_caching=True, enable_chunked_prefill=True, pooler_config=None, compilation_config={'mode': <CompilationMode.VLLM_COMPILE: 3>, 'debug_dump_path': None, 'cache_dir': '', 'compile_cache_save_format': 'binary', 'backend': 'inductor', 'custom_ops': ['none'], 'ir_enable_torch_wrap': True, 'splitting_ops': ['vllm::unified_attention_with_output', 'vllm::unified_mla_attention_with_output', 'vllm::mamba_mixer2', 'vllm::mamba_mixer', 'vllm::short_conv', 'vllm::linear_attention', 'vllm::plamo2_mamba_mixer', 'vllm::qwen_gdn_attention_core', 'vllm::gdn_attention_core_xpu', 'vllm::olmo_hybrid_gdn_full_forward', 'vllm::kda_attention', 'vllm::sparse_attn_indexer', 'vllm::rocm_aiter_sparse_attn_indexer', 'vllm::deepseek_v4_attention', 'vllm::hpc_rope_norm_forward', 'vllm::unified_kv_cache_update', 'vllm::unified_mla_kv_cache_update'], 'compile_mm_encoder': False, 'cudagraph_mm_encoder': False, 'encoder_cudagraph_token_budgets': [], 'encoder_cudagraph_max_vision_items_per_batch': 0, 'encoder_cudagraph_max_frames_per_batch': None, 'compile_sizes': [], 'compile_ranges_endpoints': [8192], 'inductor_compile_config': {'enable_auto_functionalized_v2': False, 'size_asserts': False, 'alignment_asserts': False, 'scalar_asserts': False, 'combo_kernels': True, 'benchmark_combo_kernel': True}, 'inductor_passes': {}, 'cudagraph_mode': <CUDAGraphMode.FULL_AND_PIECEWISE: (2, 1)>, 'cudagraph_num_of_warmups': 1, 'cudagraph_capture_sizes': [1, 2, 4, 8, 16], 'cudagraph_copy_inputs': False, 'cudagraph_specialize_lora': True, 'use_inductor_graph_partition': False, 'pass_config': {'fuse_norm_quant': False, 'fuse_act_quant': True, 'fuse_attn_quant': False, 'enable_sp': False, 'fuse_gemm_comms': False, 'fuse_allreduce_rms': False, 'enable_qk_norm_rope_fusion': False, 'fuse_rope_kvcache_cat_mla': False, 'fuse_act_padding': False, 'fuse_qk_norm_rope_kvcache': False}, 'max_cudagraph_capture_size': 16, 'dynamic_shapes_config': {'type': <DynamicShapesType.BACKED: 'backed'>, 'evaluate_guards': False, 'assume_32_bit_indexing': False}, 'local_cache_dir': None, 'fast_moe_cold_start': False, 'static_all_moe_layers': []}, kernel_config=KernelConfig(ir_op_priority=IrOpPriorityConfig(rms_norm=['native'], fused_add_rms_norm=['native']), enable_flashinfer_autotune=True, enable_cutedsl_warmup=True, enable_bf16x3_router_gemm=False, moe_backend='cutlass', linear_backend='auto')
+(EngineCore pid=1662356) INFO 09-11 21:37:05 [registry.py:134] All limits of multimodal modalities supported by the model are set to 0, running in text-only mode.
+(EngineCore pid=1662356) INFO 09-11 21:37:05 [parallel_state.py:1615] world_size=1 rank=0 local_rank=0 distributed_init_method=tcp://192.168.219.102:34017 backend=nccl
+(EngineCore pid=1662356) INFO 09-11 21:37:05 [parallel_state.py:1946] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, PCP rank 0, TP rank 0, EP rank 0, EPLB rank N/A
+(EngineCore pid=1662356) INFO 09-11 21:37:06 [topk_topp_sampler.py:55] Using FlashInfer for top-p & top-k sampling.
+(EngineCore pid=1662356) INFO 09-11 21:37:06 [gpu_model_runner.py:5250] Starting to load model models/gemma-4-26B-A4B-it-NVFP4...
+(EngineCore pid=1662356) INFO 09-11 21:37:06 [vllm.py:1109] Asynchronous scheduling is enabled.
+(EngineCore pid=1662356) INFO 09-11 21:37:06 [kernel.py:295] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['native'], fused_add_rms_norm=['native'])
+(EngineCore pid=1662356) INFO 09-11 21:37:06 [compilation.py:329] Enabled custom fusions: act_quant
+(EngineCore pid=1662356) INFO 09-11 21:37:06 [__init__.py:978] Using FlashInferCutlassNvFp4LinearKernel for NVFP4 GEMM
+(EngineCore pid=1662356) INFO 09-11 21:37:06 [cuda.py:422] Using AttentionBackendEnum.TRITON_ATTN backend.
+(EngineCore pid=1662356) INFO 09-11 21:37:06 [nvfp4.py:239] Using 'VLLM_CUTLASS' NvFp4 MoE backend out of potential backends: ['FLASHINFER_TRTLLM', 'FLASHINFER_CUTEDSL', 'FLASHINFER_CUTEDSL_BATCHED', 'FLASHINFER_CUTLASS', 'VLLM_CUTLASS', 'MARLIN', 'HUMMING', 'EMULATION'].
+(EngineCore pid=1662356) INFO 09-11 21:37:06 [cuda.py:422] Using AttentionBackendEnum.TRITON_ATTN backend.
+(EngineCore pid=1662356) INFO 09-11 21:37:06 [weight_utils.py:869] Filesystem type for checkpoints: EXT4. Checkpoint size: 15.30 GiB. Available RAM: 23.61 GiB.
+(EngineCore pid=1662356) INFO 09-11 21:37:06 [weight_utils.py:892] Auto-prefetch is disabled because the filesystem (EXT4) is not a recognized network FS (NFS/Lustre). If you want to force prefetching, start vLLM with --safetensors-load-strategy=prefetch.
+(EngineCore pid=1662356) Loading safetensors checkpoint shards:   0% Completed | 0/1 [00:00<?, ?it/s]
+(EngineCore pid=1662356) Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:02<00:00,  2.95s/it]
+(EngineCore pid=1662356) Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:02<00:00,  2.95s/it]
+(EngineCore pid=1662356) 
+(EngineCore pid=1662356) INFO 09-11 21:37:09 [default_loader.py:430] Loading weights took 3.03 seconds
+(EngineCore pid=1662356) INFO 09-11 21:37:09 [nvfp4.py:544] Using MoEPrepareAndFinalizeNoDPEPModular
+(EngineCore pid=1662356) WARNING 09-11 21:37:09 [compressed_tensors_w4a4_nvfp4.py:102] In NVFP4 linear, the weight global scale is different for parallel layers (e.g. q_proj, k_proj, v_proj). This  will likely result in reduced accuracy. Please verify the model accuracy. Consider using a checkpoint with a shared global NVFP4 scale for fused layers.
+(EngineCore pid=1662356) INFO 09-11 21:37:10 [gpu_model_runner.py:5347] Model loading took 14.8 GiB memory and 3.323024 seconds
+(EngineCore pid=1662356) INFO 09-11 21:37:12 [backends.py:1094] Using cache directory: /home/hwajoong/.cache/vllm/torch_compile_cache/b36619fad5/rank_0_0/backbone for vLLM's torch.compile
+(EngineCore pid=1662356) INFO 09-11 21:37:12 [backends.py:1155] Dynamo bytecode transform time: 1.59 s
+(EngineCore pid=1662356) INFO 09-11 21:37:13 [backends.py:292] Directly load the compiled graph(s) for compile range (1, 8192) from the cache, took 0.887 s
+(EngineCore pid=1662356) INFO 09-11 21:37:13 [decorators.py:311] Directly load AOT compilation from path /home/hwajoong/.cache/vllm/torch_compile_cache/torch_aot_compile/426d01efbb8eb481267db15b3968cefcbcb50dda699417e77f854acca3b10e29/rank_0_0/model
+(EngineCore pid=1662356) INFO 09-11 21:37:13 [monitor.py:53] torch.compile took 2.81 s in total
+(EngineCore pid=1662356) INFO 09-11 21:37:13 [monitor.py:81] Initial profiling/warmup run took 0.37 s
+(EngineCore pid=1662356) INFO 09-11 21:37:14 [gpu_model_runner.py:6612] Profiling CUDA graph memory: PIECEWISE=5 (largest=16), FULL=4 (largest=8)
+(EngineCore pid=1662356) INFO 09-11 21:37:15 [gpu_model_runner.py:6737] Estimated CUDA graph memory: 0.29 GiB total
+(EngineCore pid=1662356) INFO 09-11 21:37:15 [gpu_worker.py:560] Available KV cache memory: 9.75 GiB
+(EngineCore pid=1662356) INFO 09-11 21:37:15 [gpu_worker.py:575] CUDA graph memory profiling is enabled (default since v0.21.0). The current --gpu-memory-utilization=0.8600 is equivalent to --gpu-memory-utilization=0.8507 without CUDA graph memory profiling. To maintain the same effective KV cache size as before, increase --gpu-memory-utilization to 0.8693. To disable, set VLLM_MEMORY_PROFILER_ESTIMATE_CUDAGRAPHS=0.
+(EngineCore pid=1662356) INFO 09-11 21:37:15 [kv_cache_utils.py:2177] GPU KV cache size: 80,934 tokens
+(EngineCore pid=1662356) INFO 09-11 21:37:15 [kv_cache_utils.py:2178] Maximum concurrency for 32,768 tokens per request: 2.47x
+(EngineCore pid=1662356) INFO 09-11 21:37:15 [kernel_warmup.py:227] Using FlashInfer autotune cache file: /home/hwajoong/.cache/vllm/flashinfer_autotune_cache/0.6.14/120f/a82cca2a5b32bf0ea9ceb5e0c4bcfe5ca716b5f6f330a1a5ec409ba6ccec332a/autotune_configs.json
+(EngineCore pid=1662356) 2026-09-11 21:37:15,345 - INFO - autotuner.py:1899 - flashinfer.jit: [Autotuner]: Loaded 126 configs from /home/hwajoong/.cache/vllm/flashinfer_autotune_cache/0.6.14/120f/a82cca2a5b32bf0ea9ceb5e0c4bcfe5ca716b5f6f330a1a5ec409ba6ccec332a/autotune_configs.json
+(EngineCore pid=1662356) 2026-09-11 21:37:15,345 - INFO - autotuner.py:651 - flashinfer.jit: [Autotuner]: Autotuning process starts ...
+(EngineCore pid=1662356) 2026-09-11 21:37:15,347 - INFO - autotuner.py:1009 - flashinfer.jit: [Autotuner]: Config cache hit for fp4_gemm (runner=CutlassFp4GemmRunner, source=config file)
+(EngineCore pid=1662356) 2026-09-11 21:37:15,553 - INFO - autotuner.py:674 - flashinfer.jit: [Autotuner]: Autotuning process ends
+(EngineCore pid=1662356) 2026-09-11 21:37:15,556 - INFO - autotuner.py:1899 - flashinfer.jit: [Autotuner]: Loaded 126 configs from /home/hwajoong/.cache/vllm/flashinfer_autotune_cache/0.6.14/120f/a82cca2a5b32bf0ea9ceb5e0c4bcfe5ca716b5f6f330a1a5ec409ba6ccec332a/autotune_configs.json
+(EngineCore pid=1662356) INFO 09-11 21:37:15 [kernel_warmup.py:268] FlashInfer autotune cache loaded on rank 0 from /home/hwajoong/.cache/vllm/flashinfer_autotune_cache/0.6.14/120f/a82cca2a5b32bf0ea9ceb5e0c4bcfe5ca716b5f6f330a1a5ec409ba6ccec332a/autotune_configs.json.
+(EngineCore pid=1662356) INFO 09-11 21:37:15 [kernel_warmup.py:65] Warming up ll_bf16 router GEMM kernels.
+(EngineCore pid=1662356) INFO 09-11 21:37:19 [cutedsl_warmup.py:101] Skipping CuTeDSL warmup because no compile units were requested.
+(EngineCore pid=1662356) INFO 09-11 21:37:19 [gpu_model_runner.py:6798] Rank 0: Torch profiler disabled for CUDA graph capture
+(EngineCore pid=1662356) Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):   0%|          | 0/5 [00:00<?, ?it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  40%|████      | 2/5 [00:00<00:00, 19.64it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE): 100%|██████████| 5/5 [00:00<00:00, 18.93it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE): 100%|██████████| 5/5 [00:00<00:00, 19.00it/s]
+(EngineCore pid=1662356) Capturing CUDA graphs (decode, FULL):   0%|          | 0/4 [00:00<?, ?it/s]Capturing CUDA graphs (decode, FULL):  75%|███████▌  | 3/4 [00:00<00:00, 20.27it/s]Capturing CUDA graphs (decode, FULL): 100%|██████████| 4/4 [00:00<00:00, 19.94it/s]
+(EngineCore pid=1662356) INFO 09-11 21:37:20 [gpu_model_runner.py:6844] Graph capturing finished in 1 secs, took 0.27 GiB
+(EngineCore pid=1662356) INFO 09-11 21:37:20 [gpu_worker.py:793] CUDA graph pool memory: 0.27 GiB (actual), 0.29 GiB (estimated), difference: 0.02 GiB (8.7%).
+(EngineCore pid=1662356) INFO 09-11 21:37:20 [gpu_worker.py:857] Free memory on device (29.27/31.35 GiB) on startup. Desired GPU memory utilization is (0.86, 26.96 GiB). Actual usage is 14.8 GiB for weight, 1.94 GiB for peak activation, 0.18 GiB for non-torch memory, and 0.27 GiB for CUDAGraph memory. Replace gpu_memory_utilization config with `--kv-cache-memory=10339558749` (9.63 GiB) to fit into requested memory, or `--kv-cache-memory=12816586240` (11.94 GiB) to fully utilize gpu memory. Current kv cache memory in use is 9.75 GiB.
+(EngineCore pid=1662356) INFO 09-11 21:37:20 [jit_monitor.py:79] Kernel JIT monitor activated; monitored JIT compilations during inference will use mode=warn.
+(EngineCore pid=1662356) INFO 09-11 21:37:21 [core.py:340] init engine (profile, create kv cache, warmup model) took 11.01 s (compilation: 2.81 s)
+(EngineCore pid=1662356) INFO 09-11 21:37:21 [kernel.py:295] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['native'], fused_add_rms_norm=['native'])
+(EngineCore pid=1662356) WARNING 09-11 21:37:21 [jit_monitor.py:135] Triton kernel JIT compilation during inference: _compute_slot_mapping_kernel. This causes a latency spike; consider extending warmup to cover this shape/config.
+(EngineCore pid=1662356) WARNING 09-11 21:37:21 [jit_monitor.py:135] Triton kernel JIT compilation during inference: kernel_unified_attention. This causes a latency spike; consider extending warmup to cover this shape/config.
+(EngineCore pid=1662356) WARNING 09-11 21:37:21 [jit_monitor.py:135] Triton kernel JIT compilation during inference: apply_token_bitmask_inplace_kernel. This causes a latency spike; consider extending warmup to cover this shape/config.
+(EngineCore pid=1662356) INFO 09-11 21:37:21 [block_pool.py:790] Successfully reset prefix cache
+{"stage": "progress", "records": 5, "seconds": 11.576627069007372, "cached_fraction": 0.9109875417884489, "failures": 0}
+{"stage": "progress", "records": 10, "seconds": 22.716058716003317, "cached_fraction": 0.9112067771089877, "failures": 0}
+{"stage": "progress", "records": 15, "seconds": 34.608660644007614, "cached_fraction": 0.9115879604187908, "failures": 0}
+{"stage": "progress", "records": 20, "seconds": 44.70355466500041, "cached_fraction": 0.9113775327873267, "failures": 0}
+{"stage": "progress", "records": 25, "seconds": 56.69704534500488, "cached_fraction": 0.9110177573093594, "failures": 0}
+{"stage": "progress", "records": 30, "seconds": 69.4761410200008, "cached_fraction": 0.9113781997883091, "failures": 0}
+{"stage": "progress", "records": 35, "seconds": 78.48536260100082, "cached_fraction": 0.9110994888924221, "failures": 0}
+{"stage": "progress", "records": 40, "seconds": 86.18161884701112, "cached_fraction": 0.9106895366499983, "failures": 0}
+{"stage": "progress", "records": 45, "seconds": 95.13777996299905, "cached_fraction": 0.9104931085364443, "failures": 0}
+{"stage": "progress", "records": 50, "seconds": 102.73893888000748, "cached_fraction": 0.91017257320156, "failures": 0}
+{"stage": "progress", "records": 55, "seconds": 111.02444341900991, "cached_fraction": 0.9099828118862081, "failures": 0}
+{"stage": "progress", "records": 60, "seconds": 118.74504191800952, "cached_fraction": 0.9096809021567923, "failures": 0}
+{"stage": "progress", "records": 65, "seconds": 127.17329936500755, "cached_fraction": 0.9094511677283745, "failures": 0}
+{"stage": "progress", "records": 70, "seconds": 138.42887195300136, "cached_fraction": 0.9094341510901656, "failures": 0}
+{"stage": "progress", "records": 75, "seconds": 147.2654951650038, "cached_fraction": 0.9092472320883057, "failures": 0}
+{"stage": "progress", "records": 80, "seconds": 156.07037361200491, "cached_fraction": 0.9091183103972186, "failures": 0}
+{"stage": "progress", "records": 85, "seconds": 168.54338129800453, "cached_fraction": 0.9094360193282909, "failures": 0}
+{"stage": "progress", "records": 90, "seconds": 178.73294590599835, "cached_fraction": 0.9095808643336326, "failures": 0}
+{"stage": "progress", "records": 95, "seconds": 192.77686485700542, "cached_fraction": 0.9097828409005806, "failures": 0}
+{"stage": "progress", "records": 100, "seconds": 204.75181246300053, "cached_fraction": 0.9099500423856928, "failures": 0}
+{"stage": "progress", "records": 105, "seconds": 215.38813220000884, "cached_fraction": 0.9100007351149373, "failures": 0}
+{"stage": "progress", "records": 110, "seconds": 227.2162911040068, "cached_fraction": 0.9100599231612823, "failures": 0}
+{"stage": "progress", "records": 115, "seconds": 234.67211691899865, "cached_fraction": 0.9099666223548382, "failures": 0}
+{"stage": "progress", "records": 120, "seconds": 244.44859905001067, "cached_fraction": 0.909961827235844, "failures": 0}
+{"stage": "progress", "records": 125, "seconds": 257.10920972200984, "cached_fraction": 0.9101261427215854, "failures": 0}
+{"stage": "progress", "records": 130, "seconds": 266.7798128470022, "cached_fraction": 0.9100754222156033, "failures": 0}
+{"stage": "progress", "records": 135, "seconds": 276.3498927449982, "cached_fraction": 0.9100945727718607, "failures": 0}
+{"stage": "progress", "records": 140, "seconds": 295.46672735099855, "cached_fraction": 0.9104191358133013, "failures": 0}
+{"stage": "progress", "records": 145, "seconds": 307.5771897509985, "cached_fraction": 0.9104828008154432, "failures": 0}
+{"stage": "progress", "records": 150, "seconds": 317.1634373220004, "cached_fraction": 0.9104491899662206, "failures": 0}
+{"stage": "progress", "records": 155, "seconds": 330.2918803400098, "cached_fraction": 0.9105094128742653, "failures": 0}
+{"stage": "progress", "records": 160, "seconds": 344.40964982401056, "cached_fraction": 0.9105679898369252, "failures": 0}
+{"stage": "progress", "records": 165, "seconds": 355.43213451201154, "cached_fraction": 0.9106190711520787, "failures": 0}
+{"stage": "progress", "records": 170, "seconds": 371.4485945960041, "cached_fraction": 0.910722359675437, "failures": 0}
+{"stage": "progress", "records": 175, "seconds": 383.32557780201023, "cached_fraction": 0.9107826300384791, "failures": 0}
+{"stage": "progress", "records": 180, "seconds": 392.2299583700078, "cached_fraction": 0.9107468627751429, "failures": 0}
+{"stage": "progress", "records": 185, "seconds": 401.00692920001165, "cached_fraction": 0.9107142215293975, "failures": 0}
+{"stage": "progress", "records": 190, "seconds": 410.5710569160001, "cached_fraction": 0.9107026712048014, "failures": 0}
+{"stage": "progress", "records": 195, "seconds": 424.8397243590007, "cached_fraction": 0.9107562421372094, "failures": 0}
+{"stage": "progress", "records": 200, "seconds": 436.9259568540001, "cached_fraction": 0.9107974428653817, "failures": 0}
+{
+  "records": 200,
+  "judgments": 4800,
+  "macro_f1": 0.2363677100190258,
+  "micro_f1": 0.2783882783882784,
+  "macro_precision": 0.29768007455507456,
+  "macro_recall": 0.24231150793650794,
+  "label_accuracy": 0.9589583333333334,
+  "exact_match_accuracy": 0.46,
+  "exact_match_records": 92,
+  "false_positives": 82,
+  "false_negatives": 115,
+  "zero_positive_items": [],
+  "zero_division": 0,
+  "searched_records": 0,
+  "retrieved_records": 0,
+  "search_rate": 0.0,
+  "search_rounds": 0,
+  "search_queries": 0,
+  "search_errors": 0,
+  "empty_search_rounds": 0,
+  "invalid_model_responses": 4,
+  "thinking_turns": 0,
+  "thinking_text_tokens": 0,
+  "thinking_budgets": [],
+  "evidence_dropped": 26,
+  "evidence": {
+    "nonempty": 44,
+    "invalid": 0,
+    "positive_nonabsence_missing": 26
+  }
+}
+{"stage": "complete", "name": "source_first_groups12_off_h6", "options": {"model_dir": "models/gemma-4-26B-A4B-it-NVFP4", "max_model_len": 32768, "thinking": false, "item_group_size": 4}, "max_num_seqs": 11, "limits": {"batch_size": 11, "search_rounds": 2, "queries_per_round": 4, "top_k": 5, "round_tokens": 4096, "total_retrieval_tokens": 8192, "output_tokens": 512, "retries": 1, "require_search": false, "instant_output_tokens": null}, "groups": [["v1", "v4"], ["v5", "v6", "v7"], ["v8"], ["v9", "v19"], ["v10", "v11", "v12", "v13"], ["v14"], ["v15", "v16"], ["v17", "v18"], ["v20"], ["v21"], ["v22", "v23"], ["v24"]], "records": 200, "gpu": "NVIDIA GeForce RTX 5090", "prediction_seconds": 436.9260741640028, "load_seconds": 27.157941789002507, "warmup_seconds": 0.4363426019990584, "total_seconds": 464.0840159530053, "rule_seconds": 0.44175589304359164, "failed_ids": [], "model_turns": 2404, "search_rounds": 0, "invalid_responses": 4, "context_failures": 0, "input_tokens": 28022459, "output_tokens": 106725, "thinking_tokens": 0, "cached_input_tokens": 25522784, "cached_fraction": 0.9107974428653817, "cache_counts_available": true, "request_stats_available": false, "model_seconds": 424.12089305011614, "retrieval_seconds": 0.0}
+(EngineCore pid=1662356) INFO 09-11 21:44:38 [core.py:1313] [shutdown] EngineCore: trigger received signal=SIGTERM
+(EngineCore pid=1662356) INFO 09-11 21:44:38 [core.py:1432] [shutdown] EngineCore: start mode=abort timeout=0s
+(EngineCore pid=1662356) INFO 09-11 21:44:38 [core.py:1463] [shutdown] EngineCore: request processing complete; starting resource teardown
+(EngineCore pid=1662356) INFO 09-11 21:44:38 [core.py:1326] [shutdown] EngineCore: exiting busy loop

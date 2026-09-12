@@ -4,7 +4,7 @@ import json
 from pathlib import Path
 import unittest
 
-from nara.inference import Predictor
+from nara.inference.predictor import Predictor
 from test_inference import Model, Retriever, final, record
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -12,7 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 class LegalCriteriaTests(unittest.TestCase):
     def test_all_items_and_source_provenance(self):
-        criteria = json.loads((ROOT / 'nara/legal_criteria.json').read_text())
+        criteria = json.loads((ROOT / 'src/inference/legal_criteria.json').read_text())
         table = json.loads((ROOT / 'data/항목표.json').read_text())['항목']
         self.assertEqual(set(criteria['items']), set(table))
         for key, rule in criteria['items'].items():
