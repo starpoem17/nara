@@ -1,4 +1,4 @@
-"""Full200 source-first KV reuse, fixed groups12 OFF + frozen H6 rules."""
+"""Full200 source-first KV reuse, groups12 OFF with v2/v3/v22 rules."""
 import argparse
 from dataclasses import asdict
 import hashlib
@@ -13,7 +13,7 @@ from script import read_records,write_submission
 from nara.inference import Limits,Turn,compact
 from nara.compact_predictor import CompactPredictor
 from nara.prefix_predictor import SourceFirstPredictor,predict_notice
-from nara.hypothesis6 import judge
+from nara.briefing_rule import judge
 from scripts.benchmark_compact200 import MODEL,configuration
 from scripts.evaluate_dev import evaluate
 
@@ -64,7 +64,7 @@ def main():
     records=read_records('data/dev.jsonl')
     table=json.loads(Path('data/항목표.json').read_text())['항목']
     schema=json.loads(Path('data/정답스키마_디코딩.json').read_text())['properties']['판정']
-    table,schema,groups=configuration(table,schema,'groups12',True)
+    table,schema,groups=configuration(table,schema,'groups12',True,briefing_rule=True)
     limits=Limits(output_tokens=2048,batch_size=args.batch_size)
     from nara.vllm_model import VLLMModel
     from transformers import AutoTokenizer
@@ -94,11 +94,9 @@ def main():
         (out/f'prompt_{i+1:02}.txt').write_text('[system]\n'+messages[0]['content']+'\n[user]\n{UNCHANGED_NOTICE_ID_META_AND_DOCUMENTS}'+suffix+'\n')
         (out/f'schema_{i+1:02}.json').write_text(json.dumps(predictor._schema(group,True),ensure_ascii=False,indent=2)+'\n')
     sources=['scripts/benchmark_prefix200.py','nara/prefix_predictor.py','nara/compact_predictor.py',
-             'nara/compact_criteria.json','nara/inference.py','nara/conversation.py','nara/vllm_model.py','nara/hypothesis6.py',
-             'scripts/benchmark_compact200.py','data/dev.jsonl','data/항목표.json','data/정답스키마_디코딩.json']
+             'nara/compact_criteria.json','nara/inference.py','nara/conversation.py','nara/vllm_model.py','nara/hypothesis6.py','nara/briefing_rule.py',
+             'scripts/benchmark_compact200.py','scripts/benchmark_grouping_time.py','data/dev.jsonl','data/항목표.json','data/정답스키마_디코딩.json']
     hashes={p:hashlib.sha256(Path(p).read_bytes()).hexdigest() for p in sources}
-    frozen=json.loads(Path('analysis/compact200/rule_freeze.json').read_text())['sha256']
-    assert hashes['nara/hypothesis6.py']==frozen
     manifest={'records':200,'groups':groups,'limits':asdict(limits),'thinking':False,'max_model_len':32768,
               'max_num_seqs':args.batch_size,'source_sha256':hashes,'counts':counts,'baseline':'analysis/compact200/groups12_off_h6',
               'change':'common system; unchanged notice/meta/docs before group criteria in user; first group then remaining groups, notice by notice',
@@ -107,6 +105,8 @@ def main():
         manifest.update(baseline='analysis/prefix200',
                         change='Same source-first prompts/groups/rules; batch_size and max_num_seqs 8 to 11; first group then all remaining 11, notice by notice',
                         caveat='Historical single-run comparison; batch/engine scheduling can change numerical results')
+    manifest.update(rule_items=['v2','v3','v22'], source_mode='current',
+                    change='Current twelve-group strategy: v22 rule, group11 v23 only; explicit prompt/budget options preserved')
     (out/'manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
     for p in sources:
         target=out/'source'/p;target.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(p,target)

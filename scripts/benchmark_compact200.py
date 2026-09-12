@@ -21,8 +21,11 @@ MODEL = 'models/gemma-4-26B-A4B-it-NVFP4'
 SIMILARITY = 0.01  # Frozen before measuring any new labels/predictions.
 
 
-def configuration(table, schema, plan, hypothesis):
-    keep = [k for k in table if not hypothesis or k not in ('v2', 'v3')]
+def configuration(table, schema, plan, hypothesis, *, briefing_rule=False):
+    if briefing_rule and (plan != 'groups12' or not hypothesis):
+        raise ValueError('Briefing rule requires the twelve-group rule-based strategy')
+    rule_items = ('v2', 'v3', 'v22') if briefing_rule else ('v2', 'v3')
+    keep = [k for k in table if not hypothesis or k not in rule_items]
     selected = {k: table[k] for k in keep}
     spec = deepcopy(schema)
     spec['properties'] = {k: spec['properties'][k] for k in keep}

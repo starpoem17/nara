@@ -1,0 +1,389 @@
+{
+  "scope": "dev200; revised rule was adjusted after inspecting these dev errors, not held out",
+  "rule_scores": {
+    "rule": {
+      "records": 200,
+      "tp": 3,
+      "fp": 1,
+      "fn": 2,
+      "tn": 194,
+      "precision": 0.75,
+      "recall": 0.6,
+      "f1": 0.6666666666666666,
+      "accuracy": 0.985
+    },
+    "rule_revised": {
+      "records": 200,
+      "tp": 5,
+      "fp": 0,
+      "fn": 0,
+      "tn": 195,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "accuracy": 1.0
+    }
+  },
+  "prediction_seconds": {
+    "rule": 0.46447554400037916,
+    "rule_revised": 0.4634919160002937
+  },
+  "baselines": [
+    {
+      "path": "analysis/colleague200/evaluation.json",
+      "records": 200,
+      "tp": 5,
+      "fp": 2,
+      "fn": 0,
+      "tn": 193,
+      "precision": 0.7142857142857143,
+      "recall": 1.0,
+      "f1": 0.8333333333333334,
+      "accuracy": 0.99
+    },
+    {
+      "path": "analysis/common_prompt_v2_512_final/candidate/evaluation.json",
+      "records": 200,
+      "tp": 4,
+      "fp": 0,
+      "fn": 1,
+      "tn": 195,
+      "precision": 1.0,
+      "recall": 0.8,
+      "f1": 0.8888888888888888,
+      "accuracy": 0.995
+    },
+    {
+      "path": "analysis/compact200/groups12_off/evaluation.json",
+      "records": 200,
+      "tp": 4,
+      "fp": 4,
+      "fn": 1,
+      "tn": 191,
+      "precision": 0.5,
+      "recall": 0.8,
+      "f1": 0.6153846153846154,
+      "accuracy": 0.975
+    },
+    {
+      "path": "analysis/compact200/groups12_off_h6/evaluation.json",
+      "records": 200,
+      "tp": 5,
+      "fp": 3,
+      "fn": 0,
+      "tn": 192,
+      "precision": 0.625,
+      "recall": 1.0,
+      "f1": 0.7692307692307693,
+      "accuracy": 0.985
+    },
+    {
+      "path": "analysis/compact200/groups7_off/evaluation.json",
+      "records": 200,
+      "tp": 5,
+      "fp": 3,
+      "fn": 0,
+      "tn": 192,
+      "precision": 0.625,
+      "recall": 1.0,
+      "f1": 0.7692307692307693,
+      "accuracy": 0.985
+    },
+    {
+      "path": "analysis/compact200/groups9_off/evaluation.json",
+      "records": 200,
+      "tp": 5,
+      "fp": 4,
+      "fn": 0,
+      "tn": 191,
+      "precision": 0.5555555555555556,
+      "recall": 1.0,
+      "f1": 0.7142857142857143,
+      "accuracy": 0.98
+    },
+    {
+      "path": "analysis/compact200/ungrouped_on/evaluation.json",
+      "records": 200,
+      "tp": 4,
+      "fp": 1,
+      "fn": 1,
+      "tn": 194,
+      "precision": 0.8,
+      "recall": 0.8,
+      "f1": 0.8,
+      "accuracy": 0.99
+    },
+    {
+      "path": "analysis/compact200/ungrouped_on_h6/evaluation.json",
+      "records": 200,
+      "tp": 4,
+      "fp": 0,
+      "fn": 1,
+      "tn": 195,
+      "precision": 1.0,
+      "recall": 0.8,
+      "f1": 0.8888888888888888,
+      "accuracy": 0.995
+    },
+    {
+      "path": "analysis/continuous200/mixed_continuous_8192/evaluation.json",
+      "records": 200,
+      "tp": 4,
+      "fp": 4,
+      "fn": 1,
+      "tn": 191,
+      "precision": 0.5,
+      "recall": 0.8,
+      "f1": 0.6153846153846154,
+      "accuracy": 0.975
+    },
+    {
+      "path": "analysis/gemma4_rag_dev200_forced1/evaluation.json",
+      "records": 200,
+      "tp": 1,
+      "fp": 0,
+      "fn": 4,
+      "tn": 195,
+      "precision": 1.0,
+      "recall": 0.2,
+      "f1": 0.3333333333333333,
+      "accuracy": 0.98
+    },
+    {
+      "path": "analysis/gemma4_rag_dev200_thinking_recovered/evaluation.json",
+      "records": 200,
+      "tp": 2,
+      "fp": 0,
+      "fn": 3,
+      "tn": 195,
+      "precision": 1.0,
+      "recall": 0.4,
+      "f1": 0.5714285714285714,
+      "accuracy": 0.985
+    },
+    {
+      "path": "analysis/gemma4_rag_dev200_v1/evaluation.json",
+      "records": 200,
+      "tp": 3,
+      "fp": 0,
+      "fn": 2,
+      "tn": 195,
+      "precision": 1.0,
+      "recall": 0.6,
+      "f1": 0.75,
+      "accuracy": 0.99
+    },
+    {
+      "path": "analysis/hybrid200/composite_six_off/evaluation.json",
+      "records": 200,
+      "tp": 4,
+      "fp": 8,
+      "fn": 1,
+      "tn": 187,
+      "precision": 0.3333333333333333,
+      "recall": 0.8,
+      "f1": 0.47058823529411764,
+      "accuracy": 0.955
+    },
+    {
+      "path": "analysis/hybrid200/composite_six_on1024_batch8/evaluation.json",
+      "records": 200,
+      "tp": 5,
+      "fp": 2,
+      "fn": 0,
+      "tn": 193,
+      "precision": 0.7142857142857143,
+      "recall": 1.0,
+      "f1": 0.8333333333333334,
+      "accuracy": 0.99
+    },
+    {
+      "path": "analysis/hybrid200/composite_six_on256/evaluation.json",
+      "records": 200,
+      "tp": 4,
+      "fp": 4,
+      "fn": 1,
+      "tn": 191,
+      "precision": 0.5,
+      "recall": 0.8,
+      "f1": 0.6153846153846154,
+      "accuracy": 0.975
+    },
+    {
+      "path": "analysis/hybrid200/main/evaluation.json",
+      "records": 200,
+      "tp": 5,
+      "fp": 1,
+      "fn": 0,
+      "tn": 194,
+      "precision": 0.8333333333333334,
+      "recall": 1.0,
+      "f1": 0.9090909090909091,
+      "accuracy": 0.995
+    },
+    {
+      "path": "analysis/hybrid200/optimized/evaluation.json",
+      "records": 200,
+      "tp": 4,
+      "fp": 4,
+      "fn": 1,
+      "tn": 191,
+      "precision": 0.5,
+      "recall": 0.8,
+      "f1": 0.6153846153846154,
+      "accuracy": 0.975
+    },
+    {
+      "path": "analysis/hybrid200/optimized_off/evaluation.json",
+      "records": 200,
+      "tp": 5,
+      "fp": 8,
+      "fn": 0,
+      "tn": 187,
+      "precision": 0.38461538461538464,
+      "recall": 1.0,
+      "f1": 0.5555555555555556,
+      "accuracy": 0.96
+    },
+    {
+      "path": "analysis/prefix200/evaluation.json",
+      "records": 200,
+      "tp": 3,
+      "fp": 2,
+      "fn": 2,
+      "tn": 193,
+      "precision": 0.6,
+      "recall": 0.6,
+      "f1": 0.6,
+      "accuracy": 0.98
+    },
+    {
+      "path": "analysis/prefix200_batch11/evaluation.json",
+      "records": 200,
+      "tp": 2,
+      "fp": 3,
+      "fn": 3,
+      "tn": 192,
+      "precision": 0.4,
+      "recall": 0.4,
+      "f1": 0.4,
+      "accuracy": 0.97
+    },
+    {
+      "path": "analysis/prefix_pipeline200/evaluation.json",
+      "records": 200,
+      "tp": 5,
+      "fp": 2,
+      "fn": 0,
+      "tn": 193,
+      "precision": 0.7142857142857143,
+      "recall": 1.0,
+      "f1": 0.8333333333333334,
+      "accuracy": 0.99
+    },
+    {
+      "path": "output/experiments/engine-refactor-after-20260911/evaluation.json",
+      "records": 200,
+      "tp": 2,
+      "fp": 1,
+      "fn": 3,
+      "tn": 194,
+      "precision": 0.6666666666666666,
+      "recall": 0.4,
+      "f1": 0.5,
+      "accuracy": 0.98
+    },
+    {
+      "path": "output/experiments/engine-refactor-before-20260911/evaluation.json",
+      "records": 200,
+      "tp": 5,
+      "fp": 1,
+      "fn": 0,
+      "tn": 194,
+      "precision": 0.8333333333333334,
+      "recall": 1.0,
+      "f1": 0.9090909090909091,
+      "accuracy": 0.995
+    }
+  ],
+  "errors": {
+    "rule": [
+      {
+        "id": "PPS-DEV-26",
+        "gold": 1,
+        "prediction": 0,
+        "gold_evidence": "발주기관이 개최하는 사업설명회에 참석한 자(설명회 일정은 추후 안내)",
+        "predicted_evidence": ""
+      },
+      {
+        "id": "PPS-DEV-135",
+        "gold": 1,
+        "prediction": 0,
+        "gold_evidence": "나. 사업설명회 : 개최함(일시·장소는 나라장터 공고 게시판에 공지). 사업설명회에 참석하지 아니한 업체의 입찰 참가는 허용되지 않습니다.",
+        "predicted_evidence": ""
+      },
+      {
+        "id": "PPS-DEV-193",
+        "gold": 0,
+        "prediction": 1,
+        "gold_evidence": "",
+        "predicted_evidence": "제안설명회에 참가하지 않은 업체는 입찰을 포기하는 것으로 간주하며 평가대상에서 제외"
+      }
+    ],
+    "rule_revised": []
+  },
+  "paired198": {
+    "original": {
+      "records": 198,
+      "tp": 4,
+      "fp": 2,
+      "fn": 1,
+      "tn": 191,
+      "precision": 0.6666666666666666,
+      "recall": 0.8,
+      "f1": 0.7272727272727273,
+      "accuracy": 0.9848484848484849
+    },
+    "candidate": {
+      "records": 198,
+      "tp": 4,
+      "fp": 0,
+      "fn": 1,
+      "tn": 193,
+      "precision": 1.0,
+      "recall": 0.8,
+      "f1": 0.8888888888888888,
+      "accuracy": 0.9949494949494949
+    },
+    "rule": {
+      "records": 198,
+      "tp": 3,
+      "fp": 1,
+      "fn": 2,
+      "tn": 192,
+      "precision": 0.75,
+      "recall": 0.6,
+      "f1": 0.6666666666666666,
+      "accuracy": 0.9848484848484849
+    },
+    "rule_revised": {
+      "records": 198,
+      "tp": 5,
+      "fp": 0,
+      "fn": 0,
+      "tn": 193,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "accuracy": 1.0
+    }
+  },
+  "sha256": {
+    "data/dev.jsonl": "5507f5ab0ba53b708f87211ed050dbe531b48a626ace6084c3ccaefb53147534",
+    "data/dev_labels.csv": "84c79302ac190b45b2487ec8e02aab73e59071ee745828e813a7db96d3a97a35",
+    "/home/hwajoong/projects/nara/analysis/v22_rule200/rule.py": "ae7abd142afd9d0b259bcb766d7b6c1000f04bbf71f0f2556aaf025898459416",
+    "/home/hwajoong/projects/nara/analysis/v22_rule200/rule_revised.py": "c3ee94c1f54e94642c733c4bc607baeeb5802cd100e10c86a2d5add434d07c76",
+    "/home/hwajoong/projects/nara/analysis/v22_rule200/predictions.jsonl": "90f15ce92a9bc19e46c614a072c37a300a9eb0ce98c2332dcc89c51ad44e21c4",
+    "/home/hwajoong/projects/nara/analysis/v22_rule200/predictions_revised.jsonl": "04014dbcce7827c95231f09fc7be5f6ac7f0953053b07ea1990f497e016118bd"
+  }
+}

@@ -14,6 +14,7 @@ from nara.prefix_predictor import SourceFirstPredictor, split_predictor
 from nara.prefix_pipeline import PrefixPipelinePredictor
 from nara.continuous import ContinuousPredictor
 from nara.hypothesis6 import judge
+from nara.briefing_rule import judge as judge_with_briefing
 from scripts.benchmark_compact200 import MODEL, configuration
 from scripts.benchmark_hybrid200 import safe
 from nara.recovery import Attempt, recover_notices
@@ -54,7 +55,8 @@ def main(argv=None, *, verify_reference=True, default_output=Path('analysis/pref
     records = read_records('data/dev.jsonl'); assert len(records) == 200
     table = json.loads(Path('data/항목표.json').read_text())['항목']
     schema = json.loads(Path('data/정답스키마_디코딩.json').read_text())['properties']['판정']
-    table, schema, groups = configuration(table, schema, 'groups12', True)
+    table, schema, groups = configuration(table, schema, 'groups12', True, briefing_rule=not verify_reference)
+    rule_judge = judge if verify_reference else judge_with_briefing
     old_manifest = None
     if verify_reference:
         old_manifest = json.loads(Path('analysis/prefix200/manifest.json').read_text())
@@ -68,7 +70,7 @@ def main(argv=None, *, verify_reference=True, default_output=Path('analysis/pref
     sources = ['scripts/benchmark_prefix_pipeline.py', 'nara/prefix_pipeline.py', 'nara/continuous.py',
                'nara/vllm_model.py', 'nara/inference.py', 'nara/conversation.py',
                'nara/prefix_predictor.py', 'nara/compact_predictor.py',
-               'nara/compact_criteria.json', 'nara/hypothesis6.py', 'scripts/benchmark_compact200.py',
+               'nara/compact_criteria.json', 'nara/hypothesis6.py', 'nara/briefing_rule.py', 'scripts/benchmark_compact200.py',
                'nara/recovery.py', 'scripts/benchmark_grouping_time.py',
                'scripts/benchmark_hybrid200.py', 'scripts/evaluate_dev.py', 'scripts/reporting.py', 'script.py',
                'data/dev.jsonl', 'data/항목표.json', 'data/정답스키마_디코딩.json']
@@ -81,6 +83,7 @@ def main(argv=None, *, verify_reference=True, default_output=Path('analysis/pref
     manifest = {'groups': groups, 'limits': asdict(limits), 'policy': policy, 'max_num_seqs': 16,
                 'max_num_batched_tokens': 8192, 'source_sha256': hashes,
                 'source_mode': 'frozen_reference' if verify_reference else 'current',
+                'rule_items': ['v2', 'v3'] if verify_reference else ['v2', 'v3', 'v22'],
                 'baseline': 'analysis/prefix200_batch11', 'smoke': 'first8 notices; excluded from benchmark',
                 'recovery_policy': 'One same-policy rerun of failed notices, then one same-prompt isolated predict per still-failed group. All internal retries, recovery time and events included.'}
     from nara.vllm_model import VLLMModel, TokenCounter
@@ -122,7 +125,7 @@ def main(argv=None, *, verify_reference=True, default_output=Path('analysis/pref
                 def saved(p):
                     nonlocal rule_time
                     record = next(r for r in selected if r['id'] == p.record_id)
-                    begin = time.monotonic(); rules = judge(record); rule_time += time.monotonic() - begin
+                    begin = time.monotonic(); rules = rule_judge(record); rule_time += time.monotonic() - begin
                     if p.judgments is not None: p.judgments.update(rules['judgments'])
                     handle.write(json.dumps(safe(p), ensure_ascii=False) + '\n'); handle.flush()
                     completed.append(p)
@@ -160,7 +163,7 @@ def main(argv=None, *, verify_reference=True, default_output=Path('analysis/pref
         recovered = recover_notices(records, initial,
             rerun_notices=lambda selected: run(selected, out / 'recovery')[0],
             retry_group=retry_group, replay_group=full.replay_judgments,
-            rule_judgments=lambda record: judge(record)['judgments'])
+            rule_judgments=lambda record: rule_judge(record)['judgments'])
         jsonl(out / 'recovery_attempts.jsonl', [asdict(attempt) for attempt in recovered.attempts[1:]])
         trace = recovered.trace; elapsed = recovered.prediction_seconds
         recovery_time = recovered.recovery_seconds
@@ -184,7 +187,7 @@ def main(argv=None, *, verify_reference=True, default_output=Path('analysis/pref
         dump(out / 'report.json', report); jsonl(out / 'trace.jsonl', trace)
         jsonl(out / 'request_timings.jsonl', all_rows); jsonl(out / 'lifecycle.jsonl', lifecycle)
         jsonl(out / 'scheduler.jsonl', main_scheduler); jsonl(out / 'admission.jsonl', main_admission)
-        jsonl(out / 'rules.jsonl', [judge(r) for r in records])
+        jsonl(out / 'rules.jsonl', [rule_judge(r) for r in records])
         if not report['failed_ids']:
             write_submission([Prediction(**r) for r in trace], out / 'submission.csv')
             evaluate(out, 'data/dev_labels.csv', 'data/dev.jsonl', 200)
