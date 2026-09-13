@@ -1,6 +1,6 @@
 # CMS updated-card experiment: confirmed plan
 
-Status: KHJ explicitly approved implementation with ‘시작’ on2026-09-13 after the Astra review, candidate presentation choices, one-case token exception and empty-candidate wording were reported and settled. Proceed with implementation, preflight and the approved one-pass dev200 experiment; the earlier implementation hold is lifted. Preserve the stated hypothesis and authorization limits. The old original CMS results remain withdrawn, not valid comparison scores. The [CMS-only decision record](cms-updated-cards-decisions.md) retains chronological provenance.
+Status: completed and approved for direct integration into `master` on2026-09-13. The public experiment was first shared in [PR2](https://github.com/starpoem17/nara/pull/2). KHJ approved implementation with ‘시작’, then separately approved public release of the concrete prompts/raw-response payload. The approved one-pass experiment, evaluation and verification are complete. The old original CMS results remain withdrawn, not valid comparison scores. The [CMS-only decision record](cms-updated-cards-decisions.md) retains authorization provenance.
 
 ## Hypothesis and inputs
 
@@ -27,7 +27,7 @@ Status: KHJ explicitly approved implementation with ‘시작’ on2026-09-13 af
 - Mandatory report disclosure of the empty-candidate presentation: “CMS는 후보가 0개일 때의 입력 표시 문구를 명시하지 않았다. 본 실험에서는 사용자의 명시적 승인에 따라 해당 입력의 [원문]에 ‘추출된 원문 후보가 없습니다.’를 표시했다. 이는 업로드된 후보 목록이 비어 있음을 나타내는 입력 형식 선택이며, 원문에 관련 내용이 없다는 판정이나 추가 판단 규칙이 아니다.” This applies to438 notice/item inputs; preserve the authored classification and uncertainty rules.
 - Mandatory report disclosure of KHJ's narrow token exception: “후보 원문과 사용자 지정 표시 형식을 유지하기 위해 PPS-DEV-189의 v24 입력 한 건에 한해 2,024토큰을 허용했다. 이는 CMS가 정한 채팅 템플릿 포함 입력 상한 2,000토큰을 24토큰 초과하는 사용자 승인 예외다. 다른 입력에 대한 상한 초과는 허용하지 않았다.” Report actual final input counts and retain the actual prompt; do not broaden this permission or present the exception as CMS's original condition.
 - Describe CMS's disclosed dev/label-based development provenance and KHJ-authorized answer-memo exclusion. Preserve a pre-inference source/prompt/schema/runtime manifest. No claim of an untouched holdout or universal label-blind redesign preparation.
-- New run artifacts: analysis/CMS_updated_cards_v19_v24_dev200_20260913/ (or an unused date-suffixed path if needed); human-readable report under docs/reports/ with links to the artifact. Preserve historical withdrawn artifacts as audit history.
+- New run artifacts: analysis/CMS_updated_cards_v19_v24_dev200_20260913/ (or an unused date-suffixed path if needed); human-readable report under docs/reports/ with links to the artifact. KHJ subsequently ordered complete local removal of the withdrawn CMS run and its dedicated report; do not retain or restore those artifacts.
 - KHJ wants colleagues to review the eventual result on GitHub. Prepare a concrete CMS-only publication payload after the run; do not publish the withdrawn combined payload as a valid experiment. Any outstanding export-review condition must be resolved against the actual new payload before upload.
 
 ## Independent review status
@@ -78,3 +78,13 @@ The first quoted-form sizing used the prefix with an empty suffix for empty list
 The approved first pass and evaluation completed on2026-09-13. All1,200 requests completed normally; predictions were frozen before labels were evaluated. See the [run report](../reports/analysis/CMS_updated_cards_v19_v24_dev200_20260913/report.md) and its linked immutable inputs, raw outputs, source alignment, timing and per-case results. No result-driven prompt, candidate, judgment or retry change was made. CMS-only results and reproduction files are packaged for GitHub review.
 
 Implementation modules: `src/experiments/cms_updated_cards.py` (prepare/run), `src/experiments/cms_source_alignment.py` (independent original-source checks), and `src/evaluation/cms_updated_cards.py` (post-freeze evaluation/report). The original execution audit and a later reproduced audit are retained separately; `audit_reproduction.json` records byte-identical restoration of the execution audit after a reproduction overwrote its path. The execution audit hash again matches run_summary; predictions, manifest and run_summary were never changed.
+
+
+## Publication approval review
+
+Automatic approval review initially required explicit permission for public release of the concrete prompts/raw-replies payload. KHJ then gave that approval; push and draft PR2 creation succeeded. See [publication status, verification and size breakdown](cms-updated-cards-publication.md). The remote head and artifact-manifest blob were verified. No inference rerun or prediction change was performed.
+
+
+## Removal of withdrawn local CMS artifacts
+
+KHJ explicitly requested complete disposal of the withdrawn local CMS experiment after noticing that its directory remained. This supersedes earlier audit-artifact retention instructions for that run. The entire obsolete CMS run directory and its dedicated report directory were deleted, including archived inputs, raw outputs, logs, metrics and the withdrawal marker. The approved updated run and all its publication-manifest hashes were verified unchanged before and after deletion. Historical decisions may describe why the previous run was rejected; they do not authorize restoring its artifacts or using its scores. The updated public GitHub branch already contained no obsolete CMS run directory. Git history was not rewritten.

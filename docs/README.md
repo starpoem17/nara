@@ -1,7 +1,5 @@
 # Agent documentation
 
-CMS updated-card dev200 experiment: [results and actual prompts](reports/analysis/CMS_updated_cards_v19_v24_dev200_20260913/report.md), [approved plan](experiments/cms-updated-cards-plan.md), [KHJ decisions](experiments/cms-updated-cards-decisions.md), [Astra review](reports/cms-updated-cards-astra-fidelity-review.md).
-
 Project objective: achieve a strong result in DACON competition 236754.
 Read this index, then only the documents relevant to the current task.
 
@@ -44,6 +42,8 @@ Read summaries first. Open detailed reports or frozen sources only when the task
 | Verify freshness, deadlines, or missing details | [sources](competition/sources.md) |
 
 ## Implementation and experiments
+
+Active colleague study: [CMS updated-card confirmed plan](experiments/cms-updated-cards-plan.md). Astra-medium review was reported; KHJ explicitly approved the settled design with ‘시작’. The authorized dev200 run and evaluation are complete; see the [CMS run report](reports/analysis/CMS_updated_cards_v19_v24_dev200_20260913/report.md). The obsolete local CMS run and its dedicated report were [fully deleted](experiments/cms-original-removal.md) at KHJ’s request. Published with explicit public-payload approval in [PR2](https://github.com/starpoem17/nara/pull/2); KHJ subsequently requested direct integration into `master` and task-branch deletion. See [publication verification](experiments/cms-updated-cards-publication.md).
 
 | Work | Read |
 |---|---|
