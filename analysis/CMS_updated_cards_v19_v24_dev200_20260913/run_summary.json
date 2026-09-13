@@ -1,0 +1,50 @@
+{
+  "preparation_seconds": 3.879115310002817,
+  "model_load_seconds": 63.883431896996626,
+  "input_revalidation_seconds": 0.9839022090018261,
+  "inference_seconds": 46.36852800300403,
+  "extraction_seconds": null,
+  "extraction_status": "skipped",
+  "cache_reset_before_run": true,
+  "engine": {
+    "max_num_seqs": 16,
+    "max_num_batched_tokens": 8192,
+    "cudagraph_mode": "FULL_AND_PIECEWISE",
+    "capture_sizes": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      24,
+      32
+    ],
+    "kv_cache_dtype": "auto",
+    "gpu_memory_utilization": 0.86,
+    "max_model_len": 32768,
+    "enable_prefix_caching": true,
+    "num_gpu_blocks": 15908,
+    "block_size": 16
+  },
+  "hardware": {
+    "gpu": "NVIDIA GeForce RTX 5090",
+    "gpu_total_bytes": 33665581056
+  },
+  "versions": {
+    "vllm": "0.26.0",
+    "torch": "2.11.0+cu130",
+    "transformers": "5.14.1",
+    "xgrammar": "0.2.3"
+  },
+  "completed": 1200,
+  "submitted": 1200,
+  "expected_requests": 1200,
+  "input_tokens": 1224717,
+  "output_tokens": 30543,
+  "cached_tokens": 506848,
+  "max_inflight": 16,
+  "error": null,
+  "prediction_sha256": "2c65f492b1da92c61bb4e4fff06cfa46bbd02437232568fab8baa98d2038765a",
+  "manifest_sha256": "e38873ec147a5cc84cf8596275be7b4d41a674a53e91a07de3d2b33de14774b0",
+  "source_alignment_sha256": "e91da9608cbcf31d692bd589505640b15fb1a3d718be2344a85408c4e3443215"
+}

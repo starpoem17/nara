@@ -1,0 +1,12 @@
+{
+  "tests": {
+    "command": ".venv/bin/python -m unittest tests.test_cms_updated_cards tests.test_cms_updated_evaluation tests.test_vllm_model",
+    "passed": 24
+  },
+  "frozen_audit_overwrite_guard": true,
+  "report_local_links_valid": true,
+  "execution_hashes_still_match": true,
+  "metric_crosscheck": "metric_crosscheck.json",
+  "report_path": "docs/reports/analysis/CMS_updated_cards_v19_v24_dev200_20260913/report.md",
+  "report_sha256": "7e0fb80ab32885a8717a5090eaadfca5c30d2431760f01d5433a1b0152dda1bd"
+}

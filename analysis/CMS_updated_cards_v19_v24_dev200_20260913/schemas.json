@@ -1,0 +1,194 @@
+{
+  "v19": {
+    "type": "object",
+    "properties": {
+      "v19": {
+        "type": "object",
+        "properties": {
+          "위반여부": {
+            "type": "integer",
+            "enum": [
+              0,
+              1
+            ]
+          },
+          "근거문구": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "위반여부",
+          "근거문구"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "required": [
+      "v19"
+    ],
+    "additionalProperties": false
+  },
+  "v20": {
+    "type": "object",
+    "properties": {
+      "v20": {
+        "type": "object",
+        "properties": {
+          "위반여부": {
+            "type": "integer",
+            "enum": [
+              0,
+              1
+            ]
+          },
+          "근거문구": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "위반여부",
+          "근거문구"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "required": [
+      "v20"
+    ],
+    "additionalProperties": false
+  },
+  "v21": {
+    "type": "object",
+    "properties": {
+      "v21": {
+        "type": "object",
+        "properties": {
+          "위반여부": {
+            "type": "integer",
+            "enum": [
+              0,
+              1
+            ]
+          },
+          "근거문구": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "위반여부",
+          "근거문구"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "required": [
+      "v21"
+    ],
+    "additionalProperties": false
+  },
+  "v22": {
+    "type": "object",
+    "properties": {
+      "v22": {
+        "type": "object",
+        "properties": {
+          "위반여부": {
+            "type": "integer",
+            "enum": [
+              0,
+              1
+            ]
+          },
+          "근거문구": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "위반여부",
+          "근거문구"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "required": [
+      "v22"
+    ],
+    "additionalProperties": false
+  },
+  "v23": {
+    "type": "object",
+    "properties": {
+      "v23": {
+        "type": "object",
+        "properties": {
+          "위반여부": {
+            "type": "integer",
+            "enum": [
+              0,
+              1
+            ]
+          },
+          "근거문구": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "위반여부",
+          "근거문구"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "required": [
+      "v23"
+    ],
+    "additionalProperties": false
+  },
+  "v24": {
+    "type": "object",
+    "properties": {
+      "v24": {
+        "type": "object",
+        "properties": {
+          "위반여부": {
+            "type": "integer",
+            "enum": [
+              0,
+              1
+            ]
+          },
+          "근거문구": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "위반여부",
+          "근거문구"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "required": [
+      "v24"
+    ],
+    "additionalProperties": false
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "source_line": 169,
+  "removed_text": "PPS-DEV-062는 주최측 확인상 예산축 1이나, 본문 VAT포함 250,000,000원과 meta 추정가격 227,272,727원은 환산상 정합하여 일반화하지 않는 공식 예외다. PPS-DEV-049는 네 축이 모두 일치해 현재 자료로 공식 1을 재현하지 못한다.",
+  "authorization": "KHJ: exclude answer memos only"
+}

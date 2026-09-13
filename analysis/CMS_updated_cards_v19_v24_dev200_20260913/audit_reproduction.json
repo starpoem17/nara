@@ -1,0 +1,6 @@
+{
+  "execution_audit_sha256": "e91da9608cbcf31d692bd589505640b15fb1a3d718be2344a85408c4e3443215",
+  "reproduced_audit_sha256": "59e81f89ed4362a09fb0cefdb748ac4f418bc0fd037690b5f8498033d286ee97",
+  "same_source_hashes_and_issue_list": true,
+  "note": "The reproducible module initially overwrote the original audit after inference. Its output is retained separately. The original inline audit bytes were restored only after reproducing the exact SHA256 recorded by the execution. Predictions, manifest and run_summary were not changed."
+}

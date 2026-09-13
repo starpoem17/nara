@@ -1,0 +1,121 @@
+{
+  "experiment": "CMS_updated_cards_v19_v24_dev200_20260913",
+  "created_utc": "2026-09-13T04:51:39.996256+00:00",
+  "source_commit": "615e649e80794556f9ae2d889da99d5c41a8cba4",
+  "implementation_head": "4a2b39e3532a41d39ad2349a01e1fc5ffe531653",
+  "sources": {
+    "candidates": {
+      "git_path": "user/CMS/판정카드v19_v24/candidates.jsonl",
+      "sha256": "80259ee689e0b03888311d3a7fcb19cafff161be9408423317f15151f0f33c1b"
+    },
+    "cards": {
+      "git_path": "user/CMS/판정카드v19_v24/판정카드_v19-v24_토큰수_제한.md",
+      "sha256": "68f0a760c779897dd2bce9c3874ea80dd7a5788605d913e60b3403b4449e45bc"
+    },
+    "extraction": {
+      "git_path": "user/CMS/판정카드v19_v24/원문_META_추출규칙_v19-v24.md",
+      "sha256": "2ea8d53e5dab2132af3931331f9a16166fb21d5f2d82507a0e6dcdd70e5a0505"
+    }
+  },
+  "dev_sha256": "5507f5ab0ba53b708f87211ed050dbe531b48a626ace6084c3ccaefb53147534",
+  "expected_requests": 1200,
+  "notice_count": 200,
+  "items": [
+    "v19",
+    "v20",
+    "v21",
+    "v22",
+    "v23",
+    "v24"
+  ],
+  "model": "models/gemma-4-26B-A4B-it-NVFP4",
+  "thinking": false,
+  "temperature": 0,
+  "seed": 0,
+  "output_tokens": 512,
+  "concurrency": 16,
+  "max_model_len": 32768,
+  "max_num_batched_tokens": 8192,
+  "gpu_memory_utilization": 0.86,
+  "prefix_caching": true,
+  "request_order": "uploaded notice order, then v19 through v24",
+  "warmup": "engine initialization only; no extra inference requests",
+  "extraction": {
+    "status": "skipped",
+    "seconds": null
+  },
+  "runtime_scope": "cached-candidate input preparation, model load, one-pass inference; no full-pipeline time",
+  "interpretation": "dev-developed cards/candidates; no unseen-data generalization validation",
+  "format": {
+    "candidate_prefix": "추출된 원문 후보는 다음과 같다. ",
+    "join": ", ",
+    "quote": "'",
+    "empty": "추출된 원문 후보가 없습니다.",
+    "source_headers_visible": false,
+    "budget_truncated_visible": false
+  },
+  "authorized_input_exception": {
+    "id": "PPS-DEV-189",
+    "item": "v24",
+    "max_tokens": 2024
+  },
+  "input_statistics": {
+    "v19": {
+      "min": 553,
+      "median": 608.0,
+      "max": 1707,
+      "empty_candidates": 96
+    },
+    "v20": {
+      "min": 620,
+      "median": 633.0,
+      "max": 1755,
+      "empty_candidates": 148
+    },
+    "v21": {
+      "min": 537,
+      "median": 669.5,
+      "max": 1684,
+      "empty_candidates": 65
+    },
+    "v22": {
+      "min": 515,
+      "median": 517.0,
+      "max": 1403,
+      "empty_candidates": 129
+    },
+    "v23": {
+      "min": 917,
+      "median": 1770.0,
+      "max": 1936,
+      "empty_candidates": 0
+    },
+    "v24": {
+      "min": 663,
+      "median": 1573.0,
+      "max": 2024,
+      "empty_candidates": 0
+    }
+  },
+  "artifact_sha256": {
+    "inputs.jsonl": "f18e0fee992a003f2568376f54445fd4df2aff263dc955e22b1ab979180de7a9",
+    "schemas.json": "64274104080247d7191fc2722ef4adc15098101b0b380b8afc4f4be36aa03ce6",
+    "source/candidates.jsonl": "80259ee689e0b03888311d3a7fcb19cafff161be9408423317f15151f0f33c1b",
+    "source/cards/v19.txt": "f2e19fa36d3c84ea129ae601954c2b10eda7e72ffbb110ee9dbd13e270b5d5d3",
+    "source/cards/v20.txt": "8ecbef6ebec2493cbb441e6e25bb7deb62b80c4ea85839549c33f5df6fa631e8",
+    "source/cards/v21.txt": "b64c89f523b11a5a58f3bd89136034873ceac9cbaba433a2118dd75183d68d55",
+    "source/cards/v22.txt": "346abafa4a5a7e5dfaac0d1608e78d814bcb1257f5d19d3e0acd801e266baaef",
+    "source/cards/v23.txt": "2c5d7c84879c8d04a50b9b2696a4f73c4e96ce4922fa130d1853f0e8bb76ed6a",
+    "source/cards/v24.txt": "b80b7d4707c76eea449aae9550b8f15bcaf64b2bf6af20017a044bbcaad58fab",
+    "source/cards_original.txt": "68f0a760c779897dd2bce9c3874ea80dd7a5788605d913e60b3403b4449e45bc",
+    "source/extraction_original.txt": "2ea8d53e5dab2132af3931331f9a16166fb21d5f2d82507a0e6dcdd70e5a0505",
+    "source/memo_exclusion.json": "d50aecf19b62f5aee3b879dbeace8b5256760264782921969c9b4f14702f3d5d",
+    "source/pyproject.toml": "fdfa3d90b20d8902f039ddcc259286fb382cb4ba46dfdfafa28a48c59f39cad3",
+    "source/src/experiments/cms_updated_cards.py": "de37ac8d20e8b1aa557bae59220840b9057ed21fa39038c43e586e237ecb4254",
+    "source/src/inference/conversation.py": "273469929c78ded1ecc6a763703ddaeca22a4c74fa35220106bb959b54247ca3",
+    "source/src/inference/engine.py": "be56bcc03888582e1e4643d36c5ffc6f482ff9fad84043ec73fe5ceabd1f5c72",
+    "source/src/inference/predictor.py": "229f12984b85b9d0f4f26f74b2ac8835183a6bb5bb5116b3590da019e1a88edb",
+    "source/uv.lock": "76089a2b00b237f2c2782d084f1e1c7c8aadfa1849780c1b787d91d7088b7651"
+  },
+  "preparation_seconds": 3.879115310002817
+}

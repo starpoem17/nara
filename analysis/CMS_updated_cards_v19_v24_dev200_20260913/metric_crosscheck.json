@@ -1,0 +1,14 @@
+{
+  "method": "scikit-learn f1_score on independently parsed frozen replies and CSV labels",
+  "per_item_f1": {
+    "v19": 0.375,
+    "v20": 0.10526315789473684,
+    "v21": 0.8,
+    "v22": 1.0,
+    "v23": 0.5333333333333333,
+    "v24": 0.11764705882352941
+  },
+  "macro_f1": 0.4885405916752666,
+  "agrees_with_evaluator": true,
+  "prediction_sha256": "2c65f492b1da92c61bb4e4fff06cfa46bbd02437232568fab8baa98d2038765a"
+}

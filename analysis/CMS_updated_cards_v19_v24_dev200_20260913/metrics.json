@@ -1,0 +1,193 @@
+{
+  "scope": {
+    "records": 200,
+    "items": [
+      "v19",
+      "v20",
+      "v21",
+      "v22",
+      "v23",
+      "v24"
+    ],
+    "expected_requests": 1200
+  },
+  "classification_protocol": "valid outputs only; invalid outputs are neither repaired nor filled with zero",
+  "per_item": {
+    "v19": {
+      "expected": 200,
+      "valid": 200,
+      "invalid": 0,
+      "gold_positive_valid": 6,
+      "predicted_positive_valid": 26,
+      "tp": 6,
+      "fp": 20,
+      "fn": 0,
+      "tn": 174,
+      "positive_f1_valid_only": 0.375,
+      "positive_f1_defined": true,
+      "positive_f1_undefined_reason": null,
+      "accuracy_valid_only": 0.9,
+      "accuracy_defined": true,
+      "accuracy_undefined_reason": null
+    },
+    "v20": {
+      "expected": 200,
+      "valid": 200,
+      "invalid": 0,
+      "gold_positive_valid": 5,
+      "predicted_positive_valid": 90,
+      "tp": 5,
+      "fp": 85,
+      "fn": 0,
+      "tn": 110,
+      "positive_f1_valid_only": 0.10526315789473684,
+      "positive_f1_defined": true,
+      "positive_f1_undefined_reason": null,
+      "accuracy_valid_only": 0.575,
+      "accuracy_defined": true,
+      "accuracy_undefined_reason": null
+    },
+    "v21": {
+      "expected": 200,
+      "valid": 200,
+      "invalid": 0,
+      "gold_positive_valid": 6,
+      "predicted_positive_valid": 4,
+      "tp": 4,
+      "fp": 0,
+      "fn": 2,
+      "tn": 194,
+      "positive_f1_valid_only": 0.8,
+      "positive_f1_defined": true,
+      "positive_f1_undefined_reason": null,
+      "accuracy_valid_only": 0.99,
+      "accuracy_defined": true,
+      "accuracy_undefined_reason": null
+    },
+    "v22": {
+      "expected": 200,
+      "valid": 200,
+      "invalid": 0,
+      "gold_positive_valid": 5,
+      "predicted_positive_valid": 5,
+      "tp": 5,
+      "fp": 0,
+      "fn": 0,
+      "tn": 195,
+      "positive_f1_valid_only": 1.0,
+      "positive_f1_defined": true,
+      "positive_f1_undefined_reason": null,
+      "accuracy_valid_only": 1.0,
+      "accuracy_defined": true,
+      "accuracy_undefined_reason": null
+    },
+    "v23": {
+      "expected": 200,
+      "valid": 200,
+      "invalid": 0,
+      "gold_positive_valid": 5,
+      "predicted_positive_valid": 10,
+      "tp": 4,
+      "fp": 6,
+      "fn": 1,
+      "tn": 189,
+      "positive_f1_valid_only": 0.5333333333333333,
+      "positive_f1_defined": true,
+      "positive_f1_undefined_reason": null,
+      "accuracy_valid_only": 0.965,
+      "accuracy_defined": true,
+      "accuracy_undefined_reason": null
+    },
+    "v24": {
+      "expected": 200,
+      "valid": 200,
+      "invalid": 0,
+      "gold_positive_valid": 8,
+      "predicted_positive_valid": 43,
+      "tp": 3,
+      "fp": 40,
+      "fn": 5,
+      "tn": 152,
+      "positive_f1_valid_only": 0.11764705882352941,
+      "positive_f1_defined": true,
+      "positive_f1_undefined_reason": null,
+      "accuracy_valid_only": 0.775,
+      "accuracy_defined": true,
+      "accuracy_undefined_reason": null
+    }
+  },
+  "aggregate": {
+    "macro_positive_f1_valid_only": 0.4885405916752666,
+    "macro_items_defined": 6,
+    "macro_items_undefined": [],
+    "micro_positive_f1_valid_only": 0.2535211267605634,
+    "micro_positive_f1_defined": true,
+    "micro_positive_f1_undefined_reason": null,
+    "accuracy_valid_only": 0.8675,
+    "valid": 1200,
+    "invalid": 0,
+    "expected": 1200,
+    "tp": 27,
+    "fp": 151,
+    "fn": 8,
+    "tn": 1014,
+    "gold_positive_valid": 35,
+    "predicted_positive_valid": 178
+  },
+  "failures": {
+    "by_reason": {},
+    "by_status": {}
+  },
+  "evidence": {
+    "evaluated_valid_outputs": 1200,
+    "semantic_valid": 1154,
+    "semantic_invalid": 46,
+    "original_substring": 64,
+    "selected_candidate_substring": 64,
+    "reference_exact_match": 5,
+    "invalid_reasons": {
+      "evidence_not_contiguous_original_substring": 31,
+      "negative_evidence_must_be_null": 15
+    }
+  },
+  "prediction_sha256": "2c65f492b1da92c61bb4e4fff06cfa46bbd02437232568fab8baa98d2038765a",
+  "evaluated_data_sha256": {
+    "labels": "84c79302ac190b45b2487ec8e02aab73e59071ee745828e813a7db96d3a97a35",
+    "notices": "5507f5ab0ba53b708f87211ed050dbe531b48a626ace6084c3ccaefb53147534"
+  },
+  "runtime": {
+    "preparation_seconds": 3.879115310002817,
+    "model_load_seconds": 63.883431896996626,
+    "inference_seconds": 46.36852800300403,
+    "cache_reset_before_run": true,
+    "engine": {
+      "max_num_seqs": 16,
+      "max_num_batched_tokens": 8192,
+      "cudagraph_mode": "FULL_AND_PIECEWISE",
+      "capture_sizes": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        24,
+        32
+      ],
+      "kv_cache_dtype": "auto",
+      "gpu_memory_utilization": 0.86,
+      "max_model_len": 32768,
+      "enable_prefix_caching": true,
+      "num_gpu_blocks": 15908,
+      "block_size": 16
+    },
+    "hardware": {
+      "gpu": "NVIDIA GeForce RTX 5090",
+      "gpu_total_bytes": 33665581056
+    },
+    "completed": 1200,
+    "expected_requests": 1200,
+    "cached_tokens": 506848,
+    "input_tokens": 1224717,
+    "output_tokens": 30543
+  }
+}
