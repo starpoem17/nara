@@ -152,6 +152,17 @@ class EngineTests(unittest.TestCase):
         self.assertEqual(counter._tokens(turn().messages), model.render_messages(turn().messages))
         self.assertEqual(counter.count_messages(turn().messages), model.count_messages(turn().messages))
 
+    def test_extended_context_is_opt_in_for_an_experiment(self):
+        with self.assertRaisesRegex(ValueError, '32768'):
+            self.model(max_model_len=36864)
+        class ExperimentModel(VLLMModel):
+            _context_limit = 36864
+        model = ExperimentModel(self.model_dir, max_model_len=36864)
+        self.assertEqual(model.llm.options['max_model_len'], 36864)
+        with self.assertRaisesRegex(ValueError, '36864'):
+            ExperimentModel(self.model_dir, max_model_len=36865)
+        self.assertEqual(self.model().llm.options['max_model_len'], 32768)
+
     def test_preflight_and_generation_render_identically(self):
         for thinking in (True, False):
             with self.subTest(thinking=thinking):

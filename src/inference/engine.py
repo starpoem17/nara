@@ -35,6 +35,7 @@ class TokenCounter:
 
 class VLLMModel(TokenCounter):
     _request_serial = 0
+    _context_limit = 32768  # Default/server ceiling; isolated experiments may override.
 
     def __init__(self, model_dir, *, max_model_len=32768, gpu_memory_utilization=0.86,
                  max_num_seqs=8, quantization="auto", thinking=False, enforce_eager=False,
@@ -51,8 +52,8 @@ class VLLMModel(TokenCounter):
         # The downloaded local NVFP4 checkpoint uses Cutlass MoE on Blackwell.
         if "nvfp4" in json.dumps(config.get("quantization_config", {})).lower():
             options["kernel_config"] = {"moe_backend": "cutlass"}
-        if not 0 < max_model_len <= 32768:
-            raise ValueError("max_model_len must be in 1..32768")
+        if not 0 < max_model_len <= self._context_limit:
+            raise ValueError(f"max_model_len must be in 1..{self._context_limit}")
         if thinking:
             options["reasoning_parser"] = "gemma4"
         # Omit optional keywords unless requested: legacy scripts inject them too.

@@ -1,5 +1,7 @@
 # Agent documentation
 
+CMS updated-card dev200 experiment: [results and actual prompts](reports/analysis/CMS_updated_cards_v19_v24_dev200_20260913/report.md), [approved plan](experiments/cms-updated-cards-plan.md), [KHJ decisions](experiments/cms-updated-cards-decisions.md), [Astra review](reports/cms-updated-cards-astra-fidelity-review.md).
+
 Project objective: achieve a strong result in DACON competition 236754.
 Read this index, then only the documents relevant to the current task.
 

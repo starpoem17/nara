@@ -1,5 +1,7 @@
 # Reports and artifact index
 
+- [CMS updated cards v19–v24 dev200](analysis/CMS_updated_cards_v19_v24_dev200_20260913/report.md): approved cached-candidate experiment, actual prompts, raw outputs, F1, timing and evidence observations.
+
 Read the concise owner first. Detailed reports live here; JSON/CSV/prompts, raw model responses, execution logs and frozen source remain in the linked `analysis/` folder. Repeated `source/data/dev.jsonl` snapshots and root datasets remain local. Historical reports retain their recorded commands and source paths; use the [project map](../project-structure.md) for current source locations. `docs/reports/output/` remains readable when its linked local `output/` artifacts are absent. Old `analysis/X/Y.md` maps to `docs/reports/analysis/X/Y.md`; old `output/X/Y.md` maps to `docs/reports/output/X/Y.md`. Unlinked artifact names inside a report refer to its artifact folder, identified at the top.
 
 [Project map](../project-structure.md) · [Script catalog](../project-structure.md#script-catalog) · [Preserved snapshots](../maintenance/structure-audit.md#frozen-document-exceptions)
