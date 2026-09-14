@@ -1,0 +1,39 @@
+{
+  "model": "models/gemma-4-26B-A4B-it-NVFP4",
+  "paper_prompt": "Think step by step, but only keep a minimum draft for each thinking step, with 5 words at most. Return the answer at the end of the response after a separator ####.",
+  "config_source": "https://github.com/sileix/chain-of-draft/blob/main/configs/gsm8k_cod.yaml",
+  "placement": "single user payload, following authors compose_request and llm_client",
+  "difference": "Paper has a minimum; repository has minimum. Use exact paper text with whitespace normalized. Synthetic questions independent of examples.",
+  "temperature": 0,
+  "seed": 0,
+  "max_tokens": 512,
+  "thinking_budget": null,
+  "structured_outputs": null,
+  "questions": [
+    [
+      "A",
+      "Mia has 17 marbles and receives 8 more. She gives away 6. How many marbles remain?",
+      19
+    ],
+    [
+      "B",
+      "Four boxes contain 7 pencils each. Nine pencils are used. How many pencils remain?",
+      19
+    ],
+    [
+      "C",
+      "A ticket costs $6. Ben buys 3 tickets and pays $25. How much change does he receive?",
+      7
+    ],
+    [
+      "D",
+      "A tank contains 48 liters. One quarter is drained, then 5 liters are added. How many liters are now in the tank?",
+      41
+    ],
+    [
+      "E",
+      "A train travels at 60 kilometers per hour for 2 hours, then 40 kilometers per hour for 3 hours. What total distance does it travel in kilometers?",
+      240
+    ]
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "schema_version": 1,
+  "record_kind": "historical_experiment",
+  "read_only": true,
+  "project_root": "../..",
+  "run_id": "legacy_compact_extended_repair",
+  "area": "prompt-design",
+  "report": "docs/experiments/prompt-design/2026-09/legacy_compact_extended_repair.md",
+  "question": "Can PPS-DEV-147 be recovered with an increased output allowance?",
+  "started_at": null,
+  "timezone": "Asia/Seoul",
+  "time_evidence": "No verified orchestration start; see timestamp-candidates.json and original logs. September 2026 is established by the linked historical project records.",
+  "migration_at": "2026-09-13T15:13:30.138643+00:00",
+  "status": "historical; inspect per-condition execution records",
+  "judgment": "Only the remaining ON147 failure was recovered with output4096; merged200 is a mixed-attempt/budget result.",
+  "conditions": {
+    "recorded_execution": {
+      "settings": {
+        "recorded_condition": "recorded execution",
+        "scope": "See preserved original manifest and source for exact settings."
+      },
+      "status": "historical",
+      "attempts": [],
+      "artifact_path": "."
+    }
+  },
+  "max_attempts": 0,
+  "predecessors": [
+    {
+      "run_id": "legacy_compact_repair",
+      "reason": "Standard repair still failed PPS-DEV-147; output allowance increased from 2048 to 4096."
+    }
+  ],
+  "followups": [],
+  "original_files": {
+    "analysis/compact200/extended_recovery_policy.json": {
+      "path": "extended_recovery_policy.json",
+      "sha256": "192e2411de1f8b505bb47d611a577639033e841f29e8dbbdf68991a36a855a99",
+      "size": 329
+    },
+    "analysis/compact200/recovery_extended_baseline.log": {
+      "path": "recovery_extended_baseline.log",
+      "sha256": "e7b91d449017c7c6f16363517267529beca140645b901574887dc49d60c4f35c",
+      "size": 17021
+    },
+    "analysis/compact200/ungrouped_on/errors.csv": {
+      "path": "ungrouped_on/errors.csv",
+      "sha256": "e10196c230a8345a8a1a4e6cd24fc2a7387d9d5738cb3e34bd71ac4815e797cd",
+      "size": 31768
+    },
+    "analysis/compact200/ungrouped_on/evaluation.json": {
+      "path": "ungrouped_on/evaluation.json",
+      "sha256": "ff3869a1f09c0b6c6664cd5e5d07a4173d749ddbf410a4260713e511fe599481",
+      "size": 11404
+    },
+    "analysis/compact200/ungrouped_on/extended_recovery_prompt_01.txt": {
+      "path": "ungrouped_on/extended_recovery_prompt_01.txt",
+      "sha256": "56f5d8b4207ae20906206410fb18de178ce0fc4cb6a4b1f52b4b6209bca2f634",
+      "size": 6071
+    },
+    "analysis/compact200/ungrouped_on/extended_recovery_schema_01.json": {
+      "path": "ungrouped_on/extended_recovery_schema_01.json",
+      "sha256": "e3d9fa59ff838e8f6b4218670bdf003985aa8acc9a9d21c6b48581feb5c6d79d",
+      "size": 13310
+    },
+    "analysis/compact200/ungrouped_on/report.json": {
+      "path": "ungrouped_on/report.json",
+      "sha256": "744b4b27f4ba713665e391fbef505cbd76298f1e1f3f2900f6cacf8b7410c28f",
+      "size": 3166
+    },
+    "analysis/compact200/ungrouped_on/submission.csv": {
+      "path": "ungrouped_on/submission.csv",
+      "sha256": "4af3138cc4061379eb477ec2c3f1d1ce7dbab13bad7b13bbe58c0080a3a6d78b",
+      "size": 31506
+    },
+    "analysis/compact200/ungrouped_on/trace.jsonl": {
+      "path": "ungrouped_on/trace.jsonl",
+      "sha256": "45f6305fd42f0bddd6701bead6829c175c0d7944a0065f8b1fb7c3178d1d42b0",
+      "size": 634146
+    }
+  },
+  "temporary_paths": [
+    "tmp/structure-migration-20260913"
+  ],
+  "migration_inventory": "docs/maintenance/evidence/structure-migration/mapping.json",
+  "reproducibility": "Original content retained. Local datasets/models require matching separately restored bytes; historical commands may need current reconstruction guidance.",
+  "recorded_condition_evidence": [
+    {
+      "path": "ungrouped_on/report.json",
+      "values": {
+        "options": {
+          "model_dir": "models/gemma-4-26B-A4B-it-NVFP4",
+          "max_model_len": 32768,
+          "thinking": true,
+          "item_group_size": 24
+        },
+        "limits": {
+          "batch_size": 8,
+          "search_rounds": 2,
+          "queries_per_round": 4,
+          "top_k": 5,
+          "round_tokens": 4096,
+          "total_retrieval_tokens": 8192,
+          "output_tokens": 2048,
+          "retries": 1,
+          "require_search": false
+        },
+        "groups": [
+          [
+            "v1",
+            "v2",
+            "v3",
+            "v4",
+            "v5",
+            "v6",
+            "v7",
+            "v8",
+            "v9",
+            "v10",
+            "v11",
+            "v12",
+            "v13",
+            "v14",
+            "v15",
+            "v16",
+            "v17",
+            "v18",
+            "v19",
+            "v20",
+            "v21",
+            "v22",
+            "v23",
+            "v24"
+          ]
+        ]
+      }
+    }
+  ],
+  "historical_provenance": {
+    "status": "retained where originally recorded; missing fields remain unknown",
+    "execution_sources": "Existing source/analysis_source contents and original manifests are authoritative; migration-time code is separately labeled",
+    "input_access": "Local input/model assets remain locally retained; original hashes are in manifests/evaluations. Another checkout must restore matching bytes.",
+    "original_temporary_paths": "Not reconstructed when absent from original evidence"
+  },
+  "migration_code_archive": "docs/maintenance/evidence/structure-migration/original-source.tar"
+}

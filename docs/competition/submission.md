@@ -26,7 +26,7 @@ submit.zip
 - CSV: UTF-8 without BOM, exactly 49 columns in order: `id,v1,...,v24,e1,...,e24`.
 - Exactly one row per input notice; every input ID present, no duplicate IDs.
 - `v1`–`v24`: nonempty integer `0` or `1`; no probabilities, booleans, or text flags.
-- Keep all evidence columns. Empty values are allowed for nonviolations or absent quotable evidence, including absence-detection items. Evidence validity: [evaluation](evaluation.md#evidence).
+- Keep all evidence columns. Empty values are allowed for nonviolations or absent quotable evidence, including absence-detection items. Evidence validity: [evaluation](<evaluation.md#evidence>).
 
 ## Limits and failure accounting
 
@@ -41,7 +41,7 @@ submit.zip
 | Network | Package installation only; unavailable during script execution |
 
 - Installation/structure failures do not consume the daily quota. Any failure after `script.py` starts does, including timeout and output validation failure.
-- Scoring can take hours with queueing; leave time before the submission deadline. Dates: [sources](sources.md#dates).
+- Scoring can take hours with queueing; leave time before the submission deadline. Dates: [sources](<sources.md#dates>).
 
 ## Models and runtime
 

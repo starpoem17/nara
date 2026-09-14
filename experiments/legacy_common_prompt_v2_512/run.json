@@ -1,0 +1,339 @@
+{
+  "schema_version": 1,
+  "record_kind": "historical_experiment",
+  "read_only": true,
+  "project_root": "../..",
+  "run_id": "legacy_common_prompt_v2_512",
+  "area": "prompt-design",
+  "report": "docs/experiments/prompt-design/2026-09/legacy_common_prompt_v2_512.md",
+  "question": "Can the revised common prompt be prepared under matched output512 conditions?",
+  "started_at": null,
+  "timezone": "Asia/Seoul",
+  "time_evidence": "No verified orchestration start; see timestamp-candidates.json and original logs. September 2026 is established by the linked historical project records.",
+  "migration_at": "2026-09-13T15:13:30.122821+00:00",
+  "status": "historical; inspect per-condition execution records",
+  "judgment": "Initialization-only attempt; no notice predictions. Follow-up execution is recorded separately.",
+  "conditions": {
+    "recorded_execution": {
+      "settings": {
+        "recorded_condition": "recorded execution",
+        "scope": "See preserved original manifest and source for exact settings."
+      },
+      "status": "historical",
+      "attempts": [],
+      "artifact_path": "."
+    }
+  },
+  "max_attempts": 0,
+  "predecessors": [],
+  "followups": [
+    {
+      "run_id": "legacy_common_prompt_v2_512_run",
+      "reason": "Initialization failure led to a corrected launcher attempt."
+    }
+  ],
+  "original_files": {
+    "analysis/common_prompt_v2_512/candidate_common.txt": {
+      "path": "candidate_common.txt",
+      "sha256": "a3848d235bd5b818b14048a3cc5e72ed31628eab0233f2de7ed6cbc58ce92ae1",
+      "size": 1814
+    },
+    "analysis/common_prompt_v2_512/launch.py": {
+      "path": "launch.py",
+      "sha256": "32f9585741347574b47cc4fcb8c6782294fcdc18ee54b465d2da14609ece3a18",
+      "size": 4664
+    },
+    "analysis/common_prompt_v2_512/original/common_prompt.txt": {
+      "path": "original/common_prompt.txt",
+      "sha256": "e3506ad32205c524c5a2873f3dae0206935cb73a711b3dfb13bcb402cf88d9dc",
+      "size": 922
+    },
+    "analysis/common_prompt_v2_512/original/prompt_01.txt": {
+      "path": "original/prompt_01.txt",
+      "sha256": "1df7f011c2ed06c749a42dc55a75aaaa47fe4c8faf419fbe826c60f1c08734a2",
+      "size": 1210
+    },
+    "analysis/common_prompt_v2_512/original/prompt_02.txt": {
+      "path": "original/prompt_02.txt",
+      "sha256": "dbc0bf5770558a4b9c529f9f9d68866ac7355a6bf388631ac5df9c768380334e",
+      "size": 1816
+    },
+    "analysis/common_prompt_v2_512/original/prompt_03.txt": {
+      "path": "original/prompt_03.txt",
+      "sha256": "2b46f5178cc4fe7fc7c431cd2629177d1c9375ffee34471554c51221761fbb89",
+      "size": 1170
+    },
+    "analysis/common_prompt_v2_512/original/prompt_04.txt": {
+      "path": "original/prompt_04.txt",
+      "sha256": "c021174fe9615bc67d7cadcd81057892610b5af8f1d56e7ad58410d410024344",
+      "size": 1412
+    },
+    "analysis/common_prompt_v2_512/original/prompt_05.txt": {
+      "path": "original/prompt_05.txt",
+      "sha256": "58b181bdf46dd457f0c78791ad8fc2fcf7f1deb1fcd2eb9592f60047afaed39f",
+      "size": 1769
+    },
+    "analysis/common_prompt_v2_512/original/prompt_06.txt": {
+      "path": "original/prompt_06.txt",
+      "sha256": "999752fea9deea10f03fad3d538b082d275ab332dce6f2a43bbee9ee103a501c",
+      "size": 1147
+    },
+    "analysis/common_prompt_v2_512/original/prompt_07.txt": {
+      "path": "original/prompt_07.txt",
+      "sha256": "0e4436407a3f6dfb67a5927561a7e0053d525cda4b7ed94b682380f56b066dc6",
+      "size": 1373
+    },
+    "analysis/common_prompt_v2_512/original/prompt_08.txt": {
+      "path": "original/prompt_08.txt",
+      "sha256": "1331d047a57e82d3e8abea51e527056af4c1554b3ea232f1861c5892cbd89043",
+      "size": 1395
+    },
+    "analysis/common_prompt_v2_512/original/prompt_09.txt": {
+      "path": "original/prompt_09.txt",
+      "sha256": "42cd6460de32aaca7e21af1ac0b437cd0781070feda67444dfd533401ce733c5",
+      "size": 1453
+    },
+    "analysis/common_prompt_v2_512/original/prompt_10.txt": {
+      "path": "original/prompt_10.txt",
+      "sha256": "2c9830ddc067b7fa911888649b1c8c067014d5a03b4a70564bae2589fd57c404",
+      "size": 1300
+    },
+    "analysis/common_prompt_v2_512/original/prompt_11.txt": {
+      "path": "original/prompt_11.txt",
+      "sha256": "bf64014783ea9a96c4210a5fd5cfd901978b38b13865dae7467c9966a3de5513",
+      "size": 1467
+    },
+    "analysis/common_prompt_v2_512/original/prompt_12.txt": {
+      "path": "original/prompt_12.txt",
+      "sha256": "a8a520c5cdb2e258e5d5250524e812d5964db1c663f2e273405734616be7385b",
+      "size": 1271
+    },
+    "analysis/common_prompt_v2_512/original/schema_01.json": {
+      "path": "original/schema_01.json",
+      "sha256": "7d73ba5d87dd82b9c02538c05183b23b9a2d2e4c5c45e3d28e7322a8beb55f7c",
+      "size": 2200
+    },
+    "analysis/common_prompt_v2_512/original/schema_02.json": {
+      "path": "original/schema_02.json",
+      "sha256": "031ea8cf0d0f97ce9866419185e66676cea988f2832c1eab5f9ba0f11bda9e52",
+      "size": 2860
+    },
+    "analysis/common_prompt_v2_512/original/schema_03.json": {
+      "path": "original/schema_03.json",
+      "sha256": "31b856acdd4e02171487c169f75c0cc1bd1faf6f8efb3ee94ceb3f1750d67061",
+      "size": 1540
+    },
+    "analysis/common_prompt_v2_512/original/schema_04.json": {
+      "path": "original/schema_04.json",
+      "sha256": "441736471a1e9365922f50aa6c37e1fd886e62ef86d55087d4c2f4400472abcb",
+      "size": 2202
+    },
+    "analysis/common_prompt_v2_512/original/schema_05.json": {
+      "path": "original/schema_05.json",
+      "sha256": "02069485e61d8de2b0a30cc98671054db8d7ed4dfbc8c9e9ce77a4e098d6c8e3",
+      "size": 3312
+    },
+    "analysis/common_prompt_v2_512/original/schema_06.json": {
+      "path": "original/schema_06.json",
+      "sha256": "e6330ad820a81d4e8de8c541779ef50a864cddfb3640ec98ed734c40d54a2161",
+      "size": 1542
+    },
+    "analysis/common_prompt_v2_512/original/schema_07.json": {
+      "path": "original/schema_07.json",
+      "sha256": "5b2d8b33dd7d9c7d24686b27c1a7fc618d1f79ff3075ac17c488b2cd7648427f",
+      "size": 2096
+    },
+    "analysis/common_prompt_v2_512/original/schema_08.json": {
+      "path": "original/schema_08.json",
+      "sha256": "63cff1658b22140bfc5e653a64e1404d20ab59082c3aa6250b7b9ae4ef090a5a",
+      "size": 2096
+    },
+    "analysis/common_prompt_v2_512/original/schema_09.json": {
+      "path": "original/schema_09.json",
+      "sha256": "8b44dec4c252dc8e3f794cf2fa17df9b90f6b85b74c0ef036035178c1a683c2f",
+      "size": 1434
+    },
+    "analysis/common_prompt_v2_512/original/schema_10.json": {
+      "path": "original/schema_10.json",
+      "sha256": "9f6f627355c818058d8d815907826e3c5901d3cddd30677854f1860977cb213c",
+      "size": 1542
+    },
+    "analysis/common_prompt_v2_512/original/schema_11.json": {
+      "path": "original/schema_11.json",
+      "sha256": "e666db976a237349c174a4300832ff302b5c68ed58b32ff0545a595ac92f7b8f",
+      "size": 2204
+    },
+    "analysis/common_prompt_v2_512/original/schema_12.json": {
+      "path": "original/schema_12.json",
+      "sha256": "e1e217b6cc797fe71ab3d075efb87f38fc110517c1e882106da233826b69f02b",
+      "size": 1542
+    },
+    "analysis/common_prompt_v2_512/original_common.txt": {
+      "path": "original_common.txt",
+      "sha256": "e3506ad32205c524c5a2873f3dae0206935cb73a711b3dfb13bcb402cf88d9dc",
+      "size": 922
+    },
+    "analysis/common_prompt_v2_512/original_preflight.log": {
+      "path": "original_preflight.log",
+      "sha256": "46d386933a7223cb7763cc4374c4512291aed308cdf42661d9f92c86f531d00d",
+      "size": 398
+    },
+    "analysis/common_prompt_v2_512/plan.json": {
+      "path": "plan.json",
+      "sha256": "8343b7fdd9e177b89ed74c8a624f2ccb912f25424a8043ee38c84d84461dcc7a",
+      "size": 5248
+    },
+    "analysis/common_prompt_v2_512/source/nara/__init__.py": {
+      "path": "source/nara/__init__.py",
+      "sha256": "81f9119d0c08fa90b298c122f306bbb7cd82527a99a6a9142d6fb322107a0382",
+      "size": 67
+    },
+    "analysis/common_prompt_v2_512/source/nara/batch_barrier.py": {
+      "path": "source/nara/batch_barrier.py",
+      "sha256": "09e5d7abf2a3e6a14f87cfa86c3fcef0a7aab5531d98bb7bd5be9400c1092474",
+      "size": 1536
+    },
+    "analysis/common_prompt_v2_512/source/nara/compact_criteria.json": {
+      "path": "source/nara/compact_criteria.json",
+      "sha256": "84cc8ca7f625f51e55206fc581a28e36df4551999c4009de84188f273bd06a04",
+      "size": 6190
+    },
+    "analysis/common_prompt_v2_512/source/nara/compact_predictor.py": {
+      "path": "source/nara/compact_predictor.py",
+      "sha256": "046002710b57ad799ff6f287f016ae215c2109338b66d3706570c8ac8651f969",
+      "size": 961
+    },
+    "analysis/common_prompt_v2_512/source/nara/continuous.py": {
+      "path": "source/nara/continuous.py",
+      "sha256": "80364fa8453e58d1176bfdc02c95ba81b5457d790fe0d931b2b582953fdb7ec7",
+      "size": 4220
+    },
+    "analysis/common_prompt_v2_512/source/nara/conversation.py": {
+      "path": "source/nara/conversation.py",
+      "sha256": "273469929c78ded1ecc6a763703ddaeca22a4c74fa35220106bb959b54247ca3",
+      "size": 14317
+    },
+    "analysis/common_prompt_v2_512/source/nara/hybrid_experiment.py": {
+      "path": "source/nara/hybrid_experiment.py",
+      "sha256": "c83e8296c1d88db5d13ba715c8ef6c98aa4c0086ee709058b638631130096a59",
+      "size": 3365
+    },
+    "analysis/common_prompt_v2_512/source/nara/hypothesis6.py": {
+      "path": "source/nara/hypothesis6.py",
+      "sha256": "737c4c4198d1254b50acc472e653dd513315e216001282ddf8dc7459368c34bf",
+      "size": 9758
+    },
+    "analysis/common_prompt_v2_512/source/nara/inference.py": {
+      "path": "source/nara/inference.py",
+      "sha256": "cc81a106db5db48eea99ba07119e9b537908e78a5aa9afd1cf06402e2057c4d9",
+      "size": 10016
+    },
+    "analysis/common_prompt_v2_512/source/nara/legal_index.py": {
+      "path": "source/nara/legal_index.py",
+      "sha256": "b3266f0065a9164dbc2c71912d8667eedefb1ca9514f661601be72888c14bf7e",
+      "size": 12638
+    },
+    "analysis/common_prompt_v2_512/source/nara/prefix_pipeline.py": {
+      "path": "source/nara/prefix_pipeline.py",
+      "sha256": "0ddc8dd026efc9f5480bd5a2837539a385c42da041c0a2aa03cef8de36c631b9",
+      "size": 6416
+    },
+    "analysis/common_prompt_v2_512/source/nara/prefix_predictor.py": {
+      "path": "source/nara/prefix_predictor.py",
+      "sha256": "aee83eb0ce46cef8f2cbc7bc8697a94282d0b7908306fff55b5416d271ed19b7",
+      "size": 2441
+    },
+    "analysis/common_prompt_v2_512/source/nara/recovery.py": {
+      "path": "source/nara/recovery.py",
+      "sha256": "9c2aef5ba101044c42e2342c84daef592b4be0022bd934e10932c0a7983fd65f",
+      "size": 5934
+    },
+    "analysis/common_prompt_v2_512/source/nara/retrieval.py": {
+      "path": "source/nara/retrieval.py",
+      "sha256": "fb794006f27da4b99a3d39b9f3ef6e84e829f187290a451b2f33b56f0c8c8edc",
+      "size": 7047
+    },
+    "analysis/common_prompt_v2_512/source/nara/vllm_model.py": {
+      "path": "source/nara/vllm_model.py",
+      "sha256": "c4811d30d3040780bfe29177b18df231c2d30cb8451db23d804da3283f83c3bb",
+      "size": 10275
+    },
+    "analysis/common_prompt_v2_512/source/pyproject.toml": {
+      "path": "source/pyproject.toml",
+      "sha256": "3c3ad6e6eacee8babb408f7d3a6011edd822c1afa86a7095761ec2723e6356a2",
+      "size": 1019
+    },
+    "analysis/common_prompt_v2_512/source/script.py": {
+      "path": "source/script.py",
+      "sha256": "facb2dab4a52e575e1a0bd35ec3d02ecae9beffbb73c92964580bba60cf3e923",
+      "size": 8585
+    },
+    "analysis/common_prompt_v2_512/source/scripts/benchmark_compact200.py": {
+      "path": "source/scripts/benchmark_compact200.py",
+      "sha256": "6091156ff1b97a138d52196b175f564eeb70bb59409c07bc8c267f15ac73d8c1",
+      "size": 12119
+    },
+    "analysis/common_prompt_v2_512/source/scripts/benchmark_grouping_time.py": {
+      "path": "source/scripts/benchmark_grouping_time.py",
+      "sha256": "b2d61056f957274b57fef98a54e8efe21d5ea0833f7cb818c76d1a5c6eb80038",
+      "size": 12811
+    },
+    "analysis/common_prompt_v2_512/source/scripts/benchmark_prefix200.py": {
+      "path": "source/scripts/benchmark_prefix200.py",
+      "sha256": "e3512106b185864b71cef077dd950c87e9bb6a42bccc77db673c464079bab331",
+      "size": 13007
+    },
+    "analysis/common_prompt_v2_512/source/scripts/evaluate_dev.py": {
+      "path": "source/scripts/evaluate_dev.py",
+      "sha256": "595276e63c8d18394da69870c5aa92f5f17b10c90369c9e036c7ce94ee9185ae",
+      "size": 11532
+    },
+    "analysis/common_prompt_v2_512/source/scripts/reporting.py": {
+      "path": "source/scripts/reporting.py",
+      "sha256": "fac53d2404dc3d00dd3d219deb4402a4dd054ac8b50753ccf5243b7ec38d8e47",
+      "size": 2462
+    },
+    "analysis/common_prompt_v2_512/source/uv.lock": {
+      "path": "source/uv.lock",
+      "sha256": "eb856ad30c00265c7cc5429c42ce9c7a4d609fb8aaa8101f9c3947a7b7406be2",
+      "size": 209927
+    }
+  },
+  "temporary_paths": [
+    "tmp/structure-migration-20260913"
+  ],
+  "migration_inventory": "docs/maintenance/evidence/structure-migration/mapping.json",
+  "reproducibility": "Original content retained. Local datasets/models require matching separately restored bytes; historical commands may need current reconstruction guidance.",
+  "recorded_condition_evidence": [
+    {
+      "path": "plan.json",
+      "values": {
+        "model": "models/gemma-4-26B-A4B-it-NVFP4",
+        "groups": "groups12; v2/v3 use unchanged H6 rules",
+        "commands": {
+          "preflight:original": [
+            "/home/hwajoong/projects/nara/.venv/bin/python",
+            "-u",
+            "scripts/benchmark_prefix200.py",
+            "--output",
+            "/home/hwajoong/projects/nara/analysis/common_prompt_v2_512/original",
+            "--batch-size",
+            "11",
+            "--output-tokens",
+            "512",
+            "--common-prompt",
+            "/home/hwajoong/projects/nara/analysis/common_prompt_v2_512/original_common.txt",
+            "--prepare-only"
+          ]
+        }
+      }
+    }
+  ],
+  "historical_provenance": {
+    "status": "retained where originally recorded; missing fields remain unknown",
+    "execution_sources": "Existing source/analysis_source contents and original manifests are authoritative; migration-time code is separately labeled",
+    "input_access": "Local input/model assets remain locally retained; original hashes are in manifests/evaluations. Another checkout must restore matching bytes.",
+    "original_temporary_paths": "Not reconstructed when absent from original evidence"
+  },
+  "migration_code_archive": "docs/maintenance/evidence/structure-migration/original-source.tar"
+}

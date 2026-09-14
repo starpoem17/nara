@@ -3,7 +3,7 @@ import unittest
 from nara.inference.compact_predictor import CRITERIA
 from nara.inference.predictor import Limits
 from nara.inference.prefix_predictor import SourceFirstPredictor, predict_notice
-from nara.experiments.benchmark_prefix200 import predictor_with_common
+from experiments.legacy_prefix200.code.benchmark_prefix200 import predictor_with_common
 from test_inference import Model, Retriever, TABLE, SCHEMA, final, record
 
 

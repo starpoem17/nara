@@ -15,4 +15,4 @@ Source: [평가](https://dacon.io/competitions/official/236754/overview/evaluati
 - Quote only the relevant violation span; quality depends on agreement with reference evidence.
 - Absence-detection items `10,11,16,18,20` are excluded from qualitative evidence evaluation, but remain in binary scoring.
 
-Reproducibility records and second-stage deliverables: [constraints](constraints.md#reproducibility-and-second-stage).
+Reproducibility records and second-stage deliverables: [constraints](<constraints.md#reproducibility-and-second-stage>).

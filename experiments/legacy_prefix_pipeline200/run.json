@@ -1,0 +1,448 @@
+{
+  "schema_version": 1,
+  "record_kind": "historical_experiment",
+  "read_only": true,
+  "project_root": "../..",
+  "run_id": "legacy_prefix_pipeline200",
+  "area": "inference-scheduling",
+  "report": "docs/experiments/inference-scheduling/2026-09/legacy_prefix_pipeline200.md",
+  "question": "Does cross-notice prefix scheduling improve twelve-group execution?",
+  "started_at": null,
+  "timezone": "Asia/Seoul",
+  "time_evidence": "No verified orchestration start; see timestamp-candidates.json and original logs. September 2026 is established by the linked historical project records.",
+  "migration_at": "2026-09-13T15:13:30.107120+00:00",
+  "status": "historical; inspect per-condition execution records",
+  "judgment": "The execution structure was adopted as the default. Historical output2048 measurements do not establish current output512 scores.",
+  "conditions": {
+    "recorded_execution": {
+      "settings": {
+        "recorded_condition": "recorded execution",
+        "scope": "See preserved original manifest and source for exact settings."
+      },
+      "status": "historical",
+      "attempts": [],
+      "artifact_path": "."
+    }
+  },
+  "max_attempts": 0,
+  "predecessors": [
+    {
+      "run_id": "legacy_prefix_batch11_repair",
+      "reason": "Earlier sequential batch11 measurements motivated cross-notice scheduling; engine concurrency/graphs/scheduling changed while historical prompts/H6/output2048 remained fixed."
+    }
+  ],
+  "followups": [],
+  "original_files": {
+    "analysis/prefix_pipeline200/admission.jsonl": {
+      "path": "admission.jsonl",
+      "sha256": "8bab2b1d7ced8e0d6972c5d734df7dd6df4a000e158570a6ec32fb2b02e8323e",
+      "size": 82951
+    },
+    "analysis/prefix_pipeline200/analysis_manifest.json": {
+      "path": "analysis_manifest.json",
+      "sha256": "dbc94178ddc0b9805b158d4df1b0def26e2c313fa1832e9d6d286c1b251e649f",
+      "size": 325
+    },
+    "analysis/prefix_pipeline200/analysis_source/docs/experiments/prefix-pipeline.md": {
+      "path": "analysis_source/docs/experiments/prefix-pipeline.md",
+      "sha256": "f78a8b7d26f471ec3eb916c48b6f68d2650e067ec95ef9749901070e813f19cc",
+      "size": 3627
+    },
+    "analysis/prefix_pipeline200/analysis_source/scripts/summarize_prefix_pipeline.py": {
+      "path": "analysis_source/scripts/summarize_prefix_pipeline.py",
+      "sha256": "2047649f313526f27c08a9cd4184bc8596cfda8e2efa554fb9bf06aa6d934b19",
+      "size": 12918
+    },
+    "analysis/prefix_pipeline200/analysis_source/tests/test_prefix_pipeline.py": {
+      "path": "analysis_source/tests/test_prefix_pipeline.py",
+      "sha256": "ab414267af5306f6e46c11cc3774de8ecdb4df917f33edafc0a12947b36b616c",
+      "size": 2823
+    },
+    "analysis/prefix_pipeline200/audit.log": {
+      "path": "audit.log",
+      "sha256": "7d80d134ef1b408854ca1ffb202af666eb32324c9e030928166c132d73439783",
+      "size": 3905
+    },
+    "analysis/prefix_pipeline200/comparison.json": {
+      "path": "comparison.json",
+      "sha256": "687f149136b29c07b5117fdbc119c4acc783a1d601d22090ab73c0700b71736d",
+      "size": 3525
+    },
+    "analysis/prefix_pipeline200/engine.json": {
+      "path": "engine.json",
+      "sha256": "818252d0ac117ac892eaa7965b12189d533ab25de02455094be84d13236a02f2",
+      "size": 240
+    },
+    "analysis/prefix_pipeline200/errors.csv": {
+      "path": "errors.csv",
+      "sha256": "1c79c957282b061a8a916bf9feb47d64ec40af48b19e15a60d7d9a27f1829032",
+      "size": 38188
+    },
+    "analysis/prefix_pipeline200/evaluation.json": {
+      "path": "evaluation.json",
+      "sha256": "1b93bfb0fcb5063161fe0eb2315852b79e70f056fe38e3fe37b7ffe876ef317c",
+      "size": 10591
+    },
+    "analysis/prefix_pipeline200/lifecycle.jsonl": {
+      "path": "lifecycle.jsonl",
+      "sha256": "cedba0e1a4aefd0adec427611f4e73a5f548050cef1b9b3509363bb965a8e35d",
+      "size": 707077
+    },
+    "analysis/prefix_pipeline200/main/admission.jsonl": {
+      "path": "main/admission.jsonl",
+      "sha256": "8bab2b1d7ced8e0d6972c5d734df7dd6df4a000e158570a6ec32fb2b02e8323e",
+      "size": 82951
+    },
+    "analysis/prefix_pipeline200/main/lifecycle.jsonl": {
+      "path": "main/lifecycle.jsonl",
+      "sha256": "cedba0e1a4aefd0adec427611f4e73a5f548050cef1b9b3509363bb965a8e35d",
+      "size": 707077
+    },
+    "analysis/prefix_pipeline200/main/request_timings.jsonl": {
+      "path": "main/request_timings.jsonl",
+      "sha256": "d27e14c9377443e31aa470629cd1a625af245cff7e056dfcece65fbf2603dd33",
+      "size": 1391720
+    },
+    "analysis/prefix_pipeline200/main/scheduler.jsonl": {
+      "path": "main/scheduler.jsonl",
+      "sha256": "de082df1daaff5fa33d94b7c28724c9e9a7cf70bccba7bad16213018dd64f8eb",
+      "size": 3404287
+    },
+    "analysis/prefix_pipeline200/main/stage_report.json": {
+      "path": "main/stage_report.json",
+      "sha256": "197bd006bbf3ce4f672c61c93eb3256053a3fe165269960822dcd074c7a4b776",
+      "size": 309
+    },
+    "analysis/prefix_pipeline200/main/trace.jsonl": {
+      "path": "main/trace.jsonl",
+      "sha256": "c237a1d1c1b2a310b32db3793372667349ee40dee25ea5bd042758e3b746f07f",
+      "size": 1518600
+    },
+    "analysis/prefix_pipeline200/main/trace_completed.jsonl": {
+      "path": "main/trace_completed.jsonl",
+      "sha256": "7726c3346e1243fc6b68ec163429e52348125d5a26a5ecdb14712c1c97b5f072",
+      "size": 1518600
+    },
+    "analysis/prefix_pipeline200/manifest.json": {
+      "path": "manifest.json",
+      "sha256": "b73d256c7f13fe0b2de9d78db00c6a9e817f7935e951e7efea2653a4bce07950",
+      "size": 58732
+    },
+    "analysis/prefix_pipeline200/prefill_timeline.json": {
+      "path": "prefill_timeline.json",
+      "sha256": "f1247e1092e5cd8d7bd14924dd7bdd07dc6c31406e5fe683ecef56eba756b53b",
+      "size": 111385
+    },
+    "analysis/prefix_pipeline200/report.json": {
+      "path": "report.json",
+      "sha256": "d9f03bb858fbaf654a0f868b8857cb03b573682fef747aad622d4a4c606be939",
+      "size": 2165
+    },
+    "analysis/prefix_pipeline200/request_timings.jsonl": {
+      "path": "request_timings.jsonl",
+      "sha256": "d27e14c9377443e31aa470629cd1a625af245cff7e056dfcece65fbf2603dd33",
+      "size": 1391720
+    },
+    "analysis/prefix_pipeline200/rules.jsonl": {
+      "path": "rules.jsonl",
+      "sha256": "9d9731a07ec62117709a829c1ae811571a7e23925e700a2d3c745f8579111500",
+      "size": 118085
+    },
+    "analysis/prefix_pipeline200/run.log": {
+      "path": "run.log",
+      "sha256": "cf8bd6f635cefd0a02a2f74380d935ee4f594258aff523a5bdc571e63c86b5b9",
+      "size": 200421
+    },
+    "analysis/prefix_pipeline200/scheduler.jsonl": {
+      "path": "scheduler.jsonl",
+      "sha256": "de082df1daaff5fa33d94b7c28724c9e9a7cf70bccba7bad16213018dd64f8eb",
+      "size": 3404287
+    },
+    "analysis/prefix_pipeline200/scheduling_summary.json": {
+      "path": "scheduling_summary.json",
+      "sha256": "e959f0918da416f67091cb723ea8647235ef50dfe294bd15754db38e584d85fa",
+      "size": 2400
+    },
+    "analysis/prefix_pipeline200/smoke/admission.jsonl": {
+      "path": "smoke/admission.jsonl",
+      "sha256": "8d4b979c9ee0c438fcae0a87a46dffcfd04cb7d0ec32a3ea016f59a2242c2d82",
+      "size": 3040
+    },
+    "analysis/prefix_pipeline200/smoke/lifecycle.jsonl": {
+      "path": "smoke/lifecycle.jsonl",
+      "sha256": "591dca62fc2af1b2e45801af5abf811d094a5700da46d7ba6b066779d765a268",
+      "size": 27527
+    },
+    "analysis/prefix_pipeline200/smoke/request_timings.jsonl": {
+      "path": "smoke/request_timings.jsonl",
+      "sha256": "cf10ad6858e6dc3507c554642d029f9eb29630002952fde51ccb4c9f88965f2b",
+      "size": 55271
+    },
+    "analysis/prefix_pipeline200/smoke/scheduler.jsonl": {
+      "path": "smoke/scheduler.jsonl",
+      "sha256": "2325f5451ccf4d41d7e5a4a5f4f9589312b66d6cc7d271739787cc0d2a5c72fe",
+      "size": 270582
+    },
+    "analysis/prefix_pipeline200/smoke/stage_report.json": {
+      "path": "smoke/stage_report.json",
+      "sha256": "4ff0a47bd01e457fca3487b8bef94be4d4f00207e2e3dfb98d76d47a5140893e",
+      "size": 305
+    },
+    "analysis/prefix_pipeline200/smoke/trace.jsonl": {
+      "path": "smoke/trace.jsonl",
+      "sha256": "a09068f852fa3bb2a69e46ab5f6284675debb61c17222c6be38351ee76754db7",
+      "size": 60573
+    },
+    "analysis/prefix_pipeline200/smoke/trace_completed.jsonl": {
+      "path": "smoke/trace_completed.jsonl",
+      "sha256": "a09068f852fa3bb2a69e46ab5f6284675debb61c17222c6be38351ee76754db7",
+      "size": 60573
+    },
+    "analysis/prefix_pipeline200/source/data/dev.jsonl": {
+      "path": "source/data/dev.jsonl",
+      "sha256": "5507f5ab0ba53b708f87211ed050dbe531b48a626ace6084c3ccaefb53147534",
+      "size": 8310888
+    },
+    "analysis/prefix_pipeline200/source/data/정답스키마_디코딩.json": {
+      "path": "source/data/정답스키마_디코딩.json",
+      "sha256": "149580162261b446090bec075eb4c13f765a771c827b6bbe06660eb833a3c2ac",
+      "size": 13751
+    },
+    "analysis/prefix_pipeline200/source/data/항목표.json": {
+      "path": "source/data/항목표.json",
+      "sha256": "368cb41f376d8ad7edbbdf181542e6e959de356f7f70d86e72943325ecad61d9",
+      "size": 11273
+    },
+    "analysis/prefix_pipeline200/source/nara/compact_criteria.json": {
+      "path": "source/nara/compact_criteria.json",
+      "sha256": "84cc8ca7f625f51e55206fc581a28e36df4551999c4009de84188f273bd06a04",
+      "size": 6190
+    },
+    "analysis/prefix_pipeline200/source/nara/compact_predictor.py": {
+      "path": "source/nara/compact_predictor.py",
+      "sha256": "046002710b57ad799ff6f287f016ae215c2109338b66d3706570c8ac8651f969",
+      "size": 961
+    },
+    "analysis/prefix_pipeline200/source/nara/continuous.py": {
+      "path": "source/nara/continuous.py",
+      "sha256": "25b0f25cf05721cb4a74faa26777ddea8df1cf81917ce6d9f34f0a38d83e24fe",
+      "size": 9336
+    },
+    "analysis/prefix_pipeline200/source/nara/hypothesis6.py": {
+      "path": "source/nara/hypothesis6.py",
+      "sha256": "850ebdceff80371dc8bd4859813e86e017552941b44dfdb4773b672576c925ba",
+      "size": 7705
+    },
+    "analysis/prefix_pipeline200/source/nara/inference.py": {
+      "path": "source/nara/inference.py",
+      "sha256": "e09a87a3113399f2656d119b18536a59b70128242547fbd92774eee5c07dd226",
+      "size": 19312
+    },
+    "analysis/prefix_pipeline200/source/nara/prefix_pipeline.py": {
+      "path": "source/nara/prefix_pipeline.py",
+      "sha256": "b7e8c556cb4874a1bd8d700a13f57c76f0e411e4955eb77b9202334cc3cdb8fd",
+      "size": 6569
+    },
+    "analysis/prefix_pipeline200/source/nara/prefix_predictor.py": {
+      "path": "source/nara/prefix_predictor.py",
+      "sha256": "aee83eb0ce46cef8f2cbc7bc8697a94282d0b7908306fff55b5416d271ed19b7",
+      "size": 2441
+    },
+    "analysis/prefix_pipeline200/source/nara/vllm_model.py": {
+      "path": "source/nara/vllm_model.py",
+      "sha256": "c3ae5a8f7bd75365e0d685018fab22733a917fca423eacf2fb7f623e4e8c1e0d",
+      "size": 3937
+    },
+    "analysis/prefix_pipeline200/source/scripts/benchmark_compact200.py": {
+      "path": "source/scripts/benchmark_compact200.py",
+      "sha256": "7e1dcb2a706a0c635a6467e61484015567dc2281be37106aef06e6812271f61d",
+      "size": 12089
+    },
+    "analysis/prefix_pipeline200/source/scripts/benchmark_prefix_pipeline.py": {
+      "path": "source/scripts/benchmark_prefix_pipeline.py",
+      "sha256": "00ac59e40e3843c8b4f6b65d35df5ff9eeddad3c787827cce595ed6321f9ee91",
+      "size": 13659
+    },
+    "analysis/prefix_pipeline200/source/scripts/recover_hybrid200.py": {
+      "path": "source/scripts/recover_hybrid200.py",
+      "sha256": "04650e0294ffd1476c47551d37528ff8bd3511d2836ffa484980b030f05f3611",
+      "size": 6643
+    },
+    "analysis/prefix_pipeline200/submission.csv": {
+      "path": "submission.csv",
+      "sha256": "3c1d699709a484800c53fa301cfce26b52f0352ab1fe6c6e9fc9c71eb5814791",
+      "size": 35347
+    },
+    "analysis/prefix_pipeline200/trace.jsonl": {
+      "path": "trace.jsonl",
+      "sha256": "c237a1d1c1b2a310b32db3793372667349ee40dee25ea5bd042758e3b746f07f",
+      "size": 1518600
+    },
+    "analysis/prefix_pipeline200/validation.json": {
+      "path": "validation.json",
+      "sha256": "f25e39e455df324ee0367682fb953bffda0ebdefa0e750dd59e59719df10d2b5",
+      "size": 337
+    }
+  },
+  "temporary_paths": [
+    "tmp/structure-migration-20260913"
+  ],
+  "migration_inventory": "docs/maintenance/evidence/structure-migration/mapping.json",
+  "reproducibility": "Original content retained. Local datasets/models require matching separately restored bytes; historical commands may need current reconstruction guidance.",
+  "recorded_condition_evidence": [
+    {
+      "path": "manifest.json",
+      "values": {
+        "groups": [
+          [
+            "v1",
+            "v4"
+          ],
+          [
+            "v5",
+            "v6",
+            "v7"
+          ],
+          [
+            "v8"
+          ],
+          [
+            "v9",
+            "v19"
+          ],
+          [
+            "v10",
+            "v11",
+            "v12",
+            "v13"
+          ],
+          [
+            "v14"
+          ],
+          [
+            "v15",
+            "v16"
+          ],
+          [
+            "v17",
+            "v18"
+          ],
+          [
+            "v20"
+          ],
+          [
+            "v21"
+          ],
+          [
+            "v22",
+            "v23"
+          ],
+          [
+            "v24"
+          ]
+        ],
+        "limits": {
+          "batch_size": 16,
+          "search_rounds": 2,
+          "queries_per_round": 4,
+          "top_k": 5,
+          "round_tokens": 4096,
+          "total_retrieval_tokens": 8192,
+          "output_tokens": 2048,
+          "retries": 1,
+          "require_search": false
+        },
+        "policy": {
+          "initial_records": 2,
+          "max_live_records": 3,
+          "max_live_source_tokens": 48000,
+          "lookahead_groups": 16
+        },
+        "recovery_policy": "One same-policy rerun of failed notices, then one same-prompt isolated predict per still-failed group. All internal retries, recovery time and events included."
+      }
+    },
+    {
+      "path": "report.json",
+      "values": {
+        "groups": [
+          [
+            "v1",
+            "v4"
+          ],
+          [
+            "v5",
+            "v6",
+            "v7"
+          ],
+          [
+            "v8"
+          ],
+          [
+            "v9",
+            "v19"
+          ],
+          [
+            "v10",
+            "v11",
+            "v12",
+            "v13"
+          ],
+          [
+            "v14"
+          ],
+          [
+            "v15",
+            "v16"
+          ],
+          [
+            "v17",
+            "v18"
+          ],
+          [
+            "v20"
+          ],
+          [
+            "v21"
+          ],
+          [
+            "v22",
+            "v23"
+          ],
+          [
+            "v24"
+          ]
+        ],
+        "limits": {
+          "batch_size": 16,
+          "search_rounds": 2,
+          "queries_per_round": 4,
+          "top_k": 5,
+          "round_tokens": 4096,
+          "total_retrieval_tokens": 8192,
+          "output_tokens": 2048,
+          "retries": 1,
+          "require_search": false
+        },
+        "policy": {
+          "initial_records": 2,
+          "max_live_records": 3,
+          "max_live_source_tokens": 48000,
+          "lookahead_groups": 16
+        },
+        "options": {
+          "model_dir": "models/gemma-4-26B-A4B-it-NVFP4",
+          "max_model_len": 32768,
+          "thinking": false,
+          "item_group_size": 4
+        }
+      }
+    }
+  ],
+  "historical_provenance": {
+    "status": "retained where originally recorded; missing fields remain unknown",
+    "execution_sources": "Existing source/analysis_source contents and original manifests are authoritative; migration-time code is separately labeled",
+    "input_access": "Local input/model assets remain locally retained; original hashes are in manifests/evaluations. Another checkout must restore matching bytes.",
+    "original_temporary_paths": "Not reconstructed when absent from original evidence"
+  },
+  "migration_code_archive": "docs/maintenance/evidence/structure-migration/original-source.tar"
+}

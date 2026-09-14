@@ -1,0 +1,8 @@
+{
+  "source": "experiments/legacy_prefix_pipeline200",
+  "no_gpu_inference": true,
+  "input_hashes_match": true,
+  "fields_compared": 28,
+  "differing_fields": [],
+  "prediction_csv_identical": true
+}

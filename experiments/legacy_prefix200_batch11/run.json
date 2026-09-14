@@ -1,0 +1,405 @@
+{
+  "schema_version": 1,
+  "record_kind": "historical_experiment",
+  "read_only": true,
+  "project_root": "../..",
+  "run_id": "legacy_prefix200_batch11",
+  "area": "inference-scheduling",
+  "report": "docs/experiments/inference-scheduling/2026-09/legacy_prefix200_batch11.md",
+  "question": "Does releasing eleven followers improve prefix execution?",
+  "started_at": null,
+  "timezone": "Asia/Seoul",
+  "time_evidence": "No verified orchestration start; see timestamp-candidates.json and original logs. September 2026 is established by the linked historical project records.",
+  "migration_at": "2026-09-13T15:13:30.105145+00:00",
+  "status": "historical; inspect per-condition execution records",
+  "judgment": "Historical scheduling comparison; first-pass failures and merged recovery remain explicitly recorded.",
+  "conditions": {
+    "recorded_execution": {
+      "settings": {
+        "recorded_condition": "recorded execution",
+        "scope": "See preserved original manifest and source for exact settings."
+      },
+      "status": "historical",
+      "attempts": [],
+      "artifact_path": "."
+    }
+  },
+  "max_attempts": 0,
+  "predecessors": [
+    {
+      "run_id": "legacy_prefix200",
+      "reason": "Prior eight-request scheduling motivated a new batch11 execution; same dev200/prompts/H6/OFF/output2048, batch size and engine concurrency changed8 to11."
+    }
+  ],
+  "followups": [
+    {
+      "run_id": "legacy_prefix_batch11_aborted_repair",
+      "reason": "Three failed initial notices triggered recovery; prompt, OFF mode and output2048 stayed the same, but a helper assertion aborted the execution."
+    }
+  ],
+  "original_files": {
+    "analysis/prefix200_batch11/first_pass/cache_trace.jsonl": {
+      "path": "first_pass/cache_trace.jsonl",
+      "sha256": "e979b4462933182bb105b6bc8e25007a21f2ed339dbf22368f8dbb86fff705e7",
+      "size": 479776
+    },
+    "analysis/prefix200_batch11/first_pass/model_batches.json": {
+      "path": "first_pass/model_batches.json",
+      "sha256": "b729e4c297ff02b6dcda91a528692b34c0a11552ce77eafdeefd5f1e1a9d5da8",
+      "size": 48001
+    },
+    "analysis/prefix200_batch11/first_pass/notice_timings.json": {
+      "path": "first_pass/notice_timings.json",
+      "sha256": "507d48ffc04181e8e1a994d2a70358d987c32f4a79c32c40497f938e878ec354",
+      "size": 124551
+    },
+    "analysis/prefix200_batch11/first_pass/report.json": {
+      "path": "first_pass/report.json",
+      "sha256": "5ed8b30696674cd2d846c6a53de3db4dd766d01b81f2596bedac468d448b5845",
+      "size": 1615
+    },
+    "analysis/prefix200_batch11/first_pass/trace.jsonl": {
+      "path": "first_pass/trace.jsonl",
+      "sha256": "7d5eb24fec036d411ba888c0a8133d5a097eb4d22841afce63bf1cfd9e490c1c",
+      "size": 1435149
+    },
+    "analysis/prefix200_batch11/manifest.json": {
+      "path": "manifest.json",
+      "sha256": "fb2ca9a04c0bd44ec5300be7f2ccd5092fe5464489bdc057dbc222db2dfbeb8e",
+      "size": 58324
+    },
+    "analysis/prefix200_batch11/prompt_01.txt": {
+      "path": "prompt_01.txt",
+      "sha256": "1df7f011c2ed06c749a42dc55a75aaaa47fe4c8faf419fbe826c60f1c08734a2",
+      "size": 1210
+    },
+    "analysis/prefix200_batch11/prompt_02.txt": {
+      "path": "prompt_02.txt",
+      "sha256": "dbc0bf5770558a4b9c529f9f9d68866ac7355a6bf388631ac5df9c768380334e",
+      "size": 1816
+    },
+    "analysis/prefix200_batch11/prompt_03.txt": {
+      "path": "prompt_03.txt",
+      "sha256": "2b46f5178cc4fe7fc7c431cd2629177d1c9375ffee34471554c51221761fbb89",
+      "size": 1170
+    },
+    "analysis/prefix200_batch11/prompt_04.txt": {
+      "path": "prompt_04.txt",
+      "sha256": "c021174fe9615bc67d7cadcd81057892610b5af8f1d56e7ad58410d410024344",
+      "size": 1412
+    },
+    "analysis/prefix200_batch11/prompt_05.txt": {
+      "path": "prompt_05.txt",
+      "sha256": "58b181bdf46dd457f0c78791ad8fc2fcf7f1deb1fcd2eb9592f60047afaed39f",
+      "size": 1769
+    },
+    "analysis/prefix200_batch11/prompt_06.txt": {
+      "path": "prompt_06.txt",
+      "sha256": "999752fea9deea10f03fad3d538b082d275ab332dce6f2a43bbee9ee103a501c",
+      "size": 1147
+    },
+    "analysis/prefix200_batch11/prompt_07.txt": {
+      "path": "prompt_07.txt",
+      "sha256": "0e4436407a3f6dfb67a5927561a7e0053d525cda4b7ed94b682380f56b066dc6",
+      "size": 1373
+    },
+    "analysis/prefix200_batch11/prompt_08.txt": {
+      "path": "prompt_08.txt",
+      "sha256": "1331d047a57e82d3e8abea51e527056af4c1554b3ea232f1861c5892cbd89043",
+      "size": 1395
+    },
+    "analysis/prefix200_batch11/prompt_09.txt": {
+      "path": "prompt_09.txt",
+      "sha256": "42cd6460de32aaca7e21af1ac0b437cd0781070feda67444dfd533401ce733c5",
+      "size": 1453
+    },
+    "analysis/prefix200_batch11/prompt_10.txt": {
+      "path": "prompt_10.txt",
+      "sha256": "2c9830ddc067b7fa911888649b1c8c067014d5a03b4a70564bae2589fd57c404",
+      "size": 1300
+    },
+    "analysis/prefix200_batch11/prompt_11.txt": {
+      "path": "prompt_11.txt",
+      "sha256": "bf64014783ea9a96c4210a5fd5cfd901978b38b13865dae7467c9966a3de5513",
+      "size": 1467
+    },
+    "analysis/prefix200_batch11/prompt_12.txt": {
+      "path": "prompt_12.txt",
+      "sha256": "a8a520c5cdb2e258e5d5250524e812d5964db1c663f2e273405734616be7385b",
+      "size": 1271
+    },
+    "analysis/prefix200_batch11/rules.jsonl": {
+      "path": "rules.jsonl",
+      "sha256": "092874a759e22ce640fb09cba4fb6e93bd0f229603c382f97938ec0f731d187d",
+      "size": 110731
+    },
+    "analysis/prefix200_batch11/run.log": {
+      "path": "run.log",
+      "sha256": "52fc831eaf5937de1bfa7b71f64b1837303aa72aaa77dec70f217898d86e4914",
+      "size": 22327
+    },
+    "analysis/prefix200_batch11/schema_01.json": {
+      "path": "schema_01.json",
+      "sha256": "7d73ba5d87dd82b9c02538c05183b23b9a2d2e4c5c45e3d28e7322a8beb55f7c",
+      "size": 2200
+    },
+    "analysis/prefix200_batch11/schema_02.json": {
+      "path": "schema_02.json",
+      "sha256": "031ea8cf0d0f97ce9866419185e66676cea988f2832c1eab5f9ba0f11bda9e52",
+      "size": 2860
+    },
+    "analysis/prefix200_batch11/schema_03.json": {
+      "path": "schema_03.json",
+      "sha256": "31b856acdd4e02171487c169f75c0cc1bd1faf6f8efb3ee94ceb3f1750d67061",
+      "size": 1540
+    },
+    "analysis/prefix200_batch11/schema_04.json": {
+      "path": "schema_04.json",
+      "sha256": "441736471a1e9365922f50aa6c37e1fd886e62ef86d55087d4c2f4400472abcb",
+      "size": 2202
+    },
+    "analysis/prefix200_batch11/schema_05.json": {
+      "path": "schema_05.json",
+      "sha256": "02069485e61d8de2b0a30cc98671054db8d7ed4dfbc8c9e9ce77a4e098d6c8e3",
+      "size": 3312
+    },
+    "analysis/prefix200_batch11/schema_06.json": {
+      "path": "schema_06.json",
+      "sha256": "e6330ad820a81d4e8de8c541779ef50a864cddfb3640ec98ed734c40d54a2161",
+      "size": 1542
+    },
+    "analysis/prefix200_batch11/schema_07.json": {
+      "path": "schema_07.json",
+      "sha256": "5b2d8b33dd7d9c7d24686b27c1a7fc618d1f79ff3075ac17c488b2cd7648427f",
+      "size": 2096
+    },
+    "analysis/prefix200_batch11/schema_08.json": {
+      "path": "schema_08.json",
+      "sha256": "63cff1658b22140bfc5e653a64e1404d20ab59082c3aa6250b7b9ae4ef090a5a",
+      "size": 2096
+    },
+    "analysis/prefix200_batch11/schema_09.json": {
+      "path": "schema_09.json",
+      "sha256": "8b44dec4c252dc8e3f794cf2fa17df9b90f6b85b74c0ef036035178c1a683c2f",
+      "size": 1434
+    },
+    "analysis/prefix200_batch11/schema_10.json": {
+      "path": "schema_10.json",
+      "sha256": "9f6f627355c818058d8d815907826e3c5901d3cddd30677854f1860977cb213c",
+      "size": 1542
+    },
+    "analysis/prefix200_batch11/schema_11.json": {
+      "path": "schema_11.json",
+      "sha256": "e666db976a237349c174a4300832ff302b5c68ed58b32ff0545a595ac92f7b8f",
+      "size": 2204
+    },
+    "analysis/prefix200_batch11/schema_12.json": {
+      "path": "schema_12.json",
+      "sha256": "e1e217b6cc797fe71ab3d075efb87f38fc110517c1e882106da233826b69f02b",
+      "size": 1542
+    },
+    "analysis/prefix200_batch11/source/data/dev.jsonl": {
+      "path": "source/data/dev.jsonl",
+      "sha256": "5507f5ab0ba53b708f87211ed050dbe531b48a626ace6084c3ccaefb53147534",
+      "size": 8310888
+    },
+    "analysis/prefix200_batch11/source/data/정답스키마_디코딩.json": {
+      "path": "source/data/정답스키마_디코딩.json",
+      "sha256": "149580162261b446090bec075eb4c13f765a771c827b6bbe06660eb833a3c2ac",
+      "size": 13751
+    },
+    "analysis/prefix200_batch11/source/data/항목표.json": {
+      "path": "source/data/항목표.json",
+      "sha256": "368cb41f376d8ad7edbbdf181542e6e959de356f7f70d86e72943325ecad61d9",
+      "size": 11273
+    },
+    "analysis/prefix200_batch11/source/nara/compact_criteria.json": {
+      "path": "source/nara/compact_criteria.json",
+      "sha256": "84cc8ca7f625f51e55206fc581a28e36df4551999c4009de84188f273bd06a04",
+      "size": 6190
+    },
+    "analysis/prefix200_batch11/source/nara/compact_predictor.py": {
+      "path": "source/nara/compact_predictor.py",
+      "sha256": "046002710b57ad799ff6f287f016ae215c2109338b66d3706570c8ac8651f969",
+      "size": 961
+    },
+    "analysis/prefix200_batch11/source/nara/hypothesis6.py": {
+      "path": "source/nara/hypothesis6.py",
+      "sha256": "850ebdceff80371dc8bd4859813e86e017552941b44dfdb4773b672576c925ba",
+      "size": 7705
+    },
+    "analysis/prefix200_batch11/source/nara/inference.py": {
+      "path": "source/nara/inference.py",
+      "sha256": "e09a87a3113399f2656d119b18536a59b70128242547fbd92774eee5c07dd226",
+      "size": 19312
+    },
+    "analysis/prefix200_batch11/source/nara/prefix_predictor.py": {
+      "path": "source/nara/prefix_predictor.py",
+      "sha256": "aee83eb0ce46cef8f2cbc7bc8697a94282d0b7908306fff55b5416d271ed19b7",
+      "size": 2441
+    },
+    "analysis/prefix200_batch11/source/nara/vllm_model.py": {
+      "path": "source/nara/vllm_model.py",
+      "sha256": "c3ae5a8f7bd75365e0d685018fab22733a917fca423eacf2fb7f623e4e8c1e0d",
+      "size": 3937
+    },
+    "analysis/prefix200_batch11/source/scripts/benchmark_compact200.py": {
+      "path": "source/scripts/benchmark_compact200.py",
+      "sha256": "7e1dcb2a706a0c635a6467e61484015567dc2281be37106aef06e6812271f61d",
+      "size": 12089
+    },
+    "analysis/prefix200_batch11/source/scripts/benchmark_prefix200.py": {
+      "path": "source/scripts/benchmark_prefix200.py",
+      "sha256": "d675134cc8fc1386bb9ce433e622cef7514127cbbfc44fcef3924a52a13e13fe",
+      "size": 11360
+    }
+  },
+  "temporary_paths": [
+    "tmp/structure-migration-20260913"
+  ],
+  "migration_inventory": "docs/maintenance/evidence/structure-migration/mapping.json",
+  "reproducibility": "Original content retained. Local datasets/models require matching separately restored bytes; historical commands may need current reconstruction guidance.",
+  "recorded_condition_evidence": [
+    {
+      "path": "first_pass/report.json",
+      "values": {
+        "options": {
+          "model_dir": "models/gemma-4-26B-A4B-it-NVFP4",
+          "max_model_len": 32768,
+          "thinking": false,
+          "item_group_size": 4
+        },
+        "limits": {
+          "batch_size": 11,
+          "search_rounds": 2,
+          "queries_per_round": 4,
+          "top_k": 5,
+          "round_tokens": 4096,
+          "total_retrieval_tokens": 8192,
+          "output_tokens": 2048,
+          "retries": 1,
+          "require_search": false
+        },
+        "groups": [
+          [
+            "v1",
+            "v4"
+          ],
+          [
+            "v5",
+            "v6",
+            "v7"
+          ],
+          [
+            "v8"
+          ],
+          [
+            "v9",
+            "v19"
+          ],
+          [
+            "v10",
+            "v11",
+            "v12",
+            "v13"
+          ],
+          [
+            "v14"
+          ],
+          [
+            "v15",
+            "v16"
+          ],
+          [
+            "v17",
+            "v18"
+          ],
+          [
+            "v20"
+          ],
+          [
+            "v21"
+          ],
+          [
+            "v22",
+            "v23"
+          ],
+          [
+            "v24"
+          ]
+        ]
+      }
+    },
+    {
+      "path": "manifest.json",
+      "values": {
+        "groups": [
+          [
+            "v1",
+            "v4"
+          ],
+          [
+            "v5",
+            "v6",
+            "v7"
+          ],
+          [
+            "v8"
+          ],
+          [
+            "v9",
+            "v19"
+          ],
+          [
+            "v10",
+            "v11",
+            "v12",
+            "v13"
+          ],
+          [
+            "v14"
+          ],
+          [
+            "v15",
+            "v16"
+          ],
+          [
+            "v17",
+            "v18"
+          ],
+          [
+            "v20"
+          ],
+          [
+            "v21"
+          ],
+          [
+            "v22",
+            "v23"
+          ],
+          [
+            "v24"
+          ]
+        ],
+        "limits": {
+          "batch_size": 11,
+          "search_rounds": 2,
+          "queries_per_round": 4,
+          "top_k": 5,
+          "round_tokens": 4096,
+          "total_retrieval_tokens": 8192,
+          "output_tokens": 2048,
+          "retries": 1,
+          "require_search": false
+        }
+      }
+    }
+  ],
+  "historical_provenance": {
+    "status": "retained where originally recorded; missing fields remain unknown",
+    "execution_sources": "Existing source/analysis_source contents and original manifests are authoritative; migration-time code is separately labeled",
+    "input_access": "Local input/model assets remain locally retained; original hashes are in manifests/evaluations. Another checkout must restore matching bytes.",
+    "original_temporary_paths": "Not reconstructed when absent from original evidence"
+  },
+  "migration_code_archive": "docs/maintenance/evidence/structure-migration/original-source.tar"
+}

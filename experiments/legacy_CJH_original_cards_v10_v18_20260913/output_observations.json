@@ -1,0 +1,445 @@
+{
+  "author": "CJH",
+  "scope": "Post-evaluation descriptive output-shape inventory only; no extra judgment extraction, repair, retry, or rescoring.",
+  "labels_used_in_this_shape_inventory": false,
+  "per_feature": {
+    "v10": {
+      "responses": 200,
+      "bare_valid": 0,
+      "fenced_valid": 2,
+      "invalid_reasons": {
+        "wrong_keys": 186,
+        "invalid_json": 11,
+        "non_stop_finish": 1
+      },
+      "output_shapes": {
+        "current_feature_and_evidence_keys": 103,
+        "current_feature_nested_object:근거문구,위반여부": 73,
+        "not_one_complete_json_payload": 12,
+        "current_feature_nested_object:evidence,violation": 1,
+        "current_feature_nested_object:reason,violation": 3,
+        "other_top_level_keys:evidence_text,violation_status": 4,
+        "requested_top_level_keys": 2,
+        "other_top_level_keys:reason,violation": 1,
+        "other_top_level_keys:evidence,violation": 1
+      },
+      "examples": {
+        "current_feature_and_evidence_keys": [
+          "PPS-DEV-02",
+          "PPS-DEV-04",
+          "PPS-DEV-05"
+        ],
+        "current_feature_nested_object:근거문구,위반여부": [
+          "PPS-DEV-01",
+          "PPS-DEV-03",
+          "PPS-DEV-06"
+        ],
+        "not_one_complete_json_payload": [
+          "PPS-DEV-044",
+          "PPS-DEV-079",
+          "PPS-DEV-084"
+        ],
+        "current_feature_nested_object:evidence,violation": [
+          "PPS-DEV-047"
+        ],
+        "current_feature_nested_object:reason,violation": [
+          "PPS-DEV-069",
+          "PPS-DEV-104",
+          "PPS-DEV-183"
+        ],
+        "other_top_level_keys:evidence_text,violation_status": [
+          "PPS-DEV-135",
+          "PPS-DEV-137",
+          "PPS-DEV-159"
+        ],
+        "requested_top_level_keys": [
+          "PPS-DEV-136",
+          "PPS-DEV-197"
+        ],
+        "other_top_level_keys:reason,violation": [
+          "PPS-DEV-145"
+        ],
+        "other_top_level_keys:evidence,violation": [
+          "PPS-DEV-158"
+        ]
+      },
+      "finish_reasons": {
+        "stop": 199,
+        "length": 1
+      }
+    },
+    "v11": {
+      "responses": 200,
+      "bare_valid": 0,
+      "fenced_valid": 0,
+      "invalid_reasons": {
+        "wrong_keys": 191,
+        "invalid_json": 8,
+        "non_stop_finish": 1
+      },
+      "output_shapes": {
+        "current_feature_nested_object:근거문구,위반여부": 107,
+        "not_one_complete_json_payload": 9,
+        "current_feature_and_evidence_keys": 74,
+        "current_feature_nested_object:reason,violation": 9,
+        "current_feature_nested_object:근거문자열,위반여부": 1
+      },
+      "examples": {
+        "current_feature_nested_object:근거문구,위반여부": [
+          "PPS-DEV-02",
+          "PPS-DEV-01",
+          "PPS-DEV-03"
+        ],
+        "not_one_complete_json_payload": [
+          "PPS-DEV-07",
+          "PPS-DEV-28",
+          "PPS-DEV-054"
+        ],
+        "current_feature_and_evidence_keys": [
+          "PPS-DEV-10",
+          "PPS-DEV-11",
+          "PPS-DEV-13"
+        ],
+        "current_feature_nested_object:reason,violation": [
+          "PPS-DEV-036",
+          "PPS-DEV-040",
+          "PPS-DEV-057"
+        ],
+        "current_feature_nested_object:근거문자열,위반여부": [
+          "PPS-DEV-042"
+        ]
+      },
+      "finish_reasons": {
+        "stop": 199,
+        "length": 1
+      }
+    },
+    "v12": {
+      "responses": 200,
+      "bare_valid": 0,
+      "fenced_valid": 17,
+      "invalid_reasons": {
+        "wrong_keys": 177,
+        "invalid_json": 6
+      },
+      "output_shapes": {
+        "current_feature_nested_object:근거문구,위반여부": 146,
+        "other_top_level_keys:evidence_text,violation_status": 13,
+        "requested_top_level_keys": 17,
+        "other_top_level_keys:reason,violation": 5,
+        "current_feature_nested_object:reason,violation": 1,
+        "not_one_complete_json_payload": 6,
+        "other_top_level_keys:evidence,violation": 11,
+        "other_top_level_keys:evidence_text,violation_flag": 1
+      },
+      "examples": {
+        "current_feature_nested_object:근거문구,위반여부": [
+          "PPS-DEV-02",
+          "PPS-DEV-03",
+          "PPS-DEV-01"
+        ],
+        "other_top_level_keys:evidence_text,violation_status": [
+          "PPS-DEV-10",
+          "PPS-DEV-12",
+          "PPS-DEV-058"
+        ],
+        "requested_top_level_keys": [
+          "PPS-DEV-11",
+          "PPS-DEV-27",
+          "PPS-DEV-055"
+        ],
+        "other_top_level_keys:reason,violation": [
+          "PPS-DEV-15",
+          "PPS-DEV-25",
+          "PPS-DEV-040"
+        ],
+        "current_feature_nested_object:reason,violation": [
+          "PPS-DEV-051"
+        ],
+        "not_one_complete_json_payload": [
+          "PPS-DEV-048",
+          "PPS-DEV-054",
+          "PPS-DEV-100"
+        ],
+        "other_top_level_keys:evidence,violation": [
+          "PPS-DEV-097",
+          "PPS-DEV-109",
+          "PPS-DEV-124"
+        ],
+        "other_top_level_keys:evidence_text,violation_flag": [
+          "PPS-DEV-099"
+        ]
+      },
+      "finish_reasons": {
+        "stop": 200
+      }
+    },
+    "v13": {
+      "responses": 200,
+      "bare_valid": 0,
+      "fenced_valid": 3,
+      "invalid_reasons": {
+        "wrong_keys": 190,
+        "invalid_json": 7
+      },
+      "output_shapes": {
+        "current_feature_nested_object:근거문구,위반여부": 164,
+        "other_top_level_keys:evidence_text,violation_status": 10,
+        "current_feature_nested_object:reason,violation": 8,
+        "not_one_complete_json_payload": 7,
+        "other_top_level_keys:reason,violation": 3,
+        "requested_top_level_keys": 3,
+        "other_top_level_keys:evidence,violation": 5
+      },
+      "examples": {
+        "current_feature_nested_object:근거문구,위반여부": [
+          "PPS-DEV-02",
+          "PPS-DEV-01",
+          "PPS-DEV-03"
+        ],
+        "other_top_level_keys:evidence_text,violation_status": [
+          "PPS-DEV-11",
+          "PPS-DEV-27",
+          "PPS-DEV-071"
+        ],
+        "current_feature_nested_object:reason,violation": [
+          "PPS-DEV-18",
+          "PPS-DEV-046",
+          "PPS-DEV-051"
+        ],
+        "not_one_complete_json_payload": [
+          "PPS-DEV-037",
+          "PPS-DEV-039",
+          "PPS-DEV-057"
+        ],
+        "other_top_level_keys:reason,violation": [
+          "PPS-DEV-056",
+          "PPS-DEV-080",
+          "PPS-DEV-123"
+        ],
+        "requested_top_level_keys": [
+          "PPS-DEV-093",
+          "PPS-DEV-109",
+          "PPS-DEV-138"
+        ],
+        "other_top_level_keys:evidence,violation": [
+          "PPS-DEV-155",
+          "PPS-DEV-158",
+          "PPS-DEV-169"
+        ]
+      },
+      "finish_reasons": {
+        "stop": 200
+      }
+    },
+    "v14": {
+      "responses": 200,
+      "bare_valid": 0,
+      "fenced_valid": 7,
+      "invalid_reasons": {
+        "wrong_keys": 150,
+        "invalid_json": 42,
+        "non_stop_finish": 1
+      },
+      "output_shapes": {
+        "current_feature_nested_object:근거문구,위반여부": 115,
+        "not_one_complete_json_payload": 43,
+        "other_top_level_keys:evidence,violation": 10,
+        "other_top_level_keys:reason,violation": 9,
+        "requested_top_level_keys": 7,
+        "other_top_level_keys:evidence_text,violation_status": 9,
+        "current_feature_nested_object:reason,violation": 7
+      },
+      "examples": {
+        "current_feature_nested_object:근거문구,위반여부": [
+          "PPS-DEV-01",
+          "PPS-DEV-03",
+          "PPS-DEV-04"
+        ],
+        "not_one_complete_json_payload": [
+          "PPS-DEV-02",
+          "PPS-DEV-09",
+          "PPS-DEV-12"
+        ],
+        "other_top_level_keys:evidence,violation": [
+          "PPS-DEV-14",
+          "PPS-DEV-116",
+          "PPS-DEV-142"
+        ],
+        "other_top_level_keys:reason,violation": [
+          "PPS-DEV-22",
+          "PPS-DEV-26",
+          "PPS-DEV-036"
+        ],
+        "requested_top_level_keys": [
+          "PPS-DEV-27",
+          "PPS-DEV-050",
+          "PPS-DEV-063"
+        ],
+        "other_top_level_keys:evidence_text,violation_status": [
+          "PPS-DEV-30",
+          "PPS-DEV-034",
+          "PPS-DEV-037"
+        ],
+        "current_feature_nested_object:reason,violation": [
+          "PPS-DEV-31",
+          "PPS-DEV-046",
+          "PPS-DEV-099"
+        ]
+      },
+      "finish_reasons": {
+        "stop": 199,
+        "length": 1
+      }
+    },
+    "v15": {
+      "responses": 200,
+      "bare_valid": 0,
+      "fenced_valid": 0,
+      "invalid_reasons": {
+        "wrong_keys": 163,
+        "invalid_json": 35,
+        "non_stop_finish": 2
+      },
+      "output_shapes": {
+        "current_feature_and_evidence_keys": 102,
+        "other_top_level_keys:v15,근거문구": 61,
+        "not_one_complete_json_payload": 37
+      },
+      "examples": {
+        "current_feature_and_evidence_keys": [
+          "PPS-DEV-02",
+          "PPS-DEV-04",
+          "PPS-DEV-05"
+        ],
+        "other_top_level_keys:v15,근거문구": [
+          "PPS-DEV-03",
+          "PPS-DEV-08",
+          "PPS-DEV-11"
+        ],
+        "not_one_complete_json_payload": [
+          "PPS-DEV-01",
+          "PPS-DEV-23",
+          "PPS-DEV-035"
+        ]
+      },
+      "finish_reasons": {
+        "stop": 198,
+        "length": 2
+      }
+    },
+    "v16": {
+      "responses": 200,
+      "bare_valid": 0,
+      "fenced_valid": 0,
+      "invalid_reasons": {
+        "wrong_keys": 189,
+        "invalid_json": 10,
+        "non_stop_finish": 1
+      },
+      "output_shapes": {
+        "current_feature_and_evidence_keys": 185,
+        "current_feature_nested_object:근거문구,위반여부": 3,
+        "not_one_complete_json_payload": 11,
+        "other_top_level_keys:v16,근거문구": 1
+      },
+      "examples": {
+        "current_feature_and_evidence_keys": [
+          "PPS-DEV-02",
+          "PPS-DEV-01",
+          "PPS-DEV-03"
+        ],
+        "current_feature_nested_object:근거문구,위반여부": [
+          "PPS-DEV-12",
+          "PPS-DEV-053",
+          "PPS-DEV-088"
+        ],
+        "not_one_complete_json_payload": [
+          "PPS-DEV-20",
+          "PPS-DEV-037",
+          "PPS-DEV-043"
+        ],
+        "other_top_level_keys:v16,근거문구": [
+          "PPS-DEV-157"
+        ]
+      },
+      "finish_reasons": {
+        "stop": 199,
+        "length": 1
+      }
+    },
+    "v17": {
+      "responses": 200,
+      "bare_valid": 0,
+      "fenced_valid": 0,
+      "invalid_reasons": {
+        "wrong_keys": 182,
+        "invalid_json": 15,
+        "non_stop_finish": 3
+      },
+      "output_shapes": {
+        "current_feature_and_evidence_keys": 175,
+        "not_one_complete_json_payload": 18,
+        "other_top_level_keys:v17,근거문구": 6,
+        "other_top_level_keys:e17,v17,v18": 1
+      },
+      "examples": {
+        "current_feature_and_evidence_keys": [
+          "PPS-DEV-01",
+          "PPS-DEV-03",
+          "PPS-DEV-04"
+        ],
+        "not_one_complete_json_payload": [
+          "PPS-DEV-02",
+          "PPS-DEV-18",
+          "PPS-DEV-19"
+        ],
+        "other_top_level_keys:v17,근거문구": [
+          "PPS-DEV-045",
+          "PPS-DEV-053",
+          "PPS-DEV-107"
+        ],
+        "other_top_level_keys:e17,v17,v18": [
+          "PPS-DEV-135"
+        ]
+      },
+      "finish_reasons": {
+        "stop": 197,
+        "length": 3
+      }
+    },
+    "v18": {
+      "responses": 200,
+      "bare_valid": 0,
+      "fenced_valid": 0,
+      "invalid_reasons": {
+        "wrong_keys": 198,
+        "invalid_json": 1,
+        "non_stop_finish": 1
+      },
+      "output_shapes": {
+        "current_feature_and_evidence_keys": 198,
+        "not_one_complete_json_payload": 2
+      },
+      "examples": {
+        "current_feature_and_evidence_keys": [
+          "PPS-DEV-02",
+          "PPS-DEV-01",
+          "PPS-DEV-03"
+        ],
+        "not_one_complete_json_payload": [
+          "PPS-DEV-21",
+          "PPS-DEV-154"
+        ]
+      },
+      "finish_reasons": {
+        "stop": 199,
+        "length": 1
+      }
+    }
+  },
+  "both_valid_pair_denominators": {
+    "v15_v16": 0,
+    "v17_v18": 0
+  }
+}

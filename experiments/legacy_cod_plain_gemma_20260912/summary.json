@@ -1,0 +1,34 @@
+[
+  {
+    "thinking": false,
+    "shots": 0,
+    "correct_final": 5,
+    "length_stops": 0,
+    "mean_total_tokens": 53.4,
+    "mean_thinking_body_tokens": 0.0
+  },
+  {
+    "thinking": false,
+    "shots": 8,
+    "correct_final": 5,
+    "length_stops": 0,
+    "mean_total_tokens": 31.8,
+    "mean_thinking_body_tokens": 0.0
+  },
+  {
+    "thinking": true,
+    "shots": 0,
+    "correct_final": 0,
+    "length_stops": 5,
+    "mean_total_tokens": 512.0,
+    "mean_thinking_body_tokens": 509.0
+  },
+  {
+    "thinking": true,
+    "shots": 8,
+    "correct_final": 0,
+    "length_stops": 5,
+    "mean_total_tokens": 512.0,
+    "mean_thinking_body_tokens": 509.0
+  }
+]

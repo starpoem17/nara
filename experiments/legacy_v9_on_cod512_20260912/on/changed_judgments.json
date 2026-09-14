@@ -1,0 +1,146 @@
+[
+  {
+    "id": "PPS-DEV-034",
+    "item": "v19",
+    "gold": 1,
+    "before": 1,
+    "after": 0,
+    "evidence": ""
+  },
+  {
+    "id": "PPS-DEV-035",
+    "item": "v9",
+    "gold": 0,
+    "before": 0,
+    "after": 1,
+    "evidence": "마. 납품(공급)업체의 경우 전자입찰서 제출 마감일 전일까지 제조사로부터 당해 물품공급 및 무상지원(A/S) 확약서를 발급후 보유 및 제출하여야 합니다."
+  },
+  {
+    "id": "PPS-DEV-052",
+    "item": "v19",
+    "gold": 0,
+    "before": 1,
+    "after": 0,
+    "evidence": ""
+  },
+  {
+    "id": "PPS-DEV-064",
+    "item": "v19",
+    "gold": 0,
+    "before": 0,
+    "after": 1,
+    "evidence": "본 사업의 물품 중 상용 SW 유지보수(S1-ACCESS)는 공급사와 물품공급(기술지원)협약을 체결(예산액의 약 2.5%, 총 18,480,000원)하였으며, 낙찰자 결정 후 낙찰자에게 그 사본을 제공하여 공급사로부터 물품공급 또는 기술지원협약서를 발급을 받아 계약이행 할 수 있음을 알려드립니다."
+  },
+  {
+    "id": "PPS-DEV-088",
+    "item": "v19",
+    "gold": 0,
+    "before": 1,
+    "after": 0,
+    "evidence": ""
+  },
+  {
+    "id": "PPS-DEV-098",
+    "item": "v9",
+    "gold": 0,
+    "before": 0,
+    "after": 1,
+    "evidence": "제조사의 물품공급확약서(규격서, 제품사진), 유지보수 및 사후관리확약서 제출이 가능한 업체"
+  },
+  {
+    "id": "PPS-DEV-112",
+    "item": "v19",
+    "gold": 0,
+    "before": 0,
+    "after": 1,
+    "evidence": "외산 장비에 대하여 제품의 품질 및 유지관리를 위하여 수급자는 공급 증명원 및 A/S 확약서를 제출할 수 있는 업체"
+  },
+  {
+    "id": "PPS-DEV-128",
+    "item": "v9",
+    "gold": 0,
+    "before": 1,
+    "after": 0,
+    "evidence": ""
+  },
+  {
+    "id": "PPS-DEV-132",
+    "item": "v9",
+    "gold": 0,
+    "before": 0,
+    "after": 1,
+    "evidence": ""
+  },
+  {
+    "id": "PPS-DEV-132",
+    "item": "v19",
+    "gold": 0,
+    "before": 0,
+    "after": 1,
+    "evidence": ""
+  },
+  {
+    "id": "PPS-DEV-133",
+    "item": "v19",
+    "gold": 0,
+    "before": 0,
+    "after": 1,
+    "evidence": "3) 규격에 대한 기능이 지원될 수 있음을 증명할 수 있는 제조사 확인 문서 1식"
+  },
+  {
+    "id": "PPS-DEV-152",
+    "item": "v19",
+    "gold": 0,
+    "before": 1,
+    "after": 0,
+    "evidence": ""
+  },
+  {
+    "id": "PPS-DEV-156",
+    "item": "v19",
+    "gold": 0,
+    "before": 1,
+    "after": 0,
+    "evidence": ""
+  },
+  {
+    "id": "PPS-DEV-160",
+    "item": "v9",
+    "gold": 0,
+    "before": 1,
+    "after": 0,
+    "evidence": ""
+  },
+  {
+    "id": "PPS-DEV-162",
+    "item": "v9",
+    "gold": 0,
+    "before": 1,
+    "after": 0,
+    "evidence": ""
+  },
+  {
+    "id": "PPS-DEV-176",
+    "item": "v9",
+    "gold": 0,
+    "before": 1,
+    "after": 0,
+    "evidence": ""
+  },
+  {
+    "id": "PPS-DEV-180",
+    "item": "v19",
+    "gold": 0,
+    "before": 1,
+    "after": 0,
+    "evidence": ""
+  },
+  {
+    "id": "PPS-DEV-196",
+    "item": "v9",
+    "gold": 0,
+    "before": 1,
+    "after": 0,
+    "evidence": ""
+  }
+]

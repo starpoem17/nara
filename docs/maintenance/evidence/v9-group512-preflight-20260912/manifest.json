@@ -1,0 +1,857 @@
+{
+  "groups": [
+    [
+      "v9",
+      "v19"
+    ]
+  ],
+  "original_group_number": 4,
+  "records": 200,
+  "thinking": false,
+  "limits": {
+    "batch_size": 16,
+    "search_rounds": 2,
+    "queries_per_round": 4,
+    "top_k": 5,
+    "round_tokens": 4096,
+    "total_retrieval_tokens": 8192,
+    "output_tokens": 512,
+    "retries": 1,
+    "require_search": false,
+    "instant_output_tokens": null
+  },
+  "model": "models/gemma-4-26B-A4B-it-NVFP4",
+  "baseline": "output/experiments/engine-refactor-after-20260911",
+  "counts": [
+    {
+      "id": "PPS-DEV-01",
+      "input_tokens": 13894
+    },
+    {
+      "id": "PPS-DEV-02",
+      "input_tokens": 2817
+    },
+    {
+      "id": "PPS-DEV-03",
+      "input_tokens": 16563
+    },
+    {
+      "id": "PPS-DEV-04",
+      "input_tokens": 19847
+    },
+    {
+      "id": "PPS-DEV-05",
+      "input_tokens": 11333
+    },
+    {
+      "id": "PPS-DEV-06",
+      "input_tokens": 18800
+    },
+    {
+      "id": "PPS-DEV-07",
+      "input_tokens": 10877
+    },
+    {
+      "id": "PPS-DEV-08",
+      "input_tokens": 22737
+    },
+    {
+      "id": "PPS-DEV-09",
+      "input_tokens": 7319
+    },
+    {
+      "id": "PPS-DEV-10",
+      "input_tokens": 11377
+    },
+    {
+      "id": "PPS-DEV-11",
+      "input_tokens": 29310
+    },
+    {
+      "id": "PPS-DEV-12",
+      "input_tokens": 8770
+    },
+    {
+      "id": "PPS-DEV-13",
+      "input_tokens": 9792
+    },
+    {
+      "id": "PPS-DEV-14",
+      "input_tokens": 7571
+    },
+    {
+      "id": "PPS-DEV-15",
+      "input_tokens": 19077
+    },
+    {
+      "id": "PPS-DEV-16",
+      "input_tokens": 7916
+    },
+    {
+      "id": "PPS-DEV-17",
+      "input_tokens": 25489
+    },
+    {
+      "id": "PPS-DEV-18",
+      "input_tokens": 5559
+    },
+    {
+      "id": "PPS-DEV-19",
+      "input_tokens": 12141
+    },
+    {
+      "id": "PPS-DEV-20",
+      "input_tokens": 10444
+    },
+    {
+      "id": "PPS-DEV-21",
+      "input_tokens": 5651
+    },
+    {
+      "id": "PPS-DEV-22",
+      "input_tokens": 10923
+    },
+    {
+      "id": "PPS-DEV-23",
+      "input_tokens": 10347
+    },
+    {
+      "id": "PPS-DEV-24",
+      "input_tokens": 7966
+    },
+    {
+      "id": "PPS-DEV-25",
+      "input_tokens": 11091
+    },
+    {
+      "id": "PPS-DEV-26",
+      "input_tokens": 13667
+    },
+    {
+      "id": "PPS-DEV-27",
+      "input_tokens": 27993
+    },
+    {
+      "id": "PPS-DEV-28",
+      "input_tokens": 27138
+    },
+    {
+      "id": "PPS-DEV-29",
+      "input_tokens": 3888
+    },
+    {
+      "id": "PPS-DEV-30",
+      "input_tokens": 13761
+    },
+    {
+      "id": "PPS-DEV-31",
+      "input_tokens": 6464
+    },
+    {
+      "id": "PPS-DEV-32",
+      "input_tokens": 13418
+    },
+    {
+      "id": "PPS-DEV-033",
+      "input_tokens": 5361
+    },
+    {
+      "id": "PPS-DEV-034",
+      "input_tokens": 15290
+    },
+    {
+      "id": "PPS-DEV-035",
+      "input_tokens": 3306
+    },
+    {
+      "id": "PPS-DEV-036",
+      "input_tokens": 4613
+    },
+    {
+      "id": "PPS-DEV-037",
+      "input_tokens": 8313
+    },
+    {
+      "id": "PPS-DEV-038",
+      "input_tokens": 6703
+    },
+    {
+      "id": "PPS-DEV-039",
+      "input_tokens": 7852
+    },
+    {
+      "id": "PPS-DEV-040",
+      "input_tokens": 4184
+    },
+    {
+      "id": "PPS-DEV-041",
+      "input_tokens": 3339
+    },
+    {
+      "id": "PPS-DEV-042",
+      "input_tokens": 5784
+    },
+    {
+      "id": "PPS-DEV-043",
+      "input_tokens": 5583
+    },
+    {
+      "id": "PPS-DEV-044",
+      "input_tokens": 19419
+    },
+    {
+      "id": "PPS-DEV-045",
+      "input_tokens": 9726
+    },
+    {
+      "id": "PPS-DEV-046",
+      "input_tokens": 5288
+    },
+    {
+      "id": "PPS-DEV-047",
+      "input_tokens": 4278
+    },
+    {
+      "id": "PPS-DEV-048",
+      "input_tokens": 4031
+    },
+    {
+      "id": "PPS-DEV-049",
+      "input_tokens": 7155
+    },
+    {
+      "id": "PPS-DEV-050",
+      "input_tokens": 8687
+    },
+    {
+      "id": "PPS-DEV-051",
+      "input_tokens": 6770
+    },
+    {
+      "id": "PPS-DEV-052",
+      "input_tokens": 9217
+    },
+    {
+      "id": "PPS-DEV-053",
+      "input_tokens": 8326
+    },
+    {
+      "id": "PPS-DEV-054",
+      "input_tokens": 3407
+    },
+    {
+      "id": "PPS-DEV-055",
+      "input_tokens": 7804
+    },
+    {
+      "id": "PPS-DEV-056",
+      "input_tokens": 7931
+    },
+    {
+      "id": "PPS-DEV-057",
+      "input_tokens": 3695
+    },
+    {
+      "id": "PPS-DEV-058",
+      "input_tokens": 5792
+    },
+    {
+      "id": "PPS-DEV-059",
+      "input_tokens": 4400
+    },
+    {
+      "id": "PPS-DEV-060",
+      "input_tokens": 3242
+    },
+    {
+      "id": "PPS-DEV-061",
+      "input_tokens": 2777
+    },
+    {
+      "id": "PPS-DEV-062",
+      "input_tokens": 2796
+    },
+    {
+      "id": "PPS-DEV-063",
+      "input_tokens": 14444
+    },
+    {
+      "id": "PPS-DEV-064",
+      "input_tokens": 7542
+    },
+    {
+      "id": "PPS-DEV-065",
+      "input_tokens": 3774
+    },
+    {
+      "id": "PPS-DEV-066",
+      "input_tokens": 24036
+    },
+    {
+      "id": "PPS-DEV-067",
+      "input_tokens": 5622
+    },
+    {
+      "id": "PPS-DEV-068",
+      "input_tokens": 5602
+    },
+    {
+      "id": "PPS-DEV-069",
+      "input_tokens": 10521
+    },
+    {
+      "id": "PPS-DEV-070",
+      "input_tokens": 3026
+    },
+    {
+      "id": "PPS-DEV-071",
+      "input_tokens": 4288
+    },
+    {
+      "id": "PPS-DEV-072",
+      "input_tokens": 4692
+    },
+    {
+      "id": "PPS-DEV-073",
+      "input_tokens": 8724
+    },
+    {
+      "id": "PPS-DEV-074",
+      "input_tokens": 6085
+    },
+    {
+      "id": "PPS-DEV-075",
+      "input_tokens": 5383
+    },
+    {
+      "id": "PPS-DEV-076",
+      "input_tokens": 17878
+    },
+    {
+      "id": "PPS-DEV-077",
+      "input_tokens": 2558
+    },
+    {
+      "id": "PPS-DEV-078",
+      "input_tokens": 5796
+    },
+    {
+      "id": "PPS-DEV-079",
+      "input_tokens": 5366
+    },
+    {
+      "id": "PPS-DEV-080",
+      "input_tokens": 3598
+    },
+    {
+      "id": "PPS-DEV-081",
+      "input_tokens": 23216
+    },
+    {
+      "id": "PPS-DEV-082",
+      "input_tokens": 27236
+    },
+    {
+      "id": "PPS-DEV-083",
+      "input_tokens": 6319
+    },
+    {
+      "id": "PPS-DEV-084",
+      "input_tokens": 6898
+    },
+    {
+      "id": "PPS-DEV-085",
+      "input_tokens": 19598
+    },
+    {
+      "id": "PPS-DEV-086",
+      "input_tokens": 12304
+    },
+    {
+      "id": "PPS-DEV-087",
+      "input_tokens": 19306
+    },
+    {
+      "id": "PPS-DEV-088",
+      "input_tokens": 15051
+    },
+    {
+      "id": "PPS-DEV-089",
+      "input_tokens": 7779
+    },
+    {
+      "id": "PPS-DEV-090",
+      "input_tokens": 10431
+    },
+    {
+      "id": "PPS-DEV-091",
+      "input_tokens": 12229
+    },
+    {
+      "id": "PPS-DEV-092",
+      "input_tokens": 6744
+    },
+    {
+      "id": "PPS-DEV-093",
+      "input_tokens": 23250
+    },
+    {
+      "id": "PPS-DEV-094",
+      "input_tokens": 3452
+    },
+    {
+      "id": "PPS-DEV-095",
+      "input_tokens": 8686
+    },
+    {
+      "id": "PPS-DEV-096",
+      "input_tokens": 17947
+    },
+    {
+      "id": "PPS-DEV-097",
+      "input_tokens": 9611
+    },
+    {
+      "id": "PPS-DEV-098",
+      "input_tokens": 6607
+    },
+    {
+      "id": "PPS-DEV-099",
+      "input_tokens": 25046
+    },
+    {
+      "id": "PPS-DEV-100",
+      "input_tokens": 19625
+    },
+    {
+      "id": "PPS-DEV-101",
+      "input_tokens": 12341
+    },
+    {
+      "id": "PPS-DEV-102",
+      "input_tokens": 9213
+    },
+    {
+      "id": "PPS-DEV-103",
+      "input_tokens": 25914
+    },
+    {
+      "id": "PPS-DEV-104",
+      "input_tokens": 5900
+    },
+    {
+      "id": "PPS-DEV-105",
+      "input_tokens": 10251
+    },
+    {
+      "id": "PPS-DEV-106",
+      "input_tokens": 16480
+    },
+    {
+      "id": "PPS-DEV-107",
+      "input_tokens": 7706
+    },
+    {
+      "id": "PPS-DEV-108",
+      "input_tokens": 6377
+    },
+    {
+      "id": "PPS-DEV-109",
+      "input_tokens": 24990
+    },
+    {
+      "id": "PPS-DEV-110",
+      "input_tokens": 7248
+    },
+    {
+      "id": "PPS-DEV-111",
+      "input_tokens": 8579
+    },
+    {
+      "id": "PPS-DEV-112",
+      "input_tokens": 11557
+    },
+    {
+      "id": "PPS-DEV-113",
+      "input_tokens": 4126
+    },
+    {
+      "id": "PPS-DEV-114",
+      "input_tokens": 3959
+    },
+    {
+      "id": "PPS-DEV-115",
+      "input_tokens": 5541
+    },
+    {
+      "id": "PPS-DEV-116",
+      "input_tokens": 6669
+    },
+    {
+      "id": "PPS-DEV-117",
+      "input_tokens": 12790
+    },
+    {
+      "id": "PPS-DEV-118",
+      "input_tokens": 5399
+    },
+    {
+      "id": "PPS-DEV-119",
+      "input_tokens": 26885
+    },
+    {
+      "id": "PPS-DEV-120",
+      "input_tokens": 3477
+    },
+    {
+      "id": "PPS-DEV-121",
+      "input_tokens": 24386
+    },
+    {
+      "id": "PPS-DEV-122",
+      "input_tokens": 15250
+    },
+    {
+      "id": "PPS-DEV-123",
+      "input_tokens": 22218
+    },
+    {
+      "id": "PPS-DEV-124",
+      "input_tokens": 6825
+    },
+    {
+      "id": "PPS-DEV-125",
+      "input_tokens": 16432
+    },
+    {
+      "id": "PPS-DEV-126",
+      "input_tokens": 7607
+    },
+    {
+      "id": "PPS-DEV-127",
+      "input_tokens": 9576
+    },
+    {
+      "id": "PPS-DEV-128",
+      "input_tokens": 5732
+    },
+    {
+      "id": "PPS-DEV-129",
+      "input_tokens": 15716
+    },
+    {
+      "id": "PPS-DEV-130",
+      "input_tokens": 4306
+    },
+    {
+      "id": "PPS-DEV-131",
+      "input_tokens": 4579
+    },
+    {
+      "id": "PPS-DEV-132",
+      "input_tokens": 12841
+    },
+    {
+      "id": "PPS-DEV-133",
+      "input_tokens": 11789
+    },
+    {
+      "id": "PPS-DEV-134",
+      "input_tokens": 6341
+    },
+    {
+      "id": "PPS-DEV-135",
+      "input_tokens": 18718
+    },
+    {
+      "id": "PPS-DEV-136",
+      "input_tokens": 18520
+    },
+    {
+      "id": "PPS-DEV-137",
+      "input_tokens": 21119
+    },
+    {
+      "id": "PPS-DEV-138",
+      "input_tokens": 25370
+    },
+    {
+      "id": "PPS-DEV-139",
+      "input_tokens": 11614
+    },
+    {
+      "id": "PPS-DEV-140",
+      "input_tokens": 25342
+    },
+    {
+      "id": "PPS-DEV-141",
+      "input_tokens": 6310
+    },
+    {
+      "id": "PPS-DEV-142",
+      "input_tokens": 3448
+    },
+    {
+      "id": "PPS-DEV-143",
+      "input_tokens": 28543
+    },
+    {
+      "id": "PPS-DEV-144",
+      "input_tokens": 6610
+    },
+    {
+      "id": "PPS-DEV-145",
+      "input_tokens": 28427
+    },
+    {
+      "id": "PPS-DEV-146",
+      "input_tokens": 7002
+    },
+    {
+      "id": "PPS-DEV-147",
+      "input_tokens": 27065
+    },
+    {
+      "id": "PPS-DEV-148",
+      "input_tokens": 6778
+    },
+    {
+      "id": "PPS-DEV-149",
+      "input_tokens": 8774
+    },
+    {
+      "id": "PPS-DEV-150",
+      "input_tokens": 3434
+    },
+    {
+      "id": "PPS-DEV-151",
+      "input_tokens": 9735
+    },
+    {
+      "id": "PPS-DEV-152",
+      "input_tokens": 7311
+    },
+    {
+      "id": "PPS-DEV-153",
+      "input_tokens": 26649
+    },
+    {
+      "id": "PPS-DEV-154",
+      "input_tokens": 5810
+    },
+    {
+      "id": "PPS-DEV-155",
+      "input_tokens": 27665
+    },
+    {
+      "id": "PPS-DEV-156",
+      "input_tokens": 4701
+    },
+    {
+      "id": "PPS-DEV-157",
+      "input_tokens": 18326
+    },
+    {
+      "id": "PPS-DEV-158",
+      "input_tokens": 27177
+    },
+    {
+      "id": "PPS-DEV-159",
+      "input_tokens": 17772
+    },
+    {
+      "id": "PPS-DEV-160",
+      "input_tokens": 5951
+    },
+    {
+      "id": "PPS-DEV-161",
+      "input_tokens": 17516
+    },
+    {
+      "id": "PPS-DEV-162",
+      "input_tokens": 16067
+    },
+    {
+      "id": "PPS-DEV-163",
+      "input_tokens": 11648
+    },
+    {
+      "id": "PPS-DEV-164",
+      "input_tokens": 5262
+    },
+    {
+      "id": "PPS-DEV-165",
+      "input_tokens": 21522
+    },
+    {
+      "id": "PPS-DEV-166",
+      "input_tokens": 3767
+    },
+    {
+      "id": "PPS-DEV-167",
+      "input_tokens": 5481
+    },
+    {
+      "id": "PPS-DEV-168",
+      "input_tokens": 4744
+    },
+    {
+      "id": "PPS-DEV-169",
+      "input_tokens": 28350
+    },
+    {
+      "id": "PPS-DEV-170",
+      "input_tokens": 14090
+    },
+    {
+      "id": "PPS-DEV-171",
+      "input_tokens": 26979
+    },
+    {
+      "id": "PPS-DEV-172",
+      "input_tokens": 9824
+    },
+    {
+      "id": "PPS-DEV-173",
+      "input_tokens": 22841
+    },
+    {
+      "id": "PPS-DEV-174",
+      "input_tokens": 3886
+    },
+    {
+      "id": "PPS-DEV-175",
+      "input_tokens": 14532
+    },
+    {
+      "id": "PPS-DEV-176",
+      "input_tokens": 9037
+    },
+    {
+      "id": "PPS-DEV-177",
+      "input_tokens": 6897
+    },
+    {
+      "id": "PPS-DEV-178",
+      "input_tokens": 18603
+    },
+    {
+      "id": "PPS-DEV-179",
+      "input_tokens": 3040
+    },
+    {
+      "id": "PPS-DEV-180",
+      "input_tokens": 11034
+    },
+    {
+      "id": "PPS-DEV-181",
+      "input_tokens": 9825
+    },
+    {
+      "id": "PPS-DEV-182",
+      "input_tokens": 4216
+    },
+    {
+      "id": "PPS-DEV-183",
+      "input_tokens": 11059
+    },
+    {
+      "id": "PPS-DEV-184",
+      "input_tokens": 5896
+    },
+    {
+      "id": "PPS-DEV-185",
+      "input_tokens": 17225
+    },
+    {
+      "id": "PPS-DEV-186",
+      "input_tokens": 8401
+    },
+    {
+      "id": "PPS-DEV-187",
+      "input_tokens": 6191
+    },
+    {
+      "id": "PPS-DEV-188",
+      "input_tokens": 21950
+    },
+    {
+      "id": "PPS-DEV-189",
+      "input_tokens": 11536
+    },
+    {
+      "id": "PPS-DEV-190",
+      "input_tokens": 8529
+    },
+    {
+      "id": "PPS-DEV-191",
+      "input_tokens": 21216
+    },
+    {
+      "id": "PPS-DEV-192",
+      "input_tokens": 6806
+    },
+    {
+      "id": "PPS-DEV-193",
+      "input_tokens": 10521
+    },
+    {
+      "id": "PPS-DEV-194",
+      "input_tokens": 10563
+    },
+    {
+      "id": "PPS-DEV-195",
+      "input_tokens": 16866
+    },
+    {
+      "id": "PPS-DEV-196",
+      "input_tokens": 10156
+    },
+    {
+      "id": "PPS-DEV-197",
+      "input_tokens": 28918
+    },
+    {
+      "id": "PPS-DEV-198",
+      "input_tokens": 5551
+    },
+    {
+      "id": "PPS-DEV-199",
+      "input_tokens": 26178
+    },
+    {
+      "id": "PPS-DEV-200",
+      "input_tokens": 7414
+    }
+  ],
+  "prompt_tokens": {
+    "baseline": 34,
+    "candidate": 212
+  },
+  "schedule": "consecutive notice batches of 16, one group each",
+  "caveat": "Historical comparison: prompt, output cap (2048 to 512), scheduling differ.",
+  "recovery": "One same-512-cap rerun of failed notices after normal internal retry; no zero filling",
+  "source_sha256": {
+    "nara/inference.py": "cc81a106db5db48eea99ba07119e9b537908e78a5aa9afd1cf06402e2057c4d9",
+    "nara/continuous.py": "80364fa8453e58d1176bfdc02c95ba81b5457d790fe0d931b2b582953fdb7ec7",
+    "nara/hypothesis6.py": "737c4c4198d1254b50acc472e653dd513315e216001282ddf8dc7459368c34bf",
+    "nara/legal_index.py": "b3266f0065a9164dbc2c71912d8667eedefb1ca9514f661601be72888c14bf7e",
+    "nara/prefix_predictor.py": "aee83eb0ce46cef8f2cbc7bc8697a94282d0b7908306fff55b5416d271ed19b7",
+    "nara/prefix_pipeline.py": "0ddc8dd026efc9f5480bd5a2837539a385c42da041c0a2aa03cef8de36c631b9",
+    "nara/__init__.py": "81f9119d0c08fa90b298c122f306bbb7cd82527a99a6a9142d6fb322107a0382",
+    "nara/compact_predictor.py": "046002710b57ad799ff6f287f016ae215c2109338b66d3706570c8ac8651f969",
+    "nara/vllm_model.py": "c4811d30d3040780bfe29177b18df231c2d30cb8451db23d804da3283f83c3bb",
+    "nara/retrieval.py": "fb794006f27da4b99a3d39b9f3ef6e84e829f187290a451b2f33b56f0c8c8edc",
+    "nara/briefing_rule.py": "ac4afa19674bc9476e188f522bfefeb8d9f041c69346ea6a58b7b2a053297161",
+    "nara/hybrid_experiment.py": "c83e8296c1d88db5d13ba715c8ef6c98aa4c0086ee709058b638631130096a59",
+    "nara/recovery.py": "9c2aef5ba101044c42e2342c84daef592b4be0022bd934e10932c0a7983fd65f",
+    "nara/conversation.py": "273469929c78ded1ecc6a763703ddaeca22a4c74fa35220106bb959b54247ca3",
+    "nara/batch_barrier.py": "09e5d7abf2a3e6a14f87cfa86c3fcef0a7aab5531d98bb7bd5be9400c1092474",
+    "nara/compact_criteria.json": "27ff6bb7fb0dfecd476831b3db8795f00c84ae039ce4b5e95a954856c75eec69",
+    "scripts/experiment_v9_group.py": "b2061b9b48ce5eedcc08199a419e6b3ee45d98164f478a160d447ec07b67334d",
+    "script.py": "facb2dab4a52e575e1a0bd35ec3d02ecae9beffbb73c92964580bba60cf3e923",
+    "data/dev.jsonl": "5507f5ab0ba53b708f87211ed050dbe531b48a626ace6084c3ccaefb53147534",
+    "data/항목표.json": "368cb41f376d8ad7edbbdf181542e6e959de356f7f70d86e72943325ecad61d9",
+    "data/정답스키마_디코딩.json": "149580162261b446090bec075eb4c13f765a771c827b6bbe06660eb833a3c2ac"
+  }
+}

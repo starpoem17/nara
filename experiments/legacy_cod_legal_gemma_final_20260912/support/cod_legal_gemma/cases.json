@@ -1,0 +1,59 @@
+{
+  "scope": "All rules are fictional and exhaustive. Apply only the supplied rules and facts. YES means the queried legal conclusion follows; NO means its negation follows; UNKNOWN means the facts do not determine it.",
+  "examples": [
+    {
+      "question": "Rule: A library may suspend access if and only if a member has at least two overdue books. Facts: Ivo has three overdue books. May the library suspend Ivo's access?",
+      "answer": "Three overdue books.\nRequired threshold satisfied.\n#### YES"
+    },
+    {
+      "question": "Rule: A permit is required for gatherings exceeding 40 people. Facts: A gathering has exactly 40 people. Is a permit required?",
+      "answer": "Exactly forty attendees.\nThreshold requires more.\n#### NO"
+    },
+    {
+      "question": "Rule: A refund is due if cancellation occurs within seven days after purchase. Facts: Cancellation occurred Tuesday; the purchase date is not supplied. Is a refund due?",
+      "answer": "Purchase date missing.\nElapsed time unknown.\n#### UNKNOWN"
+    },
+    {
+      "question": "Rule: Applications require a signature, except online applications verified by a digital certificate. Facts: An online application has a verified digital certificate but no signature. Does it breach the signature rule?",
+      "answer": "Online application verified.\nCertificate exception applies.\nSignature unnecessary.\n#### NO"
+    }
+  ],
+  "cases": [
+    {
+      "id": "L1",
+      "kind": "rule and obligation",
+      "question": "Rule: A tenant must obtain written consent before subletting. Subletting without that consent is a breach. Facts: A tenant sublet a room on June 3. The landlord first gave written consent on June 5. Did the tenant breach the rule on June 3?",
+      "gold": "YES"
+    },
+    {
+      "id": "L2",
+      "kind": "conjunctive exception",
+      "question": "Rule: Night deliveries are prohibited unless BOTH an emergency exists AND the dispatcher authorizes the delivery in advance. Facts: An emergency existed. The dispatcher expressly refused authorization. A night delivery nevertheless occurred. Was the delivery prohibited?",
+      "gold": "YES"
+    },
+    {
+      "id": "L3",
+      "kind": "cross-document controlling exception",
+      "question": "Rule: An annex overrides the main contract only for products explicitly listed in that annex. Main contract: Every supplied component must carry label ALPHA. Annex: Pumps may carry any certified equivalent label. Facts: The supplier delivered only pumps bearing certified equivalent label BETA. Did those deliveries breach the labeling requirement?",
+      "gold": "NO"
+    },
+    {
+      "id": "L4",
+      "kind": "timing and actor distinction",
+      "question": "Rule: An agency must not demand an external auditor's certificate before selecting a contractor. It may demand the bidder's own signed declaration before selection and an external auditor's certificate afterward. Document A: Bidders must submit their own declaration with their bids. Document B: Only the selected contractor must obtain and submit an external auditor's certificate, after selection. Do these requirements violate the rule?",
+      "gold": "NO"
+    },
+    {
+      "id": "L5",
+      "kind": "missing decisive document",
+      "question": "Rule: An agency may reject a filing as late only if receipt occurred more than ten days after notification. Notice: Notification occurred on May 1. Case file: Receipt date is recorded exclusively in Appendix R. Appendix R is not provided. Other facts: The rejection decision was signed on May 20. Was rejection for lateness permitted?",
+      "gold": "UNKNOWN"
+    },
+    {
+      "id": "L6",
+      "kind": "authorization attribution",
+      "question": "Rule: A company is bound by a settlement signed by an employee only if that employee has written authority from the company. Facts: An employee signed a settlement using the company's email account. The record contains no information about whether written authority exists. Is the company bound by the settlement?",
+      "gold": "UNKNOWN"
+    }
+  ]
+}

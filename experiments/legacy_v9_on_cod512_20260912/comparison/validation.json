@@ -1,0 +1,16 @@
+{
+  "on": {
+    "raw_responses_verified": 201,
+    "source_hashes_match": true,
+    "all_caps_512_256": true,
+    "outer_rerun_ids": []
+  },
+  "cod": {
+    "raw_responses_verified": 206,
+    "source_hashes_match": true,
+    "all_caps_512_256": true,
+    "outer_rerun_ids": [
+      "PPS-DEV-152"
+    ]
+  }
+}

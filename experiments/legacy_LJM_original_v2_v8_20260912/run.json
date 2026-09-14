@@ -1,0 +1,217 @@
+{
+  "schema_version": 1,
+  "record_kind": "historical_experiment",
+  "read_only": true,
+  "project_root": "../..",
+  "run_id": "legacy_LJM_original_v2_v8_20260912",
+  "area": "colleague-hypotheses",
+  "report": "docs/experiments/colleague-hypotheses/2026-09/legacy_LJM_original_v2_v8_20260912.md",
+  "question": "How do the original LJM modules behave on dev200?",
+  "started_at": null,
+  "timezone": "Asia/Seoul",
+  "time_evidence": "No verified orchestration start; see timestamp-candidates.json and original logs. September 2026 is established by the linked historical project records.",
+  "migration_at": "2026-09-13T15:13:30.118650+00:00",
+  "status": "historical; inspect per-condition execution records",
+  "judgment": "Retained original-module observations; do not conflate these results with the separately withdrawn static-law design.",
+  "conditions": {
+    "recorded_execution": {
+      "settings": {
+        "recorded_condition": "recorded execution",
+        "scope": "See preserved original manifest and source for exact settings."
+      },
+      "status": "historical",
+      "attempts": [],
+      "artifact_path": "."
+    }
+  },
+  "max_attempts": 0,
+  "predecessors": [],
+  "followups": [],
+  "original_files": {
+    "analysis/LJM_original_v2_v8_20260912/engine.json": {
+      "path": "engine.json",
+      "sha256": "d73547717bf4327860243557fb849be3339fde105ddef1ab9fad15cbc8e0f57d",
+      "size": 260
+    },
+    "analysis/LJM_original_v2_v8_20260912/evaluate.log": {
+      "path": "evaluate.log",
+      "sha256": "a94e9b449e1be16c568f7927e24819a3b12bbe15e7a47f814c796ac44315ae23",
+      "size": 76
+    },
+    "analysis/LJM_original_v2_v8_20260912/evaluate.py": {
+      "path": "evaluate.py",
+      "sha256": "0ddbe8d363281ab2cb19fb72558c5fa89097987c07611c627f57e19c40153e14",
+      "size": 3304
+    },
+    "analysis/LJM_original_v2_v8_20260912/evaluation.json": {
+      "path": "evaluation.json",
+      "sha256": "a51d0b547a9f8a66b0c951f446bfa381855825bc2aace10c1cea2e68ade1ebb8",
+      "size": 9602
+    },
+    "analysis/LJM_original_v2_v8_20260912/evaluation_protocol.json": {
+      "path": "evaluation_protocol.json",
+      "sha256": "7ebcf0953111d81f0ec534a78cc1e89b6e1f46312fd284df14be83a1b8b929f3",
+      "size": 626
+    },
+    "analysis/LJM_original_v2_v8_20260912/extractor/candidate_evaluation.csv": {
+      "path": "extractor/candidate_evaluation.csv",
+      "sha256": "53c690e1bb6aa4ae3d69e7f35b62c3d3615076a2a0fadaef45aa0d3884463d54",
+      "size": 15904
+    },
+    "analysis/LJM_original_v2_v8_20260912/extractor/extracted.jsonl": {
+      "path": "extractor/extracted.jsonl",
+      "sha256": "e0e2b6d84bc86536b4ca8152bb1659590efc6c526e326486ad16e78207b7dd9d",
+      "size": 4531796
+    },
+    "analysis/LJM_original_v2_v8_20260912/extractor/judgments.csv": {
+      "path": "extractor/judgments.csv",
+      "sha256": "b28fcb0654f95fe33596e13d23f5dc3bcadfb09722ef0d52d7f30e65f0a7de20",
+      "size": 615720
+    },
+    "analysis/LJM_original_v2_v8_20260912/extractor/requests.jsonl": {
+      "path": "extractor/requests.jsonl",
+      "sha256": "642d64b4b0424b949c669651d5623350dcae8b5a6869d1976a87883548aa13f0",
+      "size": 36517585
+    },
+    "analysis/LJM_original_v2_v8_20260912/extractor/responses.jsonl": {
+      "path": "extractor/responses.jsonl",
+      "sha256": "4b21c0a5a0b5a8f523a902bde788ec07026cd931bf5f10884029facc9d8c66ef",
+      "size": 1515393
+    },
+    "analysis/LJM_original_v2_v8_20260912/format_audit.json": {
+      "path": "format_audit.json",
+      "sha256": "9646a68e35e74b7e52591c2579b578dbb0fa1c5230b3fc0b5d72781193a0ecdb",
+      "size": 29653
+    },
+    "analysis/LJM_original_v2_v8_20260912/law_provenance.json": {
+      "path": "law_provenance.json",
+      "sha256": "904b9c5d6da39d02c441278b0e5561149a9f1f512cd0ea5507c26805f6c3f67d",
+      "size": 265777
+    },
+    "analysis/LJM_original_v2_v8_20260912/law_specs/v4.json": {
+      "path": "law_specs/v4.json",
+      "sha256": "70addd36bc42130a48c83b142e2ce9d1d160c807db8c8d1f973f7035cbafbc46",
+      "size": 5774
+    },
+    "analysis/LJM_original_v2_v8_20260912/law_specs/v5.json": {
+      "path": "law_specs/v5.json",
+      "sha256": "2bb14b4866ccc06b511b27745a619888333c6c3933f507badc13cfdddb4b2365",
+      "size": 5545
+    },
+    "analysis/LJM_original_v2_v8_20260912/law_specs/v6.json": {
+      "path": "law_specs/v6.json",
+      "sha256": "d1b977dc57278ae991b06d1a71c909d783aa09d2c80d884ea7a3833388ca70fb",
+      "size": 5201
+    },
+    "analysis/LJM_original_v2_v8_20260912/law_specs/v7.json": {
+      "path": "law_specs/v7.json",
+      "sha256": "9adb892cbd8f9ebbe378ce727086f64d79422859899d9f087076781ba84d993e",
+      "size": 5625
+    },
+    "analysis/LJM_original_v2_v8_20260912/laws.json": {
+      "path": "laws.json",
+      "sha256": "6280a9d16bd22d2a39d2a10d90b594ee3411456f213ece0b38581a24017f8c71",
+      "size": 87031
+    },
+    "analysis/LJM_original_v2_v8_20260912/manifest.json": {
+      "path": "manifest.json",
+      "sha256": "3730a3d307ae56024346dc30b60d21245aeca197e15b75ffd4f59535cdba78ad",
+      "size": 2977
+    },
+    "analysis/LJM_original_v2_v8_20260912/preflight.json": {
+      "path": "preflight.json",
+      "sha256": "bcb9f1048aa7526a24179ec71ac7f944440d5b8a5ac3adf3591bec6ed19f78cf",
+      "size": 88630
+    },
+    "analysis/LJM_original_v2_v8_20260912/prepare.log": {
+      "path": "prepare.log",
+      "sha256": "6c00e3806e2a06656b41539f290c66e30bcd2e37884deda049c215c7f50c61ba",
+      "size": 368
+    },
+    "analysis/LJM_original_v2_v8_20260912/progress.json": {
+      "path": "progress.json",
+      "sha256": "3a07edd19d0f0ae5dfe85cd5346bc3a2f84ecf4004d17e956e33748887624fe7",
+      "size": 79
+    },
+    "analysis/LJM_original_v2_v8_20260912/result_manifest.json": {
+      "path": "result_manifest.json",
+      "sha256": "0f88e9a456f8569ad615468603c71b587c398a191035697593645c29dfe440e3",
+      "size": 3016
+    },
+    "analysis/LJM_original_v2_v8_20260912/run.log": {
+      "path": "run.log",
+      "sha256": "0e25916b86fc983917f27e704b573d4c1bd5ec8ae94b32c601cca2ba2e0561b1",
+      "size": 24722
+    },
+    "analysis/LJM_original_v2_v8_20260912/run.py": {
+      "path": "run.py",
+      "sha256": "aafb23454b7e3a79768cb84a72d8387f2abe249198a7b6329985a9c65d244fb7",
+      "size": 11140
+    },
+    "analysis/LJM_original_v2_v8_20260912/runtime.json": {
+      "path": "runtime.json",
+      "sha256": "08e00af4d12a27807cf6c632adc7fa4b027b15c3b8618973215a3cfb4f67a1d8",
+      "size": 116
+    },
+    "analysis/LJM_original_v2_v8_20260912/scanner/candidate_v2_v8.csv": {
+      "path": "scanner/candidate_v2_v8.csv",
+      "sha256": "d930f56ca9408125a105842b22d2730d4fb8ef82cccc2ae0e5369370c44c6a5c",
+      "size": 33307
+    },
+    "analysis/LJM_original_v2_v8_20260912/scanner/evaluation.csv": {
+      "path": "scanner/evaluation.csv",
+      "sha256": "84adff18751e33294d555ae36d94dcaa790819fa3be77d9bff5199e630f0fa6a",
+      "size": 111216
+    },
+    "analysis/LJM_original_v2_v8_20260912/score.py": {
+      "path": "score.py",
+      "sha256": "724febc343bba2ee61cba9227d4b13e5c3c18ced9f503feb1cf479a198c5c42a",
+      "size": 17182
+    },
+    "analysis/LJM_original_v2_v8_20260912/source/user/LJM/scan_candidates.py": {
+      "path": "source/user/LJM/scan_candidates.py",
+      "sha256": "75cefd9c0350f18785119f118af8815ebead8ea1c2d759e0236a11f36da60916",
+      "size": 11902
+    },
+    "analysis/LJM_original_v2_v8_20260912/source/user/LJM/v4_v7_candidate_extractor.py": {
+      "path": "source/user/LJM/v4_v7_candidate_extractor.py",
+      "sha256": "179be8e3eb7395ae00e6dcba3026252dc9077d7695a1b06850c31b5f1350f5a6",
+      "size": 5751
+    },
+    "analysis/LJM_original_v2_v8_20260912/verification.json": {
+      "path": "verification.json",
+      "sha256": "700dc312b1c822e6a316c9f1977dbdc8ccedaff35e489768a8e8737eca03d52d",
+      "size": 380
+    },
+    "analysis/LJM_original_v2_v8_20260912/verify.log": {
+      "path": "verify.log",
+      "sha256": "2cd3e7e829a6a1c80c1e266467484c496badac13c3d2825309e9ce1891df3358",
+      "size": 358
+    },
+    "analysis/LJM_original_v2_v8_20260912/verify.py": {
+      "path": "verify.py",
+      "sha256": "e3a01b85d5b04c88a4f530ce4226d51849f32fcfdbeeb3ff21360a6ba9520a5a",
+      "size": 3539
+    }
+  },
+  "temporary_paths": [
+    "tmp/structure-migration-20260913"
+  ],
+  "migration_inventory": "docs/maintenance/evidence/structure-migration/mapping.json",
+  "reproducibility": "Original content retained. Local datasets/models require matching separately restored bytes; historical commands may need current reconstruction guidance.",
+  "recorded_condition_evidence": [
+    {
+      "path": "manifest.json",
+      "values": {
+        "model": "models/gemma-4-26B-A4B-it-NVFP4"
+      }
+    }
+  ],
+  "historical_provenance": {
+    "status": "retained where originally recorded; missing fields remain unknown",
+    "execution_sources": "Existing source/analysis_source contents and original manifests are authoritative; migration-time code is separately labeled",
+    "input_access": "Local input/model assets remain locally retained; original hashes are in manifests/evaluations. Another checkout must restore matching bytes.",
+    "original_temporary_paths": "Not reconstructed when absent from original evidence"
+  },
+  "migration_code_archive": "docs/maintenance/evidence/structure-migration/original-source.tar"
+}

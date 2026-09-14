@@ -1,0 +1,1004 @@
+{
+  "schema_version": 1,
+  "record_kind": "historical_experiment",
+  "read_only": true,
+  "project_root": "../..",
+  "run_id": "legacy_hybrid200",
+  "area": "inference-scheduling",
+  "report": "docs/experiments/inference-scheduling/2026-09/legacy_hybrid200.md",
+  "question": "How do predefined mixed-thinking and batching controls affect dev200 behavior?",
+  "started_at": null,
+  "timezone": "Asia/Seoul",
+  "time_evidence": "No verified orchestration start; see timestamp-candidates.json and original logs. September 2026 is established by the linked historical project records.",
+  "migration_at": "2026-09-13T15:13:30.145695+00:00",
+  "status": "historical; inspect per-condition execution records",
+  "judgment": "Predefined main, batch controls, and cache probes are retained as a sweep. It was not adopted as a winning replacement.",
+  "conditions": {
+    "main": {
+      "settings": {
+        "recorded_condition": "main",
+        "scope": "See preserved original manifest and source for exact settings."
+      },
+      "status": "historical",
+      "attempts": [],
+      "artifact_path": "main"
+    },
+    "six_off": {
+      "settings": {
+        "recorded_condition": "six_off",
+        "scope": "See preserved original manifest and source for exact settings."
+      },
+      "status": "historical",
+      "attempts": [],
+      "artifact_path": "six_off"
+    },
+    "six_on256": {
+      "settings": {
+        "recorded_condition": "six_on256",
+        "scope": "See preserved original manifest and source for exact settings."
+      },
+      "status": "historical",
+      "attempts": [],
+      "artifact_path": "six_on256"
+    },
+    "six_on1024_batch8": {
+      "settings": {
+        "recorded_condition": "six_on1024_batch8",
+        "scope": "See preserved original manifest and source for exact settings."
+      },
+      "status": "historical",
+      "attempts": [],
+      "artifact_path": "six_on1024_batch8"
+    },
+    "optimized": {
+      "settings": {
+        "recorded_condition": "optimized",
+        "scope": "See preserved original manifest and source for exact settings."
+      },
+      "status": "historical",
+      "attempts": [],
+      "artifact_path": "optimized"
+    },
+    "optimized_off": {
+      "settings": {
+        "recorded_condition": "optimized_off",
+        "scope": "See preserved original manifest and source for exact settings."
+      },
+      "status": "historical",
+      "attempts": [],
+      "artifact_path": "optimized_off"
+    },
+    "cache_probes": {
+      "settings": {
+        "recorded_condition": "cache probes",
+        "scope": "See preserved original manifest and source for exact settings."
+      },
+      "status": "historical",
+      "attempts": [],
+      "artifact_path": "."
+    }
+  },
+  "max_attempts": 0,
+  "predecessors": [],
+  "followups": [
+    {
+      "run_id": "legacy_on0_200",
+      "reason": "The hybrid cache/mode observations motivated OFF versus ON0 comparison; zero thinking budget and mode differ under the recorded paired conditions."
+    },
+    {
+      "run_id": "legacy_hybrid_repair",
+      "reason": "Observed optimized-OFF failure triggered separate isolated recovery with unchanged prompt/OFF mode/output2048."
+    },
+    {
+      "run_id": "legacy_continuous_pilot",
+      "reason": "The hybrid study motivated a new completion-driven pilot; predefined barrier/prefill budgets were compared before choosing the full200 budget."
+    }
+  ],
+  "original_files": {
+    "analysis/hybrid200/analysis_source_manifest.json": {
+      "path": "analysis_source_manifest.json",
+      "sha256": "74b8ee72f4827eb7539179061f3aca2f18ba045a670451bfb5902c3c3e6e6486",
+      "size": 404
+    },
+    "analysis/hybrid200/batch_control_plan.json": {
+      "path": "batch_control_plan.json",
+      "sha256": "37256dfe7d1f4670275073a7437af8333c34481113e2a167d8dffb81e3535403",
+      "size": 792
+    },
+    "analysis/hybrid200/batch_controls.log": {
+      "path": "batch_controls.log",
+      "sha256": "cec79b940f6671a7c5ccd39cd94d66a7fd1525768c762cfd5550e20485b29e79",
+      "size": 59295
+    },
+    "analysis/hybrid200/cache_analysis.json": {
+      "path": "cache_analysis.json",
+      "sha256": "91fb6d4a46160eb5218043d7e19bbab40fc34cbcfba3fdc72027ef42160051e5",
+      "size": 2980
+    },
+    "analysis/hybrid200/comparison.json": {
+      "path": "comparison.json",
+      "sha256": "f77bb03c48c74ff30bb40258c49ef1240ff608b0f8ebf3faa335d183b3f32cf7",
+      "size": 34703
+    },
+    "analysis/hybrid200/composite_six_off/errors.csv": {
+      "path": "composite_six_off/errors.csv",
+      "sha256": "ac8eaa8cb7df304b81fcae5b1be2debcd8c37a3a7d6fe1ef4f6c57def12827ce",
+      "size": 34745
+    },
+    "analysis/hybrid200/composite_six_off/evaluation.json": {
+      "path": "composite_six_off/evaluation.json",
+      "sha256": "c9a214f731b43bd596f5cd35c15cccc114e0ee7890052be5bbe7bb8ed590d372",
+      "size": 9553
+    },
+    "analysis/hybrid200/composite_six_off/report.json": {
+      "path": "composite_six_off/report.json",
+      "sha256": "16d2f80eaada991f7b68abb78334ee08e359f555b33fcd665ffea9a5a8a766c7",
+      "size": 1424
+    },
+    "analysis/hybrid200/composite_six_off/submission.csv": {
+      "path": "composite_six_off/submission.csv",
+      "sha256": "1261e1fe3da1644a870f4302725de3295fb6aa91f774c138c3ce54eb67c47f4c",
+      "size": 32978
+    },
+    "analysis/hybrid200/composite_six_off/trace.jsonl": {
+      "path": "composite_six_off/trace.jsonl",
+      "sha256": "07b1bb2dffb757928355701a82a95b976f5252f40cca63a00cc09b487d1f68e7",
+      "size": 968650
+    },
+    "analysis/hybrid200/composite_six_on1024_batch8/errors.csv": {
+      "path": "composite_six_on1024_batch8/errors.csv",
+      "sha256": "a6b6905006aea23891a76fae9c1a45320c99b8d626639b552b354bfc860d384e",
+      "size": 31086
+    },
+    "analysis/hybrid200/composite_six_on1024_batch8/evaluation.json": {
+      "path": "composite_six_on1024_batch8/evaluation.json",
+      "sha256": "b66feb9be7de32868f76739cdf38d7a3448ffb055a9e97abc0b93b565d6bdc29",
+      "size": 9670
+    },
+    "analysis/hybrid200/composite_six_on1024_batch8/report.json": {
+      "path": "composite_six_on1024_batch8/report.json",
+      "sha256": "65da47adfff909d9e19dedde0aac93efc184fef52164c3ce7baa1604bd14175c",
+      "size": 1461
+    },
+    "analysis/hybrid200/composite_six_on1024_batch8/submission.csv": {
+      "path": "composite_six_on1024_batch8/submission.csv",
+      "sha256": "06d41a0711039b9755e908d5127edf72072af3d4a28ce6b4c168ce9ac45d4ee0",
+      "size": 32031
+    },
+    "analysis/hybrid200/composite_six_on1024_batch8/trace.jsonl": {
+      "path": "composite_six_on1024_batch8/trace.jsonl",
+      "sha256": "14b746ee1b7b8fd9e4b45eea70b779bb946ab5a03de045e646e62a67190941dd",
+      "size": 972908
+    },
+    "analysis/hybrid200/composite_six_on256/errors.csv": {
+      "path": "composite_six_on256/errors.csv",
+      "sha256": "fc757e902c89c58aa1726e939cfa92b208c693096e47a85319f72568fa86b262",
+      "size": 32395
+    },
+    "analysis/hybrid200/composite_six_on256/evaluation.json": {
+      "path": "composite_six_on256/evaluation.json",
+      "sha256": "0d4df18b8f45bffe061b8a35decb4510a1dc048ee13ec73f1fb5bc57e8b7ac61",
+      "size": 9535
+    },
+    "analysis/hybrid200/composite_six_on256/report.json": {
+      "path": "composite_six_on256/report.json",
+      "sha256": "dbf3b367d48374f05ab50f27bf7ef812cae8f2d2716ab2c6c9220a4335c43b51",
+      "size": 1445
+    },
+    "analysis/hybrid200/composite_six_on256/submission.csv": {
+      "path": "composite_six_on256/submission.csv",
+      "sha256": "ff345215ab4d837eb495b1c1154d0a925d8a8ead55edb07f35024770a6985842",
+      "size": 31882
+    },
+    "analysis/hybrid200/composite_six_on256/trace.jsonl": {
+      "path": "composite_six_on256/trace.jsonl",
+      "sha256": "d111b2014ee57497b74e26bf15f2759fb0141222766dcbc69b744a3f8d1cc143",
+      "size": 969329
+    },
+    "analysis/hybrid200/decision_plan.json": {
+      "path": "decision_plan.json",
+      "sha256": "1dcc1236cc275f754c43e5ddcd0945ca3fc712b3960b4e635295e5947c95539e",
+      "size": 577
+    },
+    "analysis/hybrid200/engine_all.json": {
+      "path": "engine_all.json",
+      "sha256": "f723abd408a41f04122c31bf2080592d894cbfee305a6124cc1dc8e5266e8f73",
+      "size": 157
+    },
+    "analysis/hybrid200/engine_batch_controls.json": {
+      "path": "engine_batch_controls.json",
+      "sha256": "b2cf6d89191ac159b92ab2faff2f3d5eeaf283e4d987987ab1c42980c6a172a6",
+      "size": 92
+    },
+    "analysis/hybrid200/main/errors.csv": {
+      "path": "main/errors.csv",
+      "sha256": "9a815e01474adf098b954f95b316c14e9b24e69048a25e65c043ec0e9bdb7699",
+      "size": 30584
+    },
+    "analysis/hybrid200/main/evaluation.json": {
+      "path": "main/evaluation.json",
+      "sha256": "953e580fc1a3a4efe471646d4674643346bf81f37fa1bb0e69934314debbcd70",
+      "size": 9421
+    },
+    "analysis/hybrid200/main/model_batches.json": {
+      "path": "main/model_batches.json",
+      "sha256": "a2d08b0aca07a0d6f0892d2ddf512bfe84f30999a32392af13b0344199dc3710",
+      "size": 73501
+    },
+    "analysis/hybrid200/main/notice_timings.json": {
+      "path": "main/notice_timings.json",
+      "sha256": "97f7e5900b601586c0db90ea47b643a2e6b450b31b3b78eb22332c8e9520e539",
+      "size": 196099
+    },
+    "analysis/hybrid200/main/report.json": {
+      "path": "main/report.json",
+      "sha256": "91fb65cba062eb1b21b5d4f97cf1a1c367954d38e908e24c9f5e02931a67302a",
+      "size": 1247
+    },
+    "analysis/hybrid200/main/request_timings.jsonl": {
+      "path": "main/request_timings.jsonl",
+      "sha256": "52b7b027585491820000c54ef8af2ce874bcb0a5d269d7d4c0b6ebf111ed4da0",
+      "size": 570957
+    },
+    "analysis/hybrid200/main/rules.jsonl": {
+      "path": "main/rules.jsonl",
+      "sha256": "092874a759e22ce640fb09cba4fb6e93bd0f229603c382f97938ec0f731d187d",
+      "size": 110731
+    },
+    "analysis/hybrid200/main/submission.csv": {
+      "path": "main/submission.csv",
+      "sha256": "8115e97a26e5dd8e29bb74e2f18b5ecff3cd706a47da2b3d9892ebd42b04a5c9",
+      "size": 31539
+    },
+    "analysis/hybrid200/main/trace.jsonl": {
+      "path": "main/trace.jsonl",
+      "sha256": "007eaf311c691e350c96021859d0b9b762e8feb28b31af7b74f6a868cc045422",
+      "size": 907929
+    },
+    "analysis/hybrid200/manifest.json": {
+      "path": "manifest.json",
+      "sha256": "99ffcf3197696a5c53a50ff5aeafe5d9c562e40d4d1485569fa66b2ed7509978",
+      "size": 66298
+    },
+    "analysis/hybrid200/optimized/errors.csv": {
+      "path": "optimized/errors.csv",
+      "sha256": "6b81e1c4633b97eca48d713262681ed708adab922c8c7a269fd189f432f4a677",
+      "size": 31262
+    },
+    "analysis/hybrid200/optimized/evaluation.json": {
+      "path": "optimized/evaluation.json",
+      "sha256": "3bfaf516e0f613a18fd66f650ce25ffdc62d2429d4901b58ca1aa312e81a6c32",
+      "size": 9381
+    },
+    "analysis/hybrid200/optimized/model_batches.json": {
+      "path": "optimized/model_batches.json",
+      "sha256": "3e120cc6ba63982f36a15562889768e027069396d14ff8ae682c2f3625142846",
+      "size": 33252
+    },
+    "analysis/hybrid200/optimized/notice_timings.json": {
+      "path": "optimized/notice_timings.json",
+      "sha256": "ae1d4ea8e9bbb965103829ac5cd3f7ded6e6e6241dd895a182cda4e4c80966eb",
+      "size": 66719
+    },
+    "analysis/hybrid200/optimized/report.json": {
+      "path": "optimized/report.json",
+      "sha256": "2cf259aa01153d9987ccfa441d5ebbfb2d2b45434986597b9161ba1354cb1667",
+      "size": 1250
+    },
+    "analysis/hybrid200/optimized/request_timings.jsonl": {
+      "path": "optimized/request_timings.jsonl",
+      "sha256": "1e7e17ce8281c6a40c10c2bb8b669c49b819dc488c46e5322bf71fa321aad80c",
+      "size": 600265
+    },
+    "analysis/hybrid200/optimized/rules.jsonl": {
+      "path": "optimized/rules.jsonl",
+      "sha256": "092874a759e22ce640fb09cba4fb6e93bd0f229603c382f97938ec0f731d187d",
+      "size": 110731
+    },
+    "analysis/hybrid200/optimized/submission.csv": {
+      "path": "optimized/submission.csv",
+      "sha256": "b644589b07a65400ae540a9c5fe55438eae6446f2ebb353430c74a3e7862e369",
+      "size": 31157
+    },
+    "analysis/hybrid200/optimized/trace.jsonl": {
+      "path": "optimized/trace.jsonl",
+      "sha256": "c98baf5b2d9b10ed36cc99274aa27c817a6934e88ac9220f9462db99339b6aff",
+      "size": 971484
+    },
+    "analysis/hybrid200/optimized_off/first_pass/model_batches.json": {
+      "path": "optimized_off/first_pass/model_batches.json",
+      "sha256": "83a713cdad6465c85a53aa5d1652efb08d3597b0dbd84b5c1d77238309a14225",
+      "size": 27430
+    },
+    "analysis/hybrid200/optimized_off/first_pass/notice_timings.json": {
+      "path": "optimized_off/first_pass/notice_timings.json",
+      "sha256": "d7f9f9e88b7fb07e9e6bf8b347a2d7853e8b17aa105e2c1f77b4502211fcc8c0",
+      "size": 63574
+    },
+    "analysis/hybrid200/optimized_off/first_pass/report.json": {
+      "path": "optimized_off/first_pass/report.json",
+      "sha256": "2a17f54f4793d2436867da2660a3a605b7eb0f7e97fd7f7d6f87ae1a9a6f5f9a",
+      "size": 1233
+    },
+    "analysis/hybrid200/optimized_off/first_pass/request_timings.jsonl": {
+      "path": "optimized_off/first_pass/request_timings.jsonl",
+      "sha256": "8c4f1a60b97d372850ca338397b0174deeb2a276bf3fe07bad047de34a980e89",
+      "size": 585978
+    },
+    "analysis/hybrid200/optimized_off/first_pass/trace.jsonl": {
+      "path": "optimized_off/first_pass/trace.jsonl",
+      "sha256": "8307c9366b1d1c5204c0ab2d4b1fb906f69fef46a98ee0fa6b426e625a57fec7",
+      "size": 967775
+    },
+    "analysis/hybrid200/optimized_off/rules.jsonl": {
+      "path": "optimized_off/rules.jsonl",
+      "sha256": "092874a759e22ce640fb09cba4fb6e93bd0f229603c382f97938ec0f731d187d",
+      "size": 110731
+    },
+    "analysis/hybrid200/per_feature.csv": {
+      "path": "per_feature.csv",
+      "sha256": "6f7facd8464e9c4c59680a3b2168bbdf6f529ffb5bb1a9b31e69f466ae69b83b",
+      "size": 6441
+    },
+    "analysis/hybrid200/preliminary_cache.json": {
+      "path": "preliminary_cache.json",
+      "sha256": "45d126b01419de365bfc3decbed5725541187186ff513f16aeeb4319b37e220c",
+      "size": 1657
+    },
+    "analysis/hybrid200/preliminary_on_off_bootstrap.json": {
+      "path": "preliminary_on_off_bootstrap.json",
+      "sha256": "e5adde3e167f15d5991fb986d2d4a79b8c67c4a4a03d63a227f4ac283a14da92",
+      "size": 237
+    },
+    "analysis/hybrid200/probes/model_batches.json": {
+      "path": "probes/model_batches.json",
+      "sha256": "c20a87b759bbee9c5fb61de2fe9406225b245c524a3524076572b673d7611337",
+      "size": 8689
+    },
+    "analysis/hybrid200/probes/pairs.json": {
+      "path": "probes/pairs.json",
+      "sha256": "21237bd577e191f82bf69e43c722ff74660668ab1edeecd2a0a9af67f80b97af",
+      "size": 50295
+    },
+    "analysis/hybrid200/probes/request_timings.jsonl": {
+      "path": "probes/request_timings.jsonl",
+      "sha256": "b512967912aa032a046464c52880becf8ed59a5710ae98f336f214372af18cf2",
+      "size": 41110
+    },
+    "analysis/hybrid200/prompt_1.txt": {
+      "path": "prompt_1.txt",
+      "sha256": "4cdd22ad88340a601f00b16686e5185a58413c66e9189fd6cb2f4e59a7e79e73",
+      "size": 1698
+    },
+    "analysis/hybrid200/prompt_2.txt": {
+      "path": "prompt_2.txt",
+      "sha256": "bec89d149c013c8fdadb76066a032c44df3b6fb077672678d8239f7638a89903",
+      "size": 1759
+    },
+    "analysis/hybrid200/prompt_3.txt": {
+      "path": "prompt_3.txt",
+      "sha256": "eadef4327f94b939d44241d230190f19b981e0a15b02c3c325ae5ead6244326d",
+      "size": 1746
+    },
+    "analysis/hybrid200/prompt_4.txt": {
+      "path": "prompt_4.txt",
+      "sha256": "9d4d494f9771622b8486d56be63919941046c80371bb17aac40cb7cb51ac72ab",
+      "size": 2200
+    },
+    "analysis/hybrid200/prompt_5.txt": {
+      "path": "prompt_5.txt",
+      "sha256": "b1870398fc4e7952307fb1a4dfd3c94c194ad62716e77fdf50da07516abfea8e",
+      "size": 2240
+    },
+    "analysis/hybrid200/run.log": {
+      "path": "run.log",
+      "sha256": "5088aa11c633cda5d0dc93d21fef93945fafdd02a68efda21c872e920b917bd1",
+      "size": 106131
+    },
+    "analysis/hybrid200/schema_1.json": {
+      "path": "schema_1.json",
+      "sha256": "78ae536ea3ecffcb46411a96dc54080061427c476f9e6b75f83ae3cb45d439fc",
+      "size": 3520
+    },
+    "analysis/hybrid200/schema_2.json": {
+      "path": "schema_2.json",
+      "sha256": "02069485e61d8de2b0a30cc98671054db8d7ed4dfbc8c9e9ce77a4e098d6c8e3",
+      "size": 3312
+    },
+    "analysis/hybrid200/schema_3.json": {
+      "path": "schema_3.json",
+      "sha256": "cf774b08d9929abde3ae5b950ac61be5ba341584c7f67154b467bc22d5931426",
+      "size": 3312
+    },
+    "analysis/hybrid200/schema_4.json": {
+      "path": "schema_4.json",
+      "sha256": "95d47dd79dd66dd7319c49d9bb8ea35b185584f0d5260a1fe3d3c0d92c3012f4",
+      "size": 3420
+    },
+    "analysis/hybrid200/schema_5.json": {
+      "path": "schema_5.json",
+      "sha256": "adc961845f78e3c62dbca346521238a5377824205d43c71aecf515524eac6040",
+      "size": 4846
+    },
+    "analysis/hybrid200/six_off/model_batches.json": {
+      "path": "six_off/model_batches.json",
+      "sha256": "379c81f3449748aaa3320d62be00f58beed6b5a353d178c5bf39e9e7726ad441",
+      "size": 23513
+    },
+    "analysis/hybrid200/six_off/notice_timings.json": {
+      "path": "six_off/notice_timings.json",
+      "sha256": "c73de1643571c9ec1472d9b1d45d4958995a6f24a9eca128e61922668633da70",
+      "size": 55593
+    },
+    "analysis/hybrid200/six_off/report.json": {
+      "path": "six_off/report.json",
+      "sha256": "15362d660bb56918d36dacc0a799d13c56afeda66573a390924b6eeb89247e21",
+      "size": 220
+    },
+    "analysis/hybrid200/six_off/request_timings.jsonl": {
+      "path": "six_off/request_timings.jsonl",
+      "sha256": "316588a58682b06d2f2a7f84b97de8f87304b4db18e9727552d8d4262a2e5ecf",
+      "size": 113413
+    },
+    "analysis/hybrid200/six_off/trace.jsonl": {
+      "path": "six_off/trace.jsonl",
+      "sha256": "0585b857daccb82211cd1217ad59196d6cfd0cda0e6537ddd5ed9ad70651abbd",
+      "size": 221263
+    },
+    "analysis/hybrid200/six_on1024_batch8/chunk_timings.json": {
+      "path": "six_on1024_batch8/chunk_timings.json",
+      "sha256": "80ace722a4825c8410c34de5caff127d0af10ec24817f3db0ef25abee7578e11",
+      "size": 9802
+    },
+    "analysis/hybrid200/six_on1024_batch8/model_batches.json": {
+      "path": "six_on1024_batch8/model_batches.json",
+      "sha256": "f9e63e6905e1ea9190521cff237952d4bf4ff4101e391dafb496ad75f28840b2",
+      "size": 5266
+    },
+    "analysis/hybrid200/six_on1024_batch8/report.json": {
+      "path": "six_on1024_batch8/report.json",
+      "sha256": "bd2e58e11c2ec540fb577f15b8cf29ed32d8b2332155fc43361f152192fff758",
+      "size": 250
+    },
+    "analysis/hybrid200/six_on1024_batch8/request_timings.jsonl": {
+      "path": "six_on1024_batch8/request_timings.jsonl",
+      "sha256": "5e351dfb1615c3aa650d7f8e63b109037cc9fd473c33a3f386a0405e6d5778fc",
+      "size": 131094
+    },
+    "analysis/hybrid200/six_on1024_batch8/trace.jsonl": {
+      "path": "six_on1024_batch8/trace.jsonl",
+      "sha256": "7604a33044584a6317b1a7e5ae474393eb46c349c266d39be4282815282cf39d",
+      "size": 240121
+    },
+    "analysis/hybrid200/six_on256/model_batches.json": {
+      "path": "six_on256/model_batches.json",
+      "sha256": "bd48ce1487c923ccaca6046394519347585fa1a22c0638fdb03aaf5dd5ea8f75",
+      "size": 23844
+    },
+    "analysis/hybrid200/six_on256/notice_timings.json": {
+      "path": "six_on256/notice_timings.json",
+      "sha256": "f844426e329158fc9c5d8d1a848ecec8eb2a973e5083b9f8acbf0f075aabd69e",
+      "size": 55580
+    },
+    "analysis/hybrid200/six_on256/report.json": {
+      "path": "six_on256/report.json",
+      "sha256": "789f367c706952e3da6f26e56046e55f4f747af417df55c72e1f932b0eda885e",
+      "size": 222
+    },
+    "analysis/hybrid200/six_on256/request_timings.jsonl": {
+      "path": "six_on256/request_timings.jsonl",
+      "sha256": "25806894f81a3f6894b59c17bc87dcb720dfd128fd98d946d94d4ecc9c1a9aa8",
+      "size": 113704
+    },
+    "analysis/hybrid200/six_on256/trace.jsonl": {
+      "path": "six_on256/trace.jsonl",
+      "sha256": "2d753d36ad6b803902cf9d6f63e777d02c2218c6f695409ba45c6138142611de",
+      "size": 221942
+    },
+    "analysis/hybrid200/source/data/dev.jsonl": {
+      "path": "source/data/dev.jsonl",
+      "sha256": "5507f5ab0ba53b708f87211ed050dbe531b48a626ace6084c3ccaefb53147534",
+      "size": 8310888
+    },
+    "analysis/hybrid200/source/data/정답스키마_디코딩.json": {
+      "path": "source/data/정답스키마_디코딩.json",
+      "sha256": "149580162261b446090bec075eb4c13f765a771c827b6bbe06660eb833a3c2ac",
+      "size": 13751
+    },
+    "analysis/hybrid200/source/data/항목표.json": {
+      "path": "source/data/항목표.json",
+      "sha256": "368cb41f376d8ad7edbbdf181542e6e959de356f7f70d86e72943325ecad61d9",
+      "size": 11273
+    },
+    "analysis/hybrid200/source/nara/compact_criteria.json": {
+      "path": "source/nara/compact_criteria.json",
+      "sha256": "84cc8ca7f625f51e55206fc581a28e36df4551999c4009de84188f273bd06a04",
+      "size": 6190
+    },
+    "analysis/hybrid200/source/nara/compact_predictor.py": {
+      "path": "source/nara/compact_predictor.py",
+      "sha256": "046002710b57ad799ff6f287f016ae215c2109338b66d3706570c8ac8651f969",
+      "size": 961
+    },
+    "analysis/hybrid200/source/nara/hybrid_experiment.py": {
+      "path": "source/nara/hybrid_experiment.py",
+      "sha256": "c83e8296c1d88db5d13ba715c8ef6c98aa4c0086ee709058b638631130096a59",
+      "size": 3365
+    },
+    "analysis/hybrid200/source/nara/hypothesis6.py": {
+      "path": "source/nara/hypothesis6.py",
+      "sha256": "850ebdceff80371dc8bd4859813e86e017552941b44dfdb4773b672576c925ba",
+      "size": 7705
+    },
+    "analysis/hybrid200/source/nara/inference.py": {
+      "path": "source/nara/inference.py",
+      "sha256": "e09a87a3113399f2656d119b18536a59b70128242547fbd92774eee5c07dd226",
+      "size": 19312
+    },
+    "analysis/hybrid200/source/nara/prefix_predictor.py": {
+      "path": "source/nara/prefix_predictor.py",
+      "sha256": "aee83eb0ce46cef8f2cbc7bc8697a94282d0b7908306fff55b5416d271ed19b7",
+      "size": 2441
+    },
+    "analysis/hybrid200/source/nara/vllm_model.py": {
+      "path": "source/nara/vllm_model.py",
+      "sha256": "c3ae5a8f7bd75365e0d685018fab22733a917fca423eacf2fb7f623e4e8c1e0d",
+      "size": 3937
+    },
+    "analysis/hybrid200/source/scripts/benchmark_hybrid200.py": {
+      "path": "source/scripts/benchmark_hybrid200.py",
+      "sha256": "b8f17813f4cb8507b237d26a10c244a33d24f277b1a493d449d7908b0253c3e2",
+      "size": 12991
+    },
+    "analysis/hybrid200/source/scripts/benchmark_hybrid_batch_controls.py": {
+      "path": "source/scripts/benchmark_hybrid_batch_controls.py",
+      "sha256": "6c3955fa8c8c8290ead2f2d5ee1643c8002b6e582684f5ec93166452b9276b64",
+      "size": 7724
+    },
+    "analysis/hybrid200/source/scripts/recover_hybrid200.py": {
+      "path": "source/scripts/recover_hybrid200.py",
+      "sha256": "04650e0294ffd1476c47551d37528ff8bd3511d2836ffa484980b030f05f3611",
+      "size": 6643
+    },
+    "analysis/hybrid200/source/scripts/summarize_hybrid200.py": {
+      "path": "source/scripts/summarize_hybrid200.py",
+      "sha256": "e1bf3096b2772093e2a264492f1b09124400f0ae258bdad9ceae19087ae72800",
+      "size": 30353
+    },
+    "analysis/hybrid200/source/tests/test_hybrid.py": {
+      "path": "source/tests/test_hybrid.py",
+      "sha256": "7c6f39cd61f02f105dafa57c82151c730a2154baa5220e2798a2b38c189134f2",
+      "size": 1991
+    },
+    "analysis/hybrid200/source/tests/test_hybrid_timing.py": {
+      "path": "source/tests/test_hybrid_timing.py",
+      "sha256": "f6f2e44deb1258cc2cc57cf1925790fc112513fd54643ff02e9ab128f3a2b089",
+      "size": 1858
+    },
+    "analysis/hybrid200/summary.log": {
+      "path": "summary.log",
+      "sha256": "5de9700a0c99f33c679c1ae805ba0bfb18d9876de4556e57a43e91927a479428",
+      "size": 8144
+    },
+    "analysis/hybrid200/timing_analysis.json": {
+      "path": "timing_analysis.json",
+      "sha256": "2ee2518aa907aa6515b156cb291da158df0481a54afe24565c989a8c31a15ed1",
+      "size": 11752
+    },
+    "analysis/hybrid200/unchanged_group_audit.json": {
+      "path": "unchanged_group_audit.json",
+      "sha256": "b09afd273c119dd0f011ebf2624177d7aa46664ae5a46444a159c4ed260689a9",
+      "size": 374
+    },
+    "analysis/hybrid200/validation.json": {
+      "path": "validation.json",
+      "sha256": "cd528726ff9df8daa4a44956ace85576c7750987efdee8d8229dedb2440ca3ef",
+      "size": 298
+    },
+    "analysis/hybrid200/zero_budget_static_check.json": {
+      "path": "zero_budget_static_check.json",
+      "sha256": "53fc66b635b812506351bf1d29cd37a791d7a17db367f679611d4d861cc7ddc9",
+      "size": 301
+    }
+  },
+  "temporary_paths": [
+    "tmp/structure-migration-20260913"
+  ],
+  "migration_inventory": "docs/maintenance/evidence/structure-migration/mapping.json",
+  "reproducibility": "Original content retained. Local datasets/models require matching separately restored bytes; historical commands may need current reconstruction guidance.",
+  "recorded_condition_evidence": [
+    {
+      "path": "composite_six_off/report.json",
+      "values": {
+        "options": {
+          "model_dir": "models/gemma-4-26B-A4B-it-NVFP4",
+          "max_model_len": 32768,
+          "thinking": false,
+          "item_group_size": 6
+        },
+        "limits": {
+          "batch_size": 8,
+          "search_rounds": 2,
+          "queries_per_round": 4,
+          "top_k": 5,
+          "round_tokens": 4096,
+          "total_retrieval_tokens": 8192,
+          "output_tokens": 2048,
+          "retries": 1,
+          "require_search": false
+        },
+        "groups": [
+          [
+            "v4",
+            "v6",
+            "v7",
+            "v8"
+          ],
+          [
+            "v10",
+            "v11",
+            "v12",
+            "v13"
+          ],
+          [
+            "v15",
+            "v16",
+            "v17",
+            "v18"
+          ],
+          [
+            "v19",
+            "v20",
+            "v21",
+            "v23"
+          ],
+          [
+            "v1",
+            "v5",
+            "v9",
+            "v14",
+            "v22",
+            "v24"
+          ]
+        ]
+      }
+    },
+    {
+      "path": "composite_six_on1024_batch8/report.json",
+      "values": {
+        "options": {
+          "model_dir": "models/gemma-4-26B-A4B-it-NVFP4",
+          "max_model_len": 32768,
+          "thinking": "mixed six_on1024_batch8",
+          "item_group_size": 6
+        },
+        "limits": {
+          "batch_size": 8,
+          "search_rounds": 2,
+          "queries_per_round": 4,
+          "top_k": 5,
+          "round_tokens": 4096,
+          "total_retrieval_tokens": 8192,
+          "output_tokens": 2048,
+          "retries": 1,
+          "require_search": false
+        },
+        "groups": [
+          [
+            "v4",
+            "v6",
+            "v7",
+            "v8"
+          ],
+          [
+            "v10",
+            "v11",
+            "v12",
+            "v13"
+          ],
+          [
+            "v15",
+            "v16",
+            "v17",
+            "v18"
+          ],
+          [
+            "v19",
+            "v20",
+            "v21",
+            "v23"
+          ],
+          [
+            "v1",
+            "v5",
+            "v9",
+            "v14",
+            "v22",
+            "v24"
+          ]
+        ]
+      }
+    },
+    {
+      "path": "composite_six_on256/report.json",
+      "values": {
+        "options": {
+          "model_dir": "models/gemma-4-26B-A4B-it-NVFP4",
+          "max_model_len": 32768,
+          "thinking": "mixed six_on256",
+          "item_group_size": 6
+        },
+        "limits": {
+          "batch_size": 8,
+          "search_rounds": 2,
+          "queries_per_round": 4,
+          "top_k": 5,
+          "round_tokens": 4096,
+          "total_retrieval_tokens": 8192,
+          "output_tokens": 2048,
+          "retries": 1,
+          "require_search": false
+        },
+        "groups": [
+          [
+            "v4",
+            "v6",
+            "v7",
+            "v8"
+          ],
+          [
+            "v10",
+            "v11",
+            "v12",
+            "v13"
+          ],
+          [
+            "v15",
+            "v16",
+            "v17",
+            "v18"
+          ],
+          [
+            "v19",
+            "v20",
+            "v21",
+            "v23"
+          ],
+          [
+            "v1",
+            "v5",
+            "v9",
+            "v14",
+            "v22",
+            "v24"
+          ]
+        ]
+      }
+    },
+    {
+      "path": "main/report.json",
+      "values": {
+        "options": {
+          "model_dir": "models/gemma-4-26B-A4B-it-NVFP4",
+          "max_model_len": 32768,
+          "thinking": "mixed: four OFF, six-feature group ON1024",
+          "item_group_size": 6
+        },
+        "limits": {
+          "batch_size": 8,
+          "search_rounds": 2,
+          "queries_per_round": 4,
+          "top_k": 5,
+          "round_tokens": 4096,
+          "total_retrieval_tokens": 8192,
+          "output_tokens": 2048,
+          "retries": 1,
+          "require_search": false
+        },
+        "groups": [
+          [
+            "v4",
+            "v6",
+            "v7",
+            "v8"
+          ],
+          [
+            "v10",
+            "v11",
+            "v12",
+            "v13"
+          ],
+          [
+            "v15",
+            "v16",
+            "v17",
+            "v18"
+          ],
+          [
+            "v19",
+            "v20",
+            "v21",
+            "v23"
+          ],
+          [
+            "v1",
+            "v5",
+            "v9",
+            "v14",
+            "v22",
+            "v24"
+          ]
+        ]
+      }
+    },
+    {
+      "path": "manifest.json",
+      "values": {
+        "groups": [
+          [
+            "v4",
+            "v6",
+            "v7",
+            "v8"
+          ],
+          [
+            "v10",
+            "v11",
+            "v12",
+            "v13"
+          ],
+          [
+            "v15",
+            "v16",
+            "v17",
+            "v18"
+          ],
+          [
+            "v19",
+            "v20",
+            "v21",
+            "v23"
+          ],
+          [
+            "v1",
+            "v5",
+            "v9",
+            "v14",
+            "v22",
+            "v24"
+          ]
+        ],
+        "limits": {
+          "batch_size": 8,
+          "search_rounds": 2,
+          "queries_per_round": 4,
+          "top_k": 5,
+          "round_tokens": 4096,
+          "total_retrieval_tokens": 8192,
+          "output_tokens": 2048,
+          "retries": 1,
+          "require_search": false
+        }
+      }
+    },
+    {
+      "path": "optimized/report.json",
+      "values": {
+        "options": {
+          "model_dir": "models/gemma-4-26B-A4B-it-NVFP4",
+          "max_model_len": 32768,
+          "thinking": "mixed: four OFF, six-feature ON256 batch8",
+          "item_group_size": 6
+        },
+        "limits": {
+          "batch_size": 8,
+          "search_rounds": 2,
+          "queries_per_round": 4,
+          "top_k": 5,
+          "round_tokens": 4096,
+          "total_retrieval_tokens": 8192,
+          "output_tokens": 2048,
+          "retries": 1,
+          "require_search": false
+        },
+        "groups": [
+          [
+            "v4",
+            "v6",
+            "v7",
+            "v8"
+          ],
+          [
+            "v10",
+            "v11",
+            "v12",
+            "v13"
+          ],
+          [
+            "v15",
+            "v16",
+            "v17",
+            "v18"
+          ],
+          [
+            "v19",
+            "v20",
+            "v21",
+            "v23"
+          ],
+          [
+            "v1",
+            "v5",
+            "v9",
+            "v14",
+            "v22",
+            "v24"
+          ]
+        ]
+      }
+    },
+    {
+      "path": "optimized_off/first_pass/report.json",
+      "values": {
+        "options": {
+          "model_dir": "models/gemma-4-26B-A4B-it-NVFP4",
+          "max_model_len": 32768,
+          "thinking": false,
+          "item_group_size": 6
+        },
+        "limits": {
+          "batch_size": 8,
+          "search_rounds": 2,
+          "queries_per_round": 4,
+          "top_k": 5,
+          "round_tokens": 4096,
+          "total_retrieval_tokens": 8192,
+          "output_tokens": 2048,
+          "retries": 1,
+          "require_search": false
+        },
+        "groups": [
+          [
+            "v4",
+            "v6",
+            "v7",
+            "v8"
+          ],
+          [
+            "v10",
+            "v11",
+            "v12",
+            "v13"
+          ],
+          [
+            "v15",
+            "v16",
+            "v17",
+            "v18"
+          ],
+          [
+            "v19",
+            "v20",
+            "v21",
+            "v23"
+          ],
+          [
+            "v1",
+            "v5",
+            "v9",
+            "v14",
+            "v22",
+            "v24"
+          ]
+        ]
+      }
+    }
+  ],
+  "historical_provenance": {
+    "status": "retained where originally recorded; missing fields remain unknown",
+    "execution_sources": "Existing source/analysis_source contents and original manifests are authoritative; migration-time code is separately labeled",
+    "input_access": "Local input/model assets remain locally retained; original hashes are in manifests/evaluations. Another checkout must restore matching bytes.",
+    "original_temporary_paths": "Not reconstructed when absent from original evidence"
+  },
+  "migration_code_archive": "docs/maintenance/evidence/structure-migration/original-source.tar"
+}

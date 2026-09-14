@@ -1,0 +1,19 @@
+{
+  "records": 200,
+  "prediction_seconds": 388.61990323200007,
+  "load_seconds": 27.08075790700059,
+  "failed_ids": [
+    "PPS-DEV-13",
+    "PPS-DEV-052",
+    "PPS-DEV-104",
+    "PPS-DEV-155",
+    "PPS-DEV-184",
+    "PPS-DEV-188"
+  ],
+  "model_turns": 285,
+  "invalid_responses": 91,
+  "searches": 0,
+  "length_stops": 21,
+  "thinking_tokens": 0,
+  "output_tokens": 91546
+}

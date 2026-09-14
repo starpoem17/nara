@@ -1,0 +1,57 @@
+[
+  {
+    "path": "analysis/CMS_updated_cards_v19_v24_dev200_20260913/manifest.json",
+    "fields": {
+      "created_utc": "2026-09-13T04:51:39.996256+00:00"
+    }
+  },
+  {
+    "path": "analysis/LJM_original_v2_v8_20260912/manifest.json",
+    "fields": {
+      "candidate_gating": false
+    }
+  },
+  {
+    "path": "analysis/common_prompt_v2_512_final/plan.json",
+    "fields": {
+      "created_local": "2026-09-11 21:27:55 +0900"
+    }
+  },
+  {
+    "path": "analysis/common_prompt_v2_512/plan.json",
+    "fields": {
+      "created_local": "2026-09-11 21:23:10 +0900"
+    }
+  },
+  {
+    "path": "analysis/prefix_pipeline200/scheduling_summary.json",
+    "fields": {
+      "notices_after_startup": 198,
+      "starts_after_old_drained": 3
+    }
+  },
+  {
+    "path": "analysis/common_prompt_v2_512_run/plan.json",
+    "fields": {
+      "created_local": "2026-09-11 21:25:57 +0900"
+    }
+  },
+  {
+    "path": "analysis/common_prompt_v2_512_final/error_review/summary.json",
+    "fields": {
+      "all_31_candidate_positive_transitions_single_turn": true
+    }
+  },
+  {
+    "path": "output/experiments/engine-refactor-after-20260911/engine_refactor_audit.json",
+    "fields": {
+      "notices_after_startup": 198
+    }
+  },
+  {
+    "path": "output/experiments/engine-refactor-before-20260911/engine_refactor_audit.json",
+    "fields": {
+      "notices_after_startup": 198
+    }
+  }
+]

@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "record_kind": "historical_experiment",
+  "read_only": true,
+  "project_root": "../..",
+  "run_id": "legacy_cod_plain_gemma_20260912",
+  "area": "prompt-design",
+  "report": "docs/experiments/prompt-design/2026-09/legacy_cod_plain_gemma_20260912.md",
+  "question": "Generic zero/eight-shot CoD condition comparison",
+  "started_at": null,
+  "timezone": "Asia/Seoul",
+  "time_evidence": "No verified orchestration start; see timestamp-candidates.json and original logs. September 2026 is established by the linked historical project records.",
+  "migration_at": "2026-09-13T15:13:30.152873+00:00",
+  "status": "historical; inspect per-condition execution records",
+  "judgment": "Small synthetic format/completion observations only; no transferable dev200 improvement established.",
+  "conditions": {
+    "recorded_execution": {
+      "settings": {
+        "recorded_condition": "recorded execution",
+        "scope": "See preserved original manifest and source for exact settings."
+      },
+      "status": "historical",
+      "attempts": [],
+      "artifact_path": "."
+    }
+  },
+  "max_attempts": 0,
+  "predecessors": [],
+  "followups": [],
+  "original_files": {
+    "analysis/cod_plain_gemma/gsm8k_cod.yaml": {
+      "path": "support/cod_plain_gemma/gsm8k_cod.yaml",
+      "sha256": "c83a151f36af1a491080df441044d6dfeb2ada15cefeb98368c2f9e3563f13cb",
+      "size": 1889
+    },
+    "output/experiments/cod-plain-gemma-20260912/gsm8k_cod.yaml": {
+      "path": "gsm8k_cod.yaml",
+      "sha256": "c83a151f36af1a491080df441044d6dfeb2ada15cefeb98368c2f9e3563f13cb",
+      "size": 1889
+    },
+    "output/experiments/cod-plain-gemma-20260912/manifest.json": {
+      "path": "manifest.json",
+      "sha256": "46bf3b41710ebafc0f645d94077f01d1210e400511a07f473bafd48b56f133ed",
+      "size": 1428
+    },
+    "output/experiments/cod-plain-gemma-20260912/results.json": {
+      "path": "results.json",
+      "sha256": "35bf719ff218c83fce28d7faf7daa68f58f2d9bace3f0e6db9142357949af902",
+      "size": 136280
+    },
+    "output/experiments/cod-plain-gemma-20260912/script.py": {
+      "path": "script.py",
+      "sha256": "fa9f2bcfdf6592d9792462b1350eea83b61613277e084603342d7efc95977c07",
+      "size": 4821
+    },
+    "output/experiments/cod-plain-gemma-20260912/summary.json": {
+      "path": "summary.json",
+      "sha256": "92d8edc37f2bde0427dfb2bfcbce7eb9175a48a675f53bbd995f5f11588ddb8b",
+      "size": 658
+    }
+  },
+  "temporary_paths": [
+    "tmp/structure-migration-20260913"
+  ],
+  "migration_inventory": "docs/maintenance/evidence/structure-migration/mapping.json",
+  "reproducibility": "Original content retained. Local datasets/models require matching separately restored bytes; historical commands may need current reconstruction guidance.",
+  "recorded_condition_evidence": [
+    {
+      "path": "manifest.json",
+      "values": {
+        "model": "models/gemma-4-26B-A4B-it-NVFP4"
+      }
+    }
+  ],
+  "historical_provenance": {
+    "status": "retained where originally recorded; missing fields remain unknown",
+    "execution_sources": "Existing source/analysis_source contents and original manifests are authoritative; migration-time code is separately labeled",
+    "input_access": "Local input/model assets remain locally retained; original hashes are in manifests/evaluations. Another checkout must restore matching bytes.",
+    "original_temporary_paths": "Not reconstructed when absent from original evidence"
+  },
+  "migration_code_archive": "docs/maintenance/evidence/structure-migration/original-source.tar"
+}

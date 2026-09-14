@@ -1,0 +1,1210 @@
+author,id,feature,gold,valid,strict_format,format_violation,invalid_reason,error_type,prediction,evidence_json,evidence_empty,evidence_substring,absence_evidence_nonempty,positive_nonabsence_missing,positive_nonabsence_not_substring,normal_nonempty,finish_reason,stop_reason,output_tokens,raw_response
+CJH,PPS-DEV-01,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-02,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-03,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-04,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-05,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-06,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-07,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-08,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-09,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-10,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-11,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-12,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-13,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-14,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-15,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-16,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-17,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-18,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-19,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-20,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-21,v18,0,False,True,,invalid_json:Expecting value: line 1 column 1 (char 0),invalid,,null,,,False,False,False,False,stop,106,277,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```
+
+**판정 근거:**
+1. **구매 대상 식별:** 공고의 품명은 '우유'이며, 세부품명번호는 '5013170203'입니다. 제공된 경쟁제품 목록에는 해당 품목이 포함되어 있지 않으므로 일반제품(물품)에 해당합니다.
+2. **금액 확인:** meta의 입찰추정가격은 31,740,110원으로 1억 원 미만입니다.
+3. **기업 규모 제한 확인:** 공고문의 '3. 견적 참가자격 - 다'항에 ""「중소기업기본법」제2조에 따른 중소기업 또는 「소상공인 보호 및 지원에 관한 법률」제2조에 따른 소상공인으로서 ... 중소기업·소상공인확인서를 소지한 자이어야 합니다.""라고 명시되어 있어, **소기업·소상공인 제한이 존재**합니다.
+4. **결론:** 판정 기준에 따라 소기업·소상공인 제한이 있는 경우 '정상(0)'으로 판정합니다."
+CJH,PPS-DEV-22,v18,1,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-23,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-24,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-25,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-26,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-27,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-28,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 1,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-29,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-30,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-31,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-32,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-033,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-034,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-035,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-036,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-037,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-038,v18,1,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-039,v18,1,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-040,v18,1,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-041,v18,1,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-042,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-043,v18,1,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-044,v18,1,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-045,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-046,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-047,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-048,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-049,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-050,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-051,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-052,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-053,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-054,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-055,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-056,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-057,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-058,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-059,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-060,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-061,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-062,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-063,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-064,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-065,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-066,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-067,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-068,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-069,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,21,"```json
+{""v18"": 0, ""e18"": null}
+```"
+CJH,PPS-DEV-070,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-071,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-072,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-073,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-074,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-075,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-076,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-077,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-078,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-079,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-080,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-081,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-082,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-083,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-084,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-085,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-086,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-087,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-088,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-089,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-090,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-091,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-092,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-093,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-094,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-095,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-096,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-097,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-098,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-099,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-100,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-101,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-102,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-103,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-104,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-105,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-106,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-107,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-108,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-109,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-110,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-111,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-112,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-113,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-114,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-115,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-116,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-117,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-118,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-119,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 1,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-120,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-121,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-122,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-123,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 1,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-124,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-125,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-126,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,102,"```json
+{
+  ""v18"": 0,
+  ""e18"": ""3-1-3. 「중소기업제품 구매촉진 및 판로지원에 관한 법률 시행령」 제2조2에 따른 중·소기업 또는 소상공인으로서 「중·소기업 및 확인에 관한 규정」 “중·소기업·소상공인 확인서”를 소지한 업체이어야 합니다.""
+}
+```"
+CJH,PPS-DEV-127,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-128,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-129,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-130,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-131,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,21,"```json
+{""v18"": 0, ""e18"": null}
+```"
+CJH,PPS-DEV-132,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-133,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-134,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-135,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-136,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-137,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-138,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-139,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-140,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-141,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-142,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-143,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-144,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-145,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-146,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-147,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-148,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-149,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-150,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-151,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-152,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-153,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-154,v18,0,False,True,,non_stop_finish,invalid,,null,,,False,False,False,False,length,,512,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```
+
+**판정 근거:**
+1. **구매 대상 식별**: 본 공고의 품명은 '항공기비품'이며, 세부품명번호는 '2520151701'입니다.
+2. **경쟁제품 여부 확인**: 제공된 [참고자료: 경쟁제품 목록 발췌]를 확인한 결과, 해당 세부품명번호(2520151701)는 경쟁제품 목록에 포함되어 있지 않습니다. 따라서 본 제품은 **일반제품**에 해당합니다.
+3. **금액 확인**: meta 정보의 입찰추정가격은 **35,400,000원**으로, 1억 원 미만입니다.
+4. **기업 규모 제한 확인**: 공고문 3. 입찰참가자격 항목을 검토한 결과, 특정 기업 규모(소기업, 소상공인, 중소기업 등)에 대한 제한 문구가 존재하지 않습니다. (단, 3.5항에서 '중소기업자간 경쟁입찰의 예외를 적용한다'고 명시되어 있으나, 이는 중소기업자간 경쟁제품 여부에 대한 법적 예외 적용을 의미하며, 참가 자격 자체를 소기업/소상공인으로 제한하는 문구는 없습니다.)
+5. **결론**: 일반제품이고 1억 원 미만인 상황에서 기업 규모 제한이 없는 것으로 보이나, 판정 가이드라인의 '정상(0)' 조건 중 **""판로지원 예외가 명시된 경우""**를 검토합니다. 공고문 3-5항에서 「중소기업제품 구매촉진 및 판로지원에 관한 법률 시행령」 제7조 1항 4호에 따른 **중소기업자간 경쟁입찰의 예외를 적용**한다고 명시하고 있습니다. 이는 중소기업 제품 구매 촉진법에 따른 제한(소기업/소상공인 제한 등)을 적용하지 않는다는 의미이므로, 결과적으로 기업 규모 제한이 없는 상태입니다. 
+
+*수정 판단*: 질문의 의도가 '소기업/소상공인 제한이 있는가'를 묻는 것이며, 공고문 3"
+CJH,PPS-DEV-155,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-156,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-157,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 1,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-158,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 1,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-159,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 1,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-160,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-161,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-162,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 1,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-163,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-164,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-165,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-166,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-167,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-168,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-169,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-170,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-171,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-172,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-173,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-174,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-175,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-176,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-177,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-178,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-179,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-180,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-181,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-182,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-183,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-184,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-185,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-186,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-187,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-188,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-189,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-190,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-191,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-192,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-193,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-194,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-195,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-196,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-197,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-198,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-199,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"
+CJH,PPS-DEV-200,v18,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v18"": 0,
+  ""e18"": null
+}
+```"

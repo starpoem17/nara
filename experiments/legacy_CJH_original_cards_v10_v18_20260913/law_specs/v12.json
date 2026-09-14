@@ -1,0 +1,64 @@
+{
+  "feature": "v12",
+  "excerpts": [
+    {
+      "path": "data/법령패키지/법령/국가를 당사자로 하는 계약에 관한 법률 시행령.txt",
+      "start_line": 186,
+      "end_line": 190,
+      "locator": "제21조제1항 본문 및 제1호부터 제3호까지"
+    },
+    {
+      "path": "data/법령패키지/법령/국가를 당사자로 하는 계약에 관한 법률 시행령.txt",
+      "start_line": 197,
+      "end_line": 197,
+      "locator": "제21조제1항제5호"
+    },
+    {
+      "path": "data/법령패키지/법령/국가를 당사자로 하는 계약에 관한 법률 시행령.txt",
+      "start_line": 200,
+      "end_line": 200,
+      "locator": "제21조제1항제8호"
+    },
+    {
+      "path": "data/법령패키지/법령/지방자치단체를 당사자로 하는 계약에 관한 법률 시행령.txt",
+      "start_line": 190,
+      "end_line": 196,
+      "locator": "제20조제1항 본문 및 제1호부터 제5호까지"
+    },
+    {
+      "path": "data/법령패키지/법령/지방자치단체를 당사자로 하는 계약에 관한 법률 시행령.txt",
+      "start_line": 199,
+      "end_line": 199,
+      "locator": "제20조제1항제8호"
+    },
+    {
+      "path": "data/법령패키지/법령/소프트웨어 진흥법.txt",
+      "start_line": 388,
+      "end_line": 390,
+      "locator": "제48조제1항 및 제2항"
+    },
+    {
+      "path": "data/법령패키지/법령/중소 소프트웨어사업자의 사업 참여 지원에 관한 지침.txt",
+      "start_line": 11,
+      "end_line": 11,
+      "locator": "제2조제1항"
+    },
+    {
+      "path": "data/법령패키지/법령/중소 소프트웨어사업자의 사업 참여 지원에 관한 지침.txt",
+      "start_line": 13,
+      "end_line": 18,
+      "locator": "제3조제1항"
+    },
+    {
+      "path": "data/법령패키지/법령/중소 소프트웨어사업자의 사업 참여 지원에 관한 지침.txt",
+      "start_line": 322,
+      "end_line": 337,
+      "locator": "별표 1"
+    }
+  ],
+  "selection_notes": [
+    "The competitive-product candidate rows and their complete special notes are supplied separately and are not included in this law specification.",
+    "The separately supplied candidate-row source is the 2025-96 designation effective 2025-08-29; the package provides no earlier designation, so it must not be presumed to describe an earlier notice date.",
+    "The national and local decree spans reproduce the organizer citation mapping without converting their enumerated restriction grounds into a new decision rule."
+  ]
+}

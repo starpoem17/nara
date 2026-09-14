@@ -1,0 +1,11 @@
+{
+  "status": "withdrawn",
+  "withdrawn_by": "KHJ explicit instruction",
+  "date": "2026-09-13",
+  "original_commit": "4a2b39e3532a41d39ad2349a01e1fc5ffe531653",
+  "reason": "Original text was preserved, but experimenter-defined input delivery and output measurement did not adequately validate the substantive colleague hypotheses.",
+  "use": "Historical audit only; not a valid hypothesis evaluation, performance baseline, or source of answers/criteria for the redesigned experiment.",
+  "raw_requests_responses_metrics": "Preserved unchanged for audit; no physical deletion requested separately.",
+  "report_change": "Historical reports receive a withdrawn title only. Their original publication-snapshot report hashes refer to the original_commit above; response/input hashes are unchanged.",
+  "replacement": "Not designed or authorized for execution yet. User requested one-question-at-a-time grill-me redesign and prohibits arbitrary experimenter interpretation."
+}

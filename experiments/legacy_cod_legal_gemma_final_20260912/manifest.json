@@ -1,0 +1,10 @@
+{
+  "model": "models/gemma-4-26B-A4B-it-NVFP4",
+  "prompt": "Think step by step, but only keep a minimum draft for each thinking step, with 5 words at most. Return the answer at the end of the response after a separator ####.",
+  "temperature": 0,
+  "seed": 0,
+  "max_tokens": 512,
+  "thinking_budget": null,
+  "structured_outputs": null,
+  "description": "Fictional exhaustive rules and synthetic legal cases. Paper instruction exact; legal examples authored locally, not paper examples. Format probe, not real-law accuracy or dev200 evaluation."
+}

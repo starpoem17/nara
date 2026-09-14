@@ -1,0 +1,1257 @@
+author,id,feature,gold,valid,strict_format,format_violation,invalid_reason,error_type,prediction,evidence_json,evidence_empty,evidence_substring,absence_evidence_nonempty,positive_nonabsence_missing,positive_nonabsence_not_substring,normal_nonempty,finish_reason,stop_reason,output_tokens,raw_response
+CJH,PPS-DEV-01,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-02,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-03,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-04,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-05,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-06,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-07,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-08,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-09,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-10,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-11,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-12,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,40,"```json
+{
+  ""v16"": {
+    ""위반여부"": 0,
+    ""근거문구"": null
+  }
+}
+```"
+CJH,PPS-DEV-13,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-14,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-15,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-16,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-17,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-18,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-19,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-20,v16,1,False,True,,invalid_json:Expecting value: line 1 column 1 (char 0),invalid,,null,,,False,False,False,False,stop,106,464,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```
+
+**판정 근로 근거:**
+1. **대상 식별**: 본 공고의 대상은 '섬유디스크필터 세척 용역'으로, 일반적인 용역(서비스)에 해당합니다.
+2. **금액 확인**: `meta`의 입찰추정가격은 **118,736,000원**입니다. 이는 1억 원 이상이며, 고시금액(물품/용역 2억 3천만 원) 미만 구간에 해당합니다.
+3. **기업 규모 제한 확인**: 공고문 3조(입찰 참가자격)를 확인하면, 「지방자치단체를 당사자로 하는 계약에 관한 법률 시행령」 제13조 및 시행규칙 제14조에 따른 자격(업종 제한 등)은 명시되어 있으나, **중소기업자 여부에 대한 제한은 명시되어 있지 않습니다.**
+4. **판정 결과**: 그러나 판정 카드 지침에 따르면, **""중소기업 전체 제한이 있으면 v16=0""**으로 판정합니다. 본 공고는 특정 기업 규모(중소기업, 소기업 등)를 명시적으로 제한하고 있지는 않으나, 입찰 참가 자격의 성격상 '지방계약법'에 따른 일반적인 자격 요건을 갖춘 자를 대상으로 하므로, '기업 규모 제한이 전혀 없는 경우(v16=1)'의 예시인 ""일반제품이고 금액 구간은 해당하지만 참가자격에 기업 규모 제한이 전혀 없는 경우""에 해당하지 않고, 법령상 중소기업 우선구매 대상 여부를 따지는 과정에서 중소기업 제한이 없는 상태를 정상(0)으로 봅니다. (본 공고는 중소기업 제한을 명시하지 않았으므로 v16의 위반 조건인 '기업 규모 제한이 전혀 없음'을 만족하는 것이 아니라, 중소기업 제한이 없는 일반적인 용역 공고이므로 0입니다.)"
+CJH,PPS-DEV-21,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-22,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-23,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-24,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-25,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-26,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-27,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-28,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-29,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-30,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-31,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-32,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-033,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,21,"```json
+{""v16"": 0, ""e16"": null}
+```"
+CJH,PPS-DEV-034,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-035,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-036,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-037,v16,1,False,True,,invalid_json:Expecting value: line 1 column 1 (char 0),invalid,,null,,,False,False,False,False,stop,106,289,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```
+
+**판정 근거:**
+1. **구매 대상 식별:** 공고의 품목은 '냉난방기', '히트펌프용실내기', '전기히트펌프'이며, 이는 일반제품이 아닌 **경쟁제품**(참고자료의 세부품명번호와 일치 여부 확인 시 일반적인 물품 구매 공고의 특성상 경쟁제품군에 속함)에 해당합니다.
+2. **금액 확인:** meta의 입찰추정가격은 195,344,545원으로, 1억 원 이상 ~ 고시금액(2억 3천만 원) 미만 구간에 해당합니다.
+3. **기업 규모 제한 확인:** 공고문 3.1항 및 3.2항 등에서 직접적인 기업 규모 제한을 명시하고 있지 않으나, 판정 기준에 따라 **'경쟁제품인 경우'**는 정상(0)으로 판정합니다. 또한, 본 공고는 [판로지원법]에 따른 중소기업 제한(중기업, 소기업, 소상공인)이 적용되는 구조이므로, 기업 규모 제한이 전혀 없는 상태가 아닙니다."
+CJH,PPS-DEV-038,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-039,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-040,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-041,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-042,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-043,v16,0,False,True,,invalid_json:Expecting value: line 1 column 1 (char 0),invalid,,null,,,False,False,False,False,stop,106,226,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```
+
+**판정 근거:**
+1. **입찰추정가격 확인:** meta의 입찰추정가격은 61,264,545원으로, 1억 원 미만입니다.
+2. **판정 조건 검토:** 해당 항목(v16)은 '1억 원 이상 고시금액 미만'인 경우를 대상으로 합니다. 본 공고의 추정가격은 1억 원 미만이므로, 해당 항목의 위반 여부를 따지는 전제 조건(1억 원 이상)을 충족하지 못하여 정상(0)으로 판정합니다.
+3. **기업 규모 제한 확인:** 공고문상 '중·소기업, 소상공인확인서' 제출을 요구하고 있으며, 입찰참가자격에 '중소기업, 소기업, 소상공인 제한'이 명시되어 있으므로 기업 규모 제한이 존재합니다."
+CJH,PPS-DEV-044,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-045,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-046,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-047,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-048,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-049,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-050,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-051,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-052,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-053,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,40,"```json
+{
+  ""v16"": {
+    ""위반여부"": 0,
+    ""근거문구"": null
+  }
+}
+```"
+CJH,PPS-DEV-054,v16,0,False,True,,invalid_json:Expecting value: line 1 column 1 (char 0),invalid,,null,,,False,False,False,False,stop,106,354,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```
+
+**판정 근거 설명 (내부 검토용):**
+1. **구매 대상 식별**: 공고의 용역명은 『마늘한우 축제』 행사대행 용역이며, 세부품명번호는 `9015189001`(축제기획 및 대행서비스)입니다.
+2. **경쟁제품 여부 확인**: 제공된 [참고자료: 경쟁제품 목록 발췌]에 따르면, 세부품명번호 `9015189001`은 '추정가격 3억원 미만에 한함'이라는 특이사항이 있는 **경쟁제품**입니다.
+3. **금액 구간 확인**: meta의 입찰추정가격은 `327,272,727원`입니다. 이는 1억 원 이상이며, 재정경제부장관이 고시하는 금액(물품/용역 2억 3천만 원)을 초과하지만, 경쟁제품 목록의 특이사항 조건(3억 미만)과 관련하여 해당 제품이 경쟁제품임을 확인하였습니다.
+4. **판정 결과**: 판정 기준상 **'경쟁제품인 경우'**는 **정상(0)**에 해당합니다. 또한, 공고문 2.라 항목에서 「중소기업기본법」 제2조에 따른 중·소기업자 및 소상공인 제한을 명시하고 있으므로, 기업 규모 제한이 없는 상태가 아닙니다."
+CJH,PPS-DEV-055,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-056,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-057,v16,0,False,True,,invalid_json:Expecting value: line 1 column 1 (char 0),invalid,,null,,,False,False,False,False,stop,106,388,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```
+
+**판정 근거:**
+1. **구매 대상 식별:** 공고 대상은 '인쇄회로기판 코팅머신'이며, 세부품명번호는 '2315150201'입니다.
+2. **경쟁제품 여부 확인:** 제공된 [경쟁제품 목록 발췌] 자료를 확인한 결과, 해당 세부품명번호(2315150201)는 목록에 존재하지 않습니다. 따라서 이 제품은 **일반제품**입니다.
+3. **금액 구간 확인:** meta의 입찰추정가격은 **272,727,273원**입니다. 이는 1억 원 이상이며, 재정경제부장관이 정하는 고시금액(물품 및 용역 기준 2억 3천만 원)을 초과하므로, 판정 기준인 '1억 원 이상 고시금액 미만' 조건에 부합하지 않습니다. (고시금액 2.3억 미만 구간에 해당함)
+4. **기업 규모 제한 확인:** 입찰참가자격 3-가, 나, 다 및 3-라 항목을 보면 '중·소기업 또는 소상공인'이어야 한다는 제한이 명시되어 있습니다. 또한 3-바 항목에서 '직접 생산하는 업체'여야 한다는 제한이 있습니다.
+5. **결론:** 본 공고는 중소기업 및 소상공인이라는 **기업 규모 제한이 명시되어 있으므로**, ""기업 규모 제한이 전혀 없는 경우""에 해당하지 않아 **정상(0)**으로 판정합니다."
+CJH,PPS-DEV-058,v16,1,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-059,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-060,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-061,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-062,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-063,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-064,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-065,v16,1,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-066,v16,1,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-067,v16,1,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-068,v16,0,False,True,,invalid_json:Expecting value: line 1 column 1 (char 0),invalid,,null,,,False,False,False,False,stop,106,327,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```
+
+**판정 근거:**
+1. **구매 대상 식별**: 공고의 사업명은 '학습분석시스템 유지보수'이며, 입찰참가자격 2-나항에 따라 '소프트웨어사업자(컴퓨터관련서비스사업, 업종코드: 1468)'를 대상으로 합니다. 이는 경쟁제품 목록의 '정보시스템개발서비스(8111159901)'와 일치하는 일반제품(용역)입니다.
+2. **금액 구간 확인**: meta의 입찰추정가격은 **26,418,182원**입니다. 이는 판정 기준인 '1억 원 이상 고시금액 미만' 구간에 해당하지 않습니다. (해당 사업은 1억 원 미만임)
+3. **기업 규모 제한 확인**: 입찰참가자격 2-다항에서 「중소기업기본법」 제2조에 따른 **중소기업자 또는 「소상공인 보호 및 지원에 관한 법률」 제2조에 따른 소상공인**으로 기업 규모를 제한하고 있습니다.
+4. **결론**: 판정 질문의 조건(1억 원 이상)을 충족하지 못하며, 기업 규모 제한(중소기업/소상공인)이 존재하므로 정상(0)으로 판정합니다."
+CJH,PPS-DEV-069,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-070,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-071,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-072,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-073,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-074,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-075,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-076,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-077,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-078,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-079,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-080,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-081,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-082,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-083,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-084,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-085,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-086,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-087,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-088,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,40,"```json
+{
+  ""v16"": {
+    ""위반여부"": 0,
+    ""근거문구"": null
+  }
+}
+```"
+CJH,PPS-DEV-089,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-090,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-091,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-092,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-093,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-094,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-095,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-096,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-097,v16,0,False,True,,invalid_json:Expecting value: line 1 column 1 (char 0),invalid,,null,,,False,False,False,False,stop,106,284,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```
+
+**판정 근거:**
+1. **구매 대상 식별:** 본 공고의 대상은 '지방정부 슬레이트 해체·철거 공사 지정폐기물 처리 용역'으로, 경쟁제품 목록에 해당되는 세부품명이 존재하지 않는 일반 용역입니다.
+2. **금액 확인:** `meta`의 입찰추정가격은 **85,486,364원**입니다. 이는 1억 원 미만입니다.
+3. **기업 규모 제한 여부:** 공고문 3. 가항 및 3. 다항, 그리고 `meta`의 조항호내용(""추정가격 2천만원 초과 1억원 이하 물품·용역(소기업 소상공인 계약)"")을 확인하면, 본 입찰은 **소기업 및 소상공인**으로 참가 자격을 제한하고 있습니다.
+4. **결론:** 판정 기준에 따라, 금액 구간이 1억 원 미만(1억 원 이상 고시금액 미만 조건 미충족)이며, 동시에 소기업·소상공인 제한이 존재하므로 정상(0)으로 판정합니다."
+CJH,PPS-DEV-098,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-099,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-100,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-101,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-102,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-103,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-104,v16,0,False,True,,invalid_json:Expecting value: line 1 column 1 (char 0),invalid,,null,,,False,False,False,False,stop,106,232,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```
+
+**판정 근거:**
+1. **구매 대상 확인:** 공고의 품목은 '화살', '양궁활' 등이며, 이는 [참고자료: 경쟁제품 목록 발췌]의 세부품명번호(4918160301, 4918160201)와 일치하는 **경쟁제품**입니다.
+2. **금액 확인:** meta의 입찰추정가격은 24,545,455원으로, 1억 원 미만 구간에 해당합니다.
+3. **판정 결과:** 판정카드 규칙에 따라, 대상이 **경쟁제품인 경우**는 '정상(0)'으로 판정합니다. 또한, 공고문 4조 다항에 따라 '소기업 또는 소상공인'이라는 기업 규모 제한이 명시되어 있으므로, 기업 규모 제한이 전혀 없는 상태가 아닙니다."
+CJH,PPS-DEV-105,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-106,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-107,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-108,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-109,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-110,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-111,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-112,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-113,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-114,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-115,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-116,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-117,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,21,"```json
+{""v16"": 0, ""e16"": null}
+```"
+CJH,PPS-DEV-118,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-119,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-120,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-121,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-122,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-123,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 1,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-124,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-125,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-126,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-127,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,21,"```json
+{""v16"": 0, ""e16"": null}
+```"
+CJH,PPS-DEV-128,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-129,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-130,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-131,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-132,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-133,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-134,v16,0,False,True,,invalid_json:Expecting value: line 1 column 1 (char 0),invalid,,null,,,False,False,False,False,stop,106,365,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```
+
+**판정 근거:**
+1. **구매 대상 식별**: 본 공고의 대상은 '공공기관 차세대 경영정보시스템 구축'으로, 이는 일반적인 용역(소프트웨어 개발/구축)에 해당합니다.
+2. **금액 구간 확인**: `meta`의 입찰추정가격은 **4,954,545,455원**입니다. 이는 1억 원 이상이며, 재정경제부 고시금액(물품 및 용역 기준 2억 3천만 원)을 초과하므로, 질문에서 정의한 '1억 원 이상 고시금액 미만' 구간에 해당하지 않습니다. (본 공고는 고시금액보다 훨씬 큰 규모의 사업입니다.)
+3. **기업 규모 제한 확인**: 입찰참가자격 5번 항목에서 「소프트웨어진흥법」 제58조에 의한 **소프트웨어사업자(컴퓨터관련서비스사업)로 등록되어 있는 업체**로 제한하고 있습니다. 또한, 법령 및 지침에 따라 소프트웨어 사업의 경우 대기업 참여 제한 등의 규정이 적용되는 구조입니다.
+4. **결론**: 입찰추정가격이 고시금액(2.3억)을 초과하므로 해당 항목의 판정 대상 구간(1억~고시금액 미만)에 해당하지 않으며, 또한 기업 규모 제한(소프트웨어사업자 자격)이 존재하므로 위반(1)이 아닌 정상(0)으로 판정합니다."
+CJH,PPS-DEV-135,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-136,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-137,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-138,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-139,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-140,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-141,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-142,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-143,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-144,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-145,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-146,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-147,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-148,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-149,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-150,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-151,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-152,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-153,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-154,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-155,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-156,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-157,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,28,"```json
+{
+  ""v16"": 0,
+  ""근거문구"": null
+}
+```"
+CJH,PPS-DEV-158,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,21,"```json
+{""v16"": 0, ""e16"": null}
+```"
+CJH,PPS-DEV-159,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-160,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-161,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-162,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-163,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-164,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-165,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-166,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-167,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-168,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-169,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-170,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-171,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-172,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-173,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-174,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-175,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,21,"```json
+{""v16"": 0, ""e16"": null}
+```"
+CJH,PPS-DEV-176,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-177,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-178,v16,0,False,True,,non_stop_finish,invalid,,null,,,False,False,False,False,length,,512,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```
+
+**판정 근거:**
+1. **구매 대상 확인**: 공고의 대상은 '전기히트펌프(4010180601)' 및 '히트펌프용실내기(4010178701)'입니다.
+2. **경쟁제품 여부**: 제공된 [참고자료: 경쟁제품 목록 발췌]를 확인한 결과, 해당 세부품명번호들은 경쟁제품 목록에 포함되어 있지 않습니다. 따라서 이 제품은 **일반제품**에 해당합니다.
+3. **금액 구간 확인**: meta의 입찰추정가격은 **1,189,020,000원**입니다. 이는 1억 원 이상이며, 공고문(D1)의 8번 항목에서 언급된 '조달청 물품구매 적격심사 세부기준' 및 관련 법령상 고시금액(물품/용역 기준 2억 3천만 원 또는 공기업 기준 7억 1천만 원)을 초과하거나 상이한 구간에 있으나, 판정 기준의 핵심인 '기업 규모 제한 여부'를 먼저 확인합니다.
+4. **기업 규모 제한 판정**: 입찰 참가 자격(D1의 3번 항목)을 보면, 특정 세부품명번호를 제조 또는 공급하는 업체와 '기계설비·가스공사업(6202)' 등록 업체로 제한하고 있으나, **중소기업자, 소기업, 소상공인 등 기업 규모에 대한 제한을 명시하고 있지 않습니다.**
+5. **결론**: 본 공고는 추정가격이 1억 원 이상인 물품(11.8억 원)임에도 불구하고, 중소기업자 간 제한경쟁입찰(중소기업자 전체 제한)이나 소기업·소상공인 제한을 두지 않고 일반적인 자격(업종 및 물품 등록)만을 규정하고 있습니다. 다만, 판정 기준의 '정상(0)' 조건 중 '중소기업 전체 제한이 있는 경우'를 검토할 때, 이 공고는 중소기업 여부를 묻지 않고 있으나, 법령상 추정가격"
+CJH,PPS-DEV-179,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-180,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-181,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-182,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-183,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-184,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-185,v16,0,False,True,,invalid_json:Expecting value: line 1 column 1 (char 0),invalid,,null,,,False,False,False,False,stop,106,344,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```
+
+**판정 근거:**
+1. **구매 대상 식별:** 본 공고의 대상은 '건설폐기물처리 용역'입니다.
+2. **금액 확인:** `meta`의 입찰추정가격은 242,433,636원으로, 1억 원 이상 2억 3천만 원(고시금액) 미만 구간에 해당합니다.
+3. **기업 규모 제한 여부:** 공고문 2. 입찰참가자격 1)항 및 5)항을 보면, 본 입찰은 「중소기업제품 구매촉진 및 판로지원에 관한 법률 시행령」 제2조의3 제1항 제5호에 의거하여 **""중소기업자와 우선조달계약의 예외에 해당""**한다고 명시되어 있습니다. 즉, 중소기업자 전체에 대한 제한이 아닌, 특정 법령에 따른 판로지원 예외 사항을 명시하고 있습니다.
+4. **결론:** 판정 기준에 따라 '판로지원 예외가 명시된 경우'는 정상(0)으로 분류됩니다. 또한, 입찰 참가 자격에서 특정 업종(건설폐기물 중간처리업 등)을 제한하고 있으나, 이는 제품의 특성에 따른 자격 제한이며, 중소기업 전체에 대한 제한이 아닌 판로지원 예외를 적용하고 있으므로 v16은 0입니다."
+CJH,PPS-DEV-186,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-187,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-188,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-189,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-190,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-191,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-192,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-193,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-194,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-195,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-196,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-197,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-198,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-199,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"
+CJH,PPS-DEV-200,v16,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v16"": 0,
+  ""e16"": null
+}
+```"

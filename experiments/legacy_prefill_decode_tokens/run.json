@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "record_kind": "historical_experiment",
+  "read_only": true,
+  "project_root": "../..",
+  "run_id": "legacy_prefill_decode_tokens",
+  "area": "inference-scheduling",
+  "report": "docs/experiments/inference-scheduling/2026-09/legacy_prefill_decode_tokens.md",
+  "question": "Does batching affect tokens at a fixed shared output history?",
+  "started_at": null,
+  "timezone": "Asia/Seoul",
+  "time_evidence": "No verified orchestration start; see timestamp-candidates.json and original logs. September 2026 is established by the linked historical project records.",
+  "migration_at": "2026-09-13T15:13:30.170445+00:00",
+  "status": "historical; inspect per-condition execution records",
+  "judgment": "Selected-divergence token probe; phase sensitivity observed, specific kernel/layer attribution unverified.",
+  "conditions": {
+    "recorded_execution": {
+      "settings": {
+        "recorded_condition": "recorded execution",
+        "scope": "See preserved original manifest and source for exact settings."
+      },
+      "status": "historical",
+      "attempts": [],
+      "artifact_path": "."
+    }
+  },
+  "max_attempts": 0,
+  "predecessors": [
+    {
+      "run_id": "legacy_prefill_decode_probe",
+      "reason": "Stage1 output divergence selected the first four cases by input order; stage2 appended common generated prefixes and used unconstrained token probes with prefill/decode controls."
+    }
+  ],
+  "followups": [],
+  "original_files": {
+    "analysis/prefill_decode_probe/probe_validation.json": {
+      "path": "probe_validation.json",
+      "sha256": "876448c168ebdf25fd3147e49ba1607ff531d4b98497d2793212dfc912074431",
+      "size": 237
+    },
+    "analysis/prefill_decode_probe/probes.json": {
+      "path": "probes.json",
+      "sha256": "fb63f2ff7953e87f83a0bb162f7268ae131a6acd78aabae2dc7a3094428ee065",
+      "size": 386107
+    },
+    "analysis/prefill_decode_probe/summary.json": {
+      "path": "summary.json",
+      "sha256": "cdf62e1fd52d5671a0f6c1989cca7c5662b132ad7fd7d2733bed42cf00ff8c09",
+      "size": 17844
+    },
+    "analysis/prefill_decode_probe/summary.log": {
+      "path": "summary.log",
+      "sha256": "cdf62e1fd52d5671a0f6c1989cca7c5662b132ad7fd7d2733bed42cf00ff8c09",
+      "size": 17844
+    },
+    "analysis/prefill_decode_probe/targets.json": {
+      "path": "targets.json",
+      "sha256": "d42d1b965f32506a0b6b0d9db7b4ee32ef67c3858c80650e1dc6fad9895e9887",
+      "size": 728
+    }
+  },
+  "temporary_paths": [
+    "tmp/structure-migration-20260913"
+  ],
+  "migration_inventory": "docs/maintenance/evidence/structure-migration/mapping.json",
+  "reproducibility": "Original content retained. Local datasets/models require matching separately restored bytes; historical commands may need current reconstruction guidance.",
+  "recorded_condition_evidence": [],
+  "historical_provenance": {
+    "status": "retained where originally recorded; missing fields remain unknown",
+    "execution_sources": "Existing source/analysis_source contents and original manifests are authoritative; migration-time code is separately labeled",
+    "input_access": "Local input/model assets remain locally retained; original hashes are in manifests/evaluations. Another checkout must restore matching bytes.",
+    "original_temporary_paths": "Not reconstructed when absent from original evidence"
+  },
+  "migration_code_archive": "docs/maintenance/evidence/structure-migration/original-source.tar"
+}

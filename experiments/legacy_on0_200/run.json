@@ -1,0 +1,487 @@
+{
+  "schema_version": 1,
+  "record_kind": "historical_experiment",
+  "read_only": true,
+  "project_root": "../..",
+  "run_id": "legacy_on0_200",
+  "area": "inference-scheduling",
+  "report": "docs/experiments/inference-scheduling/2026-09/legacy_on0_200.md",
+  "question": "Does zero thinking budget preserve instant judgments and enable prefix reuse?",
+  "started_at": null,
+  "timezone": "Asia/Seoul",
+  "time_evidence": "No verified orchestration start; see timestamp-candidates.json and original logs. September 2026 is established by the linked historical project records.",
+  "migration_at": "2026-09-13T15:13:30.110683+00:00",
+  "status": "historical; inspect per-condition execution records",
+  "judgment": "Historical paired OFF/ON0 observations; parser and scope limitations are retained.",
+  "conditions": {
+    "recorded_execution": {
+      "settings": {
+        "recorded_condition": "recorded execution",
+        "scope": "See preserved original manifest and source for exact settings."
+      },
+      "status": "historical",
+      "attempts": [],
+      "artifact_path": "."
+    }
+  },
+  "max_attempts": 0,
+  "predecessors": [
+    {
+      "run_id": "legacy_hybrid200",
+      "reason": "The hybrid cache/mode observations motivated OFF versus ON0 comparison; zero thinking budget and mode differ under the recorded paired conditions."
+    }
+  ],
+  "followups": [],
+  "original_files": {
+    "analysis/on0_200/analysis_manifest.json": {
+      "path": "analysis_manifest.json",
+      "sha256": "dda2f9c922f57c5126a5f5649501e030e9877544a9ca58b1cee4059a3d986c46",
+      "size": 227
+    },
+    "analysis/on0_200/analysis_source/scripts/evaluate_dev.py": {
+      "path": "analysis_source/scripts/evaluate_dev.py",
+      "sha256": "4c2f7414be7411e10e11dff05eddf769c65dea29fb3e689e971bc4b969f48c73",
+      "size": 11416
+    },
+    "analysis/on0_200/analysis_source/scripts/summarize_on0.py": {
+      "path": "analysis_source/scripts/summarize_on0.py",
+      "sha256": "842c3e5a9d5cf84739f2a70b10be1700d1c119c25a5e71fe1c32e9a346ba38f2",
+      "size": 19419
+    },
+    "analysis/on0_200/cache_probes.json": {
+      "path": "cache_probes.json",
+      "sha256": "4b7e191adf03df0e2721b9c5cbe9aeb531d5c55153cb48925c7c6acac7ef8e5a",
+      "size": 86017
+    },
+    "analysis/on0_200/command.txt": {
+      "path": "command.txt",
+      "sha256": "b0b81191c8e852fc085125724853c3128444e95d82796caa6afe25bf7baae5eb",
+      "size": 147
+    },
+    "analysis/on0_200/comparison.json": {
+      "path": "comparison.json",
+      "sha256": "17bf64303542ac568cf0890c60487d7379ea244656944ed942c2d66757ddac3b",
+      "size": 17314
+    },
+    "analysis/on0_200/context_check.json": {
+      "path": "context_check.json",
+      "sha256": "9a30060c13ab30044b67aeb85c2b11a28024f4d3a90fe187fac7dc547b362056",
+      "size": 195583
+    },
+    "analysis/on0_200/engine.json": {
+      "path": "engine.json",
+      "sha256": "0039e3d601ccc55b13cec4dd9079e276ab21cfa908cf11902b550fcc70048d7a",
+      "size": 157
+    },
+    "analysis/on0_200/full/off/model_batches.jsonl": {
+      "path": "full/off/model_batches.jsonl",
+      "sha256": "b5ee750416915c2fec722d4b6938c6ebacc3c7516113fdf5c308d09bfa4e683a",
+      "size": 23576
+    },
+    "analysis/on0_200/full/off/report.json": {
+      "path": "full/off/report.json",
+      "sha256": "f708c43b4aad32805512564ae92f403de04be965808942e48a13760da005eb19",
+      "size": 755
+    },
+    "analysis/on0_200/full/off/request_timings.jsonl": {
+      "path": "full/off/request_timings.jsonl",
+      "sha256": "79366c282b5aa8b7d06c03f8423506193a343e0fa29702838612f41fa3f30e7e",
+      "size": 761533
+    },
+    "analysis/on0_200/full/off/trace.jsonl": {
+      "path": "full/off/trace.jsonl",
+      "sha256": "a9a9d51b7805ba291c91986ede907320ccd2b14c90f12aec6cbbe94de1afc4be",
+      "size": 674102
+    },
+    "analysis/on0_200/full/on0/model_batches.jsonl": {
+      "path": "full/on0/model_batches.jsonl",
+      "sha256": "680d72f4186c27890c75329bf5af0146cb8bd55efef70e91f072748ce24ea5dd",
+      "size": 23817
+    },
+    "analysis/on0_200/full/on0/report.json": {
+      "path": "full/on0/report.json",
+      "sha256": "69f5b2b165c66b5b1ff1061d3d29008ee4e6a516893f8def0b4463ef73977f0d",
+      "size": 759
+    },
+    "analysis/on0_200/full/on0/request_timings.jsonl": {
+      "path": "full/on0/request_timings.jsonl",
+      "sha256": "cd7d8aa013dd0eed0f6539e7186d7655ad3b14e1ee539bbb5cc9b4a42a3eea0d",
+      "size": 763388
+    },
+    "analysis/on0_200/full/on0/trace.jsonl": {
+      "path": "full/on0/trace.jsonl",
+      "sha256": "5d95bab11966561ab778a31f0edbf56a3c072189575473b5bd7954de34d71052",
+      "size": 656378
+    },
+    "analysis/on0_200/full/paired_timings.json": {
+      "path": "full/paired_timings.json",
+      "sha256": "bd52defb04f0539f7fd1d78ed462aabd65095475d5b2c4794e5a2520537be376",
+      "size": 152504
+    },
+    "analysis/on0_200/judgment_changes.csv": {
+      "path": "judgment_changes.csv",
+      "sha256": "5dd202f7e092df02bb5098fc49fecd41dcf1b2e7df052174212d31b9aea4fcb4",
+      "size": 11653
+    },
+    "analysis/on0_200/manifest.json": {
+      "path": "manifest.json",
+      "sha256": "3bda20a7286ef7f66a0837aa4148b982a24fa49634e370d0fd22335e2b4b2754",
+      "size": 3213
+    },
+    "analysis/on0_200/run.log": {
+      "path": "run.log",
+      "sha256": "b353e8253d0e1feabb4e62afab3e95b789c1c9b96b80eb527519d6cdd3cfab59",
+      "size": 71181
+    },
+    "analysis/on0_200/smoke/off/model_batches.jsonl": {
+      "path": "smoke/off/model_batches.jsonl",
+      "sha256": "ef81f83c0591eea2f65b9d97190eb9bde9e9b227b9a86298c4f53fed3d5464a7",
+      "size": 928
+    },
+    "analysis/on0_200/smoke/off/report.json": {
+      "path": "smoke/off/report.json",
+      "sha256": "576b10c7e004f4dbe0dc5086d5bc48b4ae1ef853c772a28226272ff703676d75",
+      "size": 752
+    },
+    "analysis/on0_200/smoke/off/request_timings.jsonl": {
+      "path": "smoke/off/request_timings.jsonl",
+      "sha256": "5da18d5753dbfbcd66c96b1aa4fe2299ff7c8e6f3740ebb858cf76645ac0b06d",
+      "size": 30338
+    },
+    "analysis/on0_200/smoke/off/trace.jsonl": {
+      "path": "smoke/off/trace.jsonl",
+      "sha256": "65070d0f4d50b4dad57245dc7ffeaddfcc0adddbf4475c5634da4a930868f002",
+      "size": 26385
+    },
+    "analysis/on0_200/smoke/on0/model_batches.jsonl": {
+      "path": "smoke/on0/model_batches.jsonl",
+      "sha256": "88ed2888a3ff5c81c9c2b6e2aae74cdd2336b8361fe9dbf794c85969871b41ac",
+      "size": 930
+    },
+    "analysis/on0_200/smoke/on0/report.json": {
+      "path": "smoke/on0/report.json",
+      "sha256": "7b8a72dbc0c4c93bddae5bf7875d2ed4e72adedb41a565724c78c77245c3add9",
+      "size": 757
+    },
+    "analysis/on0_200/smoke/on0/request_timings.jsonl": {
+      "path": "smoke/on0/request_timings.jsonl",
+      "sha256": "3e56ba61c4dc7a93f473fdd35e43677e72a9e7bc91e4f045f1dc9c4cbebea399",
+      "size": 30343
+    },
+    "analysis/on0_200/smoke/on0/trace.jsonl": {
+      "path": "smoke/on0/trace.jsonl",
+      "sha256": "2fe300c3676c7c7aa28aafd77f46e1d51419f42b3c5bc6fff51d320ba522ff6d",
+      "size": 26561
+    },
+    "analysis/on0_200/smoke/paired_timings.json": {
+      "path": "smoke/paired_timings.json",
+      "sha256": "5856ca17a6057ed7707d56d172e57be3e7d2ec1597e38aa87972e29fd39b1163",
+      "size": 6097
+    },
+    "analysis/on0_200/source/analysis/hybrid200/main/trace.jsonl": {
+      "path": "source/analysis/hybrid200/main/trace.jsonl",
+      "sha256": "007eaf311c691e350c96021859d0b9b762e8feb28b31af7b74f6a868cc045422",
+      "size": 907929
+    },
+    "analysis/on0_200/source/data/dev.jsonl": {
+      "path": "source/data/dev.jsonl",
+      "sha256": "5507f5ab0ba53b708f87211ed050dbe531b48a626ace6084c3ccaefb53147534",
+      "size": 8310888
+    },
+    "analysis/on0_200/source/data/정답스키마_디코딩.json": {
+      "path": "source/data/정답스키마_디코딩.json",
+      "sha256": "149580162261b446090bec075eb4c13f765a771c827b6bbe06660eb833a3c2ac",
+      "size": 13751
+    },
+    "analysis/on0_200/source/data/항목표.json": {
+      "path": "source/data/항목표.json",
+      "sha256": "368cb41f376d8ad7edbbdf181542e6e959de356f7f70d86e72943325ecad61d9",
+      "size": 11273
+    },
+    "analysis/on0_200/source/nara/compact_criteria.json": {
+      "path": "source/nara/compact_criteria.json",
+      "sha256": "84cc8ca7f625f51e55206fc581a28e36df4551999c4009de84188f273bd06a04",
+      "size": 6190
+    },
+    "analysis/on0_200/source/nara/compact_predictor.py": {
+      "path": "source/nara/compact_predictor.py",
+      "sha256": "046002710b57ad799ff6f287f016ae215c2109338b66d3706570c8ac8651f969",
+      "size": 961
+    },
+    "analysis/on0_200/source/nara/hybrid_experiment.py": {
+      "path": "source/nara/hybrid_experiment.py",
+      "sha256": "c83e8296c1d88db5d13ba715c8ef6c98aa4c0086ee709058b638631130096a59",
+      "size": 3365
+    },
+    "analysis/on0_200/source/nara/hypothesis6.py": {
+      "path": "source/nara/hypothesis6.py",
+      "sha256": "850ebdceff80371dc8bd4859813e86e017552941b44dfdb4773b672576c925ba",
+      "size": 7705
+    },
+    "analysis/on0_200/source/nara/inference.py": {
+      "path": "source/nara/inference.py",
+      "sha256": "e09a87a3113399f2656d119b18536a59b70128242547fbd92774eee5c07dd226",
+      "size": 19312
+    },
+    "analysis/on0_200/source/nara/prefix_predictor.py": {
+      "path": "source/nara/prefix_predictor.py",
+      "sha256": "aee83eb0ce46cef8f2cbc7bc8697a94282d0b7908306fff55b5416d271ed19b7",
+      "size": 2441
+    },
+    "analysis/on0_200/source/nara/vllm_model.py": {
+      "path": "source/nara/vllm_model.py",
+      "sha256": "c3ae5a8f7bd75365e0d685018fab22733a917fca423eacf2fb7f623e4e8c1e0d",
+      "size": 3937
+    },
+    "analysis/on0_200/source/scripts/benchmark_compact200.py": {
+      "path": "source/scripts/benchmark_compact200.py",
+      "sha256": "7e1dcb2a706a0c635a6467e61484015567dc2281be37106aef06e6812271f61d",
+      "size": 12089
+    },
+    "analysis/on0_200/source/scripts/benchmark_hybrid200.py": {
+      "path": "source/scripts/benchmark_hybrid200.py",
+      "sha256": "b8f17813f4cb8507b237d26a10c244a33d24f277b1a493d449d7908b0253c3e2",
+      "size": 12991
+    },
+    "analysis/on0_200/source/scripts/benchmark_on0.py": {
+      "path": "source/scripts/benchmark_on0.py",
+      "sha256": "65812531828d578f243f149e77a0ab4f724276a95877d2ee3b44652caca93406",
+      "size": 13703
+    }
+  },
+  "temporary_paths": [
+    "tmp/structure-migration-20260913"
+  ],
+  "migration_inventory": "docs/maintenance/evidence/structure-migration/mapping.json",
+  "reproducibility": "Original content retained. Local datasets/models require matching separately restored bytes; historical commands may need current reconstruction guidance.",
+  "recorded_condition_evidence": [
+    {
+      "path": "full/off/report.json",
+      "values": {
+        "groups": [
+          [
+            "v4",
+            "v6",
+            "v7",
+            "v8"
+          ],
+          [
+            "v10",
+            "v11",
+            "v12",
+            "v13"
+          ],
+          [
+            "v15",
+            "v16",
+            "v17",
+            "v18"
+          ],
+          [
+            "v19",
+            "v20",
+            "v21",
+            "v23"
+          ]
+        ],
+        "limits": {
+          "batch_size": 8,
+          "search_rounds": 2,
+          "queries_per_round": 4,
+          "top_k": 5,
+          "round_tokens": 4096,
+          "total_retrieval_tokens": 8192,
+          "output_tokens": 2048,
+          "retries": 1,
+          "require_search": false
+        }
+      }
+    },
+    {
+      "path": "full/on0/report.json",
+      "values": {
+        "groups": [
+          [
+            "v4",
+            "v6",
+            "v7",
+            "v8"
+          ],
+          [
+            "v10",
+            "v11",
+            "v12",
+            "v13"
+          ],
+          [
+            "v15",
+            "v16",
+            "v17",
+            "v18"
+          ],
+          [
+            "v19",
+            "v20",
+            "v21",
+            "v23"
+          ]
+        ],
+        "limits": {
+          "batch_size": 8,
+          "search_rounds": 2,
+          "queries_per_round": 4,
+          "top_k": 5,
+          "round_tokens": 4096,
+          "total_retrieval_tokens": 8192,
+          "output_tokens": 2048,
+          "retries": 1,
+          "require_search": false
+        }
+      }
+    },
+    {
+      "path": "manifest.json",
+      "values": {
+        "model": "models/gemma-4-26B-A4B-it-NVFP4",
+        "groups": [
+          [
+            "v4",
+            "v6",
+            "v7",
+            "v8"
+          ],
+          [
+            "v10",
+            "v11",
+            "v12",
+            "v13"
+          ],
+          [
+            "v15",
+            "v16",
+            "v17",
+            "v18"
+          ],
+          [
+            "v19",
+            "v20",
+            "v21",
+            "v23"
+          ]
+        ],
+        "limits": {
+          "batch_size": 8,
+          "search_rounds": 2,
+          "queries_per_round": 4,
+          "top_k": 5,
+          "round_tokens": 4096,
+          "total_retrieval_tokens": 8192,
+          "output_tokens": 2048,
+          "retries": 1,
+          "require_search": false
+        },
+        "conditions": {
+          "off": {
+            "enable_thinking": false,
+            "thinking_token_budget": null
+          },
+          "on0": {
+            "enable_thinking": true,
+            "thinking_token_budget": 0
+          }
+        }
+      }
+    },
+    {
+      "path": "smoke/off/report.json",
+      "values": {
+        "groups": [
+          [
+            "v4",
+            "v6",
+            "v7",
+            "v8"
+          ],
+          [
+            "v10",
+            "v11",
+            "v12",
+            "v13"
+          ],
+          [
+            "v15",
+            "v16",
+            "v17",
+            "v18"
+          ],
+          [
+            "v19",
+            "v20",
+            "v21",
+            "v23"
+          ]
+        ],
+        "limits": {
+          "batch_size": 8,
+          "search_rounds": 2,
+          "queries_per_round": 4,
+          "top_k": 5,
+          "round_tokens": 4096,
+          "total_retrieval_tokens": 8192,
+          "output_tokens": 2048,
+          "retries": 1,
+          "require_search": false
+        }
+      }
+    },
+    {
+      "path": "smoke/on0/report.json",
+      "values": {
+        "groups": [
+          [
+            "v4",
+            "v6",
+            "v7",
+            "v8"
+          ],
+          [
+            "v10",
+            "v11",
+            "v12",
+            "v13"
+          ],
+          [
+            "v15",
+            "v16",
+            "v17",
+            "v18"
+          ],
+          [
+            "v19",
+            "v20",
+            "v21",
+            "v23"
+          ]
+        ],
+        "limits": {
+          "batch_size": 8,
+          "search_rounds": 2,
+          "queries_per_round": 4,
+          "top_k": 5,
+          "round_tokens": 4096,
+          "total_retrieval_tokens": 8192,
+          "output_tokens": 2048,
+          "retries": 1,
+          "require_search": false
+        }
+      }
+    }
+  ],
+  "historical_provenance": {
+    "status": "retained where originally recorded; missing fields remain unknown",
+    "execution_sources": "Existing source/analysis_source contents and original manifests are authoritative; migration-time code is separately labeled",
+    "input_access": "Local input/model assets remain locally retained; original hashes are in manifests/evaluations. Another checkout must restore matching bytes.",
+    "original_temporary_paths": "Not reconstructed when absent from original evidence"
+  },
+  "migration_code_archive": "docs/maintenance/evidence/structure-migration/original-source.tar"
+}

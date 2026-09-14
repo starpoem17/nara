@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "record_kind": "historical_experiment",
+  "read_only": true,
+  "project_root": "../..",
+  "run_id": "legacy_cod_legal_gemma_final_20260912",
+  "area": "prompt-design",
+  "report": "docs/experiments/prompt-design/2026-09/legacy_cod_legal_gemma_final_20260912.md",
+  "question": "Final fictional legal CoD condition comparison",
+  "started_at": null,
+  "timezone": "Asia/Seoul",
+  "time_evidence": "No verified orchestration start; see timestamp-candidates.json and original logs. September 2026 is established by the linked historical project records.",
+  "migration_at": "2026-09-13T15:13:30.152554+00:00",
+  "status": "historical; inspect per-condition execution records",
+  "judgment": "Corrected small synthetic legal probe; format/completion observations do not establish transfer to long Korean notices.",
+  "conditions": {
+    "recorded_execution": {
+      "settings": {
+        "recorded_condition": "recorded execution",
+        "scope": "See preserved original manifest and source for exact settings."
+      },
+      "status": "historical",
+      "attempts": [],
+      "artifact_path": "."
+    }
+  },
+  "max_attempts": 0,
+  "predecessors": [
+    {
+      "run_id": "legacy_cod_legal_gemma_20260912",
+      "reason": "The initial attempt was followed by the final legal-case execution."
+    }
+  ],
+  "followups": [],
+  "original_files": {
+    "analysis/cod_legal_gemma/cases.json": {
+      "path": "support/cod_legal_gemma/cases.json",
+      "sha256": "bbedbfd40676d36b0f9299e4d50172fd9e9b1d34309e84a982f1deb8cc72e037",
+      "size": 4072
+    },
+    "output/experiments/cod-legal-gemma-final-20260912/cases.json": {
+      "path": "cases.json",
+      "sha256": "bbedbfd40676d36b0f9299e4d50172fd9e9b1d34309e84a982f1deb8cc72e037",
+      "size": 4072
+    },
+    "output/experiments/cod-legal-gemma-final-20260912/manifest.json": {
+      "path": "manifest.json",
+      "sha256": "0e96a4a27a2fd47809960603447c516a4d4da30a27c91d1cbcb020279cdafbd8",
+      "size": 549
+    },
+    "output/experiments/cod-legal-gemma-final-20260912/results.json": {
+      "path": "results.json",
+      "sha256": "4349e9db0996091d2fc812ebf8c189643befc6c3b8a8fb5ea71dffd593a56c3f",
+      "size": 179748
+    },
+    "output/experiments/cod-legal-gemma-final-20260912/script.py": {
+      "path": "script.py",
+      "sha256": "fd578b0224c36f2d9d29d932f2b157b67a7d3fab4f038141cc65b13fb532aa23",
+      "size": 3885
+    },
+    "output/experiments/cod-legal-gemma-final-20260912/summary.json": {
+      "path": "summary.json",
+      "sha256": "bf2cd8743c34b951849c89f6f336b5d25658f2c6d94430479f23936a7b5b5df4",
+      "size": 842
+    }
+  },
+  "temporary_paths": [
+    "tmp/structure-migration-20260913"
+  ],
+  "migration_inventory": "docs/maintenance/evidence/structure-migration/mapping.json",
+  "reproducibility": "Original content retained. Local datasets/models require matching separately restored bytes; historical commands may need current reconstruction guidance.",
+  "recorded_condition_evidence": [
+    {
+      "path": "manifest.json",
+      "values": {
+        "model": "models/gemma-4-26B-A4B-it-NVFP4"
+      }
+    }
+  ],
+  "historical_provenance": {
+    "status": "retained where originally recorded; missing fields remain unknown",
+    "execution_sources": "Existing source/analysis_source contents and original manifests are authoritative; migration-time code is separately labeled",
+    "input_access": "Local input/model assets remain locally retained; original hashes are in manifests/evaluations. Another checkout must restore matching bytes.",
+    "original_temporary_paths": "Not reconstructed when absent from original evidence"
+  },
+  "migration_code_archive": "docs/maintenance/evidence/structure-migration/original-source.tar"
+}

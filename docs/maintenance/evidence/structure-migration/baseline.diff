@@ -1,0 +1,59 @@
+diff --git a/docs/README.md b/docs/README.md
+index 3a945ce2..e5b6d279 100644
+--- a/docs/README.md
++++ b/docs/README.md
+@@ -28,6 +28,7 @@ The physical `src/` directory is installed directly as the `nara` package; there
+ | Find complete run/evaluation commands and prompt edit locations | [Operations](operations.md) |
+ | Locate detailed reports and machine evidence by experiment | [Report index](reports/README.md) |
+ | Understand document placement, moved files and preserved exceptions | [Structure audit](maintenance/structure-audit.md) |
++| Review the AGENT.md migration plan and confirmed interview decisions | [Maintenance index](maintenance/README.md) |
+ 
+ Read summaries first. Open detailed reports or frozen sources only when the task needs their evidence.
+ 
+diff --git a/docs/project-structure.md b/docs/project-structure.md
+index 02909ac5..794ad072 100644
+--- a/docs/project-structure.md
++++ b/docs/project-structure.md
+@@ -59,6 +59,7 @@ Run individual modules only after reading their `main`/argument parsing and owni
+ | Hybrid five / barrier / phase probes | `benchmark_hybrid200.py`, `benchmark_hybrid_batch_controls.py`, `summarize_hybrid200.py`, `recover_hybrid200.py`, `run_batch_fallback.py`, `probe_prefill_decode.py`, `summarize_prefill_decode.py` | [Hybrid](experiments/hybrid-five.md), [phase probes](experiments/prefill-decode-fallback.md) |
+ | Continuous prefill / diagnosis | `benchmark_continuous.py`, `run_continuous_study.py`, `summarize_continuous.py`, `recover_continuous.py`, `diagnose_continuous.py`, `summarize_continuous_diagnosis.py` | [Continuous](experiments/continuous-prefill.md), [diagnosis](experiments/continuous-diagnosis.md) |
+ | Instant OFF / ON0 | `benchmark_on0.py`, `summarize_on0.py` | [ON0](experiments/instant-on0.md) |
++| CMS/CJH original-card experiments | `experiments/colleague_cards.py`, `evaluation/colleague_cards.py`, `tools/verify_colleague_cards.py`, `tools/audit_colleague_runtime.py` | [Agreed plan and entry points](experiments/cms-cjh-original-plan.md) |
+ | Colleague submission | `benchmark_colleague200.py`, `summarize_colleague200.py` | [Colleague](experiments/colleague-submission.md) |
+ | Early RAG comparison / one-record recovery | `summarize_gemma4_experiments.py`, `merge_thinking_recovery.py` | [Validation](experiments/local-validation.md) |
+ | Engine / recovery saved-run verification | `verify_engine_refactor.py`, `check_engine_request_parity.py`, `verify_recovery_saved.py` | [Engine refactor](experiments/engine-refactor.md), [recovery](architecture/recovery.md) |
+diff --git a/docs/reports/README.md b/docs/reports/README.md
+index 2939c6c3..db27c810 100644
+--- a/docs/reports/README.md
++++ b/docs/reports/README.md
+@@ -1,15 +1,18 @@
+ # Reports and artifact index
+ 
+-- [CMS updated cards v19–v24 dev200](analysis/CMS_updated_cards_v19_v24_dev200_20260913/report.md): approved cached-candidate experiment, actual prompts, raw outputs, F1, timing and evidence observations.
++- [CMS updated cards v19–v24 dev200](analysis/CMS_updated_cards_v19_v24_dev200_20260913/report.md): approved cached-candidate one-pass experiment, actual prompts, timing and per-case evaluation.
+ 
+ Read the concise owner first. Detailed reports live here; JSON/CSV/prompts, raw model responses, execution logs and frozen source remain in the linked `analysis/` folder. Repeated `source/data/dev.jsonl` snapshots and root datasets remain local. Historical reports retain their recorded commands and source paths; use the [project map](../project-structure.md) for current source locations. `docs/reports/output/` remains readable when its linked local `output/` artifacts are absent. Old `analysis/X/Y.md` maps to `docs/reports/analysis/X/Y.md`; old `output/X/Y.md` maps to `docs/reports/output/X/Y.md`. Unlinked artifact names inside a report refer to its artifact folder, identified at the top.
+ 
+ [Project map](../project-structure.md) · [Script catalog](../project-structure.md#script-catalog) · [Preserved snapshots](../maintenance/structure-audit.md#frozen-document-exceptions)
+ 
++[CMS/CJH completed-run critique — independent Astra medium output](cms-cjh-astra-completed-critique.md). Read alongside the original results; critiques the experimenter-defined output parser and limits of substantive hypothesis validation.
++
+ ## Analysis families
+ 
+ | Artifact folder | Concise owner / scope | Detailed reports |
+ |---|---|---|
++| [CJH_original_cards_v10_v18_20260913](../../analysis/CJH_original_cards_v10_v18_20260913/) | **WITHDRAWN** · [historical results](cms-cjh-original-summary.md) | [CJH detailed report](analysis/CJH_original_cards_v10_v18_20260913/report.md) |
+ | [LJM_original_v2_v8_20260912](../../analysis/LJM_original_v2_v8_20260912/) | [summary](../experiments/ljm-original.md) | [report](analysis/LJM_original_v2_v8_20260912/report.md) · [prior experiment withdrawn](ljm-v2-v8-summary/README.md) |
+ | [colleague200](../../analysis/colleague200/) | [summary](../experiments/colleague-submission.md) | [comparison](analysis/colleague200/comparison.md) |
+ | [cod_legal_gemma](../../analysis/cod_legal_gemma/) | Fictional legal CoD probe inputs and case results. | [current report](output/experiments/cod-legal-gemma-final-20260912/report.md) |
+@@ -50,6 +53,10 @@ Read the concise owner first. Detailed reports live here; JSON/CSV/prompts, raw
+ 
+ ## Standalone analysis reports
+ 
++- [CMS updated-card fidelity review — Astra medium original output](cms-updated-cards-astra-fidelity-review.md): conditional fidelity; input boundary presentation needs user decision; implementation awaits approval.
++
++- [CJH Dev18 notified-amount audit](cjh-dev18-notified-amount-check.md): KHJ-authorized label/source check; January8 revision leaves the monetary boundary unchanged.
++
+ - [Detailed legal criteria](analysis/feature_legal_criteria_v1.md); owner: [criteria](../architecture/legal-criteria.md); artifacts: `analysis/legal_criteria_v1_context.json`, `analysis/legal_criteria_v1_system_prompt.txt`.
+ - [Early Gemma RAG comparison](analysis/gemma4_experiments_summary.md); owner: [validation](../experiments/local-validation.md); machine summary: `analysis/gemma4_experiments_summary.json`.
+ - Local smoke/retrieval/token checks: inspect named JSON/CSV in [analysis root](../../analysis/) after reading [validation](../experiments/local-validation.md) or [environment](../environment.md).

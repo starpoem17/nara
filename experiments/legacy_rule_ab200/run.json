@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "record_kind": "historical_experiment",
+  "read_only": true,
+  "project_root": "../..",
+  "run_id": "legacy_rule_ab200",
+  "area": "rule-evaluation",
+  "report": "docs/experiments/rule-evaluation/2026-09/legacy_rule_ab200.md",
+  "question": "How do the initial deterministic qualification rules compare on dev200?",
+  "started_at": null,
+  "timezone": "Asia/Seoul",
+  "time_evidence": "No verified orchestration start; see timestamp-candidates.json and original logs. September 2026 is established by the linked historical project records.",
+  "migration_at": "2026-09-13T15:13:30.131733+00:00",
+  "status": "historical; inspect per-condition execution records",
+  "judgment": "Initial rule-only evaluation; later dev-informed revisions are separate evidence.",
+  "conditions": {
+    "recorded_execution": {
+      "settings": {
+        "recorded_condition": "recorded execution",
+        "scope": "See preserved original manifest and source for exact settings."
+      },
+      "status": "historical",
+      "attempts": [],
+      "artifact_path": "."
+    }
+  },
+  "max_attempts": 0,
+  "predecessors": [],
+  "followups": [
+    {
+      "run_id": "legacy_rule_ab200_revised",
+      "reason": "Initial results informed rule changes."
+    }
+  ],
+  "original_files": {
+    "analysis/rule_ab200/report.json": {
+      "path": "report.json",
+      "sha256": "ad5db0b23c7c1a341daa91c2cc23b929db63e15f6674f2f8314f86eb0bb29fb6",
+      "size": 3884
+    },
+    "analysis/rule_ab200/rules.jsonl": {
+      "path": "rules.jsonl",
+      "sha256": "660cc172f1838206ff2457de5013384bad624b8afd34bd29772b477dfa115379",
+      "size": 106003
+    },
+    "analysis/rule_ab200/source/nara/hypothesis6.py": {
+      "path": "source/nara/hypothesis6.py",
+      "sha256": "1747130daecb987366e156322d952a30cd8549ebb1291cd68c8a21728220a654",
+      "size": 8946
+    },
+    "analysis/rule_ab200/source/tests/test_hypothesis6.py": {
+      "path": "source/tests/test_hypothesis6.py",
+      "sha256": "e08ac17c702a3609c63544c8b66885cd0066f4d6bbd538078994fc6f36a1b993",
+      "size": 6712
+    }
+  },
+  "temporary_paths": [
+    "tmp/structure-migration-20260913"
+  ],
+  "migration_inventory": "docs/maintenance/evidence/structure-migration/mapping.json",
+  "reproducibility": "Original content retained. Local datasets/models require matching separately restored bytes; historical commands may need current reconstruction guidance.",
+  "recorded_condition_evidence": [],
+  "historical_provenance": {
+    "status": "retained where originally recorded; missing fields remain unknown",
+    "execution_sources": "Existing source/analysis_source contents and original manifests are authoritative; migration-time code is separately labeled",
+    "input_access": "Local input/model assets remain locally retained; original hashes are in manifests/evaluations. Another checkout must restore matching bytes.",
+    "original_temporary_paths": "Not reconstructed when absent from original evidence"
+  },
+  "migration_code_archive": "docs/maintenance/evidence/structure-migration/original-source.tar"
+}

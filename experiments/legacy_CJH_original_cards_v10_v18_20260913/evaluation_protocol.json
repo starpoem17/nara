@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "outer_whitespace": "ignored for envelope parsing only; evidence strings unchanged",
+  "duplicate_keys_and_nonfinite_constants": "invalid JSON",
+  "accepted": [
+    "one bare JSON object",
+    "one entire JSON code fence with no outside text"
+  ],
+  "strict_format": "only bare JSON is strict; a single full code fence remains a recorded format violation",
+  "keys": [
+    "위반여부",
+    "근거문구"
+  ],
+  "violation_type": "integer 0 or 1, excluding bool",
+  "evidence_type": "string or null; preserve exactly, with no whitespace trimming or cleanup",
+  "invalid": "non-stop, unparseable, wrong fields or types; never substitute a judgment",
+  "empty_evidence": "null and the empty string count as empty only in evidence diagnostics",
+  "denominators": "valid-only confusion metrics plus invalid counts by gold and all-record possible F1 bounds"
+}

@@ -1,0 +1,203 @@
+{
+  "success": false,
+  "successful_records": 1,
+  "records": [
+    {
+      "id": "PPS-DEV-16",
+      "success": false,
+      "thinking": "",
+      "body_tokens": 0,
+      "budget_span": 2,
+      "lines": [],
+      "words_per_line": [],
+      "attempts": 1,
+      "finish_reason": "stop",
+      "judgments": {
+        "v9": {
+          "위반여부": 0,
+          "근거문구": null
+        },
+        "v19": {
+          "위반여부": 0,
+          "근거문구": null
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "PPS-DEV-175",
+      "success": false,
+      "thinking": "*   Item v9: Check for unjustified brand/model/spec restrictions on the equipment (살수차/16톤).\n    *   Item v19: Check if manufacturer/supplier assurance is required before the bid deadline.\n\n    *   Subject: 공공기관 여름철 폭염대응 도로 살수차 임차용역 (Public agency summer heat response road water sprayer rental service).\n    *   Equipment: 살수차(16톤) 3대 (3 units of 16-ton water sprayers).\n    *   Specifications (from [과업지시서:D1] and [별지2]):\n        *   Water tank capacity: 15,000L or more.\n        *   Engine: 4-cylinder 4-cycle (diesel) or more, output 150PS/2,000rpm or more.\n        *   Sprayer: Front (400L/min, 20 deg), Side (400L/min, 10bar, 5m).\n        *   Vehicle: 5th grade exclusion, DPF attached, no illegal modification.\n    *",
+      "body_tokens": 254,
+      "budget_span": 256,
+      "lines": [
+        "*   Item v9: Check for unjustified brand/model/spec restrictions on the equipment (살수차/16톤).",
+        "*   Item v19: Check if manufacturer/supplier assurance is required before the bid deadline.",
+        "*   Subject: 공공기관 여름철 폭염대응 도로 살수차 임차용역 (Public agency summer heat response road water sprayer rental service).",
+        "*   Equipment: 살수차(16톤) 3대 (3 units of 16-ton water sprayers).",
+        "*   Specifications (from [과업지시서:D1] and [별지2]):",
+        "*   Water tank capacity: 15,000L or more.",
+        "*   Engine: 4-cylinder 4-cycle (diesel) or more, output 150PS/2,000rpm or more.",
+        "*   Sprayer: Front (400L/min, 20 deg), Side (400L/min, 10bar, 5m).",
+        "*   Vehicle: 5th grade exclusion, DPF attached, no illegal modification.",
+        "*"
+      ],
+      "words_per_line": [
+        12,
+        13,
+        18,
+        10,
+        6,
+        7,
+        11,
+        10,
+        10,
+        1
+      ],
+      "attempts": 1,
+      "finish_reason": "stop",
+      "judgments": {
+        "v9": {
+          "위반여부": 0,
+          "근거문구": null
+        },
+        "v19": {
+          "위반여부": 0,
+          "근거문구": null
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "PPS-DEV-111",
+      "success": true,
+      "thinking": "v9: Excavation service (investigation).\nv9: No specific brand/model mentioned.\nv9: No restriction on products.\nv9: No violation.\nv19: No manufacturer assurance requirement.\nv19: No violation.",
+      "body_tokens": 55,
+      "budget_span": 57,
+      "lines": [
+        "v9: Excavation service (investigation).",
+        "v9: No specific brand/model mentioned.",
+        "v9: No restriction on products.",
+        "v9: No violation.",
+        "v19: No manufacturer assurance requirement.",
+        "v19: No violation."
+      ],
+      "words_per_line": [
+        4,
+        5,
+        5,
+        3,
+        5,
+        3
+      ],
+      "attempts": 1,
+      "finish_reason": "stop",
+      "judgments": {
+        "v9": {
+          "위반여부": 0,
+          "근거문구": null
+        },
+        "v19": {
+          "위반여부": 0,
+          "근거문구": null
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "PPS-DEV-055",
+      "success": false,
+      "thinking": "- v9: Check for unjustified brand/model/spec restrictions.\n- v19: Check for unlawful manufacturer/supplier assurance requirements (pre-bid issuance).\n\n- Document: [공고문:D0]\n- Content:\n    - \"공기업 해운부문 외부사업 운영 지원 및 감축사업 활성화 용역(제한경쟁·1억원미만)\"\n    - \"계약방법: 제한경쟁\"\n    - \"입찰방법: 제한경쟁(총액), 협상에 의한 계약\"\n    - \"수 량: 1식(과업지시서 참조)\"\n    - \"납품기한: 계약체결일로부터 2026.11.30.까지\"\n    - \"하도급: 본 사업은 하도급을 불허합니다.\"\n    - \"입찰보증금: ... (생략) ... 입찰보증금의 납부는 면제하되, 입찰보증금 지급각서를 제출하여야 합니다.\"\n    - \"제출서류: ... (생략) ...\"\n    - \"입찰참가자격: ... (생략",
+      "body_tokens": 254,
+      "budget_span": 256,
+      "lines": [
+        "- v9: Check for unjustified brand/model/spec restrictions.",
+        "- v19: Check for unlawful manufacturer/supplier assurance requirements (pre-bid issuance).",
+        "- Document: [공고문:D0]",
+        "- Content:",
+        "- \"공기업 해운부문 외부사업 운영 지원 및 감축사업 활성화 용역(제한경쟁·1억원미만)\"",
+        "- \"계약방법: 제한경쟁\"",
+        "- \"입찰방법: 제한경쟁(총액), 협상에 의한 계약\"",
+        "- \"수 량: 1식(과업지시서 참조)\"",
+        "- \"납품기한: 계약체결일로부터 2026.11.30.까지\"",
+        "- \"하도급: 본 사업은 하도급을 불허합니다.\"",
+        "- \"입찰보증금: ... (생략) ... 입찰보증금의 납부는 면제하되, 입찰보증금 지급각서를 제출하여야 합니다.\"",
+        "- \"제출서류: ... (생략) ...\"",
+        "- \"입찰참가자격: ... (생략"
+      ],
+      "words_per_line": [
+        7,
+        10,
+        3,
+        2,
+        10,
+        3,
+        6,
+        5,
+        4,
+        6,
+        12,
+        5,
+        4
+      ],
+      "attempts": 1,
+      "finish_reason": "stop",
+      "judgments": {
+        "v9": {
+          "위반여부": 0,
+          "근거문구": null
+        },
+        "v19": {
+          "위반여부": 0,
+          "근거문구": null
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "PPS-DEV-31",
+      "success": false,
+      "thinking": "v9: Target: artificial turf removal/recycling.\nv9: Requires specific equipment (specialized separation equipment).\nv9: Equipment ownership/lease requirement.\nv9: No specific brand/model restriction.\nv9: No violation.\nv19: Safety/health evaluation mentioned.\nv19: Safety/health evaluation follows award.\nv19: Evaluation occurs after award.\nv19: No pre-bid assurance requirement.\nv19: No violation.",
+      "body_tokens": 106,
+      "budget_span": 108,
+      "lines": [
+        "v9: Target: artificial turf removal/recycling.",
+        "v9: Requires specific equipment (specialized separation equipment).",
+        "v9: Equipment ownership/lease requirement.",
+        "v9: No specific brand/model restriction.",
+        "v9: No violation.",
+        "v19: Safety/health evaluation mentioned.",
+        "v19: Safety/health evaluation follows award.",
+        "v19: Evaluation occurs after award.",
+        "v19: No pre-bid assurance requirement.",
+        "v19: No violation."
+      ],
+      "words_per_line": [
+        5,
+        7,
+        4,
+        5,
+        3,
+        4,
+        5,
+        5,
+        5,
+        3
+      ],
+      "attempts": 1,
+      "finish_reason": "stop",
+      "judgments": {
+        "v9": {
+          "위반여부": 0,
+          "근거문구": null
+        },
+        "v19": {
+          "위반여부": 0,
+          "근거문구": null
+        }
+      },
+      "error": null
+    }
+  ],
+  "seconds": 6.580570689000524
+}

@@ -1,0 +1,13 @@
+{
+  "old_to_new": {
+    "experiments/legacy_v9_thinking512_20260912": "experiments/legacy_v9_on_cod512_20260912/on",
+    "docs/experiments/prompt-design/2026-09/legacy_v9_thinking512_20260912.md": "docs/experiments/prompt-design/2026-09/legacy_v9_on_cod512_20260912.md",
+    "experiments/legacy_v9_cod512_20260912": "experiments/legacy_v9_on_cod512_20260912/cod",
+    "docs/experiments/prompt-design/2026-09/legacy_v9_cod512_20260912.md": "docs/experiments/prompt-design/2026-09/legacy_v9_on_cod512_20260912.md",
+    "experiments/legacy_v9_cod_comparison_20260912": "experiments/legacy_v9_on_cod512_20260912/comparison",
+    "docs/experiments/prompt-design/2026-09/legacy_v9_cod_comparison_20260912.md": "docs/experiments/prompt-design/2026-09/legacy_v9_on_cod512_20260912.md",
+    "experiments/legacy_v9_group512_20260912/code/analyze_v9_cod.py": "experiments/legacy_v9_on_cod512_20260912/code/analyze_v9_cod.py"
+  },
+  "basis": "Historical consolidation follows identical frozen execution code and the original matched ON/CoD comparison report; the initial orchestration plan was not recovered.",
+  "records_after": 48
+}

@@ -44,7 +44,7 @@ class BriefingRuleTests(unittest.TestCase):
         self.assertEqual(judge(notice('사업설명회 불참 업체는 입찰 참가 불가', False))['judgments']['v22']['위반여부'], 0)
 
     def test_migrated_rule_matches_frozen_predictions_without_labels(self):
-        frozen = {r['id']: r for r in map(json.loads, Path('analysis/v22_rule200/predictions_revised.jsonl').read_text().splitlines())}
+        frozen = {r['id']: r for r in map(json.loads, Path('experiments/legacy_v22_rule_revised/predictions_revised.jsonl').read_text().splitlines())}
         records = [json.loads(l) for l in Path('data/dev.jsonl').read_text().splitlines()]
         self.assertEqual({r['id'] for r in records}, set(frozen))
         for r in records:

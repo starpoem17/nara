@@ -1,0 +1,21 @@
+usage: nara-experiment [-h]
+                       [--grouping {groups12,groups21} [{groups12,groups21} ...]]
+                       [--summary SUMMARY] [--question QUESTION]
+                       [--prepare-only] [--smoke-only] [--experiment]
+                       [--predecessor PREDECESSOR] [--reason REASON]
+
+Run one planned grouping sweep with retained conditions and provenance.
+
+options:
+  -h, --help            show this help message and exit
+  --grouping {groups12,groups21} [{groups12,groups21} ...]
+  --summary SUMMARY
+  --question QUESTION
+  --prepare-only
+  --smoke-only
+  --experiment          Treat a standalone preparation/smoke check as an
+                        explicit hypothesis experiment
+  --predecessor PREDECESSOR
+                        Prior run ID when this execution follows observed
+                        results
+  --reason REASON       Reason for the result-triggered additional execution

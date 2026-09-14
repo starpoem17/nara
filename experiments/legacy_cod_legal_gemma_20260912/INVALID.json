@@ -1,0 +1,5 @@
+{
+  "status": "aborted_invalid",
+  "reason": "Example1 only-if condition corrected to iff at least2; partial results excluded.",
+  "use": "../cod-legal-gemma-final-20260912"
+}

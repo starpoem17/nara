@@ -1,11 +1,11 @@
 # Dynamic RAG inference
 
-Default experimental workflow: [Prefix pipeline](../experiments/prefix-pipeline.md), `uv run --locked nara-experiment`. This document describes the shared inference machinery and ungrouped baseline CLI below.
+Default experimental workflow: [Prefix pipeline](<../experiments/inference-scheduling/prefix-pipeline.md>), `uv run --locked nara-experiment`. This document describes the shared inference machinery and ungrouped baseline CLI below.
 
-Code: [baseline entry point](../../src/cli.py), [predictor](../../src/inference/predictor.py), [vLLM adapter](../../src/inference/engine.py), [prompt](../../src/inference/prompt.txt).
-Engine execution/compatibility: [local engine](local-engine.md). Shared conversation state, budgets and validation: [judgment conversation](judgment-conversation.md).
+Code: [baseline entry point](<../../src/cli.py>), [predictor](<../../src/inference/predictor.py>), [vLLM adapter](<../../src/inference/engine.py>), [prompt](<../../src/inference/prompt.txt>).
+Engine execution/compatibility: [local engine](<local-engine.md>). Shared conversation state, budgets and validation: [judgment conversation](<judgment-conversation.md>).
 
-Dependencies: [retrieval](legal-retrieval.md); official [constraints](../competition/constraints.md), [submission contract](../competition/submission.md).
+Dependencies: [retrieval](<legal-retrieval.md>); official [constraints](<../competition/constraints.md>), [submission contract](<../competition/submission.md>).
 
 ## Interface and ownership
 
@@ -44,4 +44,4 @@ Application JSON via XGrammar `anyOf`; schema contains only assigned items:
 - Entry point honors `PPS_*` paths; input `.jsonl`/`.jsonl.gz`, default `test.jsonl.gz` then `test.jsonl`. Use a fresh output directory; existing `submission.csv` is refused.
 - Writes `trace.jsonl` and `report.json` for prediction failures; atomically writes `submission.csv` only if all records succeed. Package the installed `nara` package including `inference/prompt.txt`, plus `model/legal_index/` assets.
 
-Checks, measurements and remaining validation: [experiments](../experiments/local-validation.md).
+Checks, measurements and remaining validation: [experiments](<../maintenance/local-validation.md>).

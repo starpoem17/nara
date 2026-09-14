@@ -3,7 +3,7 @@ from types import SimpleNamespace
 import unittest
 
 from jsonschema import validate, ValidationError
-from nara.experiments.cms_updated_cards import (
+from experiments.legacy_CMS_updated_cards_v19_v24_dev200_20260913.code.cms_updated_cards import (
     EMPTY, ITEMS, PREFIX, authored_sources, card_blocks, check_budget,
     execute_once, output_schema, render_card,
 )

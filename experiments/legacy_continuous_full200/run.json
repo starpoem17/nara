@@ -1,0 +1,243 @@
+{
+  "schema_version": 1,
+  "record_kind": "historical_experiment",
+  "read_only": true,
+  "project_root": "../..",
+  "run_id": "legacy_continuous_full200",
+  "area": "inference-scheduling",
+  "report": "docs/experiments/inference-scheduling/2026-09/legacy_continuous_full200.md",
+  "question": "How does the pilot-selected budget behave for full200 six-feature and mixed inference?",
+  "started_at": null,
+  "timezone": "Asia/Seoul",
+  "time_evidence": "No verified orchestration start; see timestamp-candidates.json and original logs. September 2026 is established by the linked historical project records.",
+  "migration_at": "2026-09-13T15:13:30.150058+00:00",
+  "status": "historical; inspect per-condition execution records",
+  "judgment": "Follow-up used pilot-selected8192. Speed and accuracy observations have separate limits.",
+  "conditions": {
+    "six_continuous_8192": {
+      "settings": {
+        "recorded_condition": "six_continuous_8192",
+        "scope": "See preserved original manifest and source for exact settings."
+      },
+      "status": "historical",
+      "attempts": [],
+      "artifact_path": "six_continuous_8192"
+    },
+    "mixed_continuous_8192": {
+      "settings": {
+        "recorded_condition": "mixed_continuous_8192",
+        "scope": "See preserved original manifest and source for exact settings."
+      },
+      "status": "historical",
+      "attempts": [],
+      "artifact_path": "mixed_continuous_8192"
+    }
+  },
+  "max_attempts": 0,
+  "predecessors": [
+    {
+      "run_id": "legacy_continuous_pilot",
+      "reason": "Pilot runtime selected8192 before full200 six-feature and mixed conditions were launched."
+    }
+  ],
+  "followups": [
+    {
+      "run_id": "legacy_continuous_diagnosis",
+      "reason": "Observed accuracy differences led to a predefined five-stage diagnostic sweep."
+    },
+    {
+      "run_id": "legacy_continuous_repair",
+      "reason": "Observed mixed-run failure triggered isolated same-prompt/mode/budget recovery."
+    }
+  ],
+  "original_files": {
+    "analysis/continuous200/mixed_8192.log": {
+      "path": "mixed_8192.log",
+      "sha256": "ff37cb9186958cb383d66b34c933a2738ee4cb242acfb72ad849f079b6e7ac5c",
+      "size": 37127
+    },
+    "analysis/continuous200/mixed_continuous_8192/first_pass/lifecycle.jsonl": {
+      "path": "mixed_continuous_8192/first_pass/lifecycle.jsonl",
+      "sha256": "f8142869a904fe4bd4c5d22bb139bd0a0e300f37b7224b5567880f03f49e2211",
+      "size": 272748
+    },
+    "analysis/continuous200/mixed_continuous_8192/first_pass/report.json": {
+      "path": "mixed_continuous_8192/first_pass/report.json",
+      "sha256": "358a656ae0e9bf823d471cbab019af58bc5fad2d0a3b34d13f2f85736cf5fbb7",
+      "size": 1500
+    },
+    "analysis/continuous200/mixed_continuous_8192/first_pass/request_timings.jsonl": {
+      "path": "mixed_continuous_8192/first_pass/request_timings.jsonl",
+      "sha256": "5f4594a696ff352d9106edf3a68e1480af77c072cacd3e5ca74efd777b1d5000",
+      "size": 569955
+    },
+    "analysis/continuous200/mixed_continuous_8192/first_pass/scheduler.jsonl": {
+      "path": "mixed_continuous_8192/first_pass/scheduler.jsonl",
+      "sha256": "8c91e07cb3d9fefd38d846b559ca3102ecb09d67b49c3f6089e244bf4e85ce51",
+      "size": 4755417
+    },
+    "analysis/continuous200/mixed_continuous_8192/first_pass/trace.jsonl": {
+      "path": "mixed_continuous_8192/first_pass/trace.jsonl",
+      "sha256": "d3dee5acd279cfbc1954c69b0c9c4914e5bf067f45b98250bd30f977dbc0d8f0",
+      "size": 942740
+    },
+    "analysis/continuous200/mixed_continuous_8192/first_pass/trace_completed.jsonl": {
+      "path": "mixed_continuous_8192/first_pass/trace_completed.jsonl",
+      "sha256": "bd1900d6aca2a1e8a88caf5e8880bb280941e4d41703a281dbe3d8da628fd165",
+      "size": 942740
+    },
+    "analysis/continuous200/mixed_continuous_8192/rules.jsonl": {
+      "path": "mixed_continuous_8192/rules.jsonl",
+      "sha256": "9d9731a07ec62117709a829c1ae811571a7e23925e700a2d3c745f8579111500",
+      "size": 118085
+    },
+    "analysis/continuous200/mixed_continuous_8192/scheduler.jsonl": {
+      "path": "mixed_continuous_8192/scheduler.jsonl",
+      "sha256": "8c91e07cb3d9fefd38d846b559ca3102ecb09d67b49c3f6089e244bf4e85ce51",
+      "size": 4755417
+    },
+    "analysis/continuous200/mixed_continuous_8192/trace_completed.jsonl": {
+      "path": "mixed_continuous_8192/trace_completed.jsonl",
+      "sha256": "bd1900d6aca2a1e8a88caf5e8880bb280941e4d41703a281dbe3d8da628fd165",
+      "size": 942740
+    },
+    "analysis/continuous200/selection.json": {
+      "path": "selection.json",
+      "sha256": "b9515e56c126d29da6cbf6786dc178abeddcb22e989396cc11b045f330b4da4f",
+      "size": 249
+    },
+    "analysis/continuous200/six_8192.log": {
+      "path": "six_8192.log",
+      "sha256": "f80743524d1efecaee850eb062a1c41345535822271754692bf03f57c70aa939",
+      "size": 30769
+    },
+    "analysis/continuous200/six_continuous_8192/lifecycle.jsonl": {
+      "path": "six_continuous_8192/lifecycle.jsonl",
+      "sha256": "a434838dd7b76efe047935bb44623edae74adf1828fb8d784d642144373fcd6b",
+      "size": 54206
+    },
+    "analysis/continuous200/six_continuous_8192/report.json": {
+      "path": "six_continuous_8192/report.json",
+      "sha256": "bfccdd1d83022df28c55f96bdee9d51cafd4fc261bc0c87fb67fda69c8d2374a",
+      "size": 1222
+    },
+    "analysis/continuous200/six_continuous_8192/request_timings.jsonl": {
+      "path": "six_continuous_8192/request_timings.jsonl",
+      "sha256": "232ef3cd1c399ee5485216cef5c9bd5c8d3fb9aca2c77bc406c8a5296aae8e89",
+      "size": 113926
+    },
+    "analysis/continuous200/six_continuous_8192/scheduler.jsonl": {
+      "path": "six_continuous_8192/scheduler.jsonl",
+      "sha256": "67eaaefb61c907615c50bf8f2b0937c2ca8f98f5425ad33ffc7f5176e44a61f4",
+      "size": 3524432
+    },
+    "analysis/continuous200/six_continuous_8192/trace.jsonl": {
+      "path": "six_continuous_8192/trace.jsonl",
+      "sha256": "59542187c68760c254e55c3f5393cd458ba9fe742e231662c0f9d317b9ee69e8",
+      "size": 233493
+    },
+    "analysis/continuous200/six_continuous_8192/trace_completed.jsonl": {
+      "path": "six_continuous_8192/trace_completed.jsonl",
+      "sha256": "0c1db96c737e40f26c1ac09aea56a13cfc1d5bb6ed44462b9e5210715f3d5a08",
+      "size": 233493
+    }
+  },
+  "temporary_paths": [
+    "tmp/structure-migration-20260913"
+  ],
+  "migration_inventory": "docs/maintenance/evidence/structure-migration/mapping.json",
+  "reproducibility": "Original content retained. Local datasets/models require matching separately restored bytes; historical commands may need current reconstruction guidance.",
+  "recorded_condition_evidence": [
+    {
+      "path": "mixed_continuous_8192/first_pass/report.json",
+      "values": {
+        "groups": [
+          [
+            "v4",
+            "v6",
+            "v7",
+            "v8"
+          ],
+          [
+            "v10",
+            "v11",
+            "v12",
+            "v13"
+          ],
+          [
+            "v15",
+            "v16",
+            "v17",
+            "v18"
+          ],
+          [
+            "v19",
+            "v20",
+            "v21",
+            "v23"
+          ],
+          [
+            "v1",
+            "v5",
+            "v9",
+            "v14",
+            "v22",
+            "v24"
+          ]
+        ],
+        "options": {
+          "thinking": "mixed",
+          "item_group_size": 6
+        },
+        "limits": {
+          "batch_size": 8,
+          "search_rounds": 2,
+          "queries_per_round": 4,
+          "top_k": 5,
+          "round_tokens": 4096,
+          "total_retrieval_tokens": 8192,
+          "output_tokens": 2048,
+          "retries": 1,
+          "require_search": false
+        }
+      }
+    },
+    {
+      "path": "six_continuous_8192/report.json",
+      "values": {
+        "groups": [
+          [
+            "v1",
+            "v5",
+            "v9",
+            "v14",
+            "v22",
+            "v24"
+          ]
+        ],
+        "options": {
+          "thinking": true,
+          "item_group_size": 6
+        },
+        "limits": {
+          "batch_size": 8,
+          "search_rounds": 2,
+          "queries_per_round": 4,
+          "top_k": 5,
+          "round_tokens": 4096,
+          "total_retrieval_tokens": 8192,
+          "output_tokens": 2048,
+          "retries": 1,
+          "require_search": false
+        }
+      }
+    }
+  ],
+  "historical_provenance": {
+    "status": "retained where originally recorded; missing fields remain unknown",
+    "execution_sources": "Existing source/analysis_source contents and original manifests are authoritative; migration-time code is separately labeled",
+    "input_access": "Local input/model assets remain locally retained; original hashes are in manifests/evaluations. Another checkout must restore matching bytes.",
+    "original_temporary_paths": "Not reconstructed when absent from original evidence"
+  },
+  "migration_code_archive": "docs/maintenance/evidence/structure-migration/original-source.tar"
+}

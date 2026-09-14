@@ -1,0 +1,208 @@
+{
+  "schema_version": 1,
+  "record_kind": "historical_experiment",
+  "read_only": true,
+  "project_root": "../..",
+  "run_id": "legacy_v9_cod_fewshot5_v3_20260912",
+  "area": "prompt-design",
+  "report": "docs/experiments/prompt-design/2026-09/legacy_v9_cod_fewshot5_v3_20260912.md",
+  "question": "Third fixed-five CoD prompt execution",
+  "started_at": null,
+  "timezone": "Asia/Seoul",
+  "time_evidence": "No verified orchestration start; see timestamp-candidates.json and original logs. September 2026 is established by the linked historical project records.",
+  "migration_at": "2026-09-13T15:13:30.159791+00:00",
+  "status": "historical; inspect per-condition execution records",
+  "judgment": "Partial style inducement only: format success1/5, not reliable enforcement or grounds for lower thinking budgets.",
+  "conditions": {
+    "recorded_execution": {
+      "settings": {
+        "recorded_condition": "recorded execution",
+        "scope": "See preserved original manifest and source for exact settings."
+      },
+      "status": "historical",
+      "attempts": [],
+      "artifact_path": "."
+    }
+  },
+  "max_attempts": 0,
+  "predecessors": [
+    {
+      "run_id": "legacy_v9_cod_fewshot5_v2_20260912",
+      "reason": "Observed outputs led to a further prompt revision."
+    }
+  ],
+  "followups": [],
+  "original_files": {
+    "analysis/v9_cod_fewshot5/prompt_v1.txt": {
+      "path": "support/v9_cod_fewshot5/prompt_v1.txt",
+      "sha256": "eebc37a9f6435313a327697f47ab094f0fa2fb2ac8496d2c6a0c4e2908f9a7de",
+      "size": 2287
+    },
+    "analysis/v9_cod_fewshot5/prompt_v3.txt": {
+      "path": "support/v9_cod_fewshot5/prompt_v3.txt",
+      "sha256": "2483c1150dfb9cdd2c0828bc998538c165233866a6f2e1df16274b0f13f90e10",
+      "size": 2591
+    },
+    "output/experiments/v9-cod-fewshot5-v3-20260912/fewshot_prompt.txt": {
+      "path": "fewshot_prompt.txt",
+      "sha256": "2483c1150dfb9cdd2c0828bc998538c165233866a6f2e1df16274b0f13f90e10",
+      "size": 2591
+    },
+    "output/experiments/v9-cod-fewshot5-v3-20260912/manifest.json": {
+      "path": "manifest.json",
+      "sha256": "c27d897d1045b7ec2e366f9927e967b30aa5c1d76315ec77db2b67938bfb7ffc",
+      "size": 991
+    },
+    "output/experiments/v9-cod-fewshot5-v3-20260912/messages.json": {
+      "path": "messages.json",
+      "sha256": "dbe271a10156367a5649f8297499f2152a6233e63a0846f9b27ad858bd6103f2",
+      "size": 193718
+    },
+    "output/experiments/v9-cod-fewshot5-v3-20260912/raw_responses.jsonl": {
+      "path": "raw_responses.jsonl",
+      "sha256": "96d14259bece9977c46fb55f165479031cebec890ae3b08b43527230b3073c9f",
+      "size": 13654
+    },
+    "output/experiments/v9-cod-fewshot5-v3-20260912/source/data/dev.jsonl": {
+      "path": "source/data/dev.jsonl",
+      "sha256": "5507f5ab0ba53b708f87211ed050dbe531b48a626ace6084c3ccaefb53147534",
+      "size": 8310888
+    },
+    "output/experiments/v9-cod-fewshot5-v3-20260912/source/nara/__init__.py": {
+      "path": "source/nara/__init__.py",
+      "sha256": "81f9119d0c08fa90b298c122f306bbb7cd82527a99a6a9142d6fb322107a0382",
+      "size": 67
+    },
+    "output/experiments/v9-cod-fewshot5-v3-20260912/source/nara/batch_barrier.py": {
+      "path": "source/nara/batch_barrier.py",
+      "sha256": "09e5d7abf2a3e6a14f87cfa86c3fcef0a7aab5531d98bb7bd5be9400c1092474",
+      "size": 1536
+    },
+    "output/experiments/v9-cod-fewshot5-v3-20260912/source/nara/briefing_rule.py": {
+      "path": "source/nara/briefing_rule.py",
+      "sha256": "ac4afa19674bc9476e188f522bfefeb8d9f041c69346ea6a58b7b2a053297161",
+      "size": 3040
+    },
+    "output/experiments/v9-cod-fewshot5-v3-20260912/source/nara/compact_criteria.json": {
+      "path": "source/nara/compact_criteria.json",
+      "sha256": "27ff6bb7fb0dfecd476831b3db8795f00c84ae039ce4b5e95a954856c75eec69",
+      "size": 7180
+    },
+    "output/experiments/v9-cod-fewshot5-v3-20260912/source/nara/compact_predictor.py": {
+      "path": "source/nara/compact_predictor.py",
+      "sha256": "046002710b57ad799ff6f287f016ae215c2109338b66d3706570c8ac8651f969",
+      "size": 961
+    },
+    "output/experiments/v9-cod-fewshot5-v3-20260912/source/nara/continuous.py": {
+      "path": "source/nara/continuous.py",
+      "sha256": "80364fa8453e58d1176bfdc02c95ba81b5457d790fe0d931b2b582953fdb7ec7",
+      "size": 4220
+    },
+    "output/experiments/v9-cod-fewshot5-v3-20260912/source/nara/conversation.py": {
+      "path": "source/nara/conversation.py",
+      "sha256": "273469929c78ded1ecc6a763703ddaeca22a4c74fa35220106bb959b54247ca3",
+      "size": 14317
+    },
+    "output/experiments/v9-cod-fewshot5-v3-20260912/source/nara/hybrid_experiment.py": {
+      "path": "source/nara/hybrid_experiment.py",
+      "sha256": "c83e8296c1d88db5d13ba715c8ef6c98aa4c0086ee709058b638631130096a59",
+      "size": 3365
+    },
+    "output/experiments/v9-cod-fewshot5-v3-20260912/source/nara/hypothesis6.py": {
+      "path": "source/nara/hypothesis6.py",
+      "sha256": "737c4c4198d1254b50acc472e653dd513315e216001282ddf8dc7459368c34bf",
+      "size": 9758
+    },
+    "output/experiments/v9-cod-fewshot5-v3-20260912/source/nara/inference.py": {
+      "path": "source/nara/inference.py",
+      "sha256": "cc81a106db5db48eea99ba07119e9b537908e78a5aa9afd1cf06402e2057c4d9",
+      "size": 10016
+    },
+    "output/experiments/v9-cod-fewshot5-v3-20260912/source/nara/legal_index.py": {
+      "path": "source/nara/legal_index.py",
+      "sha256": "b3266f0065a9164dbc2c71912d8667eedefb1ca9514f661601be72888c14bf7e",
+      "size": 12638
+    },
+    "output/experiments/v9-cod-fewshot5-v3-20260912/source/nara/prefix_pipeline.py": {
+      "path": "source/nara/prefix_pipeline.py",
+      "sha256": "0ddc8dd026efc9f5480bd5a2837539a385c42da041c0a2aa03cef8de36c631b9",
+      "size": 6416
+    },
+    "output/experiments/v9-cod-fewshot5-v3-20260912/source/nara/prefix_predictor.py": {
+      "path": "source/nara/prefix_predictor.py",
+      "sha256": "aee83eb0ce46cef8f2cbc7bc8697a94282d0b7908306fff55b5416d271ed19b7",
+      "size": 2441
+    },
+    "output/experiments/v9-cod-fewshot5-v3-20260912/source/nara/recovery.py": {
+      "path": "source/nara/recovery.py",
+      "sha256": "9c2aef5ba101044c42e2342c84daef592b4be0022bd934e10932c0a7983fd65f",
+      "size": 5934
+    },
+    "output/experiments/v9-cod-fewshot5-v3-20260912/source/nara/retrieval.py": {
+      "path": "source/nara/retrieval.py",
+      "sha256": "fb794006f27da4b99a3d39b9f3ef6e84e829f187290a451b2f33b56f0c8c8edc",
+      "size": 7047
+    },
+    "output/experiments/v9-cod-fewshot5-v3-20260912/source/nara/vllm_model.py": {
+      "path": "source/nara/vllm_model.py",
+      "sha256": "c4811d30d3040780bfe29177b18df231c2d30cb8451db23d804da3283f83c3bb",
+      "size": 10275
+    },
+    "output/experiments/v9-cod-fewshot5-v3-20260912/source/scripts/experiment_cod_fewshot5.py": {
+      "path": "source/scripts/experiment_cod_fewshot5.py",
+      "sha256": "2d8c23b01c3cf97be9b25cb3be4c1ab3c26918280b271726e8bae96bea66e468",
+      "size": 6506
+    },
+    "output/experiments/v9-cod-fewshot5-v3-20260912/source/scripts/experiment_v9_group.py": {
+      "path": "source/scripts/experiment_v9_group.py",
+      "sha256": "91d3a5cd2c013250704a1ec13c145c145377b41afb263435c074fdee4cd51700",
+      "size": 12430
+    },
+    "output/experiments/v9-cod-fewshot5-v3-20260912/source_hashes.json": {
+      "path": "source_hashes.json",
+      "sha256": "5bbabbb4dfc5eef163067805d00a3af77f5c6d45c2e3baec7b9b57be448ef294",
+      "size": 1812
+    },
+    "output/experiments/v9-cod-fewshot5-v3-20260912/style_analysis.json": {
+      "path": "style_analysis.json",
+      "sha256": "68efa4d7199774f85d62761e704515741e8809feff7c53c8e03eee58e34dbba3",
+      "size": 7678
+    },
+    "output/experiments/v9-cod-fewshot5-v3-20260912/trace.jsonl": {
+      "path": "trace.jsonl",
+      "sha256": "b5836078c3657535c9ca6e5fd213e31508a8db6250cacc3e7450b5d331f2d7f8",
+      "size": 3350
+    }
+  },
+  "temporary_paths": [
+    "tmp/structure-migration-20260913"
+  ],
+  "migration_inventory": "docs/maintenance/evidence/structure-migration/mapping.json",
+  "reproducibility": "Original content retained. Local datasets/models require matching separately restored bytes; historical commands may need current reconstruction guidance.",
+  "recorded_condition_evidence": [
+    {
+      "path": "manifest.json",
+      "values": {
+        "limits": {
+          "batch_size": 5,
+          "search_rounds": 2,
+          "queries_per_round": 4,
+          "top_k": 5,
+          "round_tokens": 4096,
+          "total_retrieval_tokens": 8192,
+          "output_tokens": 512,
+          "retries": 1,
+          "require_search": false,
+          "instant_output_tokens": null
+        }
+      }
+    }
+  ],
+  "historical_provenance": {
+    "status": "retained where originally recorded; missing fields remain unknown",
+    "execution_sources": "Existing source/analysis_source contents and original manifests are authoritative; migration-time code is separately labeled",
+    "input_access": "Local input/model assets remain locally retained; original hashes are in manifests/evaluations. Another checkout must restore matching bytes.",
+    "original_temporary_paths": "Not reconstructed when absent from original evidence"
+  },
+  "migration_code_archive": "docs/maintenance/evidence/structure-migration/original-source.tar"
+}

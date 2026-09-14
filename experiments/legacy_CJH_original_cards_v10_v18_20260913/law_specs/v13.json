@@ -1,0 +1,76 @@
+{
+  "feature": "v13",
+  "excerpts": [
+    {
+      "path": "data/법령패키지/법령/중소기업제품 구매촉진 및 판로지원에 관한 법률.txt",
+      "start_line": 51,
+      "end_line": 68,
+      "locator": "제6조, 제7조 및 제7조의2"
+    },
+    {
+      "path": "data/법령패키지/법령/중소기업제품 구매촉진 및 판로지원에 관한 법률 시행령.txt",
+      "start_line": 118,
+      "end_line": 124,
+      "locator": "제7조제1항 및 제2항"
+    },
+    {
+      "path": "data/법령패키지/법령/국가를 당사자로 하는 계약에 관한 법률 시행령.txt",
+      "start_line": 186,
+      "end_line": 187,
+      "locator": "제21조제1항 본문"
+    },
+    {
+      "path": "data/법령패키지/법령/국가를 당사자로 하는 계약에 관한 법률 시행령.txt",
+      "start_line": 200,
+      "end_line": 201,
+      "locator": "제21조제1항제8호 및 제8호의2"
+    },
+    {
+      "path": "data/법령패키지/법령/지방자치단체를 당사자로 하는 계약에 관한 법률 시행령.txt",
+      "start_line": 190,
+      "end_line": 191,
+      "locator": "제20조제1항 본문"
+    },
+    {
+      "path": "data/법령패키지/법령/지방자치단체를 당사자로 하는 계약에 관한 법률 시행령.txt",
+      "start_line": 199,
+      "end_line": 199,
+      "locator": "제20조제1항제8호"
+    },
+    {
+      "path": "data/법령패키지/법령/지방자치단체를 당사자로 하는 계약에 관한 법률 시행령.txt",
+      "start_line": 207,
+      "end_line": 207,
+      "locator": "제20조제1항제11호"
+    },
+    {
+      "path": "data/법령패키지/법령/소프트웨어 진흥법.txt",
+      "start_line": 388,
+      "end_line": 390,
+      "locator": "제48조제1항 및 제2항"
+    },
+    {
+      "path": "data/법령패키지/법령/중소 소프트웨어사업자의 사업 참여 지원에 관한 지침.txt",
+      "start_line": 11,
+      "end_line": 11,
+      "locator": "제2조제1항"
+    },
+    {
+      "path": "data/법령패키지/법령/중소 소프트웨어사업자의 사업 참여 지원에 관한 지침.txt",
+      "start_line": 13,
+      "end_line": 18,
+      "locator": "제3조제1항"
+    },
+    {
+      "path": "data/법령패키지/법령/중소 소프트웨어사업자의 사업 참여 지원에 관한 지침.txt",
+      "start_line": 322,
+      "end_line": 337,
+      "locator": "별표 1"
+    }
+  ],
+  "selection_notes": [
+    "The full text of 판로지원법 제7조의2 is retained, including both designated-product and joint-project routes and both paragraph 2 bidding methods.",
+    "The competitive-product candidate rows and their complete special notes are supplied separately and are not included in this law specification.",
+    "The separately supplied candidate-row source is the 2025-96 designation effective 2025-08-29; the package provides no earlier designation, so it must not be presumed to describe an earlier notice date."
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "baseline_revision": "a74048d42d2d8e24a16473eeb056ea3a15264a3b",
+  "original_artifacts": 1925,
+  "original_artifact_bytes": 582434489,
+  "artifact_hashes_match": true,
+  "protected_files_verified": 27,
+  "protected_sha256": {
+    "AGENT.md": "77c98008d1598d4d14086f50d8fe194fd91caa0c273fd7ce60e7df1ce98d8448",
+    "README.md": "871b4b75a24975336e0c12400e2c0b5a98de6a884e932a8728991b29d02e97f5"
+  },
+  "original_archive_members_verified": 254,
+  "historical_code_modules": 56,
+  "legacy_run_reports": 48,
+  "reciprocal_predecessor_relations": 25,
+  "wheel": "tmp/structure-migration-20260913/package/nara-0.1.0-py3-none-any.whl",
+  "wheel_sha256": "08e975400e3ddd9d82424bd01016eaa9a79b988f84ff1f09a42af826a198839a",
+  "cpu_tests": 139,
+  "checks": [
+    {
+      "run_id": "20260914_001947_saved-evaluation",
+      "status": "complete",
+      "report": "docs/maintenance/checks/20260914_001947_saved-evaluation.md"
+    },
+    {
+      "run_id": "20260914_002652_migrated-preparation",
+      "status": "complete",
+      "report": "docs/maintenance/checks/20260914_002652_migrated-preparation.md"
+    },
+    {
+      "run_id": "20260914_000319_pilot-replay",
+      "status": "complete",
+      "report": "docs/maintenance/checks/20260914_000319_pilot-replay.md"
+    },
+    {
+      "run_id": "20260914_003426_saved-evaluation",
+      "status": "complete",
+      "report": "docs/maintenance/checks/20260914_003426_saved-evaluation.md"
+    }
+  ],
+  "errors": [],
+  "no_gpu_inference": true
+}

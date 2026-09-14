@@ -1,0 +1,37 @@
+{
+  "recovered_from_saved_outputs": [
+    {
+      "id": "PPS-DEV-13",
+      "raw_index": 22,
+      "original_error": "2:0: Response invalid after retries: Additional properties are not allowed ('근거문토' was unexpected)"
+    },
+    {
+      "id": "PPS-DEV-052",
+      "raw_index": 90,
+      "original_error": "1:0: Response invalid after retries: Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "id": "PPS-DEV-104",
+      "raw_index": 157,
+      "original_error": "1:0: Response invalid after retries: Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "id": "PPS-DEV-155",
+      "raw_index": 227,
+      "original_error": "1:0: Response invalid after retries: Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "id": "PPS-DEV-184",
+      "raw_index": 270,
+      "original_error": "0:0: Response invalid after retries: Generation ended: length"
+    },
+    {
+      "id": "PPS-DEV-188",
+      "raw_index": 275,
+      "original_error": "1:0: Response invalid after retries: Expecting value: line 1 column 1 (char 0)"
+    }
+  ],
+  "unresolved_ids": [],
+  "complete_records": 200,
+  "method": "Use existing successful pipeline result; for errors, latest stopped raw output with exact schema-valid finalJSON after stripping outer code fence only. Same evidence quote filter. No changed labels, no zero filling, no new inference."
+}

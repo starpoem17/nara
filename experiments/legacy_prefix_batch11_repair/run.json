@@ -1,0 +1,216 @@
+{
+  "schema_version": 1,
+  "record_kind": "historical_experiment",
+  "read_only": true,
+  "project_root": "../..",
+  "run_id": "legacy_prefix_batch11_repair",
+  "area": "inference-scheduling",
+  "report": "docs/experiments/inference-scheduling/2026-09/legacy_prefix_batch11_repair.md",
+  "question": "Can the corrected helper recover the three failed batch11 notices?",
+  "started_at": null,
+  "timezone": "Asia/Seoul",
+  "time_evidence": "No verified orchestration start; see timestamp-candidates.json and original logs. September 2026 is established by the linked historical project records.",
+  "migration_at": "2026-09-13T15:13:30.169794+00:00",
+  "status": "historical; inspect per-condition execution records",
+  "judgment": "Corrected recovery completed the three failed notices; final200 includes preserved initial successes.",
+  "conditions": {
+    "recorded_execution": {
+      "settings": {
+        "recorded_condition": "recorded execution",
+        "scope": "See preserved original manifest and source for exact settings."
+      },
+      "status": "historical",
+      "attempts": [],
+      "artifact_path": "."
+    }
+  },
+  "max_attempts": 0,
+  "predecessors": [
+    {
+      "run_id": "legacy_prefix_batch11_aborted_repair",
+      "reason": "The helper assertion was corrected and inference restarted under the same prompt/OFF/output2048 conditions. Aborted execution time is excluded from the reported timing."
+    }
+  ],
+  "followups": [
+    {
+      "run_id": "legacy_prefix_pipeline200",
+      "reason": "Earlier sequential batch11 measurements motivated cross-notice scheduling; engine concurrency/graphs/scheduling changed while historical prompts/H6/output2048 remained fixed."
+    }
+  ],
+  "original_files": {
+    "analysis/prefix200_batch11/analysis_manifest.json": {
+      "path": "analysis_manifest.json",
+      "sha256": "4e413db524c9e9906009fc0268fc11cae1161fe15b3f84fef6121b2d77160a80",
+      "size": 218
+    },
+    "analysis/prefix200_batch11/analysis_source/docs/experiments/prefix-cache.md": {
+      "path": "analysis_source/docs/experiments/prefix-cache.md",
+      "sha256": "3a939a7ecb0f9c18d8204c450123de97a542291d88d710de89b5d1f19d99af6f",
+      "size": 5663
+    },
+    "analysis/prefix200_batch11/analysis_source/scripts/summarize_prefix_batch11.py": {
+      "path": "analysis_source/scripts/summarize_prefix_batch11.py",
+      "sha256": "e89b6341af273eec50a4984466194830d14a52bc092058607363d832be8ae7f9",
+      "size": 10106
+    },
+    "analysis/prefix200_batch11/audit.log": {
+      "path": "audit.log",
+      "sha256": "661c75cc879a4686a5463eedc6755068b2dfd652b57905c0e36206aa39d207f4",
+      "size": 1827
+    },
+    "analysis/prefix200_batch11/cache_trace.jsonl": {
+      "path": "cache_trace.jsonl",
+      "sha256": "ffdd4512e6a38300d3496e4200e0a93135e0112fef7d7c5fe2a866273d169654",
+      "size": 487213
+    },
+    "analysis/prefix200_batch11/comparison.json": {
+      "path": "comparison.json",
+      "sha256": "00970fb74b21d95b49d993c37d3f76d2f5b085028c43e472bb84e49c7c3c7ec3",
+      "size": 6148
+    },
+    "analysis/prefix200_batch11/errors.csv": {
+      "path": "errors.csv",
+      "sha256": "55af45666d00385a66cb779cc538d16643c783f1b19c9c7abbe24b559011b494",
+      "size": 39054
+    },
+    "analysis/prefix200_batch11/evaluation.json": {
+      "path": "evaluation.json",
+      "sha256": "453de46dbb49c50d27d2d5039bf620c677fd5f442bb6ea3620e5ad3bfb58ecf0",
+      "size": 11212
+    },
+    "analysis/prefix200_batch11/model_batches.json": {
+      "path": "model_batches.json",
+      "sha256": "6bbbf6b6a75e24481d5e608d31cf71c8ce6aadccdb8b86a3e7dc3d338f153af3",
+      "size": 48764
+    },
+    "analysis/prefix200_batch11/notice_timings.json": {
+      "path": "notice_timings.json",
+      "sha256": "507d48ffc04181e8e1a994d2a70358d987c32f4a79c32c40497f938e878ec354",
+      "size": 124551
+    },
+    "analysis/prefix200_batch11/recovery.log": {
+      "path": "recovery.log",
+      "sha256": "e2eeb7a20d0edd4bd44b7acbffc47da686ce4ef13cb66bd4f4ebaafc433c61c3",
+      "size": 17608
+    },
+    "analysis/prefix200_batch11/recovery_policy.json": {
+      "path": "recovery_policy.json",
+      "sha256": "6c5a0227efd8be7167bfb443ef1627475cc2959c1095354c2eda7c619d346c3b",
+      "size": 336
+    },
+    "analysis/prefix200_batch11/recovery_timings.json": {
+      "path": "recovery_timings.json",
+      "sha256": "4d833bd93f9b6e786e00dbee7e7a02c65403e4091201d66116ba52c38c81ccf2",
+      "size": 393
+    },
+    "analysis/prefix200_batch11/report.json": {
+      "path": "report.json",
+      "sha256": "40b94873ac16189eb4430b1ea14d398478bcd56166a779117e42417425c73af7",
+      "size": 2701
+    },
+    "analysis/prefix200_batch11/source/scripts/recover_prefix_batch11.py": {
+      "path": "source/scripts/recover_prefix_batch11.py",
+      "sha256": "914269d418c2b40c2d2843ccad4028a337de2c79b15da20511207ee785a6a3a6",
+      "size": 7392
+    },
+    "analysis/prefix200_batch11/submission.csv": {
+      "path": "submission.csv",
+      "sha256": "b379bbc24629033721ca0ee3d64e65c6fbcfbc6c9bfcb1e0a7211d2cded91d7b",
+      "size": 33306
+    },
+    "analysis/prefix200_batch11/trace.jsonl": {
+      "path": "trace.jsonl",
+      "sha256": "a02394323fc82527cfb1e0f5bd9daf45200f93642890e05de1e18ae86f60c8ed",
+      "size": 1457673
+    },
+    "analysis/prefix200_batch11/validation.json": {
+      "path": "validation.json",
+      "sha256": "f63754620c53402fb286a0ee04a6e9e8091c71b71a6608cb8020bed9b0eb9d6c",
+      "size": 359
+    }
+  },
+  "temporary_paths": [
+    "tmp/structure-migration-20260913"
+  ],
+  "migration_inventory": "docs/maintenance/evidence/structure-migration/mapping.json",
+  "reproducibility": "Original content retained. Local datasets/models require matching separately restored bytes; historical commands may need current reconstruction guidance.",
+  "recorded_condition_evidence": [
+    {
+      "path": "report.json",
+      "values": {
+        "options": {
+          "model_dir": "models/gemma-4-26B-A4B-it-NVFP4",
+          "max_model_len": 32768,
+          "thinking": false,
+          "item_group_size": 4
+        },
+        "limits": {
+          "batch_size": 11,
+          "search_rounds": 2,
+          "queries_per_round": 4,
+          "top_k": 5,
+          "round_tokens": 4096,
+          "total_retrieval_tokens": 8192,
+          "output_tokens": 2048,
+          "retries": 1,
+          "require_search": false
+        },
+        "groups": [
+          [
+            "v1",
+            "v4"
+          ],
+          [
+            "v5",
+            "v6",
+            "v7"
+          ],
+          [
+            "v8"
+          ],
+          [
+            "v9",
+            "v19"
+          ],
+          [
+            "v10",
+            "v11",
+            "v12",
+            "v13"
+          ],
+          [
+            "v14"
+          ],
+          [
+            "v15",
+            "v16"
+          ],
+          [
+            "v17",
+            "v18"
+          ],
+          [
+            "v20"
+          ],
+          [
+            "v21"
+          ],
+          [
+            "v22",
+            "v23"
+          ],
+          [
+            "v24"
+          ]
+        ]
+      }
+    }
+  ],
+  "historical_provenance": {
+    "status": "retained where originally recorded; missing fields remain unknown",
+    "execution_sources": "Existing source/analysis_source contents and original manifests are authoritative; migration-time code is separately labeled",
+    "input_access": "Local input/model assets remain locally retained; original hashes are in manifests/evaluations. Another checkout must restore matching bytes.",
+    "original_temporary_paths": "Not reconstructed when absent from original evidence"
+  },
+  "migration_code_archive": "docs/maintenance/evidence/structure-migration/original-source.tar"
+}

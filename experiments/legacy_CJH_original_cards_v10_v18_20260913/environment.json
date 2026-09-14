@@ -1,0 +1,240 @@
+{
+  "recorded_at": "2026-09-12T17:10:26.066502+00:00",
+  "python": "3.12.13",
+  "platform": "Linux-7.0.0-31-generic-x86_64-with-glibc2.39",
+  "packages": {
+    "vllm": "0.26.0",
+    "torch": "2.11.0+cu130",
+    "transformers": "5.14.1",
+    "flashinfer-python": "0.6.14",
+    "numpy": "2.2.6",
+    "ninja": "1.13.2"
+  },
+  "gpu": "NVIDIA GeForce RTX 5090, 32607 MiB, 580.178.04",
+  "models": {
+    "gemma-4-26B-A4B-it-NVFP4": {
+      "download_metadata": {
+        ".cache/huggingface/download/.gitattributes.metadata": [
+          "5557756b8dce33ac72f2bd702b11729fdba3b839",
+          "52373fe24473b1aa44333d318f578ae6bf04b49b",
+          "1789031903.0736554"
+        ],
+        ".cache/huggingface/download/README.md.metadata": [
+          "5557756b8dce33ac72f2bd702b11729fdba3b839",
+          "c188ded8376d361b7ad2984378342a02494984ad",
+          "1789031903.1269112"
+        ],
+        ".cache/huggingface/download/chat_template.jinja.metadata": [
+          "5557756b8dce33ac72f2bd702b11729fdba3b839",
+          "6eef19f4660280e6fdfbd3dce976c419178acb30",
+          "1789031903.2006652"
+        ],
+        ".cache/huggingface/download/config.json.metadata": [
+          "5557756b8dce33ac72f2bd702b11729fdba3b839",
+          "9f7f010c238f8337dd3551aa78308f28e43e2cc1",
+          "1789031903.1254072"
+        ],
+        ".cache/huggingface/download/generation_config.json.metadata": [
+          "5557756b8dce33ac72f2bd702b11729fdba3b839",
+          "edda3c1950276d89fa83f5c515fdc0a38734fc59",
+          "1789031903.1695342"
+        ],
+        ".cache/huggingface/download/model.safetensors.index.json.metadata": [
+          "5557756b8dce33ac72f2bd702b11729fdba3b839",
+          "b7ec26cd4de40fbcf670f3f858588e2cda928aa9",
+          "1789031903.1748507"
+        ],
+        ".cache/huggingface/download/model.safetensors.metadata": [
+          "5557756b8dce33ac72f2bd702b11729fdba3b839",
+          "62fd36b05775b9462b7914af3f911998d372d8d5a200a34b9c5ae88666dce56f",
+          "1789032172.6259382"
+        ],
+        ".cache/huggingface/download/processor_config.json.metadata": [
+          "5557756b8dce33ac72f2bd702b11729fdba3b839",
+          "5465974d23e1eca2c46c2809b26c997946ce0d90",
+          "1789031903.0803695"
+        ],
+        ".cache/huggingface/download/recipe.yaml.metadata": [
+          "5557756b8dce33ac72f2bd702b11729fdba3b839",
+          "f790e78bbbad981cd75606d4b2c2f8d1fef97239",
+          "1789031903.695895"
+        ],
+        ".cache/huggingface/download/tokenizer.json.metadata": [
+          "5557756b8dce33ac72f2bd702b11729fdba3b839",
+          "d93b194780d6d3212d02d300123b13009b4e46871c1a8395e3294d7205d349a8",
+          "1789031940.312824"
+        ],
+        ".cache/huggingface/download/tokenizer_config.json.metadata": [
+          "5557756b8dce33ac72f2bd702b11729fdba3b839",
+          "59bb6fd5faeef78fb713b45af55dd271596ac57b",
+          "1789031903.8269863"
+        ]
+      },
+      "weights": [
+        {
+          "filename": "model.safetensors",
+          "bytes": 16423500596
+        }
+      ],
+      "identity_limit": "Weights identified by local download metadata and byte size; no new full weight hash was computed."
+    },
+    "bge-m3": {
+      "download_metadata": {
+        ".cache/huggingface/download/.gitattributes.metadata": [
+          "5617a9f61b028005a4858fdac845db406aefb181",
+          "3fc40c755b31a851192cf82586e3a4bf1ba43f09",
+          "1789033164.5139868"
+        ],
+        ".cache/huggingface/download/1_Pooling/config.json.metadata": [
+          "5617a9f61b028005a4858fdac845db406aefb181",
+          "9bd85925f325e25246d94c4918dc02ab98f2a1b7",
+          "1789033164.4246538"
+        ],
+        ".cache/huggingface/download/README.md.metadata": [
+          "5617a9f61b028005a4858fdac845db406aefb181",
+          "e5a320176edd6ee1cfb256e68ee5ac0004de9447",
+          "1789033164.5396347"
+        ],
+        ".cache/huggingface/download/colbert_linear.pt.metadata": [
+          "5617a9f61b028005a4858fdac845db406aefb181",
+          "19bfbae397c2b7524158c919d0e9b19393c5639d098f0a66932c91ed8f5f9abb",
+          "1789033165.7056644"
+        ],
+        ".cache/huggingface/download/config.json.metadata": [
+          "5617a9f61b028005a4858fdac845db406aefb181",
+          "e6eda1c72da8f9dc30fdd9b69c73d35af3b7a7ad",
+          "1789033164.4402785"
+        ],
+        ".cache/huggingface/download/config_sentence_transformers.json.metadata": [
+          "5617a9f61b028005a4858fdac845db406aefb181",
+          "1fba91c78a6c8e17227058ab6d4d3acb5d8630a9",
+          "1789033164.4924946"
+        ],
+        ".cache/huggingface/download/imgs/.DS_Store.metadata": [
+          "5617a9f61b028005a4858fdac845db406aefb181",
+          "5008ddfcf53c02e82d7eee2e57c38e5672ef89f6",
+          "1789033164.448663"
+        ],
+        ".cache/huggingface/download/imgs/bm25.jpg.metadata": [
+          "5617a9f61b028005a4858fdac845db406aefb181",
+          "030c9395c29d2ae71fdc8a8fe38b01de17817821",
+          "1789033164.441754"
+        ],
+        ".cache/huggingface/download/imgs/long.jpg.metadata": [
+          "5617a9f61b028005a4858fdac845db406aefb181",
+          "5121bd05ddd5b58e69f1dd62ae82117a40144ab5",
+          "1789033165.115088"
+        ],
+        ".cache/huggingface/download/imgs/miracl.jpg.metadata": [
+          "5617a9f61b028005a4858fdac845db406aefb181",
+          "878d67d4931a00e30c5a56a2f5adedaf220da7f1",
+          "1789033165.0587912"
+        ],
+        ".cache/huggingface/download/imgs/mkqa.jpg.metadata": [
+          "5617a9f61b028005a4858fdac845db406aefb181",
+          "6607ac85da86583bd4fe91d3b9ec58a76feb220e",
+          "1789033165.3765438"
+        ],
+        ".cache/huggingface/download/imgs/nqa.jpg.metadata": [
+          "5617a9f61b028005a4858fdac845db406aefb181",
+          "bf983404739ed8b859d15e5586bdcdf731d3caa0",
+          "1789033165.0957289"
+        ],
+        ".cache/huggingface/download/imgs/others.webp.metadata": [
+          "5617a9f61b028005a4858fdac845db406aefb181",
+          "58e7f9981380794db1df4334707539f180b0035e",
+          "1789033165.1274893"
+        ],
+        ".cache/huggingface/download/long.jpg.metadata": [
+          "5617a9f61b028005a4858fdac845db406aefb181",
+          "3435de26618499e8381cd414025410991c3a97bd",
+          "1789033165.1497352"
+        ],
+        ".cache/huggingface/download/modules.json.metadata": [
+          "5617a9f61b028005a4858fdac845db406aefb181",
+          "952a9b81c0bfd99800fabf352f69c7ccd46c5e43",
+          "1789033165.1842139"
+        ],
+        ".cache/huggingface/download/onnx/Constant_7_attr__value.metadata": [
+          "5617a9f61b028005a4858fdac845db406aefb181",
+          "3cdc05e5f550d8bd136f28efcea0ad5e6b4169c8",
+          "1789033165.6710851"
+        ],
+        ".cache/huggingface/download/onnx/config.json.metadata": [
+          "5617a9f61b028005a4858fdac845db406aefb181",
+          "aadef53b97586be7cafa2c06837a0bd53f1f1ded",
+          "1789033165.733854"
+        ],
+        ".cache/huggingface/download/onnx/model.onnx.metadata": [
+          "5617a9f61b028005a4858fdac845db406aefb181",
+          "f84251230831afb359ab26d9fd37d5936d4d9bb5d1d5410e66442f630f24435b",
+          "1789033166.3603206"
+        ],
+        ".cache/huggingface/download/onnx/model.onnx_data.metadata": [
+          "5617a9f61b028005a4858fdac845db406aefb181",
+          "1eebfb28493f67bba03ce0ef64bfdc7fc5a3bd9d7493f818bb1d78cd798416b4",
+          "1789033219.863723"
+        ],
+        ".cache/huggingface/download/onnx/sentencepiece.bpe.model.metadata": [
+          "5617a9f61b028005a4858fdac845db406aefb181",
+          "cfc8146abe2a0488e9e2a0c56de7952f7c11ab059eca145a0a727afce0db2865",
+          "1789033166.7823923"
+        ],
+        ".cache/huggingface/download/onnx/special_tokens_map.json.metadata": [
+          "5617a9f61b028005a4858fdac845db406aefb181",
+          "b1879d702821e753ffe4245048eee415d54a9385",
+          "1789033165.8080943"
+        ],
+        ".cache/huggingface/download/onnx/tokenizer.json.metadata": [
+          "5617a9f61b028005a4858fdac845db406aefb181",
+          "6710678b12670bc442b99edc952c4d996ae309a7020c1fa0096dd245c2faf790",
+          "1789033194.6460164"
+        ],
+        ".cache/huggingface/download/onnx/tokenizer_config.json.metadata": [
+          "5617a9f61b028005a4858fdac845db406aefb181",
+          "328a00a9a560aadcf2a3064f917517359eb3cc26",
+          "1789033166.2753272"
+        ],
+        ".cache/huggingface/download/pytorch_model.bin.metadata": [
+          "5617a9f61b028005a4858fdac845db406aefb181",
+          "b5e0ce3470abf5ef3831aa1bd5553b486803e83251590ab7ff35a117cf6aad38",
+          "1789033221.09511"
+        ],
+        ".cache/huggingface/download/sentence_bert_config.json.metadata": [
+          "5617a9f61b028005a4858fdac845db406aefb181",
+          "0140ba1eac83a3c9b857d64baba91969d988624b",
+          "1789033166.4119632"
+        ],
+        ".cache/huggingface/download/sentencepiece.bpe.model.metadata": [
+          "5617a9f61b028005a4858fdac845db406aefb181",
+          "cfc8146abe2a0488e9e2a0c56de7952f7c11ab059eca145a0a727afce0db2865",
+          "1789033185.6246445"
+        ],
+        ".cache/huggingface/download/sparse_linear.pt.metadata": [
+          "5617a9f61b028005a4858fdac845db406aefb181",
+          "45c93804d2142b8f6d7ec6914ae23a1eee9c6a1d27d83d908a20d2afb3595ad9",
+          "1789033183.5626402"
+        ],
+        ".cache/huggingface/download/special_tokens_map.json.metadata": [
+          "5617a9f61b028005a4858fdac845db406aefb181",
+          "b1879d702821e753ffe4245048eee415d54a9385",
+          "1789033167.070211"
+        ],
+        ".cache/huggingface/download/tokenizer.json.metadata": [
+          "5617a9f61b028005a4858fdac845db406aefb181",
+          "21106b6d7dab2952c1d496fb21d5dc9db75c28ed361a05f5020bbba27810dd08",
+          "1789033189.2915452"
+        ],
+        ".cache/huggingface/download/tokenizer_config.json.metadata": [
+          "5617a9f61b028005a4858fdac845db406aefb181",
+          "dc69ac559dcba2694012009aaa108c614541789a",
+          "1789033167.4950387"
+        ]
+      },
+      "weights": [],
+      "identity_limit": "Weights identified by local download metadata and byte size; no new full weight hash was computed."
+    }
+  },
+  "successful_launch_command": "OMP_NUM_THREADS=4 OPENBLAS_NUM_THREADS=4 MAX_JOBS=2 uv run --locked python -m nara.experiments.colleague_cards run",
+  "note": "Environment recorded before any result evaluation; weights and supplied datasets stay local."
+}

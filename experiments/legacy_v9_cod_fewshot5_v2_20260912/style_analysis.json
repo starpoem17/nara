@@ -1,0 +1,163 @@
+{
+  "success": false,
+  "successful_records": 0,
+  "records": [
+    {
+      "id": "PPS-DEV-16",
+      "success": false,
+      "thinking": "*   Item v9: Check for unjustified brand/model/spec restrictions.\n    *   Item v19: Check for unlawful manufacturer/supplier assurance requirements (issuance before bid/proposal).\n\n    *   Subject: 2026학년도 [수요기관(초등학교)] 통학차량 임차용역 (School bus rental service).\n    *   Scope: 2 buses (45-seater 1, 25-seater 1).\n    *   Vehicle requirement: \"차량은 계약 종료일 기준으로 차령이 9년 이내(2018.3.1.이후 출고된 차량)\" (Vehicle age within 9 years by contract end date).\n    *   Special condition: \"본 입찰에 의해 계약자로 선정된 자는 ... 「어린이 통학버스」로 신고를 하여야 하며, 그 비용은 계약자로 선정된 자가 부담 함.\" (The selected contractor must report as an \"어린이 통학버스\" to the police and bear the cost).\n    *   Requirement for \"어린이 통학버스\" (Child School Bus) standards: \"도로교통법 제52조",
+      "body_tokens": 254,
+      "budget_span": 256,
+      "lines": [
+        "*   Item v9: Check for unjustified brand/model/spec restrictions.",
+        "*   Item v19: Check for unlawful manufacturer/supplier assurance requirements (issuance before bid/proposal).",
+        "*   Subject: 2026학년도 [수요기관(초등학교)] 통학차량 임차용역 (School bus rental service).",
+        "*   Scope: 2 buses (45-seater 1, 25-seater 1).",
+        "*   Vehicle requirement: \"차량은 계약 종료일 기준으로 차령이 9년 이내(2018.3.1.이후 출고된 차량)\" (Vehicle age within 9 years by contract end date).",
+        "*   Special condition: \"본 입찰에 의해 계약자로 선정된 자는 ... 「어린이 통학버스」로 신고를 하여야 하며, 그 비용은 계약자로 선정된 자가 부담 함.\" (The selected contractor must report as an \"어린이 통학버스\" to the police and bear the cost).",
+        "*   Requirement for \"어린이 통학버스\" (Child School Bus) standards: \"도로교통법 제52조"
+      ],
+      "words_per_line": [
+        8,
+        12,
+        10,
+        8,
+        21,
+        38,
+        11
+      ],
+      "attempts": 1,
+      "finish_reason": "stop",
+      "judgments": {
+        "v9": {
+          "위반여부": 0,
+          "근거문구": null
+        },
+        "v19": {
+          "위반여부": 0,
+          "근거문구": null
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "PPS-DEV-175",
+      "success": false,
+      "thinking": "",
+      "body_tokens": 0,
+      "budget_span": 2,
+      "lines": [],
+      "words_per_line": [],
+      "attempts": 1,
+      "finish_reason": "stop",
+      "judgments": {
+        "v9": {
+          "위반여부": 0,
+          "근거문구": null
+        },
+        "v19": {
+          "위반여부": 0,
+          "근거문구": null
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "PPS-DEV-111",
+      "success": false,
+      "thinking": "",
+      "body_tokens": 0,
+      "budget_span": 2,
+      "lines": [],
+      "words_per_line": [],
+      "attempts": 1,
+      "finish_reason": "stop",
+      "judgments": {
+        "v9": {
+          "위반여부": 0,
+          "근거문구": null
+        },
+        "v19": {
+          "위반여부": 0,
+          "근거문구": null
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "PPS-DEV-055",
+      "success": false,
+      "thinking": "v9: Service/Consulting (용역).\nv9: No specific product/model mentioned.\nv9: No brand/spec restriction found.\nv9: No violation.\nv19: No manufacturer assurance requirement.\nv19: No violation.\nv19: No violation.\n\nFinal check:\nThe document is a service (용역) contract for \"공기업 해운부문 외부사업 운영 지원 및 감축사업 활성화 용역\".\nIt does not involve purchasing specific goods or components that would trigger v9.\nIt does not require any manufacturer/supplier assurance (v19).\n\nWait, let me re-read the document for any \"assurance\" or \"guarantee\" related to a manufacturer.\nThe document mentions \"청렴계약(서약)제\" (Integrity Contract) and \"입찰보증금\" (Bid Bond), but these are standard legal/integrity requirements, not \"Manufacturer/supplier assurance\" in the context of v19 (which usually refers to a specific manufacturer's letter of intent or guarantee required *before* the bid).\nThere is no mention of a \"제조사 확약서\" (Manufacturer's",
+      "body_tokens": 254,
+      "budget_span": 256,
+      "lines": [
+        "v9: Service/Consulting (용역).",
+        "v9: No specific product/model mentioned.",
+        "v9: No brand/spec restriction found.",
+        "v9: No violation.",
+        "v19: No manufacturer assurance requirement.",
+        "v19: No violation.",
+        "v19: No violation.",
+        "Final check:",
+        "The document is a service (용역) contract for \"공기업 해운부문 외부사업 운영 지원 및 감축사업 활성화 용역\".",
+        "It does not involve purchasing specific goods or components that would trigger v9.",
+        "It does not require any manufacturer/supplier assurance (v19).",
+        "Wait, let me re-read the document for any \"assurance\" or \"guarantee\" related to a manufacturer.",
+        "The document mentions \"청렴계약(서약)제\" (Integrity Contract) and \"입찰보증금\" (Bid Bond), but these are standard legal/integrity requirements, not \"Manufacturer/supplier assurance\" in the context of v19 (which usually refers to a specific manufacturer's letter of intent or guarantee required *before* the bid).",
+        "There is no mention of a \"제조사 확약서\" (Manufacturer's"
+      ],
+      "words_per_line": [
+        3,
+        5,
+        5,
+        3,
+        5,
+        3,
+        3,
+        2,
+        17,
+        13,
+        8,
+        15,
+        40,
+        9
+      ],
+      "attempts": 1,
+      "finish_reason": "stop",
+      "judgments": {
+        "v9": {
+          "위반여부": 0,
+          "근거문구": null
+        },
+        "v19": {
+          "위반여부": 0,
+          "근거문구": null
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "PPS-DEV-31",
+      "success": false,
+      "thinking": "",
+      "body_tokens": 0,
+      "budget_span": 2,
+      "lines": [],
+      "words_per_line": [],
+      "attempts": 1,
+      "finish_reason": "stop",
+      "judgments": {
+        "v9": {
+          "위반여부": 0,
+          "근거문구": null
+        },
+        "v19": {
+          "위반여부": 0,
+          "근거문구": null
+        }
+      },
+      "error": null
+    }
+  ],
+  "seconds": 6.341681212999902
+}

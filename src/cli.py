@@ -15,7 +15,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--data-dir", default=os.environ.get("PPS_DATA_DIR", "data"))
     parser.add_argument("--input", help="Defaults to test.jsonl.gz, or local test.jsonl")
-    parser.add_argument("--output-dir", default=os.environ.get("PPS_OUTPUT_DIR", "output"))
+    parser.add_argument("--output-dir", default=os.environ.get("PPS_OUTPUT_DIR", "outputs/submission"))
     parser.add_argument("--model-dir", default=os.environ.get(
         "PPS_MODEL_DIR", "models/gemma-4-26B-A4B-it-NVFP4"))
     parser.add_argument("--embed-model", default=os.environ.get("PPS_EMBED_DIR", "models/bge-m3"))

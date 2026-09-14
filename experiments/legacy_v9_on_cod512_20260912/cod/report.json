@@ -1,0 +1,12 @@
+{
+  "records": 200,
+  "prediction_seconds": 220.64255459599917,
+  "load_seconds": 27.053528858999925,
+  "failed_ids": [],
+  "model_turns": 206,
+  "invalid_responses": 6,
+  "searches": 0,
+  "length_stops": 6,
+  "thinking_tokens": 47486,
+  "output_tokens": 61357
+}

@@ -1,0 +1,157 @@
+{
+  "schema_version": 1,
+  "record_kind": "historical_experiment",
+  "read_only": true,
+  "project_root": "../..",
+  "run_id": "legacy_hybrid_repair",
+  "area": "inference-scheduling",
+  "report": "docs/experiments/inference-scheduling/2026-09/legacy_hybrid_repair.md",
+  "question": "Can the failed optimized-OFF group be recovered without changing its prompt or budget?",
+  "started_at": null,
+  "timezone": "Asia/Seoul",
+  "time_evidence": "No verified orchestration start; see timestamp-candidates.json and original logs. September 2026 is established by the linked historical project records.",
+  "migration_at": "2026-09-13T15:13:30.146970+00:00",
+  "status": "historical; inspect per-condition execution records",
+  "judgment": "One failed group was regenerated. Other successful groups and notices were replayed, not newly inferred.",
+  "conditions": {
+    "recorded_execution": {
+      "settings": {
+        "recorded_condition": "recorded execution",
+        "scope": "See preserved original manifest and source for exact settings."
+      },
+      "status": "historical",
+      "attempts": [],
+      "artifact_path": "."
+    }
+  },
+  "max_attempts": 0,
+  "predecessors": [
+    {
+      "run_id": "legacy_hybrid200",
+      "reason": "Observed optimized-OFF failure triggered separate isolated recovery with unchanged prompt/OFF mode/output2048."
+    }
+  ],
+  "followups": [],
+  "original_files": {
+    "analysis/hybrid200/optimized_off/errors.csv": {
+      "path": "optimized_off/errors.csv",
+      "sha256": "17dc2064ece49a80635eed9b568f1543487f5a17e0ba0356e8bac96eeb0eab1d",
+      "size": 32273
+    },
+    "analysis/hybrid200/optimized_off/evaluation.json": {
+      "path": "optimized_off/evaluation.json",
+      "sha256": "979590f0ed9edec237277ec14e0efda8ed90e400d03bc2ba252651cb9912f671",
+      "size": 10656
+    },
+    "analysis/hybrid200/optimized_off/model_batches.json": {
+      "path": "optimized_off/model_batches.json",
+      "sha256": "269931e82ea08742c3a24febf896601b58c21affd63bf6b7468b88c389594987",
+      "size": 27557
+    },
+    "analysis/hybrid200/optimized_off/notice_timings.json": {
+      "path": "optimized_off/notice_timings.json",
+      "sha256": "cf39241d8a2f2ad9e9f5edab49db802beb539d4132f1db95e5850b86a7c42a20",
+      "size": 63995
+    },
+    "analysis/hybrid200/optimized_off/report.json": {
+      "path": "optimized_off/report.json",
+      "sha256": "eb1375fa7ea5527291857ce7391f3ee9113aee6063166d7c6d6806c4448a2de5",
+      "size": 2405
+    },
+    "analysis/hybrid200/optimized_off/request_timings.jsonl": {
+      "path": "optimized_off/request_timings.jsonl",
+      "sha256": "6be69cbb7e88e4661bb253277f5f2a8c9df05fc57c9fca8471f4e0beec02821d",
+      "size": 586545
+    },
+    "analysis/hybrid200/optimized_off/submission.csv": {
+      "path": "optimized_off/submission.csv",
+      "sha256": "873db899ce86e35eecf3dd387d76287aa40a925757085a608b6d0b9e3e380fbf",
+      "size": 30546
+    },
+    "analysis/hybrid200/optimized_off/trace.jsonl": {
+      "path": "optimized_off/trace.jsonl",
+      "sha256": "09a864ce6a330015414966cb8432ac0d9ac37d14a879e2b4f5232837a1456b1d",
+      "size": 907992
+    },
+    "analysis/hybrid200/recovery.log": {
+      "path": "recovery.log",
+      "sha256": "f6149d6ed42406e8ec258fb4682aa1f4687130ecc9532fdde40c8144edc0cac6",
+      "size": 16876
+    },
+    "analysis/hybrid200/recovery_policy.json": {
+      "path": "recovery_policy.json",
+      "sha256": "6368044a2089930e9a57b39625b9153f417ef2dd74a492c8a33a179001346df2",
+      "size": 338
+    }
+  },
+  "temporary_paths": [
+    "tmp/structure-migration-20260913"
+  ],
+  "migration_inventory": "docs/maintenance/evidence/structure-migration/mapping.json",
+  "reproducibility": "Original content retained. Local datasets/models require matching separately restored bytes; historical commands may need current reconstruction guidance.",
+  "recorded_condition_evidence": [
+    {
+      "path": "optimized_off/report.json",
+      "values": {
+        "options": {
+          "model_dir": "models/gemma-4-26B-A4B-it-NVFP4",
+          "max_model_len": 32768,
+          "thinking": false,
+          "item_group_size": 6
+        },
+        "limits": {
+          "batch_size": 8,
+          "search_rounds": 2,
+          "queries_per_round": 4,
+          "top_k": 5,
+          "round_tokens": 4096,
+          "total_retrieval_tokens": 8192,
+          "output_tokens": 2048,
+          "retries": 1,
+          "require_search": false
+        },
+        "groups": [
+          [
+            "v4",
+            "v6",
+            "v7",
+            "v8"
+          ],
+          [
+            "v10",
+            "v11",
+            "v12",
+            "v13"
+          ],
+          [
+            "v15",
+            "v16",
+            "v17",
+            "v18"
+          ],
+          [
+            "v19",
+            "v20",
+            "v21",
+            "v23"
+          ],
+          [
+            "v1",
+            "v5",
+            "v9",
+            "v14",
+            "v22",
+            "v24"
+          ]
+        ]
+      }
+    }
+  ],
+  "historical_provenance": {
+    "status": "retained where originally recorded; missing fields remain unknown",
+    "execution_sources": "Existing source/analysis_source contents and original manifests are authoritative; migration-time code is separately labeled",
+    "input_access": "Local input/model assets remain locally retained; original hashes are in manifests/evaluations. Another checkout must restore matching bytes.",
+    "original_temporary_paths": "Not reconstructed when absent from original evidence"
+  },
+  "migration_code_archive": "docs/maintenance/evidence/structure-migration/original-source.tar"
+}

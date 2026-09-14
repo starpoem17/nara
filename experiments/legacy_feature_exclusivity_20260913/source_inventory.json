@@ -1,0 +1,162 @@
+{
+  "package_file_count": 25,
+  "item_table_file_count": 1,
+  "files": [
+    {
+      "path": "/home/hwajoong/projects/nara/data/법령패키지/법령/(계약예규) 공동계약운용요령.txt",
+      "bytes": 44425,
+      "sha256": "b997f876c4bea82bd1fbe534623d7be8a9549ab373ec264caded431f470240e6",
+      "reviewed_scope": "제9조제5·6항 60행"
+    },
+    {
+      "path": "/home/hwajoong/projects/nara/data/법령패키지/법령/(계약예규) 정부 입찰·계약 집행기준.txt",
+      "bytes": 357167,
+      "sha256": "1eefb57f2c19044ec906122fe94cf4625e51fbf13756bbf3541581d44c9b5d54",
+      "reviewed_scope": "제5조 109행; 제5조의3 139행"
+    },
+    {
+      "path": "/home/hwajoong/projects/nara/data/법령패키지/법령/국가를 당사자로 하는 계약에 관한 법률 등의 재정경제부장관이 정하는 고시금액.txt",
+      "bytes": 4095,
+      "sha256": "5f5f96bda4d4db9b1ab87bb76f1ccd6187ebd4a0da6e06b67f2928f87d2bf22f",
+      "reviewed_scope": "제1호 가목 8~13행; FTA·공기업 금액과 구별"
+    },
+    {
+      "path": "/home/hwajoong/projects/nara/data/법령패키지/법령/국가를 당사자로 하는 계약에 관한 법률 시행규칙.txt",
+      "bytes": 253770,
+      "sha256": "36c05a8c6dd26d174174c4463f7fd78a643962fb632dee4ec5cb3dc98be02de6",
+      "reviewed_scope": "제17조 174행; 제24조 223행; 제25조 233행"
+    },
+    {
+      "path": "/home/hwajoong/projects/nara/data/법령패키지/법령/국가를 당사자로 하는 계약에 관한 법률 시행령.txt",
+      "bytes": 331790,
+      "sha256": "881148a5ba39d7112ffdbb08ac4d721928d5f1b6a5fc2fe0e164fdc26423fafa",
+      "reviewed_scope": "제12조 93행; 제21조 186행; 제43조 483행"
+    },
+    {
+      "path": "/home/hwajoong/projects/nara/data/법령패키지/법령/국가를 당사자로 하는 계약에 관한 법률.txt",
+      "bytes": 51478,
+      "sha256": "d8b977698761135b83fc83af12623976be31354cab038ec6fbbbadc464ab8378",
+      "reviewed_scope": "파일 목록·해시 확인; 배타관계의 직접 근거로 사용하지 않음"
+    },
+    {
+      "path": "/home/hwajoong/projects/nara/data/법령패키지/법령/소상공인기본법 시행령.txt",
+      "bytes": 31101,
+      "sha256": "9fb2f45d4b99f755b7ec0f83605788faa5d27d667ecc5ebdd5afb848e451eab5",
+      "reviewed_scope": "파일 목록·해시 확인; 배타관계의 직접 근거로 사용하지 않음"
+    },
+    {
+      "path": "/home/hwajoong/projects/nara/data/법령패키지/법령/소상공인기본법.txt",
+      "bytes": 29231,
+      "sha256": "03eae40d3eac3daa9b029dca6e90d95fd1d77bf666d4dbe630d3c34fd4b4968e",
+      "reviewed_scope": "제2조 12행; 소상공인은 소기업 중 해당자"
+    },
+    {
+      "path": "/home/hwajoong/projects/nara/data/법령패키지/법령/소프트웨어 진흥법 시행령.txt",
+      "bytes": 100223,
+      "sha256": "24f6cb364e15c92b4c65923a4a19a2d017082dae16e2e5b3cec9434ea53486c8",
+      "reviewed_scope": "파일 목록·해시 확인; 배타관계의 직접 근거로 사용하지 않음"
+    },
+    {
+      "path": "/home/hwajoong/projects/nara/data/법령패키지/법령/소프트웨어 진흥법.txt",
+      "bytes": 88410,
+      "sha256": "fed9d2ae28079aec3a0e8f1ab4a60399b516bbe92551b422c8aa947911294857",
+      "reviewed_scope": "제48조 388행"
+    },
+    {
+      "path": "/home/hwajoong/projects/nara/data/법령패키지/법령/중소 소프트웨어사업자의 사업 참여 지원에 관한 지침.txt",
+      "bytes": 244210,
+      "sha256": "de502b0352f44f55dd22b3357d86a705faf35045c0f769d31b979b59b2a9b0c6",
+      "reviewed_scope": "제2조 11행; 제3조 13행; 별표1 322행 및 예외 연결"
+    },
+    {
+      "path": "/home/hwajoong/projects/nara/data/법령패키지/법령/중소기업기본법 시행령.txt",
+      "bytes": 91044,
+      "sha256": "4a7040b87fe2fd1a3cf615a97b72ddff0112552e737d5f8de227505a2740b4c3",
+      "reviewed_scope": "파일 목록·해시 확인; 배타관계의 직접 근거로 사용하지 않음"
+    },
+    {
+      "path": "/home/hwajoong/projects/nara/data/법령패키지/법령/중소기업기본법.txt",
+      "bytes": 45740,
+      "sha256": "7f202e871c4e3209b8569c20fe8e4828e48d01c19b09971fd5bfdc3788d17bd5",
+      "reviewed_scope": "제2조; 중소기업의 소기업·중기업 구분 19행"
+    },
+    {
+      "path": "/home/hwajoong/projects/nara/data/법령패키지/법령/중소기업자간 경쟁제품 및 공사용자재 직접구매 대상 품목 지정 내역.txt",
+      "bytes": 3995,
+      "sha256": "6568c4d95245484ec6a537646b35afd114b3e9e57d86ef7ce8e561636cba6e92",
+      "reviewed_scope": "전문; 품목표 부재 표시 및 부칙의 분류·유효기간"
+    },
+    {
+      "path": "/home/hwajoong/projects/nara/data/법령패키지/법령/중소기업자간 경쟁제품 직접생산 확인기준.txt",
+      "bytes": 175177,
+      "sha256": "22ee1dbefd4cdd44c182791641bc6b0136caf312dbfeb82f42aa434c5a688843",
+      "reviewed_scope": "파일 목록·해시 확인; 배타관계의 직접 근거로 사용하지 않음"
+    },
+    {
+      "path": "/home/hwajoong/projects/nara/data/법령패키지/법령/중소기업제품 구매촉진 및 판로지원에 관한 법률 시행규칙.txt",
+      "bytes": 125248,
+      "sha256": "3b1e2f282771ebf80eee8b2e7be53d2277d3bfa6d2c15f9e0535ca2a37ed7486",
+      "reviewed_scope": "파일 목록·해시 확인; 배타관계의 직접 근거로 사용하지 않음"
+    },
+    {
+      "path": "/home/hwajoong/projects/nara/data/법령패키지/법령/중소기업제품 구매촉진 및 판로지원에 관한 법률 시행령.txt",
+      "bytes": 113231,
+      "sha256": "1070092cca07468b755fa1e0fb13658d4c9ea72c48b555109c8fc4f87046cabb",
+      "reviewed_scope": "제2조의2 25행; 제2조의3 37행; 제7조 118행; 제10조 193행"
+    },
+    {
+      "path": "/home/hwajoong/projects/nara/data/법령패키지/법령/중소기업제품 구매촉진 및 판로지원에 관한 법률.txt",
+      "bytes": 101444,
+      "sha256": "a4390e91cb991ce75bde7389c9297c6e4f6a947afd1a26cb9397e34aa4e9a445",
+      "reviewed_scope": "제7조 56행; 제7조의2 63행; 제8조의3 97행; 제9조 108행"
+    },
+    {
+      "path": "/home/hwajoong/projects/nara/data/법령패키지/법령/지방자치단체 입찰 및 계약 집행기준.txt",
+      "bytes": 803014,
+      "sha256": "35d0227594748809e4b0bd0874fbce4e60c1afd9abd4612874a65c6276ad3ccb",
+      "reviewed_scope": "제1장 자격 제한; 제4장 공급확약 2511행; 제5장 소액수의 2597행; 제6장 최소지분 3096행"
+    },
+    {
+      "path": "/home/hwajoong/projects/nara/data/법령패키지/법령/지방자치단체 입찰시 낙찰자 결정기준.txt",
+      "bytes": 921863,
+      "sha256": "c75f1cde131b91bec9004f432b2aaa2c94476e36dc612a8cb90c4c43f01e8f1c",
+      "reviewed_scope": "제7장 제3절; 6893행 공고 시점; 6911행 설명 시점"
+    },
+    {
+      "path": "/home/hwajoong/projects/nara/data/법령패키지/법령/지방자치단체를 당사자로 하는 계약에 관한 법률 시행규칙.txt",
+      "bytes": 221615,
+      "sha256": "bfd5c70ac695d52c68d2a33afb327ca1b5a891b73c765f23180aadc2e951ca2f",
+      "reviewed_scope": "제17조 185행; 제24조 232행; 제25조 246행"
+    },
+    {
+      "path": "/home/hwajoong/projects/nara/data/법령패키지/법령/지방자치단체를 당사자로 하는 계약에 관한 법률 시행령.txt",
+      "bytes": 342537,
+      "sha256": "597f6d74015af351383d251f136c3cf54b8ba21867e4bce31affd00c421ee7bd",
+      "reviewed_scope": "제13조; 제20조 190행; 제35조 395행; 제43조 553행"
+    },
+    {
+      "path": "/home/hwajoong/projects/nara/data/법령패키지/법령/지방자치단체를 당사자로 하는 계약에 관한 법률.txt",
+      "bytes": 76831,
+      "sha256": "310e472ee05b84461632ad0a7a35e4f26ac6faae51bf2dc007812cc37c9b7384",
+      "reviewed_scope": "파일 목록·해시 확인; 배타관계의 직접 근거로 사용하지 않음"
+    },
+    {
+      "path": "/home/hwajoong/projects/nara/data/법령패키지/중기부고시/중기부고시_경쟁제품_세부품명.csv",
+      "bytes": 75014,
+      "sha256": "c372b24e8e4878ca5d8b9c729acb968d243abfe2a8099c32c944eb398a4f3bfe",
+      "reviewed_scope": "616개 세부품명 행; 특이사항·금액 조건·SW 연결"
+    },
+    {
+      "path": "/home/hwajoong/projects/nara/data/법령패키지/중기부고시/중기부고시_경쟁제품_제2025-96호.hwpx",
+      "bytes": 158694,
+      "sha256": "a3fff3f67a6068ba1ff6b84060fda62ebb358eb4af45020438da3ea694bb80d4",
+      "reviewed_scope": "Contents/section0.xml 원본 표의 세부품명·특이사항 및 부칙"
+    },
+    {
+      "path": "/home/hwajoong/projects/nara/data/항목표.json",
+      "bytes": 11273,
+      "sha256": "368cb41f376d8ad7edbbdf181542e6e959de356f7f70d86e72943325ecad61d9",
+      "reviewed_scope": "24개 항목 전체"
+    }
+  ]
+}

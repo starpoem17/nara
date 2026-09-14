@@ -1,0 +1,491 @@
+{
+  "schema_version": 1,
+  "record_kind": "historical_experiment",
+  "read_only": true,
+  "project_root": "../..",
+  "run_id": "legacy_grouping_time32",
+  "area": "inference-scheduling",
+  "report": "docs/experiments/inference-scheduling/2026-09/legacy_grouping_time32.md",
+  "question": "How do 1/7/9/12 item groups affect latency on the selected notices?",
+  "started_at": null,
+  "timezone": "Asia/Seoul",
+  "time_evidence": "No verified orchestration start; see timestamp-candidates.json and original logs. September 2026 is established by the linked historical project records.",
+  "migration_at": "2026-09-13T15:13:30.109144+00:00",
+  "status": "historical; inspect per-condition execution records",
+  "judgment": "Exploratory timing sweep; selected sample and incomplete predictions limit the accuracy comparison.",
+  "conditions": {
+    "recorded_execution": {
+      "settings": {
+        "recorded_condition": "recorded execution",
+        "scope": "See preserved original manifest and source for exact settings."
+      },
+      "status": "historical",
+      "attempts": [],
+      "artifact_path": "."
+    }
+  },
+  "max_attempts": 0,
+  "predecessors": [],
+  "followups": [],
+  "original_files": {
+    "analysis/feature_grouping_options.json": {
+      "path": "support/feature_grouping_options.json",
+      "sha256": "c79a8e3356a1eab5d49b0643ed1ca8b6fc80ef7c62b0c81e3d253fa95921bd1f",
+      "size": 160100
+    },
+    "analysis/grouping_time32/comparison.csv": {
+      "path": "comparison.csv",
+      "sha256": "5904281b7e4c9752aa59b3f600bd447dd04347d4819c325d5a5e6f0efaddcffb",
+      "size": 1018
+    },
+    "analysis/grouping_time32/effect.json": {
+      "path": "effect.json",
+      "sha256": "28a2e0807a283d27c10c5140207c713c085820430b8d31b513143a102c7686ac",
+      "size": 35429
+    },
+    "analysis/grouping_time32/effect_per_item.csv": {
+      "path": "effect_per_item.csv",
+      "sha256": "0f8b28ff26bed1b2093ea83f6a53a46ccdeb4f0e3f959f2f30c03922057e1a8b",
+      "size": 1547
+    },
+    "analysis/grouping_time32/groups12/prompt_01.txt": {
+      "path": "groups12/prompt_01.txt",
+      "sha256": "f464f615523f17bb539fd7b49a4389645a417d69050519444be394231b8da53d",
+      "size": 5486
+    },
+    "analysis/grouping_time32/groups12/prompt_02.txt": {
+      "path": "groups12/prompt_02.txt",
+      "sha256": "dbee48f834b73f06a7052be2e6db7513026597c531364f60ef0485d6e95f49df",
+      "size": 5009
+    },
+    "analysis/grouping_time32/groups12/prompt_03.txt": {
+      "path": "groups12/prompt_03.txt",
+      "sha256": "0772699b44e0d563ddc74aa0c8d1d8403a2ae84fb6433dfc5c47342545a66953",
+      "size": 2703
+    },
+    "analysis/grouping_time32/groups12/prompt_04.txt": {
+      "path": "groups12/prompt_04.txt",
+      "sha256": "26f0ca1955240ccf41f76e13f5f074d6ec32d3f9bd37aa7f25ca7cfc0fdca9a9",
+      "size": 3706
+    },
+    "analysis/grouping_time32/groups12/prompt_05.txt": {
+      "path": "groups12/prompt_05.txt",
+      "sha256": "c8ec5fab3a571054dde4ef917bffa0d8c0862b34ffa0f9c1c82783e07d9193f1",
+      "size": 5206
+    },
+    "analysis/grouping_time32/groups12/prompt_06.txt": {
+      "path": "groups12/prompt_06.txt",
+      "sha256": "79bb8615ed49d36b6b9407f2789cba9a38c0d0260fd464c48a757f592ae9ac20",
+      "size": 2842
+    },
+    "analysis/grouping_time32/groups12/prompt_07.txt": {
+      "path": "groups12/prompt_07.txt",
+      "sha256": "a2e249bbe24cc313e29421be8181cbcbd2c15c6f7f7dd7b84db3a334f36b5a29",
+      "size": 3552
+    },
+    "analysis/grouping_time32/groups12/prompt_08.txt": {
+      "path": "groups12/prompt_08.txt",
+      "sha256": "c74246db3a5824af71743708dc02bb77807c5bd6bcc97dcbdbafb626b10581c9",
+      "size": 3457
+    },
+    "analysis/grouping_time32/groups12/prompt_09.txt": {
+      "path": "groups12/prompt_09.txt",
+      "sha256": "fc74d6d5d831ff61cf9a487fd6e618a7f51e687e458823db5f5ea7b75f9178cd",
+      "size": 2940
+    },
+    "analysis/grouping_time32/groups12/prompt_10.txt": {
+      "path": "groups12/prompt_10.txt",
+      "sha256": "42fb7ae927e9d257a1c9412b52da3b5a8c2dcb5c18dffcb555cdc3d4604a1baa",
+      "size": 2783
+    },
+    "analysis/grouping_time32/groups12/prompt_11.txt": {
+      "path": "groups12/prompt_11.txt",
+      "sha256": "bc98ada881d5deab043c669ac8d472b7b7a7d94d5ac3e95b0f7b66897f439836",
+      "size": 3667
+    },
+    "analysis/grouping_time32/groups12/prompt_12.txt": {
+      "path": "groups12/prompt_12.txt",
+      "sha256": "748551a0069385196f1b6ddae5de19481072e53eb674089ae46d9f01a0f58c89",
+      "size": 2618
+    },
+    "analysis/grouping_time32/groups12/submission.csv": {
+      "path": "groups12/submission.csv",
+      "sha256": "217cfc491c2137cdfe1f24094afba9631df31e9e61f4398613be5defa6178908",
+      "size": 5813
+    },
+    "analysis/grouping_time32/groups12/trace.jsonl": {
+      "path": "groups12/trace.jsonl",
+      "sha256": "2641b018adc1e807b83bb595ada63f03e39749a3f0cf167832e5f8ea799d20e2",
+      "size": 240225
+    },
+    "analysis/grouping_time32/groups7/prompt_01.txt": {
+      "path": "groups7/prompt_01.txt",
+      "sha256": "90b8785dfa5a5578746f7e2070046255337513f0a011ac8d071c6f9eb0c34e20",
+      "size": 8850
+    },
+    "analysis/grouping_time32/groups7/prompt_02.txt": {
+      "path": "groups7/prompt_02.txt",
+      "sha256": "26f0ca1955240ccf41f76e13f5f074d6ec32d3f9bd37aa7f25ca7cfc0fdca9a9",
+      "size": 3706
+    },
+    "analysis/grouping_time32/groups7/prompt_03.txt": {
+      "path": "groups7/prompt_03.txt",
+      "sha256": "5854b0ac324254d434c729b51f29945a498729ea0d9f3e38f944dafca4ec21c2",
+      "size": 8718
+    },
+    "analysis/grouping_time32/groups7/prompt_04.txt": {
+      "path": "groups7/prompt_04.txt",
+      "sha256": "fc74d6d5d831ff61cf9a487fd6e618a7f51e687e458823db5f5ea7b75f9178cd",
+      "size": 2940
+    },
+    "analysis/grouping_time32/groups7/prompt_05.txt": {
+      "path": "groups7/prompt_05.txt",
+      "sha256": "42fb7ae927e9d257a1c9412b52da3b5a8c2dcb5c18dffcb555cdc3d4604a1baa",
+      "size": 2783
+    },
+    "analysis/grouping_time32/groups7/prompt_06.txt": {
+      "path": "groups7/prompt_06.txt",
+      "sha256": "bc98ada881d5deab043c669ac8d472b7b7a7d94d5ac3e95b0f7b66897f439836",
+      "size": 3667
+    },
+    "analysis/grouping_time32/groups7/prompt_07.txt": {
+      "path": "groups7/prompt_07.txt",
+      "sha256": "748551a0069385196f1b6ddae5de19481072e53eb674089ae46d9f01a0f58c89",
+      "size": 2618
+    },
+    "analysis/grouping_time32/groups7/submission.csv": {
+      "path": "groups7/submission.csv",
+      "sha256": "d0e39db4d82dcba6be5bcb67c5615aa7fd1b56e822619f52aba0e187166a471b",
+      "size": 5593
+    },
+    "analysis/grouping_time32/groups7/trace.jsonl": {
+      "path": "groups7/trace.jsonl",
+      "sha256": "f3a53e0a99e4ba9698e2e5132552f4acd0b3137e01a3d25cee1dc5a85da67ecd",
+      "size": 180154
+    },
+    "analysis/grouping_time32/groups9/prompt_01.txt": {
+      "path": "groups9/prompt_01.txt",
+      "sha256": "f464f615523f17bb539fd7b49a4389645a417d69050519444be394231b8da53d",
+      "size": 5486
+    },
+    "analysis/grouping_time32/groups9/prompt_02.txt": {
+      "path": "groups9/prompt_02.txt",
+      "sha256": "097ab52720573353afbcbcfac7cc7ee24a3983f9941834850bc27d16128cd1d3",
+      "size": 5651
+    },
+    "analysis/grouping_time32/groups9/prompt_03.txt": {
+      "path": "groups9/prompt_03.txt",
+      "sha256": "26f0ca1955240ccf41f76e13f5f074d6ec32d3f9bd37aa7f25ca7cfc0fdca9a9",
+      "size": 3706
+    },
+    "analysis/grouping_time32/groups9/prompt_04.txt": {
+      "path": "groups9/prompt_04.txt",
+      "sha256": "c8ec5fab3a571054dde4ef917bffa0d8c0862b34ffa0f9c1c82783e07d9193f1",
+      "size": 5206
+    },
+    "analysis/grouping_time32/groups9/prompt_05.txt": {
+      "path": "groups9/prompt_05.txt",
+      "sha256": "b6db0dfbcbc03b5c92ec13d83e5d5eb5150eea63c4f5418144a494feb50eaee7",
+      "size": 5584
+    },
+    "analysis/grouping_time32/groups9/prompt_06.txt": {
+      "path": "groups9/prompt_06.txt",
+      "sha256": "fc74d6d5d831ff61cf9a487fd6e618a7f51e687e458823db5f5ea7b75f9178cd",
+      "size": 2940
+    },
+    "analysis/grouping_time32/groups9/prompt_07.txt": {
+      "path": "groups9/prompt_07.txt",
+      "sha256": "42fb7ae927e9d257a1c9412b52da3b5a8c2dcb5c18dffcb555cdc3d4604a1baa",
+      "size": 2783
+    },
+    "analysis/grouping_time32/groups9/prompt_08.txt": {
+      "path": "groups9/prompt_08.txt",
+      "sha256": "bc98ada881d5deab043c669ac8d472b7b7a7d94d5ac3e95b0f7b66897f439836",
+      "size": 3667
+    },
+    "analysis/grouping_time32/groups9/prompt_09.txt": {
+      "path": "groups9/prompt_09.txt",
+      "sha256": "748551a0069385196f1b6ddae5de19481072e53eb674089ae46d9f01a0f58c89",
+      "size": 2618
+    },
+    "analysis/grouping_time32/groups9/trace.jsonl": {
+      "path": "groups9/trace.jsonl",
+      "sha256": "ccdab43a47f3c85ca6085a99c872716e94fb1556083e012603b2e18014c804cb",
+      "size": 203502
+    },
+    "analysis/grouping_time32/input.jsonl": {
+      "path": "input.jsonl",
+      "sha256": "dd36f2299693694e124ca6d09f80d733c47dd39b3d62402881ced940ca3cce06",
+      "size": 1107552
+    },
+    "analysis/grouping_time32/manifest.json": {
+      "path": "manifest.json",
+      "sha256": "3a76129af7d6243efe067fdfbd57b91ee7e8db4ccef8a528f4084991c65afed3",
+      "size": 143363
+    },
+    "analysis/grouping_time32/paired_changes.csv": {
+      "path": "paired_changes.csv",
+      "sha256": "c0337f984eba01669d949f1216764637c644dfdb97911084c58751376c5082c4",
+      "size": 5302
+    },
+    "analysis/grouping_time32/report.json": {
+      "path": "report.json",
+      "sha256": "91a7cd1c7ef4801a51b6f4287103700b646601118e4af127d523db9bd09a0db7",
+      "size": 2817
+    },
+    "analysis/grouping_time32/run.log": {
+      "path": "run.log",
+      "sha256": "086bbc9796bec65832de53303b8de25cd6864de37c749830f152b7e1b99ad7c9",
+      "size": 24054
+    },
+    "analysis/grouping_time32/source/benchmark_grouping_time.py": {
+      "path": "source/benchmark_grouping_time.py",
+      "sha256": "f97573dc13e51ccac92aab731018dbf42d75d80d95dd5c802c1f6f9c4becb835",
+      "size": 12751
+    },
+    "analysis/grouping_time32/source/inference.py": {
+      "path": "source/inference.py",
+      "sha256": "e09a87a3113399f2656d119b18536a59b70128242547fbd92774eee5c07dd226",
+      "size": 19312
+    },
+    "analysis/grouping_time32/source/legal_criteria.json": {
+      "path": "source/legal_criteria.json",
+      "sha256": "076eea3a9f764ee8b0fba20355d4db749dc7ae96104d61d988f08fc92bbc1a20",
+      "size": 29562
+    },
+    "analysis/grouping_time32/source/prompt.txt": {
+      "path": "source/prompt.txt",
+      "sha256": "9648ba1939582cbd175c24a5e1441d696adf0cfd2cf4a9a331845f839f9bcfb0",
+      "size": 2848
+    },
+    "analysis/grouping_time32/source/retrieval.py": {
+      "path": "source/retrieval.py",
+      "sha256": "fb794006f27da4b99a3d39b9f3ef6e84e829f187290a451b2f33b56f0c8c8edc",
+      "size": 7047
+    },
+    "analysis/grouping_time32/source/script.py": {
+      "path": "source/script.py",
+      "sha256": "facb2dab4a52e575e1a0bd35ec3d02ecae9beffbb73c92964580bba60cf3e923",
+      "size": 8585
+    },
+    "analysis/grouping_time32/source/vllm_model.py": {
+      "path": "source/vllm_model.py",
+      "sha256": "c3ae5a8f7bd75365e0d685018fab22733a917fca423eacf2fb7f623e4e8c1e0d",
+      "size": 3937
+    },
+    "analysis/grouping_time32/ungrouped/prompt_01.txt": {
+      "path": "ungrouped/prompt_01.txt",
+      "sha256": "3edc7b42322a26f445dc625a18241c9754172cdd2f9b9cdc1a4212a900bf2d50",
+      "size": 21303
+    },
+    "analysis/grouping_time32/ungrouped/submission.csv": {
+      "path": "ungrouped/submission.csv",
+      "sha256": "95f835a5d197267809089364c95b47b615f1c997913b3459368c0715f2ecc58c",
+      "size": 4884
+    },
+    "analysis/grouping_time32/ungrouped/trace.jsonl": {
+      "path": "ungrouped/trace.jsonl",
+      "sha256": "ef25641f50184c567e01dff532ed79f9410378bb36e8b9d69bd2c2cc808fee84",
+      "size": 108276
+    },
+    "analysis/grouping_time32/validation.json": {
+      "path": "validation.json",
+      "sha256": "a29118468864adc638bd50848b6a2bc8ecf312ceb72567042f6f14f0002faf50",
+      "size": 424
+    }
+  },
+  "temporary_paths": [
+    "tmp/structure-migration-20260913"
+  ],
+  "migration_inventory": "docs/maintenance/evidence/structure-migration/mapping.json",
+  "reproducibility": "Original content retained. Local datasets/models require matching separately restored bytes; historical commands may need current reconstruction guidance.",
+  "recorded_condition_evidence": [
+    {
+      "path": "manifest.json",
+      "values": {
+        "plans": {
+          "ungrouped": [
+            [
+              "v1",
+              "v2",
+              "v3",
+              "v4",
+              "v5",
+              "v6",
+              "v7",
+              "v8",
+              "v9",
+              "v10",
+              "v11",
+              "v12",
+              "v13",
+              "v14",
+              "v15",
+              "v16",
+              "v17",
+              "v18",
+              "v19",
+              "v20",
+              "v21",
+              "v22",
+              "v23",
+              "v24"
+            ]
+          ],
+          "groups7": [
+            [
+              "v1",
+              "v2",
+              "v3",
+              "v4",
+              "v5",
+              "v6",
+              "v7",
+              "v8"
+            ],
+            [
+              "v9",
+              "v19"
+            ],
+            [
+              "v10",
+              "v11",
+              "v12",
+              "v13",
+              "v14",
+              "v15",
+              "v16",
+              "v17",
+              "v18"
+            ],
+            [
+              "v20"
+            ],
+            [
+              "v21"
+            ],
+            [
+              "v22",
+              "v23"
+            ],
+            [
+              "v24"
+            ]
+          ],
+          "groups9": [
+            [
+              "v1",
+              "v2",
+              "v3",
+              "v4"
+            ],
+            [
+              "v5",
+              "v6",
+              "v7",
+              "v8"
+            ],
+            [
+              "v9",
+              "v19"
+            ],
+            [
+              "v10",
+              "v11",
+              "v12",
+              "v13"
+            ],
+            [
+              "v14",
+              "v15",
+              "v16",
+              "v17",
+              "v18"
+            ],
+            [
+              "v20"
+            ],
+            [
+              "v21"
+            ],
+            [
+              "v22",
+              "v23"
+            ],
+            [
+              "v24"
+            ]
+          ],
+          "groups12": [
+            [
+              "v1",
+              "v2",
+              "v3",
+              "v4"
+            ],
+            [
+              "v5",
+              "v6",
+              "v7"
+            ],
+            [
+              "v8"
+            ],
+            [
+              "v9",
+              "v19"
+            ],
+            [
+              "v10",
+              "v11",
+              "v12",
+              "v13"
+            ],
+            [
+              "v14"
+            ],
+            [
+              "v15",
+              "v16"
+            ],
+            [
+              "v17",
+              "v18"
+            ],
+            [
+              "v20"
+            ],
+            [
+              "v21"
+            ],
+            [
+              "v22",
+              "v23"
+            ],
+            [
+              "v24"
+            ]
+          ]
+        },
+        "limits": {
+          "batch_size": 8,
+          "search_rounds": 2,
+          "queries_per_round": 4,
+          "top_k": 5,
+          "round_tokens": 4096,
+          "total_retrieval_tokens": 8192,
+          "output_tokens": 2048,
+          "retries": 1,
+          "require_search": false
+        }
+      }
+    }
+  ],
+  "historical_provenance": {
+    "status": "retained where originally recorded; missing fields remain unknown",
+    "execution_sources": "Existing source/analysis_source contents and original manifests are authoritative; migration-time code is separately labeled",
+    "input_access": "Local input/model assets remain locally retained; original hashes are in manifests/evaluations. Another checkout must restore matching bytes.",
+    "original_temporary_paths": "Not reconstructed when absent from original evidence"
+  },
+  "migration_code_archive": "docs/maintenance/evidence/structure-migration/original-source.tar"
+}

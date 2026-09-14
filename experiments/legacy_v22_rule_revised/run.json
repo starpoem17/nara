@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "record_kind": "historical_experiment",
+  "read_only": true,
+  "project_root": "../..",
+  "run_id": "legacy_v22_rule_revised",
+  "area": "rule-evaluation",
+  "report": "docs/experiments/rule-evaluation/2026-09/legacy_v22_rule_revised.md",
+  "question": "Does the dev-error-informed briefing rule fix the initial extraction errors?",
+  "started_at": null,
+  "timezone": "Asia/Seoul",
+  "time_evidence": "No verified orchestration start; see timestamp-candidates.json and original logs. September 2026 is established by the linked historical project records.",
+  "migration_at": "2026-09-13T15:13:30.170169+00:00",
+  "status": "historical; inspect per-condition execution records",
+  "judgment": "Adopted dev-informed v22 rule; perfect dev200 fit is not independent validation.",
+  "conditions": {
+    "initial_rule_saved_reconstruction": {
+      "settings": {
+        "recorded_condition": "initial-rule saved reconstruction",
+        "scope": "See preserved original manifest and source for exact settings."
+      },
+      "status": "historical",
+      "attempts": [],
+      "artifact_path": "."
+    },
+    "revised_rule_dev200": {
+      "settings": {
+        "recorded_condition": "revised-rule dev200",
+        "scope": "See preserved original manifest and source for exact settings."
+      },
+      "status": "historical",
+      "attempts": [],
+      "artifact_path": "."
+    }
+  },
+  "max_attempts": 0,
+  "predecessors": [
+    {
+      "run_id": "legacy_v22_rule200",
+      "reason": "Inspection of PPS-DEV-26/135/193 errors informed regex changes; input200, labels, and binary evaluation stayed the same."
+    }
+  ],
+  "followups": [],
+  "original_files": {
+    "analysis/v22_rule200/comparison.json": {
+      "path": "comparison.json",
+      "sha256": "7554fd815c22604f0395f6662a3036f9ed9d283bb9e3df9bd469c31e1b363169",
+      "size": 9421
+    },
+    "analysis/v22_rule200/evaluate.py": {
+      "path": "evaluate.py",
+      "sha256": "b7de227a0d5dd99dd9e58f69114dd9e875567984a71933c1c89731884daa3991",
+      "size": 7479
+    },
+    "analysis/v22_rule200/predictions_revised.jsonl": {
+      "path": "predictions_revised.jsonl",
+      "sha256": "04014dbcce7827c95231f09fc7be5f6ac7f0953053b07ea1990f497e016118bd",
+      "size": 19661
+    },
+    "analysis/v22_rule200/rule_revised.py": {
+      "path": "rule_revised.py",
+      "sha256": "c3ee94c1f54e94642c733c4bc607baeeb5802cd100e10c86a2d5add434d07c76",
+      "size": 2492
+    }
+  },
+  "temporary_paths": [
+    "tmp/structure-migration-20260913"
+  ],
+  "migration_inventory": "docs/maintenance/evidence/structure-migration/mapping.json",
+  "reproducibility": "Original content retained. Local datasets/models require matching separately restored bytes; historical commands may need current reconstruction guidance.",
+  "recorded_condition_evidence": [],
+  "historical_provenance": {
+    "status": "retained where originally recorded; missing fields remain unknown",
+    "execution_sources": "Existing source/analysis_source contents and original manifests are authoritative; migration-time code is separately labeled",
+    "input_access": "Local input/model assets remain locally retained; original hashes are in manifests/evaluations. Another checkout must restore matching bytes.",
+    "original_temporary_paths": "Not reconstructed when absent from original evidence"
+  },
+  "migration_code_archive": "docs/maintenance/evidence/structure-migration/original-source.tar"
+}

@@ -1,0 +1,28 @@
+{
+  "run_dir": "output/experiments/engine-refactor-before-20260911",
+  "records": 200,
+  "prediction_seconds": 296.6102540340071,
+  "load_seconds": 30.14130883400503,
+  "recovery_seconds": 0.0,
+  "macro_f1": 0.26847403649018803,
+  "micro_f1": 0.26634382566585957,
+  "failed_ids": [],
+  "model_turns": 2401,
+  "cached_input_tokens": 24966304,
+  "cached_fraction": 0.9084253221330263,
+  "peak_inflight": 16,
+  "graph_counts": {
+    "FULL": 12923,
+    "NONE": 966,
+    "PIECEWISE": 1
+  },
+  "early_prefill_notices": 197,
+  "notices_after_startup": 198,
+  "full_graph_16_real_tokens_steps": 197,
+  "peak_kv_usage": 0.5201131363922061,
+  "preempted_request_events": 0,
+  "source_snapshots_valid": true,
+  "request_trace_accounting_valid": true,
+  "seed_dependency_valid": true,
+  "submission_shape_valid": true
+}

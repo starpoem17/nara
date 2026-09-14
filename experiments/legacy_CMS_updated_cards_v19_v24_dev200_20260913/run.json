@@ -1,0 +1,268 @@
+{
+  "schema_version": 1,
+  "record_kind": "historical_experiment",
+  "read_only": true,
+  "project_root": "../..",
+  "run_id": "legacy_CMS_updated_cards_v19_v24_dev200_20260913",
+  "area": "colleague-hypotheses",
+  "report": "docs/experiments/colleague-hypotheses/2026-09/legacy_CMS_updated_cards_v19_v24_dev200_20260913.md",
+  "question": "How do the approved CMS updated cards behave with cached candidates?",
+  "started_at": null,
+  "timezone": "Asia/Seoul",
+  "time_evidence": "No verified orchestration start; see timestamp-candidates.json and original logs. September 2026 is established by the linked historical project records.",
+  "migration_at": "2026-09-13T15:13:30.117343+00:00",
+  "status": "historical; inspect per-condition execution records",
+  "judgment": "Completed approved cached-candidate study. Dev-developed cards and candidates do not establish unseen-data generalization.",
+  "conditions": {
+    "recorded_execution": {
+      "settings": {
+        "recorded_condition": "recorded execution",
+        "scope": "See preserved original manifest and source for exact settings."
+      },
+      "status": "historical",
+      "attempts": [],
+      "artifact_path": "."
+    }
+  },
+  "max_attempts": 0,
+  "predecessors": [],
+  "followups": [],
+  "original_files": {
+    "analysis/CMS_updated_cards_v19_v24_dev200_20260913/audit_reproduction.json": {
+      "path": "audit_reproduction.json",
+      "sha256": "b9173a2d872107343ee3d02f2cd9505cdf1c5d4b7caaf9ab1b1278b72ea01ea2",
+      "size": 538
+    },
+    "analysis/CMS_updated_cards_v19_v24_dev200_20260913/engine.json": {
+      "path": "engine.json",
+      "sha256": "3f396ed82ce4c4eb57c0f3a01b072d13810af630f8359104d06e59c5c7f6bbce",
+      "size": 346
+    },
+    "analysis/CMS_updated_cards_v19_v24_dev200_20260913/evaluation_cases.jsonl": {
+      "path": "evaluation_cases.jsonl",
+      "sha256": "b0a47a1ca382ba2837f160de7486ed40d6edf064cf99be4bc4a5f163bdc98d40",
+      "size": 1230994
+    },
+    "analysis/CMS_updated_cards_v19_v24_dev200_20260913/execution.log": {
+      "path": "execution.log",
+      "sha256": "94d4be2e0c046186fc933eaec0896f4a092af087fd5f4447d3195028d937632e",
+      "size": 102751
+    },
+    "analysis/CMS_updated_cards_v19_v24_dev200_20260913/inputs.jsonl": {
+      "path": "inputs.jsonl",
+      "sha256": "f18e0fee992a003f2568376f54445fd4df2aff263dc955e22b1ab979180de7a9",
+      "size": 14132759
+    },
+    "analysis/CMS_updated_cards_v19_v24_dev200_20260913/lifecycle.jsonl": {
+      "path": "lifecycle.jsonl",
+      "sha256": "2e4f29faa1ebcf24ad0208f38166a9710e6b10060693259405425a4d6534135c",
+      "size": 352771
+    },
+    "analysis/CMS_updated_cards_v19_v24_dev200_20260913/manifest.json": {
+      "path": "manifest.json",
+      "sha256": "e38873ec147a5cc84cf8596275be7b4d41a674a53e91a07de3d2b33de14774b0",
+      "size": 4771
+    },
+    "analysis/CMS_updated_cards_v19_v24_dev200_20260913/metric_crosscheck.json": {
+      "path": "metric_crosscheck.json",
+      "sha256": "b4840f727e45ef5be811f70bbd6ba3e018d3e087541f5a1b91fbd3eccdde6a57",
+      "size": 420
+    },
+    "analysis/CMS_updated_cards_v19_v24_dev200_20260913/metrics.json": {
+      "path": "metrics.json",
+      "sha256": "bc93d7c65b63dc0e326224e9f72b0c90320c3a052ad7c2076e585bdc6cf09f83",
+      "size": 5049
+    },
+    "analysis/CMS_updated_cards_v19_v24_dev200_20260913/observations.json": {
+      "path": "observations.json",
+      "sha256": "8d9dc9a2d40fbd36224e44864be95d8ef9f683d9283270a15501deb613c6a634",
+      "size": 8006
+    },
+    "analysis/CMS_updated_cards_v19_v24_dev200_20260913/predictions.csv": {
+      "path": "predictions.csv",
+      "sha256": "afe67c5b14873a51ad98cabda554f1188b93b473fa2c305e7a1fa33f5e372903",
+      "size": 4996
+    },
+    "analysis/CMS_updated_cards_v19_v24_dev200_20260913/predictions.jsonl": {
+      "path": "predictions.jsonl",
+      "sha256": "2c65f492b1da92c61bb4e4fff06cfa46bbd02437232568fab8baa98d2038765a",
+      "size": 805375
+    },
+    "analysis/CMS_updated_cards_v19_v24_dev200_20260913/predictions_frozen.json": {
+      "path": "predictions_frozen.json",
+      "sha256": "1c607676a32cb7c2fd1ada06624a850a36d891ce922a0b6aae9a16928e0438c0",
+      "size": 185
+    },
+    "analysis/CMS_updated_cards_v19_v24_dev200_20260913/publication_manifest.json": {
+      "path": "publication_manifest.json",
+      "sha256": "8c3caa70f705ee514fbd0fb8bbd9914fdd81d846d7f03fe86a22a7e3aea2fb3a",
+      "size": 4331
+    },
+    "analysis/CMS_updated_cards_v19_v24_dev200_20260913/request_timings.jsonl": {
+      "path": "request_timings.jsonl",
+      "sha256": "685a03721e3ed2eee989fcb3070e7797aa393880c4b75643bc42e3c15342af00",
+      "size": 693967
+    },
+    "analysis/CMS_updated_cards_v19_v24_dev200_20260913/run_summary.json": {
+      "path": "run_summary.json",
+      "sha256": "a99c891aa42fc2c7704a75468f7869b254f83dcf1b42d270b6b3c9e8f892d926",
+      "size": 1367
+    },
+    "analysis/CMS_updated_cards_v19_v24_dev200_20260913/scheduler.jsonl": {
+      "path": "scheduler.jsonl",
+      "sha256": "5ccb0236260b6bf77fc73d3d4c96dc0dd4c4ce62fa88c57740de1091628f3000",
+      "size": 488665
+    },
+    "analysis/CMS_updated_cards_v19_v24_dev200_20260913/schemas.json": {
+      "path": "schemas.json",
+      "sha256": "64274104080247d7191fc2722ef4adc15098101b0b380b8afc4f4be36aa03ce6",
+      "size": 3627
+    },
+    "analysis/CMS_updated_cards_v19_v24_dev200_20260913/source/candidates.jsonl": {
+      "path": "source/candidates.jsonl",
+      "sha256": "80259ee689e0b03888311d3a7fcb19cafff161be9408423317f15151f0f33c1b",
+      "size": 2729314
+    },
+    "analysis/CMS_updated_cards_v19_v24_dev200_20260913/source/cards/v19.txt": {
+      "path": "source/cards/v19.txt",
+      "sha256": "f2e19fa36d3c84ea129ae601954c2b10eda7e72ffbb110ee9dbd13e270b5d5d3",
+      "size": 1624
+    },
+    "analysis/CMS_updated_cards_v19_v24_dev200_20260913/source/cards/v20.txt": {
+      "path": "source/cards/v20.txt",
+      "sha256": "8ecbef6ebec2493cbb441e6e25bb7deb62b80c4ea85839549c33f5df6fa631e8",
+      "size": 1709
+    },
+    "analysis/CMS_updated_cards_v19_v24_dev200_20260913/source/cards/v21.txt": {
+      "path": "source/cards/v21.txt",
+      "sha256": "b64c89f523b11a5a58f3bd89136034873ceac9cbaba433a2118dd75183d68d55",
+      "size": 1557
+    },
+    "analysis/CMS_updated_cards_v19_v24_dev200_20260913/source/cards/v22.txt": {
+      "path": "source/cards/v22.txt",
+      "sha256": "346abafa4a5a7e5dfaac0d1608e78d814bcb1257f5d19d3e0acd801e266baaef",
+      "size": 1511
+    },
+    "analysis/CMS_updated_cards_v19_v24_dev200_20260913/source/cards/v23.txt": {
+      "path": "source/cards/v23.txt",
+      "sha256": "2c5d7c84879c8d04a50b9b2696a4f73c4e96ce4922fa130d1853f0e8bb76ed6a",
+      "size": 1862
+    },
+    "analysis/CMS_updated_cards_v19_v24_dev200_20260913/source/cards/v24.txt": {
+      "path": "source/cards/v24.txt",
+      "sha256": "b80b7d4707c76eea449aae9550b8f15bcaf64b2bf6af20017a044bbcaad58fab",
+      "size": 1556
+    },
+    "analysis/CMS_updated_cards_v19_v24_dev200_20260913/source/cards_original.txt": {
+      "path": "source/cards_original.txt",
+      "sha256": "68f0a760c779897dd2bce9c3874ea80dd7a5788605d913e60b3403b4449e45bc",
+      "size": 13020
+    },
+    "analysis/CMS_updated_cards_v19_v24_dev200_20260913/source/extraction_original.txt": {
+      "path": "source/extraction_original.txt",
+      "sha256": "2ea8d53e5dab2132af3931331f9a16166fb21d5f2d82507a0e6dcdd70e5a0505",
+      "size": 7150
+    },
+    "analysis/CMS_updated_cards_v19_v24_dev200_20260913/source/memo_exclusion.json": {
+      "path": "source/memo_exclusion.json",
+      "sha256": "d50aecf19b62f5aee3b879dbeace8b5256760264782921969c9b4f14702f3d5d",
+      "size": 384
+    },
+    "analysis/CMS_updated_cards_v19_v24_dev200_20260913/source/pyproject.toml": {
+      "path": "source/pyproject.toml",
+      "sha256": "fdfa3d90b20d8902f039ddcc259286fb382cb4ba46dfdfafa28a48c59f39cad3",
+      "size": 1445
+    },
+    "analysis/CMS_updated_cards_v19_v24_dev200_20260913/source/src/evaluation/cms_updated_cards.py": {
+      "path": "source/src/evaluation/cms_updated_cards.py",
+      "sha256": "afbd96e1b0a965cba6d8a2b1102088b5e2d7433a07d1e7faebb10d975fc3b891",
+      "size": 31309
+    },
+    "analysis/CMS_updated_cards_v19_v24_dev200_20260913/source/src/evaluation/reporting.py": {
+      "path": "source/src/evaluation/reporting.py",
+      "sha256": "732d7fcc896c7519c778e40777e6d8b16a3b25ec120bc76e562c48b7118f6afd",
+      "size": 2462
+    },
+    "analysis/CMS_updated_cards_v19_v24_dev200_20260913/source/src/experiments/cms_source_alignment.py": {
+      "path": "source/src/experiments/cms_source_alignment.py",
+      "sha256": "3a4d05fd1840907c7bb769532321566aec0388483f333a40e5c3eefd2757d43e",
+      "size": 26487
+    },
+    "analysis/CMS_updated_cards_v19_v24_dev200_20260913/source/src/experiments/cms_updated_cards.py": {
+      "path": "source/src/experiments/cms_updated_cards.py",
+      "sha256": "de37ac8d20e8b1aa557bae59220840b9057ed21fa39038c43e586e237ecb4254",
+      "size": 18825
+    },
+    "analysis/CMS_updated_cards_v19_v24_dev200_20260913/source/src/inference/conversation.py": {
+      "path": "source/src/inference/conversation.py",
+      "sha256": "273469929c78ded1ecc6a763703ddaeca22a4c74fa35220106bb959b54247ca3",
+      "size": 14317
+    },
+    "analysis/CMS_updated_cards_v19_v24_dev200_20260913/source/src/inference/engine.py": {
+      "path": "source/src/inference/engine.py",
+      "sha256": "be56bcc03888582e1e4643d36c5ffc6f482ff9fad84043ec73fe5ceabd1f5c72",
+      "size": 10405
+    },
+    "analysis/CMS_updated_cards_v19_v24_dev200_20260913/source/src/inference/predictor.py": {
+      "path": "source/src/inference/predictor.py",
+      "sha256": "229f12984b85b9d0f4f26f74b2ac8835183a6bb5bb5116b3590da019e1a88edb",
+      "size": 10026
+    },
+    "analysis/CMS_updated_cards_v19_v24_dev200_20260913/source/tests/test_cms_updated_cards.py": {
+      "path": "source/tests/test_cms_updated_cards.py",
+      "sha256": "4e44e2dc9a51b55a63c99e8a57d18dc1902885c0b6ba9d98617fbbe6109d019f",
+      "size": 4565
+    },
+    "analysis/CMS_updated_cards_v19_v24_dev200_20260913/source/tests/test_cms_updated_evaluation.py": {
+      "path": "source/tests/test_cms_updated_evaluation.py",
+      "sha256": "653e648223c8331b5abb42b9175366a45bdc6a0a4fe21f9efaa7013322c326a4",
+      "size": 8090
+    },
+    "analysis/CMS_updated_cards_v19_v24_dev200_20260913/source/tests/test_vllm_model.py": {
+      "path": "source/tests/test_vllm_model.py",
+      "sha256": "285604d6d74bffad46a9f7544577fadbaef4f7feb2030c013e9317a7e4e306c7",
+      "size": 14556
+    },
+    "analysis/CMS_updated_cards_v19_v24_dev200_20260913/source/uv.lock": {
+      "path": "source/uv.lock",
+      "sha256": "76089a2b00b237f2c2782d084f1e1c7c8aadfa1849780c1b787d91d7088b7651",
+      "size": 209928
+    },
+    "analysis/CMS_updated_cards_v19_v24_dev200_20260913/source_alignment.json": {
+      "path": "source_alignment.json",
+      "sha256": "e91da9608cbcf31d692bd589505640b15fb1a3d718be2344a85408c4e3443215",
+      "size": 15172
+    },
+    "analysis/CMS_updated_cards_v19_v24_dev200_20260913/source_alignment_reproduced.json": {
+      "path": "source_alignment_reproduced.json",
+      "sha256": "59e81f89ed4362a09fb0cefdb748ac4f418bc0fd037690b5f8498033d286ee97",
+      "size": 18660
+    },
+    "analysis/CMS_updated_cards_v19_v24_dev200_20260913/verification.json": {
+      "path": "verification.json",
+      "sha256": "1d020de5e720b7f2a47ed7fcf73783509cb8a25dc54285c32767dc5c54b16ad2",
+      "size": 516
+    }
+  },
+  "temporary_paths": [
+    "tmp/structure-migration-20260913"
+  ],
+  "migration_inventory": "docs/maintenance/evidence/structure-migration/mapping.json",
+  "reproducibility": "Original content retained. Local datasets/models require matching separately restored bytes; historical commands may need current reconstruction guidance.",
+  "recorded_condition_evidence": [
+    {
+      "path": "manifest.json",
+      "values": {
+        "source_commit": "615e649e80794556f9ae2d889da99d5c41a8cba4",
+        "model": "models/gemma-4-26B-A4B-it-NVFP4"
+      }
+    }
+  ],
+  "historical_provenance": {
+    "status": "retained where originally recorded; missing fields remain unknown",
+    "execution_sources": "Existing source/analysis_source contents and original manifests are authoritative; migration-time code is separately labeled",
+    "input_access": "Local input/model assets remain locally retained; original hashes are in manifests/evaluations. Another checkout must restore matching bytes.",
+    "original_temporary_paths": "Not reconstructed when absent from original evidence"
+  },
+  "migration_code_archive": "docs/maintenance/evidence/structure-migration/original-source.tar"
+}

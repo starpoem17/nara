@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "record_kind": "historical_experiment",
+  "read_only": true,
+  "project_root": "../..",
+  "run_id": "legacy_continuous_diagnosis",
+  "area": "inference-scheduling",
+  "report": "docs/experiments/inference-scheduling/2026-09/legacy_continuous_diagnosis.md",
+  "question": "Why did continuous scheduling change judgments despite matching inputs?",
+  "started_at": null,
+  "timezone": "Asia/Seoul",
+  "time_evidence": "No verified orchestration start; see timestamp-candidates.json and original logs. September 2026 is established by the linked historical project records.",
+  "migration_at": "2026-09-13T15:13:30.111591+00:00",
+  "status": "historical; inspect per-condition execution records",
+  "judgment": "Controlled diagnosis points to batch-sensitive generation; the specific kernel cause remains unisolated.",
+  "conditions": {
+    "recorded_execution": {
+      "settings": {
+        "recorded_condition": "recorded execution",
+        "scope": "See preserved original manifest and source for exact settings."
+      },
+      "status": "historical",
+      "attempts": [],
+      "artifact_path": "."
+    }
+  },
+  "max_attempts": 0,
+  "predecessors": [
+    {
+      "run_id": "legacy_continuous_full200",
+      "reason": "Observed accuracy differences led to a predefined five-stage diagnostic sweep."
+    }
+  ],
+  "followups": [
+    {
+      "run_id": "legacy_prefill_decode_probe",
+      "reason": "Earlier diagnosis motivated a new same24 barrier/continuous comparison; engine submission timing and internal batching remain confounders."
+    }
+  ],
+  "original_files": {
+    "analysis/continuous_diagnosis/analysis_manifest.json": {
+      "path": "analysis_manifest.json",
+      "sha256": "a48819e0bcc3bc3ea85d08a83b9900c4fa7d74b7f5df3384ba187a65561ed18a",
+      "size": 336
+    },
+    "analysis/continuous_diagnosis/divergences.json": {
+      "path": "divergences.json",
+      "sha256": "43c4fad939499be6b6a184a5bef765a702e8fc1769b951cc532513958aae6717",
+      "size": 15677
+    },
+    "analysis/continuous_diagnosis/engine.json": {
+      "path": "engine.json",
+      "sha256": "9c60859dbc8dc2eb09669bc06a960ee37ed01409732afe43beaf9cb3843dca81",
+      "size": 3816
+    },
+    "analysis/continuous_diagnosis/engine.log": {
+      "path": "engine.log",
+      "sha256": "3524d924cf41f3984c66e544df8c8e7b287e1a7b902f60f61b97e883dfbbe728",
+      "size": 24633
+    },
+    "analysis/continuous_diagnosis/historical_engine_comparison.json": {
+      "path": "historical_engine_comparison.json",
+      "sha256": "fa5a70e54d194b1aab1366860f8a1663d3d8a8e8482d4ac44f30747194dcf166",
+      "size": 7438
+    },
+    "analysis/continuous_diagnosis/historical_flips.csv": {
+      "path": "historical_flips.csv",
+      "sha256": "b6690389b3e4b70eb995d4599b55e7e490ef3deabe82525627c1587997906289",
+      "size": 758
+    },
+    "analysis/continuous_diagnosis/input_audit.json": {
+      "path": "input_audit.json",
+      "sha256": "5f8f3f71578b2e19b83ce30c6797c444ec10495db388a4d874ec15ae8605b0e9",
+      "size": 51270
+    },
+    "analysis/continuous_diagnosis/new_barrier.json": {
+      "path": "new_barrier.json",
+      "sha256": "94425e37a2c1a275706b195ed8a8662456c281fdb870f9f03fa94936c7f346bc",
+      "size": 612406
+    },
+    "analysis/continuous_diagnosis/new_continuous_1.json": {
+      "path": "new_continuous_1.json",
+      "sha256": "229b45d781a0e606df8bdb4b363c7f40bf612ebb9572f0cf2be245af7cca3713",
+      "size": 612734
+    },
+    "analysis/continuous_diagnosis/new_continuous_2.json": {
+      "path": "new_continuous_2.json",
+      "sha256": "5015ad0f48d57b18abf624c8c78a57dafbba9257001328fc6f083f432cc8ddb4",
+      "size": 612733
+    },
+    "analysis/continuous_diagnosis/old_barrier_1.json": {
+      "path": "old_barrier_1.json",
+      "sha256": "9b61fb7432fb5b3009f72f885268afc0cb595fa0b9d23616e60b1eb21b5aa64e",
+      "size": 602903
+    },
+    "analysis/continuous_diagnosis/old_barrier_2.json": {
+      "path": "old_barrier_2.json",
+      "sha256": "632989cfa5c47484790623fbf08a788e40337478bb752ec74789b6b317630d26",
+      "size": 602907
+    },
+    "analysis/continuous_diagnosis/plan.json": {
+      "path": "plan.json",
+      "sha256": "34a766fc6b1c91a2ecafce616d9879b69f7e89241062dd6d106418a2c4542988",
+      "size": 1528
+    },
+    "analysis/continuous_diagnosis/source/docs/experiments/continuous-diagnosis.md": {
+      "path": "source/docs/experiments/continuous-diagnosis.md",
+      "sha256": "22bb5903b6df62d7cd530d9bc12faabdbee3fc7c19f100e54dc36bdbf657d590",
+      "size": 3339
+    },
+    "analysis/continuous_diagnosis/source/scripts/diagnose_continuous.py": {
+      "path": "source/scripts/diagnose_continuous.py",
+      "sha256": "43d2cd63dec8327e5ee266f965ced259a86092850484a9949509309e858d8feb",
+      "size": 8765
+    },
+    "analysis/continuous_diagnosis/source/scripts/summarize_continuous_diagnosis.py": {
+      "path": "source/scripts/summarize_continuous_diagnosis.py",
+      "sha256": "bfaa396b83956d418f09f79898c64b2944bfcf2af6c92b89a4a527c546f4e9c1",
+      "size": 12941
+    },
+    "analysis/continuous_diagnosis/summary.json": {
+      "path": "summary.json",
+      "sha256": "cfe99486839f68dea107b7259ed921ba49bf4a59cb2f29c58cd526eb77f89d30",
+      "size": 14586
+    },
+    "analysis/continuous_diagnosis/summary.log": {
+      "path": "summary.log",
+      "sha256": "13798ddd77d91c8a488681d7f01e0bc417b7500427260b8d3f1ca4617578f65f",
+      "size": 2178
+    },
+    "analysis/continuous_diagnosis/validation.json": {
+      "path": "validation.json",
+      "sha256": "1e78bfa4281a530940836d9246fa883a658681a6a9e0f13bfc0f363c40c81328",
+      "size": 257
+    }
+  },
+  "temporary_paths": [
+    "tmp/structure-migration-20260913"
+  ],
+  "migration_inventory": "docs/maintenance/evidence/structure-migration/mapping.json",
+  "reproducibility": "Original content retained. Local datasets/models require matching separately restored bytes; historical commands may need current reconstruction guidance.",
+  "recorded_condition_evidence": [],
+  "historical_provenance": {
+    "status": "retained where originally recorded; missing fields remain unknown",
+    "execution_sources": "Existing source/analysis_source contents and original manifests are authoritative; migration-time code is separately labeled",
+    "input_access": "Local input/model assets remain locally retained; original hashes are in manifests/evaluations. Another checkout must restore matching bytes.",
+    "original_temporary_paths": "Not reconstructed when absent from original evidence"
+  },
+  "migration_code_archive": "docs/maintenance/evidence/structure-migration/original-source.tar"
+}

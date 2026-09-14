@@ -1,0 +1,13 @@
+{
+  "prediction_seconds": 326.1243768429995,
+  "failed_ids": [],
+  "records": 200,
+  "metrics": {
+    "model_seconds": 280.8399686291723,
+    "retrieval_seconds": 0.0,
+    "model_batches": 4201,
+    "retrieval_batches": 0,
+    "total_seconds": 326.1159403970014
+  },
+  "rule_seconds": 1.1402619990003586
+}

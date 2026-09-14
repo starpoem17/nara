@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "record_kind": "historical_experiment",
+  "read_only": true,
+  "project_root": "../..",
+  "run_id": "legacy_prefix_batch11_aborted_repair",
+  "area": "inference-scheduling",
+  "report": "docs/experiments/inference-scheduling/2026-09/legacy_prefix_batch11_aborted_repair.md",
+  "question": "Can the failed batch11 notices be recovered with the first helper?",
+  "started_at": null,
+  "timezone": "Asia/Seoul",
+  "time_evidence": "No verified orchestration start; see timestamp-candidates.json and original logs. September 2026 is established by the linked historical project records.",
+  "migration_at": "2026-09-13T15:13:30.168928+00:00",
+  "status": "historical; inspect per-condition execution records",
+  "judgment": "Aborted after inference because of a helper list/tuple assertion. Generated outputs and separate elapsed time were not retained.",
+  "conditions": {
+    "recorded_execution": {
+      "settings": {
+        "recorded_condition": "recorded execution",
+        "scope": "See preserved original manifest and source for exact settings."
+      },
+      "status": "historical",
+      "attempts": [],
+      "artifact_path": "."
+    }
+  },
+  "max_attempts": 0,
+  "predecessors": [
+    {
+      "run_id": "legacy_prefix200_batch11",
+      "reason": "Three failed initial notices triggered recovery; prompt, OFF mode and output2048 stayed the same, but a helper assertion aborted the execution."
+    }
+  ],
+  "followups": [
+    {
+      "run_id": "legacy_prefix_batch11_repair",
+      "reason": "The helper assertion was corrected and inference restarted under the same prompt/OFF/output2048 conditions. Aborted execution time is excluded from the reported timing."
+    }
+  ],
+  "original_files": {
+    "analysis/prefix200_batch11/recovery_aborted.json": {
+      "path": "recovery_aborted.json",
+      "sha256": "26503a3978bcf324015244482b22d3ef10e4d0bc903977001c6eb9fa1828d457",
+      "size": 333
+    },
+    "analysis/prefix200_batch11/recovery_aborted.log": {
+      "path": "recovery_aborted.log",
+      "sha256": "44f44409a86ff19a2f6bb79c700262ff8cc5cbf6713bf95bfa793b009e117d2a",
+      "size": 17174
+    },
+    "analysis/prefix200_batch11/source/scripts/recover_prefix_batch11_aborted.py": {
+      "path": "source/scripts/recover_prefix_batch11_aborted.py",
+      "sha256": "91aeef3d82c7844e0ad60de6e6281a539d3e76282221565506dcd9d40d5a633f",
+      "size": 7237
+    }
+  },
+  "temporary_paths": [
+    "tmp/structure-migration-20260913"
+  ],
+  "migration_inventory": "docs/maintenance/evidence/structure-migration/mapping.json",
+  "reproducibility": "Original content retained. Local datasets/models require matching separately restored bytes; historical commands may need current reconstruction guidance.",
+  "recorded_condition_evidence": [],
+  "historical_provenance": {
+    "status": "retained where originally recorded; missing fields remain unknown",
+    "execution_sources": "Existing source/analysis_source contents and original manifests are authoritative; migration-time code is separately labeled",
+    "input_access": "Local input/model assets remain locally retained; original hashes are in manifests/evaluations. Another checkout must restore matching bytes.",
+    "original_temporary_paths": "Not reconstructed when absent from original evidence"
+  },
+  "migration_code_archive": "docs/maintenance/evidence/structure-migration/original-source.tar"
+}

@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "record_kind": "historical_experiment",
+  "read_only": true,
+  "project_root": "../..",
+  "run_id": "legacy_colleague200",
+  "area": "colleague-hypotheses",
+  "report": "docs/experiments/colleague-hypotheses/2026-09/legacy_colleague200.md",
+  "question": "How does the supplied colleague submission behave on local dev200?",
+  "started_at": null,
+  "timezone": "Asia/Seoul",
+  "time_evidence": "No verified orchestration start; see timestamp-candidates.json and original logs. September 2026 is established by the linked historical project records.",
+  "migration_at": "2026-09-13T15:13:30.113147+00:00",
+  "status": "historical; inspect per-condition execution records",
+  "judgment": "Historical local timing anchor; reported server time lacks matching server logs and scope verification.",
+  "conditions": {
+    "recorded_execution": {
+      "settings": {
+        "recorded_condition": "recorded execution",
+        "scope": "See preserved original manifest and source for exact settings."
+      },
+      "status": "historical",
+      "attempts": [],
+      "artifact_path": "."
+    }
+  },
+  "max_attempts": 0,
+  "predecessors": [],
+  "followups": [],
+  "original_files": {
+    "analysis/colleague200/archive_manifest.json": {
+      "path": "archive_manifest.json",
+      "sha256": "ac84b9b7aff863d6b8932c7d16928c233c8c3480f690f5be634343d8bf881431",
+      "size": 635
+    },
+    "analysis/colleague200/calibration.json": {
+      "path": "calibration.json",
+      "sha256": "5ca8e26e669b012dc052c711f427cf428d915d34ea404785d15b8490e5967fe5",
+      "size": 1879
+    },
+    "analysis/colleague200/casebook_audit.json": {
+      "path": "casebook_audit.json",
+      "sha256": "58b395474afae5cc9cb0386142848f3e198d13513d0474474718626345620870",
+      "size": 5063
+    },
+    "analysis/colleague200/errors.csv": {
+      "path": "errors.csv",
+      "sha256": "741f08de5a8b2f3255844ed9ec7e6635c509555e0cfbb88a7fcd5b64bc29bdfd",
+      "size": 32745
+    },
+    "analysis/colleague200/evaluation.json": {
+      "path": "evaluation.json",
+      "sha256": "0698146b3fae6305fb3a869700c374bddb7bdb2530454e832f99787f8ce02668",
+      "size": 4256
+    },
+    "analysis/colleague200/model_calls.json": {
+      "path": "model_calls.json",
+      "sha256": "d71259ec60a04044e5b6efb171e6d77db69a254098048e54739ec85a50979f60",
+      "size": 171
+    },
+    "analysis/colleague200/original/model/casebook.json": {
+      "path": "original/model/casebook.json",
+      "sha256": "52cebb4fa35d0de1a5e69f84764e7f14b40b961998b0d5ec7ecee1cf03d12ed7",
+      "size": 127652
+    },
+    "analysis/colleague200/original/requirements.txt": {
+      "path": "original/requirements.txt",
+      "sha256": "5740d52bbd587c05f02b72dfebf0059712ea68605f9e00092e5a058faf49de0f",
+      "size": 273
+    },
+    "analysis/colleague200/original/script.py": {
+      "path": "original/script.py",
+      "sha256": "a6c6ef78ef59c84a4969a56f99aa63fa420c5ec836fb5277ed7e44996669c660",
+      "size": 39964
+    },
+    "analysis/colleague200/parsing_audit.json": {
+      "path": "parsing_audit.json",
+      "sha256": "e0f0d939117c3516dc6e7c32ff2c24b86a6c2ccef324f65e2b3c433f42fb6a65",
+      "size": 17371
+    },
+    "analysis/colleague200/prompts.jsonl": {
+      "path": "prompts.jsonl",
+      "sha256": "db3373e08342dd769ef05b1b9c0c2a6f3aa5b612b65bc9c91dd1174287216eee",
+      "size": 8763379
+    },
+    "analysis/colleague200/report.json": {
+      "path": "report.json",
+      "sha256": "888d54507c30dca360a5f200e00646c4b2bdd874b13ccfa4d8ee2c3ba173fa34",
+      "size": 2009
+    },
+    "analysis/colleague200/responses.jsonl": {
+      "path": "responses.jsonl",
+      "sha256": "c9a5025e2ceab2c7d5c5bf1b6c768625b8103caf4a42883520b0eb4cc567c145",
+      "size": 378036
+    },
+    "analysis/colleague200/run.log": {
+      "path": "run.log",
+      "sha256": "35e35dc7a8f255e46d39834da10b674570cde3690f8473de45ae3a650b933f5d",
+      "size": 27588
+    },
+    "analysis/colleague200/run_manifest.json": {
+      "path": "run_manifest.json",
+      "sha256": "0441731c28ce402ec44854e22975970c850eb2b376c92043cd0f977ccab86898",
+      "size": 4687
+    },
+    "analysis/colleague200/selected_examples.json": {
+      "path": "selected_examples.json",
+      "sha256": "3242be13b904f4c4348e2b75329978c1fd6de5bfcd4c69cb8b5f42c2db1006df",
+      "size": 321274
+    },
+    "analysis/colleague200/source/scripts/benchmark_colleague200.py": {
+      "path": "source/scripts/benchmark_colleague200.py",
+      "sha256": "0346903d4ca1805505bba05981dfadf1c099d50490eef7a0b8d120a604d0a918",
+      "size": 7032
+    },
+    "analysis/colleague200/source/scripts/summarize_colleague200.py": {
+      "path": "source/scripts/summarize_colleague200.py",
+      "sha256": "0b3d8aafaceed8ad85268c209c8b6be9d4451e8bd72612e071d5c5a2011dc3be",
+      "size": 15741
+    },
+    "analysis/colleague200/submission.csv": {
+      "path": "submission.csv",
+      "sha256": "f3783d79f93747ee9e83ff3615c0d47d9dbd950bad4af731cd2a0a08d5dc1ea9",
+      "size": 41108
+    },
+    "analysis/colleague200/summary.log": {
+      "path": "summary.log",
+      "sha256": "8f09d1e11242399d06db349073169515b6b03e1071424bec8f9fddd822a736ea",
+      "size": 3318
+    },
+    "analysis/colleague200/validation.json": {
+      "path": "validation.json",
+      "sha256": "9c77bf8ee44313b73d6291b3175e4012df541cfd20a2a74c4f5944c44bf2a2a3",
+      "size": 279
+    }
+  },
+  "temporary_paths": [
+    "tmp/structure-migration-20260913"
+  ],
+  "migration_inventory": "docs/maintenance/evidence/structure-migration/mapping.json",
+  "reproducibility": "Original content retained. Local datasets/models require matching separately restored bytes; historical commands may need current reconstruction guidance.",
+  "recorded_condition_evidence": [],
+  "historical_provenance": {
+    "status": "retained where originally recorded; missing fields remain unknown",
+    "execution_sources": "Existing source/analysis_source contents and original manifests are authoritative; migration-time code is separately labeled",
+    "input_access": "Local input/model assets remain locally retained; original hashes are in manifests/evaluations. Another checkout must restore matching bytes.",
+    "original_temporary_paths": "Not reconstructed when absent from original evidence"
+  },
+  "migration_code_archive": "docs/maintenance/evidence/structure-migration/original-source.tar"
+}

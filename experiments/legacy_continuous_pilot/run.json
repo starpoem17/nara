@@ -1,0 +1,538 @@
+{
+  "schema_version": 1,
+  "record_kind": "historical_experiment",
+  "read_only": true,
+  "project_root": "../..",
+  "run_id": "legacy_continuous_pilot",
+  "area": "inference-scheduling",
+  "report": "docs/experiments/inference-scheduling/2026-09/legacy_continuous_pilot.md",
+  "question": "Which planned prefill budget is fastest in the continuous scheduling pilot?",
+  "started_at": null,
+  "timezone": "Asia/Seoul",
+  "time_evidence": "No verified orchestration start; see timestamp-candidates.json and original logs. September 2026 is established by the linked historical project records.",
+  "migration_at": "2026-09-13T15:13:30.148993+00:00",
+  "status": "historical; inspect per-condition execution records",
+  "judgment": "Preplanned pilot compared barrier8192 with continuous2048/8192/16384. Runtime selected the follow-up budget.",
+  "conditions": {
+    "pilot_barrier_8192": {
+      "settings": {
+        "recorded_condition": "pilot_barrier_8192",
+        "scope": "See preserved original manifest and source for exact settings."
+      },
+      "status": "historical",
+      "attempts": [],
+      "artifact_path": "pilot_barrier_8192"
+    },
+    "pilot_continuous_2048": {
+      "settings": {
+        "recorded_condition": "pilot_continuous_2048",
+        "scope": "See preserved original manifest and source for exact settings."
+      },
+      "status": "historical",
+      "attempts": [],
+      "artifact_path": "pilot_continuous_2048"
+    },
+    "pilot_continuous_8192": {
+      "settings": {
+        "recorded_condition": "pilot_continuous_8192",
+        "scope": "See preserved original manifest and source for exact settings."
+      },
+      "status": "historical",
+      "attempts": [],
+      "artifact_path": "pilot_continuous_8192"
+    },
+    "pilot_continuous_16384": {
+      "settings": {
+        "recorded_condition": "pilot_continuous_16384",
+        "scope": "See preserved original manifest and source for exact settings."
+      },
+      "status": "historical",
+      "attempts": [],
+      "artifact_path": "pilot_continuous_16384"
+    }
+  },
+  "max_attempts": 0,
+  "predecessors": [
+    {
+      "run_id": "legacy_hybrid200",
+      "reason": "The hybrid study motivated a new completion-driven pilot; predefined barrier/prefill budgets were compared before choosing the full200 budget."
+    }
+  ],
+  "followups": [
+    {
+      "run_id": "legacy_continuous_full200",
+      "reason": "Pilot runtime selected8192 before full200 six-feature and mixed conditions were launched."
+    }
+  ],
+  "original_files": {
+    "analysis/continuous200/adapter_parity.json": {
+      "path": "adapter_parity.json",
+      "sha256": "933ff44f9ed413d8a9ab0c76c8b85d68387012bb7481d0a311616e24f06bbbb1",
+      "size": 537
+    },
+    "analysis/continuous200/analysis_manifest.json": {
+      "path": "analysis_manifest.json",
+      "sha256": "65473035b8d966d6c6be3784f2aacfc44c9d1fce8646af3b542715c3e4138c83",
+      "size": 664
+    },
+    "analysis/continuous200/analysis_source/docs/experiments/continuous-prefill.md": {
+      "path": "analysis_source/docs/experiments/continuous-prefill.md",
+      "sha256": "dca36a33c5fadc9f59409fb451f7b9da85ee61599f45d8d7c8e2cddbfe4d3dae",
+      "size": 6675
+    },
+    "analysis/continuous200/analysis_source/scripts/benchmark_continuous.py": {
+      "path": "analysis_source/scripts/benchmark_continuous.py",
+      "sha256": "547820866ce7573645b8ce90a66e21bd8076762e8db36a2b31194813a00ce900",
+      "size": 7710
+    },
+    "analysis/continuous200/analysis_source/scripts/recover_continuous.py": {
+      "path": "analysis_source/scripts/recover_continuous.py",
+      "sha256": "5f595194282aeae5e6f965a26457de98ac254b29908498ffc9269320cd6a4574",
+      "size": 6034
+    },
+    "analysis/continuous200/analysis_source/scripts/run_continuous_study.py": {
+      "path": "analysis_source/scripts/run_continuous_study.py",
+      "sha256": "66172770eb342ac614c944202cc6eff1c26e2bc8b63f21a6276675d1b8842ead",
+      "size": 1464
+    },
+    "analysis/continuous200/analysis_source/scripts/summarize_continuous.py": {
+      "path": "analysis_source/scripts/summarize_continuous.py",
+      "sha256": "3299aaba130de2b382d0e77c3949b312879e78694331cdf57c1cffa2375e4f8d",
+      "size": 17785
+    },
+    "analysis/continuous200/checks.txt": {
+      "path": "checks.txt",
+      "sha256": "de2d3fe9b629b6735821ba88a08f5b42532f87648e7253958003b6af48c98ded",
+      "size": 536
+    },
+    "analysis/continuous200/comparison.json": {
+      "path": "comparison.json",
+      "sha256": "c690986bde55398b5e077639eb6769ac44b300150584cafc141443a5b2224a45",
+      "size": 32193
+    },
+    "analysis/continuous200/engine_memory.json": {
+      "path": "engine_memory.json",
+      "sha256": "c3738b12b38e518a9d5b50364a20f096b1670735c1d7e93964daa75dffa199b6",
+      "size": 292
+    },
+    "analysis/continuous200/length_bins.csv": {
+      "path": "length_bins.csv",
+      "sha256": "a1f3648f7be0de4694a4c00bea12684b36ff85f8c972bbce8014ab994f486133",
+      "size": 2033
+    },
+    "analysis/continuous200/per_feature.csv": {
+      "path": "per_feature.csv",
+      "sha256": "6222e5bb0e5273eed471654fed390ba1fc422b7d488eb07d659724acdc53292d",
+      "size": 2300
+    },
+    "analysis/continuous200/pilot_16384.log": {
+      "path": "pilot_16384.log",
+      "sha256": "71e1c027e2aef075b3ed28c1adeadb4bd72d6007d4e7034a0c11d189a4ef37aa",
+      "size": 25887
+    },
+    "analysis/continuous200/pilot_2048.log": {
+      "path": "pilot_2048.log",
+      "sha256": "1ebb2d34623073b8da62a2f6312b078aa4d931743cc1eb3ae813d208c429469e",
+      "size": 24042
+    },
+    "analysis/continuous200/pilot_8192.log": {
+      "path": "pilot_8192.log",
+      "sha256": "edd260c7f1e6c047677336b386d355a4642e4f456e3e37d47fc6f63014667523",
+      "size": 23759
+    },
+    "analysis/continuous200/pilot_barrier_8192/lifecycle.jsonl": {
+      "path": "pilot_barrier_8192/lifecycle.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    "analysis/continuous200/pilot_barrier_8192/report.json": {
+      "path": "pilot_barrier_8192/report.json",
+      "sha256": "9c416c86e24d5c786620585ca227dd50c683bb1d86c7d7efdb945c256cd593ec",
+      "size": 2139
+    },
+    "analysis/continuous200/pilot_barrier_8192/request_timings.jsonl": {
+      "path": "pilot_barrier_8192/request_timings.jsonl",
+      "sha256": "e35fbf0aa04786275f3c3e8dd3c8342148fd68d6f508c39c6d7ed8df78a11227",
+      "size": 32863
+    },
+    "analysis/continuous200/pilot_barrier_8192/scheduler.jsonl": {
+      "path": "pilot_barrier_8192/scheduler.jsonl",
+      "sha256": "3e6c63c55e38b0ff2a44080b519f9ef7ec21aaee84d5e809daa9b66e73a14ed4",
+      "size": 921281
+    },
+    "analysis/continuous200/pilot_barrier_8192/trace.jsonl": {
+      "path": "pilot_barrier_8192/trace.jsonl",
+      "sha256": "c2adc3bd66db79c788932a75cd778729e718cd66f85a427cb6c6b1bbcfefaf20",
+      "size": 56066
+    },
+    "analysis/continuous200/pilot_barrier_8192/trace_completed.jsonl": {
+      "path": "pilot_barrier_8192/trace_completed.jsonl",
+      "sha256": "c2adc3bd66db79c788932a75cd778729e718cd66f85a427cb6c6b1bbcfefaf20",
+      "size": 56066
+    },
+    "analysis/continuous200/pilot_continuous_16384/lifecycle.jsonl": {
+      "path": "pilot_continuous_16384/lifecycle.jsonl",
+      "sha256": "851f96a997d2131aaccab69c6fb9b3a93a336b2004b139de9a1f817d58d2457e",
+      "size": 12888
+    },
+    "analysis/continuous200/pilot_continuous_16384/report.json": {
+      "path": "pilot_continuous_16384/report.json",
+      "sha256": "2b4b9081564042ccff0fcca89fa68cbd65d578b23b850b8c59ea81160a255b2e",
+      "size": 1220
+    },
+    "analysis/continuous200/pilot_continuous_16384/request_timings.jsonl": {
+      "path": "pilot_continuous_16384/request_timings.jsonl",
+      "sha256": "68806c896fd30bc37eafa46cbc2ad91ebce3daab39817a9a8f556619824b0889",
+      "size": 27183
+    },
+    "analysis/continuous200/pilot_continuous_16384/scheduler.jsonl": {
+      "path": "pilot_continuous_16384/scheduler.jsonl",
+      "sha256": "81d08b3fabfe10d845fc74b83054bed8b77a89645f03a3035ad7b77c09324e27",
+      "size": 1025735
+    },
+    "analysis/continuous200/pilot_continuous_16384/trace.jsonl": {
+      "path": "pilot_continuous_16384/trace.jsonl",
+      "sha256": "fe2f8a03490266a3196a63cef3cc060591e18898108c37ba5b62638a0eb5bf4f",
+      "size": 55087
+    },
+    "analysis/continuous200/pilot_continuous_16384/trace_completed.jsonl": {
+      "path": "pilot_continuous_16384/trace_completed.jsonl",
+      "sha256": "83763f447f3c149f8d3ab1a1a7d4c04795a3e98f2af4eafac58edfd16d060ec0",
+      "size": 55087
+    },
+    "analysis/continuous200/pilot_continuous_2048/lifecycle.jsonl": {
+      "path": "pilot_continuous_2048/lifecycle.jsonl",
+      "sha256": "08ad7d162288aed78572be61d326e3c6c2b2cbe959b492c918bf36047fd3afda",
+      "size": 12877
+    },
+    "analysis/continuous200/pilot_continuous_2048/report.json": {
+      "path": "pilot_continuous_2048/report.json",
+      "sha256": "976ec513c719d8c3740a18dd51300410214007cf51b08505286b3a1bab7443d9",
+      "size": 1220
+    },
+    "analysis/continuous200/pilot_continuous_2048/request_timings.jsonl": {
+      "path": "pilot_continuous_2048/request_timings.jsonl",
+      "sha256": "2cb262b7afc7f23daa413c2e0ece888302da74ffd48adf6ee30eac54ee12b460",
+      "size": 27211
+    },
+    "analysis/continuous200/pilot_continuous_2048/scheduler.jsonl": {
+      "path": "pilot_continuous_2048/scheduler.jsonl",
+      "sha256": "89f15b67553e2d252f1ef4b5addd8d0c784eb40bad43cd4abeef9181825d3226",
+      "size": 899878
+    },
+    "analysis/continuous200/pilot_continuous_2048/trace.jsonl": {
+      "path": "pilot_continuous_2048/trace.jsonl",
+      "sha256": "1ed35549e07dd7d06ecd73ac9a5d530d8783db7ff624814116c726c9830b63a8",
+      "size": 54753
+    },
+    "analysis/continuous200/pilot_continuous_2048/trace_completed.jsonl": {
+      "path": "pilot_continuous_2048/trace_completed.jsonl",
+      "sha256": "7e8f09131bc48c7b6037cd39c12152ba3ad46e22ffbf947d58f5f8e6e9078d73",
+      "size": 54753
+    },
+    "analysis/continuous200/pilot_continuous_8192/lifecycle.jsonl": {
+      "path": "pilot_continuous_8192/lifecycle.jsonl",
+      "sha256": "8b35036b4422bd3060f2156b0770246faa1309ec59e21e135ae6ee45a296145d",
+      "size": 12887
+    },
+    "analysis/continuous200/pilot_continuous_8192/report.json": {
+      "path": "pilot_continuous_8192/report.json",
+      "sha256": "0b0c5c5249136c1f7aa0bcbdfc57342eba22208e9eb642a20a6af89b49d18eee",
+      "size": 1220
+    },
+    "analysis/continuous200/pilot_continuous_8192/request_timings.jsonl": {
+      "path": "pilot_continuous_8192/request_timings.jsonl",
+      "sha256": "d9468ef5db07f45c694897d86eebcfa81fbf08a2784f4986d3116d6bcc538c02",
+      "size": 27267
+    },
+    "analysis/continuous200/pilot_continuous_8192/scheduler.jsonl": {
+      "path": "pilot_continuous_8192/scheduler.jsonl",
+      "sha256": "659bcf654d28e68cc3c77fd9d04622e16d66cb1669a94b6c65affe45e121c3db",
+      "size": 828841
+    },
+    "analysis/continuous200/pilot_continuous_8192/trace.jsonl": {
+      "path": "pilot_continuous_8192/trace.jsonl",
+      "sha256": "cb15d5b438a3bbb53800a785a3ccd8d5f3c7ef0b022fb5508f8b4bfa20bc9912",
+      "size": 56256
+    },
+    "analysis/continuous200/pilot_continuous_8192/trace_completed.jsonl": {
+      "path": "pilot_continuous_8192/trace_completed.jsonl",
+      "sha256": "e91c31d2a4cbe6eb6fcdb96d715cb00ea3d078f749b2d4f9019e5a7d605abd58",
+      "size": 56256
+    },
+    "analysis/continuous200/plan.json": {
+      "path": "plan.json",
+      "sha256": "5b4bd88b8b5f92f7141d7de4a6f5f9994c7f7837cc4f31fa975bbf8a16a8a326",
+      "size": 2172
+    },
+    "analysis/continuous200/postrun_changes.json": {
+      "path": "postrun_changes.json",
+      "sha256": "f0aded5cc99e8ab3b1bad49127aaeb6940e13944ca7c175fe0ffc2b846ff45aa",
+      "size": 367
+    },
+    "analysis/continuous200/smoke.log": {
+      "path": "smoke.log",
+      "sha256": "6f25c022a0fc4d5fb693cc973863b20df7773fbb6b3dcb65966c83645ccf0a37",
+      "size": 17673
+    },
+    "analysis/continuous200/smoke_continuous_8192/lifecycle.jsonl": {
+      "path": "smoke_continuous_8192/lifecycle.jsonl",
+      "sha256": "4de61ad5be14628f5061d4e69d5052e948ca593a80bdb643a3c8e7412275e3f0",
+      "size": 2125
+    },
+    "analysis/continuous200/smoke_continuous_8192/report.json": {
+      "path": "smoke_continuous_8192/report.json",
+      "sha256": "fdf0ae79d0b1d26c5753e1f9046ed2a2a592deca0837d9f6d32a644e25f08d37",
+      "size": 1214
+    },
+    "analysis/continuous200/smoke_continuous_8192/request_timings.jsonl": {
+      "path": "smoke_continuous_8192/request_timings.jsonl",
+      "sha256": "42d4c98140b26aec5b4330eaa999f73e1d2eed6ee800601cb0f39a062b261d56",
+      "size": 4495
+    },
+    "analysis/continuous200/smoke_continuous_8192/scheduler.jsonl": {
+      "path": "smoke_continuous_8192/scheduler.jsonl",
+      "sha256": "7748127614f133fa0800394746c5a1e393719b07dcd5f12d7f3c1ad31b628f3b",
+      "size": 208035
+    },
+    "analysis/continuous200/smoke_continuous_8192/trace.jsonl": {
+      "path": "smoke_continuous_8192/trace.jsonl",
+      "sha256": "fa84c5d251ef94e1635c82d06516f222b5ebd241692f4d62046d24376bd190a4",
+      "size": 8989
+    },
+    "analysis/continuous200/smoke_continuous_8192/trace_completed.jsonl": {
+      "path": "smoke_continuous_8192/trace_completed.jsonl",
+      "sha256": "adee027960ce0b6acbfe19db8fcf3cd84d32d4aa756d30de4e7af10663ebb94d",
+      "size": 8989
+    },
+    "analysis/continuous200/source/data/dev.jsonl": {
+      "path": "source/data/dev.jsonl",
+      "sha256": "5507f5ab0ba53b708f87211ed050dbe531b48a626ace6084c3ccaefb53147534",
+      "size": 8310888
+    },
+    "analysis/continuous200/source/nara/compact_criteria.json": {
+      "path": "source/nara/compact_criteria.json",
+      "sha256": "84cc8ca7f625f51e55206fc581a28e36df4551999c4009de84188f273bd06a04",
+      "size": 6190
+    },
+    "analysis/continuous200/source/nara/continuous.py": {
+      "path": "source/nara/continuous.py",
+      "sha256": "25b0f25cf05721cb4a74faa26777ddea8df1cf81917ce6d9f34f0a38d83e24fe",
+      "size": 9336
+    },
+    "analysis/continuous200/source/nara/hypothesis6.py": {
+      "path": "source/nara/hypothesis6.py",
+      "sha256": "850ebdceff80371dc8bd4859813e86e017552941b44dfdb4773b672576c925ba",
+      "size": 7705
+    },
+    "analysis/continuous200/source/nara/inference.py": {
+      "path": "source/nara/inference.py",
+      "sha256": "e09a87a3113399f2656d119b18536a59b70128242547fbd92774eee5c07dd226",
+      "size": 19312
+    },
+    "analysis/continuous200/source/nara/prefix_predictor.py": {
+      "path": "source/nara/prefix_predictor.py",
+      "sha256": "aee83eb0ce46cef8f2cbc7bc8697a94282d0b7908306fff55b5416d271ed19b7",
+      "size": 2441
+    },
+    "analysis/continuous200/source/nara/vllm_model.py": {
+      "path": "source/nara/vllm_model.py",
+      "sha256": "c3ae5a8f7bd75365e0d685018fab22733a917fca423eacf2fb7f623e4e8c1e0d",
+      "size": 3937
+    },
+    "analysis/continuous200/source/scripts/benchmark_continuous.py": {
+      "path": "source/scripts/benchmark_continuous.py",
+      "sha256": "2787df1973e9f4de2f49b7174552df8acafeb28198885d4d776e544c8b9879e3",
+      "size": 7608
+    },
+    "analysis/continuous200/source/scripts/recover_continuous.py": {
+      "path": "source/scripts/recover_continuous.py",
+      "sha256": "5f595194282aeae5e6f965a26457de98ac254b29908498ffc9269320cd6a4574",
+      "size": 6034
+    },
+    "analysis/continuous200/source/tests/test_continuous.py": {
+      "path": "source/tests/test_continuous.py",
+      "sha256": "f97805eb84cd1341385fd6a60951ac0e36fce83b3b9190720e4d1867657a0d9c",
+      "size": 3744
+    },
+    "analysis/continuous200/study.log": {
+      "path": "study.log",
+      "sha256": "4dd8abaa80034ccdcea69e9e9fa1778e5b40c0e1f21668185aefff1689b6933a",
+      "size": 251
+    },
+    "analysis/continuous200/summary.log": {
+      "path": "summary.log",
+      "sha256": "04fe5b4a11fb461477f9de93be64478dddacc55fdfe7cbdc867d53a31f145be8",
+      "size": 367
+    },
+    "analysis/continuous200/validation.json": {
+      "path": "validation.json",
+      "sha256": "af2ab5b5c8b884c00635eb2eb17a3727568fd785e54ead9430eedef237021ed0",
+      "size": 642
+    }
+  },
+  "temporary_paths": [
+    "tmp/structure-migration-20260913"
+  ],
+  "migration_inventory": "docs/maintenance/evidence/structure-migration/mapping.json",
+  "reproducibility": "Original content retained. Local datasets/models require matching separately restored bytes; historical commands may need current reconstruction guidance.",
+  "recorded_condition_evidence": [
+    {
+      "path": "pilot_barrier_8192/report.json",
+      "values": {
+        "groups": [
+          [
+            "v1",
+            "v5",
+            "v9",
+            "v14",
+            "v22",
+            "v24"
+          ]
+        ],
+        "options": {
+          "thinking": true,
+          "item_group_size": 6
+        },
+        "limits": {
+          "batch_size": 8,
+          "search_rounds": 2,
+          "queries_per_round": 4,
+          "top_k": 5,
+          "round_tokens": 4096,
+          "total_retrieval_tokens": 8192,
+          "output_tokens": 2048,
+          "retries": 1,
+          "require_search": false
+        }
+      }
+    },
+    {
+      "path": "pilot_continuous_16384/report.json",
+      "values": {
+        "groups": [
+          [
+            "v1",
+            "v5",
+            "v9",
+            "v14",
+            "v22",
+            "v24"
+          ]
+        ],
+        "options": {
+          "thinking": true,
+          "item_group_size": 6
+        },
+        "limits": {
+          "batch_size": 8,
+          "search_rounds": 2,
+          "queries_per_round": 4,
+          "top_k": 5,
+          "round_tokens": 4096,
+          "total_retrieval_tokens": 8192,
+          "output_tokens": 2048,
+          "retries": 1,
+          "require_search": false
+        }
+      }
+    },
+    {
+      "path": "pilot_continuous_2048/report.json",
+      "values": {
+        "groups": [
+          [
+            "v1",
+            "v5",
+            "v9",
+            "v14",
+            "v22",
+            "v24"
+          ]
+        ],
+        "options": {
+          "thinking": true,
+          "item_group_size": 6
+        },
+        "limits": {
+          "batch_size": 8,
+          "search_rounds": 2,
+          "queries_per_round": 4,
+          "top_k": 5,
+          "round_tokens": 4096,
+          "total_retrieval_tokens": 8192,
+          "output_tokens": 2048,
+          "retries": 1,
+          "require_search": false
+        }
+      }
+    },
+    {
+      "path": "pilot_continuous_8192/report.json",
+      "values": {
+        "groups": [
+          [
+            "v1",
+            "v5",
+            "v9",
+            "v14",
+            "v22",
+            "v24"
+          ]
+        ],
+        "options": {
+          "thinking": true,
+          "item_group_size": 6
+        },
+        "limits": {
+          "batch_size": 8,
+          "search_rounds": 2,
+          "queries_per_round": 4,
+          "top_k": 5,
+          "round_tokens": 4096,
+          "total_retrieval_tokens": 8192,
+          "output_tokens": 2048,
+          "retries": 1,
+          "require_search": false
+        }
+      }
+    },
+    {
+      "path": "smoke_continuous_8192/report.json",
+      "values": {
+        "groups": [
+          [
+            "v1",
+            "v5",
+            "v9",
+            "v14",
+            "v22",
+            "v24"
+          ]
+        ],
+        "options": {
+          "thinking": true,
+          "item_group_size": 6
+        },
+        "limits": {
+          "batch_size": 8,
+          "search_rounds": 2,
+          "queries_per_round": 4,
+          "top_k": 5,
+          "round_tokens": 4096,
+          "total_retrieval_tokens": 8192,
+          "output_tokens": 2048,
+          "retries": 1,
+          "require_search": false
+        }
+      }
+    }
+  ],
+  "historical_provenance": {
+    "status": "retained where originally recorded; missing fields remain unknown",
+    "execution_sources": "Existing source/analysis_source contents and original manifests are authoritative; migration-time code is separately labeled",
+    "input_access": "Local input/model assets remain locally retained; original hashes are in manifests/evaluations. Another checkout must restore matching bytes.",
+    "original_temporary_paths": "Not reconstructed when absent from original evidence"
+  },
+  "migration_code_archive": "docs/maintenance/evidence/structure-migration/original-source.tar"
+}

@@ -1,0 +1,266 @@
+{
+  "schema_version": 1,
+  "record_kind": "historical_experiment",
+  "read_only": true,
+  "project_root": "../..",
+  "run_id": "legacy_gemma4_thinking_recovery",
+  "area": "prompt-design",
+  "report": "docs/experiments/prompt-design/2026-09/legacy_gemma4_thinking_recovery.md",
+  "question": "Can the remaining failed thinking notice be recovered with output4096?",
+  "started_at": null,
+  "timezone": "Asia/Seoul",
+  "time_evidence": "No verified orchestration start; see timestamp-candidates.json and original logs. September 2026 is established by the linked historical project records.",
+  "migration_at": "2026-09-13T15:13:30.151879+00:00",
+  "status": "historical; inspect per-condition execution records",
+  "judgment": "The merged200 result is not a uniform-budget execution; only the failed notice was newly inferred.",
+  "conditions": {
+    "recorded_execution": {
+      "settings": {
+        "recorded_condition": "recorded execution",
+        "scope": "See preserved original manifest and source for exact settings."
+      },
+      "status": "historical",
+      "attempts": [],
+      "artifact_path": "."
+    }
+  },
+  "max_attempts": 0,
+  "predecessors": [
+    {
+      "run_id": "legacy_gemma4_rag_dev200_thinking",
+      "reason": "Initial199/200 success led to a separate output4096 recovery."
+    }
+  ],
+  "followups": [],
+  "original_files": {
+    "analysis/gemma4_rag_dev200_thinking_recovered/command.txt": {
+      "path": "merged/command.txt",
+      "sha256": "3ec87e2ad2b1754cb03fbf7306fa776632b6dd67bcf1b0d07442583cf70de091",
+      "size": 537
+    },
+    "analysis/gemma4_rag_dev200_thinking_recovered/comparison.json": {
+      "path": "merged/comparison.json",
+      "sha256": "06b6c6908fd2691207988bfbe2e03893e23b62f954965a45fb9203ee422857b2",
+      "size": 6868
+    },
+    "analysis/gemma4_rag_dev200_thinking_recovered/context_check.json": {
+      "path": "merged/context_check.json",
+      "sha256": "0d58c0f1c21176e4fb041e6b0d61425a84f35e39d2b2185ff84552bbfcd974da",
+      "size": 27539
+    },
+    "analysis/gemma4_rag_dev200_thinking_recovered/errors.csv": {
+      "path": "merged/errors.csv",
+      "sha256": "62e37a1cce29555cd380ac9d0b13be47a7fc50dd042ea8cbe8ab161ab578a276",
+      "size": 28185
+    },
+    "analysis/gemma4_rag_dev200_thinking_recovered/evaluation.json": {
+      "path": "merged/evaluation.json",
+      "sha256": "736638b1046fe3d4ad15b2fca7dfb9064fee6e87092c2dd026ff63521dbcfe94",
+      "size": 10692
+    },
+    "analysis/gemma4_rag_dev200_thinking_recovered/manifest.json": {
+      "path": "merged/manifest.json",
+      "sha256": "f2f3b14b5a8f04c487a36a24acac4f3d3d9fb518c275268b5eeb2c6515232c72",
+      "size": 3166
+    },
+    "analysis/gemma4_rag_dev200_thinking_recovered/report.json": {
+      "path": "merged/report.json",
+      "sha256": "cc18f8ab7172c9b669fbad3c0bdcfc74340d47e0f55b8babb540546bdf278e3a",
+      "size": 2479
+    },
+    "analysis/gemma4_rag_dev200_thinking_recovered/source/analysis/summarize_gemma4_experiments.py": {
+      "path": "merged/source/analysis/summarize_gemma4_experiments.py",
+      "sha256": "35b4a366d0484821b811109ce1cc8c15c22c36b924abf735cbbdb15fa6c84915",
+      "size": 5870
+    },
+    "analysis/gemma4_rag_dev200_thinking_recovered/source/merge_thinking_recovery.py": {
+      "path": "merged/source/merge_thinking_recovery.py",
+      "sha256": "369c6bcad364771fddf73142c5da9dfd06fa353f97b9c3912663c6b9b6449d04",
+      "size": 4022
+    },
+    "analysis/gemma4_rag_dev200_thinking_recovered/source/nara/inference.py": {
+      "path": "merged/source/nara/inference.py",
+      "sha256": "e0d2b4cbfd7db39654d1155b66b28ce3a5be53eaeadbcc0144c35b30dbba91df",
+      "size": 17673
+    },
+    "analysis/gemma4_rag_dev200_thinking_recovered/source/nara/prompt.txt": {
+      "path": "merged/source/nara/prompt.txt",
+      "sha256": "9648ba1939582cbd175c24a5e1441d696adf0cfd2cf4a9a331845f839f9bcfb0",
+      "size": 2848
+    },
+    "analysis/gemma4_rag_dev200_thinking_recovered/source/nara/retrieval.py": {
+      "path": "merged/source/nara/retrieval.py",
+      "sha256": "fb794006f27da4b99a3d39b9f3ef6e84e829f187290a451b2f33b56f0c8c8edc",
+      "size": 7047
+    },
+    "analysis/gemma4_rag_dev200_thinking_recovered/source/nara/vllm_model.py": {
+      "path": "merged/source/nara/vllm_model.py",
+      "sha256": "c3ae5a8f7bd75365e0d685018fab22733a917fca423eacf2fb7f623e4e8c1e0d",
+      "size": 3937
+    },
+    "analysis/gemma4_rag_dev200_thinking_recovered/source/script.py": {
+      "path": "merged/source/script.py",
+      "sha256": "995fff4397c657efb1f9363e40f1beb1ccba3e896ed6622e647fbf24fa59c5a5",
+      "size": 8351
+    },
+    "analysis/gemma4_rag_dev200_thinking_recovered/source/scripts/compare_dev_runs.py": {
+      "path": "merged/source/scripts/compare_dev_runs.py",
+      "sha256": "c6d78814d4404584759d4c6fb836512d46070bf5e5aa171ab2bde1f67379072e",
+      "size": 3317
+    },
+    "analysis/gemma4_rag_dev200_thinking_recovered/source/scripts/evaluate_dev.py": {
+      "path": "merged/source/scripts/evaluate_dev.py",
+      "sha256": "4c2f7414be7411e10e11dff05eddf769c65dea29fb3e689e971bc4b969f48c73",
+      "size": 11416
+    },
+    "analysis/gemma4_rag_dev200_thinking_recovered/source/tests/test_inference.py": {
+      "path": "merged/source/tests/test_inference.py",
+      "sha256": "a0e935e5bcb461ac36e0504b31eabc6088907213761b0bf120f503cbced201e2",
+      "size": 11999
+    },
+    "analysis/gemma4_rag_dev200_thinking_recovered/submission.csv": {
+      "path": "merged/submission.csv",
+      "sha256": "a9aa224f4feb894b9d68685a80d2f0980b53cd11245077ea38d133f9a91e0176",
+      "size": 28099
+    },
+    "analysis/gemma4_rag_dev200_thinking_recovered/system_prompt.txt": {
+      "path": "merged/system_prompt.txt",
+      "sha256": "7128978e578850ea4b843b4f392a099aa82b8322f856d097a1f3813f458f904c",
+      "size": 4951
+    },
+    "analysis/gemma4_rag_dev200_thinking_recovered/trace.jsonl": {
+      "path": "merged/trace.jsonl",
+      "sha256": "8174a1ba3ca0c52972457b83a88fc5cbaa25785e8d71c66c9de5a01d54025f03",
+      "size": 645665
+    },
+    "analysis/gemma4_rag_dev200_thinking_recovered/verification.txt": {
+      "path": "merged/verification.txt",
+      "sha256": "9dd0110632607e5a9a1b5f3ee0d29564185e2cd5b48a0e2b74710e9b50db5366",
+      "size": 808
+    },
+    "analysis/gemma4_thinking_recovery/command.txt": {
+      "path": "recovery/command.txt",
+      "sha256": "6e6e5b740fafaa2b5c5221b7fc7b62e4298cb3d9d2a0b8ca5f9b5a7b0462fb20",
+      "size": 253
+    },
+    "analysis/gemma4_thinking_recovery/input.jsonl": {
+      "path": "recovery/input.jsonl",
+      "sha256": "bc640b13ac36a2ec044d393a6abe22fac3ae0591d60c376a57ee2f4a0498ffc4",
+      "size": 75805
+    },
+    "analysis/gemma4_thinking_recovery/output4096/report.json": {
+      "path": "recovery/output4096/report.json",
+      "sha256": "4087a33f8fafdcd6ecc5418f7223cc53be857177bb3b1e494a15ac21093264e3",
+      "size": 1376
+    },
+    "analysis/gemma4_thinking_recovery/output4096/submission.csv": {
+      "path": "recovery/output4096/submission.csv",
+      "sha256": "5ee22929b937b781d8c17094571120069d6ede648bcc5a7a10e6fba8aafa18b0",
+      "size": 263
+    },
+    "analysis/gemma4_thinking_recovery/output4096/trace.jsonl": {
+      "path": "recovery/output4096/trace.jsonl",
+      "sha256": "c4d334d5cd0803b3c8bdcc952dd1c729eefaf2925370f716abd2ef4bf2508cd1",
+      "size": 6439
+    },
+    "analysis/gemma4_thinking_recovery/run.log": {
+      "path": "recovery/run.log",
+      "sha256": "cd250f0a61f52afbc825bb16cf40e3c2610b2d55dc8c948145e2bfd23632f73c",
+      "size": 17273
+    }
+  },
+  "temporary_paths": [
+    "tmp/structure-migration-20260913"
+  ],
+  "migration_inventory": "docs/maintenance/evidence/structure-migration/mapping.json",
+  "reproducibility": "Original content retained. Local datasets/models require matching separately restored bytes; historical commands may need current reconstruction guidance.",
+  "recorded_condition_evidence": [
+    {
+      "path": "merged/report.json",
+      "values": {
+        "options": {
+          "data_dir": "data",
+          "input": "data/dev.jsonl",
+          "output_dir": "analysis/gemma4_rag_dev200_thinking_recovered",
+          "model_dir": "models/gemma-4-26B-A4B-it-NVFP4",
+          "embed_model": "models/bge-m3",
+          "index": "model/legal_index",
+          "embed_device": "cuda",
+          "embedding_batch_size": 32,
+          "batch_size": 8,
+          "max_model_len": 32768,
+          "gpu_memory_utilization": 0.86,
+          "quantization": "auto",
+          "enforce_eager": false,
+          "thinking": true,
+          "output_tokens": 2048,
+          "search_rounds": 2,
+          "require_search": false,
+          "queries_per_round": 4,
+          "round_tokens": 4096,
+          "total_retrieval_tokens": 8192,
+          "item_group_size": 24,
+          "limit": 200
+        },
+        "limits": {
+          "batch_size": 8,
+          "search_rounds": 2,
+          "queries_per_round": 4,
+          "top_k": 5,
+          "round_tokens": 4096,
+          "total_retrieval_tokens": 8192,
+          "output_tokens": 2048,
+          "retries": 1,
+          "require_search": false
+        }
+      }
+    },
+    {
+      "path": "recovery/output4096/report.json",
+      "values": {
+        "options": {
+          "data_dir": "data",
+          "input": "analysis/gemma4_thinking_recovery/input.jsonl",
+          "output_dir": "analysis/gemma4_thinking_recovery/output4096",
+          "model_dir": "models/gemma-4-26B-A4B-it-NVFP4",
+          "embed_model": "models/bge-m3",
+          "index": "model/legal_index",
+          "embed_device": "cuda",
+          "embedding_batch_size": 32,
+          "batch_size": 8,
+          "max_model_len": 32768,
+          "gpu_memory_utilization": 0.86,
+          "quantization": "auto",
+          "enforce_eager": false,
+          "thinking": true,
+          "output_tokens": 4096,
+          "search_rounds": 2,
+          "require_search": false,
+          "queries_per_round": 4,
+          "round_tokens": 4096,
+          "total_retrieval_tokens": 8192,
+          "item_group_size": 24,
+          "limit": null
+        },
+        "limits": {
+          "batch_size": 8,
+          "search_rounds": 2,
+          "queries_per_round": 4,
+          "top_k": 5,
+          "round_tokens": 4096,
+          "total_retrieval_tokens": 8192,
+          "output_tokens": 4096,
+          "retries": 1,
+          "require_search": false
+        }
+      }
+    }
+  ],
+  "historical_provenance": {
+    "status": "retained where originally recorded; missing fields remain unknown",
+    "execution_sources": "Existing source/analysis_source contents and original manifests are authoritative; migration-time code is separately labeled",
+    "input_access": "Local input/model assets remain locally retained; original hashes are in manifests/evaluations. Another checkout must restore matching bytes.",
+    "original_temporary_paths": "Not reconstructed when absent from original evidence"
+  },
+  "migration_code_archive": "docs/maintenance/evidence/structure-migration/original-source.tar"
+}

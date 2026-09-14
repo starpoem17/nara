@@ -1,0 +1,266 @@
+{
+  "scores": {
+    "off": {
+      "scores": {
+        "v9": {
+          "tp": 6,
+          "fp": 15,
+          "fn": 0,
+          "tn": 179,
+          "precision": 0.2857142857142857,
+          "recall": 1.0,
+          "f1": 0.4444444444444444
+        },
+        "v19": {
+          "tp": 2,
+          "fp": 3,
+          "fn": 4,
+          "tn": 191,
+          "precision": 0.4,
+          "recall": 0.3333333333333333,
+          "f1": 0.36363636363636365
+        }
+      },
+      "report": {
+        "records": 200,
+        "prediction_seconds": 152.52087105900046,
+        "load_seconds": 30.027537087999917,
+        "failed_ids": [],
+        "model_turns": 200,
+        "invalid_responses": 0,
+        "searches": 0,
+        "length_stops": 0,
+        "thinking_tokens": 0,
+        "output_tokens": 11609
+      },
+      "evidence": {
+        "v9": {
+          "positive": 21,
+          "positive_missing": 12
+        },
+        "v19": {
+          "positive": 5,
+          "positive_missing": 2
+        }
+      }
+    },
+    "on": {
+      "scores": {
+        "v9": {
+          "tp": 5,
+          "fp": 14,
+          "fn": 1,
+          "tn": 180,
+          "precision": 0.2631578947368421,
+          "recall": 0.8333333333333334,
+          "f1": 0.4
+        },
+        "v19": {
+          "tp": 3,
+          "fp": 6,
+          "fn": 3,
+          "tn": 188,
+          "precision": 0.3333333333333333,
+          "recall": 0.5,
+          "f1": 0.4
+        }
+      },
+      "report": {
+        "records": 200,
+        "prediction_seconds": 210.6842727739986,
+        "load_seconds": 26.875844801999847,
+        "failed_ids": [],
+        "model_turns": 201,
+        "invalid_responses": 1,
+        "searches": 0,
+        "length_stops": 1,
+        "thinking_tokens": 51026,
+        "output_tokens": 63070
+      },
+      "evidence": {
+        "v9": {
+          "positive": 19,
+          "positive_missing": 6
+        },
+        "v19": {
+          "positive": 9,
+          "positive_missing": 3
+        }
+      }
+    },
+    "cod": {
+      "scores": {
+        "v9": {
+          "tp": 5,
+          "fp": 13,
+          "fn": 1,
+          "tn": 181,
+          "precision": 0.2777777777777778,
+          "recall": 0.8333333333333334,
+          "f1": 0.4166666666666667
+        },
+        "v19": {
+          "tp": 5,
+          "fp": 8,
+          "fn": 1,
+          "tn": 186,
+          "precision": 0.38461538461538464,
+          "recall": 0.8333333333333334,
+          "f1": 0.5263157894736842
+        }
+      },
+      "report": {
+        "records": 200,
+        "prediction_seconds": 220.64255459599917,
+        "load_seconds": 27.053528858999925,
+        "failed_ids": [],
+        "model_turns": 206,
+        "invalid_responses": 6,
+        "searches": 0,
+        "length_stops": 6,
+        "thinking_tokens": 47486,
+        "output_tokens": 61357
+      },
+      "evidence": {
+        "v9": {
+          "positive": 18,
+          "positive_missing": 13
+        },
+        "v19": {
+          "positive": 13,
+          "positive_missing": 6
+        }
+      }
+    }
+  },
+  "thinking": {
+    "on": {
+      "first_response": {
+        "thinking_content_tokens": {
+          "n": 200,
+          "mean": 254.0,
+          "min": 254,
+          "median": 254.0,
+          "p90": 254.0,
+          "p95": 254.0,
+          "max": 254,
+          "sum": 50800
+        },
+        "total_tokens": {
+          "n": 200,
+          "mean": 313.775,
+          "min": 302,
+          "median": 302.0,
+          "p90": 341.0,
+          "p95": 368.15,
+          "max": 512,
+          "sum": 62755
+        },
+        "at_budget_boundary": 200,
+        "empty_thinking": 0,
+        "unframed_outputs": 0,
+        "line_words": {
+          "n": 1884,
+          "mean": 10.606157112526539,
+          "min": 1,
+          "median": 8.0,
+          "p90": 22.0,
+          "p95": 28.84999999999991,
+          "max": 143,
+          "sum": 19982
+        },
+        "lines_le5_fraction": 0.4018046709129512,
+        "all_lines_le5_records": 0,
+        "records_with_korean": 197,
+        "count_at_or_below": {
+          "64": 0,
+          "96": 0,
+          "128": 0,
+          "192": 0,
+          "256": 200
+        }
+      },
+      "all_attempts": {
+        "n": 201,
+        "thinking_content_tokens": {
+          "n": 201,
+          "mean": 254.0,
+          "min": 254,
+          "median": 254.0,
+          "p90": 254.0,
+          "p95": 254.0,
+          "max": 254,
+          "sum": 51054
+        },
+        "at_budget_boundary": 201
+      }
+    },
+    "cod": {
+      "first_response": {
+        "thinking_content_tokens": {
+          "n": 199,
+          "mean": 232.30150753768845,
+          "min": 0,
+          "median": 254.0,
+          "p90": 254.0,
+          "p95": 254.0,
+          "max": 254,
+          "sum": 46228
+        },
+        "total_tokens": {
+          "n": 200,
+          "mean": 295.855,
+          "min": 48,
+          "median": 302.0,
+          "p90": 351.2,
+          "p95": 398.15,
+          "max": 512,
+          "sum": 59171
+        },
+        "at_budget_boundary": 182,
+        "empty_thinking": 17,
+        "unframed_outputs": 1,
+        "line_words": {
+          "n": 1750,
+          "mean": 11.173714285714286,
+          "min": 1,
+          "median": 8.0,
+          "p90": 21.0,
+          "p95": 26.0,
+          "max": 145,
+          "sum": 19554
+        },
+        "lines_le5_fraction": 0.35428571428571426,
+        "all_lines_le5_records": 0,
+        "records_with_korean": 179,
+        "count_at_or_below": {
+          "64": 17,
+          "96": 17,
+          "128": 17,
+          "192": 17,
+          "256": 199
+        }
+      },
+      "all_attempts": {
+        "n": 206,
+        "thinking_content_tokens": {
+          "n": 205,
+          "mean": 231.69756097560975,
+          "min": 0,
+          "median": 254.0,
+          "p90": 254.0,
+          "p95": 254.0,
+          "max": 254,
+          "sum": 47498
+        },
+        "at_budget_boundary": 187
+      }
+    }
+  },
+  "validation": {
+    "matched_on_cod_sources_limits": true,
+    "all_input_token_deltas": 42,
+    "all_record_ids_and_evidence_verified": true
+  },
+  "method": "First-response statistics isolate style from retries. Budget boundary includes thought channel label; content token counts use original generated IDs excluding label and delimiters. Outputs lacking channel delimiters are excluded from thinking-length distributions, not counted as thinking. Empty channels have zero body tokens even if the runtime parser returns the thought label. Boundary is inferred from token positions, not an engine forced-stop flag. Nonempty lines are a descriptive proxy for steps; whitespace words, bullet/number prefix removed. Not a semantic step-compliance proof."
+}

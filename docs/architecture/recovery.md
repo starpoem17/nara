@@ -1,6 +1,6 @@
 # Failed-notice recovery
 
-Implementation: `src/inference/recovery.py`; default adapter: `src/experiments/benchmark_prefix_pipeline.py`. Engine execution remains in [local engine](local-engine.md); judgment validation remains in [dynamic RAG](dynamic-rag.md).
+Implementation: `src/inference/recovery.py`; default adapter: `src/experiments/pipeline.py`. Engine execution remains in [local engine](<local-engine.md>); judgment validation remains in [dynamic RAG](<dynamic-rag.md>).
 
 ## Interface and policy
 
@@ -15,9 +15,9 @@ Initial and retry trace inputs remain unchanged. The result trace preserves init
 
 ## Validation ownership
 
-`Predictor.replay_judgments` delegates to the shared [judgment conversation](judgment-conversation.md) to validate the saved successful final response against the group's schema, applies the same evidence/required-search checks as inference, and requires the resulting final-validation event to match the saved event. No inference is performed and the saved trace is not mutated.
+`Predictor.replay_judgments` delegates to the shared [judgment conversation](<judgment-conversation.md>) to validate the saved successful final response against the group's schema, applies the same evidence/required-search checks as inference, and requires the resulting final-validation event to match the saved event. No inference is performed and the saved trace is not mutated.
 
-Historical `scripts.recover_hybrid200.replay(record, task, predictor)` remains a compatibility adapter; its callers no longer construct private task state or call `_finish` themselves. Historical standalone execution/recovery policies and archived source files are otherwise retained.
+The historical replay helper is retained under the corresponding run's code directory and exercised by regression tests. Historical direct commands are disabled; maintained callers use the recovery interface above.
 
 ## Cost and evidence
 
@@ -29,12 +29,6 @@ Historical `scripts.recover_hybrid200.replay(record, task, predictor)` remains a
 
 80 automated tests passed, including success/no-op, same-policy recovery, successful-group reuse, isolated success/failure, input immutability, record/group identity, search/token/event totals, timing without double counting, invalid replay rejection and the default runner's complete output/evidence flow.
 
-Saved GPU run `output/experiments/engine-refactor-after-20260911`: all200 notices/2400 groups replay to identical judgments and evidence through the new validation interface. A simulation removes final events from the first group of two real notices; reversed retry ordering still repairs exactly those two groups and restores the saved judgments while preserving successful notices/attempts. No new GPU inference or time/F1 measurement was performed for this logic-only refactor.
+Saved GPU run `experiments/legacy_engine_refactor/after`: all200 notices/2400 groups replay to identical judgments and evidence through the new validation interface. A simulation removes final events from the first group of two real notices; reversed retry ordering still repairs exactly those two groups and restores the saved judgments while preserving successful notices/attempts. No new GPU inference or time/F1 measurement was performed for this logic-only refactor.
 
-Evidence: `analysis/recovery_refactor/validation.json`. Reproduce with:
-
-```bash
-uv run --locked python -m unittest discover -s tests
-uv run --locked python -m nara.tools.verify_recovery_saved output/experiments/engine-refactor-after-20260911
-uv run --locked nara-experiment --prepare-only --output-dir FRESH_DIRECTORY
-```
+Evidence: [retained recovery audit](../maintenance/evidence/recovery_refactor/validation.json). Historical audit code is retained alongside that evidence. Current CPU checks use `uv run --locked python -m unittest discover -s tests`; new preparation uses `uv run --locked nara-experiment --prepare-only`. [Operations](../operations.md) owns the current saved-output replay command.

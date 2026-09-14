@@ -1,0 +1,38 @@
+[
+  {
+    "thinking_on": false,
+    "shots": 0,
+    "correct_final": 4,
+    "mean_total_tokens": 40.666666666666664,
+    "mean_thinking_body_tokens": 0.0,
+    "length_stops": 0,
+    "strict_short_answer_notes": 6
+  },
+  {
+    "thinking_on": false,
+    "shots": 4,
+    "correct_final": 6,
+    "mean_total_tokens": 22.166666666666668,
+    "mean_thinking_body_tokens": 0.0,
+    "length_stops": 0,
+    "strict_short_answer_notes": 6
+  },
+  {
+    "thinking_on": true,
+    "shots": 0,
+    "correct_final": 0,
+    "mean_total_tokens": 512.0,
+    "mean_thinking_body_tokens": 509.0,
+    "length_stops": 6,
+    "strict_short_answer_notes": 0
+  },
+  {
+    "thinking_on": true,
+    "shots": 4,
+    "correct_final": 0,
+    "mean_total_tokens": 512.0,
+    "mean_thinking_body_tokens": 509.0,
+    "length_stops": 6,
+    "strict_short_answer_notes": 0
+  }
+]

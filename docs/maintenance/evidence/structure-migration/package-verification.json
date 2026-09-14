@@ -1,0 +1,10 @@
+{
+  "wheel": "tmp/structure-migration-20260913/package/nara-0.1.0-py3-none-any.whl",
+  "sha256": "08e975400e3ddd9d82424bd01016eaa9a79b988f84ff1f09a42af826a198839a",
+  "current_source_and_asset_files_identical": 42,
+  "entrypoints_help_passed": [
+    "nara",
+    "nara-experiment"
+  ],
+  "installed_in_unrelated_checkout": false
+}

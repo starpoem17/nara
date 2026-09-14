@@ -1,0 +1,37 @@
+{
+  "supervisor": "gpt-6-astra",
+  "reasoning_effort": "medium",
+  "role": "read-only AGENT.md compliance supervision",
+  "verdict": "No additional completion-blocking instruction violation found",
+  "independently_verified": {
+    "original_artifact_hashes": 1925,
+    "reciprocal_predecessor_relations": 25,
+    "protected_files": [
+      "AGENT.md",
+      "README.md"
+    ],
+    "implementation": [
+      "active empty attempt requirement",
+      "comparison failure status",
+      "provenance comparison",
+      "invalid and non-adopted CoD judgment scope"
+    ]
+  },
+  "reviewed_recorded_evidence": [
+    "139 CPU regression tests",
+    "actual two-condition CPU preparation",
+    "28-field saved evaluation parity",
+    "offline wheel build"
+  ],
+  "final_root_checks_after_review": [
+    "121/121 active documents reachable",
+    "zero broken local file links or heading anchors",
+    "42 packaged source/asset files byte-identical to current source",
+    "current nara/nara-experiment help commands passed",
+    "git diff --check passed"
+  ],
+  "limitations": [
+    "No supervisor file edits or GPU execution",
+    "Tests/preparation/replay/build evidence reviewed; not independently rerun by supervisor"
+  ]
+}

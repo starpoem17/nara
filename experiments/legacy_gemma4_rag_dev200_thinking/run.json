@@ -1,0 +1,171 @@
+{
+  "schema_version": 1,
+  "record_kind": "historical_experiment",
+  "read_only": true,
+  "project_root": "../..",
+  "run_id": "legacy_gemma4_rag_dev200_thinking",
+  "area": "prompt-design",
+  "report": "docs/experiments/prompt-design/2026-09/legacy_gemma4_rag_dev200_thinking.md",
+  "question": "How does thinking with optional retrieval behave on dev200?",
+  "started_at": null,
+  "timezone": "Asia/Seoul",
+  "time_evidence": "No verified orchestration start; see timestamp-candidates.json and original logs. September 2026 is established by the linked historical project records.",
+  "migration_at": "2026-09-13T15:13:30.121300+00:00",
+  "status": "historical; inspect per-condition execution records",
+  "judgment": "Initial run completed 199/200 notices. The later repaired result uses a different output allowance.",
+  "conditions": {
+    "recorded_execution": {
+      "settings": {
+        "recorded_condition": "recorded execution",
+        "scope": "See preserved original manifest and source for exact settings."
+      },
+      "status": "historical",
+      "attempts": [],
+      "artifact_path": "."
+    }
+  },
+  "max_attempts": 0,
+  "predecessors": [],
+  "followups": [
+    {
+      "run_id": "legacy_gemma4_thinking_recovery",
+      "reason": "Initial199/200 success led to a separate output4096 recovery."
+    }
+  ],
+  "original_files": {
+    "analysis/gemma4_rag_dev200_thinking/command.txt": {
+      "path": "command.txt",
+      "sha256": "676689df12d1e24ace6b41581027740f0b298240ccb4bb721daae9d4272f30cd",
+      "size": 225
+    },
+    "analysis/gemma4_rag_dev200_thinking/context_check.json": {
+      "path": "context_check.json",
+      "sha256": "0d58c0f1c21176e4fb041e6b0d61425a84f35e39d2b2185ff84552bbfcd974da",
+      "size": 27539
+    },
+    "analysis/gemma4_rag_dev200_thinking/manifest.json": {
+      "path": "manifest.json",
+      "sha256": "55f684f4b376ce73f4fd5c13f7e0148b657b7b66b2d5a8304492c594b0272283",
+      "size": 1778
+    },
+    "analysis/gemma4_rag_dev200_thinking/report.json": {
+      "path": "report.json",
+      "sha256": "51e00bd25d5ad8c17ff37eb26bfb7d99c4a5f39e518e8b3e4c31ef8b49a7b93c",
+      "size": 1339
+    },
+    "analysis/gemma4_rag_dev200_thinking/run.log": {
+      "path": "run.log",
+      "sha256": "2be7af94aaa213f89212607d0132550910dbbba1260ef4ae6399c91faafeee1e",
+      "size": 19227
+    },
+    "analysis/gemma4_rag_dev200_thinking/source/nara/inference.py": {
+      "path": "source/nara/inference.py",
+      "sha256": "e0d2b4cbfd7db39654d1155b66b28ce3a5be53eaeadbcc0144c35b30dbba91df",
+      "size": 17673
+    },
+    "analysis/gemma4_rag_dev200_thinking/source/nara/prompt.txt": {
+      "path": "source/nara/prompt.txt",
+      "sha256": "9648ba1939582cbd175c24a5e1441d696adf0cfd2cf4a9a331845f839f9bcfb0",
+      "size": 2848
+    },
+    "analysis/gemma4_rag_dev200_thinking/source/nara/retrieval.py": {
+      "path": "source/nara/retrieval.py",
+      "sha256": "fb794006f27da4b99a3d39b9f3ef6e84e829f187290a451b2f33b56f0c8c8edc",
+      "size": 7047
+    },
+    "analysis/gemma4_rag_dev200_thinking/source/nara/vllm_model.py": {
+      "path": "source/nara/vllm_model.py",
+      "sha256": "c3ae5a8f7bd75365e0d685018fab22733a917fca423eacf2fb7f623e4e8c1e0d",
+      "size": 3937
+    },
+    "analysis/gemma4_rag_dev200_thinking/source/script.py": {
+      "path": "source/script.py",
+      "sha256": "995fff4397c657efb1f9363e40f1beb1ccba3e896ed6622e647fbf24fa59c5a5",
+      "size": 8351
+    },
+    "analysis/gemma4_rag_dev200_thinking/source/scripts/compare_dev_runs.py": {
+      "path": "source/scripts/compare_dev_runs.py",
+      "sha256": "c6d78814d4404584759d4c6fb836512d46070bf5e5aa171ab2bde1f67379072e",
+      "size": 3317
+    },
+    "analysis/gemma4_rag_dev200_thinking/source/scripts/evaluate_dev.py": {
+      "path": "source/scripts/evaluate_dev.py",
+      "sha256": "4c2f7414be7411e10e11dff05eddf769c65dea29fb3e689e971bc4b969f48c73",
+      "size": 11416
+    },
+    "analysis/gemma4_rag_dev200_thinking/source/tests/test_inference.py": {
+      "path": "source/tests/test_inference.py",
+      "sha256": "a0e935e5bcb461ac36e0504b31eabc6088907213761b0bf120f503cbced201e2",
+      "size": 11999
+    },
+    "analysis/gemma4_rag_dev200_thinking/system_prompt.txt": {
+      "path": "system_prompt.txt",
+      "sha256": "7128978e578850ea4b843b4f392a099aa82b8322f856d097a1f3813f458f904c",
+      "size": 4951
+    },
+    "analysis/gemma4_rag_dev200_thinking/trace.jsonl": {
+      "path": "trace.jsonl",
+      "sha256": "679cd1130a361e268d98606801183564a29a1e22713628dba3370459ce95c115",
+      "size": 662635
+    },
+    "analysis/gemma4_rag_dev200_thinking/verification.txt": {
+      "path": "verification.txt",
+      "sha256": "03f9de6920fd25441aa64f21c23a46d4e11297a0b9a65b689c638aabf14e0d6d",
+      "size": 228
+    }
+  },
+  "temporary_paths": [
+    "tmp/structure-migration-20260913"
+  ],
+  "migration_inventory": "docs/maintenance/evidence/structure-migration/mapping.json",
+  "reproducibility": "Original content retained. Local datasets/models require matching separately restored bytes; historical commands may need current reconstruction guidance.",
+  "recorded_condition_evidence": [
+    {
+      "path": "report.json",
+      "values": {
+        "options": {
+          "data_dir": "data",
+          "input": "data/dev.jsonl",
+          "output_dir": "analysis/gemma4_rag_dev200_thinking",
+          "model_dir": "models/gemma-4-26B-A4B-it-NVFP4",
+          "embed_model": "models/bge-m3",
+          "index": "model/legal_index",
+          "embed_device": "cuda",
+          "embedding_batch_size": 32,
+          "batch_size": 8,
+          "max_model_len": 32768,
+          "gpu_memory_utilization": 0.86,
+          "quantization": "auto",
+          "enforce_eager": false,
+          "thinking": true,
+          "output_tokens": 2048,
+          "search_rounds": 2,
+          "require_search": false,
+          "queries_per_round": 4,
+          "round_tokens": 4096,
+          "total_retrieval_tokens": 8192,
+          "item_group_size": 24,
+          "limit": 200
+        },
+        "limits": {
+          "batch_size": 8,
+          "search_rounds": 2,
+          "queries_per_round": 4,
+          "top_k": 5,
+          "round_tokens": 4096,
+          "total_retrieval_tokens": 8192,
+          "output_tokens": 2048,
+          "retries": 1,
+          "require_search": false
+        }
+      }
+    }
+  ],
+  "historical_provenance": {
+    "status": "retained where originally recorded; missing fields remain unknown",
+    "execution_sources": "Existing source/analysis_source contents and original manifests are authoritative; migration-time code is separately labeled",
+    "input_access": "Local input/model assets remain locally retained; original hashes are in manifests/evaluations. Another checkout must restore matching bytes.",
+    "original_temporary_paths": "Not reconstructed when absent from original evidence"
+  },
+  "migration_code_archive": "docs/maintenance/evidence/structure-migration/original-source.tar"
+}

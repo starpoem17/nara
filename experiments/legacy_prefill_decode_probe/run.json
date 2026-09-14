@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "record_kind": "historical_experiment",
+  "read_only": true,
+  "project_root": "../..",
+  "run_id": "legacy_prefill_decode_probe",
+  "area": "inference-scheduling",
+  "report": "docs/experiments/inference-scheduling/2026-09/legacy_prefill_decode_probe.md",
+  "question": "How do prefill/decode controls and barrier scheduling affect execution?",
+  "started_at": null,
+  "timezone": "Asia/Seoul",
+  "time_evidence": "No verified orchestration start; see timestamp-candidates.json and original logs. September 2026 is established by the linked historical project records.",
+  "migration_at": "2026-09-13T15:13:30.112290+00:00",
+  "status": "historical; inspect per-condition execution records",
+  "judgment": "Same24 scheduling comparison; batch-sensitive output differences observed without isolated kernel attribution.",
+  "conditions": {
+    "recorded_execution": {
+      "settings": {
+        "recorded_condition": "recorded execution",
+        "scope": "See preserved original manifest and source for exact settings."
+      },
+      "status": "historical",
+      "attempts": [],
+      "artifact_path": "."
+    }
+  },
+  "max_attempts": 0,
+  "predecessors": [
+    {
+      "run_id": "legacy_continuous_diagnosis",
+      "reason": "Earlier diagnosis motivated a new same24 barrier/continuous comparison; engine submission timing and internal batching remain confounders."
+    }
+  ],
+  "followups": [
+    {
+      "run_id": "legacy_prefill_decode_tokens",
+      "reason": "Stage1 output divergence selected the first four cases by input order; stage2 appended common generated prefixes and used unconstrained token probes with prefill/decode controls."
+    }
+  ],
+  "original_files": {
+    "analysis/prefill_decode_probe/active_policy.json": {
+      "path": "active_policy.json",
+      "sha256": "f4c72c7fd614b51839e5a6c9b06a17d3f9f78ebbf6b4bff891aa78174926e566",
+      "size": 316
+    },
+    "analysis/prefill_decode_probe/barrier.json": {
+      "path": "barrier.json",
+      "sha256": "08d74803853e21224a7871aadbc646f459152202604b61d52129de2219380f50",
+      "size": 516758
+    },
+    "analysis/prefill_decode_probe/continuous.json": {
+      "path": "continuous.json",
+      "sha256": "d8c4baa21f887a7e3552c1da255f3d5a7c0f25478066467da4cd919794c3e8bc",
+      "size": 511661
+    },
+    "analysis/prefill_decode_probe/engine.json": {
+      "path": "engine.json",
+      "sha256": "cfabca12f26b696d9800408a6f4a7324d058bb6907f785ccf0c802bbc47845dd",
+      "size": 3733
+    },
+    "analysis/prefill_decode_probe/engine.log": {
+      "path": "engine.log",
+      "sha256": "cd1ff34a861165fa19a36bafb36ba4500cfeef3d5e1cc84d7d86d955fdf27784",
+      "size": 25635
+    },
+    "analysis/prefill_decode_probe/plan.json": {
+      "path": "plan.json",
+      "sha256": "522ad187f1f0ee8bceb36af3a55d22428e2a5fa6c5dae0cbd4353ccd89d6b1c9",
+      "size": 1661
+    },
+    "analysis/prefill_decode_probe/source/docs/experiments/prefill-decode-fallback.md": {
+      "path": "source/docs/experiments/prefill-decode-fallback.md",
+      "sha256": "61dbcf8383a73ae0ad4f042fc04de3794f7d4d7dedbeeabdbd893a8c77be866e",
+      "size": 2829
+    },
+    "analysis/prefill_decode_probe/source/nara/batch_barrier.py": {
+      "path": "source/nara/batch_barrier.py",
+      "sha256": "09e5d7abf2a3e6a14f87cfa86c3fcef0a7aab5531d98bb7bd5be9400c1092474",
+      "size": 1536
+    },
+    "analysis/prefill_decode_probe/source/scripts/probe_prefill_decode.py": {
+      "path": "source/scripts/probe_prefill_decode.py",
+      "sha256": "64ceed751b09cf14bd370c5445db93b78598bf6982a54d09d4aba3a0b58fca54",
+      "size": 7895
+    },
+    "analysis/prefill_decode_probe/source/scripts/run_batch_fallback.py": {
+      "path": "source/scripts/run_batch_fallback.py",
+      "sha256": "6ee7dcdd80a1ce70196f8d9248acc4ca684e43fffdc8adde2fa5777b1c15c29d",
+      "size": 4776
+    },
+    "analysis/prefill_decode_probe/source/scripts/summarize_prefill_decode.py": {
+      "path": "source/scripts/summarize_prefill_decode.py",
+      "sha256": "56edc01dbaa1d7a65b67d7bcbde99b09c40c57b5e0bbacc1315950528223b108",
+      "size": 4110
+    },
+    "analysis/prefill_decode_probe/source/tests/test_batch_barrier.py": {
+      "path": "source/tests/test_batch_barrier.py",
+      "sha256": "98da3382ab361654bb3228249bff5b29dfad0eeb24eacd225140e2b75479134e",
+      "size": 2127
+    },
+    "analysis/prefill_decode_probe/source_manifest.json": {
+      "path": "source_manifest.json",
+      "sha256": "8c823b0f318c4a9647c0078ce38b0fb0bc689cb452ab2fe0228ed941d4cc559f",
+      "size": 633
+    },
+    "analysis/prefill_decode_probe/validation.json": {
+      "path": "validation.json",
+      "sha256": "fd8121ecc269cd1d5ea6b2600a870f63279da5a709c20a588c0a28ed6ab1a4e6",
+      "size": 471
+    }
+  },
+  "temporary_paths": [
+    "tmp/structure-migration-20260913"
+  ],
+  "migration_inventory": "docs/maintenance/evidence/structure-migration/mapping.json",
+  "reproducibility": "Original content retained. Local datasets/models require matching separately restored bytes; historical commands may need current reconstruction guidance.",
+  "recorded_condition_evidence": [
+    {
+      "path": "plan.json",
+      "values": {
+        "limits": "No layer/kernel probes; token probes use unconstrained decoding without thinking budget so no forced token masks obscure scores; not a label-quality evaluation"
+      }
+    }
+  ],
+  "historical_provenance": {
+    "status": "retained where originally recorded; missing fields remain unknown",
+    "execution_sources": "Existing source/analysis_source contents and original manifests are authoritative; migration-time code is separately labeled",
+    "input_access": "Local input/model assets remain locally retained; original hashes are in manifests/evaluations. Another checkout must restore matching bytes.",
+    "original_temporary_paths": "Not reconstructed when absent from original evidence"
+  },
+  "migration_code_archive": "docs/maintenance/evidence/structure-migration/original-source.tar"
+}

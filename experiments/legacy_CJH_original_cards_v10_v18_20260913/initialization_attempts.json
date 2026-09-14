@@ -1,0 +1,7 @@
+{
+  "failed_initializations": 1,
+  "measured_requests_before_failure": 0,
+  "cause": "ninja executable not on PATH; invoking through uv run uses existing virtualenv bin directory",
+  "code_or_prompt_changes": false,
+  "failure_log": "analysis/CMS_original_cards_v19_v24_20260913/initialization_failure_01.log"
+}

@@ -1,0 +1,181 @@
+{
+  "schema_version": 1,
+  "record_kind": "historical_experiment",
+  "read_only": true,
+  "project_root": "../..",
+  "run_id": "legacy_gemma4_rag_dev200_forced1",
+  "area": "prompt-design",
+  "report": "docs/experiments/prompt-design/2026-09/legacy_gemma4_rag_dev200_forced1.md",
+  "question": "Does forcing one legal search improve dev200 judgments?",
+  "started_at": null,
+  "timezone": "Asia/Seoul",
+  "time_evidence": "No verified orchestration start; see timestamp-candidates.json and original logs. September 2026 is established by the linked historical project records.",
+  "migration_at": "2026-09-13T15:13:30.120582+00:00",
+  "status": "historical; inspect per-condition execution records",
+  "judgment": "The forced-search condition did not improve historical Macro F1; do not extend that conclusion to untested retrieval conditions.",
+  "conditions": {
+    "recorded_execution": {
+      "settings": {
+        "recorded_condition": "recorded execution",
+        "scope": "See preserved original manifest and source for exact settings."
+      },
+      "status": "historical",
+      "attempts": [],
+      "artifact_path": "."
+    }
+  },
+  "max_attempts": 0,
+  "predecessors": [],
+  "followups": [],
+  "original_files": {
+    "analysis/gemma4_rag_dev200_forced1/command.txt": {
+      "path": "command.txt",
+      "sha256": "aa8a73f8f9882e584f96741b3d0d3c7b344d835e58783e7ad432c351892d7f95",
+      "size": 230
+    },
+    "analysis/gemma4_rag_dev200_forced1/comparison.json": {
+      "path": "comparison.json",
+      "sha256": "77f8f295cce8d259f970afa334111078ef5b07c7f8917878ad68aa5f6383edbb",
+      "size": 6796
+    },
+    "analysis/gemma4_rag_dev200_forced1/context_check.json": {
+      "path": "context_check.json",
+      "sha256": "1189f5c4262da87a46ee16a1141c601573ce5d3f1a831df70256d1784f2b8d41",
+      "size": 33792
+    },
+    "analysis/gemma4_rag_dev200_forced1/errors.csv": {
+      "path": "errors.csv",
+      "sha256": "b2cb9a668137a3df3afe6196165ce851588bbb4d623abc91aabf71436c82e2cc",
+      "size": 31892
+    },
+    "analysis/gemma4_rag_dev200_forced1/evaluation.json": {
+      "path": "evaluation.json",
+      "sha256": "290725c3f7a47d604e5923696ab78f7eb4ba384227699e59ab9360f322c23770",
+      "size": 9400
+    },
+    "analysis/gemma4_rag_dev200_forced1/manifest.json": {
+      "path": "manifest.json",
+      "sha256": "19518963b171b38e573a0bd8203c83e0b8bc3fbdd68ab9124f0387358556c3e5",
+      "size": 1535
+    },
+    "analysis/gemma4_rag_dev200_forced1/report.json": {
+      "path": "report.json",
+      "sha256": "a767f0fa94c7fd5c02f6478582f405b298c7a98d4787b9cb357e2fd69c62b5af",
+      "size": 1356
+    },
+    "analysis/gemma4_rag_dev200_forced1/run.log": {
+      "path": "run.log",
+      "sha256": "7e1c813752b863c7bba1578bbdec7b8054fc58fabbffa27b992a17e00111accd",
+      "size": 18248
+    },
+    "analysis/gemma4_rag_dev200_forced1/source/nara/inference.py": {
+      "path": "source/nara/inference.py",
+      "sha256": "dbc82ae276dcc6c514d15ad39d90baf3ff847f1c4b54a91bc76556bf6f1a36d9",
+      "size": 17443
+    },
+    "analysis/gemma4_rag_dev200_forced1/source/nara/prompt.txt": {
+      "path": "source/nara/prompt.txt",
+      "sha256": "9648ba1939582cbd175c24a5e1441d696adf0cfd2cf4a9a331845f839f9bcfb0",
+      "size": 2848
+    },
+    "analysis/gemma4_rag_dev200_forced1/source/nara/retrieval.py": {
+      "path": "source/nara/retrieval.py",
+      "sha256": "fb794006f27da4b99a3d39b9f3ef6e84e829f187290a451b2f33b56f0c8c8edc",
+      "size": 7047
+    },
+    "analysis/gemma4_rag_dev200_forced1/source/nara/vllm_model.py": {
+      "path": "source/nara/vllm_model.py",
+      "sha256": "ce4d87cafb6e9d8b11fdeb4cd1a74f9da2268afea817161497d0596129bd03fe",
+      "size": 3392
+    },
+    "analysis/gemma4_rag_dev200_forced1/source/script.py": {
+      "path": "source/script.py",
+      "sha256": "995fff4397c657efb1f9363e40f1beb1ccba3e896ed6622e647fbf24fa59c5a5",
+      "size": 8351
+    },
+    "analysis/gemma4_rag_dev200_forced1/source/scripts/evaluate_dev.py": {
+      "path": "source/scripts/evaluate_dev.py",
+      "sha256": "5ca386c73572d47e342bf7dbe20bf9b912d07c3fd1a5f4ab2047ad358612032e",
+      "size": 10943
+    },
+    "analysis/gemma4_rag_dev200_forced1/source/tests/test_inference.py": {
+      "path": "source/tests/test_inference.py",
+      "sha256": "a0e935e5bcb461ac36e0504b31eabc6088907213761b0bf120f503cbced201e2",
+      "size": 11999
+    },
+    "analysis/gemma4_rag_dev200_forced1/submission.csv": {
+      "path": "submission.csv",
+      "sha256": "e66f77d4d4f6b941174b5b297698d10495bccb27a0a756d807f257f9e46fc8d9",
+      "size": 29016
+    },
+    "analysis/gemma4_rag_dev200_forced1/system_prompt.txt": {
+      "path": "system_prompt.txt",
+      "sha256": "2c27be08b01057fdc35dc53cabec1101128363b9778d48bb9bca957453ad2904",
+      "size": 4967
+    },
+    "analysis/gemma4_rag_dev200_forced1/trace.jsonl": {
+      "path": "trace.jsonl",
+      "sha256": "8d69abd8a73d32d5ec76e3e04eed37963b16c948f31239712a5c15acf4e44716",
+      "size": 903176
+    },
+    "analysis/gemma4_rag_dev200_forced1/verification.txt": {
+      "path": "verification.txt",
+      "sha256": "d420da7c654f0ec92a3963830126eb14c193b8601711379641dd99724fa73450",
+      "size": 329
+    }
+  },
+  "temporary_paths": [
+    "tmp/structure-migration-20260913"
+  ],
+  "migration_inventory": "docs/maintenance/evidence/structure-migration/mapping.json",
+  "reproducibility": "Original content retained. Local datasets/models require matching separately restored bytes; historical commands may need current reconstruction guidance.",
+  "recorded_condition_evidence": [
+    {
+      "path": "report.json",
+      "values": {
+        "options": {
+          "data_dir": "data",
+          "input": "data/dev.jsonl",
+          "output_dir": "analysis/gemma4_rag_dev200_forced1",
+          "model_dir": "models/gemma-4-26B-A4B-it-NVFP4",
+          "embed_model": "models/bge-m3",
+          "index": "model/legal_index",
+          "embed_device": "cuda",
+          "embedding_batch_size": 32,
+          "batch_size": 8,
+          "max_model_len": 32768,
+          "gpu_memory_utilization": 0.86,
+          "quantization": "auto",
+          "enforce_eager": false,
+          "thinking": false,
+          "output_tokens": 2048,
+          "search_rounds": 1,
+          "require_search": true,
+          "queries_per_round": 4,
+          "round_tokens": 4096,
+          "total_retrieval_tokens": 8192,
+          "item_group_size": 24,
+          "limit": 200
+        },
+        "limits": {
+          "batch_size": 8,
+          "search_rounds": 1,
+          "queries_per_round": 4,
+          "top_k": 5,
+          "round_tokens": 4096,
+          "total_retrieval_tokens": 8192,
+          "output_tokens": 2048,
+          "retries": 1,
+          "require_search": true
+        }
+      }
+    }
+  ],
+  "historical_provenance": {
+    "status": "retained where originally recorded; missing fields remain unknown",
+    "execution_sources": "Existing source/analysis_source contents and original manifests are authoritative; migration-time code is separately labeled",
+    "input_access": "Local input/model assets remain locally retained; original hashes are in manifests/evaluations. Another checkout must restore matching bytes.",
+    "original_temporary_paths": "Not reconstructed when absent from original evidence"
+  },
+  "migration_code_archive": "docs/maintenance/evidence/structure-migration/original-source.tar"
+}

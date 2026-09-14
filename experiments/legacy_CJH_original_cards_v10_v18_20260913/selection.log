@@ -1,0 +1,11 @@
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights:   1%|▏         | 5/391 [00:00<00:29, 13.04it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 1008.06it/s]
+{"stage": "reference_selection", "records": 20, "seconds": 6.886199925000028}
+{"stage": "reference_selection", "records": 40, "seconds": 9.171597339000073}
+{"stage": "reference_selection", "records": 60, "seconds": 10.768760100999998}
+{"stage": "reference_selection", "records": 80, "seconds": 12.425399948999939}
+{"stage": "reference_selection", "records": 100, "seconds": 15.325681598000074}
+{"stage": "reference_selection", "records": 120, "seconds": 17.669397996000043}
+{"stage": "reference_selection", "records": 140, "seconds": 20.62320170399994}
+{"stage": "reference_selection", "records": 160, "seconds": 23.532894698000064}
+{"stage": "reference_selection", "records": 180, "seconds": 26.21648484100001}
+{"stage": "reference_selection", "records": 200, "seconds": 28.872146975000078}

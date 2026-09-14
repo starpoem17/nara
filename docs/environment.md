@@ -67,7 +67,7 @@ CUTLASS NVFP4, with first-run compilation limited by `MAX_JOBS`.
 It tests Korean output, structured JSON, 16K/32K input budgets, and rejection of
 an input above the configured ceiling. The context budget includes the chat
 format, input, and generated output; the long-input checks reserve 64 output
-tokens. Results are written to `analysis/gemma_inference_check.json`.
+tokens. Results are written to `docs/maintenance/evidence/local-validation/gemma_inference_check.json`.
 To check another context limit, pass `--max-model-len 16384` and a separate
 `--output` path.
 

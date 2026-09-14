@@ -1,0 +1,491 @@
+{"event": "admit", "record_id": "PPS-DEV-01", "reason": "startup", "time": 101091.861252146, "older_live_ids": [], "live_source_tokens": 13634, "ready_tasks": 0, "inflight": 0}
+{"event": "admit", "record_id": "PPS-DEV-02", "reason": "startup", "time": 101091.861341915, "older_live_ids": ["PPS-DEV-01"], "live_source_tokens": 16191, "ready_tasks": 1, "inflight": 0}
+{"event": "admit", "record_id": "PPS-DEV-03", "reason": "lookahead", "time": 101093.58522083, "older_live_ids": ["PPS-DEV-01", "PPS-DEV-02"], "live_source_tokens": 32494, "ready_tasks": 1, "inflight": 14}
+{"event": "admission_blocked", "record_id": "PPS-DEV-04", "reason": "record_window", "time": 101095.034710779, "live_ids": ["PPS-DEV-01", "PPS-DEV-02", "PPS-DEV-03"], "prospective_source_tokens": 52081}
+{"event": "record_complete", "record_id": "PPS-DEV-01", "time": 101095.229986241, "live_ids": ["PPS-DEV-02", "PPS-DEV-03"]}
+{"event": "admit", "record_id": "PPS-DEV-04", "reason": "lookahead", "time": 101095.23277097, "older_live_ids": ["PPS-DEV-02", "PPS-DEV-03"], "live_source_tokens": 38447, "ready_tasks": 0, "inflight": 12}
+{"event": "record_complete", "record_id": "PPS-DEV-02", "time": 101095.266180375, "live_ids": ["PPS-DEV-03", "PPS-DEV-04"]}
+{"event": "admit", "record_id": "PPS-DEV-05", "reason": "lookahead", "time": 101096.958539804, "older_live_ids": ["PPS-DEV-03", "PPS-DEV-04"], "live_source_tokens": 46963, "ready_tasks": 11, "inflight": 3}
+{"event": "admission_blocked", "record_id": "PPS-DEV-06", "reason": "record_window", "time": 101098.225687521, "live_ids": ["PPS-DEV-03", "PPS-DEV-04", "PPS-DEV-05"], "prospective_source_tokens": 65503}
+{"event": "record_complete", "record_id": "PPS-DEV-04", "time": 101098.703489514, "live_ids": ["PPS-DEV-03", "PPS-DEV-05"]}
+{"event": "admit", "record_id": "PPS-DEV-06", "reason": "lookahead", "time": 101098.706108861, "older_live_ids": ["PPS-DEV-03", "PPS-DEV-05"], "live_source_tokens": 45916, "ready_tasks": 0, "inflight": 8}
+{"event": "record_complete", "record_id": "PPS-DEV-05", "time": 101100.273785976, "live_ids": ["PPS-DEV-03", "PPS-DEV-06"]}
+{"event": "admit", "record_id": "PPS-DEV-07", "reason": "lookahead", "time": 101100.283684644, "older_live_ids": ["PPS-DEV-03", "PPS-DEV-06"], "live_source_tokens": 45460, "ready_tasks": 11, "inflight": 1}
+{"event": "record_complete", "record_id": "PPS-DEV-03", "time": 101101.14010633, "live_ids": ["PPS-DEV-06", "PPS-DEV-07"]}
+{"event": "admission_blocked", "record_id": "PPS-DEV-08", "reason": "source_token_budget", "time": 101101.500992846, "live_ids": ["PPS-DEV-06", "PPS-DEV-07"], "prospective_source_tokens": 51634}
+{"event": "record_complete", "record_id": "PPS-DEV-06", "time": 101101.973020828, "live_ids": ["PPS-DEV-07"]}
+{"event": "admit", "record_id": "PPS-DEV-08", "reason": "lookahead", "time": 101101.97516525, "older_live_ids": ["PPS-DEV-07"], "live_source_tokens": 33094, "ready_tasks": 0, "inflight": 6}
+{"event": "record_complete", "record_id": "PPS-DEV-07", "time": 101103.861448149, "live_ids": ["PPS-DEV-08"]}
+{"event": "admit", "record_id": "PPS-DEV-09", "reason": "lookahead", "time": 101103.887679484, "older_live_ids": ["PPS-DEV-08"], "live_source_tokens": 29536, "ready_tasks": 11, "inflight": 0}
+{"event": "admit", "record_id": "PPS-DEV-10", "reason": "lookahead", "time": 101104.898418091, "older_live_ids": ["PPS-DEV-08", "PPS-DEV-09"], "live_source_tokens": 40653, "ready_tasks": 1, "inflight": 15}
+{"event": "record_complete", "record_id": "PPS-DEV-08", "time": 101105.907071921, "live_ids": ["PPS-DEV-09", "PPS-DEV-10"]}
+{"event": "admit", "record_id": "PPS-DEV-11", "reason": "lookahead", "time": 101106.11368501, "older_live_ids": ["PPS-DEV-09", "PPS-DEV-10"], "live_source_tokens": 47226, "ready_tasks": 1, "inflight": 15}
+{"event": "admission_blocked", "record_id": "PPS-DEV-12", "reason": "record_window", "time": 101109.249408225, "live_ids": ["PPS-DEV-09", "PPS-DEV-10", "PPS-DEV-11"], "prospective_source_tokens": 55736}
+{"event": "record_complete", "record_id": "PPS-DEV-09", "time": 101110.348718671, "live_ids": ["PPS-DEV-10", "PPS-DEV-11"]}
+{"event": "record_complete", "record_id": "PPS-DEV-11", "time": 101110.350712249, "live_ids": ["PPS-DEV-10"]}
+{"event": "admit", "record_id": "PPS-DEV-12", "reason": "lookahead", "time": 101110.354478108, "older_live_ids": ["PPS-DEV-10"], "live_source_tokens": 19627, "ready_tasks": 0, "inflight": 1}
+{"event": "admit", "record_id": "PPS-DEV-13", "reason": "lookahead", "time": 101111.137825202, "older_live_ids": ["PPS-DEV-10", "PPS-DEV-12"], "live_source_tokens": 29159, "ready_tasks": 11, "inflight": 1}
+{"event": "admission_blocked", "record_id": "PPS-DEV-14", "reason": "record_window", "time": 101112.199628975, "live_ids": ["PPS-DEV-10", "PPS-DEV-12", "PPS-DEV-13"], "prospective_source_tokens": 36470}
+{"event": "record_complete", "record_id": "PPS-DEV-12", "time": 101112.656652538, "live_ids": ["PPS-DEV-10", "PPS-DEV-13"]}
+{"event": "admit", "record_id": "PPS-DEV-14", "reason": "lookahead", "time": 101112.658792031, "older_live_ids": ["PPS-DEV-10", "PPS-DEV-13"], "live_source_tokens": 27960, "ready_tasks": 0, "inflight": 8}
+{"event": "admission_blocked", "record_id": "PPS-DEV-15", "reason": "record_window", "time": 101113.411617919, "live_ids": ["PPS-DEV-10", "PPS-DEV-13", "PPS-DEV-14"], "prospective_source_tokens": 46777}
+{"event": "record_complete", "record_id": "PPS-DEV-13", "time": 101113.50518965, "live_ids": ["PPS-DEV-10", "PPS-DEV-14"]}
+{"event": "admit", "record_id": "PPS-DEV-15", "reason": "lookahead", "time": 101113.507316199, "older_live_ids": ["PPS-DEV-10", "PPS-DEV-14"], "live_source_tokens": 37245, "ready_tasks": 0, "inflight": 12}
+{"event": "record_complete", "record_id": "PPS-DEV-10", "time": 101113.526134471, "live_ids": ["PPS-DEV-14", "PPS-DEV-15"]}
+{"event": "admit", "record_id": "PPS-DEV-16", "reason": "lookahead", "time": 101115.185133689, "older_live_ids": ["PPS-DEV-14", "PPS-DEV-15"], "live_source_tokens": 33784, "ready_tasks": 11, "inflight": 3}
+{"event": "record_complete", "record_id": "PPS-DEV-14", "time": 101116.010474461, "live_ids": ["PPS-DEV-15", "PPS-DEV-16"]}
+{"event": "admission_blocked", "record_id": "PPS-DEV-17", "reason": "source_token_budget", "time": 101116.205820548, "live_ids": ["PPS-DEV-15", "PPS-DEV-16"], "prospective_source_tokens": 51702}
+{"event": "record_complete", "record_id": "PPS-DEV-16", "time": 101117.32927684, "live_ids": ["PPS-DEV-15"]}
+{"event": "admit", "record_id": "PPS-DEV-17", "reason": "lookahead", "time": 101117.331519457, "older_live_ids": ["PPS-DEV-15"], "live_source_tokens": 44046, "ready_tasks": 0, "inflight": 1}
+{"event": "admission_blocked", "record_id": "PPS-DEV-18", "reason": "source_token_budget", "time": 101119.526614063, "live_ids": ["PPS-DEV-15", "PPS-DEV-17"], "prospective_source_tokens": 49345}
+{"event": "record_complete", "record_id": "PPS-DEV-17", "time": 101121.69700683, "live_ids": ["PPS-DEV-15"]}
+{"event": "admit", "record_id": "PPS-DEV-18", "reason": "lookahead", "time": 101121.701543502, "older_live_ids": ["PPS-DEV-15"], "live_source_tokens": 24116, "ready_tasks": 0, "inflight": 1}
+{"event": "admit", "record_id": "PPS-DEV-19", "reason": "lookahead", "time": 101122.336342715, "older_live_ids": ["PPS-DEV-15", "PPS-DEV-18"], "live_source_tokens": 35997, "ready_tasks": 11, "inflight": 1}
+{"event": "admission_blocked", "record_id": "PPS-DEV-20", "reason": "record_window", "time": 101123.629205337, "live_ids": ["PPS-DEV-15", "PPS-DEV-18", "PPS-DEV-19"], "prospective_source_tokens": 46181}
+{"event": "record_complete", "record_id": "PPS-DEV-18", "time": 101124.050062419, "live_ids": ["PPS-DEV-15", "PPS-DEV-19"]}
+{"event": "admit", "record_id": "PPS-DEV-20", "reason": "lookahead", "time": 101124.051514777, "older_live_ids": ["PPS-DEV-15", "PPS-DEV-19"], "live_source_tokens": 40882, "ready_tasks": 0, "inflight": 7}
+{"event": "admission_blocked", "record_id": "PPS-DEV-21", "reason": "record_window", "time": 101124.991212843, "live_ids": ["PPS-DEV-15", "PPS-DEV-19", "PPS-DEV-20"], "prospective_source_tokens": 46273}
+{"event": "record_complete", "record_id": "PPS-DEV-19", "time": 101125.099152301, "live_ids": ["PPS-DEV-15", "PPS-DEV-20"]}
+{"event": "admit", "record_id": "PPS-DEV-21", "reason": "lookahead", "time": 101125.101481051, "older_live_ids": ["PPS-DEV-15", "PPS-DEV-20"], "live_source_tokens": 34392, "ready_tasks": 0, "inflight": 12}
+{"event": "admission_blocked", "record_id": "PPS-DEV-22", "reason": "record_window", "time": 101125.856221561, "live_ids": ["PPS-DEV-15", "PPS-DEV-20", "PPS-DEV-21"], "prospective_source_tokens": 45055}
+{"event": "record_complete", "record_id": "PPS-DEV-20", "time": 101126.3761148, "live_ids": ["PPS-DEV-15", "PPS-DEV-21"]}
+{"event": "admit", "record_id": "PPS-DEV-22", "reason": "lookahead", "time": 101126.378151139, "older_live_ids": ["PPS-DEV-15", "PPS-DEV-21"], "live_source_tokens": 34871, "ready_tasks": 0, "inflight": 7}
+{"event": "admission_blocked", "record_id": "PPS-DEV-23", "reason": "record_window", "time": 101127.360565332, "live_ids": ["PPS-DEV-15", "PPS-DEV-21", "PPS-DEV-22"], "prospective_source_tokens": 44958}
+{"event": "record_complete", "record_id": "PPS-DEV-21", "time": 101127.470429418, "live_ids": ["PPS-DEV-15", "PPS-DEV-22"]}
+{"event": "admit", "record_id": "PPS-DEV-23", "reason": "lookahead", "time": 101127.471592501, "older_live_ids": ["PPS-DEV-15", "PPS-DEV-22"], "live_source_tokens": 39567, "ready_tasks": 0, "inflight": 12}
+{"event": "admission_blocked", "record_id": "PPS-DEV-24", "reason": "record_window", "time": 101128.492537298, "live_ids": ["PPS-DEV-15", "PPS-DEV-22", "PPS-DEV-23"], "prospective_source_tokens": 47273}
+{"event": "record_complete", "record_id": "PPS-DEV-22", "time": 101129.016613115, "live_ids": ["PPS-DEV-15", "PPS-DEV-23"]}
+{"event": "admit", "record_id": "PPS-DEV-24", "reason": "lookahead", "time": 101129.019476332, "older_live_ids": ["PPS-DEV-15", "PPS-DEV-23"], "live_source_tokens": 36610, "ready_tasks": 0, "inflight": 8}
+{"event": "admission_blocked", "record_id": "PPS-DEV-25", "reason": "record_window", "time": 101129.863840513, "live_ids": ["PPS-DEV-15", "PPS-DEV-23", "PPS-DEV-24"], "prospective_source_tokens": 47441}
+{"event": "record_complete", "record_id": "PPS-DEV-24", "time": 101130.999794282, "live_ids": ["PPS-DEV-15", "PPS-DEV-23"]}
+{"event": "admit", "record_id": "PPS-DEV-25", "reason": "lookahead", "time": 101131.001769425, "older_live_ids": ["PPS-DEV-15", "PPS-DEV-23"], "live_source_tokens": 39735, "ready_tasks": 0, "inflight": 2}
+{"event": "record_complete", "record_id": "PPS-DEV-23", "time": 101131.958512368, "live_ids": ["PPS-DEV-15", "PPS-DEV-25"]}
+{"event": "admit", "record_id": "PPS-DEV-26", "reason": "lookahead", "time": 101133.605434098, "older_live_ids": ["PPS-DEV-15", "PPS-DEV-25"], "live_source_tokens": 43055, "ready_tasks": 11, "inflight": 1}
+{"event": "admission_blocked", "record_id": "PPS-DEV-27", "reason": "record_window", "time": 101135.001542019, "live_ids": ["PPS-DEV-15", "PPS-DEV-25", "PPS-DEV-26"], "prospective_source_tokens": 70788}
+{"event": "record_complete", "record_id": "PPS-DEV-25", "time": 101135.477465636, "live_ids": ["PPS-DEV-15", "PPS-DEV-26"]}
+{"event": "admission_blocked", "record_id": "PPS-DEV-27", "reason": "source_token_budget", "time": 101135.479375777, "live_ids": ["PPS-DEV-15", "PPS-DEV-26"], "prospective_source_tokens": 59957}
+{"event": "record_complete", "record_id": "PPS-DEV-26", "time": 101135.980207026, "live_ids": ["PPS-DEV-15"]}
+{"event": "admit", "record_id": "PPS-DEV-27", "reason": "lookahead", "time": 101135.982491141, "older_live_ids": ["PPS-DEV-15"], "live_source_tokens": 46550, "ready_tasks": 0, "inflight": 1}
+{"event": "admission_blocked", "record_id": "PPS-DEV-28", "reason": "source_token_budget", "time": 101138.444493846, "live_ids": ["PPS-DEV-15", "PPS-DEV-27"], "prospective_source_tokens": 73428}
+{"event": "record_complete", "record_id": "PPS-DEV-27", "time": 101140.055569959, "live_ids": ["PPS-DEV-15"]}
+{"event": "admit", "record_id": "PPS-DEV-28", "reason": "lookahead", "time": 101140.062396868, "older_live_ids": ["PPS-DEV-15"], "live_source_tokens": 45695, "ready_tasks": 0, "inflight": 1}
+{"event": "admission_blocked", "record_id": "PPS-DEV-29", "reason": "source_token_budget", "time": 101142.433508251, "live_ids": ["PPS-DEV-15", "PPS-DEV-28"], "prospective_source_tokens": 49323}
+{"event": "record_complete", "record_id": "PPS-DEV-28", "time": 101143.643493538, "live_ids": ["PPS-DEV-15"]}
+{"event": "admit", "record_id": "PPS-DEV-29", "reason": "lookahead", "time": 101143.649583208, "older_live_ids": ["PPS-DEV-15"], "live_source_tokens": 22445, "ready_tasks": 0, "inflight": 1}
+{"event": "admit", "record_id": "PPS-DEV-30", "reason": "lookahead", "time": 101144.204099467, "older_live_ids": ["PPS-DEV-15", "PPS-DEV-29"], "live_source_tokens": 35946, "ready_tasks": 11, "inflight": 1}
+{"event": "admission_blocked", "record_id": "PPS-DEV-31", "reason": "record_window", "time": 101145.588679715, "live_ids": ["PPS-DEV-15", "PPS-DEV-29", "PPS-DEV-30"], "prospective_source_tokens": 42150}
+{"event": "record_complete", "record_id": "PPS-DEV-29", "time": 101146.056840261, "live_ids": ["PPS-DEV-15", "PPS-DEV-30"]}
+{"event": "admit", "record_id": "PPS-DEV-31", "reason": "lookahead", "time": 101146.057513811, "older_live_ids": ["PPS-DEV-15", "PPS-DEV-30"], "live_source_tokens": 38522, "ready_tasks": 0, "inflight": 7}
+{"event": "admission_blocked", "record_id": "PPS-DEV-32", "reason": "record_window", "time": 101146.792515634, "live_ids": ["PPS-DEV-15", "PPS-DEV-30", "PPS-DEV-31"], "prospective_source_tokens": 51680}
+{"event": "record_complete", "record_id": "PPS-DEV-30", "time": 101146.953042158, "live_ids": ["PPS-DEV-15", "PPS-DEV-31"]}
+{"event": "admit", "record_id": "PPS-DEV-32", "reason": "lookahead", "time": 101146.955531921, "older_live_ids": ["PPS-DEV-15", "PPS-DEV-31"], "live_source_tokens": 38179, "ready_tasks": 0, "inflight": 12}
+{"event": "admission_blocked", "record_id": "PPS-DEV-033", "reason": "record_window", "time": 101148.202531099, "live_ids": ["PPS-DEV-15", "PPS-DEV-31", "PPS-DEV-32"], "prospective_source_tokens": 43280}
+{"event": "record_complete", "record_id": "PPS-DEV-31", "time": 101148.952732145, "live_ids": ["PPS-DEV-15", "PPS-DEV-32"]}
+{"event": "admit", "record_id": "PPS-DEV-033", "reason": "lookahead", "time": 101148.954805484, "older_live_ids": ["PPS-DEV-15", "PPS-DEV-32"], "live_source_tokens": 37076, "ready_tasks": 0, "inflight": 3}
+{"event": "record_complete", "record_id": "PPS-DEV-32", "time": 101149.491326891, "live_ids": ["PPS-DEV-15", "PPS-DEV-033"]}
+{"event": "admit", "record_id": "PPS-DEV-034", "reason": "lookahead", "time": 101149.62745322, "older_live_ids": ["PPS-DEV-15", "PPS-DEV-033"], "live_source_tokens": 38948, "ready_tasks": 11, "inflight": 1}
+{"event": "admission_blocked", "record_id": "PPS-DEV-035", "reason": "record_window", "time": 101151.143185348, "live_ids": ["PPS-DEV-15", "PPS-DEV-033", "PPS-DEV-034"], "prospective_source_tokens": 41994}
+{"event": "record_complete", "record_id": "PPS-DEV-033", "time": 101151.616588012, "live_ids": ["PPS-DEV-15", "PPS-DEV-034"]}
+{"event": "admit", "record_id": "PPS-DEV-035", "reason": "lookahead", "time": 101151.617445879, "older_live_ids": ["PPS-DEV-15", "PPS-DEV-034"], "live_source_tokens": 36893, "ready_tasks": 0, "inflight": 7}
+{"event": "admission_blocked", "record_id": "PPS-DEV-036", "reason": "record_window", "time": 101153.468558719, "live_ids": ["PPS-DEV-15", "PPS-DEV-034", "PPS-DEV-035"], "prospective_source_tokens": 41246}
+{"event": "record_complete", "record_id": "PPS-DEV-034", "time": 101153.933596456, "live_ids": ["PPS-DEV-15", "PPS-DEV-035"]}
+{"event": "admit", "record_id": "PPS-DEV-036", "reason": "lookahead", "time": 101153.935890491, "older_live_ids": ["PPS-DEV-15", "PPS-DEV-035"], "live_source_tokens": 26216, "ready_tasks": 0, "inflight": 8}
+{"event": "record_complete", "record_id": "PPS-DEV-15", "time": 101154.533338183, "live_ids": ["PPS-DEV-035", "PPS-DEV-036"]}
+{"event": "admit", "record_id": "PPS-DEV-037", "reason": "lookahead", "time": 101154.569794267, "older_live_ids": ["PPS-DEV-035", "PPS-DEV-036"], "live_source_tokens": 15452, "ready_tasks": 11, "inflight": 2}
+{"event": "record_complete", "record_id": "PPS-DEV-035", "time": 101155.152381516, "live_ids": ["PPS-DEV-036", "PPS-DEV-037"]}
+{"event": "admit", "record_id": "PPS-DEV-038", "reason": "lookahead", "time": 101155.518373737, "older_live_ids": ["PPS-DEV-036", "PPS-DEV-037"], "live_source_tokens": 18849, "ready_tasks": 1, "inflight": 13}
+{"event": "record_complete", "record_id": "PPS-DEV-036", "time": 101156.282560651, "live_ids": ["PPS-DEV-037", "PPS-DEV-038"]}
+{"event": "admit", "record_id": "PPS-DEV-039", "reason": "lookahead", "time": 101156.373974054, "older_live_ids": ["PPS-DEV-037", "PPS-DEV-038"], "live_source_tokens": 22088, "ready_tasks": 1, "inflight": 14}
+{"event": "admission_blocked", "record_id": "PPS-DEV-040", "reason": "record_window", "time": 101157.313136537, "live_ids": ["PPS-DEV-037", "PPS-DEV-038", "PPS-DEV-039"], "prospective_source_tokens": 26012}
+{"event": "record_complete", "record_id": "PPS-DEV-037", "time": 101157.497511673, "live_ids": ["PPS-DEV-038", "PPS-DEV-039"]}
+{"event": "admit", "record_id": "PPS-DEV-040", "reason": "lookahead", "time": 101157.499177653, "older_live_ids": ["PPS-DEV-038", "PPS-DEV-039"], "live_source_tokens": 17959, "ready_tasks": 0, "inflight": 12}
+{"event": "record_complete", "record_id": "PPS-DEV-038", "time": 101157.84350796, "live_ids": ["PPS-DEV-039", "PPS-DEV-040"]}
+{"event": "admit", "record_id": "PPS-DEV-041", "reason": "lookahead", "time": 101158.104971777, "older_live_ids": ["PPS-DEV-039", "PPS-DEV-040"], "live_source_tokens": 14595, "ready_tasks": 11, "inflight": 2}
+{"event": "admission_blocked", "record_id": "PPS-DEV-042", "reason": "record_window", "time": 101158.806535175, "live_ids": ["PPS-DEV-039", "PPS-DEV-040", "PPS-DEV-041"], "prospective_source_tokens": 20119}
+{"event": "record_complete", "record_id": "PPS-DEV-040", "time": 101159.232515883, "live_ids": ["PPS-DEV-039", "PPS-DEV-041"]}
+{"event": "admit", "record_id": "PPS-DEV-042", "reason": "lookahead", "time": 101159.233850789, "older_live_ids": ["PPS-DEV-039", "PPS-DEV-041"], "live_source_tokens": 16195, "ready_tasks": 0, "inflight": 8}
+{"event": "record_complete", "record_id": "PPS-DEV-041", "time": 101159.891468808, "live_ids": ["PPS-DEV-039", "PPS-DEV-042"]}
+{"event": "admit", "record_id": "PPS-DEV-043", "reason": "lookahead", "time": 101159.900228601, "older_live_ids": ["PPS-DEV-039", "PPS-DEV-042"], "live_source_tokens": 18439, "ready_tasks": 11, "inflight": 1}
+{"event": "record_complete", "record_id": "PPS-DEV-039", "time": 101160.699484093, "live_ids": ["PPS-DEV-042", "PPS-DEV-043"]}
+{"event": "admit", "record_id": "PPS-DEV-044", "reason": "lookahead", "time": 101160.712503586, "older_live_ids": ["PPS-DEV-042", "PPS-DEV-043"], "live_source_tokens": 30006, "ready_tasks": 1, "inflight": 15}
+{"event": "admission_blocked", "record_id": "PPS-DEV-045", "reason": "record_window", "time": 101162.435888513, "live_ids": ["PPS-DEV-042", "PPS-DEV-043", "PPS-DEV-044"], "prospective_source_tokens": 39472}
+{"event": "record_complete", "record_id": "PPS-DEV-042", "time": 101163.288767015, "live_ids": ["PPS-DEV-043", "PPS-DEV-044"]}
+{"event": "admit", "record_id": "PPS-DEV-045", "reason": "lookahead", "time": 101163.290166062, "older_live_ids": ["PPS-DEV-043", "PPS-DEV-044"], "live_source_tokens": 33948, "ready_tasks": 0, "inflight": 4}
+{"event": "record_complete", "record_id": "PPS-DEV-043", "time": 101163.990490904, "live_ids": ["PPS-DEV-044", "PPS-DEV-045"]}
+{"event": "record_complete", "record_id": "PPS-DEV-044", "time": 101164.168652259, "live_ids": ["PPS-DEV-045"]}
+{"event": "admit", "record_id": "PPS-DEV-046", "reason": "lookahead", "time": 101164.185443733, "older_live_ids": ["PPS-DEV-045"], "live_source_tokens": 14494, "ready_tasks": 11, "inflight": 0}
+{"event": "admit", "record_id": "PPS-DEV-047", "reason": "lookahead", "time": 101164.971570423, "older_live_ids": ["PPS-DEV-045", "PPS-DEV-046"], "live_source_tokens": 18512, "ready_tasks": 1, "inflight": 15}
+{"event": "record_complete", "record_id": "PPS-DEV-045", "time": 101165.561169666, "live_ids": ["PPS-DEV-046", "PPS-DEV-047"]}
+{"event": "admit", "record_id": "PPS-DEV-048", "reason": "lookahead", "time": 101165.636681955, "older_live_ids": ["PPS-DEV-046", "PPS-DEV-047"], "live_source_tokens": 12817, "ready_tasks": 11, "inflight": 5}
+{"event": "record_complete", "record_id": "PPS-DEV-046", "time": 101166.226761595, "live_ids": ["PPS-DEV-047", "PPS-DEV-048"]}
+{"event": "admit", "record_id": "PPS-DEV-049", "reason": "lookahead", "time": 101166.670632364, "older_live_ids": ["PPS-DEV-047", "PPS-DEV-048"], "live_source_tokens": 14684, "ready_tasks": 11, "inflight": 2}
+{"event": "record_complete", "record_id": "PPS-DEV-047", "time": 101167.232562591, "live_ids": ["PPS-DEV-048", "PPS-DEV-049"]}
+{"event": "admit", "record_id": "PPS-DEV-050", "reason": "lookahead", "time": 101167.655788053, "older_live_ids": ["PPS-DEV-048", "PPS-DEV-049"], "live_source_tokens": 19093, "ready_tasks": 11, "inflight": 3}
+{"event": "admission_blocked", "record_id": "PPS-DEV-051", "reason": "record_window", "time": 101168.655925615, "live_ids": ["PPS-DEV-048", "PPS-DEV-049", "PPS-DEV-050"], "prospective_source_tokens": 25603}
+{"event": "record_complete", "record_id": "PPS-DEV-049", "time": 101169.100342086, "live_ids": ["PPS-DEV-048", "PPS-DEV-050"]}
+{"event": "admit", "record_id": "PPS-DEV-051", "reason": "lookahead", "time": 101169.101878492, "older_live_ids": ["PPS-DEV-048", "PPS-DEV-050"], "live_source_tokens": 18708, "ready_tasks": 0, "inflight": 7}
+{"event": "record_complete", "record_id": "PPS-DEV-048", "time": 101169.722923182, "live_ids": ["PPS-DEV-050", "PPS-DEV-051"]}
+{"event": "admit", "record_id": "PPS-DEV-052", "reason": "lookahead", "time": 101170.136144277, "older_live_ids": ["PPS-DEV-050", "PPS-DEV-051"], "live_source_tokens": 23894, "ready_tasks": 11, "inflight": 3}
+{"event": "admission_blocked", "record_id": "PPS-DEV-053", "reason": "record_window", "time": 101171.188804798, "live_ids": ["PPS-DEV-050", "PPS-DEV-051", "PPS-DEV-052"], "prospective_source_tokens": 31960}
+{"event": "record_complete", "record_id": "PPS-DEV-050", "time": 101171.560282924, "live_ids": ["PPS-DEV-051", "PPS-DEV-052"]}
+{"event": "admit", "record_id": "PPS-DEV-053", "reason": "lookahead", "time": 101171.562838982, "older_live_ids": ["PPS-DEV-051", "PPS-DEV-052"], "live_source_tokens": 23533, "ready_tasks": 0, "inflight": 12}
+{"event": "record_complete", "record_id": "PPS-DEV-051", "time": 101171.970694767, "live_ids": ["PPS-DEV-052", "PPS-DEV-053"]}
+{"event": "admit", "record_id": "PPS-DEV-054", "reason": "lookahead", "time": 101172.375627669, "older_live_ids": ["PPS-DEV-052", "PPS-DEV-053"], "live_source_tokens": 20170, "ready_tasks": 11, "inflight": 4}
+{"event": "admission_blocked", "record_id": "PPS-DEV-055", "reason": "record_window", "time": 101173.146366295, "live_ids": ["PPS-DEV-052", "PPS-DEV-053", "PPS-DEV-054"], "prospective_source_tokens": 27714}
+{"event": "record_complete", "record_id": "PPS-DEV-052", "time": 101173.307283947, "live_ids": ["PPS-DEV-053", "PPS-DEV-054"]}
+{"event": "admit", "record_id": "PPS-DEV-055", "reason": "lookahead", "time": 101173.308968231, "older_live_ids": ["PPS-DEV-053", "PPS-DEV-054"], "live_source_tokens": 18757, "ready_tasks": 0, "inflight": 13}
+{"event": "record_complete", "record_id": "PPS-DEV-053", "time": 101173.863743689, "live_ids": ["PPS-DEV-054", "PPS-DEV-055"]}
+{"event": "admit", "record_id": "PPS-DEV-056", "reason": "lookahead", "time": 101174.100747984, "older_live_ids": ["PPS-DEV-054", "PPS-DEV-055"], "live_source_tokens": 18362, "ready_tasks": 11, "inflight": 1}
+{"event": "record_complete", "record_id": "PPS-DEV-054", "time": 101174.689038604, "live_ids": ["PPS-DEV-055", "PPS-DEV-056"]}
+{"event": "admit", "record_id": "PPS-DEV-057", "reason": "lookahead", "time": 101175.039404653, "older_live_ids": ["PPS-DEV-055", "PPS-DEV-056"], "live_source_tokens": 18650, "ready_tasks": 1, "inflight": 15}
+{"event": "record_complete", "record_id": "PPS-DEV-055", "time": 101175.576246885, "live_ids": ["PPS-DEV-056", "PPS-DEV-057"]}
+{"event": "record_complete", "record_id": "PPS-DEV-056", "time": 101176.001330498, "live_ids": ["PPS-DEV-057"]}
+{"event": "admit", "record_id": "PPS-DEV-058", "reason": "lookahead", "time": 101176.035320424, "older_live_ids": ["PPS-DEV-057"], "live_source_tokens": 8967, "ready_tasks": 11, "inflight": 0}
+{"event": "admit", "record_id": "PPS-DEV-059", "reason": "lookahead", "time": 101176.829188608, "older_live_ids": ["PPS-DEV-057", "PPS-DEV-058"], "live_source_tokens": 13107, "ready_tasks": 1, "inflight": 15}
+{"event": "record_complete", "record_id": "PPS-DEV-058", "time": 101177.843094769, "live_ids": ["PPS-DEV-057", "PPS-DEV-059"]}
+{"event": "admit", "record_id": "PPS-DEV-060", "reason": "lookahead", "time": 101178.259749605, "older_live_ids": ["PPS-DEV-057", "PPS-DEV-059"], "live_source_tokens": 10557, "ready_tasks": 11, "inflight": 1}
+{"event": "record_complete", "record_id": "PPS-DEV-057", "time": 101178.33610709, "live_ids": ["PPS-DEV-059", "PPS-DEV-060"]}
+{"event": "admit", "record_id": "PPS-DEV-061", "reason": "lookahead", "time": 101178.89643431, "older_live_ids": ["PPS-DEV-059", "PPS-DEV-060"], "live_source_tokens": 9639, "ready_tasks": 2, "inflight": 14}
+{"event": "record_complete", "record_id": "PPS-DEV-059", "time": 101179.413275002, "live_ids": ["PPS-DEV-060", "PPS-DEV-061"]}
+{"event": "admit", "record_id": "PPS-DEV-062", "reason": "lookahead", "time": 101179.53765109, "older_live_ids": ["PPS-DEV-060", "PPS-DEV-061"], "live_source_tokens": 8035, "ready_tasks": 1, "inflight": 14}
+{"event": "admission_blocked", "record_id": "PPS-DEV-063", "reason": "record_window", "time": 101180.620662101, "live_ids": ["PPS-DEV-060", "PPS-DEV-061", "PPS-DEV-062"], "prospective_source_tokens": 22219}
+{"event": "record_complete", "record_id": "PPS-DEV-060", "time": 101181.180693776, "live_ids": ["PPS-DEV-061", "PPS-DEV-062"]}
+{"event": "admit", "record_id": "PPS-DEV-063", "reason": "lookahead", "time": 101181.181683342, "older_live_ids": ["PPS-DEV-061", "PPS-DEV-062"], "live_source_tokens": 19237, "ready_tasks": 0, "inflight": 6}
+{"event": "record_complete", "record_id": "PPS-DEV-061", "time": 101182.086619677, "live_ids": ["PPS-DEV-062", "PPS-DEV-063"]}
+{"event": "admit", "record_id": "PPS-DEV-064", "reason": "lookahead", "time": 101182.369879276, "older_live_ids": ["PPS-DEV-062", "PPS-DEV-063"], "live_source_tokens": 24002, "ready_tasks": 11, "inflight": 1}
+{"event": "record_complete", "record_id": "PPS-DEV-062", "time": 101182.750472013, "live_ids": ["PPS-DEV-063", "PPS-DEV-064"]}
+{"event": "admit", "record_id": "PPS-DEV-065", "reason": "lookahead", "time": 101183.319865649, "older_live_ids": ["PPS-DEV-063", "PPS-DEV-064"], "live_source_tokens": 24980, "ready_tasks": 1, "inflight": 13}
+{"event": "record_complete", "record_id": "PPS-DEV-063", "time": 101183.883365455, "live_ids": ["PPS-DEV-064", "PPS-DEV-065"]}
+{"event": "admit", "record_id": "PPS-DEV-066", "reason": "lookahead", "time": 101183.972084235, "older_live_ids": ["PPS-DEV-064", "PPS-DEV-065"], "live_source_tokens": 34572, "ready_tasks": 11, "inflight": 5}
+{"event": "record_complete", "record_id": "PPS-DEV-064", "time": 101186.014915643, "live_ids": ["PPS-DEV-065", "PPS-DEV-066"]}
+{"event": "record_complete", "record_id": "PPS-DEV-065", "time": 101187.060469906, "live_ids": ["PPS-DEV-066"]}
+{"event": "admit", "record_id": "PPS-DEV-067", "reason": "lookahead", "time": 101187.712778898, "older_live_ids": ["PPS-DEV-066"], "live_source_tokens": 29138, "ready_tasks": 11, "inflight": 0}
+{"event": "admit", "record_id": "PPS-DEV-068", "reason": "lookahead", "time": 101188.699101764, "older_live_ids": ["PPS-DEV-066", "PPS-DEV-067"], "live_source_tokens": 34480, "ready_tasks": 2, "inflight": 14}
+{"event": "admission_blocked", "record_id": "PPS-DEV-069", "reason": "record_window", "time": 101189.522557348, "live_ids": ["PPS-DEV-066", "PPS-DEV-067", "PPS-DEV-068"], "prospective_source_tokens": 44741}
+{"event": "record_complete", "record_id": "PPS-DEV-067", "time": 101190.078476211, "live_ids": ["PPS-DEV-066", "PPS-DEV-068"]}
+{"event": "admit", "record_id": "PPS-DEV-069", "reason": "lookahead", "time": 101190.079910695, "older_live_ids": ["PPS-DEV-066", "PPS-DEV-068"], "live_source_tokens": 39379, "ready_tasks": 0, "inflight": 8}
+{"event": "admission_blocked", "record_id": "PPS-DEV-070", "reason": "record_window", "time": 101191.064316382, "live_ids": ["PPS-DEV-066", "PPS-DEV-068", "PPS-DEV-069"], "prospective_source_tokens": 42145}
+{"event": "record_complete", "record_id": "PPS-DEV-068", "time": 101191.179507047, "live_ids": ["PPS-DEV-066", "PPS-DEV-069"]}
+{"event": "admit", "record_id": "PPS-DEV-070", "reason": "lookahead", "time": 101191.180328906, "older_live_ids": ["PPS-DEV-066", "PPS-DEV-069"], "live_source_tokens": 36803, "ready_tasks": 0, "inflight": 13}
+{"event": "admission_blocked", "record_id": "PPS-DEV-071", "reason": "record_window", "time": 101191.921341426, "live_ids": ["PPS-DEV-066", "PPS-DEV-069", "PPS-DEV-070"], "prospective_source_tokens": 40831}
+{"event": "record_complete", "record_id": "PPS-DEV-069", "time": 101192.401905806, "live_ids": ["PPS-DEV-066", "PPS-DEV-070"]}
+{"event": "admit", "record_id": "PPS-DEV-071", "reason": "lookahead", "time": 101192.404527048, "older_live_ids": ["PPS-DEV-066", "PPS-DEV-070"], "live_source_tokens": 30570, "ready_tasks": 0, "inflight": 8}
+{"event": "record_complete", "record_id": "PPS-DEV-070", "time": 101193.089834374, "live_ids": ["PPS-DEV-066", "PPS-DEV-071"]}
+{"event": "admit", "record_id": "PPS-DEV-072", "reason": "lookahead", "time": 101193.539120972, "older_live_ids": ["PPS-DEV-066", "PPS-DEV-071"], "live_source_tokens": 32236, "ready_tasks": 11, "inflight": 1}
+{"event": "record_complete", "record_id": "PPS-DEV-066", "time": 101194.214078981, "live_ids": ["PPS-DEV-071", "PPS-DEV-072"]}
+{"event": "admit", "record_id": "PPS-DEV-073", "reason": "lookahead", "time": 101194.388667512, "older_live_ids": ["PPS-DEV-071", "PPS-DEV-072"], "live_source_tokens": 16924, "ready_tasks": 2, "inflight": 14}
+{"event": "admission_blocked", "record_id": "PPS-DEV-074", "reason": "record_window", "time": 101195.427377371, "live_ids": ["PPS-DEV-071", "PPS-DEV-072", "PPS-DEV-073"], "prospective_source_tokens": 22749}
+{"event": "record_complete", "record_id": "PPS-DEV-072", "time": 101195.837674577, "live_ids": ["PPS-DEV-071", "PPS-DEV-073"]}
+{"event": "admit", "record_id": "PPS-DEV-074", "reason": "lookahead", "time": 101195.838787195, "older_live_ids": ["PPS-DEV-071", "PPS-DEV-073"], "live_source_tokens": 18317, "ready_tasks": 0, "inflight": 7}
+{"event": "admission_blocked", "record_id": "PPS-DEV-075", "reason": "record_window", "time": 101196.49735607, "live_ids": ["PPS-DEV-071", "PPS-DEV-073", "PPS-DEV-074"], "prospective_source_tokens": 23440}
+{"event": "record_complete", "record_id": "PPS-DEV-073", "time": 101196.582881151, "live_ids": ["PPS-DEV-071", "PPS-DEV-074"]}
+{"event": "admit", "record_id": "PPS-DEV-075", "reason": "lookahead", "time": 101196.585400901, "older_live_ids": ["PPS-DEV-071", "PPS-DEV-074"], "live_source_tokens": 14976, "ready_tasks": 0, "inflight": 12}
+{"event": "record_complete", "record_id": "PPS-DEV-071", "time": 101197.196738549, "live_ids": ["PPS-DEV-074", "PPS-DEV-075"]}
+{"event": "admit", "record_id": "PPS-DEV-076", "reason": "lookahead", "time": 101197.262216457, "older_live_ids": ["PPS-DEV-074", "PPS-DEV-075"], "live_source_tokens": 28566, "ready_tasks": 11, "inflight": 5}
+{"event": "record_complete", "record_id": "PPS-DEV-074", "time": 101198.705354609, "live_ids": ["PPS-DEV-075", "PPS-DEV-076"]}
+{"event": "admit", "record_id": "PPS-DEV-077", "reason": "lookahead", "time": 101198.990050014, "older_live_ids": ["PPS-DEV-075", "PPS-DEV-076"], "live_source_tokens": 25039, "ready_tasks": 1, "inflight": 15}
+{"event": "record_complete", "record_id": "PPS-DEV-075", "time": 101199.520361594, "live_ids": ["PPS-DEV-076", "PPS-DEV-077"]}
+{"event": "admit", "record_id": "PPS-DEV-078", "reason": "lookahead", "time": 101199.663110103, "older_live_ids": ["PPS-DEV-076", "PPS-DEV-077"], "live_source_tokens": 25452, "ready_tasks": 11, "inflight": 5}
+{"event": "record_complete", "record_id": "PPS-DEV-076", "time": 101200.358866089, "live_ids": ["PPS-DEV-077", "PPS-DEV-078"]}
+{"event": "admit", "record_id": "PPS-DEV-079", "reason": "lookahead", "time": 101200.513435442, "older_live_ids": ["PPS-DEV-077", "PPS-DEV-078"], "live_source_tokens": 12940, "ready_tasks": 1, "inflight": 15}
+{"event": "record_complete", "record_id": "PPS-DEV-077", "time": 101201.188923911, "live_ids": ["PPS-DEV-078", "PPS-DEV-079"]}
+{"event": "record_complete", "record_id": "PPS-DEV-078", "time": 101201.562335506, "live_ids": ["PPS-DEV-079"]}
+{"event": "admit", "record_id": "PPS-DEV-080", "reason": "lookahead", "time": 101201.645063525, "older_live_ids": ["PPS-DEV-079"], "live_source_tokens": 8444, "ready_tasks": 11, "inflight": 0}
+{"event": "admit", "record_id": "PPS-DEV-081", "reason": "lookahead", "time": 101202.313802041, "older_live_ids": ["PPS-DEV-079", "PPS-DEV-080"], "live_source_tokens": 31400, "ready_tasks": 1, "inflight": 15}
+{"event": "admission_blocked", "record_id": "PPS-DEV-082", "reason": "record_window", "time": 101204.396824131, "live_ids": ["PPS-DEV-079", "PPS-DEV-080", "PPS-DEV-081"], "prospective_source_tokens": 58376}
+{"event": "record_complete", "record_id": "PPS-DEV-080", "time": 101204.995025163, "live_ids": ["PPS-DEV-079", "PPS-DEV-081"]}
+{"event": "admission_blocked", "record_id": "PPS-DEV-082", "reason": "source_token_budget", "time": 101204.995931381, "live_ids": ["PPS-DEV-079", "PPS-DEV-081"], "prospective_source_tokens": 55038}
+{"event": "record_complete", "record_id": "PPS-DEV-079", "time": 101205.192457805, "live_ids": ["PPS-DEV-081"]}
+{"event": "admission_blocked", "record_id": "PPS-DEV-082", "reason": "source_token_budget", "time": 101205.193657516, "live_ids": ["PPS-DEV-081"], "prospective_source_tokens": 49932}
+{"event": "record_complete", "record_id": "PPS-DEV-081", "time": 101205.535519397, "live_ids": []}
+{"event": "admit", "record_id": "PPS-DEV-082", "reason": "empty_pipeline", "time": 101205.540043466, "older_live_ids": [], "live_source_tokens": 26976, "ready_tasks": 0, "inflight": 0}
+{"event": "admit", "record_id": "PPS-DEV-083", "reason": "lookahead", "time": 101207.87189241, "older_live_ids": ["PPS-DEV-082"], "live_source_tokens": 33035, "ready_tasks": 11, "inflight": 0}
+{"event": "admit", "record_id": "PPS-DEV-084", "reason": "lookahead", "time": 101208.840474234, "older_live_ids": ["PPS-DEV-082", "PPS-DEV-083"], "live_source_tokens": 39673, "ready_tasks": 1, "inflight": 15}
+{"event": "admission_blocked", "record_id": "PPS-DEV-085", "reason": "record_window", "time": 101209.816378746, "live_ids": ["PPS-DEV-082", "PPS-DEV-083", "PPS-DEV-084"], "prospective_source_tokens": 59011}
+{"event": "record_complete", "record_id": "PPS-DEV-082", "time": 101210.088321418, "live_ids": ["PPS-DEV-083", "PPS-DEV-084"]}
+{"event": "admit", "record_id": "PPS-DEV-085", "reason": "lookahead", "time": 101210.093368573, "older_live_ids": ["PPS-DEV-083", "PPS-DEV-084"], "live_source_tokens": 32035, "ready_tasks": 0, "inflight": 12}
+{"event": "record_complete", "record_id": "PPS-DEV-083", "time": 101211.41213171, "live_ids": ["PPS-DEV-084", "PPS-DEV-085"]}
+{"event": "admit", "record_id": "PPS-DEV-086", "reason": "lookahead", "time": 101211.759455913, "older_live_ids": ["PPS-DEV-084", "PPS-DEV-085"], "live_source_tokens": 38020, "ready_tasks": 11, "inflight": 1}
+{"event": "record_complete", "record_id": "PPS-DEV-084", "time": 101212.605425563, "live_ids": ["PPS-DEV-085", "PPS-DEV-086"]}
+{"event": "admission_blocked", "record_id": "PPS-DEV-087", "reason": "source_token_budget", "time": 101213.064250341, "live_ids": ["PPS-DEV-085", "PPS-DEV-086"], "prospective_source_tokens": 50428}
+{"event": "record_complete", "record_id": "PPS-DEV-085", "time": 101213.524425624, "live_ids": ["PPS-DEV-086"]}
+{"event": "admit", "record_id": "PPS-DEV-087", "reason": "lookahead", "time": 101213.527254527, "older_live_ids": ["PPS-DEV-086"], "live_source_tokens": 31090, "ready_tasks": 0, "inflight": 7}
+{"event": "admit", "record_id": "PPS-DEV-088", "reason": "lookahead", "time": 101215.150400035, "older_live_ids": ["PPS-DEV-086", "PPS-DEV-087"], "live_source_tokens": 45881, "ready_tasks": 11, "inflight": 1}
+{"event": "record_complete", "record_id": "PPS-DEV-086", "time": 101216.415199573, "live_ids": ["PPS-DEV-087", "PPS-DEV-088"]}
+{"event": "admit", "record_id": "PPS-DEV-089", "reason": "lookahead", "time": 101216.697673352, "older_live_ids": ["PPS-DEV-087", "PPS-DEV-088"], "live_source_tokens": 41356, "ready_tasks": 1, "inflight": 15}
+{"event": "record_complete", "record_id": "PPS-DEV-087", "time": 101217.4841226, "live_ids": ["PPS-DEV-088", "PPS-DEV-089"]}
+{"event": "admit", "record_id": "PPS-DEV-090", "reason": "lookahead", "time": 101217.691722044, "older_live_ids": ["PPS-DEV-088", "PPS-DEV-089"], "live_source_tokens": 32481, "ready_tasks": 1, "inflight": 15}
+{"event": "admission_blocked", "record_id": "PPS-DEV-091", "reason": "record_window", "time": 101218.727615135, "live_ids": ["PPS-DEV-088", "PPS-DEV-089", "PPS-DEV-090"], "prospective_source_tokens": 44450}
+{"event": "record_complete", "record_id": "PPS-DEV-089", "time": 101219.318521583, "live_ids": ["PPS-DEV-088", "PPS-DEV-090"]}
+{"event": "admit", "record_id": "PPS-DEV-091", "reason": "lookahead", "time": 101219.320552572, "older_live_ids": ["PPS-DEV-088", "PPS-DEV-090"], "live_source_tokens": 36931, "ready_tasks": 0, "inflight": 8}
+{"event": "admission_blocked", "record_id": "PPS-DEV-092", "reason": "record_window", "time": 101220.383838481, "live_ids": ["PPS-DEV-088", "PPS-DEV-090", "PPS-DEV-091"], "prospective_source_tokens": 43415}
+{"event": "record_complete", "record_id": "PPS-DEV-090", "time": 101221.136915432, "live_ids": ["PPS-DEV-088", "PPS-DEV-091"]}
+{"event": "admit", "record_id": "PPS-DEV-092", "reason": "lookahead", "time": 101221.139055957, "older_live_ids": ["PPS-DEV-088", "PPS-DEV-091"], "live_source_tokens": 33244, "ready_tasks": 0, "inflight": 3}
+{"event": "record_complete", "record_id": "PPS-DEV-091", "time": 101221.720557288, "live_ids": ["PPS-DEV-088", "PPS-DEV-092"]}
+{"event": "admit", "record_id": "PPS-DEV-093", "reason": "lookahead", "time": 101221.84772412, "older_live_ids": ["PPS-DEV-088", "PPS-DEV-092"], "live_source_tokens": 44265, "ready_tasks": 11, "inflight": 1}
+{"event": "admission_blocked", "record_id": "PPS-DEV-094", "reason": "record_window", "time": 101224.128882142, "live_ids": ["PPS-DEV-088", "PPS-DEV-092", "PPS-DEV-093"], "prospective_source_tokens": 47457}
+{"event": "record_complete", "record_id": "PPS-DEV-092", "time": 101224.582785412, "live_ids": ["PPS-DEV-088", "PPS-DEV-093"]}
+{"event": "admit", "record_id": "PPS-DEV-094", "reason": "lookahead", "time": 101224.584292774, "older_live_ids": ["PPS-DEV-088", "PPS-DEV-093"], "live_source_tokens": 40973, "ready_tasks": 0, "inflight": 7}
+{"event": "admission_blocked", "record_id": "PPS-DEV-095", "reason": "record_window", "time": 101225.195591275, "live_ids": ["PPS-DEV-088", "PPS-DEV-093", "PPS-DEV-094"], "prospective_source_tokens": 49399}
+{"event": "record_complete", "record_id": "PPS-DEV-093", "time": 101225.304689703, "live_ids": ["PPS-DEV-088", "PPS-DEV-094"]}
+{"event": "admit", "record_id": "PPS-DEV-095", "reason": "lookahead", "time": 101225.308223094, "older_live_ids": ["PPS-DEV-088", "PPS-DEV-094"], "live_source_tokens": 26409, "ready_tasks": 0, "inflight": 12}
+{"event": "admission_blocked", "record_id": "PPS-DEV-096", "reason": "record_window", "time": 101226.219603845, "live_ids": ["PPS-DEV-088", "PPS-DEV-094", "PPS-DEV-095"], "prospective_source_tokens": 44096}
+{"event": "record_complete", "record_id": "PPS-DEV-094", "time": 101227.086488013, "live_ids": ["PPS-DEV-088", "PPS-DEV-095"]}
+{"event": "admit", "record_id": "PPS-DEV-096", "reason": "lookahead", "time": 101227.087683006, "older_live_ids": ["PPS-DEV-088", "PPS-DEV-095"], "live_source_tokens": 40904, "ready_tasks": 0, "inflight": 2}
+{"event": "record_complete", "record_id": "PPS-DEV-095", "time": 101228.228926691, "live_ids": ["PPS-DEV-088", "PPS-DEV-096"]}
+{"event": "record_complete", "record_id": "PPS-DEV-088", "time": 101228.287214288, "live_ids": ["PPS-DEV-096"]}
+{"event": "admit", "record_id": "PPS-DEV-097", "reason": "lookahead", "time": 101228.521105033, "older_live_ids": ["PPS-DEV-096"], "live_source_tokens": 27038, "ready_tasks": 11, "inflight": 0}
+{"event": "admit", "record_id": "PPS-DEV-098", "reason": "lookahead", "time": 101229.640767997, "older_live_ids": ["PPS-DEV-096", "PPS-DEV-097"], "live_source_tokens": 33385, "ready_tasks": 1, "inflight": 15}
+{"event": "record_complete", "record_id": "PPS-DEV-096", "time": 101230.344723577, "live_ids": ["PPS-DEV-097", "PPS-DEV-098"]}
+{"event": "admit", "record_id": "PPS-DEV-099", "reason": "lookahead", "time": 101230.533866601, "older_live_ids": ["PPS-DEV-097", "PPS-DEV-098"], "live_source_tokens": 40484, "ready_tasks": 1, "inflight": 14}
+{"event": "admission_blocked", "record_id": "PPS-DEV-100", "reason": "record_window", "time": 101232.859453605, "live_ids": ["PPS-DEV-097", "PPS-DEV-098", "PPS-DEV-099"], "prospective_source_tokens": 59849}
+{"event": "record_complete", "record_id": "PPS-DEV-097", "time": 101234.069240267, "live_ids": ["PPS-DEV-098", "PPS-DEV-099"]}
+{"event": "admission_blocked", "record_id": "PPS-DEV-100", "reason": "source_token_budget", "time": 101234.071247992, "live_ids": ["PPS-DEV-098", "PPS-DEV-099"], "prospective_source_tokens": 50498}
+{"event": "record_complete", "record_id": "PPS-DEV-099", "time": 101234.090302616, "live_ids": ["PPS-DEV-098"]}
+{"event": "admit", "record_id": "PPS-DEV-100", "reason": "lookahead", "time": 101234.095394305, "older_live_ids": ["PPS-DEV-098"], "live_source_tokens": 25712, "ready_tasks": 0, "inflight": 1}
+{"event": "record_complete", "record_id": "PPS-DEV-098", "time": 101235.504766033, "live_ids": ["PPS-DEV-100"]}
+{"event": "admit", "record_id": "PPS-DEV-101", "reason": "lookahead", "time": 101235.671995695, "older_live_ids": ["PPS-DEV-100"], "live_source_tokens": 31446, "ready_tasks": 11, "inflight": 0}
+{"event": "admit", "record_id": "PPS-DEV-102", "reason": "lookahead", "time": 101236.969217974, "older_live_ids": ["PPS-DEV-100", "PPS-DEV-101"], "live_source_tokens": 40399, "ready_tasks": 1, "inflight": 15}
+{"event": "record_complete", "record_id": "PPS-DEV-100", "time": 101237.821951632, "live_ids": ["PPS-DEV-101", "PPS-DEV-102"]}
+{"event": "admit", "record_id": "PPS-DEV-103", "reason": "lookahead", "time": 101238.197088568, "older_live_ids": ["PPS-DEV-101", "PPS-DEV-102"], "live_source_tokens": 46688, "ready_tasks": 1, "inflight": 15}
+{"event": "admission_blocked", "record_id": "PPS-DEV-104", "reason": "record_window", "time": 101240.562142174, "live_ids": ["PPS-DEV-101", "PPS-DEV-102", "PPS-DEV-103"], "prospective_source_tokens": 52328}
+{"event": "record_complete", "record_id": "PPS-DEV-101", "time": 101240.858684891, "live_ids": ["PPS-DEV-102", "PPS-DEV-103"]}
+{"event": "admit", "record_id": "PPS-DEV-104", "reason": "lookahead", "time": 101240.860570024, "older_live_ids": ["PPS-DEV-102", "PPS-DEV-103"], "live_source_tokens": 40247, "ready_tasks": 0, "inflight": 12}
+{"event": "record_complete", "record_id": "PPS-DEV-102", "time": 101241.259060782, "live_ids": ["PPS-DEV-103", "PPS-DEV-104"]}
+{"event": "admit", "record_id": "PPS-DEV-105", "reason": "lookahead", "time": 101241.648696055, "older_live_ids": ["PPS-DEV-103", "PPS-DEV-104"], "live_source_tokens": 41285, "ready_tasks": 11, "inflight": 3}
+{"event": "record_complete", "record_id": "PPS-DEV-103", "time": 101242.564668653, "live_ids": ["PPS-DEV-104", "PPS-DEV-105"]}
+{"event": "admit", "record_id": "PPS-DEV-106", "reason": "lookahead", "time": 101242.796240612, "older_live_ids": ["PPS-DEV-104", "PPS-DEV-105"], "live_source_tokens": 31851, "ready_tasks": 1, "inflight": 14}
+{"event": "admission_blocked", "record_id": "PPS-DEV-107", "reason": "record_window", "time": 101244.267666079, "live_ids": ["PPS-DEV-104", "PPS-DEV-105", "PPS-DEV-106"], "prospective_source_tokens": 39297}
+{"event": "record_complete", "record_id": "PPS-DEV-105", "time": 101244.850494038, "live_ids": ["PPS-DEV-104", "PPS-DEV-106"]}
+{"event": "admit", "record_id": "PPS-DEV-107", "reason": "lookahead", "time": 101244.852493798, "older_live_ids": ["PPS-DEV-104", "PPS-DEV-106"], "live_source_tokens": 29306, "ready_tasks": 0, "inflight": 7}
+{"event": "admission_blocked", "record_id": "PPS-DEV-108", "reason": "record_window", "time": 101245.619359892, "live_ids": ["PPS-DEV-104", "PPS-DEV-106", "PPS-DEV-107"], "prospective_source_tokens": 35423}
+{"event": "record_complete", "record_id": "PPS-DEV-106", "time": 101245.716817168, "live_ids": ["PPS-DEV-104", "PPS-DEV-107"]}
+{"event": "admit", "record_id": "PPS-DEV-108", "reason": "lookahead", "time": 101245.720328698, "older_live_ids": ["PPS-DEV-104", "PPS-DEV-107"], "live_source_tokens": 19203, "ready_tasks": 0, "inflight": 12}
+{"event": "admission_blocked", "record_id": "PPS-DEV-109", "reason": "record_window", "time": 101246.547088391, "live_ids": ["PPS-DEV-104", "PPS-DEV-107", "PPS-DEV-108"], "prospective_source_tokens": 43933}
+{"event": "record_complete", "record_id": "PPS-DEV-107", "time": 101246.962188747, "live_ids": ["PPS-DEV-104", "PPS-DEV-108"]}
+{"event": "admit", "record_id": "PPS-DEV-109", "reason": "lookahead", "time": 101246.964151477, "older_live_ids": ["PPS-DEV-104", "PPS-DEV-108"], "live_source_tokens": 36487, "ready_tasks": 0, "inflight": 7}
+{"event": "record_complete", "record_id": "PPS-DEV-108", "time": 101249.138048645, "live_ids": ["PPS-DEV-104", "PPS-DEV-109"]}
+{"event": "admit", "record_id": "PPS-DEV-110", "reason": "lookahead", "time": 101249.168794931, "older_live_ids": ["PPS-DEV-104", "PPS-DEV-109"], "live_source_tokens": 37358, "ready_tasks": 11, "inflight": 1}
+{"event": "admission_blocked", "record_id": "PPS-DEV-111", "reason": "record_window", "time": 101250.239888643, "live_ids": ["PPS-DEV-104", "PPS-DEV-109", "PPS-DEV-110"], "prospective_source_tokens": 45677}
+{"event": "record_complete", "record_id": "PPS-DEV-104", "time": 101250.561789122, "live_ids": ["PPS-DEV-109", "PPS-DEV-110"]}
+{"event": "admit", "record_id": "PPS-DEV-111", "reason": "lookahead", "time": 101250.563274673, "older_live_ids": ["PPS-DEV-109", "PPS-DEV-110"], "live_source_tokens": 40037, "ready_tasks": 0, "inflight": 12}
+{"event": "record_complete", "record_id": "PPS-DEV-109", "time": 101251.084739741, "live_ids": ["PPS-DEV-110", "PPS-DEV-111"]}
+{"event": "admit", "record_id": "PPS-DEV-112", "reason": "lookahead", "time": 101251.403479131, "older_live_ids": ["PPS-DEV-110", "PPS-DEV-111"], "live_source_tokens": 26604, "ready_tasks": 11, "inflight": 2}
+{"event": "admission_blocked", "record_id": "PPS-DEV-113", "reason": "record_window", "time": 101252.595303422, "live_ids": ["PPS-DEV-110", "PPS-DEV-111", "PPS-DEV-112"], "prospective_source_tokens": 30470}
+{"event": "record_complete", "record_id": "PPS-DEV-110", "time": 101253.017023512, "live_ids": ["PPS-DEV-111", "PPS-DEV-112"]}
+{"event": "admit", "record_id": "PPS-DEV-113", "reason": "lookahead", "time": 101253.018048936, "older_live_ids": ["PPS-DEV-111", "PPS-DEV-112"], "live_source_tokens": 23482, "ready_tasks": 0, "inflight": 8}
+{"event": "record_complete", "record_id": "PPS-DEV-111", "time": 101253.040077346, "live_ids": ["PPS-DEV-112", "PPS-DEV-113"]}
+{"event": "admit", "record_id": "PPS-DEV-114", "reason": "lookahead", "time": 101253.606029709, "older_live_ids": ["PPS-DEV-112", "PPS-DEV-113"], "live_source_tokens": 18862, "ready_tasks": 11, "inflight": 3}
+{"event": "record_complete", "record_id": "PPS-DEV-112", "time": 101254.323954268, "live_ids": ["PPS-DEV-113", "PPS-DEV-114"]}
+{"event": "admit", "record_id": "PPS-DEV-115", "reason": "lookahead", "time": 101254.326170676, "older_live_ids": ["PPS-DEV-113", "PPS-DEV-114"], "live_source_tokens": 12846, "ready_tasks": 2, "inflight": 14}
+{"event": "record_complete", "record_id": "PPS-DEV-113", "time": 101254.96229143, "live_ids": ["PPS-DEV-114", "PPS-DEV-115"]}
+{"event": "admit", "record_id": "PPS-DEV-116", "reason": "lookahead", "time": 101255.09818933, "older_live_ids": ["PPS-DEV-114", "PPS-DEV-115"], "live_source_tokens": 15389, "ready_tasks": 1, "inflight": 15}
+{"event": "record_complete", "record_id": "PPS-DEV-114", "time": 101255.747645787, "live_ids": ["PPS-DEV-115", "PPS-DEV-116"]}
+{"event": "admit", "record_id": "PPS-DEV-117", "reason": "lookahead", "time": 101255.871358223, "older_live_ids": ["PPS-DEV-115", "PPS-DEV-116"], "live_source_tokens": 24220, "ready_tasks": 11, "inflight": 2}
+{"event": "record_complete", "record_id": "PPS-DEV-115", "time": 101256.910145602, "live_ids": ["PPS-DEV-116", "PPS-DEV-117"]}
+{"event": "admit", "record_id": "PPS-DEV-118", "reason": "lookahead", "time": 101257.143022448, "older_live_ids": ["PPS-DEV-116", "PPS-DEV-117"], "live_source_tokens": 24078, "ready_tasks": 1, "inflight": 15}
+{"event": "record_complete", "record_id": "PPS-DEV-116", "time": 101257.7695765, "live_ids": ["PPS-DEV-117", "PPS-DEV-118"]}
+{"event": "admit", "record_id": "PPS-DEV-119", "reason": "lookahead", "time": 101257.954495781, "older_live_ids": ["PPS-DEV-117", "PPS-DEV-118"], "live_source_tokens": 44294, "ready_tasks": 1, "inflight": 14}
+{"event": "admission_blocked", "record_id": "PPS-DEV-120", "reason": "record_window", "time": 101260.426567252, "live_ids": ["PPS-DEV-117", "PPS-DEV-118", "PPS-DEV-119"], "prospective_source_tokens": 47511}
+{"event": "record_complete", "record_id": "PPS-DEV-118", "time": 101261.04410008, "live_ids": ["PPS-DEV-117", "PPS-DEV-119"]}
+{"event": "admit", "record_id": "PPS-DEV-120", "reason": "lookahead", "time": 101261.04548455, "older_live_ids": ["PPS-DEV-117", "PPS-DEV-119"], "live_source_tokens": 42372, "ready_tasks": 0, "inflight": 11}
+{"event": "admission_blocked", "record_id": "PPS-DEV-121", "reason": "record_window", "time": 101261.677416575, "live_ids": ["PPS-DEV-117", "PPS-DEV-119", "PPS-DEV-120"], "prospective_source_tokens": 66498}
+{"event": "record_complete", "record_id": "PPS-DEV-119", "time": 101261.852736831, "live_ids": ["PPS-DEV-117", "PPS-DEV-120"]}
+{"event": "admit", "record_id": "PPS-DEV-121", "reason": "lookahead", "time": 101261.857624405, "older_live_ids": ["PPS-DEV-117", "PPS-DEV-120"], "live_source_tokens": 39873, "ready_tasks": 0, "inflight": 12}
+{"event": "admission_blocked", "record_id": "PPS-DEV-122", "reason": "record_window", "time": 101264.009974967, "live_ids": ["PPS-DEV-117", "PPS-DEV-120", "PPS-DEV-121"], "prospective_source_tokens": 54863}
+{"event": "record_complete", "record_id": "PPS-DEV-117", "time": 101264.380446568, "live_ids": ["PPS-DEV-120", "PPS-DEV-121"]}
+{"event": "admit", "record_id": "PPS-DEV-122", "reason": "lookahead", "time": 101264.383293515, "older_live_ids": ["PPS-DEV-120", "PPS-DEV-121"], "live_source_tokens": 42333, "ready_tasks": 0, "inflight": 12}
+{"event": "record_complete", "record_id": "PPS-DEV-120", "time": 101265.281914802, "live_ids": ["PPS-DEV-121", "PPS-DEV-122"]}
+{"event": "admission_blocked", "record_id": "PPS-DEV-123", "reason": "source_token_budget", "time": 101265.716448782, "live_ids": ["PPS-DEV-121", "PPS-DEV-122"], "prospective_source_tokens": 61074}
+{"event": "record_complete", "record_id": "PPS-DEV-121", "time": 101266.131826987, "live_ids": ["PPS-DEV-122"]}
+{"event": "admit", "record_id": "PPS-DEV-123", "reason": "lookahead", "time": 101266.135601984, "older_live_ids": ["PPS-DEV-122"], "live_source_tokens": 36948, "ready_tasks": 0, "inflight": 11}
+{"event": "admit", "record_id": "PPS-DEV-124", "reason": "lookahead", "time": 101268.035630703, "older_live_ids": ["PPS-DEV-122", "PPS-DEV-123"], "live_source_tokens": 43513, "ready_tasks": 11, "inflight": 1}
+{"event": "record_complete", "record_id": "PPS-DEV-122", "time": 101268.557333208, "live_ids": ["PPS-DEV-123", "PPS-DEV-124"]}
+{"event": "admit", "record_id": "PPS-DEV-125", "reason": "lookahead", "time": 101269.027455667, "older_live_ids": ["PPS-DEV-123", "PPS-DEV-124"], "live_source_tokens": 44695, "ready_tasks": 1, "inflight": 15}
+{"event": "record_complete", "record_id": "PPS-DEV-123", "time": 101270.387419129, "live_ids": ["PPS-DEV-124", "PPS-DEV-125"]}
+{"event": "admit", "record_id": "PPS-DEV-126", "reason": "lookahead", "time": 101270.495482586, "older_live_ids": ["PPS-DEV-124", "PPS-DEV-125"], "live_source_tokens": 30084, "ready_tasks": 11, "inflight": 3}
+{"event": "record_complete", "record_id": "PPS-DEV-124", "time": 101271.308869157, "live_ids": ["PPS-DEV-125", "PPS-DEV-126"]}
+{"event": "admit", "record_id": "PPS-DEV-127", "reason": "lookahead", "time": 101271.491966739, "older_live_ids": ["PPS-DEV-125", "PPS-DEV-126"], "live_source_tokens": 32835, "ready_tasks": 1, "inflight": 15}
+{"event": "record_complete", "record_id": "PPS-DEV-125", "time": 101272.351116351, "live_ids": ["PPS-DEV-126", "PPS-DEV-127"]}
+{"event": "admit", "record_id": "PPS-DEV-128", "reason": "lookahead", "time": 101272.449028108, "older_live_ids": ["PPS-DEV-126", "PPS-DEV-127"], "live_source_tokens": 22135, "ready_tasks": 11, "inflight": 3}
+{"event": "record_complete", "record_id": "PPS-DEV-126", "time": 101273.117637908, "live_ids": ["PPS-DEV-127", "PPS-DEV-128"]}
+{"event": "admit", "record_id": "PPS-DEV-129", "reason": "lookahead", "time": 101273.268712776, "older_live_ids": ["PPS-DEV-127", "PPS-DEV-128"], "live_source_tokens": 30244, "ready_tasks": 1, "inflight": 15}
+{"event": "record_complete", "record_id": "PPS-DEV-127", "time": 101274.531189513, "live_ids": ["PPS-DEV-128", "PPS-DEV-129"]}
+{"event": "admit", "record_id": "PPS-DEV-130", "reason": "lookahead", "time": 101274.633220657, "older_live_ids": ["PPS-DEV-128", "PPS-DEV-129"], "live_source_tokens": 24974, "ready_tasks": 11, "inflight": 3}
+{"event": "admission_blocked", "record_id": "PPS-DEV-131", "reason": "record_window", "time": 101275.499478606, "live_ids": ["PPS-DEV-128", "PPS-DEV-129", "PPS-DEV-130"], "prospective_source_tokens": 29293}
+{"event": "record_complete", "record_id": "PPS-DEV-128", "time": 101275.697167148, "live_ids": ["PPS-DEV-129", "PPS-DEV-130"]}
+{"event": "admit", "record_id": "PPS-DEV-131", "reason": "lookahead", "time": 101275.698254979, "older_live_ids": ["PPS-DEV-129", "PPS-DEV-130"], "live_source_tokens": 23821, "ready_tasks": 0, "inflight": 13}
+{"event": "record_complete", "record_id": "PPS-DEV-129", "time": 101276.118522379, "live_ids": ["PPS-DEV-130", "PPS-DEV-131"]}
+{"event": "admit", "record_id": "PPS-DEV-132", "reason": "lookahead", "time": 101276.331493796, "older_live_ids": ["PPS-DEV-130", "PPS-DEV-131"], "live_source_tokens": 20946, "ready_tasks": 11, "inflight": 3}
+{"event": "admission_blocked", "record_id": "PPS-DEV-133", "reason": "record_window", "time": 101277.624470662, "live_ids": ["PPS-DEV-130", "PPS-DEV-131", "PPS-DEV-132"], "prospective_source_tokens": 32475}
+{"event": "record_complete", "record_id": "PPS-DEV-131", "time": 101278.06390967, "live_ids": ["PPS-DEV-130", "PPS-DEV-132"]}
+{"event": "admit", "record_id": "PPS-DEV-133", "reason": "lookahead", "time": 101278.06534729, "older_live_ids": ["PPS-DEV-130", "PPS-DEV-132"], "live_source_tokens": 28156, "ready_tasks": 0, "inflight": 7}
+{"event": "record_complete", "record_id": "PPS-DEV-132", "time": 101279.077958031, "live_ids": ["PPS-DEV-130", "PPS-DEV-133"]}
+{"event": "admit", "record_id": "PPS-DEV-134", "reason": "lookahead", "time": 101279.080884698, "older_live_ids": ["PPS-DEV-130", "PPS-DEV-133"], "live_source_tokens": 21656, "ready_tasks": 11, "inflight": 1}
+{"event": "record_complete", "record_id": "PPS-DEV-130", "time": 101279.597580064, "live_ids": ["PPS-DEV-133", "PPS-DEV-134"]}
+{"event": "admit", "record_id": "PPS-DEV-135", "reason": "lookahead", "time": 101279.99500446, "older_live_ids": ["PPS-DEV-133", "PPS-DEV-134"], "live_source_tokens": 36068, "ready_tasks": 1, "inflight": 13}
+{"event": "admission_blocked", "record_id": "PPS-DEV-136", "reason": "record_window", "time": 101281.624020362, "live_ids": ["PPS-DEV-133", "PPS-DEV-134", "PPS-DEV-135"], "prospective_source_tokens": 54328}
+{"event": "record_complete", "record_id": "PPS-DEV-133", "time": 101281.966473069, "live_ids": ["PPS-DEV-134", "PPS-DEV-135"]}
+{"event": "admit", "record_id": "PPS-DEV-136", "reason": "lookahead", "time": 101281.969005444, "older_live_ids": ["PPS-DEV-134", "PPS-DEV-135"], "live_source_tokens": 42799, "ready_tasks": 0, "inflight": 12}
+{"event": "record_complete", "record_id": "PPS-DEV-134", "time": 101283.226586029, "live_ids": ["PPS-DEV-135", "PPS-DEV-136"]}
+{"event": "admission_blocked", "record_id": "PPS-DEV-137", "reason": "source_token_budget", "time": 101283.571267801, "live_ids": ["PPS-DEV-135", "PPS-DEV-136"], "prospective_source_tokens": 57577}
+{"event": "record_complete", "record_id": "PPS-DEV-135", "time": 101284.1424884, "live_ids": ["PPS-DEV-136"]}
+{"event": "admit", "record_id": "PPS-DEV-137", "reason": "lookahead", "time": 101284.146639166, "older_live_ids": ["PPS-DEV-136"], "live_source_tokens": 39119, "ready_tasks": 0, "inflight": 8}
+{"event": "admission_blocked", "record_id": "PPS-DEV-138", "reason": "source_token_budget", "time": 101285.938378493, "live_ids": ["PPS-DEV-136", "PPS-DEV-137"], "prospective_source_tokens": 64229}
+{"event": "record_complete", "record_id": "PPS-DEV-136", "time": 101286.143437655, "live_ids": ["PPS-DEV-137"]}
+{"event": "admit", "record_id": "PPS-DEV-138", "reason": "lookahead", "time": 101286.14693551, "older_live_ids": ["PPS-DEV-137"], "live_source_tokens": 45969, "ready_tasks": 0, "inflight": 11}
+{"event": "admission_blocked", "record_id": "PPS-DEV-139", "reason": "source_token_budget", "time": 101288.456781879, "live_ids": ["PPS-DEV-137", "PPS-DEV-138"], "prospective_source_tokens": 57323}
+{"event": "record_complete", "record_id": "PPS-DEV-137", "time": 101289.149309964, "live_ids": ["PPS-DEV-138"]}
+{"event": "admit", "record_id": "PPS-DEV-139", "reason": "lookahead", "time": 101289.152192148, "older_live_ids": ["PPS-DEV-138"], "live_source_tokens": 36464, "ready_tasks": 0, "inflight": 6}
+{"event": "admission_blocked", "record_id": "PPS-DEV-140", "reason": "source_token_budget", "time": 101290.205044843, "live_ids": ["PPS-DEV-138", "PPS-DEV-139"], "prospective_source_tokens": 61546}
+{"event": "record_complete", "record_id": "PPS-DEV-138", "time": 101290.417599138, "live_ids": ["PPS-DEV-139"]}
+{"event": "admit", "record_id": "PPS-DEV-140", "reason": "lookahead", "time": 101290.421924603, "older_live_ids": ["PPS-DEV-139"], "live_source_tokens": 36436, "ready_tasks": 0, "inflight": 11}
+{"event": "admit", "record_id": "PPS-DEV-141", "reason": "lookahead", "time": 101292.69591114, "older_live_ids": ["PPS-DEV-139", "PPS-DEV-140"], "live_source_tokens": 42486, "ready_tasks": 11, "inflight": 2}
+{"event": "record_complete", "record_id": "PPS-DEV-139", "time": 101293.394878902, "live_ids": ["PPS-DEV-140", "PPS-DEV-141"]}
+{"event": "admit", "record_id": "PPS-DEV-142", "reason": "lookahead", "time": 101293.688406464, "older_live_ids": ["PPS-DEV-140", "PPS-DEV-141"], "live_source_tokens": 34320, "ready_tasks": 1, "inflight": 15}
+{"event": "admission_blocked", "record_id": "PPS-DEV-143", "reason": "record_window", "time": 101294.464443282, "live_ids": ["PPS-DEV-140", "PPS-DEV-141", "PPS-DEV-142"], "prospective_source_tokens": 62603}
+{"event": "record_complete", "record_id": "PPS-DEV-141", "time": 101294.965195002, "live_ids": ["PPS-DEV-140", "PPS-DEV-142"]}
+{"event": "admission_blocked", "record_id": "PPS-DEV-143", "reason": "source_token_budget", "time": 101294.966744934, "live_ids": ["PPS-DEV-140", "PPS-DEV-142"], "prospective_source_tokens": 56553}
+{"event": "record_complete", "record_id": "PPS-DEV-140", "time": 101295.860628942, "live_ids": ["PPS-DEV-142"]}
+{"event": "admit", "record_id": "PPS-DEV-143", "reason": "lookahead", "time": 101295.866308089, "older_live_ids": ["PPS-DEV-142"], "live_source_tokens": 31471, "ready_tasks": 0, "inflight": 2}
+{"event": "record_complete", "record_id": "PPS-DEV-142", "time": 101298.006707556, "live_ids": ["PPS-DEV-143"]}
+{"event": "admit", "record_id": "PPS-DEV-144", "reason": "lookahead", "time": 101298.34407161, "older_live_ids": ["PPS-DEV-143"], "live_source_tokens": 34633, "ready_tasks": 11, "inflight": 0}
+{"event": "admission_blocked", "record_id": "PPS-DEV-145", "reason": "source_token_budget", "time": 101299.388731284, "live_ids": ["PPS-DEV-143", "PPS-DEV-144"], "prospective_source_tokens": 62800}
+{"event": "record_complete", "record_id": "PPS-DEV-143", "time": 101300.141778885, "live_ids": ["PPS-DEV-144"]}
+{"event": "admit", "record_id": "PPS-DEV-145", "reason": "lookahead", "time": 101300.148410388, "older_live_ids": ["PPS-DEV-144"], "live_source_tokens": 34517, "ready_tasks": 0, "inflight": 2}
+{"event": "record_complete", "record_id": "PPS-DEV-144", "time": 101302.402428988, "live_ids": ["PPS-DEV-145"]}
+{"event": "admit", "record_id": "PPS-DEV-146", "reason": "lookahead", "time": 101302.633117067, "older_live_ids": ["PPS-DEV-145"], "live_source_tokens": 34909, "ready_tasks": 11, "inflight": 0}
+{"event": "admission_blocked", "record_id": "PPS-DEV-147", "reason": "source_token_budget", "time": 101303.654356591, "live_ids": ["PPS-DEV-145", "PPS-DEV-146"], "prospective_source_tokens": 61714}
+{"event": "record_complete", "record_id": "PPS-DEV-145", "time": 101304.180810067, "live_ids": ["PPS-DEV-146"]}
+{"event": "admit", "record_id": "PPS-DEV-147", "reason": "lookahead", "time": 101304.18653496, "older_live_ids": ["PPS-DEV-146"], "live_source_tokens": 33547, "ready_tasks": 0, "inflight": 6}
+{"event": "record_complete", "record_id": "PPS-DEV-146", "time": 101306.497486258, "live_ids": ["PPS-DEV-147"]}
+{"event": "admit", "record_id": "PPS-DEV-148", "reason": "lookahead", "time": 101306.56005691, "older_live_ids": ["PPS-DEV-147"], "live_source_tokens": 33323, "ready_tasks": 11, "inflight": 0}
+{"event": "admit", "record_id": "PPS-DEV-149", "reason": "lookahead", "time": 101307.568335345, "older_live_ids": ["PPS-DEV-147", "PPS-DEV-148"], "live_source_tokens": 41837, "ready_tasks": 1, "inflight": 15}
+{"event": "record_complete", "record_id": "PPS-DEV-147", "time": 101308.517466615, "live_ids": ["PPS-DEV-148", "PPS-DEV-149"]}
+{"event": "admit", "record_id": "PPS-DEV-150", "reason": "lookahead", "time": 101308.557662561, "older_live_ids": ["PPS-DEV-148", "PPS-DEV-149"], "live_source_tokens": 18206, "ready_tasks": 11, "inflight": 4}
+{"event": "admission_blocked", "record_id": "PPS-DEV-151", "reason": "record_window", "time": 101309.323926303, "live_ids": ["PPS-DEV-148", "PPS-DEV-149", "PPS-DEV-150"], "prospective_source_tokens": 27681}
+{"event": "record_complete", "record_id": "PPS-DEV-149", "time": 101309.776547661, "live_ids": ["PPS-DEV-148", "PPS-DEV-150"]}
+{"event": "admit", "record_id": "PPS-DEV-151", "reason": "lookahead", "time": 101309.778058178, "older_live_ids": ["PPS-DEV-148", "PPS-DEV-150"], "live_source_tokens": 19167, "ready_tasks": 0, "inflight": 7}
+{"event": "record_complete", "record_id": "PPS-DEV-150", "time": 101310.583246523, "live_ids": ["PPS-DEV-148", "PPS-DEV-151"]}
+{"event": "admit", "record_id": "PPS-DEV-152", "reason": "lookahead", "time": 101310.643579906, "older_live_ids": ["PPS-DEV-148", "PPS-DEV-151"], "live_source_tokens": 23044, "ready_tasks": 11, "inflight": 1}
+{"event": "admission_blocked", "record_id": "PPS-DEV-153", "reason": "record_window", "time": 101311.568157228, "live_ids": ["PPS-DEV-148", "PPS-DEV-151", "PPS-DEV-152"], "prospective_source_tokens": 49433}
+{"event": "record_complete", "record_id": "PPS-DEV-151", "time": 101312.018418708, "live_ids": ["PPS-DEV-148", "PPS-DEV-152"]}
+{"event": "admit", "record_id": "PPS-DEV-153", "reason": "lookahead", "time": 101312.020234902, "older_live_ids": ["PPS-DEV-148", "PPS-DEV-152"], "live_source_tokens": 39958, "ready_tasks": 0, "inflight": 7}
+{"event": "record_complete", "record_id": "PPS-DEV-148", "time": 101313.738864898, "live_ids": ["PPS-DEV-152", "PPS-DEV-153"]}
+{"event": "admit", "record_id": "PPS-DEV-154", "reason": "lookahead", "time": 101314.375699698, "older_live_ids": ["PPS-DEV-152", "PPS-DEV-153"], "live_source_tokens": 38990, "ready_tasks": 11, "inflight": 1}
+{"event": "admission_blocked", "record_id": "PPS-DEV-155", "reason": "record_window", "time": 101315.39462888, "live_ids": ["PPS-DEV-152", "PPS-DEV-153", "PPS-DEV-154"], "prospective_source_tokens": 66395}
+{"event": "record_complete", "record_id": "PPS-DEV-153", "time": 101316.029099816, "live_ids": ["PPS-DEV-152", "PPS-DEV-154"]}
+{"event": "admit", "record_id": "PPS-DEV-155", "reason": "lookahead", "time": 101316.03338725, "older_live_ids": ["PPS-DEV-152", "PPS-DEV-154"], "live_source_tokens": 40006, "ready_tasks": 0, "inflight": 3}
+{"event": "record_complete", "record_id": "PPS-DEV-154", "time": 101318.3163206, "live_ids": ["PPS-DEV-152", "PPS-DEV-155"]}
+{"event": "admit", "record_id": "PPS-DEV-156", "reason": "lookahead", "time": 101318.485395017, "older_live_ids": ["PPS-DEV-152", "PPS-DEV-155"], "live_source_tokens": 38897, "ready_tasks": 11, "inflight": 1}
+{"event": "admission_blocked", "record_id": "PPS-DEV-157", "reason": "record_window", "time": 101319.471710764, "live_ids": ["PPS-DEV-152", "PPS-DEV-155", "PPS-DEV-156"], "prospective_source_tokens": 56963}
+{"event": "record_complete", "record_id": "PPS-DEV-155", "time": 101319.988941556, "live_ids": ["PPS-DEV-152", "PPS-DEV-156"]}
+{"event": "admit", "record_id": "PPS-DEV-157", "reason": "lookahead", "time": 101319.994694022, "older_live_ids": ["PPS-DEV-152", "PPS-DEV-156"], "live_source_tokens": 29558, "ready_tasks": 0, "inflight": 8}
+{"event": "admission_blocked", "record_id": "PPS-DEV-158", "reason": "record_window", "time": 101321.542236928, "live_ids": ["PPS-DEV-152", "PPS-DEV-156", "PPS-DEV-157"], "prospective_source_tokens": 56475}
+{"event": "record_complete", "record_id": "PPS-DEV-152", "time": 101322.421373221, "live_ids": ["PPS-DEV-156", "PPS-DEV-157"]}
+{"event": "admission_blocked", "record_id": "PPS-DEV-158", "reason": "source_token_budget", "time": 101322.422952208, "live_ids": ["PPS-DEV-156", "PPS-DEV-157"], "prospective_source_tokens": 49424}
+{"event": "record_complete", "record_id": "PPS-DEV-157", "time": 101323.587507542, "live_ids": ["PPS-DEV-156"]}
+{"event": "admit", "record_id": "PPS-DEV-158", "reason": "lookahead", "time": 101323.591633942, "older_live_ids": ["PPS-DEV-156"], "live_source_tokens": 31358, "ready_tasks": 0, "inflight": 1}
+{"event": "admission_blocked", "record_id": "PPS-DEV-159", "reason": "source_token_budget", "time": 101325.964213593, "live_ids": ["PPS-DEV-156", "PPS-DEV-158"], "prospective_source_tokens": 48870}
+{"event": "record_complete", "record_id": "PPS-DEV-156", "time": 101326.278397128, "live_ids": ["PPS-DEV-158"]}
+{"event": "admit", "record_id": "PPS-DEV-159", "reason": "lookahead", "time": 101326.279349153, "older_live_ids": ["PPS-DEV-158"], "live_source_tokens": 44429, "ready_tasks": 0, "inflight": 11}
+{"event": "admission_blocked", "record_id": "PPS-DEV-160", "reason": "source_token_budget", "time": 101327.862978865, "live_ids": ["PPS-DEV-158", "PPS-DEV-159"], "prospective_source_tokens": 50120}
+{"event": "record_complete", "record_id": "PPS-DEV-158", "time": 101328.352884014, "live_ids": ["PPS-DEV-159"]}
+{"event": "admit", "record_id": "PPS-DEV-160", "reason": "lookahead", "time": 101328.358004638, "older_live_ids": ["PPS-DEV-159"], "live_source_tokens": 23203, "ready_tasks": 0, "inflight": 11}
+{"event": "admit", "record_id": "PPS-DEV-161", "reason": "lookahead", "time": 101329.093039235, "older_live_ids": ["PPS-DEV-159", "PPS-DEV-160"], "live_source_tokens": 40459, "ready_tasks": 11, "inflight": 2}
+{"event": "admission_blocked", "record_id": "PPS-DEV-162", "reason": "record_window", "time": 101330.802584113, "live_ids": ["PPS-DEV-159", "PPS-DEV-160", "PPS-DEV-161"], "prospective_source_tokens": 56266}
+{"event": "record_complete", "record_id": "PPS-DEV-159", "time": 101331.035028364, "live_ids": ["PPS-DEV-160", "PPS-DEV-161"]}
+{"event": "admit", "record_id": "PPS-DEV-162", "reason": "lookahead", "time": 101331.038693014, "older_live_ids": ["PPS-DEV-160", "PPS-DEV-161"], "live_source_tokens": 38754, "ready_tasks": 0, "inflight": 13}
+{"event": "record_complete", "record_id": "PPS-DEV-160", "time": 101332.104597593, "live_ids": ["PPS-DEV-161", "PPS-DEV-162"]}
+{"event": "admit", "record_id": "PPS-DEV-163", "reason": "lookahead", "time": 101332.445413647, "older_live_ids": ["PPS-DEV-161", "PPS-DEV-162"], "live_source_tokens": 44451, "ready_tasks": 11, "inflight": 1}
+{"event": "record_complete", "record_id": "PPS-DEV-161", "time": 101333.233587692, "live_ids": ["PPS-DEV-162", "PPS-DEV-163"]}
+{"event": "admit", "record_id": "PPS-DEV-164", "reason": "lookahead", "time": 101333.681302137, "older_live_ids": ["PPS-DEV-162", "PPS-DEV-163"], "live_source_tokens": 32197, "ready_tasks": 1, "inflight": 15}
+{"event": "record_complete", "record_id": "PPS-DEV-162", "time": 101334.30895692, "live_ids": ["PPS-DEV-163", "PPS-DEV-164"]}
+{"event": "admit", "record_id": "PPS-DEV-165", "reason": "lookahead", "time": 101334.419358788, "older_live_ids": ["PPS-DEV-163", "PPS-DEV-164"], "live_source_tokens": 37652, "ready_tasks": 11, "inflight": 5}
+{"event": "record_complete", "record_id": "PPS-DEV-163", "time": 101336.235088788, "live_ids": ["PPS-DEV-164", "PPS-DEV-165"]}
+{"event": "admit", "record_id": "PPS-DEV-166", "reason": "lookahead", "time": 101336.521089241, "older_live_ids": ["PPS-DEV-164", "PPS-DEV-165"], "live_source_tokens": 29771, "ready_tasks": 1, "inflight": 15}
+{"event": "record_complete", "record_id": "PPS-DEV-164", "time": 101337.171693758, "live_ids": ["PPS-DEV-165", "PPS-DEV-166"]}
+{"event": "admit", "record_id": "PPS-DEV-167", "reason": "lookahead", "time": 101337.254648776, "older_live_ids": ["PPS-DEV-165", "PPS-DEV-166"], "live_source_tokens": 29990, "ready_tasks": 11, "inflight": 5}
+{"event": "record_complete", "record_id": "PPS-DEV-165", "time": 101337.941414605, "live_ids": ["PPS-DEV-166", "PPS-DEV-167"]}
+{"event": "admit", "record_id": "PPS-DEV-168", "reason": "lookahead", "time": 101338.102228092, "older_live_ids": ["PPS-DEV-166", "PPS-DEV-167"], "live_source_tokens": 13212, "ready_tasks": 1, "inflight": 15}
+{"event": "record_complete", "record_id": "PPS-DEV-166", "time": 101338.680620868, "live_ids": ["PPS-DEV-167", "PPS-DEV-168"]}
+{"event": "admit", "record_id": "PPS-DEV-169", "reason": "lookahead", "time": 101338.832348394, "older_live_ids": ["PPS-DEV-167", "PPS-DEV-168"], "live_source_tokens": 37795, "ready_tasks": 2, "inflight": 12}
+{"event": "record_complete", "record_id": "PPS-DEV-167", "time": 101341.419575097, "live_ids": ["PPS-DEV-168", "PPS-DEV-169"]}
+{"event": "admit", "record_id": "PPS-DEV-170", "reason": "lookahead", "time": 101341.465914599, "older_live_ids": ["PPS-DEV-168", "PPS-DEV-169"], "live_source_tokens": 46404, "ready_tasks": 11, "inflight": 3}
+{"event": "record_complete", "record_id": "PPS-DEV-168", "time": 101342.738461505, "live_ids": ["PPS-DEV-169", "PPS-DEV-170"]}
+{"event": "admission_blocked", "record_id": "PPS-DEV-171", "reason": "source_token_budget", "time": 101343.015290177, "live_ids": ["PPS-DEV-169", "PPS-DEV-170"], "prospective_source_tokens": 68639}
+{"event": "record_complete", "record_id": "PPS-DEV-169", "time": 101343.515734079, "live_ids": ["PPS-DEV-170"]}
+{"event": "admit", "record_id": "PPS-DEV-171", "reason": "lookahead", "time": 101343.521612021, "older_live_ids": ["PPS-DEV-170"], "live_source_tokens": 40549, "ready_tasks": 0, "inflight": 8}
+{"event": "admission_blocked", "record_id": "PPS-DEV-172", "reason": "source_token_budget", "time": 101345.925839042, "live_ids": ["PPS-DEV-170", "PPS-DEV-171"], "prospective_source_tokens": 50113}
+{"event": "record_complete", "record_id": "PPS-DEV-170", "time": 101346.179801231, "live_ids": ["PPS-DEV-171"]}
+{"event": "admit", "record_id": "PPS-DEV-172", "reason": "lookahead", "time": 101346.182780719, "older_live_ids": ["PPS-DEV-171"], "live_source_tokens": 36283, "ready_tasks": 0, "inflight": 11}
+{"event": "admission_blocked", "record_id": "PPS-DEV-173", "reason": "source_token_budget", "time": 101347.207195545, "live_ids": ["PPS-DEV-171", "PPS-DEV-172"], "prospective_source_tokens": 58864}
+{"event": "record_complete", "record_id": "PPS-DEV-171", "time": 101347.696909941, "live_ids": ["PPS-DEV-172"]}
+{"event": "admit", "record_id": "PPS-DEV-173", "reason": "lookahead", "time": 101347.702298842, "older_live_ids": ["PPS-DEV-172"], "live_source_tokens": 32145, "ready_tasks": 0, "inflight": 9}
+{"event": "admit", "record_id": "PPS-DEV-174", "reason": "lookahead", "time": 101349.651463957, "older_live_ids": ["PPS-DEV-172", "PPS-DEV-173"], "live_source_tokens": 35771, "ready_tasks": 11, "inflight": 1}
+{"event": "record_complete", "record_id": "PPS-DEV-172", "time": 101349.870839294, "live_ids": ["PPS-DEV-173", "PPS-DEV-174"]}
+{"event": "admit", "record_id": "PPS-DEV-175", "reason": "lookahead", "time": 101350.529141531, "older_live_ids": ["PPS-DEV-173", "PPS-DEV-174"], "live_source_tokens": 40479, "ready_tasks": 1, "inflight": 15}
+{"event": "record_complete", "record_id": "PPS-DEV-173", "time": 101351.747100928, "live_ids": ["PPS-DEV-174", "PPS-DEV-175"]}
+{"event": "admit", "record_id": "PPS-DEV-176", "reason": "lookahead", "time": 101351.859194338, "older_live_ids": ["PPS-DEV-174", "PPS-DEV-175"], "live_source_tokens": 26675, "ready_tasks": 11, "inflight": 2}
+{"event": "record_complete", "record_id": "PPS-DEV-174", "time": 101352.722574876, "live_ids": ["PPS-DEV-175", "PPS-DEV-176"]}
+{"event": "admit", "record_id": "PPS-DEV-177", "reason": "lookahead", "time": 101352.913672948, "older_live_ids": ["PPS-DEV-175", "PPS-DEV-176"], "live_source_tokens": 29686, "ready_tasks": 2, "inflight": 12}
+{"event": "admission_blocked", "record_id": "PPS-DEV-178", "reason": "record_window", "time": 101353.813644289, "live_ids": ["PPS-DEV-175", "PPS-DEV-176", "PPS-DEV-177"], "prospective_source_tokens": 48029}
+{"event": "record_complete", "record_id": "PPS-DEV-175", "time": 101354.404786598, "live_ids": ["PPS-DEV-176", "PPS-DEV-177"]}
+{"event": "admit", "record_id": "PPS-DEV-178", "reason": "lookahead", "time": 101354.407765044, "older_live_ids": ["PPS-DEV-176", "PPS-DEV-177"], "live_source_tokens": 33757, "ready_tasks": 0, "inflight": 3}
+{"event": "record_complete", "record_id": "PPS-DEV-177", "time": 101355.807452097, "live_ids": ["PPS-DEV-176", "PPS-DEV-178"]}
+{"event": "admit", "record_id": "PPS-DEV-179", "reason": "lookahead", "time": 101355.946796289, "older_live_ids": ["PPS-DEV-176", "PPS-DEV-178"], "live_source_tokens": 29900, "ready_tasks": 11, "inflight": 1}
+{"event": "admission_blocked", "record_id": "PPS-DEV-180", "reason": "record_window", "time": 101356.782966301, "live_ids": ["PPS-DEV-176", "PPS-DEV-178", "PPS-DEV-179"], "prospective_source_tokens": 40674}
+{"event": "record_complete", "record_id": "PPS-DEV-178", "time": 101357.251965493, "live_ids": ["PPS-DEV-176", "PPS-DEV-179"]}
+{"event": "admit", "record_id": "PPS-DEV-180", "reason": "lookahead", "time": 101357.256308261, "older_live_ids": ["PPS-DEV-176", "PPS-DEV-179"], "live_source_tokens": 22331, "ready_tasks": 0, "inflight": 7}
+{"event": "record_complete", "record_id": "PPS-DEV-179", "time": 101358.182621275, "live_ids": ["PPS-DEV-176", "PPS-DEV-180"]}
+{"event": "admit", "record_id": "PPS-DEV-181", "reason": "lookahead", "time": 101358.209488423, "older_live_ids": ["PPS-DEV-176", "PPS-DEV-180"], "live_source_tokens": 29116, "ready_tasks": 11, "inflight": 1}
+{"event": "record_complete", "record_id": "PPS-DEV-176", "time": 101358.720756125, "live_ids": ["PPS-DEV-180", "PPS-DEV-181"]}
+{"event": "admit", "record_id": "PPS-DEV-182", "reason": "lookahead", "time": 101359.288602246, "older_live_ids": ["PPS-DEV-180", "PPS-DEV-181"], "live_source_tokens": 24295, "ready_tasks": 1, "inflight": 14}
+{"event": "admission_blocked", "record_id": "PPS-DEV-183", "reason": "record_window", "time": 101360.027689462, "live_ids": ["PPS-DEV-180", "PPS-DEV-181", "PPS-DEV-182"], "prospective_source_tokens": 35094}
+{"event": "record_complete", "record_id": "PPS-DEV-181", "time": 101360.464651451, "live_ids": ["PPS-DEV-180", "PPS-DEV-182"]}
+{"event": "admit", "record_id": "PPS-DEV-183", "reason": "lookahead", "time": 101360.466573615, "older_live_ids": ["PPS-DEV-180", "PPS-DEV-182"], "live_source_tokens": 25529, "ready_tasks": 0, "inflight": 7}
+{"event": "record_complete", "record_id": "PPS-DEV-182", "time": 101361.428282423, "live_ids": ["PPS-DEV-180", "PPS-DEV-183"]}
+{"event": "admit", "record_id": "PPS-DEV-184", "reason": "lookahead", "time": 101361.42932539, "older_live_ids": ["PPS-DEV-180", "PPS-DEV-183"], "live_source_tokens": 27209, "ready_tasks": 11, "inflight": 1}
+{"event": "admission_blocked", "record_id": "PPS-DEV-185", "reason": "record_window", "time": 101362.283594021, "live_ids": ["PPS-DEV-180", "PPS-DEV-183", "PPS-DEV-184"], "prospective_source_tokens": 44174}
+{"event": "record_complete", "record_id": "PPS-DEV-183", "time": 101362.734467813, "live_ids": ["PPS-DEV-180", "PPS-DEV-184"]}
+{"event": "admit", "record_id": "PPS-DEV-185", "reason": "lookahead", "time": 101362.736955874, "older_live_ids": ["PPS-DEV-180", "PPS-DEV-184"], "live_source_tokens": 33375, "ready_tasks": 0, "inflight": 7}
+{"event": "record_complete", "record_id": "PPS-DEV-184", "time": 101364.139534218, "live_ids": ["PPS-DEV-180", "PPS-DEV-185"]}
+{"event": "admit", "record_id": "PPS-DEV-186", "reason": "lookahead", "time": 101364.167993718, "older_live_ids": ["PPS-DEV-180", "PPS-DEV-185"], "live_source_tokens": 35880, "ready_tasks": 11, "inflight": 1}
+{"event": "admission_blocked", "record_id": "PPS-DEV-187", "reason": "record_window", "time": 101365.216933488, "live_ids": ["PPS-DEV-180", "PPS-DEV-185", "PPS-DEV-186"], "prospective_source_tokens": 41811}
+{"event": "record_complete", "record_id": "PPS-DEV-185", "time": 101365.692982239, "live_ids": ["PPS-DEV-180", "PPS-DEV-186"]}
+{"event": "admit", "record_id": "PPS-DEV-187", "reason": "lookahead", "time": 101365.695849204, "older_live_ids": ["PPS-DEV-180", "PPS-DEV-186"], "live_source_tokens": 24846, "ready_tasks": 0, "inflight": 7}
+{"event": "admission_blocked", "record_id": "PPS-DEV-188", "reason": "record_window", "time": 101366.371864463, "live_ids": ["PPS-DEV-180", "PPS-DEV-186", "PPS-DEV-187"], "prospective_source_tokens": 46536}
+{"event": "record_complete", "record_id": "PPS-DEV-186", "time": 101366.459132258, "live_ids": ["PPS-DEV-180", "PPS-DEV-187"]}
+{"event": "admit", "record_id": "PPS-DEV-188", "reason": "lookahead", "time": 101366.462113198, "older_live_ids": ["PPS-DEV-180", "PPS-DEV-187"], "live_source_tokens": 38395, "ready_tasks": 0, "inflight": 12}
+{"event": "admission_blocked", "record_id": "PPS-DEV-189", "reason": "record_window", "time": 101368.43273057, "live_ids": ["PPS-DEV-180", "PPS-DEV-187", "PPS-DEV-188"], "prospective_source_tokens": 49671}
+{"event": "record_complete", "record_id": "PPS-DEV-187", "time": 101369.390853811, "live_ids": ["PPS-DEV-180", "PPS-DEV-188"]}
+{"event": "admit", "record_id": "PPS-DEV-189", "reason": "lookahead", "time": 101369.392490257, "older_live_ids": ["PPS-DEV-180", "PPS-DEV-188"], "live_source_tokens": 43740, "ready_tasks": 0, "inflight": 2}
+{"event": "record_complete", "record_id": "PPS-DEV-188", "time": 101370.150518388, "live_ids": ["PPS-DEV-180", "PPS-DEV-189"]}
+{"event": "record_complete", "record_id": "PPS-DEV-180", "time": 101370.362899756, "live_ids": ["PPS-DEV-189"]}
+{"event": "admit", "record_id": "PPS-DEV-190", "reason": "lookahead", "time": 101370.370595215, "older_live_ids": ["PPS-DEV-189"], "live_source_tokens": 19545, "ready_tasks": 11, "inflight": 0}
+{"event": "admit", "record_id": "PPS-DEV-191", "reason": "lookahead", "time": 101371.357788171, "older_live_ids": ["PPS-DEV-189", "PPS-DEV-190"], "live_source_tokens": 40501, "ready_tasks": 1, "inflight": 15}
+{"event": "record_complete", "record_id": "PPS-DEV-189", "time": 101373.098149588, "live_ids": ["PPS-DEV-190", "PPS-DEV-191"]}
+{"event": "admit", "record_id": "PPS-DEV-192", "reason": "lookahead", "time": 101373.240124705, "older_live_ids": ["PPS-DEV-190", "PPS-DEV-191"], "live_source_tokens": 35771, "ready_tasks": 11, "inflight": 2}
+{"event": "record_complete", "record_id": "PPS-DEV-190", "time": 101374.025168109, "live_ids": ["PPS-DEV-191", "PPS-DEV-192"]}
+{"event": "admit", "record_id": "PPS-DEV-193", "reason": "lookahead", "time": 101374.298887572, "older_live_ids": ["PPS-DEV-191", "PPS-DEV-192"], "live_source_tokens": 37763, "ready_tasks": 1, "inflight": 15}
+{"event": "admission_blocked", "record_id": "PPS-DEV-194", "reason": "record_window", "time": 101375.365989644, "live_ids": ["PPS-DEV-191", "PPS-DEV-192", "PPS-DEV-193"], "prospective_source_tokens": 48066}
+{"event": "record_complete", "record_id": "PPS-DEV-192", "time": 101375.887150604, "live_ids": ["PPS-DEV-191", "PPS-DEV-193"]}
+{"event": "admit", "record_id": "PPS-DEV-194", "reason": "lookahead", "time": 101375.88845309, "older_live_ids": ["PPS-DEV-191", "PPS-DEV-193"], "live_source_tokens": 41520, "ready_tasks": 0, "inflight": 8}
+{"event": "admission_blocked", "record_id": "PPS-DEV-195", "reason": "record_window", "time": 101376.86641058, "live_ids": ["PPS-DEV-191", "PPS-DEV-193", "PPS-DEV-194"], "prospective_source_tokens": 58126}
+{"event": "record_complete", "record_id": "PPS-DEV-193", "time": 101376.982737016, "live_ids": ["PPS-DEV-191", "PPS-DEV-194"]}
+{"event": "admit", "record_id": "PPS-DEV-195", "reason": "lookahead", "time": 101376.984760832, "older_live_ids": ["PPS-DEV-191", "PPS-DEV-194"], "live_source_tokens": 47865, "ready_tasks": 0, "inflight": 12}
+{"event": "record_complete", "record_id": "PPS-DEV-191", "time": 101378.473949554, "live_ids": ["PPS-DEV-194", "PPS-DEV-195"]}
+{"event": "admit", "record_id": "PPS-DEV-196", "reason": "lookahead", "time": 101378.477819591, "older_live_ids": ["PPS-DEV-194", "PPS-DEV-195"], "live_source_tokens": 36805, "ready_tasks": 11, "inflight": 3}
+{"event": "record_complete", "record_id": "PPS-DEV-194", "time": 101379.536377099, "live_ids": ["PPS-DEV-195", "PPS-DEV-196"]}
+{"event": "admission_blocked", "record_id": "PPS-DEV-197", "reason": "source_token_budget", "time": 101379.657596591, "live_ids": ["PPS-DEV-195", "PPS-DEV-196"], "prospective_source_tokens": 55160}
+{"event": "record_complete", "record_id": "PPS-DEV-195", "time": 101380.114949934, "live_ids": ["PPS-DEV-196"]}
+{"event": "admit", "record_id": "PPS-DEV-197", "reason": "lookahead", "time": 101380.118626075, "older_live_ids": ["PPS-DEV-196"], "live_source_tokens": 38554, "ready_tasks": 0, "inflight": 6}
+{"event": "admit", "record_id": "PPS-DEV-198", "reason": "lookahead", "time": 101382.747399155, "older_live_ids": ["PPS-DEV-196", "PPS-DEV-197"], "live_source_tokens": 43845, "ready_tasks": 11, "inflight": 2}
+{"event": "admission_blocked", "record_id": "PPS-DEV-199", "reason": "record_window", "time": 101383.782256582, "live_ids": ["PPS-DEV-196", "PPS-DEV-197", "PPS-DEV-198"], "prospective_source_tokens": 69763}
+{"event": "record_complete", "record_id": "PPS-DEV-197", "time": 101384.280057383, "live_ids": ["PPS-DEV-196", "PPS-DEV-198"]}
+{"event": "admit", "record_id": "PPS-DEV-199", "reason": "lookahead", "time": 101384.284954998, "older_live_ids": ["PPS-DEV-196", "PPS-DEV-198"], "live_source_tokens": 41105, "ready_tasks": 0, "inflight": 7}
+{"event": "record_complete", "record_id": "PPS-DEV-196", "time": 101386.331297051, "live_ids": ["PPS-DEV-198", "PPS-DEV-199"]}
+{"event": "record_complete", "record_id": "PPS-DEV-198", "time": 101386.510277305, "live_ids": ["PPS-DEV-199"]}
+{"event": "admit", "record_id": "PPS-DEV-200", "reason": "lookahead", "time": 101386.563796878, "older_live_ids": ["PPS-DEV-199"], "live_source_tokens": 33072, "ready_tasks": 11, "inflight": 0}
+{"event": "record_complete", "record_id": "PPS-DEV-199", "time": 101388.097632466, "live_ids": ["PPS-DEV-200"]}
+{"event": "record_complete", "record_id": "PPS-DEV-200", "time": 101388.467396291, "live_ids": []}

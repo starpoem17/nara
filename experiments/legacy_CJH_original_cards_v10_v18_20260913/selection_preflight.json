@@ -1,0 +1,9 @@
+{
+  "records": 200,
+  "candidate_counts_min": 5,
+  "candidate_counts_max": 13,
+  "complete_raw_rows_sha256": "1fe12e788dbb8f0cae217fbe9313291764994a0425f1dbab84333ba53a9857cf",
+  "code_locations_complete": true,
+  "labels_read": false,
+  "post_review_change": "added exact-code locations only; all selected row text unchanged"
+}

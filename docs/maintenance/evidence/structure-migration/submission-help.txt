@@ -1,0 +1,47 @@
+usage: nara [-h] [--data-dir DATA_DIR] [--input INPUT]
+            [--output-dir OUTPUT_DIR] [--model-dir MODEL_DIR]
+            [--embed-model EMBED_MODEL] [--index INDEX]
+            [--embed-device {cpu,cuda}]
+            [--embedding-batch-size EMBEDDING_BATCH_SIZE]
+            [--batch-size BATCH_SIZE] [--max-model-len MAX_MODEL_LEN]
+            [--gpu-memory-utilization GPU_MEMORY_UTILIZATION]
+            [--quantization QUANTIZATION] [--enforce-eager] [--thinking]
+            [--legal-criteria] [--output-tokens OUTPUT_TOKENS]
+            [--search-rounds SEARCH_ROUNDS] [--require-search]
+            [--queries-per-round QUERIES_PER_ROUND]
+            [--round-tokens ROUND_TOKENS]
+            [--total-retrieval-tokens TOTAL_RETRIEVAL_TOKENS]
+            [--item-group-size ITEM_GROUP_SIZE] [--limit LIMIT]
+
+Dynamic RAG baseline for local experiments.
+
+options:
+  -h, --help            show this help message and exit
+  --data-dir DATA_DIR
+  --input INPUT         Defaults to test.jsonl.gz, or local test.jsonl
+  --output-dir OUTPUT_DIR
+  --model-dir MODEL_DIR
+  --embed-model EMBED_MODEL
+  --index INDEX
+  --embed-device {cpu,cuda}
+  --embedding-batch-size EMBEDDING_BATCH_SIZE
+  --batch-size BATCH_SIZE
+  --max-model-len MAX_MODEL_LEN
+  --gpu-memory-utilization GPU_MEMORY_UTILIZATION
+  --quantization QUANTIZATION
+  --enforce-eager
+  --thinking
+  --legal-criteria      Include supplied-snapshot legal criteria; preflight
+                        the 32K context budget
+  --output-tokens OUTPUT_TOKENS
+                        2048 by default; 4096 with thinking
+  --search-rounds SEARCH_ROUNDS
+  --require-search      Require search before judgment; use --search-rounds 1
+                        for exactly once
+  --queries-per-round QUERIES_PER_ROUND
+  --round-tokens ROUND_TOKENS
+  --total-retrieval-tokens TOTAL_RETRIEVAL_TOKENS
+  --item-group-size ITEM_GROUP_SIZE
+                        24 = one conversation; e.g. 6 = four independent
+                        conversations
+  --limit LIMIT

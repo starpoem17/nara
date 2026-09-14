@@ -1,6 +1,6 @@
 # Local inference engine
 
-Implementation: `src/inference/engine.py`. Default caller: `src/experiments/benchmark_prefix_pipeline.py` via `src/experiments/run_experiment.py`. Scheduling remains in `src/inference/prefix_pipeline.py`; conversation/retrieval/validation remain in `src/inference/predictor.py` and `src/inference/continuous.py`.
+Implementation: `src/inference/engine.py`. Default caller: `src/experiments/pipeline.py` via `src/experiments/run_experiment.py`. Scheduling remains in `src/inference/prefix_pipeline.py`; conversation/retrieval/validation remain in `src/inference/predictor.py` and `src/inference/continuous.py`.
 
 ## Interface
 
@@ -19,10 +19,10 @@ Implementation: `src/inference/engine.py`. Default caller: `src/experiments/benc
 
 Missing/nonmonotonic request metrics raise explicitly. Pending requests remain available for cancellation if conversion/metrics validation fails. Predictors already abort outstanding work on exceptions. Request/lifecycle field names and time definitions are unchanged.
 
-Failed-notice recovery selection, replay and cross-attempt accounting are owned by the [recovery module](recovery.md).
+Failed-notice recovery selection, replay and cross-attempt accounting are owned by the [recovery module](<recovery.md>).
 
 ## Validation
 
 `tests/test_vllm_model.py` crosses the production engine module using a deterministic raw-engine adapter: rendering/sampling parity, mixed modes and reordered completions, repeated task IDs, legacy imports/options/observers, cancellation, metrics and observation lifecycle. `tests/test_experiment_engine.py` exercises the default runner's same-policy recovery success, isolated recovery success and explicit final failure, retaining all request/scheduler attempts. Existing scheduling tests remain in place.
 
-Real graph execution, cache reuse and throughput require GPU evidence; see [engine refactor experiment](../experiments/engine-refactor.md). No prompt, item grouping, output/search/retry budget, rule or notice admission policy changed in this refactor.
+Real graph execution, cache reuse and throughput require GPU evidence; see [engine refactor experiment](<../experiments/architecture-validation/engine-refactor.md>). No prompt, item grouping, output/search/retry budget, rule or notice admission policy changed in this refactor.

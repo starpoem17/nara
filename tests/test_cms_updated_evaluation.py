@@ -5,7 +5,7 @@ import tempfile
 import unittest
 from unittest.mock import patch
 
-from nara.evaluation import cms_updated_cards as evaluation
+from experiments.legacy_CMS_updated_cards_v19_v24_dev200_20260913.code import evaluate_cms_updated_cards as evaluation
 
 
 def schema(item):

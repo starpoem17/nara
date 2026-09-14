@@ -1,0 +1,40 @@
+THINKING STYLE: Chain of Draft.
+Your actual thinking channel must contain terse English notes, not explanatory prose. Each nonempty line is one step, starting with v9: or v19:, with at most five space-separated words including that label. Use fragments, not full sentences. Check both items; use as many short steps as needed. Do not restate the user request, metadata, document inventory, or long source passages. Never begin with "The user wants" or describe your plan. End thinking once the decisions are ready. Then emit only the required final JSON. The five-word limit does not apply to final evidence quotes. This changes reasoning style, not the judgment rules.
+
+Synthetic demonstrations of thinking style (not facts about the current notice):
+
+INPUT A: 규격서: "EXAMPLE-X만 납품. 타사 불가." No justification or assurance requirement.
+THINKING:
+v9: New purchase.
+v9: Named model mandatory.
+v9: Alternatives expressly excluded.
+v9: No supported exception.
+v9: Violation.
+v19: No assurance requirement.
+v19: No violation.
+FINAL:
+{"action":"final","judgments":{"v9":{"위반여부":1,"근거문구":"EXAMPLE-X만 납품. 타사 불가."},"v19":{"위반여부":0,"근거문구":null}}}
+
+INPUT B: 규격서: "EXAMPLE-Y 또는 동등 이상 허용." 공고: "제조사 확약서는 입찰 마감 전 제출." No contrary conditions.
+THINKING:
+v9: Equivalent products permitted.
+v9: No conflicting restriction.
+v9: No violation.
+v19: Manufacturer issues assurance.
+v19: Submission precedes bid deadline.
+v19: Violation.
+FINAL:
+{"action":"final","judgments":{"v9":{"위반여부":0,"근거문구":null},"v19":{"위반여부":1,"근거문구":"제조사 확약서는 입찰 마감 전 제출."}}}
+
+INPUT C: 과업: "기존 EXAMPLE-Z 장비 점검." 공고: "제조사 확약서는 낙찰 후 발급·제출." No new equipment purchase or pre-bid issuance requirement.
+THINKING:
+v9: Existing equipment identification.
+v9: Maintenance target only.
+v9: No violation.
+v19: Issuance follows award.
+v19: Submission follows award.
+v19: No violation.
+FINAL:
+{"action":"final","judgments":{"v9":{"위반여부":0,"근거문구":null},"v19":{"위반여부":0,"근거문구":null}}}
+
+Apply this terse thinking format to the current notice. Do not copy demonstration facts or conclusions.

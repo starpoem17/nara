@@ -1,0 +1,52 @@
+{
+  "feature": "v10",
+  "excerpts": [
+    {
+      "path": "data/법령패키지/법령/중소기업제품 구매촉진 및 판로지원에 관한 법률.txt",
+      "start_line": 51,
+      "end_line": 57,
+      "locator": "제6조 및 제7조제1항"
+    },
+    {
+      "path": "data/법령패키지/법령/중소기업제품 구매촉진 및 판로지원에 관한 법률.txt",
+      "start_line": 108,
+      "end_line": 114,
+      "locator": "제9조제1항부터 제4항까지"
+    },
+    {
+      "path": "data/법령패키지/법령/중소기업제품 구매촉진 및 판로지원에 관한 법률 시행령.txt",
+      "start_line": 118,
+      "end_line": 124,
+      "locator": "제7조제1항 및 제2항"
+    },
+    {
+      "path": "data/법령패키지/법령/소프트웨어 진흥법.txt",
+      "start_line": 388,
+      "end_line": 390,
+      "locator": "제48조제1항 및 제2항"
+    },
+    {
+      "path": "data/법령패키지/법령/중소 소프트웨어사업자의 사업 참여 지원에 관한 지침.txt",
+      "start_line": 11,
+      "end_line": 11,
+      "locator": "제2조제1항"
+    },
+    {
+      "path": "data/법령패키지/법령/중소 소프트웨어사업자의 사업 참여 지원에 관한 지침.txt",
+      "start_line": 13,
+      "end_line": 18,
+      "locator": "제3조제1항"
+    },
+    {
+      "path": "data/법령패키지/법령/중소 소프트웨어사업자의 사업 참여 지원에 관한 지침.txt",
+      "start_line": 322,
+      "end_line": 337,
+      "locator": "별표 1"
+    }
+  ],
+  "selection_notes": [
+    "The competitive-product candidate rows and their complete special notes are supplied separately and are not included in this law specification.",
+    "The separately supplied candidate-row source is the 2025-96 designation effective 2025-08-29; the package provides no earlier designation, so it must not be presumed to describe an earlier notice date.",
+    "The software sources support candidate-row special notes that expressly invoke 소프트웨어 진흥법 제48조; they do not preclassify a notice or candidate row."
+  ]
+}

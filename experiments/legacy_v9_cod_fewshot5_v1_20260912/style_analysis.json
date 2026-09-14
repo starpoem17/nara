@@ -1,0 +1,201 @@
+{
+  "success": false,
+  "successful_records": 0,
+  "records": [
+    {
+      "id": "PPS-DEV-16",
+      "success": false,
+      "thinking": "*   Target: [v9] Unjustified brand/model/spec restrictions on purchased goods/components.\n    *   Target: [v19] Manufacturer/supplier assurance required at bid/proposal or issuance before bid unlawful.\n\n    *   Item: 2026학년도 [수요기관(초등학교)] 통학차량 임차용역 (School bus rental service).\n    *   Scope: 2 vehicles (45-seater 1, 25-seater 1).\n    *   Vehicle requirement: \"차량은 계약 종료일 기준으로 차령이 9년 이내(2018.3.1.이후 출고된 차량)\" (Vehicle age within 9 years by contract end date).\n    *   Compliance requirement: \"본 입찰에 의해 계약자로 선정된 자는 ... '어린이 통학버스' 요건을 갖추어 [기관(경찰기관)]에 「어린이 통학버스」로 신고를 하여야 하며, 그 비용은 계약자로 선정된 자가 부담 함.\" (The selected contractor must report as an \"Children's School Bus\" to the police station... at their own expense",
+      "body_tokens": 254,
+      "budget_span": 256,
+      "lines": [
+        "*   Target: [v9] Unjustified brand/model/spec restrictions on purchased goods/components.",
+        "*   Target: [v19] Manufacturer/supplier assurance required at bid/proposal or issuance before bid unlawful.",
+        "*   Item: 2026학년도 [수요기관(초등학교)] 통학차량 임차용역 (School bus rental service).",
+        "*   Scope: 2 vehicles (45-seater 1, 25-seater 1).",
+        "*   Vehicle requirement: \"차량은 계약 종료일 기준으로 차령이 9년 이내(2018.3.1.이후 출고된 차량)\" (Vehicle age within 9 years by contract end date).",
+        "*   Compliance requirement: \"본 입찰에 의해 계약자로 선정된 자는 ... '어린이 통학버스' 요건을 갖추어 [기관(경찰기관)]에 「어린이 통학버스」로 신고를 하여야 하며, 그 비용은 계약자로 선정된 자가 부담 함.\" (The selected contractor must report as an \"Children's School Bus\" to the police station... at their own expense"
+      ],
+      "words_per_line": [
+        9,
+        13,
+        10,
+        8,
+        21,
+        45
+      ],
+      "attempts": 1,
+      "finish_reason": "stop",
+      "judgments": {
+        "v9": {
+          "위반여부": 0,
+          "근거문구": null
+        },
+        "v19": {
+          "위반여부": 0,
+          "근거문구": null
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "PPS-DEV-175",
+      "success": false,
+      "thinking": "",
+      "body_tokens": 0,
+      "budget_span": 2,
+      "lines": [],
+      "words_per_line": [],
+      "attempts": 1,
+      "finish_reason": "stop",
+      "judgments": {
+        "v9": {
+          "위반여부": 0,
+          "근거문구": null
+        },
+        "v19": {
+          "위반여부": 0,
+          "근거문구": null
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "PPS-DEV-111",
+      "success": false,
+      "thinking": "The user wants me to audit a specific notice (PPS-DEV-111) for violations related to two specific rules:\n1.  `v9`: Unjustified brand/model/spec restrictions on purchased goods/components.\n2.  `v19`: Unlawful requirement for manufacturer/supplier assurance at bid/proposal or issuance before bid.\n\n**Notice Analysis:**\n- **Project Name:** [수요기관(기초자치단체)|지역=r1] 고분군1 26·27호분 발굴 조사 용역 (Excavation investigation of ancient burial mounds 1 26/27).\n- **Type:** General Service (용역).\n- **Budget/Price:** 200,000,000 KRW (Estimated price 181,818,182 KRW).\n- **Law:** 지방계약법 (Local Government Contract Act).\n- **Location Restriction:** 경상남도 (Gyeongsangnam-do).\n- **Qualification:** 매장유산 조사기관(육상발굴조사) (Buried Heritage Investigation Agency - Land Excavation).\n\n**Item v9",
+      "body_tokens": 254,
+      "budget_span": 256,
+      "lines": [
+        "The user wants me to audit a specific notice (PPS-DEV-111) for violations related to two specific rules:",
+        "1.  `v9`: Unjustified brand/model/spec restrictions on purchased goods/components.",
+        "2.  `v19`: Unlawful requirement for manufacturer/supplier assurance at bid/proposal or issuance before bid.",
+        "**Notice Analysis:**",
+        "- **Project Name:** [수요기관(기초자치단체)|지역=r1] 고분군1 26·27호분 발굴 조사 용역 (Excavation investigation of ancient burial mounds 1 26/27).",
+        "- **Type:** General Service (용역).",
+        "- **Budget/Price:** 200,000,000 KRW (Estimated price 181,818,182 KRW).",
+        "- **Law:** 지방계약법 (Local Government Contract Act).",
+        "- **Location Restriction:** 경상남도 (Gyeongsangnam-do).",
+        "- **Qualification:** 매장유산 조사기관(육상발굴조사) (Buried Heritage Investigation Agency - Land Excavation).",
+        "**Item v9"
+      ],
+      "words_per_line": [
+        17,
+        8,
+        13,
+        2,
+        17,
+        5,
+        8,
+        7,
+        5,
+        11,
+        2
+      ],
+      "attempts": 1,
+      "finish_reason": "stop",
+      "judgments": {
+        "v9": {
+          "위반여부": 0,
+          "근거문구": null
+        },
+        "v19": {
+          "위반여부": 0,
+          "근거문구": null
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "PPS-DEV-055",
+      "success": false,
+      "thinking": "*   Goal: Audit the provided notice for two specific violations:\n        *   `v9`: Unjustified brand/model/spec restrictions on goods/components.\n        *   `v19`: Unlawful requirement for manufacturer/supplier assurance (issuance before bid/proposal).\n    *   Input: A notice for a service contract (용역) regarding \"공기업 해운부문 외부사업 운영 지원 및 감축사업 활성화 용역\".\n    *   Constraints: Use only the provided text. Check applicability. `v9` is about product/spec restrictions. `v19` is about timing of assurance.\n\n    *   `v9` (Unjustified restrictions):\n        *   The contract is for a \"용역\" (Service/Consulting/Support), not a physical product/component purchase.\n        *   The scope is \"공기업 해운부문 외부사업 운영 지원 및 감축사업 활성화 용역\".\n        *   The \"수량\" is \"1식(과업지시서 참조)\".\n        *   The notice does not mention any specific brand, model, or component restrictions for a product. It's a service contract.",
+      "body_tokens": 254,
+      "budget_span": 256,
+      "lines": [
+        "*   Goal: Audit the provided notice for two specific violations:",
+        "*   `v9`: Unjustified brand/model/spec restrictions on goods/components.",
+        "*   `v19`: Unlawful requirement for manufacturer/supplier assurance (issuance before bid/proposal).",
+        "*   Input: A notice for a service contract (용역) regarding \"공기업 해운부문 외부사업 운영 지원 및 감축사업 활성화 용역\".",
+        "*   Constraints: Use only the provided text. Check applicability. `v9` is about product/spec restrictions. `v19` is about timing of assurance.",
+        "*   `v9` (Unjustified restrictions):",
+        "*   The contract is for a \"용역\" (Service/Consulting/Support), not a physical product/component purchase.",
+        "*   The scope is \"공기업 해운부문 외부사업 운영 지원 및 감축사업 활성화 용역\".",
+        "*   The \"수량\" is \"1식(과업지시서 참조)\".",
+        "*   The notice does not mention any specific brand, model, or component restrictions for a product. It's a service contract."
+      ],
+      "words_per_line": [
+        10,
+        7,
+        10,
+        19,
+        20,
+        4,
+        13,
+        13,
+        6,
+        20
+      ],
+      "attempts": 1,
+      "finish_reason": "stop",
+      "judgments": {
+        "v9": {
+          "위반여부": 0,
+          "근거문구": null
+        },
+        "v19": {
+          "위반여부": 0,
+          "근거문구": null
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "PPS-DEV-31",
+      "success": false,
+      "thinking": "*   Goal: Audit the provided notice for unjustified brand/model/spec restrictions (v9) and unlawful manufacturer/supplier assurance requirements (v19).\n    *   Law: 지방계약법 (Local Government Contract Act).\n    *   v9 (Unjustified restriction): Check if specific brands/models/specs are mandated without justification.\n    *   v19 (Assurance requirement): Check if manufacturer/supplier assurance is required *at the time of bidding* or *before the bid deadline*.\n\n    *   Notice ID: PPS-DEV-31\n    *   Subject: 인조잔디 분리회수 및 재활용 처리 1식 (Artificial turf separation and recycling treatment).\n    *   Budget: 316,073,000 KRW.\n    *   Location: 충청북도 (Chungcheongbuk-do).\n    *   Contract Method: 제한경쟁 (Limited competition).\n    *   Qualification (Part 3):\n        *   (다) Requires registration in 조경식재·시설물공사업 (4993) [주력분야: 조경시설물설치공사].",
+      "body_tokens": 254,
+      "budget_span": 256,
+      "lines": [
+        "*   Goal: Audit the provided notice for unjustified brand/model/spec restrictions (v9) and unlawful manufacturer/supplier assurance requirements (v19).",
+        "*   Law: 지방계약법 (Local Government Contract Act).",
+        "*   v9 (Unjustified restriction): Check if specific brands/models/specs are mandated without justification.",
+        "*   v19 (Assurance requirement): Check if manufacturer/supplier assurance is required *at the time of bidding* or *before the bid deadline*.",
+        "*   Notice ID: PPS-DEV-31",
+        "*   Subject: 인조잔디 분리회수 및 재활용 처리 1식 (Artificial turf separation and recycling treatment).",
+        "*   Budget: 316,073,000 KRW.",
+        "*   Location: 충청북도 (Chungcheongbuk-do).",
+        "*   Contract Method: 제한경쟁 (Limited competition).",
+        "*   Qualification (Part 3):",
+        "*   (다) Requires registration in 조경식재·시설물공사업 (4993) [주력분야: 조경시설물설치공사]."
+      ],
+      "words_per_line": [
+        17,
+        7,
+        12,
+        20,
+        4,
+        14,
+        4,
+        4,
+        6,
+        4,
+        9
+      ],
+      "attempts": 1,
+      "finish_reason": "stop",
+      "judgments": {
+        "v9": {
+          "위반여부": 0,
+          "근거문구": null
+        },
+        "v19": {
+          "위반여부": 0,
+          "근거문구": null
+        }
+      },
+      "error": null
+    }
+  ],
+  "seconds": 6.73298671700104
+}

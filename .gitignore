@@ -8,11 +8,9 @@ models/
 /*.zip
 /open/
 /model/
-/output/
 
 # Local agent instructions and context.
 /AGENT.md
-/CONTEXT.md
 
 # Keep the task schema and legal references required by tests.
 /data/*
@@ -21,11 +19,24 @@ models/
 !/data/법령패키지/
 
 # Share experiment results, raw model responses, logs and frozen provenance.
-!/analysis/**/*.log
 # Input datasets remain local, including copies captured with old experiments.
-/analysis/**/source/data/dev.jsonl
 
 # Local Python packaging outputs.
 /build/
 /*.egg-info/
 /src/*.egg-info/
+
+# Retained task work and final user deliverables are local, not disposable.
+/tmp/
+/outputs/
+# Keep experiment logs and exclude repeated local input snapshots.
+!/experiments/**/*.log
+/experiments/**/source/data/dev.jsonl
+/experiments/**/source/data/dev_labels.csv
+!/docs/maintenance/evidence/**/*.log
+
+/experiments/**/inputs/data/dev.jsonl
+/experiments/**/inputs/data/dev_labels.csv
+/docs/maintenance/evidence/**/source/data/dev.jsonl
+/docs/maintenance/evidence/**/inputs/data/dev.jsonl
+/docs/maintenance/evidence/**/inputs/data/dev_labels.csv

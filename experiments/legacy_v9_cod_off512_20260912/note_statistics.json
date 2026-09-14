@@ -1,0 +1,10 @@
+{
+  "strict_short_notes": 18,
+  "first_responses": 200,
+  "separator_present": 197,
+  "nonempty_notes": 196,
+  "mean_note_tokens": 242.15,
+  "median_note_tokens": 278,
+  "max_note_tokens": 484,
+  "mean_first_output_tokens": 304.88
+}

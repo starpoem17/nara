@@ -1,0 +1,128 @@
+Building wheel...
+running egg_info
+writing nara.egg-info/PKG-INFO
+writing dependency_links to nara.egg-info/dependency_links.txt
+writing entry points to nara.egg-info/entry_points.txt
+writing requirements to nara.egg-info/requires.txt
+writing top-level names to nara.egg-info/top_level.txt
+reading manifest file 'nara.egg-info/SOURCES.txt'
+writing manifest file 'nara.egg-info/SOURCES.txt'
+running bdist_wheel
+running build
+running build_py
+copying src/experiments/pipeline.py -> build/lib/nara/experiments
+running egg_info
+writing nara.egg-info/PKG-INFO
+writing dependency_links to nara.egg-info/dependency_links.txt
+writing entry points to nara.egg-info/entry_points.txt
+writing requirements to nara.egg-info/requires.txt
+writing top-level names to nara.egg-info/top_level.txt
+reading manifest file 'nara.egg-info/SOURCES.txt'
+writing manifest file 'nara.egg-info/SOURCES.txt'
+installing to build/bdist.linux-x86_64/wheel
+running install
+running install_lib
+creating build/bdist.linux-x86_64/wheel
+creating build/bdist.linux-x86_64/wheel/nara
+copying build/lib/nara/cli.py -> build/bdist.linux-x86_64/wheel/./nara
+copying build/lib/nara/__init__.py -> build/bdist.linux-x86_64/wheel/./nara
+creating build/bdist.linux-x86_64/wheel/nara/inference
+copying build/lib/nara/inference/prompt.txt -> build/bdist.linux-x86_64/wheel/./nara/inference
+copying build/lib/nara/inference/continuous.py -> build/bdist.linux-x86_64/wheel/./nara/inference
+copying build/lib/nara/inference/legal_criteria.json -> build/bdist.linux-x86_64/wheel/./nara/inference
+copying build/lib/nara/inference/prefix_predictor.py -> build/bdist.linux-x86_64/wheel/./nara/inference
+copying build/lib/nara/inference/prefix_pipeline.py -> build/bdist.linux-x86_64/wheel/./nara/inference
+copying build/lib/nara/inference/__init__.py -> build/bdist.linux-x86_64/wheel/./nara/inference
+copying build/lib/nara/inference/compact_criteria.json -> build/bdist.linux-x86_64/wheel/./nara/inference
+copying build/lib/nara/inference/compact_predictor.py -> build/bdist.linux-x86_64/wheel/./nara/inference
+copying build/lib/nara/inference/engine.py -> build/bdist.linux-x86_64/wheel/./nara/inference
+copying build/lib/nara/inference/hybrid_experiment.py -> build/bdist.linux-x86_64/wheel/./nara/inference
+copying build/lib/nara/inference/recovery.py -> build/bdist.linux-x86_64/wheel/./nara/inference
+copying build/lib/nara/inference/conversation.py -> build/bdist.linux-x86_64/wheel/./nara/inference
+copying build/lib/nara/inference/predictor.py -> build/bdist.linux-x86_64/wheel/./nara/inference
+copying build/lib/nara/inference/batch_barrier.py -> build/bdist.linux-x86_64/wheel/./nara/inference
+copying build/lib/nara/__main__.py -> build/bdist.linux-x86_64/wheel/./nara
+creating build/bdist.linux-x86_64/wheel/nara/evaluation
+copying build/lib/nara/evaluation/evaluate_dev.py -> build/bdist.linux-x86_64/wheel/./nara/evaluation
+copying build/lib/nara/evaluation/reporting.py -> build/bdist.linux-x86_64/wheel/./nara/evaluation
+copying build/lib/nara/evaluation/__init__.py -> build/bdist.linux-x86_64/wheel/./nara/evaluation
+copying build/lib/nara/evaluation/compare_dev_runs.py -> build/bdist.linux-x86_64/wheel/./nara/evaluation
+creating build/bdist.linux-x86_64/wheel/nara/retrieval
+copying build/lib/nara/retrieval/search.py -> build/bdist.linux-x86_64/wheel/./nara/retrieval
+copying build/lib/nara/retrieval/index.py -> build/bdist.linux-x86_64/wheel/./nara/retrieval
+copying build/lib/nara/retrieval/__init__.py -> build/bdist.linux-x86_64/wheel/./nara/retrieval
+copying build/lib/nara/runtime.py -> build/bdist.linux-x86_64/wheel/./nara
+creating build/bdist.linux-x86_64/wheel/nara/tools
+copying build/lib/nara/tools/check_dynamic_rag.py -> build/bdist.linux-x86_64/wheel/./nara/tools
+copying build/lib/nara/tools/check_legal_retrieval.py -> build/bdist.linux-x86_64/wheel/./nara/tools
+copying build/lib/nara/tools/check_legal_criteria.py -> build/bdist.linux-x86_64/wheel/./nara/tools
+copying build/lib/nara/tools/check_gemma_inference.py -> build/bdist.linux-x86_64/wheel/./nara/tools
+copying build/lib/nara/tools/__init__.py -> build/bdist.linux-x86_64/wheel/./nara/tools
+copying build/lib/nara/tools/replay_evaluation.py -> build/bdist.linux-x86_64/wheel/./nara/tools
+copying build/lib/nara/tools/jsonl_to_md.py -> build/bdist.linux-x86_64/wheel/./nara/tools
+copying build/lib/nara/tools/measure_token_lengths.py -> build/bdist.linux-x86_64/wheel/./nara/tools
+copying build/lib/nara/records.py -> build/bdist.linux-x86_64/wheel/./nara
+creating build/bdist.linux-x86_64/wheel/nara/rules
+copying build/lib/nara/rules/__init__.py -> build/bdist.linux-x86_64/wheel/./nara/rules
+copying build/lib/nara/rules/qualification.py -> build/bdist.linux-x86_64/wheel/./nara/rules
+copying build/lib/nara/rules/briefing.py -> build/bdist.linux-x86_64/wheel/./nara/rules
+creating build/bdist.linux-x86_64/wheel/nara/experiments
+copying build/lib/nara/experiments/recording.py -> build/bdist.linux-x86_64/wheel/./nara/experiments
+copying build/lib/nara/experiments/pipeline.py -> build/bdist.linux-x86_64/wheel/./nara/experiments
+copying build/lib/nara/experiments/__init__.py -> build/bdist.linux-x86_64/wheel/./nara/experiments
+copying build/lib/nara/experiments/run_experiment.py -> build/bdist.linux-x86_64/wheel/./nara/experiments
+copying build/lib/nara/experiments/config.py -> build/bdist.linux-x86_64/wheel/./nara/experiments
+running install_egg_info
+Copying nara.egg-info to build/bdist.linux-x86_64/wheel/./nara-0.1.0-py3.12.egg-info
+running install_scripts
+creating build/bdist.linux-x86_64/wheel/nara-0.1.0.dist-info/WHEEL
+creating '/home/hwajoong/projects/nara/tmp/structure-migration-20260913/package/.tmp-hjbt3gee/nara-0.1.0-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+adding 'nara/__init__.py'
+adding 'nara/__main__.py'
+adding 'nara/cli.py'
+adding 'nara/records.py'
+adding 'nara/runtime.py'
+adding 'nara/evaluation/__init__.py'
+adding 'nara/evaluation/compare_dev_runs.py'
+adding 'nara/evaluation/evaluate_dev.py'
+adding 'nara/evaluation/reporting.py'
+adding 'nara/experiments/__init__.py'
+adding 'nara/experiments/config.py'
+adding 'nara/experiments/pipeline.py'
+adding 'nara/experiments/recording.py'
+adding 'nara/experiments/run_experiment.py'
+adding 'nara/inference/__init__.py'
+adding 'nara/inference/batch_barrier.py'
+adding 'nara/inference/compact_criteria.json'
+adding 'nara/inference/compact_predictor.py'
+adding 'nara/inference/continuous.py'
+adding 'nara/inference/conversation.py'
+adding 'nara/inference/engine.py'
+adding 'nara/inference/hybrid_experiment.py'
+adding 'nara/inference/legal_criteria.json'
+adding 'nara/inference/predictor.py'
+adding 'nara/inference/prefix_pipeline.py'
+adding 'nara/inference/prefix_predictor.py'
+adding 'nara/inference/prompt.txt'
+adding 'nara/inference/recovery.py'
+adding 'nara/retrieval/__init__.py'
+adding 'nara/retrieval/index.py'
+adding 'nara/retrieval/search.py'
+adding 'nara/rules/__init__.py'
+adding 'nara/rules/briefing.py'
+adding 'nara/rules/qualification.py'
+adding 'nara/tools/__init__.py'
+adding 'nara/tools/check_dynamic_rag.py'
+adding 'nara/tools/check_gemma_inference.py'
+adding 'nara/tools/check_legal_criteria.py'
+adding 'nara/tools/check_legal_retrieval.py'
+adding 'nara/tools/jsonl_to_md.py'
+adding 'nara/tools/measure_token_lengths.py'
+adding 'nara/tools/replay_evaluation.py'
+adding 'nara-0.1.0.dist-info/METADATA'
+adding 'nara-0.1.0.dist-info/WHEEL'
+adding 'nara-0.1.0.dist-info/entry_points.txt'
+adding 'nara-0.1.0.dist-info/top_level.txt'
+adding 'nara-0.1.0.dist-info/RECORD'
+removing build/bdist.linux-x86_64/wheel
+Successfully built tmp/structure-migration-20260913/package/nara-0.1.0-py3-none-any.whl

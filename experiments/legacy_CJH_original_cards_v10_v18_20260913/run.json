@@ -1,0 +1,462 @@
+{
+  "schema_version": 1,
+  "record_kind": "historical_experiment",
+  "read_only": true,
+  "project_root": "../..",
+  "run_id": "legacy_CJH_original_cards_v10_v18_20260913",
+  "area": "colleague-hypotheses",
+  "report": "docs/experiments/colleague-hypotheses/2026-09/legacy_CJH_original_cards_v10_v18_20260913.md",
+  "question": "How did the original CJH v10-v18 card inputs behave?",
+  "started_at": null,
+  "timezone": "Asia/Seoul",
+  "time_evidence": "No verified orchestration start; see timestamp-candidates.json and original logs. September 2026 is established by the linked historical project records.",
+  "migration_at": "2026-09-13T15:13:30.115596+00:00",
+  "status": "historical; inspect per-condition execution records",
+  "judgment": "WITHDRAWN as evidence of hypothesis validity. CJH redesign was cancelled. Preserve raw observations only; do not revive this hypothesis evaluation.",
+  "conditions": {
+    "recorded_execution": {
+      "settings": {
+        "recorded_condition": "recorded execution",
+        "scope": "See preserved original manifest and source for exact settings."
+      },
+      "status": "historical",
+      "attempts": [],
+      "artifact_path": "."
+    }
+  },
+  "max_attempts": 0,
+  "predecessors": [],
+  "followups": [],
+  "original_files": {
+    "analysis/CJH_original_cards_v10_v18_20260913/admissions.jsonl": {
+      "path": "admissions.jsonl",
+      "sha256": "97113eac02976509196281c424c4faff960da3d9b51045226180c7035fa45740",
+      "size": 59899
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/artifact_inventory.json": {
+      "path": "artifact_inventory.json",
+      "sha256": "82bff0165be3563a9411b1642b1ae9f81ee8c6b2c3fbb573fdf8062f33018705",
+      "size": 11969
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/cards.json": {
+      "path": "cards.json",
+      "sha256": "fab6b9755d6a460a2b4597edb153419a904937738a32e6681d6e4168fc6c42b0",
+      "size": 20429
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/cases.csv": {
+      "path": "cases.csv",
+      "sha256": "598d1435b36d37d75f7af8b1798836e2e592aa8038fa027734c8f4ba05536985",
+      "size": 648270
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/environment.json": {
+      "path": "environment.json",
+      "sha256": "241a5d71a3f6e10ab84018b926e19b69ef509b22153dec62ba4682bae2112ca5",
+      "size": 10406
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/errors.csv": {
+      "path": "errors.csv",
+      "sha256": "598d1435b36d37d75f7af8b1798836e2e592aa8038fa027734c8f4ba05536985",
+      "size": 648270
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/evaluation.json": {
+      "path": "evaluation.json",
+      "sha256": "174782da64ad8229aae2f42ea00b93ef22ef0c8b8e151fef2172f618feb35391",
+      "size": 15566
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/evaluation_protocol.json": {
+      "path": "evaluation_protocol.json",
+      "sha256": "6c901855d835337fcee5d75cea612222c62ad4ad86b6ff5b7f62d559477650ba",
+      "size": 878
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/initialization_attempts.json": {
+      "path": "initialization_attempts.json",
+      "sha256": "c5bd16dc48f068fc83316b7d4f9cc5fcf9c7c37ad41e7b08a1fd38856203daa1",
+      "size": 312
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/law_provenance.json": {
+      "path": "law_provenance.json",
+      "sha256": "7768f64b897b0afe1c0667177f40bfc22d946dd7f674aa1fcbf80f915b980c48",
+      "size": 147684
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/law_specs/v10.json": {
+      "path": "law_specs/v10.json",
+      "sha256": "ee5da149f9f3897a86578160534c2670ffd90f3cf544869b0213efa60a19dfb3",
+      "size": 2109
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/law_specs/v11.json": {
+      "path": "law_specs/v11.json",
+      "sha256": "51c97081bcd3074d487bc7c8be6f1d8d25b50e566bff9816d7a8f44ea923db73",
+      "size": 2713
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/law_specs/v12.json": {
+      "path": "law_specs/v12.json",
+      "sha256": "c36e15f35b749878a11b79a57326c6ab53e5e90a3bc46935409fa114bfbcf9f8",
+      "size": 2588
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/law_specs/v13.json": {
+      "path": "law_specs/v13.json",
+      "sha256": "1bc7e81f2103116bb54571444da3e9af936f8d314995ff03d48fc3a5d0465a80",
+      "size": 3007
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/law_specs/v14.json": {
+      "path": "law_specs/v14.json",
+      "sha256": "5940e23600a8be03f72660b362ceb7cc2b8c08020694069fdf77bd298a44f73d",
+      "size": 3731
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/law_specs/v15.json": {
+      "path": "law_specs/v15.json",
+      "sha256": "b9ce164623ac3e94a62aa5e1148abcb5feddb0023eea61b1bcec351e4c7fd462",
+      "size": 3676
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/law_specs/v16.json": {
+      "path": "law_specs/v16.json",
+      "sha256": "4b56b5e15778628b6ffcb1dc930a54fa0db52e40bf611f95167599ae6eafd53c",
+      "size": 3676
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/law_specs/v17.json": {
+      "path": "law_specs/v17.json",
+      "sha256": "932a18b1b4af5c1cfe044eb55bad4632925bbdc7fd80f2955419f4193c730f82",
+      "size": 3459
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/law_specs/v18.json": {
+      "path": "law_specs/v18.json",
+      "sha256": "56dfa5892c2c14460b1ca3b8fa389dc14d9fe4b6b8f1fb53f6085e9692c47912",
+      "size": 3459
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/laws.json": {
+      "path": "laws.json",
+      "sha256": "9aa9155f0c22862230e6ec16a2a887d7c6771bde8438ed228fc98dbd9f3e2dbc",
+      "size": 129980
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/lifecycle.jsonl": {
+      "path": "lifecycle.jsonl",
+      "sha256": "6553188a0ba7a4f7f1d1f631c99f176f59b843f16fe2df883301ab492f30034c",
+      "size": 529239
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/manifest.json": {
+      "path": "manifest.json",
+      "sha256": "f57007bc6e81c2d3d1e965a047de07a0c509d2b60edd1cd7a35bc99dd1f84ec3",
+      "size": 7499
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/output_observations.json": {
+      "path": "output_observations.json",
+      "sha256": "a844d078e8341bd610146f654620926cdeddfa3737fb63f445e82c6625f4128f",
+      "size": 12271
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/per_feature/v10.csv": {
+      "path": "per_feature/v10.csv",
+      "sha256": "d159353c70d918fe9e6b5c414700fd5b8fa75afccbb3db1e8ab54403951b87aa",
+      "size": 66675
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/per_feature/v11.csv": {
+      "path": "per_feature/v11.csv",
+      "sha256": "6df79ebe9e83c806796dc9c4de3477cc5fd8d05b32690bc7086c10573c456ba0",
+      "size": 81019
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/per_feature/v12.csv": {
+      "path": "per_feature/v12.csv",
+      "sha256": "9baa88cf3cbeb72654ed042787866435c4dfeb0e9128ac4e0f739931d17f811f",
+      "size": 58926
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/per_feature/v13.csv": {
+      "path": "per_feature/v13.csv",
+      "sha256": "ad4e927bf2c5f4637015265dc1e85e176b90c460cb924a5dc7ea8a6fa2a16b94",
+      "size": 95302
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/per_feature/v14.csv": {
+      "path": "per_feature/v14.csv",
+      "sha256": "884c34bc9957d013006ab5ca7fc28c0d7569e0900c34539a4f376afd364d6a80",
+      "size": 94165
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/per_feature/v15.csv": {
+      "path": "per_feature/v15.csv",
+      "sha256": "8f3fddd91c0ddc04b0dbc3a68ed4a8b95e5c8588d789332ee01f909c29a66d83",
+      "size": 86611
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/per_feature/v16.csv": {
+      "path": "per_feature/v16.csv",
+      "sha256": "584a9a1013fa7761f148ec504c3a76481ad424bb31e5c4ecd1348c14703235ed",
+      "size": 46352
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/per_feature/v17.csv": {
+      "path": "per_feature/v17.csv",
+      "sha256": "6da1fb7d34439f9b2fd752719c815c5186535d039e28da1d7c1dcc4e6c26cccf",
+      "size": 94110
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/per_feature/v18.csv": {
+      "path": "per_feature/v18.csv",
+      "sha256": "7e3d82d5985ec65d0ec3e2f1768ff09082a56d4e4043bf25c8f2cc4463adc159",
+      "size": 36448
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/preflight.json": {
+      "path": "preflight.json",
+      "sha256": "b060fe050e3479b171c43eaec430a5c9767ef2c6ff70c4a4bb9377bfe8c7ed64",
+      "size": 929804
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/preflight_draft.json": {
+      "path": "preflight_draft.json",
+      "sha256": "88cf9c7f8c1931b9d826ce443583f6958575570d2ab838e8dbce464c37133911",
+      "size": 633304
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/preflight_verification.json": {
+      "path": "preflight_verification.json",
+      "sha256": "4b32f3b078293722087c6a093cf8dd5165c87d19aa42ee425dcae26a44bdc836",
+      "size": 509
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/prepare.log": {
+      "path": "prepare.log",
+      "sha256": "01d7b24ce04332d838a88c309c7aec8c4567edc139661d01aa8597ce819e720e",
+      "size": 168
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/product_candidates.jsonl.gz": {
+      "path": "product_candidates.jsonl.gz",
+      "sha256": "11d835263748c159edfef767b90aa44c8087c7c48453dd8b77f708913d4f9d6b",
+      "size": 2619643
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/progress.json": {
+      "path": "progress.json",
+      "sha256": "93e5fc09c7f942a790b6d9cf65db8e92d92b9999cf48f67034278ff055283ada",
+      "size": 73
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/request_timings.jsonl": {
+      "path": "request_timings.jsonl",
+      "sha256": "2acfb0befc52d37b07d5d2001e219b2c12c9f63f922037a502e493889ee4588e",
+      "size": 1032158
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/requests/v10.jsonl.gz": {
+      "path": "requests/v10.jsonl.gz",
+      "sha256": "f9cae5f905c350cde0eb6b95d091b55a4b5c5f03adf07bf1bd9d7781f07e4785",
+      "size": 7793022
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/requests/v11.jsonl.gz": {
+      "path": "requests/v11.jsonl.gz",
+      "sha256": "44d5a7c405781c590a4b7c0ea102834463417182171144caa0e96c60d4d7614c",
+      "size": 7859685
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/requests/v12.jsonl.gz": {
+      "path": "requests/v12.jsonl.gz",
+      "sha256": "3a671b8fb5baf5f70344b1913e55eab4ed3109f6dae58006607cc23eab40aec3",
+      "size": 7694286
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/requests/v13.jsonl.gz": {
+      "path": "requests/v13.jsonl.gz",
+      "sha256": "b449493658f6c6205a8b03a01a6ccdf9c24af9ebd3b600f4126a7810d8573f5f",
+      "size": 8100162
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/requests/v14.jsonl.gz": {
+      "path": "requests/v14.jsonl.gz",
+      "sha256": "23042bff46430f58934f9ce52fad3f3860b240d0fd40b4e2b2336b812ba5bffa",
+      "size": 8213591
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/requests/v15.jsonl.gz": {
+      "path": "requests/v15.jsonl.gz",
+      "sha256": "a09bd3092c66d2eb8e47021d4391b0b356cfa6e0e9c8f9ad76170d74e6086ccc",
+      "size": 8216175
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/requests/v16.jsonl.gz": {
+      "path": "requests/v16.jsonl.gz",
+      "sha256": "29a8e2a30140c11ab9682c294c574b2e45276e848946986abce386b3a53a0930",
+      "size": 8244489
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/requests/v17.jsonl.gz": {
+      "path": "requests/v17.jsonl.gz",
+      "sha256": "69a721b7eef14c0ebdb4d188a23ea33bdae728e059126151b79afe677ebb3b8b",
+      "size": 8289577
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/requests/v18.jsonl.gz": {
+      "path": "requests/v18.jsonl.gz",
+      "sha256": "ad494899bc3941570901cab453597a79bc99187d972b5c4c5b365ccf84a320b0",
+      "size": 8311209
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/responses/v10.jsonl": {
+      "path": "responses/v10.jsonl",
+      "sha256": "9c8c2f8d80cbe5b73f3c67898c89caebc1add8bab4f167427607ea4ca994d668",
+      "size": 267794
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/responses/v11.jsonl": {
+      "path": "responses/v11.jsonl",
+      "sha256": "f76e21a75d8cf599dbc07540ec104eb176019de7585846f91505d73bd9f80947",
+      "size": 323780
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/responses/v12.jsonl": {
+      "path": "responses/v12.jsonl",
+      "sha256": "c6c34e295fa6847418df6706172aeae063dd5db52fe65fd75eef5933b3e70d2d",
+      "size": 229073
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/responses/v13.jsonl": {
+      "path": "responses/v13.jsonl",
+      "sha256": "bf6366a0bb4fbdf313a3f18d88330b54259e1d45923a091d5c8b8417ba3a0de9",
+      "size": 378183
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/responses/v14.jsonl": {
+      "path": "responses/v14.jsonl",
+      "sha256": "dd0be598c179d20a53cae8da5c91c250078e5493530bad7c2e6029e1c40f8455",
+      "size": 381375
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/responses/v15.jsonl": {
+      "path": "responses/v15.jsonl",
+      "sha256": "2d7ab26d769c588481269b7a74dfde88aea956eb470814cd190c213a36ebdd49",
+      "size": 346909
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/responses/v16.jsonl": {
+      "path": "responses/v16.jsonl",
+      "sha256": "6c59db7e5262a3b8c7d41aba493f87ca1297cf0ced62663e64173618d0985cb2",
+      "size": 182810
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/responses/v17.jsonl": {
+      "path": "responses/v17.jsonl",
+      "sha256": "d67b70b8ec639fe78bf318762e4a11d61043d5ad21694aab06fc9f5f80302ff1",
+      "size": 375808
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/responses/v18.jsonl": {
+      "path": "responses/v18.jsonl",
+      "sha256": "a17af4d2e07e1f017b09ce1a1bce97c0bd15aeeba1340131b444807cebf75930",
+      "size": 142932
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/runtime.json": {
+      "path": "runtime.json",
+      "sha256": "2ec688c83c2be8ec9acfb586b898329692d70137ed1150946eecd30104502b56",
+      "size": 572
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/runtime_verification.json": {
+      "path": "runtime_verification.json",
+      "sha256": "c7fc7de6c099bb86524442322c90795d3467d34db9b5349674ce4f5351a789e5",
+      "size": 2795
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/scheduler.jsonl": {
+      "path": "scheduler.jsonl",
+      "sha256": "a9fb6af9fc765564e1de11eb0a6802283a3a9c1ce759a3347774a3fa6246e04b",
+      "size": 5754369
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/selection.log": {
+      "path": "selection.log",
+      "sha256": "edc52e3002f92fb712854ee5889e0c13371dcbc559a5661a3f7bc3fc90b86dd8",
+      "size": 1006
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/selection_preflight.json": {
+      "path": "selection_preflight.json",
+      "sha256": "587ad5aff3f5d62310cd4f96693b80c69fe1389aaefc6411b4a95543e7fa175b",
+      "size": 329
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/selection_protocol.json": {
+      "path": "selection_protocol.json",
+      "sha256": "7be4b5f9cd398d5329193a188108a2999a91b862c8a6a5d14151658573ffab68",
+      "size": 5932
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/source/pyproject.toml": {
+      "path": "source/pyproject.toml",
+      "sha256": "fdfa3d90b20d8902f039ddcc259286fb382cb4ba46dfdfafa28a48c59f39cad3",
+      "size": 1445
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/source/src/evaluation/colleague_cards.py": {
+      "path": "source/src/evaluation/colleague_cards.py",
+      "sha256": "3c22de9b411eb078777b39f08771d80a0fead874907e0c937fff83d158951401",
+      "size": 28845
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/source/src/evaluation/reporting.py": {
+      "path": "source/src/evaluation/reporting.py",
+      "sha256": "732d7fcc896c7519c778e40777e6d8b16a3b25ec120bc76e562c48b7118f6afd",
+      "size": 2462
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/source/src/experiments/colleague_cards.py": {
+      "path": "source/src/experiments/colleague_cards.py",
+      "sha256": "9ac58ccb4a9b36f264afb0e4a77f4b3866a54b9770357346af11c37f67eb9a10",
+      "size": 28148
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/source/src/inference/conversation.py": {
+      "path": "source/src/inference/conversation.py",
+      "sha256": "273469929c78ded1ecc6a763703ddaeca22a4c74fa35220106bb959b54247ca3",
+      "size": 14317
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/source/src/inference/engine.py": {
+      "path": "source/src/inference/engine.py",
+      "sha256": "be56bcc03888582e1e4643d36c5ffc6f482ff9fad84043ec73fe5ceabd1f5c72",
+      "size": 10405
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/source/src/inference/predictor.py": {
+      "path": "source/src/inference/predictor.py",
+      "sha256": "229f12984b85b9d0f4f26f74b2ac8835183a6bb5bb5116b3590da019e1a88edb",
+      "size": 10026
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/source/src/retrieval/search.py": {
+      "path": "source/src/retrieval/search.py",
+      "sha256": "fb794006f27da4b99a3d39b9f3ef6e84e829f187290a451b2f33b56f0c8c8edc",
+      "size": 7047
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/source/user/CJH/판정카드(10~18)/v10.md": {
+      "path": "source/user/CJH/판정카드(10~18)/v10.md",
+      "sha256": "c0305755dfb960acaa3addf3b6e9a4294f34081b98540a6f89d1be4c16fcdbe0",
+      "size": 2374
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/source/user/CJH/판정카드(10~18)/v11.md": {
+      "path": "source/user/CJH/판정카드(10~18)/v11.md",
+      "sha256": "1ef946542f3a7e503c38e2535d9e01b3328fcfae21ff71794fb39f13edebe770",
+      "size": 2177
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/source/user/CJH/판정카드(10~18)/v12.md": {
+      "path": "source/user/CJH/판정카드(10~18)/v12.md",
+      "sha256": "4ea1fd7eba12a94b2e05413cab8eb7f4ed4c3302279cb0b2081845167a1ff8a5",
+      "size": 2445
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/source/user/CJH/판정카드(10~18)/v13.md": {
+      "path": "source/user/CJH/판정카드(10~18)/v13.md",
+      "sha256": "442637cb4ecf6304d137eb141dff496bb87ff24b181ce20927b7c21c104cf16e",
+      "size": 2158
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/source/user/CJH/판정카드(10~18)/v14.md": {
+      "path": "source/user/CJH/판정카드(10~18)/v14.md",
+      "sha256": "59884c7f64ad838ee5e00e8707eca66001aa082b1fcd42a40bab99b3096b048e",
+      "size": 2102
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/source/user/CJH/판정카드(10~18)/v15.md": {
+      "path": "source/user/CJH/판정카드(10~18)/v15.md",
+      "sha256": "30d78ce51f54f37c4b8ff3f358c4f8dc35e1252185f1d48fd6c25a7c7376eac7",
+      "size": 2114
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/source/user/CJH/판정카드(10~18)/v16.md": {
+      "path": "source/user/CJH/판정카드(10~18)/v16.md",
+      "sha256": "f530f405271ab58dd0100a455b464d6238c01d9aae80c2ce7ad84007cd5a8a36",
+      "size": 2256
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/source/user/CJH/판정카드(10~18)/v17.md": {
+      "path": "source/user/CJH/판정카드(10~18)/v17.md",
+      "sha256": "2842165a5c71973b366303e329826162fe856517404cc7c5312613624b8ddabe",
+      "size": 2050
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/source/user/CJH/판정카드(10~18)/v18.md": {
+      "path": "source/user/CJH/판정카드(10~18)/v18.md",
+      "sha256": "cf90623e8840deaf4376743ca9de48f0e276f70966eb2b208fc57494cf0bf641",
+      "size": 2129
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/source/uv.lock": {
+      "path": "source/uv.lock",
+      "sha256": "76089a2b00b237f2c2782d084f1e1c7c8aadfa1849780c1b787d91d7088b7651",
+      "size": 209928
+    },
+    "analysis/CJH_original_cards_v10_v18_20260913/withdrawal.json": {
+      "path": "withdrawal.json",
+      "sha256": "d957c9c51ccd6e53fbccee411337e5e95ffb8c08f97cde44d1f098be29d14b41",
+      "size": 973
+    }
+  },
+  "temporary_paths": [
+    "tmp/structure-migration-20260913"
+  ],
+  "migration_inventory": "docs/maintenance/evidence/structure-migration/mapping.json",
+  "reproducibility": "Original content retained. Local datasets/models require matching separately restored bytes; historical commands may need current reconstruction guidance.",
+  "recorded_condition_evidence": [
+    {
+      "path": "manifest.json",
+      "values": {
+        "model": "models/gemma-4-26B-A4B-it-NVFP4"
+      }
+    }
+  ],
+  "historical_provenance": {
+    "status": "retained where originally recorded; missing fields remain unknown",
+    "execution_sources": "Existing source/analysis_source contents and original manifests are authoritative; migration-time code is separately labeled",
+    "input_access": "Local input/model assets remain locally retained; original hashes are in manifests/evaluations. Another checkout must restore matching bytes.",
+    "original_temporary_paths": "Not reconstructed when absent from original evidence"
+  },
+  "migration_code_archive": "docs/maintenance/evidence/structure-migration/original-source.tar"
+}

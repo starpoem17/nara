@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "record_kind": "historical_experiment",
+  "read_only": true,
+  "project_root": "../..",
+  "run_id": "legacy_rule_ab200_revised",
+  "area": "rule-evaluation",
+  "report": "docs/experiments/rule-evaluation/2026-09/legacy_rule_ab200_revised.md",
+  "question": "How do the revised qualification rules compare on dev200?",
+  "started_at": null,
+  "timezone": "Asia/Seoul",
+  "time_evidence": "No verified orchestration start; see timestamp-candidates.json and original logs. September 2026 is established by the linked historical project records.",
+  "migration_at": "2026-09-13T15:13:30.132033+00:00",
+  "status": "historical; inspect per-condition execution records",
+  "judgment": "Dev-informed revision; no independent holdout validation is established.",
+  "conditions": {
+    "recorded_execution": {
+      "settings": {
+        "recorded_condition": "recorded execution",
+        "scope": "See preserved original manifest and source for exact settings."
+      },
+      "status": "historical",
+      "attempts": [],
+      "artifact_path": "."
+    }
+  },
+  "max_attempts": 0,
+  "predecessors": [
+    {
+      "run_id": "legacy_rule_ab200",
+      "reason": "Initial results informed rule changes."
+    }
+  ],
+  "followups": [],
+  "original_files": {
+    "analysis/rule_ab200_revised/report.json": {
+      "path": "report.json",
+      "sha256": "6ec0d7d8360959b03330351caa6295df80335e7ee801e33534cd9a6f06efb547",
+      "size": 4586
+    },
+    "analysis/rule_ab200_revised/rules.jsonl": {
+      "path": "rules.jsonl",
+      "sha256": "0252ce343d393533e89a3f1b33ff01607462cbd473b02c34d39e78ec90675030",
+      "size": 108439
+    },
+    "analysis/rule_ab200_revised/source/nara/hypothesis6.py": {
+      "path": "source/nara/hypothesis6.py",
+      "sha256": "737c4c4198d1254b50acc472e653dd513315e216001282ddf8dc7459368c34bf",
+      "size": 9758
+    },
+    "analysis/rule_ab200_revised/source/tests/test_hypothesis6.py": {
+      "path": "source/tests/test_hypothesis6.py",
+      "sha256": "d0bc1af5e8bb189887ead11930e097887de43ef94822ef01a3ec74f01341f3c0",
+      "size": 8572
+    }
+  },
+  "temporary_paths": [
+    "tmp/structure-migration-20260913"
+  ],
+  "migration_inventory": "docs/maintenance/evidence/structure-migration/mapping.json",
+  "reproducibility": "Original content retained. Local datasets/models require matching separately restored bytes; historical commands may need current reconstruction guidance.",
+  "recorded_condition_evidence": [],
+  "historical_provenance": {
+    "status": "retained where originally recorded; missing fields remain unknown",
+    "execution_sources": "Existing source/analysis_source contents and original manifests are authoritative; migration-time code is separately labeled",
+    "input_access": "Local input/model assets remain locally retained; original hashes are in manifests/evaluations. Another checkout must restore matching bytes.",
+    "original_temporary_paths": "Not reconstructed when absent from original evidence"
+  },
+  "migration_code_archive": "docs/maintenance/evidence/structure-migration/original-source.tar"
+}

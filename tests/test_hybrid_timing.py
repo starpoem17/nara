@@ -3,7 +3,7 @@ from dataclasses import dataclass
 from types import SimpleNamespace
 import unittest
 from nara.inference.hybrid_experiment import TimedLLM
-from nara.evaluation.summarize_hybrid200 import interval_union_breakdown
+from experiments.legacy_hybrid200.code.summarize_hybrid200 import interval_union_breakdown
 
 
 class TimingTests(unittest.TestCase):

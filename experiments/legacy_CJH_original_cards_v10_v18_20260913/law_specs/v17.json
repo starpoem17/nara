@@ -1,0 +1,88 @@
+{
+  "feature": "v17",
+  "excerpts": [
+    {
+      "path": "data/법령패키지/법령/중소기업제품 구매촉진 및 판로지원에 관한 법률.txt",
+      "start_line": 36,
+      "end_line": 39,
+      "locator": "제4조"
+    },
+    {
+      "path": "data/법령패키지/법령/중소기업제품 구매촉진 및 판로지원에 관한 법률 시행령.txt",
+      "start_line": 25,
+      "end_line": 29,
+      "locator": "제2조의2제1항 본문 및 제1호"
+    },
+    {
+      "path": "data/법령패키지/법령/중소기업제품 구매촉진 및 판로지원에 관한 법률 시행령.txt",
+      "start_line": 37,
+      "end_line": 50,
+      "locator": "제2조의3"
+    },
+    {
+      "path": "data/법령패키지/법령/국가를 당사자로 하는 계약에 관한 법률 시행령.txt",
+      "start_line": 186,
+      "end_line": 187,
+      "locator": "제21조제1항 본문"
+    },
+    {
+      "path": "data/법령패키지/법령/국가를 당사자로 하는 계약에 관한 법률 시행령.txt",
+      "start_line": 203,
+      "end_line": 205,
+      "locator": "제21조제1항제10호"
+    },
+    {
+      "path": "data/법령패키지/법령/지방자치단체를 당사자로 하는 계약에 관한 법률 시행령.txt",
+      "start_line": 190,
+      "end_line": 191,
+      "locator": "제20조제1항 본문"
+    },
+    {
+      "path": "data/법령패키지/법령/지방자치단체를 당사자로 하는 계약에 관한 법률 시행령.txt",
+      "start_line": 208,
+      "end_line": 210,
+      "locator": "제20조제1항제12호"
+    },
+    {
+      "path": "data/법령패키지/법령/국가를 당사자로 하는 계약에 관한 법률 등의 재정경제부장관이 정하는 고시금액.txt",
+      "start_line": 8,
+      "end_line": 13,
+      "locator": "제1호가목"
+    },
+    {
+      "path": "data/법령패키지/법령/국가를 당사자로 하는 계약에 관한 법률 등의 재정경제부장관이 정하는 고시금액.txt",
+      "start_line": 60,
+      "end_line": 65,
+      "locator": "제2호가목"
+    },
+    {
+      "path": "data/법령패키지/법령/소프트웨어 진흥법.txt",
+      "start_line": 388,
+      "end_line": 390,
+      "locator": "제48조제1항 및 제2항"
+    },
+    {
+      "path": "data/법령패키지/법령/중소 소프트웨어사업자의 사업 참여 지원에 관한 지침.txt",
+      "start_line": 11,
+      "end_line": 11,
+      "locator": "제2조제1항"
+    },
+    {
+      "path": "data/법령패키지/법령/중소 소프트웨어사업자의 사업 참여 지원에 관한 지침.txt",
+      "start_line": 13,
+      "end_line": 18,
+      "locator": "제3조제1항"
+    },
+    {
+      "path": "data/법령패키지/법령/중소 소프트웨어사업자의 사업 참여 지원에 관한 지침.txt",
+      "start_line": 322,
+      "end_line": 337,
+      "locator": "별표 1"
+    }
+  ],
+  "selection_notes": [
+    "The competitive-product candidate rows and their complete special notes are supplied separately and are not included in this law specification.",
+    "The organizer package contains only the notified-amount source promulgated 2026-01-02 and effective 2026-01-08. It supplies no historical notified amounts, so its current values must not be presumed to apply to an earlier notice date.",
+    "The complete 제2조의3 exception text is retained because the card treats a stated 판로지원 exception as normal."
+  ]
+}

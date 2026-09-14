@@ -166,7 +166,7 @@ class RecoveryTests(unittest.TestCase):
         self.assertEqual(isolated_calls, [['v1']])
         self.assertEqual(result.trace[0]['judgments'], successful['judgments'])
         self.assertIsNone(result.trace[0]['error'])
-        from nara.experiments.recover_hybrid200 import replay
+        from experiments.legacy_hybrid_repair.code.recover_hybrid200 import replay
         self.assertEqual(replay(rec, successful['trace'][1], predictor),
                          predictor.replay_judgments(rec, successful['trace'][1]))
 

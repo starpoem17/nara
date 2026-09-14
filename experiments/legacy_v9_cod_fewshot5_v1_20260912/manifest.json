@@ -1,0 +1,38 @@
+{
+  "seed": 20260912,
+  "ids": [
+    "PPS-DEV-16",
+    "PPS-DEV-175",
+    "PPS-DEV-111",
+    "PPS-DEV-055",
+    "PPS-DEV-31"
+  ],
+  "group": [
+    "v9",
+    "v19"
+  ],
+  "thinking": true,
+  "thinking_budget": 256,
+  "limits": {
+    "batch_size": 5,
+    "search_rounds": 2,
+    "queries_per_round": 4,
+    "top_k": 5,
+    "round_tokens": 4096,
+    "total_retrieval_tokens": 8192,
+    "output_tokens": 512,
+    "retries": 1,
+    "require_search": false,
+    "instant_output_tokens": null
+  },
+  "prompt_tokens": 620,
+  "input_tokens": [
+    8535,
+    15151,
+    9198,
+    8423,
+    7083
+  ],
+  "style_success": "First attempt: nonempty native thinking, both item labels, every nonempty line begins v9:/v19: and contains <=5 whitespace words; natural end before256; valid JSON, no retry/length stop. Five of five required.",
+  "caveat": "Few-shot placement/prompt and batch5 differ from archived batch16. Five fixed random records assess format, not generalization."
+}

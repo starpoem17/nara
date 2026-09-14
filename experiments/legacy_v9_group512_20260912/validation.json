@@ -1,0 +1,19 @@
+{
+  "unique_records": 200,
+  "all_groups_v9_v19": true,
+  "all_caps_512": true,
+  "all_thinking_zero": true,
+  "max_actual_output_tokens": 449,
+  "evidence": {
+    "v9": {
+      "candidate_positive_missing": 12,
+      "baseline_positive_missing": 18
+    },
+    "v19": {
+      "candidate_positive_missing": 2,
+      "baseline_positive_missing": 5
+    }
+  },
+  "baseline_input_hashes_match": true,
+  "runtime_source_hashes_unchanged": true
+}

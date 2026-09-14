@@ -1,6 +1,6 @@
 # File-backed legal retrieval
 
-Code: [builder](../../src/retrieval/index.py), [retriever](../../src/retrieval/search.py). Caller: [dynamic RAG](dynamic-rag.md).
+Code: [builder](<../../src/retrieval/index.py>), [retriever](<../../src/retrieval/search.py>). Caller: [dynamic RAG](<dynamic-rag.md>).
 
 ## Interface
 
@@ -15,7 +15,7 @@ hits = retriever.search({"record:turn:query": "중소 소프트웨어사업자�
 - `search({query_id: text}, top_k=5) -> {query_id: list[SearchHit]}`; caller owns IDs. Immutable index; no conversation state.
 - Hit fields: `passage_id, text, source, locator, title, section, score`. CPU exact dense search; at most `top_k` hits after whitespace-normalized text deduplication.
 - Empty query map → `{}`. Invalid IDs/queries/limits, encoder mismatch, corrupt artifacts or invalid vectors → error.
-- Local BGE-M3: CLS pooling, normalized 1024-dimensional vectors; pinned revision in [model contract](../competition/submission.md#models-and-runtime). Check available download metadata and index/query signatures (revision, dimensions, normalization, tokenizer/config/modules/pooling hashes). No weight downloads or silent input truncation.
+- Local BGE-M3: CLS pooling, normalized 1024-dimensional vectors; pinned revision in [model contract](<../competition/submission.md#models-and-runtime>). Check available download metadata and index/query signatures (revision, dimensions, normalization, tokenizer/config/modules/pooling hashes). No weight downloads or silent input truncation.
 
 ## Build and artifacts
 
@@ -37,4 +37,4 @@ OMP_NUM_THREADS=4 OPENBLAS_NUM_THREADS=4 uv run --locked python -m nara.retrieva
   --device cpu --query "중소기업자간 경쟁제품 직접생산 확인 증명서"
 ```
 
-Checks, measurements and ranking limitations: [experiments](../experiments/local-validation.md).
+Checks, measurements and ranking limitations: [experiments](<../maintenance/local-validation.md>).

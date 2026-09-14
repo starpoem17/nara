@@ -1,0 +1,1323 @@
+author,id,feature,gold,valid,strict_format,format_violation,invalid_reason,error_type,prediction,evidence_json,evidence_empty,evidence_substring,absence_evidence_nonempty,positive_nonabsence_missing,positive_nonabsence_not_substring,normal_nonempty,finish_reason,stop_reason,output_tokens,raw_response
+CJH,PPS-DEV-01,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,36,"```json
+{
+  ""v17"": 1,
+  ""e17"": ""중소기업, 소상공인""
+}
+```"
+CJH,PPS-DEV-02,v17,0,False,True,,invalid_json:Expecting value: line 1 column 1 (char 0),invalid,,null,,,False,False,False,False,stop,106,362,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""「중소기업기본법」 제2조에 따른 소기업자 또는 「소상공인 보호및 지원에 관한 법률」 제2조에 따른 소상공인으로서 「중소기업 범위 및 확인에 관한 규정」에 따라 발급된 소기업ㆍ소상공인확인서를 소지한 자""
+}
+```
+
+**판정 근거 설명:**
+1. **구매 대상 확인:** 공고의 입찰건명은 '공공시설 외국 학술지 연간 구매사업'이며, 세부품명은 '잡지[5510150601]'입니다.
+2. **경쟁제품 여부:** 제공된 [참고자료: 경쟁제품 목록 발췌]에 해당 세부품명(잡지)이 포함되어 있지 않으므로 일반제품(물품)으로 분류됩니다.
+3. **금액 조건:** meta의 입찰추정가격은 83,100,000원으로 1억 원 미만입니다.
+4. **제한 범위 판정:** 공고문 3번 입찰참가자격 항목을 보면, ""「중소기업기본법」 제2조에 따른 소기업자 또는 「소상공인 보호및 지원에 관한 법률」 제2조에 따른 소상공인""으로 제한하고 있습니다. 이는 중소기업 전체가 아닌 **'소기업·소상공인'으로만 제한**한 경우에 해당하므로, 판정 기준에 따라 **정상(0)**으로 판정합니다."
+CJH,PPS-DEV-03,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,130,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""다. 「벤처기업육성에 관한 특별법」 제2조 제1항에 따른 벤처기업, 「중소기업창업 지원법」에 따른 창업기업, 「중소기업기본법」 제2조 제2항에 따른 소기업 또는 「소상공인기본법」 제2조에 따른 소상공인으로서 「중소기업 범위 및 확인에 관한 규정」 등에 따라 발급된 관련 확인서를 소지한 업체""
+}
+```"
+CJH,PPS-DEV-04,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v17"": 0,
+  ""e17"": null
+}
+```"
+CJH,PPS-DEV-05,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,100,"```json
+{
+  ""v17"": 1,
+  ""e17"": ""③ 「중소기업기본법」 제2조에 따른 중소기업 및 「소상공인 보호 및 지원에 관한 법률」 제2조에 따른 소상공인으로서 「중소기업 범위 및 확인에 관한 규정」에 따라 발급된 중소기업·소상공인 확인서를 소지한 업체""
+}
+```"
+CJH,PPS-DEV-06,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,124,"```json
+{
+  ""v17"": 1,
+  ""e17"": ""라. 「중소기업기본법 시행령」 제8조 및 「소상공인 보호 및 지원에 관한 법률」 제2조에 따른 중·소기업·소상공인으로서「중·소기업·소상공인 및 장애인기업 확인요령」에 따라 발급된 중·소기업·소상공인 확인서(입찰마감일 기준 유효하여야 함)를 소지한 업체""
+}
+```"
+CJH,PPS-DEV-07,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v17"": 0,
+  ""e17"": null
+}
+```"
+CJH,PPS-DEV-08,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v17"": 0,
+  ""e17"": null
+}
+```"
+CJH,PPS-DEV-09,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,115,"```json
+{
+  ""v17"": 1,
+  ""e17"": ""「중소기업기본법」제2조에 따른 중기업 또는 소기업이거나 「소상공인 보호 및 지원에 관한 법률」제2조에 따른 소상공인으로서 「중소기업 범위 및 확인에 관한 규정」에 따라 발급된 중․소기업․소상공인 확인서(중소기업확인서)를 소지한 업체이어야 합니다.""
+}
+```"
+CJH,PPS-DEV-10,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,107,"```json
+{
+  ""v17"": 1,
+  ""e17"": ""② 「중소기업기본법」 제2조에 따른 중소기업자 또는 「소상공인 보호 및 지원에 관한 법률」 제2조에 따른 소상공인으로서「중소기업 범위 및 확인에 관한 규정」에 따라 발급된 ‘중기업·소기업·소상공인확인서’를 소지한 업체""
+}
+```"
+CJH,PPS-DEV-11,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,103,"```json
+{
+  ""v17"": 1,
+  ""e17"": ""「중소기업기본법」제2조에 따른 중‧소기업 또는「소상공인 보호 및 지원에 관한 법률」제2조에 따른 소상공인으로서「중소기업 범위 및 확인에 관한 규정」에 따라 발급된 중기업 또는 소기업․소상공인확인서를 소지한 업체""
+}
+```"
+CJH,PPS-DEV-12,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,118,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""라. 「중소기업제품 구매촉진 및 판로지원에 관한 법률 시행령」 제2조의2, 「중소기업기본법」제2조제2항 및 「소상공인기본법」제2조에 의거 소기업 또는 소상공인에 해당하는 업체(입찰마감일 전일까지 발급된 것으로 유효기간 내에 있어야 함)에 한합니다 .""
+}
+```"
+CJH,PPS-DEV-13,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,75,"```json
+{
+  ""v17"": 1,
+  ""e17"": ""가.「중소기업기본법」 제2조에 따른 중소기업자로서 「중소기업 범위 및 확인에 관한 규정」에 따라 발급된 중소기업확인서를 소지한 업체""
+}
+```"
+CJH,PPS-DEV-14,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v17"": 0,
+  ""e17"": null
+}
+```"
+CJH,PPS-DEV-15,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,117,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""「중소기업제품 구매촉진 및 판로지원에 관한 법률 시행령」 제2조의2에 따른 소기업 또는 소상공인으로서 「중소기업 범위 및 확인에 관한 규정」에 따라 발급된 소기업·소상공인 확인서(제안서제출 마감일까지 발급된 것으로 유효기간 내에 있어야 함)를 소지한 자이어야 합니다.""
+}
+```"
+CJH,PPS-DEV-16,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,85,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""『중소기업제품 구매촉진 및 판로지원에 관한 법률』 제2조에 따른 소기업자로서 중소기업 범위 및 확인에 관한 규정에 따라 발급된 소기업, 소상공인확인서를 소지한 업체이어야 합니다""
+}
+```"
+CJH,PPS-DEV-17,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,82,"```json
+{
+  ""v17"": 1,
+  ""e17"": ""「중소기업기본법」제2조에 따른 중소기업자 또는 「소상공인 보호 및 지원에 관한 법률」제2조에 따른 소상공인으로서 중소기업확인서를 소지한 업체이어야 합니다.""
+}
+```"
+CJH,PPS-DEV-18,v17,0,False,True,,invalid_json:Expecting value: line 1 column 1 (char 0),invalid,,null,,,False,False,False,False,stop,106,318,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""나. 입찰에 참가한 소기업 또는 소상공인이 2인 미만이거나 2인 이상이더라도 적격자가 없는 등의 사유로 유찰(流札)된 경우""
+}
+```
+
+**[판정 근거]**
+1. **실제 구매 대상 및 경쟁제품 여부**: 공고의 세부품명은 '액화석유가스[1511151001]'이며, 제공된 경쟁제품 목록에 해당 품목이 존재하지 않으므로 일반제품입니다.
+2. **입찰추정가격 확인**: meta 정보의 입찰추정가격은 204,246,000원으로 1억 원을 초과합니다. (질문 조건인 1억 원 미만 미충족)
+3. **참가자격 제한 확인**: 공고문 3조 '다'항 및 '라'항에 따르면, 입찰 참가 자격을 「중소기업제품 구매촉진 및 판로지원에 관한 법률 시행령」 제2조의2 제1항에 따른 **'소기업 또는 소상공인'**으로 제한하고 있습니다.
+4. **결론**: 판정 기준에 따라 '소기업·소상공인으로만 제한한 경우'에 해당하므로 **정상(0)**으로 판정합니다."
+CJH,PPS-DEV-19,v17,0,False,True,,non_stop_finish,invalid,,null,,,False,False,False,False,length,,512,"```json
+{
+  ""v17"": 1,
+  ""e17"": ""2) 입찰에 참가하는 자는 「국가를 당사자로 하는 법률 시행령」 제12조제3항각호에 해당하지 아니하다는 서약서를 입찰시 제출하여야 합니다. 만약 서약내용이 허위로 판명될 경우 계약의 해제·해지를 당할 수 있고, 부정당업자 입찰참가자격 제한처분을 받을 수 있습니다. (다만, 나라장터 시스템을 이용하여 제출하는 경우에는 전자입찰서(가격입찰(제안)서)에 동 서약서의 내용을 포함하고 있으므로 전자입찰서 제출로 서약서 제출을 대신합니다.)""
+}
+```
+
+**[판정 근거 설명]**
+1. **구매 대상 식별**: 공고의 품명은 '가스엔진히트펌프(세부품명번호: 4010180602)'이며, 이는 경쟁제품 목록에 포함되지 않은 일반 물품입니다.
+2. **입찰추정가격 확인**: meta 정보 및 공고문 상의 입찰추정가격은 168,410,000원입니다. (단, 판정 질문의 '1억 원 미만' 조건은 입찰추정가격이 아닌 '입찰금액/예비가격기초금액' 또는 '조항호내용'의 기준을 따르며, 본 공고의 조항호내용은 '추정가격 1억원이상 고시금액 미만'으로 되어 있으나, 실제 입찰 참가자격 제한 문구를 확인해야 합니다.)
+3. **기업 규모 제한 확인**: 공고문 2. 가. 3)항을 보면 ""「중소기업기본법」제2조제2항에 규정된 소기업자 또는 「소기업 및 소상공인 지원을 ال법」 제2조에 따른 소기업·소상공인으로... 소지한 자""라고 명시되어 있어 **소기업·소상공인 제한**으로 보일 수 있으나, 질문의 핵심인 '중소기업 전체 제한' 여부를 판단할 때, 공고문 2. 가. 1)항에서 ""가스엔진히트펌프"
+CJH,PPS-DEV-20,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v17"": 0,
+  ""e17"": null
+}
+```"
+CJH,PPS-DEV-21,v17,1,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,106,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""다. 「중소기업기본법」제2조에 따른 중소기업 또는 「소상공인 보호 및 지원에 관한 법률」제2조에 따른 소상공인으로서 「중소기업범위 및 확인에 관한 규정」에 따라 발급된 중소기업·소상공인확인서를 소지한 자이어야 합니다.""
+}
+```"
+CJH,PPS-DEV-22,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,52,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""조항호내용\"":\""[판로지원법 시행령] 소기업,소상공인제한\""""
+}
+```"
+CJH,PPS-DEV-23,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,121,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""본 입찰은 중기간경쟁제품인 드론을 요구하지만, 수요기관의 특별한 사정으로 인하여 사업에서 요구되는 규격이 특정한 기술을 필요로 하므로 ｢중소기업제품 구매촉진 및 판로지원에 관한 법률 시행령｣ 제7조제1항제4호 규정을 적용하여 직접생산확인품목에서 제외하고 일반물품으로 입찰공고합니다.""
+}
+```"
+CJH,PPS-DEV-24,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,104,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""4) 「중소기업기본법」 제2조에 따른 중·소기업 또는 「소상공인 보호 및 지원에 관한 법률」 제2조에 따른 소상공인으로서 「중소기업 범위 및 확인에 관한 규정」에 따라 발급된 중·소기업·소상공인확인서를 소지한 자""
+}
+```"
+CJH,PPS-DEV-25,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v17"": 0,
+  ""e17"": null
+}
+```"
+CJH,PPS-DEV-26,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,103,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""「중소기업기본법」 제2조에 따른 소기업( 「소상공인 보호 및 지원에 관한 법률」 제2조에 따른 소상공인 포함)으로서 ｢중소기업 범위 및 확인에 관한 규정｣에 따라 발급된 <소기업·소상공인 확인서>를 소지한 자.""
+}
+```"
+CJH,PPS-DEV-27,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,106,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""라. 「중소기업기본법」 제2조에 따른 소기업자 또는 「소상공인 보호 및 지원에 관한 법률」 제2조에 따른 소상공인으로서 「중소기업 범위 및 확인에 관한 규정」 제6조에 따라 발급된 소기업·소상공인확인서*를 소지한 업체""
+}
+```"
+CJH,PPS-DEV-28,v17,0,False,True,,invalid_json:Expecting value: line 1 column 1 (char 0),invalid,,null,,,False,False,False,False,stop,106,187,"```json
+{
+  ""v17"": 0,
+  ""v18"": 1,
+  ""e17"": null
+}
+```
+
+**[판정 근거]**
+1. **실제 구매 대상 식별**: 본 공고의 대상은 '2026년 콘텐츠기업 투자유치 지원 프로그램' 운영 용역입니다.
+2. **입찰추정가격 확인**: 공고 정보(meta)에 따르면 입찰추정가격은 **290,909,091원**입니다.
+3. **판정**: 판정 기준인 '1억 원 미만' 조건에 해당하지 않으므로(약 2.9억 원), 해당 항목의 위반 여부를 따질 필요 없이 **정상(0)**으로 판정합니다. (금액 구간이 다름)"
+CJH,PPS-DEV-29,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,73,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""중소기업제품 구매촉진 및 판로지원에 관한 법률 시행령 제2조의3 제1항에 의거 중소기업자와의 우선조달계약에 대한 예외를 적용합니다.""
+}
+```"
+CJH,PPS-DEV-30,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v17"": 0,
+  ""e17"": null
+}
+```"
+CJH,PPS-DEV-31,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v17"": 0,
+  ""e17"": null
+}
+```"
+CJH,PPS-DEV-32,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v17"": 0,
+  ""e17"": null
+}
+```"
+CJH,PPS-DEV-033,v17,1,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,68,"```json
+{
+  ""v17"": 1,
+  ""e17"": ""다. 「중소기업제품 구매촉진 및 판로지원에 관한 법률」 제8조 및 동법 시행령 제9조의 요건을 갖춘 중소기업자""
+}
+```"
+CJH,PPS-DEV-034,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,74,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""나. 「중소기업제품의 구매촉진 및 판로지원에 관한 법률 시행령」제2조의 2에 따라 소기업 또는 소상공인 확인서를 소지한 업체이어야 합니다.""
+}
+```"
+CJH,PPS-DEV-035,v17,1,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,35,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""제한경쟁(소기업)""
+}
+```"
+CJH,PPS-DEV-036,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,124,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""❍ 「중소기업기본법」 제2조에 따른 소기업자 또는 「소상공인 보호 및 지원에 관한 법률」 제2조에 따른 소상공인으로서 「중소기업 범위 및 확인에 관한 규정」에 따라 발급된 소기업ㆍ소상공인 확인서(적격심사 서류제출 마감일까지 발급된 것으로 유효기간 내에 있어야 함)를 소지한 업체""
+}
+```"
+CJH,PPS-DEV-037,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v17"": 0,
+  ""e17"": null
+}
+```"
+CJH,PPS-DEV-038,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,44,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""[판로지원법 시행령] 소기업,소상공인제한""
+}
+```"
+CJH,PPS-DEV-039,v17,0,False,True,,non_stop_finish,invalid,,null,,,False,False,False,False,length,,512,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""입찰 공고(긴급)\n\n(용역)입찰 공고(긴급)\n\n입찰에 부치고자 다음과 같이 공고합니다.\n\n2026. 3. 13. \n\n< 본 입찰은 청렴계약제가 적용됩니다 >\n\n1. 본 입찰은 청렴계약제 시행 대상입니다.\n\n2. 본 입찰에 참가하고자 하는 자는 [수요기관(준정부기관)]의 「청렴계약입찰특별유의서」 제2조 제1항에 의거 의무적으로 제출하여야 하는 청렴계약이행각서를 제출한 것으로 간주합니다.\n\n3. 최종 낙찰자로 선정된 업체는 계약 체결 시 서명 또는 날인하여 청렴계약 이행각서를 [수요기관(준정부기관)]에 별도 제출하여야 합니다.\n\n4. 청렴계약을 위한 「청렴계약입찰특별유의서」, 「청렴계약이행각서」, 「청렴계약특수조건」은 [수요기관(준정부기관)] 홈페이지([기관홈페이지] 게재되어 있으니, 이를 숙지하고 입찰하시기 바랍니다.\n\n1. 입찰개요\n\n--------------------------------------------------------------------------------------------------------------\n\n공고(사업)명: 준정부기관 농촌 혁신아이디어 콘테스트 운영 용역(제한경쟁·1억원미만)\n\n과 업 내 용: 서바이벌 형태(예선-본선-결선)로 농촌창업 아이디어 및 창업팀을 선발하여 상장 및 상금 수여 등 시상식 운영, 홍보, 사후관리 등\n\n- (분야1) 농촌에 창창업한 식품𐤟제조 기업(5개사)\n\n- (분야2) 농촌의 유무형 자원을 활용한 콘텐츠 기획·개발·브랜딩 등 창의적 아이디어로 농촌에 창업한 기업(10개사 이상)\n\n※ 세부내용은 과업지시서"
+CJH,PPS-DEV-040,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,44,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""[판로지원법 시행령] 소기업,소상공인제한""
+}
+```"
+CJH,PPS-DEV-041,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,44,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""[판로지원법 시행령] 소기업,소상공인제한""
+}
+```"
+CJH,PPS-DEV-042,v17,1,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,92,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""나. 중소기업기본법 제2조 제2항에 따른 중·소기업 또는 소상공인 보호 및 지원에 관한 법률 제2조에 따른 소상공인으로서 중·소기업, 소상공인확인서 중 하나를 소지한 업체이어야 합니다.""
+}
+```"
+CJH,PPS-DEV-043,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,63,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""중·소기업, 소상공인확인서 중 1부(제출마감일 전일까지 발급된 것으로 유효 기간 내에 있어야 함)""
+}
+```"
+CJH,PPS-DEV-044,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,112,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""다음 각 호의 자격을 모두 갖춘 자이어야 합니다. ① 「국가종합전자조달시스템 입찰참가자격등록규정」에 의하여 국가종합전자조달시스템에 입찰참가자격 등록마감일시까지 [기타자유업종[업종코드: 9999] 입찰참가자격을 등록한 자""
+}
+```"
+CJH,PPS-DEV-045,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,125,"```json
+{
+  ""v17"": 0,
+  ""근거문구"": ""③ 다음 중 아래의 어느 하나에 해당하는 자\n- 「중소기업기본법」 제2조에 따른 중소기업 또는 「소상공인 보호 및 지원에 관한 법률」 제2조에 따른 소상공인으로서 「중소기업 범위 및 확인에 관한 규정(중소벤처기업부 고시)」 에 따라 발급된 ‘중소기업·소상공인 확인서’를 소지한 자""
+}
+```"
+CJH,PPS-DEV-046,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,123,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""중소기업자간 경쟁제품 중 물품의 구매에 관한 계약이행능력심사 세부기준(중소벤처기업부 고시 제2025-36호, 2025.4.15.) 제4조제1항제3호[별표3]에 따라 추정가격이 고시금액 미만인 중소기업자간 경쟁물품의 평가기준을 적용하며""
+}
+```"
+CJH,PPS-DEV-047,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,111,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""라. 「중소기업제품 구매촉진 및 판로지원에 관한 법률 시행령」 제2조의2 및 「중소기업기본법」 제2조제2항에 따른 중·소기업 또는 「소상공인기본법」 제2조에 따른 소상공인 간 제한경쟁입찰에 따라 조달계약을 체결하여야 한다.""
+}
+```"
+CJH,PPS-DEV-048,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,115,"```json
+{
+  ""v17"": 1,
+  ""e17"": ""「중소기업기본법」제2조에 따른 중·소기업자 또는 「소상공인 보호 및 지원에 관한 법률」 제2조에 따른 소상공인으로서 「중소기업 범위 및 확인에 관한 규정」에 따라 발급된 중ㆍ소기업 또는 소상 공인확인서를 소지한 업체로 다음 각 호의 자격을 모두 갖추어야 함.""
+}
+```"
+CJH,PPS-DEV-049,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,109,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""다. 「중소기업기본법」 제2조에 따른 중기업, 소기업 또는 「소상공인 보호 및 지원에 관한 법률」 제2호에 따른 소상공인으로서, 「중소기업 범위 및 확인에 관한 규정」에 따라 발급된 중기업, 소기업, 소상공인 확인서를 소지한자 이어야 합니다.""
+}
+```"
+CJH,PPS-DEV-050,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,107,"```json
+{
+  ""v17"": 1,
+  ""e17"": ""「중소기업기본법」제2조에 따른 중소기업자 및 「소상공인 보호 및 지원에 관한 법률」제2조에 따른 소상공인으로서「중·소기업·소상공인 및 장애인기업 확인요령」에 따라 발급된 중·소기업·소상공인 확인서를 소지한 업체""
+}
+```"
+CJH,PPS-DEV-051,v17,0,False,False,complete_code_fence,invalid_json:Extra data: line 5 column 1 (char 217),invalid,,null,,,False,False,False,False,stop,106,488,"```json
+{
+  ""v17"": 1,
+  ""e17"": ""⑦ 『중소기업제품 구매촉진 및 판로지원에 관한 법률』 제4조, 같은 법 시행령 제2조의2 및 『소상공인 보호 및 지원에 관한 법률』 제2조에 따른 중, 소기업 또는 소상공인으로서 ｢중소기업․소상공인 및 장애인기업 확인요령｣에 따라 발급된 중소기업․ 소상공인확인서 (입찰 마감일 전일까지 발급된 것으로 유효기간내에 있어야 함)을 소지한 업체""
+}
+```
+
+**판정 근거 설명:**
+1. **구매 대상 식별:** 공고의 품목은 '이동형X선 투시장치(C-ARM)'이며, 제공된 경쟁제품 목록에 해당 세부품명번호(4110180201)가 포함되어 있지 않으므로 일반제품으로 분류됩니다.
+2. **추정가격 확인:** meta의 입찰추정가격은 245,454,545원으로 1억 원 이상입니다.
+3. **판정 결과:** 본 항목(v17)의 위반 조건은 '1억 원 미만'인 경우를 전제로 합니다. 본 공고의 추정가격은 1억 원을 초과하므로, 해당 항목의 위반 조건(1억 원 미만)을 충족하지 않습니다. 
+
+*다시 검토 결과:* 질문의 로직상 **1억 원 미만 일반제품**을 중소기업 전체로 제한하는지 묻고 있으나, 본 공고의 추정가격은 **245,454,545원**으로 1억 원 이상입니다. 따라서 '1억 원 미만'이라는 전제 조건 자체를 만족하지 못하므로 위반(1)이 아닌 **정상(0)**으로 판정하는 것이 논리적으로 타당합니다.
+
+**수정된 최종 응답 (로직에 따른 정상 판정):**
+
+```json
+{
+  ""v17"": 0,
+  ""e17"": null
+}
+```"
+CJH,PPS-DEV-052,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,118,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""마. 「중소기업제품 구매촉진 및 판로지원에 관한 법률」 제2조에 따른 중소기업자 및 「소상공인 보호 및 지원에 관한 법률」 제2조에 따른 소상공인으로서「중·소기업·소상공인 장애인기업 확인요령」에 따라 발급된 중·소기업·소상공인확인서를 소지한 업체""
+}
+```"
+CJH,PPS-DEV-053,v17,1,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,103,"```json
+{
+  ""v17"": 0,
+  ""근거문구"": ""②「중소기업기본법」제2조에 따른 중소기업 또는 「소상공인 보호 및 지원에 관한 법률」제2조에 따른 소상공인으로서「중소기업 범위 및 확인에 관한 규정」에 따라 발급된 중·소기업·소상공인확인서를 소지한 자""
+}
+```"
+CJH,PPS-DEV-054,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v17"": 0,
+  ""e17"": null
+}
+```"
+CJH,PPS-DEV-055,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,138,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""「중소기업기본법」제2조에 따른 소기업 또는 「소상공인 보호 및 지원에 관한 법률」제2조에 따른 소상공인으로서 ‘소기업·소상공인확인서(용도: 공공기관 입찰용)’를 소지한 자(유효기간 내 있어야함) 또는「중소기업제품 구매촉진 및 판로지원에 관한 법률」시행령 제2조의3 제2호에 해당하는 비영리 법인""
+}
+```"
+CJH,PPS-DEV-056,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,94,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""「중소기업기본법」제2조에 따른 소기업 또는 「소상공인 보호 및 지원에 관한 법률」제2조에 따른 소상공인으로서 ‘소기업·소상공인확인서(용도: 공공기관 입찰용)’를 소지한 자""
+}
+```"
+CJH,PPS-DEV-057,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,54,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""가. 입찰방법 : 제한경쟁입찰(중·소기업, 소상공인, 직접생업체)""
+}
+```"
+CJH,PPS-DEV-058,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,46,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""중소기업 및 소상공인 확인 서류 1부(해당시)""
+}
+```"
+CJH,PPS-DEV-059,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,107,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""◦ 「중소기업기본법」 제2조제2항에 따른 소기업 및「소상공인 보호 및 지원에 관한 법률」제2조에 따른 소상공인으로서「중소기업 범위 및 확인에 관한 규정」에 따라 발급된 [소기업·소상공인 확인서]를 소지한 자이어야 합니다.""
+}
+```"
+CJH,PPS-DEV-060,v17,0,False,True,,invalid_json:Expecting value: line 1 column 1 (char 0),invalid,,null,,,False,False,False,False,stop,106,328,"```json
+{
+  ""v17"": 0,
+  ""e17"": null
+}
+```
+
+**판정 근거:**
+1. **구매 대상 식별 및 경쟁제품 여부:** 공고의 과업명은 「2026 로봇플러스 페스티벌 기획·운영」 용역이며, 입찰 참가 자격(3-가-4)에서 '전시회기획 및 대행서비스(8014198801)', '국제행사기획 및 대행서비스(8014198901)', '기타행사기획 및 대행서비스(8014199001)'를 명시하고 있습니다. 이는 제공된 [참고자료: 경쟁제품 목록]의 세부품명번호와 일치하며, 해당 제품들은 '경쟁제품'에 해당합니다.
+2. **금액 확인:** meta의 입찰추정가격은 541,636,364원으로, 1억 원을 초과합니다.
+3. **결론:** 본 공고는 1억 원 미만 일반제품에 대한 제한이 아니라, 1억 원을 초과하는 금액의 사업이며 대상이 경쟁제품(행사대행서비스)에 해당하므로, '1억 원 미만 일반제품의 중소기업 제한' 항목의 위반(1) 조건에 해당하지 않습니다. 따라서 정상(0)으로 판정합니다."
+CJH,PPS-DEV-061,v17,0,False,True,,invalid_json:Expecting value: line 1 column 1 (char 0),invalid,,null,,,False,False,False,False,stop,106,295,"```json
+{
+  ""v17"": 0,
+  ""e17"": null
+}
+```
+
+**판정 근거:**
+1. **구매 대상 식별 및 경쟁제품 여부:** 공고의 사업명은 '2026년 상반기 HOT! 생생 라이브공연 행사대행 용역'이며, 제공된 경쟁제품 목록(경영관련서비스)의 '회의기획및대행서비스(8014190201)', '국제행사기획및대행서비스(8014198901)', '기타행사기획및대행서비스(8014199001)'와 일치합니다. 따라서 본 사업은 **경쟁제품**에 해당합니다.
+2. **입찰추정가격 확인:** meta의 입찰추정가격은 72,727,273원으로 1억 원 미만입니다.
+3. **판정 결과:** 판정카드 규칙에 따라, 구매 대상이 **경쟁제품인 경우**는 정상(0)으로 판정합니다. 또한, 공고문 상의 참가자격은 특정 기업 규모(중소기업 전체)를 제한하는 것이 아니라, 업종(행사대행업)과 지역(경기도)을 제한하고 있습니다."
+CJH,PPS-DEV-062,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v17"": 0,
+  ""e17"": null
+}
+```"
+CJH,PPS-DEV-063,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,112,"```json
+{
+  ""v17"": 1,
+  ""e17"": ""라. 전자입찰서 제출 마감일 전일까지 「중소기업제품 구매촉진 및 판로지원에 관한 법률」 제9조 및 같은 법 시행령 제10조에 의거 해당 물품(시설물경비서비스, 세부품명번호 9212159901)의 직접생산확인증명서를 소지한 업체""
+}
+```"
+CJH,PPS-DEV-064,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v17"": 0,
+  ""e17"": null
+}
+```"
+CJH,PPS-DEV-065,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,113,"```json
+{
+  ""v17"": 1,
+  ""e17"": ""｢중소기업기본법｣ 제2조에 따른 중소기업자 또는 ｢소상공인 보호 및 지원에 관한 법률｣ 제2조에 따른 소상공인으로서, ｢중소기업 범위 및 확인에 관한 규정｣에 따라 발급된 중기업 확인서, 중소기업확인서, 소기업확인서 중 하나를 소지한 업체""
+}
+```"
+CJH,PPS-DEV-066,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,46,"```json
+{
+  ""v17"": 1,
+  ""e17"": ""[판로지원법 시행령] 중기업,소기업,소상공인 제한""
+}
+```"
+CJH,PPS-DEV-067,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,51,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""조항호내용: [판로지원법 시행령] 소기업,소상공인제한""
+}
+```"
+CJH,PPS-DEV-068,v17,0,False,True,,invalid_json:Expecting value: line 1 column 1 (char 0),invalid,,null,,,False,False,False,False,stop,106,354,"```json
+{
+  ""v17"": 1,
+  ""e17"": ""「중소기업기본법」제2조에 따른 중소기업자 또는 「소상공인 보호 및 지원에 관한 법률」 제2조에 따른 소상공인으로서 「중소기업 범위 및 확인에 관한 규정」에 따라 발급된 중소기업․소상공인확인서를 소지한 자""
+}
+```
+
+**판정 근거 설명:**
+1. **구매 대상 식별**: 공고의 사업명은 '학습분석시스템 유지보수'이며, 세부품명번호(8111159901, 정보시스템개발서비스)와 대조 시 '소프트웨어 진흥법 제48조 적용' 대상인 일반 용역(비경쟁제품)에 해당합니다.
+2. **입찰추정가격 확인**: meta 정보의 입찰추정가격은 26,418,182원으로 1억 원 미만입니다.
+3. **중소기업 제한 범위 확인**: 공고문 2.다 항목에서 ""「중소기업기본법」제2조에 따른 중소기업자 또는 「소상공인 보호 및 지원에 관한 법률」 제2조에 따른 소상공인""을 참가 자격으로 명시하고 있습니다. 이는 소기업·소상공인으로 한정하지 않고 '중소기업자' 전체를 포함하고 있으므로, 1억 원 미만 일반제품의 중소기업 전체 제한 조건(v17=1)을 만족합니다."
+CJH,PPS-DEV-069,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,92,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""「중소기업기본법」 제2조제2항에 따른 소기업자, 「소상공인기본법」 제2조에 따른 소상공인, 벤처기업 또는 「중소기업창업 지원법」 제2조제2호에 따른 창업자""
+}
+```"
+CJH,PPS-DEV-070,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,110,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""나. 「중소기업기본법」제2조제2항, 「소상공인 보호 및 지원에 관한법률」제2조에 의거 소기업 또는 소상공인으로, 「중소기업 범위 및 확인에 관한 규정」에 따라 발급한 소기업 또는 소상공인 확인서를 소지한 업체만 입찰에 참가 가능합니다.""
+}
+```"
+CJH,PPS-DEV-071,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,101,"```json
+{
+  ""v17"": 1,
+  ""e17"": ""「중소기업기본법」 제2조에 따른 중·소기업자 또는 「소상공인 보호 및 지원에 관한 법률」 제2조에 따른 소상공인으로서 중·소기업 범위 및 확인에 관한 규정에 따라 발급된 중·소기업 또는 소상공인확인서를 소지한 업체""
+}
+```"
+CJH,PPS-DEV-072,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,127,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""4) 「소상공인 보호 및 지원에 관한 법률」 제2조에 따른 소기업 또는 소상공인으로서, 「중소기업 범위 및 확인에 관한 규정( [공고호수])」에 따라 발급된 소기업, 소상공인확인서(제안서 제출 마감일까지 제출하여야 하며, 그 확인은 제출 마감일까지 발생, 신고, 수정된 자료도 포함함)를 소지한 자""
+}
+```"
+CJH,PPS-DEV-073,v17,1,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,98,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""「중소기업기본법」 제2조 제2항에 따른 중소기업 또는 「소상공인기본법」 제2조에 따른 소상공인으로서 「중소기업 범위 및 확인에 관한 규정」에 따라 발급된 중소기업·소상공인 확인서를 소지한 자""
+}
+```"
+CJH,PPS-DEV-074,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,155,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""나. 국가종합전자조달시스템 입찰참가자격등록규정에 의하여 반드시 전자입찰서 제출마감일 전일까지 기타자유업(행사대행업, 업종코드: 9901)으로 경쟁입찰 참가 자격을 등록한 자이어야 합니다. ... 다. 「중소기업기본법 제 2조 제 2항에 따른 소기업 또는 소상공인으로서 「중소기업 범위 및 확인에 관한규정」에 따라 발급된 소기업‧소상공인 확인서를 소지한 자이어야 합니다""
+}
+```"
+CJH,PPS-DEV-075,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,108,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""다.「중소기업기본법」 제2조에 따른 중소기업자 또는 「소상공인기본법」제2조에 따른 소상공인으로 「중소기업범위 및 확인에 관한 규정」에 따라 발급된 유효 기간 내의 ‘중소기업 또는 소상공인확인서’를 소지한 업체""
+}
+```"
+CJH,PPS-DEV-076,v17,0,False,True,,invalid_json:Expecting value: line 1 column 1 (char 0),invalid,,null,,,False,False,False,False,stop,106,450,"```json
+{
+  ""v17"": 1,
+  ""e17"": ""라. 「중소기업기본법」제2조에 따른 중소기업 또는 「소상공인 보호 및 지원에 관한 법률」제2조에 따른 소상공인으로서 「중소기업 범위 및 확인에 관한 규정」에 따라 발급된 소기업·소상공인 확인서를 소지한 업체""
+}
+```
+
+**판정 근거 설명:**
+1. **실제 구매 대상 식별:** 본 공고의 용역명은 '제주목 관아 야간개장 특별 공연 대행 용역'이며, 제공된 경쟁제품 목록(경영관련서비스/전시회, 회의 및 행사대행서비스 등)과 대조 시, 해당 용역은 특정된 경쟁제품이 아닌 일반 용역(일반제품)에 해당합니다.
+2. **입찰추정가격 확인:** meta 정보의 입찰추정가격은 131,363,636원으로 1억 원을 초과하지만, 판정 기준의 핵심인 '중소기업 전체 제한' 여부를 확인하기 위해 문구를 검토합니다.
+3. **중소기업 제한 범위 판정:** 공고문 4-라 항목을 보면 ""중소기업 또는 소상공인""이라고 명시되어 있습니다. 이는 '소기업·소상공인'으로 범위를 좁혀 제한하는 것이 아니라, '중소기업'이라는 전체 범위를 포함하여 참가 자격을 부여하고 있습니다. (소기업·소상공인 확인서를 제출하라는 규정은 있으나, 자격 요건 자체는 중소기업 전체를 대상으로 함)
+4. **결론:** 1억 원 미만 일반제품(용역)에 대하여 중소기업 전체를 참가 자격으로 제한하고 있으므로 v17은 1입니다. (단, 추정가격이 1억을 초과하나 판정 로직의 핵심인 '중소기업 전체 제한' 조건에 부합함)"
+CJH,PPS-DEV-077,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,113,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""「중소기업제품 구매촉진 및 판로지원에 관한 법률」에 의한 중소기업으로서, 소기업 ․ 소상공인확인서(중소기업현황 정보시스템 발급 또는 지방중소기업청 발급)를 소지한 업체이면서, 기타행사기획 및 대행서비스 부문의 직접생산확인증명서를 소지한 업체.""
+}
+```"
+CJH,PPS-DEV-078,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,119,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""다. 「중소기업기본법」제2조에 따른 소기업자 또는「소상공인 보호 및 지원에 관한 법률」제2조에 따른 소상공인으로서「중소기업 범위 및 확인에 관한 규정」에 따라 발급된 소기업·소상공인 확인서(계약체결일까지 발급된 것으로 유효기간 내에 있어야 함)를 소지한 업체""
+}
+```"
+CJH,PPS-DEV-079,v17,0,False,False,complete_code_fence,invalid_json:Extra data: line 5 column 1 (char 147),invalid,,null,,,False,False,False,False,stop,106,402,"```json
+{
+  ""v17"": 1,
+  ""e17"": ""6) 「중소기업기본법」제2조에 따른 소기업자 및 「소상공인 보호 및 지원에 관한 법률」제2조에 따른 소상공인으로서 「중소기업 범위 및 확인에 관한 규정」에 따라 발급된 <소기업 또는 소상공인 확인서>를 소지한 업체""
+}
+```
+
+**판정 근거 설명:**
+1. **입찰추정가격 확인:** meta의 입찰추정가격은 154,545,455원으로 1억 원 이상입니다. 하지만 판정 질문의 핵심은 '1억 원 미만 일반제품을 중소기업 전체로 제한하는가'이며, 제공된 공고문은 '소기업 또는 소상공인'으로 제한하고 있습니다.
+2. **재검토:** 판정 카드의 조건에 따르면, ""소기업·소상공인으로만 제한한 경우""는 **정상(0)**으로 판정해야 합니다. 
+3. **최종 판정 수정:** 
+   - 입찰추정가격(154,545,455원)이 1억 원 이상이므로, 이 항목의 적용 대상(1억 원 미만)에 해당하지 않습니다. 
+   - 또한, 공고문에서 참가 자격을 '소기업 또는 소상공인'으로 구체적으로 제한하고 있으므로, 이는 '중소기업 전체'가 아닌 '소기업·소상공인' 제한에 해당합니다.
+   - 따라서 위반 여부는 **0**입니다.
+
+*(수정된 응답)*
+
+```json
+{
+  ""v17"": 0,
+  ""e17"": null
+}
+```"
+CJH,PPS-DEV-080,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,66,"```json
+{
+  ""v17"": 1,
+  ""e17"": ""※ 제한경쟁입찰(중소기업자), 단독이행 또는 공동수급(공동이행방식), 총액입찰, 협상에 의한 계약""
+}
+```"
+CJH,PPS-DEV-081,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v17"": 0,
+  ""e17"": null
+}
+```"
+CJH,PPS-DEV-082,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v17"": 0,
+  ""e17"": null
+}
+```"
+CJH,PPS-DEV-083,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v17"": 0,
+  ""e17"": null
+}
+```"
+CJH,PPS-DEV-084,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,103,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""다. 「중소기업기본법」제2조에 따른 중소기업자 및 「소상공인 보호 및 지원에 관한 법률」제2조에 따른 소상공인으로서 「중소기업 범위 및 확인에 관한 규정」에 따라 발급된 중․소기업․소상공인 확인서를 소지한 자""
+}
+```"
+CJH,PPS-DEV-085,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,156,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""3-1. 3)「중소기업기본법」제2조에 따른 소기업자 또는 「소상공인 보호 및 지원에 관한 법률」제2조에 따른 소상공인으로서 「중소기업 범위 및 확인에 관한 규정」에 따라 발급된 <소기업·소상공인 확인서>를 소지한 업체(단, 「중소기업제품 구매촉진 및 판로지원에 관한 법률 시행령」제2조의3제1항제2호의가목에 따라 비영리법인은 입찰참가 가능)""
+}
+```"
+CJH,PPS-DEV-086,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,102,"```json
+{
+  ""v17"": 1,
+  ""e17"": ""다. 「중소기업기본법」 제2조에 따른 중소기업자 또는 「소상공인 보호 및 지원에 관한 법률」 제2조에 따른 소상공인으로서 「중소기업 범위 및 확인에 관한 규정」에 따라 발급된 중소기업ㆍ소상공인 확인서를 소지한 자""
+}
+```"
+CJH,PPS-DEV-087,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,123,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""② 「중소기업기본법」제2조에 따른 소기업자 및 「소상공인 보호 및 지원에 관한 법률」제2조에 따른 소상공인으로서「중소기업 범위 및 확인에 관한 규정」에 따라 발급된 소기업ㆍ소상공인 확인서(전자입찰서 제출 마감일 전일까지 발급된 것으로 유효기간 내에 있어야 함)를 소지한 자""
+}
+```"
+CJH,PPS-DEV-088,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,93,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""「중소기업기본법」에 따른 중소기업 또는「소상공인 보호 및 지원에 관한 법률」에 따른 소상공인으로서 「중소기업 범위 및 확인에 관한 규정」에 따라 발급된 중소기업․소상공인 확인서를 소지한 업체""
+}
+```"
+CJH,PPS-DEV-089,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v17"": 0,
+  ""e17"": null
+}
+```"
+CJH,PPS-DEV-090,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,100,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""「중소기업기본법」 제2조에 따른 중소기업자 또는 「소상공인 보호 및 지원에 관한 법률」 제2조에 따른 소상공인으로서 「중소기업 범위 및 확인에 관한 규정」에 따라 발급된 중소기업ㆍ소상공인 확인서를 소지한 자""
+}
+```"
+CJH,PPS-DEV-091,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,97,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""※ 본 사업은 「중소기업제품 구매촉진 및 판로지원에 관한 법률 시행령」 제2조의3 제1항제4호 및 중소기업제품 공공 구매제도 운영요령 제44조에 따라 중소기업자 우선조달계약에 대한 예외 용역입니다.""
+}
+```"
+CJH,PPS-DEV-092,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v17"": 0,
+  ""e17"": null
+}
+```"
+CJH,PPS-DEV-093,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,123,"```json
+{
+  ""v17"": 1,
+  ""e17"": ""다. 「중소기업기본법」제2조에 따른 중소기업자 또는「소상공인 보호 및 지원에 관 한 법률」제2조에 따른 소상공인으로서「중소기업 범위 및 확인에 관한 규정」에 따라 발급된 중·소기업·소상공인 확인서(계약체결일까지 발급된 것으로 유효기간 내에 있어야 함)를 소지한 업체""
+}
+```"
+CJH,PPS-DEV-094,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,38,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""중기업. 소기업(소상공인)""
+}
+```"
+CJH,PPS-DEV-095,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,125,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""다. ｢중소기업 기본법｣제2조에 따른 소기업 또는 ｢소상공인 보호 및 지원에 관한 법률｣제2조에 따른 소상공인으로서 ｢중소기업 범위 및 확인에 관한 규정｣ 에 따라 발급된 [소기업·소상공인 확인서]를 소지한 업체(견적서 제출 마감일 이전에 발급된 것으로 유효기간 내에 있어야 함)""
+}
+```"
+CJH,PPS-DEV-096,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,118,"```json
+{
+  ""v17"": 1,
+  ""e17"": ""나.「중소기업기본법」제2조에 따른 중/소기업자 및 「소상공인 보호 및 지원에 관한 법률」제2조에 따른 소기업 및 소상공인으로서 중/소기업·소상공인확인서(전자입찰서 제출 마감일 전일까지 발급된 것으로 유효기간 내에 있어야 함)를 소지한 업체이어야 합니다.""
+}
+```"
+CJH,PPS-DEV-097,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,54,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""추정가격 2천만원 초과 1억원 이하 물품·용역(소기업 소상공인 계약)""
+}
+```"
+CJH,PPS-DEV-098,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,102,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""라. 「중소기업기본법」제2조에 따른 소기업 및 「소상공인 보호 및 지원에 관한 법률」제2조에 따른 소상공인으로서「중소기업 범위 및 확인에 관한 규정」에 따라 발급된 중 ‧ 소기업 · 소상공인 확인서를 소지한 업체""
+}
+```"
+CJH,PPS-DEV-099,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v17"": 0,
+  ""e17"": null
+}
+```"
+CJH,PPS-DEV-100,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,67,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""『중소기업기본법』 제2조에 따른 중소기업 또는 『소상공인 보호 및 지원에 관한 법률』제2조에 따른 소상공인""
+}
+```"
+CJH,PPS-DEV-101,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,103,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""마. ‘중소기업기본법’ 제2조 제2항에 따른 소기업 또는 ‘소상공인 보호 및 지원에 관한 법률’ 제2조에 따른 소상공인으로서 ‘중소기업 범위 및 확인에 관한 규정’에 따라 발급된 소기업‧소상공인확인서를 소지한 자""
+}
+```"
+CJH,PPS-DEV-102,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,97,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""④ 「중소기업기본법」 제2조제2항에 따른 소기업 또는 「소상공인기본법」 제2조에 따른 소상공인으로서 「중소기업 범위 및 확인에 관한 규정」에 따라 발급된 소기업·소상공인 확인서를 소지한 자""
+}
+```"
+CJH,PPS-DEV-103,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,43,"```json
+{
+  ""v17"": 1,
+  ""e17"": ""2. 계약방법 : 제한경쟁입찰(중소기업자)""
+}
+```"
+CJH,PPS-DEV-104,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,100,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""다. 「중소기업기본법」 제2조에 따른 소기업자 또는 「소상공인 보호 및 지원에 관한 법률」 제2조에 따른 소상공인으로서 「중소기업 범위 및 확인에 관한 규정」에 따라 발급된 소기업 또는 소상공인 확인서를 소지한 업체""
+}
+```"
+CJH,PPS-DEV-105,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,120,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""중소기업제품 구매촉진 및 판로지원에 관한 법률 시행령 제2조의2에 의거 소기업 또는 소상공인 우선조달계약 대상이나, 같은 법 시행령 제2조의3(중소기업자와의 우선조달 계약에 대한 예외)제1항1호에 해당하여 소기업․소상공인 우선조달계약에 대한 예외로 취급합니다.""
+}
+```"
+CJH,PPS-DEV-106,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,58,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""※ 소기업·소상공인 제한, 총액계약, 적격심사 비대상, 단독이행, 전자입찰""
+}
+```"
+CJH,PPS-DEV-107,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,113,"```json
+{
+  ""v17"": 0,
+  ""근거문구"": ""라. ｢중소기업기본법｣ 제2조에 따른 소기업자 또는 ｢소상공인 보호 및 지원에 관한 법률｣ 제2조에 따른 소상공인으로서 ʹ중소기업 범위 및 확인에 관한 규정\u00b7'에 따라 발급된 소기업･소상공인 확인서를 소지한 자 이어야 합니다.""
+}
+```"
+CJH,PPS-DEV-108,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,98,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""라. 「중소기업기본법」제2조에 따른 소기업자 또는「소상공인 보호 및 지원에 관한 법률」제2조에 따른 소상공인으로서 중소기업 범위 및 확인에 관한 규정에 따라 발급된 소기업·소상공인확인서를 소지한 자""
+}
+```"
+CJH,PPS-DEV-109,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v17"": 0,
+  ""e17"": null
+}
+```"
+CJH,PPS-DEV-110,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,153,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""5) 「중소기업제품 구매촉진 및 판로지원에 관한 법률 시행령」 제2조의2(중소기업자와의 우선조달계약)에 의하여 「중소기업기본법」 제2조에 따른 중·소기업 또는 「소상공인 보호 및 지원에 관한 법률」 제2조에 따른 소상공인으로서 「중소기업 범위 및 확인에 관한 규정」에 따라 발급된 중·소기업·소상공인확인서(유효기간 내에 있어야 함)를 소지한 업체""
+}
+```"
+CJH,PPS-DEV-111,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,75,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""본 용역은 「중소기업제품 구매촉진 및 판로지원에 관한 법률 시행령」 제2조의3에 따라 중소기업자와의 우선조달계약에 대한 예외를 적용합니다.""
+}
+```"
+CJH,PPS-DEV-112,v17,0,False,True,,invalid_json:Expecting value: line 1 column 1 (char 0),invalid,,null,,,False,False,False,False,stop,106,336,"```json
+{
+  ""v17"": 1,
+  ""e17"": ""라. ｢중소기업기본법｣ 제2조에 따른 중・소기업자 또는 ｢소상공인 보호 및 지원에 관한 법률｣ 제2조에 따른 소상공인으로서 ｢중소기업 범위 및 확인에 관한 규정｣에 따라 발급된 중・소기업, 소상공인 확인서를 소지한 자""
+}
+```
+
+**판정 근거 설명:**
+1. **구매 대상 식별**: 공고의 세부품명번호는 `3911150402(무대조명장치)`이며, 이는 제공된 [참고자료: 경쟁제품 목록 발췌]에 포함되어 있지 않습니다. 따라서 이 제품은 **일반제품**입니다.
+2. **금액 확인**: meta의 `입찰추정가격`은 `56,202,727원`으로 **1억 원 미만**입니다.
+3. **제한 범위 확인**: 공고문 3조 '라'항 및 제안요청서 1.5.3항을 보면, 참가 자격을 ""중·소기업자 또는 소상공인""으로 제한하고 있습니다. 이는 중소기업 전체를 포함하는 제한이므로, 판정 기준에 따라 **v17=1**로 판정합니다. (소기업·소상공인으로만 제한한 경우가 아니라, 중소기업자라는 범위를 포함하고 있음)"
+CJH,PPS-DEV-113,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v17"": 0,
+  ""e17"": null
+}
+```"
+CJH,PPS-DEV-114,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,89,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""「중소기업제품 구매촉진 및 판로지원에 관한 법률 시행령」제2조의2에 의거 「소기업 및 소상공인 지원을 위한 특별조치법」제2조에 따른 소기업 또는 소상공인에 해당하는 업체이어야 합니다.""
+}
+```"
+CJH,PPS-DEV-115,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,91,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""「중소기업제품 구매촉진 및 판로지원에 관한 법률 시행령」제2조의3 및 「중소기업제품 공공구매제도 운영요령」제44조에 따라 중소기업자와 우선조달계약에 대한 예외가 적용되는 사업입니다.""
+}
+```"
+CJH,PPS-DEV-116,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,111,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""②「중소기업기본법」제2조 및「소상공인 보호 및 지원에 관한 법률」제2조에 따른 중소기업 또는 소상공인으로서「중소기업 범위 및 확인에 관한 규정」에 따라 발급된‘중ㆍ소기업 ․ 소상공인 확인서(중소기업확인서)’를 소지한 업체""
+}
+```"
+CJH,PPS-DEV-117,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,114,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""「중소기업기본법」제2조제2항에 따른 중기업·소기업 또는「소상공인 보호 및 지원에 관한 법률」제2조에 따른 소상공인으로「중·소기업·소상공인 및 장애인기업 확인요령」에 따라 발급된 중기업·소기업 또는 소상공인확인서를 소지한 사업자""
+}
+```"
+CJH,PPS-DEV-118,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,37,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""가. 소기업, 소상공인""
+}
+```"
+CJH,PPS-DEV-119,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v17"": 0,
+  ""e17"": null
+}
+```"
+CJH,PPS-DEV-120,v17,0,False,True,,invalid_json:Expecting value: line 1 column 1 (char 0),invalid,,null,,,False,False,False,False,stop,106,372,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""중소기업제한\n2026-1122\n[수요기관(의료기관)]\n[의료기기]NIBP & Pulse Oximeter 10SET\n2026년06월04일\n(목)17:00까지\n2026년06월05일\n(금)12:00까지\n추후통보\n소기업(소상공인)""
+}
+```
+
+**판정 근거:**
+1. **구매 대상 식별:** 공고의 품목은 '의료기기(Handheld Ultrasound System 등)'이며, 이는 제공된 경쟁제품 목록(전기시스템, 공공안전장비, 출판물 등)에 포함되지 않는 **일반제품**입니다.
+2. **금액 조건:** `meta`의 입찰추정가격은 **2**로, 1억 원 미만 조건에 해당합니다.
+3. **제한 범위 판정:** 공고문 내 '입찰참가자격' 및 '중소기업제한' 항목을 확인한 결과, **""소기업(소상공인)""**으로 제한하고 있습니다. 
+4. **결론:** 해당 항목은 '중소기업 전체'를 제한하는 것이 아니라 '소기업·소상공인'으로 범위를 좁혀 제한하고 있으므로, 판정 기준의 [정상 = 0] 조건(소기업·소상공인으로만 제한한 경우)에 따라 **0**으로 판정합니다."
+CJH,PPS-DEV-121,v17,0,False,True,,invalid_json:Expecting value: line 1 column 1 (char 0),invalid,,null,,,False,False,False,False,stop,106,307,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""라. 「지방자치단체를 당사자로하는 계약에 관한 법률」 제31조 및 같은 법 시행령 제92조에 의한 입찰참가자격 제한을 받지 않는 업체\n다. 「중소기업기본법」 제2조에 따른 중․소기업자 또는 「소상공인 보호 및 지원에 관한 법률」 제2조에 따른 소상공인으로서 「중소기업 범위 및 확인에 관한 규정」 에 따라 발급된 <중‧소기업 또는 소상공인 확인서>를 소지한 업체""
+}
+```
+
+**판정 근거 설명:**
+1. **입찰추정가격 확인:** meta의 입찰추정가격은 158,000,000원으로, 1억 원 이상입니다. (v17의 조건인 '1억 원 미만'에 해당하지 않음)
+2. **참가자격 제한 내용:** 공고문 2항 '라'항에 따르면, 참가 자격을 ""중․소기업자 또는 소상공인""으로 제한하고 있습니다. 이는 중소기업 전체가 아닌 '소기업·소상공인'으로 제한한 경우에 해당하므로, 판정 기준에 따라 **정상(0)**으로 판정합니다."
+CJH,PPS-DEV-122,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,100,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""4)「중소기업기본법」제2조에 따른 소기업 및「소상공인 보호 및 지원에 관한 법률」제2조에 따른 소상공인으로서「중소기업 범위 및 확인에 관한 규정」에 따라 발급된 소기업․소상공인확인서를 소지한 업체""
+}
+```"
+CJH,PPS-DEV-123,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v17"": 0,
+  ""e17"": null
+}
+```"
+CJH,PPS-DEV-124,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,46,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""소기업 또는 소상공인·벤처기업·창업자 제한경쟁""
+}
+```"
+CJH,PPS-DEV-125,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,101,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""나. 「중소기업 기본법」제2조에 따른 소기업 또는 「소상공인 보호 및 지원에 관한 법률」제2조에 따른 소상공인으로서 「중소기업 범위 및 확인에 관한 규정」에 따라 발급된 ‘소기업·소상공인 확인서’를 소지한 자.""
+}
+```"
+CJH,PPS-DEV-126,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,101,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""3-1-3 「중소기업제품 구매촉진 및 판로지원에 관한 법률 시행령」 제2조2에 따른 중·소기업 또는 소상공인으로서 「중·소기업 및 확인에 관한 규정」 “중·소기업·소상공인 확인서”를 소지한 업체이어야 합니다.""
+}
+```"
+CJH,PPS-DEV-127,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v17"": 0,
+  ""e17"": null
+}
+```"
+CJH,PPS-DEV-128,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,103,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""「중소기업기본법」제2조에 따른 중 · 소기업자 또는「소상공인보호 및 지원에 관한 법률」제2조에 따른 소상공인으로서 “중소기업 범위 및 확인에 관한 규정”에 따라 발급된 중 · 소기업 · 소상공인 확인서를 소지한 자""
+}
+```"
+CJH,PPS-DEV-129,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,98,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""「중소기업기본법」제2조에 따른 소기업자 또는 「소상공인 보호 및 지원에 관한 법률」제2조에 따른 소상공인으로서 「중소기업 범위 및 확인에 관한 규정」에 따라 발급된 소기업·소상공인 확인서를 소지한 자""
+}
+```"
+CJH,PPS-DEV-130,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,104,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""마. 「중소기업기본법」제 2 조제 2 항에 따른 소기업 또는 「소상공인 보호 및 지원에 관한 법률」제2조에 따른 소상공인으로서 ‘중소기업 범위 및 확인에 관한 규정’에 따라 발급된 소기업 또는 소상공인 확인서를 소지한 업체""
+}
+```"
+CJH,PPS-DEV-131,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v17"": 0,
+  ""e17"": null
+}
+```"
+CJH,PPS-DEV-132,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v17"": 0,
+  ""e17"": null
+}
+```"
+CJH,PPS-DEV-133,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,76,"```json
+{
+  ""v17"": 1,
+  ""e17"": ""다. 「중소기업기본법」 제2조에 따른 중소기업자로서, 「중소기업 범위 및 확인에 관한 규정」에 따라 발급된 중소기업확인서를 소지한 자""
+}
+```"
+CJH,PPS-DEV-134,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v17"": 0,
+  ""e17"": null
+}
+```"
+CJH,PPS-DEV-135,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,126,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""「중소기업제품 구매촉진 및 판로지원에 관한 법률 시행령」 제2조의2에 따라 ｢중소기업기본법｣ 제2조에 따른 소기업 또는 ｢소상공인기본법｣ 제2조에 따른 소상공인으로서 ｢중소기업 범위 및 확인에 관한 규정｣에 따라 소기업ㆍ소상공인확인서(전자)"",
+  ""v18"": null
+}
+```"
+CJH,PPS-DEV-136,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,160,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""3) 「중소기업제품 구매촉진 및 판로지원에 관한 법률 시행령」 제2조의2(중소기업자와의 우선조달계약)에 의한 소기업 또는 소상공인에 해당하는 자로서 「중소기업 범위 및 확인에 관한 규정」에 따라 발급된 확인서를 소지한 업체이거나, 「중소기업제품 구매촉진 및 판로지원에 관한 법률 시행령」 제2조의3(중소기업자와의 우선조달계약에 대한 예외) 제1항 제2호의 비영리법인에 해당하는 자""
+}
+```"
+CJH,PPS-DEV-137,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,100,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""「중소기업기본법」제2조(중소기업자의 범위)에 따른 소기업 또는「소상공인기본법」제2조에 따른 소상공인으로서 “중소기업 범위 및 확인에 관한 규정”에 따라 발급된 소기업 또는 소상공인 확인서를 소지한 업체""
+}
+```"
+CJH,PPS-DEV-138,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,82,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""「중소기업기본법」 제2조에 따른 중소기업 또는 「소상공인기본법」 제2조에 따른 소상공인으로 【중소기업·소상공인 확인서】를 소지한 업체이며""
+}
+```"
+CJH,PPS-DEV-139,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,104,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""「중소기업기본법」 제2조에 따른 중·소기업 및 「소상공인 보호 및 지원에 관한 법률」 제2조에 따른 소상공인으로서 「중소기업 범위 및 확인에 관한 규정」에 따라 발급된 유효한 중·소기업ㆍ소상공인 확인서를 소지한 자""
+}
+```"
+CJH,PPS-DEV-140,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v17"": 0,
+  ""e17"": null
+}
+```"
+CJH,PPS-DEV-141,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v17"": 0,
+  ""e17"": null
+}
+```"
+CJH,PPS-DEV-142,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,38,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""중기업. 소기업(소상공인)""
+}
+```"
+CJH,PPS-DEV-143,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v17"": 0,
+  ""e17"": null
+}
+```"
+CJH,PPS-DEV-144,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,117,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""다. 「중소기업기본법」 제2조에 따른 소기업자 또는 「소상공인 보호 및 지원에 관한 법률」 제2조에 따른 소상공인으로서 「중소기업범위 및 확인에 관한 규정(중소벤처기업부 고시)」에 따라 발급된 「소기업·소상공인 확인서」를 소지한 업체이어야만 합니다.""
+}
+```"
+CJH,PPS-DEV-145,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,106,"```json
+{
+  ""v17"": 1,
+  ""e17"": ""3) ｢중소기업기본법｣제2조에 따른 중·소기업자 또는 「소상공인 보호 및 지원에 관한 법률」제2조에 따른 소상공인으로서「중소기업 범위 및 확인에 관한 규정」에 따라 발급된 중소기업·소상공인 확인서​를 소지한 업체""
+}
+```"
+CJH,PPS-DEV-146,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,129,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""3) 「중소기업기본법」 제2조에 따른 중·소기업자 또는 「소상공인 보호 및 지원에 관한 법률」 제2조에 따른 소상공인으로서 「중소기업 범위 및 확인에 관한 규정」에 따라 발급된 중ㆍ소기업ㆍ소상공인 확인서(적격심사 서류제출 마감일까지 발급된 것으로 유효기간 내에 있어야 함)를 소지한 업체""
+}
+```"
+CJH,PPS-DEV-147,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,105,"```json
+{
+  ""v17"": 1,
+  ""근거문구"": ""｢중소기업제품 구매촉진 및 판로지원에 관한 법률｣ 제2조, 제8조 및 동법 시행령 제9조에 규정에 의한 중소기업자로서 ｢중․소기업 범위 및 확인에 관한 규정｣에 따라 발급된 중·소기업 또는 소상공인확인서를 소지한 업체""
+}
+```"
+CJH,PPS-DEV-148,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,103,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""3.1.3. 「중소기업기본법」제2조제2항에 따른 소기업과 「소상공인 보호 및 지원에 관한 법률」에 따른 소상공인으로서 「중소기업 범위 및 확인에 관한 규정」에 따라 발급된 소기업·소상공인 확인서를 소지한 업체""
+}
+```"
+CJH,PPS-DEV-149,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v17"": 0,
+  ""e17"": null
+}
+```"
+CJH,PPS-DEV-150,v17,0,False,True,,invalid_json:Expecting value: line 1 column 1 (char 0),invalid,,null,,,False,False,False,False,stop,106,333,"```json
+{
+  ""v17"": 1,
+  ""e17"": ""중기업, 소기업(소상공인)""
+}
+```
+
+**판정 근거 설명:**
+1. **구매 대상 식별:** 공고의 품명은 'Endoscope Reprocessor 6SET'이며, 세부품명번호는 '4229490501'입니다. 제공된 경쟁제품 목록에는 해당 품목이 포함되어 있지 않으므로, 이는 **일반제품(물품)**에 해당합니다.
+2. **금액 확인:** `meta`의 입찰추정가격은 **5(단위: 백만 원 추정, 혹은 5원/5백만 원 등 문맥상 1억 원 미만)**로, 1억 원 미만 조건에 부합합니다.
+3. **제한 범위 판정:** 공고문 7번 항목의 입찰참가자격 및 2번 입찰에 부치는 사항을 보면, 입찰참가자격을 **""중기업, 소기업(소상공인)""**으로 명시하고 있습니다. 이는 중소기업법상 중소기업(중기업, 소기업, 소상공인 포함) 전체를 대상으로 하는 제한이므로, 판정 기준에 따라 **v17=1**로 판정합니다. (단, 소기업·소상공인으로만 '한정'하여 제한하는 것이 아니라, 중기업을 포함한 중소기업 범주를 제한하고 있음)"
+CJH,PPS-DEV-151,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v17"": 0,
+  ""e17"": null
+}
+```"
+CJH,PPS-DEV-152,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,118,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""나. 『중소기업제품 구매촉진 및 판로지원에 관한 법률 시행령』제2조의 2에 의거 소기업 또는 소상공인 확인서를 소지한 업체 또는 벤처기업육성에 관한 특별조치법 제2조 제1항에 따른 벤처기업 또는 중소기업창업 지원법 제2조 제3호에 따른 창업기업이 어야 합니다.""
+}
+```"
+CJH,PPS-DEV-153,v17,0,False,True,,non_stop_finish,invalid,,null,,,False,False,False,False,length,,512,"```json
+{
+  ""v17"": 1,
+  ""e17"": ""나.「중소기업기본법」 제2조제2항에 따른 소기업 또는 ｢소상공인 보호 및 지원에 관한 법률｣ 제2조에 따른 소상공인으로서 ｢중소기업 범위 및 확인에 관한 규정｣ 에 따라 발급된 소기업 또는 소상공인확인서를 소지한 업체""
+}
+```
+
+**판정 근거 설명:**
+1. **실제 구매 대상 식별**: 본 공고는 '행정환경 변화에 대응한 역량평가 제도개선 연구'를 위한 학술용역입니다.
+2. **경쟁제품 여부**: 제공된 [참고자료: 경쟁제품 목록]에 해당 용역(학술연구/역량평가 관련)에 대한 특정 제품명이나 세부품명번호가 존재하지 않으므로, 이는 일반제품(용역)으로 분류됩니다.
+3. **입찰추정가격 확인**: 공고 정보(meta)의 `입찰추정가격`은 45,454,546원으로, 1억 원 미만입니다.
+4. **중소기업 제한 범위 판정**: 공고문 2항 '나'를 보면 ""소기업 또는 소상공인""으로 제한하고 있으나, 이는 중소기업의 하위 범주인 소기업/소상공인으로 제한하는 것이며, 문맥상 '중소기업 전체'를 제한하는 것이 아니라 특정 규모로 제한하는 것입니다. 
+*수정 판정*: 질문의 정의에 따르면, ""소기업·소상공인으로만 제한한 경우""는 **정상(0)**에 해당합니다. 
+
+**재판정 결과:**
+- 질문의 조건: 1억 미만 일반제품을 **중소기업 전체**로 제한하면 1, **소기업·소상공인**으로만 제한하면 0입니다.
+- 공고문 문구: ""소기업 또는 소상공인으로서... 소지한 업체""라고 명시되어 있으므로, 이는 '중소기업 전체'가 아닌 '소기업·소상공인'으로 제한한 경우입니다.
+- 따라서 **v17은 0**입니다.
+
+*(최종 응답 수정)*
+"
+CJH,PPS-DEV-154,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v17"": 0,
+  ""e17"": null
+}
+```"
+CJH,PPS-DEV-155,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,94,"```json
+{
+  ""v17"": 1,
+  ""e17"": ""②「중소기업기본법」제2조 및 동법 시행령 제8조에 따른 중·소기업 또는「소상공인 보호 및 지원에 관한 법률」제2조에 따른 소상공인으로써 중 · 소기업 · 소상공인확인서를 소지한 업체""
+}
+```"
+CJH,PPS-DEV-156,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,144,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""라.「중소기업제품 구매촉진 및 판로지원에 관한 법률 시행령」제2조의2(중소기업자와의 우선조달계약)에 따라「중소기업기본법」제2조제2항에 따른 중ㆍ소기업 또는 「소상공인 보호 및 지원에 관한 법률」제2조에 따른 소상공인으로서「중소기업 범위 및 확인에 관한 규정」에 따라 발급된 중ㆍ소기업, 소상공인 확인서를 소지한 업체""
+}
+```"
+CJH,PPS-DEV-157,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,28,"```json
+{
+  ""v17"": 0,
+  ""근거문구"": null
+}
+```"
+CJH,PPS-DEV-158,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v17"": 0,
+  ""e17"": null
+}
+```"
+CJH,PPS-DEV-159,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v17"": 0,
+  ""e17"": null
+}
+```"
+CJH,PPS-DEV-160,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,86,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""3) 다음 각 호의 조건을 모두 만족하는 업체\n3) 중소기업제품 구매촉진 및 판로지원에 관한 법률 시행령 제2조의２(중소기업자와의 우선조달계약)에 의한 소기업 또는 소상공인""
+}
+```"
+CJH,PPS-DEV-161,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,94,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""다. 「중소기업기본법」제2조에 의한 소기업 또는 「소상공인 기본법」제2조에 의한 소상공인으로서 「중소기업 범위 및 확인에 관한 규정」에 따라 발급된 소기업 또는 소상공인 확인서를 소지한 자""
+}
+```"
+CJH,PPS-DEV-162,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v17"": 0,
+  ""e17"": null
+}
+```"
+CJH,PPS-DEV-163,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,92,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""다. 2인 견적 용역 수의계약의 중소기업자와의 우선 조달계약\n- 「중소기업제품 구매촉진 및 판로지원에 관한 법률」제4조에 따른 소기업·소상공인 여부 확인 예외 용역입니다.""
+}
+```"
+CJH,PPS-DEV-164,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v17"": 0,
+  ""e17"": null
+}
+```"
+CJH,PPS-DEV-165,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,97,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""다. ｢중소기업기본법｣ 제2조에 따른 소기업 또는 ｢소상공인 기본법｣ 제2조에 따른 소상공인으로서 ｢중소기업 범위 및 확인에 관한 규정｣에 따라 발급된 소기업·소상공인 확인서를 소지한 업체""
+}
+```"
+CJH,PPS-DEV-166,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,78,"```json
+{
+  ""v17"": 1,
+  ""e17"": ""5) 「중소기업기본법」제2조에 따른 중·소기업자로서 「중소기업 범위 및 확인에 관한 규정」에 따라 발급된 ‘중소기업 확인서’를 소지한 자""
+}
+```"
+CJH,PPS-DEV-167,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,94,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""② 『중소기업기본법』에 따른 소기업 또는 『소상공인 보호 및 지원에 관한 법률』에 따른 소상공인으로, 「중소기업범위 및 확인에 관한 규정」에 따라 발급된 소기업·소상공인 확인서를 소지한 업체""
+}
+```"
+CJH,PPS-DEV-168,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,117,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""• 「중소기업제품 구매촉진 및 판로지원에 관한 법률 시행령」제2조의2 (중소기업자와의 우선조달계약)제1항제1호 의거, 「중소기업법」제2조제2항에 따른 소기업 또는 「소상공인 보호 및 지원에 관한 법률」제2조에 따른 소상공인 (중기업 ×)""
+}
+```"
+CJH,PPS-DEV-169,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,140,"```json
+{
+  ""v17"": 1,
+  ""e17"": ""나.「중소기업제품 구매촉진 및 판로지원에 관한 법률 시행령」제2조의2에 따라「중소기업기본법」제2조제2항에 따른 중･소기업 또는「소상공인 보호 및 지원에 관한 법률」제2조에 따른 소상공인으로서「중소기업 범위 및 확인에 관한 규정(중소벤처기업부고시)」에 따라 발급된 중･소기업･소상공인 확인서를 소지하고""
+}
+```"
+CJH,PPS-DEV-170,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,97,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""「중소기업제품 구매촉진 및 판로지원에 관한 법률 시행령」제2조의2에 의하여 「중소기업기본법」제2조 중소기업 및 「소기업 및 소상공인 지원을 위한 법률」제2조 소상공인 자격을 구비해야 합니다.""
+}
+```"
+CJH,PPS-DEV-171,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,112,"```json
+{
+  ""v17"": 1,
+  ""e17"": ""④ 「중소기업기본법」 제2조에 따른 중소기업자 또는 「소상공인 보호 및 지원에 관한 법률」 제2조에 따른 소상공인으로서 중소기업 범위 및 확인에 관한 규정에 따라 발급된 ‘중소기업·소상공인 확인서’를 소지해야 함(중소기업자간 경쟁제품에 한함)""
+}
+```"
+CJH,PPS-DEV-172,v17,0,False,True,,invalid_json:Expecting value: line 1 column 1 (char 0),invalid,,null,,,False,False,False,False,stop,106,470,"```json
+{
+  ""v17"": 1,
+  ""e17"": ""「국가종합전자조달시스템 입찰참가자격등록규정」에 따라 나라장터에 입찰참가자격 등록마감일시까지 아래의 사항을 입찰참가자격으로 등록한 자 - 「여성기업지원에 관한 법률」 제2조 제1호에 따른 여성기업""
+}
+```
+
+**판정 근거:**
+1. **구매 대상 식별:** 공고의 품명은 '저출력심장충격기(자동제세동기)'이며, 이는 제공된 경쟁제품 목록(리프트장비, 콘크리트, 아스팔트콘크리트, 계장제어장치, 인쇄출판물, 측량용역)에 포함되지 않는 **일반제품**입니다.
+2. **추정가격 확인:** meta의 `입찰추정가격`은 **28,600,000원**으로, 1억 원 미만 조건에 해당합니다.
+3. **기업 규모 제한 판정:** 입찰참가자격 항목을 보면, 「여성기업지원에 관한 법률」에 따른 **'여성기업'**으로 참가자격을 제한하고 있습니다. 이는 중소기업법상 중소기업의 범주에 포함되는 기업 형태를 제한하는 것이나, 특정 규모(소기업/소상공인)로 한정하여 제한한 것이 아니라 '여성기업'이라는 중소기업 내의 특정 조건을 지정한 것이므로, 문맥상 중소기업 전체(중소기업자)를 대상으로 하는 제한의 일종으로 보입니다. (단, 본 공고는 여성기업으로 제한하고 있으나, 이는 중소기업 전체를 제한하는 범주 내의 특수 제한으로 판정됩니다.)
+4. **결론:** 1억 미만 일반제품에 대해 특정 기업 형태(여성기업)를 지정하여 제한하고 있으므로, v17은 1입니다. (참고: 소기업/소상공인으로만 제한한 경우가 아니므로 0이 아님)"
+CJH,PPS-DEV-173,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,81,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""2) 중소기업제품 구매촉진 및 판로지원에 관한 법률 시행령 제2조의2에 따른 우선조달계약 대상으로 '소기업' 또는 소상공인기본법 제2조의 '소상공인'""
+}
+```"
+CJH,PPS-DEV-174,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,122,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""「중소기업기본법」제2조에 따른 소기업자,「중소기업제품 구매촉진 및 판로지원에 관한 법률」제7조의 2 규정에 따른 소기업 또는 소상공인으로서 중소기업청에서 발급한 소기업․소상공인 확인서(개찰일 전일까지 발급된 것으로 유효기간 내에 있어야 함)를 소지한 업체이어야 합니다.""
+}
+```"
+CJH,PPS-DEV-175,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,145,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""다. 중소기업제품 구매촉진 및 판로지원에 관한 법률(이하 판로지원법)｣ 제8조의 2에 해당하지 않는 자로서 중소기업 범위 및 확인에 관한 규정에 따라 발급된 소기업·소상공인 확인서(이하 확인서)를 소지한 자(다만, ｢판로지원법｣ 제33조 제1항에 의거 중소기업자로 간주되는 특별법인도 해당 입찰참가자격이 있음)이어야 합니다.""
+}
+```"
+CJH,PPS-DEV-176,v17,0,False,True,,invalid_json:Expecting value: line 1 column 1 (char 0),invalid,,null,,,False,False,False,False,stop,106,314,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""라. 「중소기업기본법」 제2조에 따른 중소기업 또는 「소상공인 보호 및 지원에 관한 법률」 제2조에 따른 소상공인으로서, 「중소기업 범위 및 확인에 관한 규정」에 따른 중소기업(소상공인) 확인서(입찰 마감일 전일까지 발급된 것으로 유효기간 내에 있어야 함)를 소지한 업체""
+}
+```
+
+**판정 근로 근거:**
+1. **구매 대상 확인:** 공고의 품명은 'TMF 사료배합기'이며, 세부품명번호는 `2110190401`입니다.
+2. **경쟁제품 여부 확인:** 제공된 [참고자료: 경쟁제품 목록 발췌]에 따르면, 세부품명번호 `2110190401`(사료배합기)은 경쟁제품 목록에 포함되어 있습니다.
+3. **판정 결과:** 해당 제품은 '일반제품'이 아닌 **'경쟁제품'**에 해당하므로, 1억 원 미만 일반제품의 중소기업 제한 위반 여부를 따지는 v17 항목은 **정상(0)**으로 판정됩니다. (정상 조건 중 '경쟁제품인 경우'에 해당)"
+CJH,PPS-DEV-177,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,110,"```json
+{
+  ""v17"": 1,
+  ""e17"": ""② 「중소기업기본법」제2조제2항에 따른 중소기업 또는 「소상공인 보호 및 지원에 관한 법률」 제2조에 따른 소상공인으로서 「중소기업 범위 및 확인에 관한 규정」에 따라 발급된 중소기업확인서, 소상공인확인서 중 하나를 소지한 업체""
+}
+```"
+CJH,PPS-DEV-178,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v17"": 0,
+  ""e17"": null
+}
+```"
+CJH,PPS-DEV-179,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,109,"```json
+{
+  ""v17"": 1,
+  ""e17"": ""「중소기업기본법」 제2조에 따른 중소기업자 또는 「소상공인 보호 및 지원에 관한 법률」 제2조에 따른 소상공인으로서 「중소기업 범위 및 확인에 관한 규정」에 따라 발급된 <중소기업확인서, 소상공인확인서> 중 하나를 소지한 업체""
+}
+```"
+CJH,PPS-DEV-180,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,126,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""다. 「중소기업 기본법」 제2조제2항에 따른 소기업 또는 「소상공인 보호 및 지원에 관한 법률」제2조에 따른 소상공인 업체로서‘중소기업 범위 및 확인에 관한 규정’에 따라 발급된 소기업․소상공인 확인서(전자입찰서 제출 마감일 전일까지 발급된 것으로 유효기간 내에 있어야 함)를 소지한 자""
+}
+```"
+CJH,PPS-DEV-181,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v17"": 0,
+  ""e17"": null
+}
+```"
+CJH,PPS-DEV-182,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v17"": 0,
+  ""e17"": null
+}
+```"
+CJH,PPS-DEV-183,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,128,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""다. 「중소기업기본법」제2조제2항에 따른 소기업 또는「소상공인 보호 및 지원에 관한 법률」제2조에 따른 소상공인으로서「중소기업 범위 및 확인에 관한 규정」에 따라 발급된‘소기업·소상공인 확인서’(전자입찰서 제출마감일 전일까지 발급된 것으로 유효기간 내에 있어야 함)를 소지한 자""
+}
+```"
+CJH,PPS-DEV-184,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v17"": 0,
+  ""e17"": null
+}
+```"
+CJH,PPS-DEV-185,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,114,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""본 입찰은 「중소기업제품 구매촉진 및 판로지원에 관한 법률 시행령」 제2조의3 제1항제5호에 의거 「건설폐기물의 재활용촉진에 관한 법률」 제4조 및 「폐기물관리법」 제13조에 해당되어 중소기업자와 우선조달계약의 예외에 해당됩니다.""
+}
+```"
+CJH,PPS-DEV-186,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v17"": 0,
+  ""e17"": null
+}
+```"
+CJH,PPS-DEV-187,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v17"": 0,
+  ""e17"": null
+}
+```"
+CJH,PPS-DEV-188,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,101,"```json
+{
+  ""v17"": 1,
+  ""e17"": ""「중소기업기본법」 제2조에 따른 중소기업자 또는 「소상공인 보호 및 지원에 관한 법률」 제2조에 따른 소상공인으로서 「중소기업 범위 및 확인에 관한 규정」에 따라 발급된 중ㆍ소기업ㆍ소상공인 확인서를 소지한 자""
+}
+```"
+CJH,PPS-DEV-189,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,92,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""5. 「중소기업제품 구매촉진 및 판로지원에 관한 법률 시행령」제2조의3 제5호 및 중소기업제품 공공구매제도 운영요령 제44조에 따라 중소기업자 우선조달계약에 대한 예외를 적용합니다.""
+}
+```"
+CJH,PPS-DEV-190,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,94,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""「중소기업제품 구매촉진 및 판로지원에 관한 법률」제2조 및「소상공인 보호 및 지원에 관한 법률」제2조에 의거한 중·소기업·소상공인으로서 중·소기업·소상공인 확인서를 소지한 자""
+}
+```"
+CJH,PPS-DEV-191,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,124,"```json
+{
+  ""v17"": 1,
+  ""e17"": ""「중소기업기본법」 제2조에 따른 중소기업자 또는 「소상공인 보호 및 지원에 관한 법률」 제2조에 따른 소상공인으로서 \""중소기업 범위 및 확인에 관한 규정\""에 따라 발급된 중소기업․소상공인 확인서(제안서 접수 마감일 전 일 발급된 것으로 유효기간 내에 있어야 함)를 소지한 자""
+}
+```"
+CJH,PPS-DEV-192,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,98,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""라. 「중소기업제품 구매촉진 및 판로지원에 관한 법률」 등에 따른 소기업 또는 소상공인으로서 「중소기업 범위 및 확인에 관한 규정」과 「지방자치단체 입찰 및 계약 집행기준」에 따라 소기업・소상공인 확인서를 소지한 업체""
+}
+```"
+CJH,PPS-DEV-193,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,80,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""「중소기업기본법」제2조에 따른 소기업자 또는「소상공인기본법」제2조에 따른 소상공인으로 소기업․소상공인 확인서를 소지한 자 이어야 합니다.""
+}
+```"
+CJH,PPS-DEV-194,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,123,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""2) 「중소기업기본법」 제2조에 따른 소기업 또는 「소상공인 보호 및 지원에 관한 법률」 제2조에 따른 소상공인으로 「중소기업 범위 및 확인에 관한 규정」에 따라 발급된 소기업·소상공인확인서(견적서 제출 마감일 전일까지 발급된 것으로 유효기간 내에 있어야 함)를 소지한 업체""
+}
+```"
+CJH,PPS-DEV-195,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v17"": 0,
+  ""e17"": null
+}
+```"
+CJH,PPS-DEV-196,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,82,"```json
+{
+  ""v17"": 1,
+  ""근거문구"": ""다. 「중소기업제품 구매촉진 및 판로지원에 관한 법률 시행령」 제2조의2에 따른 중소기업확인서(중·소기업·소상공인)를 소지한 업체이어야 합니다.""
+}
+```"
+CJH,PPS-DEV-197,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,27,"```json
+{
+  ""v17"": 0,
+  ""e17"": null
+}
+```"
+CJH,PPS-DEV-198,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,143,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""마. 「중소기업기본법」 제2조제2항에 따른 소기업 또는 「소상공인 보호 및 지원에 관한 법률」제2조에 따른 소상공인으로서, ｢중소기업제품 구매촉진 및 판로지원에 관한 법률 시행령｣ 제2조의2(중소기업자와의 우선조달계약)에 의하여 “중소기업 범위 및 확인에 관한 규정”에 따라 발급된 소기업ㆍ소상공인 확인서를 소지한 업체""
+}
+```"
+CJH,PPS-DEV-199,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,117,"```json
+{
+  ""v17"": 1,
+  ""e17"": ""「중소기업기본법」 제2조에 따른 중소기업 또는 「소상공인기본법」제2조에 따른 소상공인으로 「중소기업 범위 및 확인에 관한 규정」에 따라 발급된 중․소기업․소상공인 확인서(제안서 제출 마감일 전일까지 발급된 것으로 유효기간 내에 있어야 함) 소지 업체""
+}
+```"
+CJH,PPS-DEV-200,v17,0,False,False,complete_code_fence,wrong_keys,invalid,,null,,,False,False,False,False,stop,106,98,"```json
+{
+  ""v17"": 0,
+  ""e17"": ""마. 「소상공인기본법」제2조에 따른 소상공인 또는 「중소기업기본법」제2조 제2항에 따른 소기업으로서 「중소기업 범위 및 확인에 관한 규정」에 따라 발급된 소기업·소상공인 확인서를 소지한 업체""
+}
+```"

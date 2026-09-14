@@ -1,5 +1,5 @@
 """Run the default driver through failed-notice and isolated recovery accounting."""
-from contextlib import ExitStack, contextmanager, redirect_stdout
+from contextlib import ExitStack, contextmanager, redirect_stdout, nullcontext
 from pathlib import Path
 from types import SimpleNamespace as NS
 from unittest.mock import patch
@@ -11,7 +11,9 @@ import tempfile
 import unittest
 
 from nara.inference.predictor import Prediction
-from nara.experiments import benchmark_prefix_pipeline as runner
+from nara.experiments import pipeline as runner
+from nara.experiments.recording import Run
+import shutil
 
 
 class ExperimentEngineTests(unittest.TestCase):
@@ -94,7 +96,12 @@ class ExperimentEngineTests(unittest.TestCase):
         counts = [{'id': r['id'], 'shared_prefix_tokens': 1, 'input_tokens': [1] * 12} for r in records]
         torch = NS(cuda=NS(synchronize=lambda: None, get_device_name=lambda _: 'test engine'))
         with tempfile.TemporaryDirectory() as temp, ExitStack() as stack:
-            out = Path(temp) / 'run'
+            retained = Run.create("scheduling", "test", "Recovery accounting", {"main": {"grouping": "groups12", "phase": "full200", "output_tokens": 512, "thinking": False, "seed": 0}}, root=Path(temp))
+            for name in ('src/rules/briefing.py', 'src/inference/conversation.py'):
+                copy = Path(temp) / name
+                copy.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copyfile(name, copy)
+                retained.capture([copy])
             stack.enter_context(patch.dict(sys.modules, {'torch': torch}))
             stack.enter_context(patch('nara.inference.engine.TokenCounter', return_value=NS()))
             stack.enter_context(patch('nara.inference.engine.VLLMModel', return_value=model))
@@ -106,14 +113,15 @@ class ExperimentEngineTests(unittest.TestCase):
             stack.enter_context(patch.object(runner, 'ContinuousPredictor', Isolated))
             stack.enter_context(patch.object(runner, 'split_predictor', side_effect=lambda p, groups: p))
             evaluate = stack.enter_context(patch.object(runner, 'evaluate'))
-            with redirect_stdout(io.StringIO()):
-                runner.main(['--output-dir', str(out)], verify_reference=False)
+            with redirect_stdout(io.StringIO()), (self.assertRaisesRegex(RuntimeError, "Unresolved") if isolated_fails else nullcontext()), retained.condition("main") as out:
+                runner.execute(out)
+            self.assertEqual(Run(retained.directory).metadata['status'], 'failed' if isolated_fails else 'complete')
             manifest = json.loads((out / 'manifest.json').read_text())
             self.assertEqual(manifest['groups'][10], ['v23'])
             self.assertEqual(manifest['rule_items'], ['v2', 'v3', 'v22'])
             self.assertNotIn('v22', [k for g in manifest['groups'] for k in g])
             self.assertIn('src/rules/briefing.py', manifest['source_sha256'])
-            snapshot = out / 'source/src/inference/conversation.py'
+            snapshot = retained.directory / 'source/src/inference/conversation.py'
             self.assertEqual(snapshot.read_bytes(), Path('src/inference/conversation.py').read_bytes())
             self.assertEqual(manifest['source_sha256']['src/inference/conversation.py'],
                              hashlib.sha256(snapshot.read_bytes()).hexdigest())

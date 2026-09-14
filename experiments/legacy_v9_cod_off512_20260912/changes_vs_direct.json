@@ -1,0 +1,236 @@
+[
+  {
+    "id": "PPS-DEV-09",
+    "item": "v9",
+    "gold": 1,
+    "before": 1,
+    "after": 0,
+    "evidence": "",
+    "notes": "The provided documents were audited for unjustified brand/model/spec restrictions (v9) and unlawful manufacturer/supplier assurance requirements (v19).\n\n**Audit Notes:**\n- **v9 (Product Restriction):** The \"상세규격서\" (Detailed Specification) lists highly specific technical components (e.g., \"GB10 Grace Blackwell Superchip\", \"ConnectX®-7 SmartNIC\", \"DGX™ OS\"). However, the \"용도설명서\" (Purpose Description) and the \"상세규격서\" (Detailed Specification) both explicitly state \"제품의 무상 유지보수 기간은 2년 이며, 상기 사항과 **동등 또는 그 이상의 조건을 충족하는 제품으로 납품 가능함**\" (The product can be delivered as a product that satisfies the above or higher conditions). This indicates that while specific high-end specs are listed, the procurement allows for equivalent or superior products, which is a standard way to define performance requirements without an unjustified brand restriction. No violation found.\n- **v19 (Assurance):** The \"공고문\" (Notice) mentions that the \"수요기관(기타기관)의 공공기관 지정 해제에 따른 [과학기술원 관리기준]을 적용\" and requires a \"납품규격 확인서\" (Delivery Specification Confirmation) to be submitted by the researcher/department head upon contract/delivery. The \"청렴계약이행각서\" (Integrity Pledge) and \"보안서약서\" (Security Pledge) are standard post-award/contract-related documents. There is no requirement for a manufacturer's assurance/guarantee to be submitted *before* the bid deadline that would restrict competition. No violation found."
+  },
+  {
+    "id": "PPS-DEV-034",
+    "item": "v19",
+    "gold": 1,
+    "before": 0,
+    "after": 1,
+    "evidence": "해당 물품 제조사의 물품공급 및 지원(A/S)확약서를 입찰전까지 보유 및 제출하여야 합니다.",
+    "notes": "The provided documents for PPS-DEV-034 (School Uniform Purchase) have been audited for unjustified brand/model/spec restrictions (v9) and unlawful manufacturer/supplier assurance requirements (v19).\n\n**Audit Notes:**\n- **v9 (Product Restrictions):** The specification (D1) provides detailed material compositions (e.g., \"밤색 캐시미어 (소모 60%, 폴리 40% 또는 방모 80%, 나일론 20%)\") and performance standards (Q-MARK). These are technical specifications for quality assurance and do not mandate a specific brand or model. No unjustified restrictions on specific brands or models were found.\n- **v19 (Assurance Requirements):** The notice (D0) requires that \"해당 물품 제조사의 물품공급 및 지원(A/S)확약서를 입찰전까지 보유 및 제출하여야 한다\" (Section 3.라). This requires the bidder to possess and submit a manufacturer's supply and A/S assurance/confirmation *before* the bid (during the proposal submission period). Under the applicable law (지방계약법), requiring a manufacturer's assurance/confirmation to be held/submitted *prior* to the bid/proposal stage is a restriction on the bidder's ability to participate unless it is a standard requirement for quality/supply stability. However, the rule specifically targets the *timing* of issuance. Since the requirement is to \"possess and submit\" (보유 및 제출) the assurance during the proposal stage (before the bid/award), it constitutes a pre-bid requirement of a third-party (manufacturer) assurance."
+  },
+  {
+    "id": "PPS-DEV-035",
+    "item": "v19",
+    "gold": 1,
+    "before": 1,
+    "after": 0,
+    "evidence": "",
+    "notes": "The audit focuses on the requirement for manufacturer/supplier assurance (v19) and unjustified brand/model restrictions (v9).\n\n1. **v9 (Brand/Model/Spec Restrictions):** The provided documents (Notice/Specification) do not specify a particular brand or model for the books to be purchased. The scope is \"Foreign Books (Oriental) Single Volumes.\" There are no unjustified restrictions found.\n2. **v19 (Manufacturer/Supplier Assurance):** The notice states in section 2.마: \"납품(공급)업체의 경우 전자입찰서 제출 마감일 전일까지 제조사로부터 당해 물품공급 및 무상지원(A/S) 확약서를 발급후 보유 및 제출하여야 합니다.\" (In the case of the supplier, a confirmation letter for the supply of the relevant goods and free support (A/S) must be issued by the manufacturer and held/submitted before the deadline for submission of the electronic bid.) This requires the assurance to be issued and submitted *before* the bid deadline, which is a violation of the rule against requiring such assurance at the bid/proposal stage."
+  },
+  {
+    "id": "PPS-DEV-037",
+    "item": "v9",
+    "gold": 0,
+    "before": 0,
+    "after": 1,
+    "evidence": "공급업체는 당해 물품 제조사의 물품공급 및 기술지원(A/S) 확약서를 전자입찰서 제출 마감일 전일까지 보유하여야 하며, 낙찰통보 이전에 반드시 제출하여야 합니다.(미제출시 낙찰대상자 제외)",
+    "notes": "1. v9: Check for unjustified brand/model/spec restrictions.\n2. v9: \"공급업체는 당해 물품 제조사의 물품공급 및 기술지원(A/S) 확약서를 전자입찰서 제출 마감일 전일까지 보유하여야 하며, 낙찰통보 이전에 반드시 제출하여야 합니다.(미제출시 낙찰대상자 제외)\"\n3. v9: This requires a manufacturer's assurance (확약서) to be held/submitted before the bid deadline/award.\n4. v9: This is a requirement for a specific document (assurance) to be held by the supplier, which can be interpreted as a restriction on the ability to bid without a pre-arranged relationship with a manufacturer.\n5. v19: The requirement is for the supplier to \"hold\" the assurance before the bid deadline/award.\n6. v19: This is a pre-bid requirement for a manufacturer's assurance.\n7. v19: Violation of v19 (Manufacturer/supplier assurance required at bid/proposal)."
+  },
+  {
+    "id": "PPS-DEV-037",
+    "item": "v19",
+    "gold": 1,
+    "before": 0,
+    "after": 1,
+    "evidence": "공급업체는 당해 물품 제조사의 물품공급 및 기술지원(A/S) 확약서를 전자입찰서 제출 마감일 전일까지 보유하여야 하며, 낙찰통보 이전에 반드시 제출하여야 합니다.(미제출시 낙찰대상자 제외)",
+    "notes": "1. v9: Check for unjustified brand/model/spec restrictions.\n2. v9: \"공급업체는 당해 물품 제조사의 물품공급 및 기술지원(A/S) 확약서를 전자입찰서 제출 마감일 전일까지 보유하여야 하며, 낙찰통보 이전에 반드시 제출하여야 합니다.(미제출시 낙찰대상자 제외)\"\n3. v9: This requires a manufacturer's assurance (확약서) to be held/submitted before the bid deadline/award.\n4. v9: This is a requirement for a specific document (assurance) to be held by the supplier, which can be interpreted as a restriction on the ability to bid without a pre-arranged relationship with a manufacturer.\n5. v19: The requirement is for the supplier to \"hold\" the assurance before the bid deadline/award.\n6. v19: This is a pre-bid requirement for a manufacturer's assurance.\n7. v19: Violation of v19 (Manufacturer/supplier assurance required at bid/proposal)."
+  },
+  {
+    "id": "PPS-DEV-050",
+    "item": "v9",
+    "gold": 1,
+    "before": 1,
+    "after": 0,
+    "evidence": "",
+    "notes": "The provided documents for PPS-DEV-050 have been audited against the specified criteria.\n\n**Audit Notes:**\n- **v9 (Product Restriction):** The specification for \"파종기\" (Seeder) lists a specific model \"DPM-8000GMP\" and the \"농업용 드론\" (Drone) lists \"AGRAS T25\". However, the specification for all items includes the phrase \"상기 품목과 동일하거나 해당 규격 이상의 제품\" (Products identical to or higher than the above items) and \"상기 품목과 동일하거나 해당 규격 이상의 제품\" (Products identical to or higher than the above items). This explicitly allows for equivalent or superior products, negating an unjustified brand/model restriction. The term \"정품\" (Genuine product) in the delivery notes refers to the quality/authenticity of the delivered item rather than a restriction to a single brand.\n- **v19 (Assurance Timing):** The \"공고문\" (Notice) and \"규격서\" (Specification) require the submission of a \"생산회사 AS 보장 확인서\" (Manufacturer's AS Guarantee/Assurance) and \"납품 및 사후 A/S확약서\" (Delivery and After-sales Service Assurance). The notice specifies that for non-manufacturers, the \"제조업체로부터 받은 [납품 및 사후 A/S확약서(보증서)]\" (Assurance received from the manufacturer) must be submitted during the \"적격심사 시\" (Qualification examination stage). Since the qualification examination occurs after the bid/proposal submission but before the final award/contract, and the requirement is for a document to be submitted as part of the qualification process, it does not violate the rule against requiring manufacturer-issued-to-bidder-assurances *before* the bid/proposal stage in a way that restricts competition, as it is a standard qualification document. However, the specification requires the \"생산회사 AS 보장 확인서\" to be submitted \"물품 납품 시\" (at the time of delivery), which is a post-award stage. There is no requirement for a manufacturer's assurance to be submitted *at the time of the bid* itself, only during the qualification stage."
+  },
+  {
+    "id": "PPS-DEV-050",
+    "item": "v19",
+    "gold": 0,
+    "before": 1,
+    "after": 0,
+    "evidence": "",
+    "notes": "The provided documents for PPS-DEV-050 have been audited against the specified criteria.\n\n**Audit Notes:**\n- **v9 (Product Restriction):** The specification for \"파종기\" (Seeder) lists a specific model \"DPM-8000GMP\" and the \"농업용 드론\" (Drone) lists \"AGRAS T25\". However, the specification for all items includes the phrase \"상기 품목과 동일하거나 해당 규격 이상의 제품\" (Products identical to or higher than the above items) and \"상기 품목과 동일하거나 해당 규격 이상의 제품\" (Products identical to or higher than the above items). This explicitly allows for equivalent or superior products, negating an unjustified brand/model restriction. The term \"정품\" (Genuine product) in the delivery notes refers to the quality/authenticity of the delivered item rather than a restriction to a single brand.\n- **v19 (Assurance Timing):** The \"공고문\" (Notice) and \"규격서\" (Specification) require the submission of a \"생산회사 AS 보장 확인서\" (Manufacturer's AS Guarantee/Assurance) and \"납품 및 사후 A/S확약서\" (Delivery and After-sales Service Assurance). The notice specifies that for non-manufacturers, the \"제조업체로부터 받은 [납품 및 사후 A/S확약서(보증서)]\" (Assurance received from the manufacturer) must be submitted during the \"적격심사 시\" (Qualification examination stage). Since the qualification examination occurs after the bid/proposal submission but before the final award/contract, and the requirement is for a document to be submitted as part of the qualification process, it does not violate the rule against requiring manufacturer-issued-to-bidder-assurances *before* the bid/proposal stage in a way that restricts competition, as it is a standard qualification document. However, the specification requires the \"생산회사 AS 보장 확인서\" to be submitted \"물품 납품 시\" (at the time of delivery), which is a post-award stage. There is no requirement for a manufacturer's assurance to be submitted *at the time of the bid* itself, only during the qualification stage."
+  },
+  {
+    "id": "PPS-DEV-051",
+    "item": "v9",
+    "gold": 1,
+    "before": 1,
+    "after": 0,
+    "evidence": "",
+    "notes": "1. v9: No specific brand or model is restricted in the specification. The text mentions \"물품규격서 참조\" (Refer to product specification) but the provided text does not contain a restrictive brand name or a \"only X\" clause. The bidding qualification 5-⑥ allows for \"동등 이상\" (equivalent or better) products.\n2. v19: The document requires \"물품 공급 및 기술지원 확약서[첨부3]\" (Product supply and technical support assurance [Attachment 3]) as a submission item (7-다-⑥). This is a standard requirement for bidders to submit during the proposal stage. There is no instruction stating that a *manufacturer's* specific assurance must be submitted *before* the bid deadline in a way that restricts competition, nor is there a requirement for a third-party manufacturer's certificate to be submitted by the bidder to the authority prior to the bid (the document asks for the bidder's/supplier's assurance)."
+  },
+  {
+    "id": "PPS-DEV-052",
+    "item": "v9",
+    "gold": 1,
+    "before": 1,
+    "after": 0,
+    "evidence": "",
+    "notes": "v9: Agilent ICP-OES 5900 specified.\nv9: Model name is listed.\nv9: No \"or equivalent\" for ICP.\nv9: No justification provided.\nv9: Violation.\nv9: Elementer Vario Macro specified.\nv9: Model name is listed.\nv9: No \"or equivalent\" for Elementer.\nv9: No justification provided.\nv9: Violation.\nv9: Alpine 400AFG specified.\nv9: Model name is listed.\nv9: No \"or equivalent\" for Alpine.\nv9: No justification provided.\nv9: Violation.\nv19: No manufacturer assurance required.\nv19: No violation."
+  },
+  {
+    "id": "PPS-DEV-057",
+    "item": "v19",
+    "gold": 0,
+    "before": 0,
+    "after": 1,
+    "evidence": "바. 기술지원 확약서, 유지보수(A/S) 이행확약서 각 1부",
+    "notes": "1. v9: The specification (implied by \"입찰규격서 필히 참조요망\") is not provided in full, but the notice mentions \"인쇄회로기판(PCB) 코팅머신 1대\" and \"동등·유사 장비 납품 실적 보유 업체\" (3.사). There is no explicit brand or model restriction mentioned in the text provided.\n2. v19: The notice requires \"기술지원 확약서, 유지보수(A/S) 이행확약서 각 1부\" (4.바) to be submitted as part of the \"입찰참가서류\" (Bid participation documents). This means the assurance/undertaking must be submitted at the time of the bid/proposal, not after the award."
+  },
+  {
+    "id": "PPS-DEV-064",
+    "item": "v9",
+    "gold": 0,
+    "before": 1,
+    "after": 0,
+    "evidence": "",
+    "notes": "v9: No specific product/model restriction found.\nv9: Maintenance target (S1-ACCESS) mentioned.\nv9: No unjustified restriction.\nv19: S1-ACCESS technical support agreement mentioned.\nv19: Agreement/issuance after award (낙찰자 결정 후).\nv19: No violation."
+  },
+  {
+    "id": "PPS-DEV-086",
+    "item": "v19",
+    "gold": 0,
+    "before": 0,
+    "after": 1,
+    "evidence": "제조사 정품공급 확약서 제출 여부",
+    "notes": "The audit focuses on whether the procurement documents (Notice, Proposal Request, and Specifications) impose unjustified restrictions on brands, models, or specifications, and whether manufacturer/supplier-related assurances are required unlawfully.\n\n**Analysis of v9 (Unjustified Restrictions):**\n- The procurement is for \"Computer Servers\" (3 units).\n- The Specifications (D2) explicitly state \"동등 이상 제품 수용\" (Acceptance of equivalent or better products) and \"동등 이상\" (Equivalent or better) for various components (Intel i7-14700K, DDR5 Memory, etc.).\n- The Proposal Request (D1) also mentions \"동등 이상 규격 여부\" (Whether it is equivalent or better) and \"동등 이상 규격\" (Equivalent or better specification) as a point of verification.\n- There are no specific brand names or models mandated that would exclude competitors, and the \"equivalent or better\" clause is consistently applied to the main components and accessories.\n- Therefore, no unjustified restriction is found.\n\n**Analysis of v19 (Manufacturer/Supplier Assurance):**\n- The Proposal Request (D1) includes a section on \"제조사 정품공급 확약서 제출 여부\" (Submission of manufacturer genuine product supply assurance) as a technical evaluation item.\n- The evaluation table (D1) lists \"제조사 정품공표 확약서 제출 여부\" (Submission of manufacturer genuine product supply assurance) as a factor for the \"Technical/Knowledge\" evaluation.\n- The notice/proposal requires the bidder to submit/provide assurance regarding the authenticity of the products (genuine products) as part of the technical evaluation/proposal process.\n- Under the provided rules, requiring a manufacturer's assurance/confirmation during the proposal/bid stage is a violation if it is not a post-award requirement. Since this is a technical evaluation criterion for the bid, it constitutes a requirement for a supplier/manufacturer-related assurance during the bidding process."
+  },
+  {
+    "id": "PPS-DEV-088",
+    "item": "v9",
+    "gold": 0,
+    "before": 1,
+    "after": 0,
+    "evidence": "",
+    "notes": ""
+  },
+  {
+    "id": "PPS-DEV-088",
+    "item": "v19",
+    "gold": 0,
+    "before": 1,
+    "after": 0,
+    "evidence": "",
+    "notes": ""
+  },
+  {
+    "id": "PPS-DEV-090",
+    "item": "v9",
+    "gold": 0,
+    "before": 1,
+    "after": 0,
+    "evidence": "",
+    "notes": "The audit focuses on the provided procurement documents for the \"Police Agency 323 Vessel Gyrocompass New Replacement Repair Service\" (PPS-DEV-090).\n\n**Audit Notes:**\n- **v9 (Product Restriction):** The specification requires the replacement of the IRU (Inertial Reference Unit) with a \"Fiber Optic\" type to extend usage life. It also states that replacement parts must be \"compatible with existing equipment (MK-31, IRU)\" and that the quality/performance must be \"equal or better\" (동등 이상) than the specified standards. There is no unjustified restriction to a specific brand or model that would violate the principle of open competition; rather, it sets performance and compatibility standards for a repair/replacement task.\n- **v19 (Assurance Timing):** The document requires the submission of a \"Type Approval Certificate\" (형식승인서) issued by the Minister of Oceans and Fisheries under the Ship Safety Act *prior* to the commencement of the repair/delivery to ensure reliability. However, this is a technical qualification/standard for the product's reliability/safety, not a \"Manufacturer's Assurance/Guarantee\" (제조사 확약서) that must be submitted *before* the bid deadline to qualify for the bid itself. The requirement for a \"Type Approval Certificate\" is a standard for the product's quality/safety compliance, not an unlawful pre-bid manufacturer's assurance requirement."
+  },
+  {
+    "id": "PPS-DEV-101",
+    "item": "v9",
+    "gold": 0,
+    "before": 1,
+    "after": 0,
+    "evidence": "",
+    "notes": "The provided documents have been audited against the specified criteria.\n\n**Audit Notes:**\n- **v9 (Product/Spec Restriction):** The RFP (D1) specifies the use of \"DEWESOFT\" for sound measurement and \"H23-100\" hydrophones. However, the \"제한조건\" (Restriction Conditions) in the RFP explicitly states that the bidder must possess \"DEWESOFT를 사용한 소음 계측 기술\" (Sound measurement technology using DEWESOFT) and \"잔향 시간 계산 기술\" (Reverberation time calculation technology). This is a technical qualification requirement (competency/skill) rather than an unjustified brand/model restriction on a purchased good. The requirement is for the bidder to possess the *capability* to use the software/equipment to perform the task, which is a valid qualification/scoring criterion for a specialized technical service (General Service/용역). No unjustified restriction on a component or product was found.\n- **v19 (Assurance Timing):** The document does not contain any requirements for a manufacturer's assurance/certification to be submitted *before* the bid deadline or during the proposal stage. The \"청렴계약\" (Integrity Pact) and \"안전보건 계약 이행 서약서\" (Safety/Health Agreement) are standard undertaking/pledge forms for the bidding process and do not constitute an unlawful manufacturer assurance requirement."
+  },
+  {
+    "id": "PPS-DEV-104",
+    "item": "v9",
+    "gold": 0,
+    "before": 1,
+    "after": 0,
+    "evidence": "",
+    "notes": "v9: Unjustified brand/model restriction.\nv9: Specification lists specific brands/manufacturers for all items.\nv9: No \"equivalent\" permission in specification.\nv9: Violation.\nv19: No manufacturer assurance requirement mentioned.\nv19: No violation."
+  },
+  {
+    "id": "PPS-DEV-110",
+    "item": "v9",
+    "gold": 0,
+    "before": 1,
+    "after": 0,
+    "evidence": "",
+    "notes": ""
+  },
+  {
+    "id": "PPS-DEV-130",
+    "item": "v9",
+    "gold": 0,
+    "before": 1,
+    "after": 0,
+    "evidence": "",
+    "notes": "1. v9: The specification lists 8 specific products (Phantom, Bixstone, Cheong-chul-eo-ram, Transform, Straight, Atara, Lockdown, Mospiran) with their active ingredients and specifications.\n2. v9: The specification states \"상기 규격서 품목과 동일하거나 해당규격 이상의 제품이어야 합니다\" (Must be the same as or higher than the specified items).\n3. v9: This is a \"동등 이상\" (equivalent or higher) permission, which is a standard exception to brand-name restriction.\n4. v9: No unjustified restriction found."
+  },
+  {
+    "id": "PPS-DEV-133",
+    "item": "v9",
+    "gold": 0,
+    "before": 1,
+    "after": 0,
+    "evidence": "",
+    "notes": "v9: Existing RHEL environment.\nv9: Single manufacturer specified.\nv9: Justified by compatibility.\nv9: No violation.\nv19: Manufacturer documents required.\nv19: Submission at bid.\nv19: No violation."
+  },
+  {
+    "id": "PPS-DEV-148",
+    "item": "v9",
+    "gold": 0,
+    "before": 1,
+    "after": 0,
+    "evidence": "",
+    "notes": "v9: Specified model (Z2 Tower G1i) and components.\nv9: \"동등이상 규격\" (equivalent or better) permitted.\nv9: No unjustified restriction.\nv19: No pre-bid assurance requirement.\nv19: No violation."
+  },
+  {
+    "id": "PPS-DEV-152",
+    "item": "v19",
+    "gold": 0,
+    "before": 1,
+    "after": 0,
+    "evidence": "",
+    "notes": "v9: Specific brand (BRISTOL COMPRESSORS/KULTHORN KIRBY) identified.\nv9: Requirement for manufacturer/supplier certificate.\nv9: No \"equivalent\" permission stated.\nv9: Violation.\nv19: Certificate must be submitted before bid deadline.\nv19: Submission period is before bid deadline.\nv19: No violation."
+  },
+  {
+    "id": "PPS-DEV-162",
+    "item": "v9",
+    "gold": 0,
+    "before": 1,
+    "after": 0,
+    "evidence": "",
+    "notes": "v9: Amicus, MCS+, Trima, AmiCORE listed.\nv9: \"동등 제품\" (equivalent product) permitted.\nv9: No unjustified restriction.\nv19: Manufacturer/supplier assurance required.\nv19: Submission/confirmation required at bid/proposal stage.\nv19: No violation."
+  },
+  {
+    "id": "PPS-DEV-176",
+    "item": "v9",
+    "gold": 0,
+    "before": 1,
+    "after": 0,
+    "evidence": "",
+    "notes": "The audit of the provided documents for PPS-DEV-176 reveals the following:\n\n**v9 (Product Specification Restriction):**\nThe specification for the \"Chain Conveyor\" (Section 12-C) and \"Microorganism Cultivator\" (Section 13-C) includes specific brand/model requirements (e.g., \"KGM or equivalent,\" \"Hanil multipurpose circulation pump,\" \"LS Electric or equivalent\"). However, the use of \"or equivalent\" (동급 이상) is a standard method to allow for competitive products and does not constitute an unjustified restriction. Furthermore, the \"Chain Conveyor\" (Section 12-C) and \"Microorganism Cultivator\" (Section 13-C) specify brands but explicitly allow for \"equivalent\" (동급 이상) models, which is a lawful exception to a mandatory brand name. No unjustified restriction of a specific model or brand is found that lacks an equivalence clause.\n\n**v19 (Manufacturer/Supplier Assurance):**\nThe document does not require the submission of a manufacturer's assurance or a specific certificate of guarantee *prior* to the bid deadline or as a condition of the bid itself. The requirement for \"pre-approval of specifications/photos\" (Section II-7) and \"issuance of certificates\" (Section 5-v, 5-vi) pertains to the post-award/contracting stage or the verification of the specific product being delivered, rather than an unlawful pre-bid requirement for a manufacturer's formal assurance/guarantee."
+  },
+  {
+    "id": "PPS-DEV-180",
+    "item": "v9",
+    "gold": 0,
+    "before": 1,
+    "after": 0,
+    "evidence": "",
+    "notes": "v9: Product is \"라돈 분석기\" (Radon Analyzer).\nv9: Specification includes \"RAD8\" (model/type) and \"RAD8 전자 라돈 검출기\" (component).\nv9: Specification lists specific features (e.g., \"16GB 스토리지\", \"IP67\", \"MIL-SPEC\").\nv9: No explicit \"only [Brand] or equivalent\" or \"no alternatives\" clause found in the text.\nv9: \"정품(신품)\" (Genuine/New) is a standard quality requirement, not an unjustified restriction.\nv9: \"환경부 형식 승인 제품\" (Ministry of Environment approved) is a qualification/standard.\nv9: No violation found for product restriction.\nv19: Requirement for \"대리점으로부터의 정품공급 및 기술지원 확약서\" (Letter of assurance for genuine supply and technical support from a distributor/agency) is mentioned in \"구매 규격서\" (Specification) under \"주의사항\" (Precautions) item 5.\nv19: This is a supplier/distributor assurance requirement.\nv19: The requirement is for the \"계약 시\" (at the time of contract), which is post-award.\nv19: No violation found for pre-bid issuance."
+  },
+  {
+    "id": "PPS-DEV-196",
+    "item": "v9",
+    "gold": 0,
+    "before": 1,
+    "after": 0,
+    "evidence": "",
+    "notes": "The provided documents were reviewed for unjustified brand/model/spec restrictions (v9) and unlawful timing of manufacturer/supplier assurances (v19).\n\n**v9 (Unjustified Restrictions):**\nThe specification (D1) uses \"or more\" (동등 이상) extensively for dimensions, materials, and performance standards (e.g., \"304L stainless steel or more\", \"82°C or more\"). It does not mandate a specific brand or model, but rather sets performance-based thresholds. While it requires a \"Surgical Instrument Washer set,\" it allows for \"equivalent or better\" (동등 이상) for various specifications. There is no evidence of an unjustified restriction on a specific brand or model.\n\n**v19 (Assurance Timing):**\nThe \"Remarks\" (D.1-D.8) section contains several requirements for the supplier/maker to provide certain information or services (e.g., service keys, manuals, software upgrades, and parts supply responsibility). However, these are framed as post-contract/post-installation obligations (e.g., \"after the installation,\" \"after conclusion of a contract,\" \"from contract until disuse\"). There is no requirement for the bidder to submit a manufacturer's assurance or specific certification *prior to or during the bidding process* that would constitute an unlawful pre-bid requirement."
+  }
+]

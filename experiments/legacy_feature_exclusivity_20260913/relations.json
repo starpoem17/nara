@@ -1,0 +1,4621 @@
+{
+  "date": "2026-09-13",
+  "item_table_date": "2026-07-27",
+  "basis": "제공 항목표와 동봉 법령패키지에서 도출한 분석; 공식 정답 분류의 검증이 아님",
+  "scope": "동일 대상·금액 범위·자격 적용범위·문서 버전·시점; 항목표의 적용분기 유지; 예외 검토",
+  "notice_level_unconditional_constraints": false,
+  "both_zero_allowed": true,
+  "T_KRW_for_goods_services": 230000000,
+  "R": "적용법·기관·업무별 지역제한 상한; 일부 지방 행안부 고시 분기는 동봉 자료로 미확정",
+  "counts": {
+    "N": 230,
+    "E": 36,
+    "Q": 9,
+    "U": 1
+  },
+  "legend": {
+    "E": "동일 판정 단위에서 배타",
+    "Q": "지역제한 상한 조건 충족 시 배타",
+    "U": "라벨 해석 미확정",
+    "N": "고정 배타 근거 미확인"
+  },
+  "features": {
+    "v1": {
+      "name": "참가자격 특정기관 제한",
+      "necessary_scope_summary": "법적 근거 없는 참가 기관·유형 제한",
+      "absence_detection": false,
+      "sources": [
+        "ITEM",
+        "NATIONAL_DECREE",
+        "LOCAL_DECREE",
+        "NATIONAL",
+        "LOCAL"
+      ]
+    },
+    "v2": {
+      "name": "고시금액 미만 실적제한",
+      "necessary_scope_summary": "P < T에서 부당한 실적 참가자격 제한",
+      "absence_detection": false,
+      "sources": [
+        "ITEM",
+        "NATIONAL",
+        "LOCAL_DECREE",
+        "GOV",
+        "LOCAL_EXEC",
+        "T"
+      ]
+    },
+    "v3": {
+      "name": "실적제한 1배수 이상",
+      "necessary_scope_summary": "과도한 실적 배수 요구; 항목표의 ≥1배/예산과 조문의 >1배/추정가격 차이 유의",
+      "absence_detection": false,
+      "sources": [
+        "ITEM",
+        "NATIONAL",
+        "LOCAL",
+        "GOV"
+      ]
+    },
+    "v4": {
+      "name": "고시금액 이상 특정기관, 특정실적",
+      "necessary_scope_summary": "P ≥ T에서 특정기관·특정명칭 실적만 허용",
+      "absence_detection": false,
+      "sources": [
+        "ITEM",
+        "GOV",
+        "LOCAL_EXEC",
+        "T"
+      ]
+    },
+    "v5": {
+      "name": "고시금액 이상 지역제한",
+      "necessary_scope_summary": "P ≥ R에서 부당한 지역제한",
+      "absence_detection": false,
+      "sources": [
+        "ITEM",
+        "NATIONAL",
+        "LOCAL",
+        "T"
+      ]
+    },
+    "v6": {
+      "name": "고시금액 미만 지역제한 시,군,구",
+      "necessary_scope_summary": "P < R에서 부당하게 시·군·구로 좁힌 지역제한",
+      "absence_detection": false,
+      "sources": [
+        "ITEM",
+        "NATIONAL",
+        "LOCAL",
+        "LOCAL_EXEC"
+      ]
+    },
+    "v7": {
+      "name": "고시금액 미만 지역제한 인접 확대",
+      "necessary_scope_summary": "P < R에서 부당한 인접지역 확대",
+      "absence_detection": false,
+      "sources": [
+        "ITEM",
+        "NATIONAL",
+        "LOCAL",
+        "LOCAL_EXEC"
+      ]
+    },
+    "v8": {
+      "name": "중복제한 (실적+지역)",
+      "necessary_scope_summary": "허용 예외 없는 실적+지역 중복제한",
+      "absence_detection": false,
+      "sources": [
+        "ITEM",
+        "NATIONAL",
+        "LOCAL",
+        "LOCAL_EXEC"
+      ]
+    },
+    "v9": {
+      "name": "과업지시서 특정 모델명 명시",
+      "necessary_scope_summary": "이번 납품 대상에 특정 모델·규격을 부당하게 강제",
+      "absence_detection": false,
+      "sources": [
+        "ITEM",
+        "GOV",
+        "LOCAL_EXEC"
+      ]
+    },
+    "v10": {
+      "name": "중기간 경쟁제품 입찰 직생 없음",
+      "necessary_scope_summary": "경쟁제품의 직접생산 확인 요건 누락",
+      "absence_detection": true,
+      "sources": [
+        "ITEM",
+        "DIRECT",
+        "PROC",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX"
+      ]
+    },
+    "v11": {
+      "name": "중기간 경쟁제품 입찰 중소 없음",
+      "necessary_scope_summary": "경쟁제품의 중소기업 범주로 제한하는 참가자격 누락",
+      "absence_detection": true,
+      "sources": [
+        "ITEM",
+        "DIRECT",
+        "PROC",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX"
+      ]
+    },
+    "v12": {
+      "name": "일반제품 직생 제한",
+      "necessary_scope_summary": "일반제품에 직접생산확인증명서 자격을 부당하게 요구",
+      "absence_detection": false,
+      "sources": [
+        "ITEM",
+        "NATIONAL_DECREE",
+        "LOCAL_DECREE",
+        "DIRECT",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX"
+      ]
+    },
+    "v13": {
+      "name": "중기간 경쟁제품 소기업, 소상공인 제한",
+      "necessary_scope_summary": "경쟁제품에서 허용 근거 없이 소기업·소상공인만 참가",
+      "absence_detection": false,
+      "sources": [
+        "ITEM",
+        "DIRECT",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX"
+      ]
+    },
+    "v14": {
+      "name": "고시금액 이상 일반물품 중소기업 제한",
+      "necessary_scope_summary": "일반제품, P ≥ T, 적법 근거 없는 중소기업 자격 제한",
+      "absence_detection": false,
+      "sources": [
+        "ITEM",
+        "PROC",
+        "T"
+      ]
+    },
+    "v15": {
+      "name": "1억 이상- 고시금액미만 소기업 제한",
+      "necessary_scope_summary": "일반제품, 1억원 ≤ P < T, 소기업·소상공인만 부당하게 참가",
+      "absence_detection": false,
+      "sources": [
+        "ITEM",
+        "PROC",
+        "T"
+      ]
+    },
+    "v16": {
+      "name": "1억 이상- 고시금액미만 중소기업 제한 없음",
+      "necessary_scope_summary": "일반제품, 1억원 ≤ P < T, 의무인 중소기업 참가자격 누락",
+      "absence_detection": true,
+      "sources": [
+        "ITEM",
+        "PROC",
+        "T"
+      ]
+    },
+    "v17": {
+      "name": "1억원 미만 일반물품 중소기업 제한",
+      "necessary_scope_summary": "일반제품, P < 1억원, 예외 없이 중소기업 전체로 제한하여 중기업도 허용",
+      "absence_detection": false,
+      "sources": [
+        "ITEM",
+        "PROC"
+      ]
+    },
+    "v18": {
+      "name": "1억원 미만 일반물품 소기업 제한 없음",
+      "necessary_scope_summary": "일반제품, P < 1억원, 소기업 제한 누락; CJH 카드는 기업 규모 제한 전무로 한정",
+      "absence_detection": true,
+      "sources": [
+        "ITEM",
+        "PROC",
+        "CJH17",
+        "CJH18",
+        "DRAFT"
+      ]
+    },
+    "v19": {
+      "name": "물품공급 확약서 입찰 시 제출",
+      "necessary_scope_summary": "제조사·기술지원사 확약을 입찰 시 제출 또는 입찰 전 발급하도록 요구",
+      "absence_detection": false,
+      "sources": [
+        "ITEM",
+        "GOV",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "LOCAL"
+      ]
+    },
+    "v20": {
+      "name": "입찰참가자격 (SW)",
+      "necessary_scope_summary": "공공 SW 사업의 참여제한 적용 여부·근거 또는 필요한 제한 누락",
+      "absence_detection": true,
+      "sources": [
+        "ITEM",
+        "SW",
+        "SW_GUIDE"
+      ]
+    },
+    "v21": {
+      "name": "공동 5% (10%)",
+      "necessary_scope_summary": "공동수급 방식별 최소지분 규정·허용 조정 범위를 벗어난 조건",
+      "absence_detection": false,
+      "sources": [
+        "ITEM",
+        "JOINT",
+        "LOCAL_EXEC"
+      ]
+    },
+    "v22": {
+      "name": "현장설명회 참석업체 (자격으로 제한 여부) * 계약방법 협상만 적용",
+      "necessary_scope_summary": "협상계약에서 설명회 참석을 필수 참가자격으로 강제",
+      "absence_detection": false,
+      "sources": [
+        "ITEM",
+        "NATIONAL_DECREE",
+        "LOCAL_DECREE",
+        "LOCAL_EXEC"
+      ]
+    },
+    "v23": {
+      "name": "현장설명회 (공고기간) * 계약방법 협상 + 계약법 지방만 적용",
+      "necessary_scope_summary": "지방 협상계약의 설명회 관련 공고·실시 기간 부족",
+      "absence_detection": false,
+      "sources": [
+        "ITEM",
+        "LOCAL_DECREE",
+        "BRIEF"
+      ]
+    },
+    "v24": {
+      "name": "공고서와 나라장터 입력값 상이",
+      "necessary_scope_summary": "공고 문서와 나라장터 입력값의 예산·계약방법·지역·업종 불일치",
+      "absence_detection": false,
+      "sources": [
+        "ITEM"
+      ]
+    }
+  },
+  "sources": {
+    "ITEM": {
+      "path": "/home/hwajoong/projects/nara/data/항목표.json",
+      "reviewed_sections": "24개 항목 전체"
+    },
+    "NATIONAL": {
+      "path": "/home/hwajoong/projects/nara/data/법령패키지/법령/국가를 당사자로 하는 계약에 관한 법률 시행규칙.txt",
+      "reviewed_sections": "제17조 174행; 제24조 223행; 제25조 233행"
+    },
+    "NATIONAL_DECREE": {
+      "path": "/home/hwajoong/projects/nara/data/법령패키지/법령/국가를 당사자로 하는 계약에 관한 법률 시행령.txt",
+      "reviewed_sections": "제12조 93행; 제21조 186행; 제43조 483행"
+    },
+    "LOCAL": {
+      "path": "/home/hwajoong/projects/nara/data/법령패키지/법령/지방자치단체를 당사자로 하는 계약에 관한 법률 시행규칙.txt",
+      "reviewed_sections": "제17조 185행; 제24조 232행; 제25조 246행"
+    },
+    "LOCAL_DECREE": {
+      "path": "/home/hwajoong/projects/nara/data/법령패키지/법령/지방자치단체를 당사자로 하는 계약에 관한 법률 시행령.txt",
+      "reviewed_sections": "제13조; 제20조 190행; 제35조 395행; 제43조 553행"
+    },
+    "GOV": {
+      "path": "/home/hwajoong/projects/nara/data/법령패키지/법령/(계약예규) 정부 입찰·계약 집행기준.txt",
+      "reviewed_sections": "제5조 109행; 제5조의3 139행"
+    },
+    "LOCAL_EXEC": {
+      "path": "/home/hwajoong/projects/nara/data/법령패키지/법령/지방자치단체 입찰 및 계약 집행기준.txt",
+      "reviewed_sections": "제1장 자격 제한; 제4장 공급확약 2511행; 제5장 소액수의 2597행; 제6장 최소지분 3096행"
+    },
+    "T": {
+      "path": "/home/hwajoong/projects/nara/data/법령패키지/법령/국가를 당사자로 하는 계약에 관한 법률 등의 재정경제부장관이 정하는 고시금액.txt",
+      "reviewed_sections": "제1호 가목 8~13행; FTA·공기업 금액과 구별"
+    },
+    "PROC": {
+      "path": "/home/hwajoong/projects/nara/data/법령패키지/법령/중소기업제품 구매촉진 및 판로지원에 관한 법률 시행령.txt",
+      "reviewed_sections": "제2조의2 25행; 제2조의3 37행; 제7조 118행; 제10조 193행"
+    },
+    "DIRECT": {
+      "path": "/home/hwajoong/projects/nara/data/법령패키지/법령/중소기업제품 구매촉진 및 판로지원에 관한 법률.txt",
+      "reviewed_sections": "제7조 56행; 제7조의2 63행; 제8조의3 97행; 제9조 108행"
+    },
+    "SIZE": {
+      "path": "/home/hwajoong/projects/nara/data/법령패키지/법령/중소기업기본법.txt",
+      "reviewed_sections": "제2조; 중소기업의 소기업·중기업 구분 19행"
+    },
+    "MICRO": {
+      "path": "/home/hwajoong/projects/nara/data/법령패키지/법령/소상공인기본법.txt",
+      "reviewed_sections": "제2조 12행; 소상공인은 소기업 중 해당자"
+    },
+    "PRODUCTS": {
+      "path": "/home/hwajoong/projects/nara/data/법령패키지/법령/중소기업자간 경쟁제품 및 공사용자재 직접구매 대상 품목 지정 내역.txt",
+      "reviewed_sections": "전문; 품목표 부재 표시 및 부칙의 분류·유효기간"
+    },
+    "PRODUCTS_CSV": {
+      "path": "/home/hwajoong/projects/nara/data/법령패키지/중기부고시/중기부고시_경쟁제품_세부품명.csv",
+      "reviewed_sections": "616개 세부품명 행; 특이사항·금액 조건·SW 연결"
+    },
+    "PRODUCTS_HWPX": {
+      "path": "/home/hwajoong/projects/nara/data/법령패키지/중기부고시/중기부고시_경쟁제품_제2025-96호.hwpx",
+      "reviewed_sections": "Contents/section0.xml 원본 표의 세부품명·특이사항 및 부칙"
+    },
+    "SW": {
+      "path": "/home/hwajoong/projects/nara/data/법령패키지/법령/소프트웨어 진흥법.txt",
+      "reviewed_sections": "제48조 388행"
+    },
+    "SW_GUIDE": {
+      "path": "/home/hwajoong/projects/nara/data/법령패키지/법령/중소 소프트웨어사업자의 사업 참여 지원에 관한 지침.txt",
+      "reviewed_sections": "제2조 11행; 제3조 13행; 별표1 322행 및 예외 연결"
+    },
+    "JOINT": {
+      "path": "/home/hwajoong/projects/nara/data/법령패키지/법령/(계약예규) 공동계약운용요령.txt",
+      "reviewed_sections": "제9조제5·6항 60행"
+    },
+    "BRIEF": {
+      "path": "/home/hwajoong/projects/nara/data/법령패키지/법령/지방자치단체 입찰시 낙찰자 결정기준.txt",
+      "reviewed_sections": "제7장 제3절; 6893행 공고 시점; 6911행 설명 시점"
+    },
+    "CJH17": {
+      "path": "/home/hwajoong/projects/nara/user/CJH/판정카드(10~18)/v17.md",
+      "reviewed_sections": "43행; 2차 자료의 배타 분류 규칙"
+    },
+    "CJH18": {
+      "path": "/home/hwajoong/projects/nara/user/CJH/판정카드(10~18)/v18.md",
+      "reviewed_sections": "44행; 2차 자료의 배타 분류 규칙"
+    },
+    "DRAFT": {
+      "path": "/home/hwajoong/projects/nara/docs/reports/analysis/feature_legal_criteria_v1.md",
+      "reviewed_sections": "v18 단락; 2차 자료의 v17/v18 중복 허용 해석"
+    }
+  },
+  "pairs": [
+    {
+      "left": "v1",
+      "right": "v2",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "GOV",
+        "ITEM",
+        "LOCAL",
+        "LOCAL_DECREE",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "NATIONAL_DECREE",
+        "T"
+      ]
+    },
+    {
+      "left": "v1",
+      "right": "v3",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "GOV",
+        "ITEM",
+        "LOCAL",
+        "LOCAL_DECREE",
+        "NATIONAL",
+        "NATIONAL_DECREE"
+      ]
+    },
+    {
+      "left": "v1",
+      "right": "v4",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "GOV",
+        "ITEM",
+        "LOCAL",
+        "LOCAL_DECREE",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "NATIONAL_DECREE",
+        "T"
+      ]
+    },
+    {
+      "left": "v1",
+      "right": "v5",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "ITEM",
+        "LOCAL",
+        "LOCAL_DECREE",
+        "NATIONAL",
+        "NATIONAL_DECREE",
+        "T"
+      ]
+    },
+    {
+      "left": "v1",
+      "right": "v6",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "ITEM",
+        "LOCAL",
+        "LOCAL_DECREE",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "NATIONAL_DECREE"
+      ]
+    },
+    {
+      "left": "v1",
+      "right": "v7",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "ITEM",
+        "LOCAL",
+        "LOCAL_DECREE",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "NATIONAL_DECREE"
+      ]
+    },
+    {
+      "left": "v1",
+      "right": "v8",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "ITEM",
+        "LOCAL",
+        "LOCAL_DECREE",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "NATIONAL_DECREE"
+      ]
+    },
+    {
+      "left": "v1",
+      "right": "v9",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "GOV",
+        "ITEM",
+        "LOCAL",
+        "LOCAL_DECREE",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "NATIONAL_DECREE"
+      ]
+    },
+    {
+      "left": "v1",
+      "right": "v10",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "DIRECT",
+        "ITEM",
+        "LOCAL",
+        "LOCAL_DECREE",
+        "NATIONAL",
+        "NATIONAL_DECREE",
+        "PROC",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX"
+      ]
+    },
+    {
+      "left": "v1",
+      "right": "v11",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "DIRECT",
+        "ITEM",
+        "LOCAL",
+        "LOCAL_DECREE",
+        "NATIONAL",
+        "NATIONAL_DECREE",
+        "PROC",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX"
+      ]
+    },
+    {
+      "left": "v1",
+      "right": "v12",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "DIRECT",
+        "ITEM",
+        "LOCAL",
+        "LOCAL_DECREE",
+        "NATIONAL",
+        "NATIONAL_DECREE",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX"
+      ]
+    },
+    {
+      "left": "v1",
+      "right": "v13",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "DIRECT",
+        "ITEM",
+        "LOCAL",
+        "LOCAL_DECREE",
+        "NATIONAL",
+        "NATIONAL_DECREE",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX"
+      ]
+    },
+    {
+      "left": "v1",
+      "right": "v14",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "ITEM",
+        "LOCAL",
+        "LOCAL_DECREE",
+        "NATIONAL",
+        "NATIONAL_DECREE",
+        "PROC",
+        "T"
+      ]
+    },
+    {
+      "left": "v1",
+      "right": "v15",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "ITEM",
+        "LOCAL",
+        "LOCAL_DECREE",
+        "NATIONAL",
+        "NATIONAL_DECREE",
+        "PROC",
+        "T"
+      ]
+    },
+    {
+      "left": "v1",
+      "right": "v16",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "ITEM",
+        "LOCAL",
+        "LOCAL_DECREE",
+        "NATIONAL",
+        "NATIONAL_DECREE",
+        "PROC",
+        "T"
+      ]
+    },
+    {
+      "left": "v1",
+      "right": "v17",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "ITEM",
+        "LOCAL",
+        "LOCAL_DECREE",
+        "NATIONAL",
+        "NATIONAL_DECREE",
+        "PROC"
+      ]
+    },
+    {
+      "left": "v1",
+      "right": "v18",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "CJH17",
+        "CJH18",
+        "DRAFT",
+        "ITEM",
+        "LOCAL",
+        "LOCAL_DECREE",
+        "NATIONAL",
+        "NATIONAL_DECREE",
+        "PROC"
+      ]
+    },
+    {
+      "left": "v1",
+      "right": "v19",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "GOV",
+        "ITEM",
+        "LOCAL",
+        "LOCAL_DECREE",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "NATIONAL_DECREE"
+      ]
+    },
+    {
+      "left": "v1",
+      "right": "v20",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "SW 참여제한 적용·근거 명시와 다른 자격·의무는 별도 사실; 적법한 SW 제한이 다른 항목의 예외가 되는지는 개별 검토",
+      "sources": [
+        "ITEM",
+        "LOCAL",
+        "LOCAL_DECREE",
+        "NATIONAL",
+        "NATIONAL_DECREE",
+        "SW",
+        "SW_GUIDE"
+      ]
+    },
+    {
+      "left": "v1",
+      "right": "v21",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "ITEM",
+        "JOINT",
+        "LOCAL",
+        "LOCAL_DECREE",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "NATIONAL_DECREE"
+      ]
+    },
+    {
+      "left": "v1",
+      "right": "v22",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "ITEM",
+        "LOCAL",
+        "LOCAL_DECREE",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "NATIONAL_DECREE"
+      ]
+    },
+    {
+      "left": "v1",
+      "right": "v23",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "BRIEF",
+        "ITEM",
+        "LOCAL",
+        "LOCAL_DECREE",
+        "NATIONAL",
+        "NATIONAL_DECREE"
+      ]
+    },
+    {
+      "left": "v1",
+      "right": "v24",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "문서·메타 불일치와 해당 항목의 법령 위반은 별도 판단; 고정 배타·함의 없음",
+      "sources": [
+        "ITEM",
+        "LOCAL",
+        "LOCAL_DECREE",
+        "NATIONAL",
+        "NATIONAL_DECREE"
+      ]
+    },
+    {
+      "left": "v2",
+      "right": "v3",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "저가 실적 제한과 과도한 실적 배수 요구는 겹칠 수 있음. v3의 ≥1배/예산 대 >1배/추정가격 해석 유의",
+      "sources": [
+        "GOV",
+        "ITEM",
+        "LOCAL",
+        "LOCAL_DECREE",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "T"
+      ]
+    },
+    {
+      "left": "v2",
+      "right": "v4",
+      "class": "E",
+      "condition": "동일 대상·금액 범위·자격 적용범위·문서 버전·시점; 항목표의 적용분기 유지; 예외 검토; 물품·용역 T=2.3억원; v2/v4의 금액 분기 적용",
+      "reason": "P ≥ T와 P < T가 모순; v17·18은 P < 1억원 < T",
+      "sources": [
+        "ITEM",
+        "NATIONAL",
+        "LOCAL_DECREE",
+        "GOV",
+        "PROC",
+        "T"
+      ]
+    },
+    {
+      "left": "v2",
+      "right": "v5",
+      "class": "Q",
+      "condition": "동일 대상·금액 범위·자격 적용범위·문서 버전·시점; 항목표의 적용분기 유지; 예외 검토; R ≥ T",
+      "reason": "P ≥ R ≥ T와 P < T가 모순",
+      "sources": [
+        "ITEM",
+        "NATIONAL",
+        "LOCAL",
+        "LOCAL_DECREE",
+        "PROC",
+        "T"
+      ]
+    },
+    {
+      "left": "v2",
+      "right": "v6",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "GOV",
+        "ITEM",
+        "LOCAL",
+        "LOCAL_DECREE",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "T"
+      ]
+    },
+    {
+      "left": "v2",
+      "right": "v7",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "GOV",
+        "ITEM",
+        "LOCAL",
+        "LOCAL_DECREE",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "T"
+      ]
+    },
+    {
+      "left": "v2",
+      "right": "v8",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "GOV",
+        "ITEM",
+        "LOCAL",
+        "LOCAL_DECREE",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "T"
+      ]
+    },
+    {
+      "left": "v2",
+      "right": "v9",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "GOV",
+        "ITEM",
+        "LOCAL_DECREE",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "T"
+      ]
+    },
+    {
+      "left": "v2",
+      "right": "v10",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "DIRECT",
+        "GOV",
+        "ITEM",
+        "LOCAL_DECREE",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "PROC",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX",
+        "T"
+      ]
+    },
+    {
+      "left": "v2",
+      "right": "v11",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "DIRECT",
+        "GOV",
+        "ITEM",
+        "LOCAL_DECREE",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "PROC",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX",
+        "T"
+      ]
+    },
+    {
+      "left": "v2",
+      "right": "v12",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "DIRECT",
+        "GOV",
+        "ITEM",
+        "LOCAL_DECREE",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "NATIONAL_DECREE",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX",
+        "T"
+      ]
+    },
+    {
+      "left": "v2",
+      "right": "v13",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "DIRECT",
+        "GOV",
+        "ITEM",
+        "LOCAL_DECREE",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX",
+        "T"
+      ]
+    },
+    {
+      "left": "v2",
+      "right": "v14",
+      "class": "E",
+      "condition": "동일 대상·금액 범위·자격 적용범위·문서 버전·시점; 항목표의 적용분기 유지; 예외 검토; 물품·용역 T=2.3억원; v2/v4의 금액 분기 적용",
+      "reason": "P ≥ T와 P < T가 모순; v17·18은 P < 1억원 < T",
+      "sources": [
+        "ITEM",
+        "NATIONAL",
+        "LOCAL_DECREE",
+        "GOV",
+        "PROC",
+        "T"
+      ]
+    },
+    {
+      "left": "v2",
+      "right": "v15",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "GOV",
+        "ITEM",
+        "LOCAL_DECREE",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "PROC",
+        "T"
+      ]
+    },
+    {
+      "left": "v2",
+      "right": "v16",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "GOV",
+        "ITEM",
+        "LOCAL_DECREE",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "PROC",
+        "T"
+      ]
+    },
+    {
+      "left": "v2",
+      "right": "v17",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "GOV",
+        "ITEM",
+        "LOCAL_DECREE",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "PROC",
+        "T"
+      ]
+    },
+    {
+      "left": "v2",
+      "right": "v18",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "CJH17",
+        "CJH18",
+        "DRAFT",
+        "GOV",
+        "ITEM",
+        "LOCAL_DECREE",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "PROC",
+        "T"
+      ]
+    },
+    {
+      "left": "v2",
+      "right": "v19",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "GOV",
+        "ITEM",
+        "LOCAL",
+        "LOCAL_DECREE",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "T"
+      ]
+    },
+    {
+      "left": "v2",
+      "right": "v20",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "SW 참여제한 적용·근거 명시와 다른 자격·의무는 별도 사실; 적법한 SW 제한이 다른 항목의 예외가 되는지는 개별 검토",
+      "sources": [
+        "GOV",
+        "ITEM",
+        "LOCAL_DECREE",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "SW",
+        "SW_GUIDE",
+        "T"
+      ]
+    },
+    {
+      "left": "v2",
+      "right": "v21",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "GOV",
+        "ITEM",
+        "JOINT",
+        "LOCAL_DECREE",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "T"
+      ]
+    },
+    {
+      "left": "v2",
+      "right": "v22",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "GOV",
+        "ITEM",
+        "LOCAL_DECREE",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "NATIONAL_DECREE",
+        "T"
+      ]
+    },
+    {
+      "left": "v2",
+      "right": "v23",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "BRIEF",
+        "GOV",
+        "ITEM",
+        "LOCAL_DECREE",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "T"
+      ]
+    },
+    {
+      "left": "v2",
+      "right": "v24",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "문서·메타 불일치와 해당 항목의 법령 위반은 별도 판단; 고정 배타·함의 없음",
+      "sources": [
+        "GOV",
+        "ITEM",
+        "LOCAL_DECREE",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "T"
+      ]
+    },
+    {
+      "left": "v3",
+      "right": "v4",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "GOV",
+        "ITEM",
+        "LOCAL",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "T"
+      ]
+    },
+    {
+      "left": "v3",
+      "right": "v5",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "GOV",
+        "ITEM",
+        "LOCAL",
+        "NATIONAL",
+        "T"
+      ]
+    },
+    {
+      "left": "v3",
+      "right": "v6",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "GOV",
+        "ITEM",
+        "LOCAL",
+        "LOCAL_EXEC",
+        "NATIONAL"
+      ]
+    },
+    {
+      "left": "v3",
+      "right": "v7",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "GOV",
+        "ITEM",
+        "LOCAL",
+        "LOCAL_EXEC",
+        "NATIONAL"
+      ]
+    },
+    {
+      "left": "v3",
+      "right": "v8",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "GOV",
+        "ITEM",
+        "LOCAL",
+        "LOCAL_EXEC",
+        "NATIONAL"
+      ]
+    },
+    {
+      "left": "v3",
+      "right": "v9",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "GOV",
+        "ITEM",
+        "LOCAL",
+        "LOCAL_EXEC",
+        "NATIONAL"
+      ]
+    },
+    {
+      "left": "v3",
+      "right": "v10",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "DIRECT",
+        "GOV",
+        "ITEM",
+        "LOCAL",
+        "NATIONAL",
+        "PROC",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX"
+      ]
+    },
+    {
+      "left": "v3",
+      "right": "v11",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "DIRECT",
+        "GOV",
+        "ITEM",
+        "LOCAL",
+        "NATIONAL",
+        "PROC",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX"
+      ]
+    },
+    {
+      "left": "v3",
+      "right": "v12",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "DIRECT",
+        "GOV",
+        "ITEM",
+        "LOCAL",
+        "LOCAL_DECREE",
+        "NATIONAL",
+        "NATIONAL_DECREE",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX"
+      ]
+    },
+    {
+      "left": "v3",
+      "right": "v13",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "DIRECT",
+        "GOV",
+        "ITEM",
+        "LOCAL",
+        "NATIONAL",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX"
+      ]
+    },
+    {
+      "left": "v3",
+      "right": "v14",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "GOV",
+        "ITEM",
+        "LOCAL",
+        "NATIONAL",
+        "PROC",
+        "T"
+      ]
+    },
+    {
+      "left": "v3",
+      "right": "v15",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "GOV",
+        "ITEM",
+        "LOCAL",
+        "NATIONAL",
+        "PROC",
+        "T"
+      ]
+    },
+    {
+      "left": "v3",
+      "right": "v16",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "GOV",
+        "ITEM",
+        "LOCAL",
+        "NATIONAL",
+        "PROC",
+        "T"
+      ]
+    },
+    {
+      "left": "v3",
+      "right": "v17",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "GOV",
+        "ITEM",
+        "LOCAL",
+        "NATIONAL",
+        "PROC"
+      ]
+    },
+    {
+      "left": "v3",
+      "right": "v18",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "CJH17",
+        "CJH18",
+        "DRAFT",
+        "GOV",
+        "ITEM",
+        "LOCAL",
+        "NATIONAL",
+        "PROC"
+      ]
+    },
+    {
+      "left": "v3",
+      "right": "v19",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "GOV",
+        "ITEM",
+        "LOCAL",
+        "LOCAL_EXEC",
+        "NATIONAL"
+      ]
+    },
+    {
+      "left": "v3",
+      "right": "v20",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "SW 참여제한 적용·근거 명시와 다른 자격·의무는 별도 사실; 적법한 SW 제한이 다른 항목의 예외가 되는지는 개별 검토",
+      "sources": [
+        "GOV",
+        "ITEM",
+        "LOCAL",
+        "NATIONAL",
+        "SW",
+        "SW_GUIDE"
+      ]
+    },
+    {
+      "left": "v3",
+      "right": "v21",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "GOV",
+        "ITEM",
+        "JOINT",
+        "LOCAL",
+        "LOCAL_EXEC",
+        "NATIONAL"
+      ]
+    },
+    {
+      "left": "v3",
+      "right": "v22",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "GOV",
+        "ITEM",
+        "LOCAL",
+        "LOCAL_DECREE",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "NATIONAL_DECREE"
+      ]
+    },
+    {
+      "left": "v3",
+      "right": "v23",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "BRIEF",
+        "GOV",
+        "ITEM",
+        "LOCAL",
+        "LOCAL_DECREE",
+        "NATIONAL"
+      ]
+    },
+    {
+      "left": "v3",
+      "right": "v24",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "문서·메타 불일치와 해당 항목의 법령 위반은 별도 판단; 고정 배타·함의 없음",
+      "sources": [
+        "GOV",
+        "ITEM",
+        "LOCAL",
+        "NATIONAL"
+      ]
+    },
+    {
+      "left": "v4",
+      "right": "v5",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "GOV",
+        "ITEM",
+        "LOCAL",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "T"
+      ]
+    },
+    {
+      "left": "v4",
+      "right": "v6",
+      "class": "Q",
+      "condition": "동일 대상·금액 범위·자격 적용범위·문서 버전·시점; 항목표의 적용분기 유지; 예외 검토; R ≤ T",
+      "reason": "P < R ≤ T와 P ≥ T가 모순",
+      "sources": [
+        "ITEM",
+        "NATIONAL",
+        "LOCAL",
+        "GOV",
+        "PROC",
+        "T"
+      ]
+    },
+    {
+      "left": "v4",
+      "right": "v7",
+      "class": "Q",
+      "condition": "동일 대상·금액 범위·자격 적용범위·문서 버전·시점; 항목표의 적용분기 유지; 예외 검토; R ≤ T",
+      "reason": "P < R ≤ T와 P ≥ T가 모순",
+      "sources": [
+        "ITEM",
+        "NATIONAL",
+        "LOCAL",
+        "GOV",
+        "PROC",
+        "T"
+      ]
+    },
+    {
+      "left": "v4",
+      "right": "v8",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "GOV",
+        "ITEM",
+        "LOCAL",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "T"
+      ]
+    },
+    {
+      "left": "v4",
+      "right": "v9",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "GOV",
+        "ITEM",
+        "LOCAL_EXEC",
+        "T"
+      ]
+    },
+    {
+      "left": "v4",
+      "right": "v10",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "DIRECT",
+        "GOV",
+        "ITEM",
+        "LOCAL_EXEC",
+        "PROC",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX",
+        "T"
+      ]
+    },
+    {
+      "left": "v4",
+      "right": "v11",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "DIRECT",
+        "GOV",
+        "ITEM",
+        "LOCAL_EXEC",
+        "PROC",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX",
+        "T"
+      ]
+    },
+    {
+      "left": "v4",
+      "right": "v12",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "DIRECT",
+        "GOV",
+        "ITEM",
+        "LOCAL_DECREE",
+        "LOCAL_EXEC",
+        "NATIONAL_DECREE",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX",
+        "T"
+      ]
+    },
+    {
+      "left": "v4",
+      "right": "v13",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "DIRECT",
+        "GOV",
+        "ITEM",
+        "LOCAL_EXEC",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX",
+        "T"
+      ]
+    },
+    {
+      "left": "v4",
+      "right": "v14",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "GOV",
+        "ITEM",
+        "LOCAL_EXEC",
+        "PROC",
+        "T"
+      ]
+    },
+    {
+      "left": "v4",
+      "right": "v15",
+      "class": "E",
+      "condition": "동일 대상·금액 범위·자격 적용범위·문서 버전·시점; 항목표의 적용분기 유지; 예외 검토; 물품·용역 T=2.3억원; v2/v4의 금액 분기 적용",
+      "reason": "P ≥ T와 P < T가 모순; v17·18은 P < 1억원 < T",
+      "sources": [
+        "ITEM",
+        "NATIONAL",
+        "LOCAL_DECREE",
+        "GOV",
+        "PROC",
+        "T"
+      ]
+    },
+    {
+      "left": "v4",
+      "right": "v16",
+      "class": "E",
+      "condition": "동일 대상·금액 범위·자격 적용범위·문서 버전·시점; 항목표의 적용분기 유지; 예외 검토; 물품·용역 T=2.3억원; v2/v4의 금액 분기 적용",
+      "reason": "P ≥ T와 P < T가 모순; v17·18은 P < 1억원 < T",
+      "sources": [
+        "ITEM",
+        "NATIONAL",
+        "LOCAL_DECREE",
+        "GOV",
+        "PROC",
+        "T"
+      ]
+    },
+    {
+      "left": "v4",
+      "right": "v17",
+      "class": "E",
+      "condition": "동일 대상·금액 범위·자격 적용범위·문서 버전·시점; 항목표의 적용분기 유지; 예외 검토; 물품·용역 T=2.3억원; v2/v4의 금액 분기 적용",
+      "reason": "P ≥ T와 P < T가 모순; v17·18은 P < 1억원 < T",
+      "sources": [
+        "ITEM",
+        "NATIONAL",
+        "LOCAL_DECREE",
+        "GOV",
+        "PROC",
+        "T"
+      ]
+    },
+    {
+      "left": "v4",
+      "right": "v18",
+      "class": "E",
+      "condition": "동일 대상·금액 범위·자격 적용범위·문서 버전·시점; 항목표의 적용분기 유지; 예외 검토; 물품·용역 T=2.3억원; v2/v4의 금액 분기 적용",
+      "reason": "P ≥ T와 P < T가 모순; v17·18은 P < 1억원 < T",
+      "sources": [
+        "ITEM",
+        "NATIONAL",
+        "LOCAL_DECREE",
+        "GOV",
+        "PROC",
+        "T"
+      ]
+    },
+    {
+      "left": "v4",
+      "right": "v19",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "GOV",
+        "ITEM",
+        "LOCAL",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "T"
+      ]
+    },
+    {
+      "left": "v4",
+      "right": "v20",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "SW 참여제한 적용·근거 명시와 다른 자격·의무는 별도 사실; 적법한 SW 제한이 다른 항목의 예외가 되는지는 개별 검토",
+      "sources": [
+        "GOV",
+        "ITEM",
+        "LOCAL_EXEC",
+        "SW",
+        "SW_GUIDE",
+        "T"
+      ]
+    },
+    {
+      "left": "v4",
+      "right": "v21",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "GOV",
+        "ITEM",
+        "JOINT",
+        "LOCAL_EXEC",
+        "T"
+      ]
+    },
+    {
+      "left": "v4",
+      "right": "v22",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "GOV",
+        "ITEM",
+        "LOCAL_DECREE",
+        "LOCAL_EXEC",
+        "NATIONAL_DECREE",
+        "T"
+      ]
+    },
+    {
+      "left": "v4",
+      "right": "v23",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "BRIEF",
+        "GOV",
+        "ITEM",
+        "LOCAL_DECREE",
+        "LOCAL_EXEC",
+        "T"
+      ]
+    },
+    {
+      "left": "v4",
+      "right": "v24",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "문서·메타 불일치와 해당 항목의 법령 위반은 별도 판단; 고정 배타·함의 없음",
+      "sources": [
+        "GOV",
+        "ITEM",
+        "LOCAL_EXEC",
+        "T"
+      ]
+    },
+    {
+      "left": "v5",
+      "right": "v6",
+      "class": "E",
+      "condition": "동일 대상·금액 범위·자격 적용범위·문서 버전·시점; 항목표의 적용분기 유지; 예외 검토; v5/v6/v7의 금액 분기 적용",
+      "reason": "동일 지역제한 상한 R에 대해 P ≥ R과 P < R이 모순",
+      "sources": [
+        "ITEM",
+        "NATIONAL",
+        "LOCAL"
+      ]
+    },
+    {
+      "left": "v5",
+      "right": "v7",
+      "class": "E",
+      "condition": "동일 대상·금액 범위·자격 적용범위·문서 버전·시점; 항목표의 적용분기 유지; 예외 검토; v5/v6/v7의 금액 분기 적용",
+      "reason": "동일 지역제한 상한 R에 대해 P ≥ R과 P < R이 모순",
+      "sources": [
+        "ITEM",
+        "NATIONAL",
+        "LOCAL"
+      ]
+    },
+    {
+      "left": "v5",
+      "right": "v8",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "ITEM",
+        "LOCAL",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "T"
+      ]
+    },
+    {
+      "left": "v5",
+      "right": "v9",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "GOV",
+        "ITEM",
+        "LOCAL",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "T"
+      ]
+    },
+    {
+      "left": "v5",
+      "right": "v10",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "DIRECT",
+        "ITEM",
+        "LOCAL",
+        "NATIONAL",
+        "PROC",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX",
+        "T"
+      ]
+    },
+    {
+      "left": "v5",
+      "right": "v11",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "DIRECT",
+        "ITEM",
+        "LOCAL",
+        "NATIONAL",
+        "PROC",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX",
+        "T"
+      ]
+    },
+    {
+      "left": "v5",
+      "right": "v12",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "DIRECT",
+        "ITEM",
+        "LOCAL",
+        "LOCAL_DECREE",
+        "NATIONAL",
+        "NATIONAL_DECREE",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX",
+        "T"
+      ]
+    },
+    {
+      "left": "v5",
+      "right": "v13",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "DIRECT",
+        "ITEM",
+        "LOCAL",
+        "NATIONAL",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX",
+        "T"
+      ]
+    },
+    {
+      "left": "v5",
+      "right": "v14",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "ITEM",
+        "LOCAL",
+        "NATIONAL",
+        "PROC",
+        "T"
+      ]
+    },
+    {
+      "left": "v5",
+      "right": "v15",
+      "class": "Q",
+      "condition": "동일 대상·금액 범위·자격 적용범위·문서 버전·시점; 항목표의 적용분기 유지; 예외 검토; R ≥ T",
+      "reason": "P ≥ R ≥ T와 P < T가 모순",
+      "sources": [
+        "ITEM",
+        "NATIONAL",
+        "LOCAL",
+        "LOCAL_DECREE",
+        "PROC",
+        "T"
+      ]
+    },
+    {
+      "left": "v5",
+      "right": "v16",
+      "class": "Q",
+      "condition": "동일 대상·금액 범위·자격 적용범위·문서 버전·시점; 항목표의 적용분기 유지; 예외 검토; R ≥ T",
+      "reason": "P ≥ R ≥ T와 P < T가 모순",
+      "sources": [
+        "ITEM",
+        "NATIONAL",
+        "LOCAL",
+        "LOCAL_DECREE",
+        "PROC",
+        "T"
+      ]
+    },
+    {
+      "left": "v5",
+      "right": "v17",
+      "class": "Q",
+      "condition": "동일 대상·금액 범위·자격 적용범위·문서 버전·시점; 항목표의 적용분기 유지; 예외 검토; R ≥ 1억원",
+      "reason": "P ≥ R ≥ 1억원과 P < 1억원이 모순",
+      "sources": [
+        "ITEM",
+        "NATIONAL",
+        "LOCAL",
+        "PROC",
+        "T"
+      ]
+    },
+    {
+      "left": "v5",
+      "right": "v18",
+      "class": "Q",
+      "condition": "동일 대상·금액 범위·자격 적용범위·문서 버전·시점; 항목표의 적용분기 유지; 예외 검토; R ≥ 1억원",
+      "reason": "P ≥ R ≥ 1억원과 P < 1억원이 모순",
+      "sources": [
+        "ITEM",
+        "NATIONAL",
+        "LOCAL",
+        "PROC",
+        "T"
+      ]
+    },
+    {
+      "left": "v5",
+      "right": "v19",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "GOV",
+        "ITEM",
+        "LOCAL",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "T"
+      ]
+    },
+    {
+      "left": "v5",
+      "right": "v20",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "SW 참여제한 적용·근거 명시와 다른 자격·의무는 별도 사실; 적법한 SW 제한이 다른 항목의 예외가 되는지는 개별 검토",
+      "sources": [
+        "ITEM",
+        "LOCAL",
+        "NATIONAL",
+        "SW",
+        "SW_GUIDE",
+        "T"
+      ]
+    },
+    {
+      "left": "v5",
+      "right": "v21",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "ITEM",
+        "JOINT",
+        "LOCAL",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "T"
+      ]
+    },
+    {
+      "left": "v5",
+      "right": "v22",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "ITEM",
+        "LOCAL",
+        "LOCAL_DECREE",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "NATIONAL_DECREE",
+        "T"
+      ]
+    },
+    {
+      "left": "v5",
+      "right": "v23",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "BRIEF",
+        "ITEM",
+        "LOCAL",
+        "LOCAL_DECREE",
+        "NATIONAL",
+        "T"
+      ]
+    },
+    {
+      "left": "v5",
+      "right": "v24",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "문서·메타 불일치와 해당 항목의 법령 위반은 별도 판단; 고정 배타·함의 없음",
+      "sources": [
+        "ITEM",
+        "LOCAL",
+        "NATIONAL",
+        "T"
+      ]
+    },
+    {
+      "left": "v6",
+      "right": "v7",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "좁은 시·군 단위 제한과 부당한 인접지역 확대가 함께 문제 될 수 있음; 소액수의 허용 예외 확인",
+      "sources": [
+        "ITEM",
+        "LOCAL",
+        "LOCAL_EXEC",
+        "NATIONAL"
+      ]
+    },
+    {
+      "left": "v6",
+      "right": "v8",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "ITEM",
+        "LOCAL",
+        "LOCAL_EXEC",
+        "NATIONAL"
+      ]
+    },
+    {
+      "left": "v6",
+      "right": "v9",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "GOV",
+        "ITEM",
+        "LOCAL",
+        "LOCAL_EXEC",
+        "NATIONAL"
+      ]
+    },
+    {
+      "left": "v6",
+      "right": "v10",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "DIRECT",
+        "ITEM",
+        "LOCAL",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "PROC",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX"
+      ]
+    },
+    {
+      "left": "v6",
+      "right": "v11",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "DIRECT",
+        "ITEM",
+        "LOCAL",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "PROC",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX"
+      ]
+    },
+    {
+      "left": "v6",
+      "right": "v12",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "DIRECT",
+        "ITEM",
+        "LOCAL",
+        "LOCAL_DECREE",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "NATIONAL_DECREE",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX"
+      ]
+    },
+    {
+      "left": "v6",
+      "right": "v13",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "DIRECT",
+        "ITEM",
+        "LOCAL",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX"
+      ]
+    },
+    {
+      "left": "v6",
+      "right": "v14",
+      "class": "Q",
+      "condition": "동일 대상·금액 범위·자격 적용범위·문서 버전·시점; 항목표의 적용분기 유지; 예외 검토; R ≤ T",
+      "reason": "P < R ≤ T와 P ≥ T가 모순",
+      "sources": [
+        "ITEM",
+        "NATIONAL",
+        "LOCAL",
+        "GOV",
+        "PROC",
+        "T"
+      ]
+    },
+    {
+      "left": "v6",
+      "right": "v15",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "ITEM",
+        "LOCAL",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "PROC",
+        "T"
+      ]
+    },
+    {
+      "left": "v6",
+      "right": "v16",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "ITEM",
+        "LOCAL",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "PROC",
+        "T"
+      ]
+    },
+    {
+      "left": "v6",
+      "right": "v17",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "ITEM",
+        "LOCAL",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "PROC"
+      ]
+    },
+    {
+      "left": "v6",
+      "right": "v18",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "CJH17",
+        "CJH18",
+        "DRAFT",
+        "ITEM",
+        "LOCAL",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "PROC"
+      ]
+    },
+    {
+      "left": "v6",
+      "right": "v19",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "GOV",
+        "ITEM",
+        "LOCAL",
+        "LOCAL_EXEC",
+        "NATIONAL"
+      ]
+    },
+    {
+      "left": "v6",
+      "right": "v20",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "SW 참여제한 적용·근거 명시와 다른 자격·의무는 별도 사실; 적법한 SW 제한이 다른 항목의 예외가 되는지는 개별 검토",
+      "sources": [
+        "ITEM",
+        "LOCAL",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "SW",
+        "SW_GUIDE"
+      ]
+    },
+    {
+      "left": "v6",
+      "right": "v21",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "ITEM",
+        "JOINT",
+        "LOCAL",
+        "LOCAL_EXEC",
+        "NATIONAL"
+      ]
+    },
+    {
+      "left": "v6",
+      "right": "v22",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "ITEM",
+        "LOCAL",
+        "LOCAL_DECREE",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "NATIONAL_DECREE"
+      ]
+    },
+    {
+      "left": "v6",
+      "right": "v23",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "BRIEF",
+        "ITEM",
+        "LOCAL",
+        "LOCAL_DECREE",
+        "LOCAL_EXEC",
+        "NATIONAL"
+      ]
+    },
+    {
+      "left": "v6",
+      "right": "v24",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "문서·메타 불일치와 해당 항목의 법령 위반은 별도 판단; 고정 배타·함의 없음",
+      "sources": [
+        "ITEM",
+        "LOCAL",
+        "LOCAL_EXEC",
+        "NATIONAL"
+      ]
+    },
+    {
+      "left": "v7",
+      "right": "v8",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "ITEM",
+        "LOCAL",
+        "LOCAL_EXEC",
+        "NATIONAL"
+      ]
+    },
+    {
+      "left": "v7",
+      "right": "v9",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "GOV",
+        "ITEM",
+        "LOCAL",
+        "LOCAL_EXEC",
+        "NATIONAL"
+      ]
+    },
+    {
+      "left": "v7",
+      "right": "v10",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "DIRECT",
+        "ITEM",
+        "LOCAL",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "PROC",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX"
+      ]
+    },
+    {
+      "left": "v7",
+      "right": "v11",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "DIRECT",
+        "ITEM",
+        "LOCAL",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "PROC",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX"
+      ]
+    },
+    {
+      "left": "v7",
+      "right": "v12",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "DIRECT",
+        "ITEM",
+        "LOCAL",
+        "LOCAL_DECREE",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "NATIONAL_DECREE",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX"
+      ]
+    },
+    {
+      "left": "v7",
+      "right": "v13",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "DIRECT",
+        "ITEM",
+        "LOCAL",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX"
+      ]
+    },
+    {
+      "left": "v7",
+      "right": "v14",
+      "class": "Q",
+      "condition": "동일 대상·금액 범위·자격 적용범위·문서 버전·시점; 항목표의 적용분기 유지; 예외 검토; R ≤ T",
+      "reason": "P < R ≤ T와 P ≥ T가 모순",
+      "sources": [
+        "ITEM",
+        "NATIONAL",
+        "LOCAL",
+        "GOV",
+        "PROC",
+        "T"
+      ]
+    },
+    {
+      "left": "v7",
+      "right": "v15",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "ITEM",
+        "LOCAL",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "PROC",
+        "T"
+      ]
+    },
+    {
+      "left": "v7",
+      "right": "v16",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "ITEM",
+        "LOCAL",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "PROC",
+        "T"
+      ]
+    },
+    {
+      "left": "v7",
+      "right": "v17",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "ITEM",
+        "LOCAL",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "PROC"
+      ]
+    },
+    {
+      "left": "v7",
+      "right": "v18",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "CJH17",
+        "CJH18",
+        "DRAFT",
+        "ITEM",
+        "LOCAL",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "PROC"
+      ]
+    },
+    {
+      "left": "v7",
+      "right": "v19",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "GOV",
+        "ITEM",
+        "LOCAL",
+        "LOCAL_EXEC",
+        "NATIONAL"
+      ]
+    },
+    {
+      "left": "v7",
+      "right": "v20",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "SW 참여제한 적용·근거 명시와 다른 자격·의무는 별도 사실; 적법한 SW 제한이 다른 항목의 예외가 되는지는 개별 검토",
+      "sources": [
+        "ITEM",
+        "LOCAL",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "SW",
+        "SW_GUIDE"
+      ]
+    },
+    {
+      "left": "v7",
+      "right": "v21",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "ITEM",
+        "JOINT",
+        "LOCAL",
+        "LOCAL_EXEC",
+        "NATIONAL"
+      ]
+    },
+    {
+      "left": "v7",
+      "right": "v22",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "ITEM",
+        "LOCAL",
+        "LOCAL_DECREE",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "NATIONAL_DECREE"
+      ]
+    },
+    {
+      "left": "v7",
+      "right": "v23",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "BRIEF",
+        "ITEM",
+        "LOCAL",
+        "LOCAL_DECREE",
+        "LOCAL_EXEC",
+        "NATIONAL"
+      ]
+    },
+    {
+      "left": "v7",
+      "right": "v24",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "문서·메타 불일치와 해당 항목의 법령 위반은 별도 판단; 고정 배타·함의 없음",
+      "sources": [
+        "ITEM",
+        "LOCAL",
+        "LOCAL_EXEC",
+        "NATIONAL"
+      ]
+    },
+    {
+      "left": "v8",
+      "right": "v9",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "GOV",
+        "ITEM",
+        "LOCAL",
+        "LOCAL_EXEC",
+        "NATIONAL"
+      ]
+    },
+    {
+      "left": "v8",
+      "right": "v10",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "DIRECT",
+        "ITEM",
+        "LOCAL",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "PROC",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX"
+      ]
+    },
+    {
+      "left": "v8",
+      "right": "v11",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "DIRECT",
+        "ITEM",
+        "LOCAL",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "PROC",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX"
+      ]
+    },
+    {
+      "left": "v8",
+      "right": "v12",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "DIRECT",
+        "ITEM",
+        "LOCAL",
+        "LOCAL_DECREE",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "NATIONAL_DECREE",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX"
+      ]
+    },
+    {
+      "left": "v8",
+      "right": "v13",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "DIRECT",
+        "ITEM",
+        "LOCAL",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX"
+      ]
+    },
+    {
+      "left": "v8",
+      "right": "v14",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "ITEM",
+        "LOCAL",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "PROC",
+        "T"
+      ]
+    },
+    {
+      "left": "v8",
+      "right": "v15",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "ITEM",
+        "LOCAL",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "PROC",
+        "T"
+      ]
+    },
+    {
+      "left": "v8",
+      "right": "v16",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "ITEM",
+        "LOCAL",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "PROC",
+        "T"
+      ]
+    },
+    {
+      "left": "v8",
+      "right": "v17",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "ITEM",
+        "LOCAL",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "PROC"
+      ]
+    },
+    {
+      "left": "v8",
+      "right": "v18",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "CJH17",
+        "CJH18",
+        "DRAFT",
+        "ITEM",
+        "LOCAL",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "PROC"
+      ]
+    },
+    {
+      "left": "v8",
+      "right": "v19",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "GOV",
+        "ITEM",
+        "LOCAL",
+        "LOCAL_EXEC",
+        "NATIONAL"
+      ]
+    },
+    {
+      "left": "v8",
+      "right": "v20",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "SW 참여제한 적용·근거 명시와 다른 자격·의무는 별도 사실; 적법한 SW 제한이 다른 항목의 예외가 되는지는 개별 검토",
+      "sources": [
+        "ITEM",
+        "LOCAL",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "SW",
+        "SW_GUIDE"
+      ]
+    },
+    {
+      "left": "v8",
+      "right": "v21",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "ITEM",
+        "JOINT",
+        "LOCAL",
+        "LOCAL_EXEC",
+        "NATIONAL"
+      ]
+    },
+    {
+      "left": "v8",
+      "right": "v22",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "ITEM",
+        "LOCAL",
+        "LOCAL_DECREE",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "NATIONAL_DECREE"
+      ]
+    },
+    {
+      "left": "v8",
+      "right": "v23",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "BRIEF",
+        "ITEM",
+        "LOCAL",
+        "LOCAL_DECREE",
+        "LOCAL_EXEC",
+        "NATIONAL"
+      ]
+    },
+    {
+      "left": "v8",
+      "right": "v24",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "문서·메타 불일치와 해당 항목의 법령 위반은 별도 판단; 고정 배타·함의 없음",
+      "sources": [
+        "ITEM",
+        "LOCAL",
+        "LOCAL_EXEC",
+        "NATIONAL"
+      ]
+    },
+    {
+      "left": "v9",
+      "right": "v10",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "DIRECT",
+        "GOV",
+        "ITEM",
+        "LOCAL_EXEC",
+        "PROC",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX"
+      ]
+    },
+    {
+      "left": "v9",
+      "right": "v11",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "DIRECT",
+        "GOV",
+        "ITEM",
+        "LOCAL_EXEC",
+        "PROC",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX"
+      ]
+    },
+    {
+      "left": "v9",
+      "right": "v12",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "DIRECT",
+        "GOV",
+        "ITEM",
+        "LOCAL_DECREE",
+        "LOCAL_EXEC",
+        "NATIONAL_DECREE",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX"
+      ]
+    },
+    {
+      "left": "v9",
+      "right": "v13",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "DIRECT",
+        "GOV",
+        "ITEM",
+        "LOCAL_EXEC",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX"
+      ]
+    },
+    {
+      "left": "v9",
+      "right": "v14",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "GOV",
+        "ITEM",
+        "LOCAL_EXEC",
+        "PROC",
+        "T"
+      ]
+    },
+    {
+      "left": "v9",
+      "right": "v15",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "GOV",
+        "ITEM",
+        "LOCAL_EXEC",
+        "PROC",
+        "T"
+      ]
+    },
+    {
+      "left": "v9",
+      "right": "v16",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "GOV",
+        "ITEM",
+        "LOCAL_EXEC",
+        "PROC",
+        "T"
+      ]
+    },
+    {
+      "left": "v9",
+      "right": "v17",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "GOV",
+        "ITEM",
+        "LOCAL_EXEC",
+        "PROC"
+      ]
+    },
+    {
+      "left": "v9",
+      "right": "v18",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "CJH17",
+        "CJH18",
+        "DRAFT",
+        "GOV",
+        "ITEM",
+        "LOCAL_EXEC",
+        "PROC"
+      ]
+    },
+    {
+      "left": "v9",
+      "right": "v19",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "특정 모델 강제와 입찰 전 제조사 확약 요구가 함께 있을 수 있음",
+      "sources": [
+        "GOV",
+        "ITEM",
+        "LOCAL",
+        "LOCAL_EXEC",
+        "NATIONAL"
+      ]
+    },
+    {
+      "left": "v9",
+      "right": "v20",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "SW 참여제한 적용·근거 명시와 다른 자격·의무는 별도 사실; 적법한 SW 제한이 다른 항목의 예외가 되는지는 개별 검토",
+      "sources": [
+        "GOV",
+        "ITEM",
+        "LOCAL_EXEC",
+        "SW",
+        "SW_GUIDE"
+      ]
+    },
+    {
+      "left": "v9",
+      "right": "v21",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "GOV",
+        "ITEM",
+        "JOINT",
+        "LOCAL_EXEC"
+      ]
+    },
+    {
+      "left": "v9",
+      "right": "v22",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "GOV",
+        "ITEM",
+        "LOCAL_DECREE",
+        "LOCAL_EXEC",
+        "NATIONAL_DECREE"
+      ]
+    },
+    {
+      "left": "v9",
+      "right": "v23",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "BRIEF",
+        "GOV",
+        "ITEM",
+        "LOCAL_DECREE",
+        "LOCAL_EXEC"
+      ]
+    },
+    {
+      "left": "v9",
+      "right": "v24",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "문서·메타 불일치와 해당 항목의 법령 위반은 별도 판단; 고정 배타·함의 없음",
+      "sources": [
+        "GOV",
+        "ITEM",
+        "LOCAL_EXEC"
+      ]
+    },
+    {
+      "left": "v10",
+      "right": "v11",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "직접생산 요건과 기업 규모 자격이 모두 누락될 수 있음",
+      "sources": [
+        "DIRECT",
+        "ITEM",
+        "PROC",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX"
+      ]
+    },
+    {
+      "left": "v10",
+      "right": "v12",
+      "class": "E",
+      "condition": "동일 대상·금액 범위·자격 적용범위·문서 버전·시점; 항목표의 적용분기 유지; 예외 검토",
+      "reason": "동일 대상이 경쟁제품과 비경쟁 일반제품일 수 없음",
+      "sources": [
+        "ITEM",
+        "DIRECT",
+        "PROC",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX"
+      ]
+    },
+    {
+      "left": "v10",
+      "right": "v13",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "직접생산 요건을 누락하면서 소기업만 부당하게 허용할 수 있음",
+      "sources": [
+        "DIRECT",
+        "ITEM",
+        "PROC",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX"
+      ]
+    },
+    {
+      "left": "v10",
+      "right": "v14",
+      "class": "E",
+      "condition": "동일 대상·금액 범위·자격 적용범위·문서 버전·시점; 항목표의 적용분기 유지; 예외 검토",
+      "reason": "동일 대상이 경쟁제품과 비경쟁 일반제품일 수 없음",
+      "sources": [
+        "ITEM",
+        "DIRECT",
+        "PROC",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX"
+      ]
+    },
+    {
+      "left": "v10",
+      "right": "v15",
+      "class": "E",
+      "condition": "동일 대상·금액 범위·자격 적용범위·문서 버전·시점; 항목표의 적용분기 유지; 예외 검토",
+      "reason": "동일 대상이 경쟁제품과 비경쟁 일반제품일 수 없음",
+      "sources": [
+        "ITEM",
+        "DIRECT",
+        "PROC",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX"
+      ]
+    },
+    {
+      "left": "v10",
+      "right": "v16",
+      "class": "E",
+      "condition": "동일 대상·금액 범위·자격 적용범위·문서 버전·시점; 항목표의 적용분기 유지; 예외 검토",
+      "reason": "동일 대상이 경쟁제품과 비경쟁 일반제품일 수 없음",
+      "sources": [
+        "ITEM",
+        "DIRECT",
+        "PROC",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX"
+      ]
+    },
+    {
+      "left": "v10",
+      "right": "v17",
+      "class": "E",
+      "condition": "동일 대상·금액 범위·자격 적용범위·문서 버전·시점; 항목표의 적용분기 유지; 예외 검토",
+      "reason": "동일 대상이 경쟁제품과 비경쟁 일반제품일 수 없음",
+      "sources": [
+        "ITEM",
+        "DIRECT",
+        "PROC",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX"
+      ]
+    },
+    {
+      "left": "v10",
+      "right": "v18",
+      "class": "E",
+      "condition": "동일 대상·금액 범위·자격 적용범위·문서 버전·시점; 항목표의 적용분기 유지; 예외 검토",
+      "reason": "동일 대상이 경쟁제품과 비경쟁 일반제품일 수 없음",
+      "sources": [
+        "ITEM",
+        "DIRECT",
+        "PROC",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX"
+      ]
+    },
+    {
+      "left": "v10",
+      "right": "v19",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "DIRECT",
+        "GOV",
+        "ITEM",
+        "LOCAL",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "PROC",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX"
+      ]
+    },
+    {
+      "left": "v10",
+      "right": "v20",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "SW 참여제한 적용·근거 명시와 다른 자격·의무는 별도 사실; 적법한 SW 제한이 다른 항목의 예외가 되는지는 개별 검토",
+      "sources": [
+        "DIRECT",
+        "ITEM",
+        "PROC",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX",
+        "SW",
+        "SW_GUIDE"
+      ]
+    },
+    {
+      "left": "v10",
+      "right": "v21",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "DIRECT",
+        "ITEM",
+        "JOINT",
+        "LOCAL_EXEC",
+        "PROC",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX"
+      ]
+    },
+    {
+      "left": "v10",
+      "right": "v22",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "DIRECT",
+        "ITEM",
+        "LOCAL_DECREE",
+        "LOCAL_EXEC",
+        "NATIONAL_DECREE",
+        "PROC",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX"
+      ]
+    },
+    {
+      "left": "v10",
+      "right": "v23",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "BRIEF",
+        "DIRECT",
+        "ITEM",
+        "LOCAL_DECREE",
+        "PROC",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX"
+      ]
+    },
+    {
+      "left": "v10",
+      "right": "v24",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "문서·메타 불일치와 해당 항목의 법령 위반은 별도 판단; 고정 배타·함의 없음",
+      "sources": [
+        "DIRECT",
+        "ITEM",
+        "PROC",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX"
+      ]
+    },
+    {
+      "left": "v11",
+      "right": "v12",
+      "class": "E",
+      "condition": "동일 대상·금액 범위·자격 적용범위·문서 버전·시점; 항목표의 적용분기 유지; 예외 검토",
+      "reason": "동일 대상이 경쟁제품과 비경쟁 일반제품일 수 없음",
+      "sources": [
+        "ITEM",
+        "DIRECT",
+        "PROC",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX"
+      ]
+    },
+    {
+      "left": "v11",
+      "right": "v13",
+      "class": "E",
+      "condition": "동일 대상·금액 범위·자격 적용범위·문서 버전·시점; 항목표의 적용분기 유지; 예외 검토; 단어의 부재가 아닌 실질적인 자격의 부재",
+      "reason": "소기업·소상공인만 허용하면 중소기업 범주로 제한하는 요건이 부재하지 않음",
+      "sources": [
+        "ITEM",
+        "SIZE",
+        "MICRO",
+        "DIRECT"
+      ]
+    },
+    {
+      "left": "v11",
+      "right": "v14",
+      "class": "E",
+      "condition": "동일 대상·금액 범위·자격 적용범위·문서 버전·시점; 항목표의 적용분기 유지; 예외 검토",
+      "reason": "동일 대상이 경쟁제품과 비경쟁 일반제품일 수 없음",
+      "sources": [
+        "ITEM",
+        "DIRECT",
+        "PROC",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX"
+      ]
+    },
+    {
+      "left": "v11",
+      "right": "v15",
+      "class": "E",
+      "condition": "동일 대상·금액 범위·자격 적용범위·문서 버전·시점; 항목표의 적용분기 유지; 예외 검토",
+      "reason": "동일 대상이 경쟁제품과 비경쟁 일반제품일 수 없음",
+      "sources": [
+        "ITEM",
+        "DIRECT",
+        "PROC",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX"
+      ]
+    },
+    {
+      "left": "v11",
+      "right": "v16",
+      "class": "E",
+      "condition": "동일 대상·금액 범위·자격 적용범위·문서 버전·시점; 항목표의 적용분기 유지; 예외 검토",
+      "reason": "동일 대상이 경쟁제품과 비경쟁 일반제품일 수 없음",
+      "sources": [
+        "ITEM",
+        "DIRECT",
+        "PROC",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX"
+      ]
+    },
+    {
+      "left": "v11",
+      "right": "v17",
+      "class": "E",
+      "condition": "동일 대상·금액 범위·자격 적용범위·문서 버전·시점; 항목표의 적용분기 유지; 예외 검토",
+      "reason": "동일 대상이 경쟁제품과 비경쟁 일반제품일 수 없음",
+      "sources": [
+        "ITEM",
+        "DIRECT",
+        "PROC",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX"
+      ]
+    },
+    {
+      "left": "v11",
+      "right": "v18",
+      "class": "E",
+      "condition": "동일 대상·금액 범위·자격 적용범위·문서 버전·시점; 항목표의 적용분기 유지; 예외 검토",
+      "reason": "동일 대상이 경쟁제품과 비경쟁 일반제품일 수 없음",
+      "sources": [
+        "ITEM",
+        "DIRECT",
+        "PROC",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX"
+      ]
+    },
+    {
+      "left": "v11",
+      "right": "v19",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "DIRECT",
+        "GOV",
+        "ITEM",
+        "LOCAL",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "PROC",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX"
+      ]
+    },
+    {
+      "left": "v11",
+      "right": "v20",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "SW 참여제한 적용·근거 명시와 다른 자격·의무는 별도 사실; 적법한 SW 제한이 다른 항목의 예외가 되는지는 개별 검토",
+      "sources": [
+        "DIRECT",
+        "ITEM",
+        "PROC",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX",
+        "SW",
+        "SW_GUIDE"
+      ]
+    },
+    {
+      "left": "v11",
+      "right": "v21",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "DIRECT",
+        "ITEM",
+        "JOINT",
+        "LOCAL_EXEC",
+        "PROC",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX"
+      ]
+    },
+    {
+      "left": "v11",
+      "right": "v22",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "DIRECT",
+        "ITEM",
+        "LOCAL_DECREE",
+        "LOCAL_EXEC",
+        "NATIONAL_DECREE",
+        "PROC",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX"
+      ]
+    },
+    {
+      "left": "v11",
+      "right": "v23",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "BRIEF",
+        "DIRECT",
+        "ITEM",
+        "LOCAL_DECREE",
+        "PROC",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX"
+      ]
+    },
+    {
+      "left": "v11",
+      "right": "v24",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "문서·메타 불일치와 해당 항목의 법령 위반은 별도 판단; 고정 배타·함의 없음",
+      "sources": [
+        "DIRECT",
+        "ITEM",
+        "PROC",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX"
+      ]
+    },
+    {
+      "left": "v12",
+      "right": "v13",
+      "class": "E",
+      "condition": "동일 대상·금액 범위·자격 적용범위·문서 버전·시점; 항목표의 적용분기 유지; 예외 검토",
+      "reason": "동일 대상이 경쟁제품과 비경쟁 일반제품일 수 없음",
+      "sources": [
+        "ITEM",
+        "DIRECT",
+        "PROC",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX"
+      ]
+    },
+    {
+      "left": "v12",
+      "right": "v14",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "DIRECT",
+        "ITEM",
+        "LOCAL_DECREE",
+        "NATIONAL_DECREE",
+        "PROC",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX",
+        "T"
+      ]
+    },
+    {
+      "left": "v12",
+      "right": "v15",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "DIRECT",
+        "ITEM",
+        "LOCAL_DECREE",
+        "NATIONAL_DECREE",
+        "PROC",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX",
+        "T"
+      ]
+    },
+    {
+      "left": "v12",
+      "right": "v16",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "DIRECT",
+        "ITEM",
+        "LOCAL_DECREE",
+        "NATIONAL_DECREE",
+        "PROC",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX",
+        "T"
+      ]
+    },
+    {
+      "left": "v12",
+      "right": "v17",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "DIRECT",
+        "ITEM",
+        "LOCAL_DECREE",
+        "NATIONAL_DECREE",
+        "PROC",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX"
+      ]
+    },
+    {
+      "left": "v12",
+      "right": "v18",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "CJH17",
+        "CJH18",
+        "DIRECT",
+        "DRAFT",
+        "ITEM",
+        "LOCAL_DECREE",
+        "NATIONAL_DECREE",
+        "PROC",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX"
+      ]
+    },
+    {
+      "left": "v12",
+      "right": "v19",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "DIRECT",
+        "GOV",
+        "ITEM",
+        "LOCAL",
+        "LOCAL_DECREE",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "NATIONAL_DECREE",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX"
+      ]
+    },
+    {
+      "left": "v12",
+      "right": "v20",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "SW 참여제한 적용·근거 명시와 다른 자격·의무는 별도 사실; 적법한 SW 제한이 다른 항목의 예외가 되는지는 개별 검토",
+      "sources": [
+        "DIRECT",
+        "ITEM",
+        "LOCAL_DECREE",
+        "NATIONAL_DECREE",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX",
+        "SW",
+        "SW_GUIDE"
+      ]
+    },
+    {
+      "left": "v12",
+      "right": "v21",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "DIRECT",
+        "ITEM",
+        "JOINT",
+        "LOCAL_DECREE",
+        "LOCAL_EXEC",
+        "NATIONAL_DECREE",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX"
+      ]
+    },
+    {
+      "left": "v12",
+      "right": "v22",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "DIRECT",
+        "ITEM",
+        "LOCAL_DECREE",
+        "LOCAL_EXEC",
+        "NATIONAL_DECREE",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX"
+      ]
+    },
+    {
+      "left": "v12",
+      "right": "v23",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "BRIEF",
+        "DIRECT",
+        "ITEM",
+        "LOCAL_DECREE",
+        "NATIONAL_DECREE",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX"
+      ]
+    },
+    {
+      "left": "v12",
+      "right": "v24",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "문서·메타 불일치와 해당 항목의 법령 위반은 별도 판단; 고정 배타·함의 없음",
+      "sources": [
+        "DIRECT",
+        "ITEM",
+        "LOCAL_DECREE",
+        "NATIONAL_DECREE",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX"
+      ]
+    },
+    {
+      "left": "v13",
+      "right": "v14",
+      "class": "E",
+      "condition": "동일 대상·금액 범위·자격 적용범위·문서 버전·시점; 항목표의 적용분기 유지; 예외 검토",
+      "reason": "동일 대상이 경쟁제품과 비경쟁 일반제품일 수 없음",
+      "sources": [
+        "ITEM",
+        "DIRECT",
+        "PROC",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX"
+      ]
+    },
+    {
+      "left": "v13",
+      "right": "v15",
+      "class": "E",
+      "condition": "동일 대상·금액 범위·자격 적용범위·문서 버전·시점; 항목표의 적용분기 유지; 예외 검토",
+      "reason": "동일 대상이 경쟁제품과 비경쟁 일반제품일 수 없음",
+      "sources": [
+        "ITEM",
+        "DIRECT",
+        "PROC",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX"
+      ]
+    },
+    {
+      "left": "v13",
+      "right": "v16",
+      "class": "E",
+      "condition": "동일 대상·금액 범위·자격 적용범위·문서 버전·시점; 항목표의 적용분기 유지; 예외 검토",
+      "reason": "동일 대상이 경쟁제품과 비경쟁 일반제품일 수 없음",
+      "sources": [
+        "ITEM",
+        "DIRECT",
+        "PROC",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX"
+      ]
+    },
+    {
+      "left": "v13",
+      "right": "v17",
+      "class": "E",
+      "condition": "동일 대상·금액 범위·자격 적용범위·문서 버전·시점; 항목표의 적용분기 유지; 예외 검토",
+      "reason": "동일 대상이 경쟁제품과 비경쟁 일반제품일 수 없음",
+      "sources": [
+        "ITEM",
+        "DIRECT",
+        "PROC",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX"
+      ]
+    },
+    {
+      "left": "v13",
+      "right": "v18",
+      "class": "E",
+      "condition": "동일 대상·금액 범위·자격 적용범위·문서 버전·시점; 항목표의 적용분기 유지; 예외 검토",
+      "reason": "동일 대상이 경쟁제품과 비경쟁 일반제품일 수 없음",
+      "sources": [
+        "ITEM",
+        "DIRECT",
+        "PROC",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX"
+      ]
+    },
+    {
+      "left": "v13",
+      "right": "v19",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "DIRECT",
+        "GOV",
+        "ITEM",
+        "LOCAL",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX"
+      ]
+    },
+    {
+      "left": "v13",
+      "right": "v20",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "SW 참여제한 적용·근거 명시와 다른 자격·의무는 별도 사실; 적법한 SW 제한이 다른 항목의 예외가 되는지는 개별 검토",
+      "sources": [
+        "DIRECT",
+        "ITEM",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX",
+        "SW",
+        "SW_GUIDE"
+      ]
+    },
+    {
+      "left": "v13",
+      "right": "v21",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "DIRECT",
+        "ITEM",
+        "JOINT",
+        "LOCAL_EXEC",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX"
+      ]
+    },
+    {
+      "left": "v13",
+      "right": "v22",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "DIRECT",
+        "ITEM",
+        "LOCAL_DECREE",
+        "LOCAL_EXEC",
+        "NATIONAL_DECREE",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX"
+      ]
+    },
+    {
+      "left": "v13",
+      "right": "v23",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "BRIEF",
+        "DIRECT",
+        "ITEM",
+        "LOCAL_DECREE",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX"
+      ]
+    },
+    {
+      "left": "v13",
+      "right": "v24",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "문서·메타 불일치와 해당 항목의 법령 위반은 별도 판단; 고정 배타·함의 없음",
+      "sources": [
+        "DIRECT",
+        "ITEM",
+        "PRODUCTS",
+        "PRODUCTS_CSV",
+        "PRODUCTS_HWPX"
+      ]
+    },
+    {
+      "left": "v14",
+      "right": "v15",
+      "class": "E",
+      "condition": "동일 대상·금액 범위·자격 적용범위·문서 버전·시점; 항목표의 적용분기 유지; 예외 검토; 물품·용역 T=2.3억원; v2/v4의 금액 분기 적용",
+      "reason": "P ≥ T와 P < T가 모순; v17·18은 P < 1억원 < T",
+      "sources": [
+        "ITEM",
+        "NATIONAL",
+        "LOCAL_DECREE",
+        "GOV",
+        "PROC",
+        "T"
+      ]
+    },
+    {
+      "left": "v14",
+      "right": "v16",
+      "class": "E",
+      "condition": "동일 대상·금액 범위·자격 적용범위·문서 버전·시점; 항목표의 적용분기 유지; 예외 검토; 물품·용역 T=2.3억원; v2/v4의 금액 분기 적용",
+      "reason": "P ≥ T와 P < T가 모순; v17·18은 P < 1억원 < T",
+      "sources": [
+        "ITEM",
+        "NATIONAL",
+        "LOCAL_DECREE",
+        "GOV",
+        "PROC",
+        "T"
+      ]
+    },
+    {
+      "left": "v14",
+      "right": "v17",
+      "class": "E",
+      "condition": "동일 대상·금액 범위·자격 적용범위·문서 버전·시점; 항목표의 적용분기 유지; 예외 검토; 물품·용역 T=2.3억원; v2/v4의 금액 분기 적용",
+      "reason": "P ≥ T와 P < T가 모순; v17·18은 P < 1억원 < T",
+      "sources": [
+        "ITEM",
+        "NATIONAL",
+        "LOCAL_DECREE",
+        "GOV",
+        "PROC",
+        "T"
+      ]
+    },
+    {
+      "left": "v14",
+      "right": "v18",
+      "class": "E",
+      "condition": "동일 대상·금액 범위·자격 적용범위·문서 버전·시점; 항목표의 적용분기 유지; 예외 검토; 물품·용역 T=2.3억원; v2/v4의 금액 분기 적용",
+      "reason": "P ≥ T와 P < T가 모순; v17·18은 P < 1억원 < T",
+      "sources": [
+        "ITEM",
+        "NATIONAL",
+        "LOCAL_DECREE",
+        "GOV",
+        "PROC",
+        "T"
+      ]
+    },
+    {
+      "left": "v14",
+      "right": "v19",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "GOV",
+        "ITEM",
+        "LOCAL",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "PROC",
+        "T"
+      ]
+    },
+    {
+      "left": "v14",
+      "right": "v20",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "SW 참여제한 적용·근거 명시와 다른 자격·의무는 별도 사실; 적법한 SW 제한이 다른 항목의 예외가 되는지는 개별 검토",
+      "sources": [
+        "ITEM",
+        "PROC",
+        "SW",
+        "SW_GUIDE",
+        "T"
+      ]
+    },
+    {
+      "left": "v14",
+      "right": "v21",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "ITEM",
+        "JOINT",
+        "LOCAL_EXEC",
+        "PROC",
+        "T"
+      ]
+    },
+    {
+      "left": "v14",
+      "right": "v22",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "ITEM",
+        "LOCAL_DECREE",
+        "LOCAL_EXEC",
+        "NATIONAL_DECREE",
+        "PROC",
+        "T"
+      ]
+    },
+    {
+      "left": "v14",
+      "right": "v23",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "BRIEF",
+        "ITEM",
+        "LOCAL_DECREE",
+        "PROC",
+        "T"
+      ]
+    },
+    {
+      "left": "v14",
+      "right": "v24",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "문서·메타 불일치와 해당 항목의 법령 위반은 별도 판단; 고정 배타·함의 없음",
+      "sources": [
+        "ITEM",
+        "PROC",
+        "T"
+      ]
+    },
+    {
+      "left": "v15",
+      "right": "v16",
+      "class": "E",
+      "condition": "동일 대상·금액 범위·자격 적용범위·문서 버전·시점; 항목표의 적용분기 유지; 예외 검토; 단어의 부재가 아닌 실질적인 자격의 부재",
+      "reason": "소기업·소상공인만 허용하는 자격과 중소기업 범주로 제한하는 요건의 부재가 모순",
+      "sources": [
+        "ITEM",
+        "SIZE",
+        "MICRO",
+        "PROC"
+      ]
+    },
+    {
+      "left": "v15",
+      "right": "v17",
+      "class": "E",
+      "condition": "동일 대상·금액 범위·자격 적용범위·문서 버전·시점; 항목표의 적용분기 유지; 예외 검토",
+      "reason": "P ≥ 1억원과 P < 1억원이 모순",
+      "sources": [
+        "ITEM",
+        "PROC"
+      ]
+    },
+    {
+      "left": "v15",
+      "right": "v18",
+      "class": "E",
+      "condition": "동일 대상·금액 범위·자격 적용범위·문서 버전·시점; 항목표의 적용분기 유지; 예외 검토",
+      "reason": "P ≥ 1억원과 P < 1억원이 모순",
+      "sources": [
+        "ITEM",
+        "PROC"
+      ]
+    },
+    {
+      "left": "v15",
+      "right": "v19",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "GOV",
+        "ITEM",
+        "LOCAL",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "PROC",
+        "T"
+      ]
+    },
+    {
+      "left": "v15",
+      "right": "v20",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "SW 참여제한 적용·근거 명시와 다른 자격·의무는 별도 사실; 적법한 SW 제한이 다른 항목의 예외가 되는지는 개별 검토",
+      "sources": [
+        "ITEM",
+        "PROC",
+        "SW",
+        "SW_GUIDE",
+        "T"
+      ]
+    },
+    {
+      "left": "v15",
+      "right": "v21",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "ITEM",
+        "JOINT",
+        "LOCAL_EXEC",
+        "PROC",
+        "T"
+      ]
+    },
+    {
+      "left": "v15",
+      "right": "v22",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "ITEM",
+        "LOCAL_DECREE",
+        "LOCAL_EXEC",
+        "NATIONAL_DECREE",
+        "PROC",
+        "T"
+      ]
+    },
+    {
+      "left": "v15",
+      "right": "v23",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "BRIEF",
+        "ITEM",
+        "LOCAL_DECREE",
+        "PROC",
+        "T"
+      ]
+    },
+    {
+      "left": "v15",
+      "right": "v24",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "문서·메타 불일치와 해당 항목의 법령 위반은 별도 판단; 고정 배타·함의 없음",
+      "sources": [
+        "ITEM",
+        "PROC",
+        "T"
+      ]
+    },
+    {
+      "left": "v16",
+      "right": "v17",
+      "class": "E",
+      "condition": "동일 대상·금액 범위·자격 적용범위·문서 버전·시점; 항목표의 적용분기 유지; 예외 검토",
+      "reason": "P ≥ 1억원과 P < 1억원이 모순",
+      "sources": [
+        "ITEM",
+        "PROC"
+      ]
+    },
+    {
+      "left": "v16",
+      "right": "v18",
+      "class": "E",
+      "condition": "동일 대상·금액 범위·자격 적용범위·문서 버전·시점; 항목표의 적용분기 유지; 예외 검토",
+      "reason": "P ≥ 1억원과 P < 1억원이 모순",
+      "sources": [
+        "ITEM",
+        "PROC"
+      ]
+    },
+    {
+      "left": "v16",
+      "right": "v19",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "GOV",
+        "ITEM",
+        "LOCAL",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "PROC",
+        "T"
+      ]
+    },
+    {
+      "left": "v16",
+      "right": "v20",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "SW 참여제한 적용·근거 명시와 다른 자격·의무는 별도 사실; 적법한 SW 제한이 다른 항목의 예외가 되는지는 개별 검토",
+      "sources": [
+        "ITEM",
+        "PROC",
+        "SW",
+        "SW_GUIDE",
+        "T"
+      ]
+    },
+    {
+      "left": "v16",
+      "right": "v21",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "ITEM",
+        "JOINT",
+        "LOCAL_EXEC",
+        "PROC",
+        "T"
+      ]
+    },
+    {
+      "left": "v16",
+      "right": "v22",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "ITEM",
+        "LOCAL_DECREE",
+        "LOCAL_EXEC",
+        "NATIONAL_DECREE",
+        "PROC",
+        "T"
+      ]
+    },
+    {
+      "left": "v16",
+      "right": "v23",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "BRIEF",
+        "ITEM",
+        "LOCAL_DECREE",
+        "PROC",
+        "T"
+      ]
+    },
+    {
+      "left": "v16",
+      "right": "v24",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "문서·메타 불일치와 해당 항목의 법령 위반은 별도 판단; 고정 배타·함의 없음",
+      "sources": [
+        "ITEM",
+        "PROC",
+        "T"
+      ]
+    },
+    {
+      "left": "v17",
+      "right": "v18",
+      "class": "U",
+      "condition": "v18의 라벨 의미를 먼저 확정; 법령만으로 공식 정답 분류를 확정할 수 없음",
+      "reason": "CJH 정의에서는 배타; v18을 소기업 제한 누락으로 읽으면 v17/v18 동시 1 가능",
+      "sources": [
+        "ITEM",
+        "PROC",
+        "CJH17",
+        "CJH18",
+        "DRAFT"
+      ]
+    },
+    {
+      "left": "v17",
+      "right": "v19",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "GOV",
+        "ITEM",
+        "LOCAL",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "PROC"
+      ]
+    },
+    {
+      "left": "v17",
+      "right": "v20",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "SW 참여제한 적용·근거 명시와 다른 자격·의무는 별도 사실; 적법한 SW 제한이 다른 항목의 예외가 되는지는 개별 검토",
+      "sources": [
+        "ITEM",
+        "PROC",
+        "SW",
+        "SW_GUIDE"
+      ]
+    },
+    {
+      "left": "v17",
+      "right": "v21",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "ITEM",
+        "JOINT",
+        "LOCAL_EXEC",
+        "PROC"
+      ]
+    },
+    {
+      "left": "v17",
+      "right": "v22",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "ITEM",
+        "LOCAL_DECREE",
+        "LOCAL_EXEC",
+        "NATIONAL_DECREE",
+        "PROC"
+      ]
+    },
+    {
+      "left": "v17",
+      "right": "v23",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "BRIEF",
+        "ITEM",
+        "LOCAL_DECREE",
+        "PROC"
+      ]
+    },
+    {
+      "left": "v17",
+      "right": "v24",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "문서·메타 불일치와 해당 항목의 법령 위반은 별도 판단; 고정 배타·함의 없음",
+      "sources": [
+        "ITEM",
+        "PROC"
+      ]
+    },
+    {
+      "left": "v18",
+      "right": "v19",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "CJH17",
+        "CJH18",
+        "DRAFT",
+        "GOV",
+        "ITEM",
+        "LOCAL",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "PROC"
+      ]
+    },
+    {
+      "left": "v18",
+      "right": "v20",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "SW 참여제한 적용·근거 명시와 다른 자격·의무는 별도 사실; 적법한 SW 제한이 다른 항목의 예외가 되는지는 개별 검토",
+      "sources": [
+        "CJH17",
+        "CJH18",
+        "DRAFT",
+        "ITEM",
+        "PROC",
+        "SW",
+        "SW_GUIDE"
+      ]
+    },
+    {
+      "left": "v18",
+      "right": "v21",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "CJH17",
+        "CJH18",
+        "DRAFT",
+        "ITEM",
+        "JOINT",
+        "LOCAL_EXEC",
+        "PROC"
+      ]
+    },
+    {
+      "left": "v18",
+      "right": "v22",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "CJH17",
+        "CJH18",
+        "DRAFT",
+        "ITEM",
+        "LOCAL_DECREE",
+        "LOCAL_EXEC",
+        "NATIONAL_DECREE",
+        "PROC"
+      ]
+    },
+    {
+      "left": "v18",
+      "right": "v23",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "BRIEF",
+        "CJH17",
+        "CJH18",
+        "DRAFT",
+        "ITEM",
+        "LOCAL_DECREE",
+        "PROC"
+      ]
+    },
+    {
+      "left": "v18",
+      "right": "v24",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "문서·메타 불일치와 해당 항목의 법령 위반은 별도 판단; 고정 배타·함의 없음",
+      "sources": [
+        "CJH17",
+        "CJH18",
+        "DRAFT",
+        "ITEM",
+        "PROC"
+      ]
+    },
+    {
+      "left": "v19",
+      "right": "v20",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "SW 참여제한 적용·근거 명시와 다른 자격·의무는 별도 사실; 적법한 SW 제한이 다른 항목의 예외가 되는지는 개별 검토",
+      "sources": [
+        "GOV",
+        "ITEM",
+        "LOCAL",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "SW",
+        "SW_GUIDE"
+      ]
+    },
+    {
+      "left": "v19",
+      "right": "v21",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "GOV",
+        "ITEM",
+        "JOINT",
+        "LOCAL",
+        "LOCAL_EXEC",
+        "NATIONAL"
+      ]
+    },
+    {
+      "left": "v19",
+      "right": "v22",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "GOV",
+        "ITEM",
+        "LOCAL",
+        "LOCAL_DECREE",
+        "LOCAL_EXEC",
+        "NATIONAL",
+        "NATIONAL_DECREE"
+      ]
+    },
+    {
+      "left": "v19",
+      "right": "v23",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "BRIEF",
+        "GOV",
+        "ITEM",
+        "LOCAL",
+        "LOCAL_DECREE",
+        "LOCAL_EXEC",
+        "NATIONAL"
+      ]
+    },
+    {
+      "left": "v19",
+      "right": "v24",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "문서·메타 불일치와 해당 항목의 법령 위반은 별도 판단; 고정 배타·함의 없음",
+      "sources": [
+        "GOV",
+        "ITEM",
+        "LOCAL",
+        "LOCAL_EXEC",
+        "NATIONAL"
+      ]
+    },
+    {
+      "left": "v20",
+      "right": "v21",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "SW 참여제한 적용·근거 명시와 다른 자격·의무는 별도 사실; 적법한 SW 제한이 다른 항목의 예외가 되는지는 개별 검토",
+      "sources": [
+        "ITEM",
+        "JOINT",
+        "LOCAL_EXEC",
+        "SW",
+        "SW_GUIDE"
+      ]
+    },
+    {
+      "left": "v20",
+      "right": "v22",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "SW 참여제한 적용·근거 명시와 다른 자격·의무는 별도 사실; 적법한 SW 제한이 다른 항목의 예외가 되는지는 개별 검토",
+      "sources": [
+        "ITEM",
+        "LOCAL_DECREE",
+        "LOCAL_EXEC",
+        "NATIONAL_DECREE",
+        "SW",
+        "SW_GUIDE"
+      ]
+    },
+    {
+      "left": "v20",
+      "right": "v23",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "SW 참여제한 적용·근거 명시와 다른 자격·의무는 별도 사실; 적법한 SW 제한이 다른 항목의 예외가 되는지는 개별 검토",
+      "sources": [
+        "BRIEF",
+        "ITEM",
+        "LOCAL_DECREE",
+        "SW",
+        "SW_GUIDE"
+      ]
+    },
+    {
+      "left": "v20",
+      "right": "v24",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "문서·메타 불일치와 해당 항목의 법령 위반은 별도 판단; 고정 배타·함의 없음",
+      "sources": [
+        "ITEM",
+        "SW",
+        "SW_GUIDE"
+      ]
+    },
+    {
+      "left": "v21",
+      "right": "v22",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "ITEM",
+        "JOINT",
+        "LOCAL_DECREE",
+        "LOCAL_EXEC",
+        "NATIONAL_DECREE"
+      ]
+    },
+    {
+      "left": "v21",
+      "right": "v23",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "검토한 항목 정의·관련 조문에서 동일 판정 단위의 고정 배타 근거를 확인하지 못함",
+      "sources": [
+        "BRIEF",
+        "ITEM",
+        "JOINT",
+        "LOCAL_DECREE",
+        "LOCAL_EXEC"
+      ]
+    },
+    {
+      "left": "v21",
+      "right": "v24",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "문서·메타 불일치와 해당 항목의 법령 위반은 별도 판단; 고정 배타·함의 없음",
+      "sources": [
+        "ITEM",
+        "JOINT",
+        "LOCAL_EXEC"
+      ]
+    },
+    {
+      "left": "v22",
+      "right": "v23",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "설명회 참석 강제와 설명회 관련 기간 부족은 별도 위반으로 동시 성립 가능",
+      "sources": [
+        "BRIEF",
+        "ITEM",
+        "LOCAL_DECREE",
+        "LOCAL_EXEC",
+        "NATIONAL_DECREE"
+      ]
+    },
+    {
+      "left": "v22",
+      "right": "v24",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "문서·메타 불일치와 해당 항목의 법령 위반은 별도 판단; 고정 배타·함의 없음",
+      "sources": [
+        "ITEM",
+        "LOCAL_DECREE",
+        "LOCAL_EXEC",
+        "NATIONAL_DECREE"
+      ]
+    },
+    {
+      "left": "v23",
+      "right": "v24",
+      "class": "N",
+      "condition": "구체적 사실·예외에 따라 판정; 공존의 보편적 보장이 아님",
+      "reason": "문서·메타 불일치와 해당 항목의 법령 위반은 별도 판단; 고정 배타·함의 없음",
+      "sources": [
+        "BRIEF",
+        "ITEM",
+        "LOCAL_DECREE"
+      ]
+    }
+  ]
+}

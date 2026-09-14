@@ -1,0 +1,121 @@
+{
+  "name": "source_first_groups12_off_pipeline16",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "records": 200,
+  "groups": [
+    [
+      "v1",
+      "v4"
+    ],
+    [
+      "v5",
+      "v6",
+      "v7"
+    ],
+    [
+      "v8"
+    ],
+    [
+      "v9",
+      "v19"
+    ],
+    [
+      "v10",
+      "v11",
+      "v12",
+      "v13"
+    ],
+    [
+      "v14"
+    ],
+    [
+      "v15",
+      "v16"
+    ],
+    [
+      "v17",
+      "v18"
+    ],
+    [
+      "v20"
+    ],
+    [
+      "v21"
+    ],
+    [
+      "v22",
+      "v23"
+    ],
+    [
+      "v24"
+    ]
+  ],
+  "limits": {
+    "batch_size": 16,
+    "search_rounds": 2,
+    "queries_per_round": 4,
+    "top_k": 5,
+    "round_tokens": 4096,
+    "total_retrieval_tokens": 8192,
+    "output_tokens": 2048,
+    "retries": 1,
+    "require_search": false,
+    "instant_output_tokens": null
+  },
+  "policy": {
+    "initial_records": 2,
+    "max_live_records": 3,
+    "max_live_source_tokens": 48000,
+    "lookahead_groups": 16
+  },
+  "engine": {
+    "max_num_seqs": 16,
+    "max_num_batched_tokens": 8192,
+    "cudagraph_mode": "FULL_AND_PIECEWISE",
+    "capture_sizes": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      24,
+      32
+    ],
+    "kv_cache_dtype": "auto",
+    "gpu_memory_utilization": 0.86
+  },
+  "options": {
+    "model_dir": "models/gemma-4-26B-A4B-it-NVFP4",
+    "max_model_len": 32768,
+    "thinking": false,
+    "item_group_size": 4
+  },
+  "prediction_seconds": 310.5711399050051,
+  "load_seconds": 27.4460901679995,
+  "total_seconds": 338.0172300730046,
+  "warmup_seconds": 0.49964120899676345,
+  "first_pass": {
+    "prediction_seconds": 310.5711399050051,
+    "failed_ids": [],
+    "records": 200,
+    "metrics": {
+      "model_seconds": 283.6019982497528,
+      "retrieval_seconds": 0.0,
+      "model_batches": 2403,
+      "retrieval_batches": 0,
+      "total_seconds": 310.5684012999991
+    },
+    "rule_seconds": 0.3799901528545888
+  },
+  "recovery_seconds": 0.0,
+  "failed_ids": [],
+  "model_turns": 2403,
+  "search_rounds": 0,
+  "invalid_responses": 3,
+  "context_failures": 0,
+  "input_tokens": 27503156,
+  "output_tokens": 117245,
+  "thinking_tokens": 0,
+  "cached_input_tokens": 24966688,
+  "cached_fraction": 0.9077753840322907
+}

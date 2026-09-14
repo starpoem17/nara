@@ -6,9 +6,9 @@ Last verified: 2026-09-10. Scope: the three requested official overview tabs, in
 
 | Source | Owning documents |
 |---|---|
-| [개요](https://dacon.io/competitions/official/236754/overview/description) | [task](task.md), dates below |
-| [평가](https://dacon.io/competitions/official/236754/overview/evaluation) | [evaluation](evaluation.md), [submission](submission.md) |
-| [규칙](https://dacon.io/competitions/official/236754/overview/rules) | [constraints](constraints.md), submission language |
+| [개요](https://dacon.io/competitions/official/236754/overview/description) | [task](<task.md>), dates below |
+| [평가](https://dacon.io/competitions/official/236754/overview/evaluation) | [evaluation](<evaluation.md>), [submission](<submission.md>) |
+| [규칙](https://dacon.io/competitions/official/236754/overview/rules) | [constraints](<constraints.md>), submission language |
 
 ## Dates
 

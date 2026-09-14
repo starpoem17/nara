@@ -1,0 +1,8 @@
+{
+  "original_files_verified": 132,
+  "prediction_csv_identical": true,
+  "non_hash_evaluation_fields_identical": true,
+  "evaluation_fields": 28,
+  "verification_record": "docs/maintenance/checks/20260914_000319_pilot-replay.md",
+  "no_gpu_inference": true
+}

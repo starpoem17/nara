@@ -1,0 +1,14 @@
+{
+  "requests_checked": 1800,
+  "maximum_input_plus_output": 35897,
+  "context": 36864,
+  "unresolved_overflows": 0,
+  "content_unchanged_from_32768_draft": true,
+  "original_cards_and_notice_fields_exact": true,
+  "law_spans_and_catalog_rows_exact": true,
+  "template_token_ids_exact": true,
+  "input_and_artifact_hashes_verified": true,
+  "maximum_bge_query_tokens": 2052,
+  "labels_access_blocked": true,
+  "verification_source_sha256": "b202b09a33f89e021814fcab944cd014cc491e57cf2ffd80768888e3238ed7d1"
+}

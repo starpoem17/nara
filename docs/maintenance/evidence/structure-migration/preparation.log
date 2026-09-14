@@ -1,0 +1,4 @@
+{"stage": "preflight_complete", "records": 200, "source_mode": "current", "max_input_tokens": 29310}
+{"stage": "preflight_complete", "records": 200, "source_mode": "current", "max_input_tokens": 29273}
+Run: /home/hwajoong/projects/nara/docs/maintenance/evidence/20260914_002652_migrated-preparation
+Report: /home/hwajoong/projects/nara/docs/maintenance/checks/20260914_002652_migrated-preparation.md

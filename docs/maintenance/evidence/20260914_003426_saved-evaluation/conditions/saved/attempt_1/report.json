@@ -1,0 +1,120 @@
+{
+  "name": "source_first_groups12_off_pipeline16",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "records": 200,
+  "groups": [
+    [
+      "v1",
+      "v4"
+    ],
+    [
+      "v5",
+      "v6",
+      "v7"
+    ],
+    [
+      "v8"
+    ],
+    [
+      "v9",
+      "v19"
+    ],
+    [
+      "v10",
+      "v11",
+      "v12",
+      "v13"
+    ],
+    [
+      "v14"
+    ],
+    [
+      "v15",
+      "v16"
+    ],
+    [
+      "v17",
+      "v18"
+    ],
+    [
+      "v20"
+    ],
+    [
+      "v21"
+    ],
+    [
+      "v22",
+      "v23"
+    ],
+    [
+      "v24"
+    ]
+  ],
+  "limits": {
+    "batch_size": 16,
+    "search_rounds": 2,
+    "queries_per_round": 4,
+    "top_k": 5,
+    "round_tokens": 4096,
+    "total_retrieval_tokens": 8192,
+    "output_tokens": 2048,
+    "retries": 1,
+    "require_search": false
+  },
+  "policy": {
+    "initial_records": 2,
+    "max_live_records": 3,
+    "max_live_source_tokens": 48000,
+    "lookahead_groups": 16
+  },
+  "engine": {
+    "max_num_seqs": 16,
+    "max_num_batched_tokens": 8192,
+    "cudagraph_mode": "FULL_AND_PIECEWISE",
+    "capture_sizes": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      24,
+      32
+    ],
+    "kv_cache_dtype": "auto",
+    "gpu_memory_utilization": 0.86
+  },
+  "options": {
+    "model_dir": "models/gemma-4-26B-A4B-it-NVFP4",
+    "max_model_len": 32768,
+    "thinking": false,
+    "item_group_size": 4
+  },
+  "prediction_seconds": 303.9152993119933,
+  "load_seconds": 63.64843522600131,
+  "total_seconds": 367.5637345379946,
+  "warmup_seconds": 1.2975638060015626,
+  "first_pass": {
+    "prediction_seconds": 303.9152993119933,
+    "failed_ids": [],
+    "records": 200,
+    "metrics": {
+      "model_seconds": 277.05532398520154,
+      "retrieval_seconds": 0.0,
+      "model_batches": 2403,
+      "retrieval_batches": 0,
+      "total_seconds": 303.91259096498834
+    },
+    "rule_seconds": 0.32576863990107086
+  },
+  "recovery_seconds": 0.0,
+  "failed_ids": [],
+  "model_turns": 2403,
+  "search_rounds": 0,
+  "invalid_responses": 3,
+  "context_failures": 0,
+  "input_tokens": 27496038,
+  "output_tokens": 115455,
+  "thinking_tokens": 0,
+  "cached_input_tokens": 24970304,
+  "cached_fraction": 0.9081418930247332
+}

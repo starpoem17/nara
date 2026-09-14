@@ -1,0 +1,453 @@
+{
+  "author": "CJH",
+  "records": 200,
+  "features": [
+    "v10",
+    "v11",
+    "v12",
+    "v13",
+    "v14",
+    "v15",
+    "v16",
+    "v17",
+    "v18"
+  ],
+  "judgments": 1800,
+  "parsing_protocol": {
+    "version": 1,
+    "outer_whitespace": "ignored for envelope parsing only; evidence strings unchanged",
+    "duplicate_keys_and_nonfinite_constants": "invalid JSON",
+    "accepted": [
+      "one bare JSON object",
+      "one entire JSON code fence with no outside text"
+    ],
+    "strict_format": "only bare JSON is strict; a single full code fence remains a recorded format violation",
+    "keys": [
+      "위반여부",
+      "근거문구"
+    ],
+    "violation_type": "integer 0 or 1, excluding bool",
+    "evidence_type": "string or null; preserve exactly, with no whitespace trimming or cleanup",
+    "invalid": "non-stop, unparseable, wrong fields or types; never substitute a judgment",
+    "empty_evidence": "null and the empty string count as empty only in evidence diagnostics",
+    "denominators": "valid-only confusion metrics plus invalid counts by gold and all-record possible F1 bounds"
+  },
+  "per_feature": {
+    "v10": {
+      "records": 200,
+      "valid": 2,
+      "invalid": 198,
+      "gold_positive": 7,
+      "predicted_positive": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "tn": 2,
+      "invalid_gold_positive": 7,
+      "invalid_gold_negative": 191,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_valid_only": 0.0,
+      "f1_all_records_lower": 0.0,
+      "f1_all_records_upper": 1.0,
+      "feature": "v10",
+      "strict_format_violations": 192,
+      "evidence": {
+        "absence_nonempty": 0,
+        "positive_nonabsence_missing": 0,
+        "positive_nonabsence_not_substring": 0,
+        "normal_nonempty": 0
+      }
+    },
+    "v11": {
+      "records": 200,
+      "valid": 0,
+      "invalid": 200,
+      "gold_positive": 6,
+      "predicted_positive": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "tn": 0,
+      "invalid_gold_positive": 6,
+      "invalid_gold_negative": 194,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_valid_only": 0.0,
+      "f1_all_records_lower": 0.0,
+      "f1_all_records_upper": 1.0,
+      "feature": "v11",
+      "strict_format_violations": 192,
+      "evidence": {
+        "absence_nonempty": 0,
+        "positive_nonabsence_missing": 0,
+        "positive_nonabsence_not_substring": 0,
+        "normal_nonempty": 0
+      }
+    },
+    "v12": {
+      "records": 200,
+      "valid": 17,
+      "invalid": 183,
+      "gold_positive": 6,
+      "predicted_positive": 5,
+      "tp": 0,
+      "fp": 5,
+      "fn": 0,
+      "tn": 12,
+      "invalid_gold_positive": 6,
+      "invalid_gold_negative": 177,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_valid_only": 0.0,
+      "f1_all_records_lower": 0.0,
+      "f1_all_records_upper": 0.7058823529411765,
+      "feature": "v12",
+      "strict_format_violations": 194,
+      "evidence": {
+        "absence_nonempty": 0,
+        "positive_nonabsence_missing": 0,
+        "positive_nonabsence_not_substring": 0,
+        "normal_nonempty": 3
+      }
+    },
+    "v13": {
+      "records": 200,
+      "valid": 3,
+      "invalid": 197,
+      "gold_positive": 6,
+      "predicted_positive": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "tn": 3,
+      "invalid_gold_positive": 6,
+      "invalid_gold_negative": 191,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_valid_only": 0.0,
+      "f1_all_records_lower": 0.0,
+      "f1_all_records_upper": 1.0,
+      "feature": "v13",
+      "strict_format_violations": 193,
+      "evidence": {
+        "absence_nonempty": 0,
+        "positive_nonabsence_missing": 0,
+        "positive_nonabsence_not_substring": 0,
+        "normal_nonempty": 2
+      }
+    },
+    "v14": {
+      "records": 200,
+      "valid": 7,
+      "invalid": 193,
+      "gold_positive": 8,
+      "predicted_positive": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "tn": 7,
+      "invalid_gold_positive": 8,
+      "invalid_gold_negative": 185,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_valid_only": 0.0,
+      "f1_all_records_lower": 0.0,
+      "f1_all_records_upper": 1.0,
+      "feature": "v14",
+      "strict_format_violations": 157,
+      "evidence": {
+        "absence_nonempty": 0,
+        "positive_nonabsence_missing": 0,
+        "positive_nonabsence_not_substring": 0,
+        "normal_nonempty": 3
+      }
+    },
+    "v15": {
+      "records": 200,
+      "valid": 0,
+      "invalid": 200,
+      "gold_positive": 6,
+      "predicted_positive": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "tn": 0,
+      "invalid_gold_positive": 6,
+      "invalid_gold_negative": 194,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_valid_only": 0.0,
+      "f1_all_records_lower": 0.0,
+      "f1_all_records_upper": 1.0,
+      "feature": "v15",
+      "strict_format_violations": 163,
+      "evidence": {
+        "absence_nonempty": 0,
+        "positive_nonabsence_missing": 0,
+        "positive_nonabsence_not_substring": 0,
+        "normal_nonempty": 0
+      }
+    },
+    "v16": {
+      "records": 200,
+      "valid": 0,
+      "invalid": 200,
+      "gold_positive": 6,
+      "predicted_positive": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "tn": 0,
+      "invalid_gold_positive": 6,
+      "invalid_gold_negative": 194,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_valid_only": 0.0,
+      "f1_all_records_lower": 0.0,
+      "f1_all_records_upper": 1.0,
+      "feature": "v16",
+      "strict_format_violations": 189,
+      "evidence": {
+        "absence_nonempty": 0,
+        "positive_nonabsence_missing": 0,
+        "positive_nonabsence_not_substring": 0,
+        "normal_nonempty": 0
+      }
+    },
+    "v17": {
+      "records": 200,
+      "valid": 0,
+      "invalid": 200,
+      "gold_positive": 6,
+      "predicted_positive": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "tn": 0,
+      "invalid_gold_positive": 6,
+      "invalid_gold_negative": 194,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_valid_only": 0.0,
+      "f1_all_records_lower": 0.0,
+      "f1_all_records_upper": 1.0,
+      "feature": "v17",
+      "strict_format_violations": 184,
+      "evidence": {
+        "absence_nonempty": 0,
+        "positive_nonabsence_missing": 0,
+        "positive_nonabsence_not_substring": 0,
+        "normal_nonempty": 0
+      }
+    },
+    "v18": {
+      "records": 200,
+      "valid": 0,
+      "invalid": 200,
+      "gold_positive": 7,
+      "predicted_positive": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "tn": 0,
+      "invalid_gold_positive": 7,
+      "invalid_gold_negative": 193,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_valid_only": 0.0,
+      "f1_all_records_lower": 0.0,
+      "f1_all_records_upper": 1.0,
+      "feature": "v18",
+      "strict_format_violations": 198,
+      "evidence": {
+        "absence_nonempty": 0,
+        "positive_nonabsence_missing": 0,
+        "positive_nonabsence_not_substring": 0,
+        "normal_nonempty": 0
+      }
+    }
+  },
+  "macro_f1_valid_only": 0.0,
+  "macro_f1_all_records_lower": 0.0,
+  "macro_f1_all_records_upper": 0.9673202614379085,
+  "totals": {
+    "records": 1800,
+    "valid": 29,
+    "invalid": 1771,
+    "gold_positive": 58,
+    "predicted_positive": 5,
+    "tp": 0,
+    "fp": 5,
+    "fn": 0,
+    "tn": 24,
+    "invalid_gold_positive": 58,
+    "invalid_gold_negative": 1713,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1_valid_only": 0.0,
+    "f1_all_records_lower": 0.0,
+    "f1_all_records_upper": 0.9586776859504132
+  },
+  "runtime": {
+    "first_pass_seconds": 837.1685139069996,
+    "model_load_seconds": 32.930238891000045,
+    "warmup_seconds": 0.05795464299990272,
+    "requests": 1800,
+    "requests_per_second": 2.150104752028408,
+    "input_tokens": 30068003,
+    "output_tokens": 146752,
+    "cached_input_tokens": 21264032,
+    "cached_input_fraction": 0.7071980137822921,
+    "mean_queue_seconds": 0.6108101029983466,
+    "mean_prefill_seconds": 1.1867077436883275,
+    "mean_decode_seconds": 2.4967520969594394,
+    "peak_inflight_requests": 16,
+    "admission_reasons": {
+      "startup": 2,
+      "lookahead": 197,
+      "empty_pipeline": 1
+    },
+    "cache_reset_before_suite": true,
+    "retries": 0
+  },
+  "cross_item": {
+    "v15_v16_simultaneous_positive": {
+      "count": 0,
+      "ids": []
+    },
+    "v17_v18_simultaneous_positive": {
+      "count": 0,
+      "ids": []
+    }
+  },
+  "law_reference_notes": [
+    {
+      "feature": "v10",
+      "note": "The competitive-product candidate rows and their complete special notes are supplied separately and are not included in this law specification."
+    },
+    {
+      "feature": "v10",
+      "note": "The separately supplied candidate-row source is the 2025-96 designation effective 2025-08-29; the package provides no earlier designation, so it must not be presumed to describe an earlier notice date."
+    },
+    {
+      "feature": "v10",
+      "note": "The software sources support candidate-row special notes that expressly invoke 소프트웨어 진흥법 제48조; they do not preclassify a notice or candidate row."
+    },
+    {
+      "feature": "v11",
+      "note": "The competitive-product candidate rows and their complete special notes are supplied separately and are not included in this law specification."
+    },
+    {
+      "feature": "v11",
+      "note": "The separately supplied candidate-row source is the 2025-96 designation effective 2025-08-29; the package provides no earlier designation, so it must not be presumed to describe an earlier notice date."
+    },
+    {
+      "feature": "v11",
+      "note": "The decree exception span is retained because the card expressly treats a stated statutory exclusion as normal."
+    },
+    {
+      "feature": "v12",
+      "note": "The competitive-product candidate rows and their complete special notes are supplied separately and are not included in this law specification."
+    },
+    {
+      "feature": "v12",
+      "note": "The separately supplied candidate-row source is the 2025-96 designation effective 2025-08-29; the package provides no earlier designation, so it must not be presumed to describe an earlier notice date."
+    },
+    {
+      "feature": "v12",
+      "note": "The national and local decree spans reproduce the organizer citation mapping without converting their enumerated restriction grounds into a new decision rule."
+    },
+    {
+      "feature": "v13",
+      "note": "The full text of 판로지원법 제7조의2 is retained, including both designated-product and joint-project routes and both paragraph 2 bidding methods."
+    },
+    {
+      "feature": "v13",
+      "note": "The competitive-product candidate rows and their complete special notes are supplied separately and are not included in this law specification."
+    },
+    {
+      "feature": "v13",
+      "note": "The separately supplied candidate-row source is the 2025-96 designation effective 2025-08-29; the package provides no earlier designation, so it must not be presumed to describe an earlier notice date."
+    },
+    {
+      "feature": "v14",
+      "note": "The competitive-product candidate rows and their complete special notes are supplied separately and are not included in this law specification."
+    },
+    {
+      "feature": "v14",
+      "note": "The organizer package contains only the notified-amount source promulgated 2026-01-02 and effective 2026-01-08. It supplies no historical notified amounts, so its current values must not be presumed to apply to an earlier notice date."
+    },
+    {
+      "feature": "v14",
+      "note": "The package supplies the 2025-96 competitive-product designation effective 2025-08-29 and no earlier designation; it must not be presumed to describe an earlier notice date."
+    },
+    {
+      "feature": "v15",
+      "note": "The competitive-product candidate rows and their complete special notes are supplied separately and are not included in this law specification."
+    },
+    {
+      "feature": "v15",
+      "note": "The organizer package contains only the notified-amount source promulgated 2026-01-02 and effective 2026-01-08. It supplies no historical notified amounts, so its current values must not be presumed to apply to an earlier notice date."
+    },
+    {
+      "feature": "v15",
+      "note": "The complete 제2조의3 exception text is retained because the card treats a stated 판로지원 exception as normal."
+    },
+    {
+      "feature": "v16",
+      "note": "The competitive-product candidate rows and their complete special notes are supplied separately and are not included in this law specification."
+    },
+    {
+      "feature": "v16",
+      "note": "The organizer package contains only the notified-amount source promulgated 2026-01-02 and effective 2026-01-08. It supplies no historical notified amounts, so its current values must not be presumed to apply to an earlier notice date."
+    },
+    {
+      "feature": "v16",
+      "note": "The complete 제2조의3 exception text is retained because the card treats a stated 판로지원 exception as normal."
+    },
+    {
+      "feature": "v17",
+      "note": "The competitive-product candidate rows and their complete special notes are supplied separately and are not included in this law specification."
+    },
+    {
+      "feature": "v17",
+      "note": "The organizer package contains only the notified-amount source promulgated 2026-01-02 and effective 2026-01-08. It supplies no historical notified amounts, so its current values must not be presumed to apply to an earlier notice date."
+    },
+    {
+      "feature": "v17",
+      "note": "The complete 제2조의3 exception text is retained because the card treats a stated 판로지원 exception as normal."
+    },
+    {
+      "feature": "v18",
+      "note": "The competitive-product candidate rows and their complete special notes are supplied separately and are not included in this law specification."
+    },
+    {
+      "feature": "v18",
+      "note": "The organizer package contains only the notified-amount source promulgated 2026-01-02 and effective 2026-01-08. It supplies no historical notified amounts, so its current values must not be presumed to apply to an earlier notice date."
+    },
+    {
+      "feature": "v18",
+      "note": "The complete 제2조의3 exception text is retained because the card treats a stated 판로지원 exception as normal."
+    }
+  ],
+  "hashes": {
+    "labels": "84c79302ac190b45b2487ec8e02aab73e59071ee745828e813a7db96d3a97a35",
+    "notices": "5507f5ab0ba53b708f87211ed050dbe531b48a626ace6084c3ccaefb53147534",
+    "responses": {
+      "v10": "9c8c2f8d80cbe5b73f3c67898c89caebc1add8bab4f167427607ea4ca994d668",
+      "v11": "f76e21a75d8cf599dbc07540ec104eb176019de7585846f91505d73bd9f80947",
+      "v12": "c6c34e295fa6847418df6706172aeae063dd5db52fe65fd75eef5933b3e70d2d",
+      "v13": "bf6366a0bb4fbdf313a3f18d88330b54259e1d45923a091d5c8b8417ba3a0de9",
+      "v14": "dd0be598c179d20a53cae8da5c91c250078e5493530bad7c2e6029e1c40f8455",
+      "v15": "2d7ab26d769c588481269b7a74dfde88aea956eb470814cd190c213a36ebdd49",
+      "v16": "6c59db7e5262a3b8c7d41aba493f87ca1297cf0ced62663e64173618d0985cb2",
+      "v17": "d67b70b8ec639fe78bf318762e4a11d61043d5ad21694aab06fc9f5f80302ff1",
+      "v18": "a17af4d2e07e1f017b09ce1a1bce97c0bd15aeeba1340131b444807cebf75930"
+    },
+    "manifest": "f57007bc6e81c2d3d1e965a047de07a0c509d2b60edd1cd7a35bc99dd1f84ec3",
+    "runtime": "2ec688c83c2be8ec9acfb586b898329692d70137ed1150946eecd30104502b56"
+  },
+  "error_rows": 1776,
+  "case_rows": 1776
+}
