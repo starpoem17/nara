@@ -9,3 +9,5 @@
 - [Retained maintenance evidence](evidence/README.md): other historical routine diagnostics.
 
 - [checks](<checks/README.md>): Routine preparation and smoke checks.
+
+- [Single-pipeline integration](pipeline-unification.md): baseline promotion, single command, preservation and verification.

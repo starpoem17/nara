@@ -1,10 +1,10 @@
 # Architecture
 
-Status: maintained interfaces and source locations updated2026-09-14 against the migrated working tree based on revision `a74048d42d2d8e24a16473eeb056ea3a15264a3b`. That revision alone does not contain the uncommitted migration; [verification and retained change evidence](../maintenance/structure-migration-verification.md) identify checked contents.
+Status: the single command/pipeline is integrated; see [ADR0002](../adr/0002-single-inference-command.md) and [current verification](../maintenance/pipeline-unification.md). Earlier layout migration was based on revision `a74048d42d2d8e24a16473eeb056ea3a15264a3b`. That revision alone does not contain the uncommitted migration; [verification and retained change evidence](../maintenance/structure-migration-verification.md) identify checked contents.
 
 | Responsibility | Source | Interface, dependencies and checks |
 |---|---|---|
-| Sweep execution and evidence | `src/experiments/recording.py`, `run_experiment.py`, `pipeline.py`, `config.py` | [Execution records](execution-records.md); calls maintained inference/retrieval/evaluation, tests in `test_run_recording`, `test_experiment_engine`, `test_reporting`. |
+| Execution and evidence | `src/cli.py`, `src/inference/pipeline.py`, `src/experiments/recording.py`, `config.py` | [Execution records](execution-records.md); calls maintained inference/retrieval/evaluation, tests in `test_run_recording`, `test_experiment_engine`, `test_reporting`. |
 | Submission and RAG | `src/cli.py`, `src/records.py`, `src/runtime.py`, `src/inference/predictor.py` | [Dynamic RAG](dynamic-rag.md); input/output contract and retrieval limits. |
 | Conversation state | `src/inference/conversation.py` | [Judgment conversation](judgment-conversation.md); schemas, budgets, validation and replay. |
 | Local engine | `src/inference/engine.py` | [Local engine](local-engine.md); token rendering, scheduler observations, caching and GPU adapter. |

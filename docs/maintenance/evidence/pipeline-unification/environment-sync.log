@@ -1,0 +1,7 @@
+Resolved 210 packages in 0.50ms
+   Building nara @ file:///home/hwajoong/projects/nara
+      Built nara @ file:///home/hwajoong/projects/nara
+Prepared 1 package in 324ms
+Uninstalled 1 package in 0.41ms
+Installed 1 package in 0.74ms
+ ~ nara==0.1.0 (from file:///home/hwajoong/projects/nara)

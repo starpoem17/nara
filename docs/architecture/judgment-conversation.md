@@ -38,6 +38,6 @@ Evidence: [validation JSON](<../maintenance/evidence/conversation_refactor/valid
 - Saved run `experiments/legacy_engine_refactor/after`: 200 notices / 2400 groups replay to identical judgments and evidence; source traces remain unchanged. This comparison covers conversation-owned items, excluding the separate v2/v3 rule outputs.
 - Current `--prepare-only` completed for 200 notices / 2400 groups; maximum input 29252 tokens. Input lengths, common-prefix counts and groups match the saved run; all snapshots match the manifest and current sources.
 
-Re-run CPU checks: `uv run --locked python -m unittest discover -s tests`. Re-run current-input preparation: `uv run --locked nara-experiment --prepare-only --output-dir FRESH_DIRECTORY`.
+Re-run CPU checks: `uv run --locked python -m unittest discover -s tests`. Re-run current-input preparation: `uv run --locked nara --input data/dev.jsonl --prepare-only --output-dir FRESH_DIRECTORY`.
 
 No new GPU inference, throughput measurement or F1 evaluation was performed.

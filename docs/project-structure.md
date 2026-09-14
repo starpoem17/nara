@@ -5,8 +5,8 @@ Status: the user-authorized layout migration is implemented; [migration verifica
 | Location | Responsibility |
 |---|---|
 | `src/` | Maintained `nara` package, directly installed from this directory; no extra `src/nara/` layer. |
-| `src/experiments/` | Reusable grouping configuration, registered sweep execution, provenance and attempt lifecycle. |
-| `src/inference/`, `src/retrieval/`, `src/rules/` | Maintained prediction engines/scheduling, legal retrieval, deterministic judgments. |
+| `src/experiments/` | Reusable grouping configuration, provenance and attempt lifecycle; no separate prediction driver. |
+| `src/inference/`, `src/retrieval/`, `src/rules/` | Single maintained execution pipeline, prediction engines/scheduling, legal retrieval, deterministic judgments. |
 | `src/evaluation/`, `src/tools/` | Reusable scoring/comparison/report sections, saved-output replay, and current utilities. |
 | `experiments/<run-id>/` | `run.json`, original predictions/logs/settings/source snapshots, and run-specific hypothesis `code/`. |
 | `docs/experiments/<area>/YYYY-MM/<run-id>.md` | One report owning each run's current and historical judgments, with reciprocal metadata links. |
@@ -21,3 +21,5 @@ Status: the user-authorized layout migration is implemented; [migration verifica
 The retired `analysis/`, `output/`, and `docs/reports/` roots have no current writing role. Original source snapshots, logs, and commands may mention them as historical evidence. Old commands/imports are not supported. Use [operations](operations.md) for current entrypoints.
 
 [Migration inventories](maintenance/evidence/structure-migration/README.md) map every moved artifact, source module, and document; originals are recoverable independently of Git history. Code preserved at migration time is distinguished from actual execution-time snapshots.
+
+[Single-command integration](adr/0002-single-inference-command.md) supersedes the earlier dual driver layout: `src/cli.py` invokes `src/inference/pipeline.py`.

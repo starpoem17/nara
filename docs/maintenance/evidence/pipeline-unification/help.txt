@@ -1,0 +1,32 @@
+usage: nara [-h] [--data-dir DATA_DIR] [--input INPUT] [--labels LABELS]
+            [--output-dir OUTPUT_DIR] [--model-dir MODEL_DIR]
+            [--embed-model EMBED_MODEL] [--index INDEX]
+            [--grouping {groups12,groups21} [{groups12,groups21} ...]]
+            [--summary SUMMARY] [--question QUESTION]
+            [--prepare-only | --smoke-only] [--experiment]
+            [--predecessor PREDECESSOR] [--reason REASON]
+
+Run the maintained Gemma pipeline, optionally evaluate the same predictions.
+
+options:
+  -h, --help            show this help message and exit
+  --data-dir DATA_DIR
+  --input INPUT         Default: test.jsonl.gz, then test.jsonl in data-dir
+  --labels LABELS       Evaluate completed predictions against this CSV
+  --output-dir OUTPUT_DIR
+                        Copy final artifacts to a fresh directory, retaining
+                        provenance
+  --model-dir MODEL_DIR
+  --embed-model EMBED_MODEL
+  --index INDEX
+  --grouping {groups12,groups21} [{groups12,groups21} ...]
+  --summary SUMMARY
+  --question QUESTION
+  --prepare-only
+  --smoke-only
+  --experiment          Record a hypothesis experiment instead of a routine
+                        execution
+  --predecessor PREDECESSOR
+                        Prior experimental run ID for a result-triggered
+                        follow-up
+  --reason REASON       Reason for the result-triggered follow-up

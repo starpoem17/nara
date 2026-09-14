@@ -1,0 +1,883 @@
+{
+  "schema_version": 1,
+  "record_kind": "verification",
+  "project_root": "../../../..",
+  "run_id": "20260914_160139_pipeline-unification-smoke",
+  "area": "inference-scheduling",
+  "question": "Verify the promoted single inference command on current inputs without scoring or changing the adopted policy.",
+  "started_at": "2026-09-14T16:01:39.395405+09:00",
+  "timezone": "Asia/Seoul",
+  "report": "docs/maintenance/checks/20260914_160139_pipeline-unification-smoke.md",
+  "status": "failed",
+  "judgment": "Inference passed; command shutdown failed and was subsequently repaired.",
+  "max_attempts": 1,
+  "conditions": {
+    "groups12": {
+      "settings": {
+        "grouping": "groups12",
+        "phase": "smoke",
+        "output_tokens": 512,
+        "thinking": false,
+        "seed": 0,
+        "input_path": "/home/hwajoong/projects/nara/data/dev.jsonl",
+        "data_dir": "/home/hwajoong/projects/nara/data",
+        "model_dir": "/home/hwajoong/projects/nara/models/gemma-4-26B-A4B-it-NVFP4",
+        "embed_model": "/home/hwajoong/projects/nara/models/bge-m3",
+        "index": "/home/hwajoong/projects/nara/model/legal_index",
+        "labels": null
+      },
+      "status": "complete",
+      "attempts": [
+        {
+          "path": "conditions/groups12/attempt_1",
+          "started_at": "2026-09-14T16:01:48.195092+09:00",
+          "status": "complete",
+          "finished_at": "2026-09-14T16:02:45.478863+09:00"
+        }
+      ]
+    }
+  },
+  "predecessors": [],
+  "followups": [],
+  "temporary_paths": [
+    "/home/hwajoong/projects/nara/tmp/pipeline-unification"
+  ],
+  "command": [
+    "nara",
+    "--input",
+    "data/dev.jsonl",
+    "--smoke-only",
+    "--summary",
+    "pipeline-unification-smoke",
+    "--question",
+    "Verify the promoted single inference command on current inputs without scoring or changing the adopted policy."
+  ],
+  "environment": {
+    "python": "3.12.13 (main, Jun 11 2026, 04:03:26) [Clang 22.1.3 ]",
+    "platform": "Linux-7.0.0-31-generic-x86_64-with-glibc2.39",
+    "packages": {
+      "nvidia-cuda-crt": "13.4.59",
+      "mcp": "2.2.0",
+      "cachetools": "7.1.8",
+      "pydantic-extra-types": "2.11.1",
+      "pydantic-settings": "2.15.0",
+      "ml_dtypes": "0.6.0",
+      "opentelemetry-semantic-conventions-ai": "0.5.1",
+      "uvicorn": "0.52.4",
+      "openai-harmony": "0.0.8",
+      "nvidia-cutlass-dsl": "4.6.0",
+      "transformers": "5.14.1",
+      "urllib3": "2.7.0",
+      "cuda-bindings": "13.4.1",
+      "nvidia-cutlass-dsl-libs-cu12": "4.6.0",
+      "rich": "15.0.0",
+      "orjson": "3.10.18",
+      "blake3": "1.0.9",
+      "filelock": "3.32.6",
+      "Jinja2": "3.1.6",
+      "loguru": "0.7.3",
+      "safetensors": "0.8.0",
+      "starlette": "1.6.0",
+      "propcache": "0.5.2",
+      "PyJWT": "2.13.0",
+      "nvidia-cutlass-dsl-libs-base": "4.6.0",
+      "sympy": "1.14.0",
+      "tqdm": "4.69.1",
+      "lark": "1.2.2",
+      "model-hosting-container-standards": "0.1.16",
+      "docstring_parser": "0.18.0",
+      "nvidia-cufile": "1.15.1.6",
+      "apache-tvm-ffi": "0.1.10",
+      "joblib": "1.6.0",
+      "pandas": "2.2.3",
+      "nvidia-nvshmem-cu13": "3.4.5",
+      "rank-bm25": "0.2.2",
+      "detect-installer": "0.2.1",
+      "cbor2": "6.1.4",
+      "nvidia-cusparse": "12.6.3.3",
+      "googleapis-common-protos": "1.75.3",
+      "opencv-python-headless": "5.0.0.93",
+      "partial-json-parser": "0.2.1.1.post7",
+      "fastsafetensors": "0.4.0",
+      "rignore": "0.8.1",
+      "sse-starlette": "3.4.11",
+      "jiter": "0.16.0",
+      "fastar": "0.12.0",
+      "opentelemetry-exporter-otlp-proto-http": "1.44.0",
+      "nvidia-cudnn-cu13": "9.19.0.56",
+      "ijson": "3.5.1",
+      "pyzmq": "27.2.0",
+      "sniffio": "1.3.1",
+      "nvidia-ml-py": "13.610.43",
+      "httpx": "0.28.1",
+      "nvidia-cuda-runtime": "13.0.96",
+      "nvidia-cuda-cccl": "13.3.4.2.1",
+      "pydantic": "2.13.4",
+      "regex": "2026.7.19",
+      "numba": "0.65.0",
+      "referencing": "0.37.0",
+      "PyYAML": "6.0.3",
+      "torch": "2.11.0+cu130",
+      "tiktoken": "0.14.0",
+      "tokenspeed-mla": "0.1.8",
+      "einops": "0.8.2",
+      "cuda-core": "1.2.0",
+      "msgspec": "0.21.1",
+      "llvmlite": "0.47.0",
+      "kiwipiepy": "0.21.0",
+      "fastapi": "0.136.3",
+      "markdown-it-py": "4.2.0",
+      "python-multipart": "0.0.32",
+      "prometheus_client": "0.26.0",
+      "uvloop": "0.22.1",
+      "six": "1.17.0",
+      "opentelemetry-sdk": "1.44.0",
+      "pycparser": "3.0",
+      "sentry-sdk": "2.69.1",
+      "cuda-pathfinder": "1.8.1",
+      "z3-solver": "4.15.4.0",
+      "nvidia-cufft": "12.0.0.61",
+      "vllm": "0.26.0",
+      "flashinfer-python": "0.6.14",
+      "idna": "3.19",
+      "sentence-transformers": "5.3.0",
+      "opentelemetry-exporter-otlp-proto-common": "1.44.0",
+      "torch_c_dlpack_ext": "0.1.5",
+      "torchcodec": "0.16.0",
+      "mpmath": "1.3.0",
+      "ninja": "1.13.2",
+      "nvidia-cuda-nvdisasm": "13.4.49",
+      "aiohttp": "3.14.3",
+      "torchvision": "0.26.0",
+      "tzdata": "2026.3",
+      "certifi": "2026.7.22",
+      "charset-normalizer": "3.5.1",
+      "nara": "0.1.0",
+      "interegular": "0.3.3",
+      "nvidia-cusolver": "12.0.4.66",
+      "httptools": "0.8.0",
+      "tilelang": "0.1.9",
+      "depyf": "0.20.0",
+      "annotated-types": "0.8.0",
+      "python-json-logger": "4.2.0",
+      "websockets": "17.1",
+      "Pygments": "2.21.0",
+      "jsonschema-specifications": "2025.9.1",
+      "shellingham": "1.5.4",
+      "tokenizers": "0.22.2",
+      "astor": "0.8.1",
+      "opentelemetry-exporter-otlp-proto-grpc": "1.44.0",
+      "h11": "0.16.0",
+      "nvidia-nvvm": "13.4.59",
+      "triton": "3.6.0",
+      "mcp-types": "2.2.0",
+      "click": "8.5.0",
+      "nvidia-cudnn-frontend": "1.28.0",
+      "setproctitle": "1.3.7",
+      "scikit-learn": "1.6.1",
+      "httpx2": "2.12.0",
+      "nvidia-nccl-cu13": "2.28.9",
+      "cloudpickle": "3.1.2",
+      "pillow": "12.3.0",
+      "hf-xet": "1.6.0",
+      "watchfiles": "1.2.0",
+      "numpy": "2.2.6",
+      "fastapi-cloud-cli": "0.25.0",
+      "huggingface_hub": "1.30.0",
+      "anyio": "4.15.1",
+      "sentencepiece": "0.2.2",
+      "tokenspeed-triton": "3.8.10.post20260906",
+      "distro": "1.9.0",
+      "nvidia-cuda-nvcc": "13.4.59",
+      "pynvvideocodec": "2.0.4",
+      "nvidia-cublas": "13.1.0.3",
+      "cuda-toolkit": "13.0.2",
+      "outlines_core": "0.2.14",
+      "fsspec": "2026.7.0",
+      "mistral_common": "1.11.7",
+      "protobuf": "6.33.6",
+      "nvidia-nvtx": "13.0.85",
+      "threadpoolctl": "3.6.0",
+      "attrs": "26.1.0",
+      "humming-kernels": "0.1.10",
+      "llguidance": "1.7.6",
+      "jsonschema": "4.26.0",
+      "rpds-py": "2026.6.3",
+      "nvidia-cutlass-dsl-libs-cu13": "4.6.0",
+      "nvidia-nvjitlink": "13.0.88",
+      "pydantic_core": "2.46.4",
+      "email-validator": "2.3.0",
+      "quack-kernels": "0.6.3",
+      "rich-toolkit": "0.20.5",
+      "compressed-tensors": "0.17.0",
+      "torchaudio": "2.11.0",
+      "frozenlist": "1.8.0",
+      "truststore": "0.10.4",
+      "typing_extensions": "4.16.0",
+      "nvtx": "0.2.15",
+      "packaging": "26.3",
+      "xgrammar": "0.2.3",
+      "pytz": "2026.3.post1",
+      "fastapi-cli": "0.0.32",
+      "anthropic": "1.4.0",
+      "opentelemetry-semantic-conventions": "0.65b0",
+      "setuptools": "80.10.2",
+      "nvidia-cuda-cupti": "13.0.85",
+      "kiwipiepy_model": "0.21.0",
+      "typer": "0.27.2",
+      "cuda-python": "13.4.1",
+      "nvidia-cutlass-dsl-libs-core": "4.6.0",
+      "pycountry": "26.2.16",
+      "typing-inspection": "0.4.4",
+      "grpcio": "1.83.1",
+      "httpcore2": "2.12.0",
+      "python-dotenv": "1.2.3",
+      "agent-detector": "2.0.0",
+      "opentelemetry-api": "1.44.0",
+      "mdurl": "0.1.2",
+      "openai": "2.48.0",
+      "annotated-doc": "0.0.5",
+      "dill": "0.4.1",
+      "MarkupSafe": "3.0.3",
+      "cuda-tile": "1.6.0",
+      "prometheus-fastapi-instrumentator": "8.1.0",
+      "pyelftools": "0.33",
+      "supervisor": "4.3.0",
+      "python-dateutil": "2.9.0.post0",
+      "yarl": "1.24.5",
+      "tabulate": "0.10.0",
+      "multidict": "6.8.0",
+      "httpcore": "1.0.9",
+      "networkx": "3.6.1",
+      "nvidia-cusparselt-cu13": "0.8.0",
+      "cryptography": "50.0.1",
+      "psutil": "7.2.2",
+      "nvidia-curand": "10.4.0.35",
+      "aiohappyeyeballs": "2.7.1",
+      "cffi": "2.1.1",
+      "opentelemetry-proto": "1.44.0",
+      "scipy": "1.18.1",
+      "jmespath": "1.1.0",
+      "nvidia-cuda-nvrtc": "13.0.88",
+      "pybase64": "1.5.0",
+      "aiosignal": "1.4.0",
+      "dnspython": "2.8.0",
+      "py-cpuinfo": "9.0.0",
+      "lm-format-enforcer": "0.11.3",
+      "opentelemetry-exporter-otlp": "1.44.0",
+      "requests": "2.34.2"
+    }
+  },
+  "sources": {
+    "src/cli.py": "f900dd908764fedd68c4623f0baab21f6948152897ba81b30a51fb7422f7d4aa",
+    "src/__init__.py": "58f3589d7064c316a1fd00bb8768bd107f786454d8a146d775fd6a0ee2cf4add",
+    "src/__main__.py": "dfc01e6d328785d5e6750c4454fd5c19e5d3c4e5a91febd476a0e2f4a5427673",
+    "src/runtime.py": "a9d405b2d3b01811418c0a03a36f023c20f51232267ade47fa8fa90e913f2ba7",
+    "src/records.py": "a410b0ffc9af892d9006c6623f3a88d3ddca037bd61b09a9773eec9cbb4e852a",
+    "src/inference/prompt.txt": "9648ba1939582cbd175c24a5e1441d696adf0cfd2cf4a9a331845f839f9bcfb0",
+    "src/inference/pipeline.py": "caf228abb7f5db1799810481c546895683008f97454530bfba46b968dfd0f2ea",
+    "src/inference/continuous.py": "c690c2e4f1bb465e718eff1bb394f53bcef2d6c6aea88bf4454e597bbdcc137b",
+    "src/inference/legal_criteria.json": "076eea3a9f764ee8b0fba20355d4db749dc7ae96104d61d988f08fc92bbc1a20",
+    "src/inference/prefix_predictor.py": "59d2c28ca974e5e2e5d117331a40a3c2e39cbb6858a1109151c72f4f1e6545c7",
+    "src/inference/prefix_pipeline.py": "0b9008e677f3ee5d33a573ebd1218cef6311700fed3410d623a770d516f4a17d",
+    "src/inference/__init__.py": "5794b11e103c3a63375a2539b8f4fe1deef25d30f63490c2bb4889ca3c392ad0",
+    "src/inference/compact_criteria.json": "27ff6bb7fb0dfecd476831b3db8795f00c84ae039ce4b5e95a954856c75eec69",
+    "src/inference/compact_predictor.py": "1c07c9b2063447e7aa0a9760a19ffc0de7a2115c51bdcb5afafad6eb58bff4e5",
+    "src/inference/engine.py": "be56bcc03888582e1e4643d36c5ffc6f482ff9fad84043ec73fe5ceabd1f5c72",
+    "src/inference/hybrid_experiment.py": "f79e346f993fc45aaac28f162e11ad9a0c885f02218c818e520883c1dce7d548",
+    "src/inference/recovery.py": "9c2aef5ba101044c42e2342c84daef592b4be0022bd934e10932c0a7983fd65f",
+    "src/inference/conversation.py": "273469929c78ded1ecc6a763703ddaeca22a4c74fa35220106bb959b54247ca3",
+    "src/inference/predictor.py": "229f12984b85b9d0f4f26f74b2ac8835183a6bb5bb5116b3590da019e1a88edb",
+    "src/inference/batch_barrier.py": "990cf6d85c578e8a1ac9351c4302495687a272cafb54b1e93d0ed9f6b71ebb12",
+    "src/evaluation/evaluate_dev.py": "1413ca0994647c06a263548eb1b604c24bd7c60f46b995a81db0ace9e51fed0d",
+    "src/evaluation/reporting.py": "8e36dafc342ccccef11d9012457f829bb982a98aa9716a7798c5f62c8558fc0e",
+    "src/evaluation/__init__.py": "a803119fe9b391448f1443a51773d293ab141e419c794d230c6d7aab45edf857",
+    "src/evaluation/compare_dev_runs.py": "bb9873dc7619f1ee97f11894aab05a4c12248574c4a5fbb0e40499cee8135c3d",
+    "src/retrieval/search.py": "fb794006f27da4b99a3d39b9f3ef6e84e829f187290a451b2f33b56f0c8c8edc",
+    "src/retrieval/index.py": "0d3665f534418d7fa851e7a7614e87181521a887c1c75bd07c991911370acd01",
+    "src/retrieval/__init__.py": "39431552ac14df25783c281fc1261e2783c3cf1c45c9feb098ee415539d6d01d",
+    "src/tools/check_dynamic_rag.py": "625d7064f2b0dfd2104343629e6715e75d3cd13d927da2d8be4fd19bc9e9ff9f",
+    "src/tools/check_legal_retrieval.py": "01b53d233e69c660a88be30cb7221d4b88d652d870cdddb4aacb7056b235ec52",
+    "src/tools/check_legal_criteria.py": "d6f7e630e34611066ce0b38a25105031d2b2bbc1128542f49d5c8b2a9453ddbd",
+    "src/tools/check_gemma_inference.py": "ad6cfcca8cdc0e6eed193f1b664925e2910717dc2a3b61738477168edd414829",
+    "src/tools/__init__.py": "0a96cec74b8a9ff675414a5b4399a7e2034338bc9dd49a7af046c7abd3d81734",
+    "src/tools/replay_evaluation.py": "d8dd22e6f1c66508a70f81c3d00827af0cdc665ea916127d06e390f821aed603",
+    "src/tools/jsonl_to_md.py": "c7e5f2fd9f5a40717ab2bc375f19b510cf4960f355482ff3da7ade0d2395f22d",
+    "src/tools/measure_token_lengths.py": "0097e506384bb546f8a21cdbad14cc731b440de8203840dc96211aeab8059979",
+    "src/rules/__init__.py": "fc11e8803556f2789a4f44077d19e2da29b58c9f6ed161111f6a5aba7b0ccd8b",
+    "src/rules/qualification.py": "737c4c4198d1254b50acc472e653dd513315e216001282ddf8dc7459368c34bf",
+    "src/rules/briefing.py": "ea178009943ee6539431d7dab7a4e2bc24dca7be058291d1d58a395c840dc0f3",
+    "src/experiments/recording.py": "ac58a7dce9fd5632d5b029dc91864212244c19dd533bd4b9d7408f7389781ff1",
+    "src/experiments/__init__.py": "431f7eeb16776977df553031ab5fcdbb896e342fdf2c9a2471fe5a5f25e0ac13",
+    "src/experiments/config.py": "6c0045c864f84645d935bd38fb561f139d73628962dd3d0299aa7a1027d70666",
+    "pyproject.toml": "ca628a2ad558117c9241607bb57f34bca645697d38b248b12a5df0ff950df816",
+    "uv.lock": "76089a2b00b237f2c2782d084f1e1c7c8aadfa1849780c1b787d91d7088b7651"
+  },
+  "reproducibility": "Sources recorded; fresh inference reproducibility not verified.",
+  "source_revision": "ceb9751c28dc749f5928bb37555cdb6913607535",
+  "source_patch": "source/uncommitted.patch",
+  "inputs": {
+    "data/dev.jsonl": {
+      "path": "inputs/data/dev.jsonl",
+      "sha256": "5507f5ab0ba53b708f87211ed050dbe531b48a626ace6084c3ccaefb53147534"
+    },
+    "data/항목표.json": {
+      "path": "inputs/data/항목표.json",
+      "sha256": "368cb41f376d8ad7edbbdf181542e6e959de356f7f70d86e72943325ecad61d9"
+    },
+    "data/정답스키마_디코딩.json": {
+      "path": "inputs/data/정답스키마_디코딩.json",
+      "sha256": "149580162261b446090bec075eb4c13f765a771c827b6bbe06660eb833a3c2ac"
+    }
+  },
+  "asset_references": {
+    "/home/hwajoong/projects/nara/models/gemma-4-26B-A4B-it-NVFP4": {
+      "available": true,
+      "files": {
+        ".cache/huggingface/.gitignore": {
+          "sha256": "684888c0ebb17f374298b65ee2807526c066094c701bcc7ebbe1c1095f494fc1",
+          "bytes": 1
+        },
+        ".cache/huggingface/CACHEDIR.TAG": {
+          "sha256": "f6572428f6d5e1575e73a1502895a8731f10757dfbb634909c6e154b849af91d",
+          "bytes": 191
+        },
+        ".cache/huggingface/download/.gitattributes.lock": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        ".cache/huggingface/download/.gitattributes.metadata": {
+          "sha256": "0eb8bcbd03ccb04bb902f6b8b30809e06ec0ae53c4f16ed55317cccb9c89031c",
+          "bytes": 101
+        },
+        ".cache/huggingface/download/README.md.lock": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        ".cache/huggingface/download/README.md.metadata": {
+          "sha256": "f1f8ce0966a7a4a422a44e0b700f63e4268837608b98eb5d7e465c9c403b9806",
+          "bytes": 101
+        },
+        ".cache/huggingface/download/chat_template.jinja.lock": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        ".cache/huggingface/download/chat_template.jinja.metadata": {
+          "sha256": "279bdba8923122a524cdc97650a8fc0f11bf8ccb93926a1eedfe8436fbab3221",
+          "bytes": 101
+        },
+        ".cache/huggingface/download/config.json.lock": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        ".cache/huggingface/download/config.json.metadata": {
+          "sha256": "f3c04ff83442fbc5bd51107b52f5bcaf67382672f2ef130e025d2449f86298c2",
+          "bytes": 101
+        },
+        ".cache/huggingface/download/generation_config.json.lock": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        ".cache/huggingface/download/generation_config.json.metadata": {
+          "sha256": "cd247eba1c6e61a6a2c8673626f427c64fcb368b0b2e3c43e98b5ce0bb0b5bb6",
+          "bytes": 101
+        },
+        ".cache/huggingface/download/model.safetensors.index.json.lock": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        ".cache/huggingface/download/model.safetensors.index.json.metadata": {
+          "sha256": "c145385beed5ff760603163e4d062d984756329199ed12293d02c6c6b834bb5d",
+          "bytes": 101
+        },
+        ".cache/huggingface/download/model.safetensors.lock": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        ".cache/huggingface/download/model.safetensors.metadata": {
+          "sha256": "a9fbb504303e92b9acf6552fb87065fe85bb6deb35b34189ca3378b12cc575a4",
+          "bytes": 125
+        },
+        ".cache/huggingface/download/processor_config.json.lock": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        ".cache/huggingface/download/processor_config.json.metadata": {
+          "sha256": "f6fa37d4d9df7cdb838ba2d29f1a35de9e7bf45f00230f2ab854b15fd5be4844",
+          "bytes": 101
+        },
+        ".cache/huggingface/download/recipe.yaml.lock": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        ".cache/huggingface/download/recipe.yaml.metadata": {
+          "sha256": "4e5217cc7639c2e40c7d648e3bcf0a729d6d0e64add32a7da52700bbfd8fd68d",
+          "bytes": 100
+        },
+        ".cache/huggingface/download/tokenizer.json.lock": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        ".cache/huggingface/download/tokenizer.json.metadata": {
+          "sha256": "858235390793d811596dc14667dda6c76895c344b519ff75c07d377dcc9cf3a5",
+          "bytes": 124
+        },
+        ".cache/huggingface/download/tokenizer_config.json.lock": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        ".cache/huggingface/download/tokenizer_config.json.metadata": {
+          "sha256": "b16c9f6a0f13c8cd7ad33964e8c16136979a340a90374e4eb014cdbbeb9f300f",
+          "bytes": 101
+        },
+        ".cache/huggingface/trees/5557756b8dce33ac72f2bd702b11729fdba3b839.json": {
+          "sha256": "54d2fed1e4d5f448a0e64c78e1f96d2d039345bffaedec2d493a9f12f794b68d",
+          "bytes": 2418
+        },
+        ".gitattributes": {
+          "sha256": "34448b82c17d60fec9b65b1f093c115ddbaadc04beb1b0140b6bfed2e012a930",
+          "bytes": 1570
+        },
+        "README.md": {
+          "sha256": "c367d9809dc202f7416d6cc7efcb0dae72544e70b4668ea86e3141ca9639886d",
+          "bytes": 13537
+        },
+        "chat_template.jinja": {
+          "sha256": "6a1015c47ccfcfa67c3b772385bccee357a4d37c3cda37bd202e9047f391ab82",
+          "bytes": 18682
+        },
+        "config.json": {
+          "sha256": "6b9f7fb34b97dd8bbc7a771982c366a46584d6fb97fa6caf91d845af4a1da377",
+          "bytes": 19708
+        },
+        "generation_config.json": {
+          "sha256": "5439541d3bf0ba9ade7c1122dc14703f85f32a520150351b344b14f48c574cc2",
+          "bytes": 203
+        },
+        "model.safetensors": {
+          "sha256": "62fd36b05775b9462b7914af3f911998d372d8d5a200a34b9c5ae88666dce56f",
+          "bytes": 16423500596
+        },
+        "model.safetensors.index.json": {
+          "sha256": "aac8ec3524df266ae9128b5e4f92df3054e81891b16cd4a9981309faca2f69ff",
+          "bytes": 4548031
+        },
+        "processor_config.json": {
+          "sha256": "32bdf45d2ad4cc29a0822ddd157a182de76644f0419a6228d151495256e9813c",
+          "bytes": 1689
+        },
+        "recipe.yaml": {
+          "sha256": "8e03ba6a83c2161c7841d954e6a01c6a81189109a631f75d80fdf92c96e3306d",
+          "bytes": 224
+        },
+        "tokenizer.json": {
+          "sha256": "d93b194780d6d3212d02d300123b13009b4e46871c1a8395e3294d7205d349a8",
+          "bytes": 32169725
+        },
+        "tokenizer_config.json": {
+          "sha256": "e467669cfe172dfb0c4e7de7bfbe7553c42bfa5de95acd71f423f58a434d80de",
+          "bytes": 2094
+        }
+      },
+      "access": "Retained locally; not Git-tracked. Restore matching bytes separately in another checkout."
+    },
+    "/home/hwajoong/projects/nara/models/bge-m3": {
+      "available": true,
+      "files": {
+        ".cache/huggingface/.gitignore": {
+          "sha256": "684888c0ebb17f374298b65ee2807526c066094c701bcc7ebbe1c1095f494fc1",
+          "bytes": 1
+        },
+        ".cache/huggingface/CACHEDIR.TAG": {
+          "sha256": "f6572428f6d5e1575e73a1502895a8731f10757dfbb634909c6e154b849af91d",
+          "bytes": 191
+        },
+        ".cache/huggingface/download/.gitattributes.lock": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        ".cache/huggingface/download/.gitattributes.metadata": {
+          "sha256": "b2826f65ac9aee436c37c2f531a3883c5cd2008d3da152f66dc019357781ef6c",
+          "bytes": 101
+        },
+        ".cache/huggingface/download/1_Pooling/config.json.lock": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        ".cache/huggingface/download/1_Pooling/config.json.metadata": {
+          "sha256": "d516d9332da2097e076b4f87d1a5130b7bd5a569f7e71522cdad2d7820b5399b",
+          "bytes": 101
+        },
+        ".cache/huggingface/download/README.md.lock": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        ".cache/huggingface/download/README.md.metadata": {
+          "sha256": "6b044592e98a04ac1b7b8981436dde185bde83b98623fbdf77914a4eefb1d115",
+          "bytes": 101
+        },
+        ".cache/huggingface/download/colbert_linear.pt.lock": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        ".cache/huggingface/download/colbert_linear.pt.metadata": {
+          "sha256": "6b8b64cb2df863b3945bb70775a3c30065a7b6a2cdf2fc54ad4d062adad22433",
+          "bytes": 125
+        },
+        ".cache/huggingface/download/config.json.lock": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        ".cache/huggingface/download/config.json.metadata": {
+          "sha256": "2653a3aa57088516c6922095dfd88c4998774af1ea08c17bd2e41ea8251f8c0e",
+          "bytes": 101
+        },
+        ".cache/huggingface/download/config_sentence_transformers.json.lock": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        ".cache/huggingface/download/config_sentence_transformers.json.metadata": {
+          "sha256": "8a1f85cda8a1fe13bf9058386b23479acce9f6e4ba71c27789ccf826413b8b18",
+          "bytes": 101
+        },
+        ".cache/huggingface/download/imgs/.DS_Store.lock": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        ".cache/huggingface/download/imgs/.DS_Store.metadata": {
+          "sha256": "a81ae6e21a341b826c726a61fe8fb625dd20c9da67263a5419688f149aac745c",
+          "bytes": 100
+        },
+        ".cache/huggingface/download/imgs/bm25.jpg.lock": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        ".cache/huggingface/download/imgs/bm25.jpg.metadata": {
+          "sha256": "acffa3c6c1d9b25d5c6004c752a9a4834247c1be070cc749ca611961df0104e0",
+          "bytes": 100
+        },
+        ".cache/huggingface/download/imgs/long.jpg.lock": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        ".cache/huggingface/download/imgs/long.jpg.metadata": {
+          "sha256": "4f0279c824ddd7427534f3ec3a8a02e464bac86cd5f7ec4572d2fc2c0f1ab707",
+          "bytes": 100
+        },
+        ".cache/huggingface/download/imgs/miracl.jpg.lock": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        ".cache/huggingface/download/imgs/miracl.jpg.metadata": {
+          "sha256": "5978ec7435b2fed746e9f14ba16ca1d4aaf49f7a8693ce75c5f4081c51ce8374",
+          "bytes": 101
+        },
+        ".cache/huggingface/download/imgs/mkqa.jpg.lock": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        ".cache/huggingface/download/imgs/mkqa.jpg.metadata": {
+          "sha256": "aafac2490fccd3b289fda9e1b1993b465428ca5a093fe6713cbb027749dc8e12",
+          "bytes": 101
+        },
+        ".cache/huggingface/download/imgs/nqa.jpg.lock": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        ".cache/huggingface/download/imgs/nqa.jpg.metadata": {
+          "sha256": "eb594c9d717812b7434c7ce07240dd5edb88f2f6237c6f1edd1d1f667106f2e5",
+          "bytes": 101
+        },
+        ".cache/huggingface/download/imgs/others.webp.lock": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        ".cache/huggingface/download/imgs/others.webp.metadata": {
+          "sha256": "ecac192655b7886485e8cf0ff4f12a231c89e27aa5707c5f90b8c9e485974157",
+          "bytes": 101
+        },
+        ".cache/huggingface/download/long.jpg.lock": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        ".cache/huggingface/download/long.jpg.metadata": {
+          "sha256": "b8cca7f1488ffcbd358a7121ab22ed29e1cdae5d1823952965b2b828ace93e4c",
+          "bytes": 101
+        },
+        ".cache/huggingface/download/modules.json.lock": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        ".cache/huggingface/download/modules.json.metadata": {
+          "sha256": "4ed4782944c4c3355a141d062ca75f7c477263de7c1948d6892c309475e92d73",
+          "bytes": 101
+        },
+        ".cache/huggingface/download/onnx/Constant_7_attr__value.lock": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        ".cache/huggingface/download/onnx/Constant_7_attr__value.metadata": {
+          "sha256": "2ec419ef4d3e903ddcc26b1d784182e0ae57096aef9cdffd617ce1837eb93dce",
+          "bytes": 101
+        },
+        ".cache/huggingface/download/onnx/config.json.lock": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        ".cache/huggingface/download/onnx/config.json.metadata": {
+          "sha256": "c5e077b9046463b3e0473e9405fd00f57769a1a743e078ef08bba1fcab965b05",
+          "bytes": 100
+        },
+        ".cache/huggingface/download/onnx/model.onnx.lock": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        ".cache/huggingface/download/onnx/model.onnx.metadata": {
+          "sha256": "c343f3b3375ebb43061da28934ccd51dd42f95f34463750aaff51e9a6e179772",
+          "bytes": 125
+        },
+        ".cache/huggingface/download/onnx/model.onnx_data.lock": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        ".cache/huggingface/download/onnx/model.onnx_data.metadata": {
+          "sha256": "3370a82e67f125fb7f626c8a87831942533d1c22f5a81fc5d45b45d29c3b30d6",
+          "bytes": 124
+        },
+        ".cache/huggingface/download/onnx/sentencepiece.bpe.model.lock": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        ".cache/huggingface/download/onnx/sentencepiece.bpe.model.metadata": {
+          "sha256": "6dd4b4ca5a6a95198b1664da7f32cb17ca9f99b0b8a7541d9da6d8cb8fac7ead",
+          "bytes": 125
+        },
+        ".cache/huggingface/download/onnx/special_tokens_map.json.lock": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        ".cache/huggingface/download/onnx/special_tokens_map.json.metadata": {
+          "sha256": "64626336968518ef836e13681be8d744be76251d4ddcacd3c3ba245883e7295f",
+          "bytes": 101
+        },
+        ".cache/huggingface/download/onnx/tokenizer.json.lock": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        ".cache/huggingface/download/onnx/tokenizer.json.metadata": {
+          "sha256": "b22f8370c4d8d2bb2cbb995b92fc651de9127c733fa2670a418dc329526456a1",
+          "bytes": 125
+        },
+        ".cache/huggingface/download/onnx/tokenizer_config.json.lock": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        ".cache/huggingface/download/onnx/tokenizer_config.json.metadata": {
+          "sha256": "85c1e4ded2c155bcf9cc49032cc964bd0ddc7691ba8dc47c24c6f692b43c8ab4",
+          "bytes": 101
+        },
+        ".cache/huggingface/download/pytorch_model.bin.lock": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        ".cache/huggingface/download/pytorch_model.bin.metadata": {
+          "sha256": "5eb5aa977479fbca1f643787ac757bf228a7d07562c9f0200a588288bdd52f6d",
+          "bytes": 123
+        },
+        ".cache/huggingface/download/sentence_bert_config.json.lock": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        ".cache/huggingface/download/sentence_bert_config.json.metadata": {
+          "sha256": "e97f8c260cd7e0204f19cfa613c74550bea3a720af742b550e2adb46985b06b7",
+          "bytes": 101
+        },
+        ".cache/huggingface/download/sentencepiece.bpe.model.lock": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        ".cache/huggingface/download/sentencepiece.bpe.model.metadata": {
+          "sha256": "98d93ad9d1d11c80479c5c5a1ba0d7eaaf75d41713d4327ba04c4943f9013a67",
+          "bytes": 125
+        },
+        ".cache/huggingface/download/sparse_linear.pt.lock": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        ".cache/huggingface/download/sparse_linear.pt.metadata": {
+          "sha256": "b9b17d7f46c179ce4d0f1ddcf57ca3556d02a140c1acf092d81d5c6ee4c1a4bc",
+          "bytes": 125
+        },
+        ".cache/huggingface/download/special_tokens_map.json.lock": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        ".cache/huggingface/download/special_tokens_map.json.metadata": {
+          "sha256": "5178ee3fee83f455f1a65c491105008f4ab2db09bfb97c573926f0d8dd4362f7",
+          "bytes": 100
+        },
+        ".cache/huggingface/download/tokenizer.json.lock": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        ".cache/huggingface/download/tokenizer.json.metadata": {
+          "sha256": "3384c03011a67eb5a77784e66b73b567d307c737ac2ce6b1ccf04b88e68bbcbf",
+          "bytes": 125
+        },
+        ".cache/huggingface/download/tokenizer_config.json.lock": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        ".cache/huggingface/download/tokenizer_config.json.metadata": {
+          "sha256": "8f0cc7140cc1ab3f68c4f5dacc95e29f3218f25da79ce58a09ea16ea51c2a2c7",
+          "bytes": 101
+        },
+        ".cache/huggingface/trees/5617a9f61b028005a4858fdac845db406aefb181.json": {
+          "sha256": "b50865eb6512d602c3532b32a1760024878730ac856ec8eec8bc879d333b68f2",
+          "bytes": 4956
+        },
+        ".gitattributes": {
+          "sha256": "7363a8ebd782ede400e72bb3e88c19248478eb6f280a7376d398fc2f22707b9a",
+          "bytes": 1627
+        },
+        "1_Pooling/config.json": {
+          "sha256": "e54c164a07274f2eb45bb724f54a79d1efcc90c41573887cd9a29aeee0597352",
+          "bytes": 191
+        },
+        "README.md": {
+          "sha256": "0b81ccf9134e5874d620a86e6905062ea999e779c34eb1a7e65eaeb7fe00e450",
+          "bytes": 15822
+        },
+        "colbert_linear.pt": {
+          "sha256": "19bfbae397c2b7524158c919d0e9b19393c5639d098f0a66932c91ed8f5f9abb",
+          "bytes": 2100674
+        },
+        "config.json": {
+          "sha256": "26159e7ad065073448460117eb24b7a4572f6f4e78eadff65dc0a11c052449fa",
+          "bytes": 687
+        },
+        "config_sentence_transformers.json": {
+          "sha256": "1eef72430e7194a1e59680e635aed81ffa083f05668dbc5bb1c56c04c0999c38",
+          "bytes": 123
+        },
+        "imgs/.DS_Store": {
+          "sha256": "d65165279105ca6773180500688df4bdc69a2c7b771752f0a46ef120b7fd8ec3",
+          "bytes": 6148
+        },
+        "imgs/bm25.jpg": {
+          "sha256": "4d88d1c224dc6dae62b76547e1e79ed12e1085b94dc1fe0c50440a948277d89a",
+          "bytes": 131849
+        },
+        "imgs/long.jpg": {
+          "sha256": "d2a44539154d2cee75abd032fe773d5514f1129b741c4641cde12554762709a6",
+          "bytes": 485432
+        },
+        "imgs/miracl.jpg": {
+          "sha256": "a48c10a1be83aa7a92a25d85dbc6d2c0194b59503a2599a9e89bd7e063c32a66",
+          "bytes": 576482
+        },
+        "imgs/mkqa.jpg": {
+          "sha256": "ae331fb64bdceeaafecc2f8cd89a2d55a3e41c429dcc5ba906cb9a7bdb73cf2b",
+          "bytes": 608027
+        },
+        "imgs/nqa.jpg": {
+          "sha256": "5385ca9d6af4124932281039e1366d704d10ed81e905526f795f5732352394bb",
+          "bytes": 158358
+        },
+        "imgs/others.webp": {
+          "sha256": "9222ef69ba79cbd3aa8c659bd3cbbf9d90b3dbb040526f56298ed9ceb05ec9df",
+          "bytes": 20984
+        },
+        "long.jpg": {
+          "sha256": "4ba03433ef54575eeef5a291abd81661eb53c432677934dc4050565893e7a8a9",
+          "bytes": 126894
+        },
+        "modules.json": {
+          "sha256": "84e40c8e006c9b1d6c122e02cba9b02458120b5fb0c87b746c41e0207cf642cf",
+          "bytes": 349
+        },
+        "onnx/Constant_7_attr__value": {
+          "sha256": "cdf16f72c5d07b36484056e601ed9687f78477e5d85cee85a34f2406b7fb5906",
+          "bytes": 65552
+        },
+        "onnx/config.json": {
+          "sha256": "f24afd5de914fba8c668426c43d208a1a54022500c63b2c160be20891686fce8",
+          "bytes": 698
+        },
+        "onnx/model.onnx": {
+          "sha256": "f84251230831afb359ab26d9fd37d5936d4d9bb5d1d5410e66442f630f24435b",
+          "bytes": 724923
+        },
+        "onnx/model.onnx_data": {
+          "sha256": "1eebfb28493f67bba03ce0ef64bfdc7fc5a3bd9d7493f818bb1d78cd798416b4",
+          "bytes": 2266820608
+        },
+        "onnx/sentencepiece.bpe.model": {
+          "sha256": "cfc8146abe2a0488e9e2a0c56de7952f7c11ab059eca145a0a727afce0db2865",
+          "bytes": 5069051
+        },
+        "onnx/special_tokens_map.json": {
+          "sha256": "8c785abebea9ae3257b61681b4e6fd8365ceafde980c21970d001e834cf10835",
+          "bytes": 964
+        },
+        "onnx/tokenizer.json": {
+          "sha256": "6710678b12670bc442b99edc952c4d996ae309a7020c1fa0096dd245c2faf790",
+          "bytes": 17082821
+        },
+        "onnx/tokenizer_config.json": {
+          "sha256": "7e4c1cc848840aeccdd763458c18dd525eb0f795c992e00ebe9c28554e7db2d4",
+          "bytes": 1173
+        },
+        "pytorch_model.bin": {
+          "sha256": "b5e0ce3470abf5ef3831aa1bd5553b486803e83251590ab7ff35a117cf6aad38",
+          "bytes": 2271145830
+        },
+        "sentence_bert_config.json": {
+          "sha256": "eb9b44b13c0f52a3b3685c3b1cbdea1ba8b04bea123b98f61610048940776eb1",
+          "bytes": 54
+        },
+        "sentencepiece.bpe.model": {
+          "sha256": "cfc8146abe2a0488e9e2a0c56de7952f7c11ab059eca145a0a727afce0db2865",
+          "bytes": 5069051
+        },
+        "sparse_linear.pt": {
+          "sha256": "45c93804d2142b8f6d7ec6914ae23a1eee9c6a1d27d83d908a20d2afb3595ad9",
+          "bytes": 3516
+        },
+        "special_tokens_map.json": {
+          "sha256": "8c785abebea9ae3257b61681b4e6fd8365ceafde980c21970d001e834cf10835",
+          "bytes": 964
+        },
+        "tokenizer.json": {
+          "sha256": "21106b6d7dab2952c1d496fb21d5dc9db75c28ed361a05f5020bbba27810dd08",
+          "bytes": 17098108
+        },
+        "tokenizer_config.json": {
+          "sha256": "a62b2b6784f990259fddef5f16388693a8043be4f69179e6a5257eeb3f9abac4",
+          "bytes": 444
+        }
+      },
+      "access": "Retained locally; not Git-tracked. Restore matching bytes separately in another checkout."
+    },
+    "/home/hwajoong/projects/nara/model/legal_index": {
+      "available": true,
+      "files": {
+        "embeddings.npy": {
+          "sha256": "f50fbe9ff09f7871dae140c7b29a90e77f4cf7805b231c070e25f1231d55d3c6",
+          "bytes": 25567360
+        },
+        "manifest.json": {
+          "sha256": "1bfd3c9b0ec1bed1860f6d02f15b9a6bb06600bea1fb0e65e037bc856a71e502",
+          "bytes": 8141
+        },
+        "passages.jsonl": {
+          "sha256": "21613f58730c58e3a02b49e912553634a7463e5a2a40ec95203a142de7837d7d",
+          "bytes": 13276598
+        }
+      },
+      "access": "Retained locally; not Git-tracked. Restore matching bytes separately in another checkout."
+    }
+  },
+  "verification_notes": "Eight notices / 96 requests completed without prediction failures. The console entrypoint returned a Run object and the GPU worker remained after inference. The task terminated its own remaining processes after retaining results. Later source changes return0 and explicitly close the worker; final verification is linked below.",
+  "error": "Post-inference CLI return/shutdown failed; own remaining processes were terminated."
+}

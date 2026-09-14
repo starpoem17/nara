@@ -22,3 +22,5 @@ Original diagnostic payloads are evidence, not current instructions or new hypot
 - [v9-cod512-preflight-20260912](v9-cod512-preflight-20260912/): retained evidence; original payloads are distinguished from current instructions.
 - [v9-group512-preflight-20260912](v9-group512-preflight-20260912/): retained evidence; original payloads are distinguished from current instructions.
 - [v9-thinking512-preflight-20260912](v9-thinking512-preflight-20260912/): retained evidence; original payloads are distinguished from current instructions.
+
+- [Pipeline unification](pipeline-unification/README.md): before/after checks, source baseline, command verification and linked GPU evidence.

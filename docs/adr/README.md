@@ -1,3 +1,5 @@
 # Architectural decisions
 
 - [ADR0001: retained experiment runs](0001-retained-experiment-runs.md): adopted source/evidence ownership and historical migration tradeoffs.
+
+- [ADR0002: single inference command](0002-single-inference-command.md): adopted pipeline promotion, command retirement and optional evaluation.

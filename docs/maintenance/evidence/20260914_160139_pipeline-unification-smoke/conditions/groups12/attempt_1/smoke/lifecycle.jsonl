@@ -1,0 +1,192 @@
+{"event": "submit", "request_id": "continuous-0", "task_id": "PPS-DEV-01:0", "time": 59427.861879684, "inflight": 1, "input_tokens": 13690, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-1", "task_id": "PPS-DEV-02:0", "time": 59427.865361931, "inflight": 2, "input_tokens": 2613, "thinking_budget": null}
+{"event": "complete", "request_id": "continuous-0", "task_id": "PPS-DEV-01:0", "time": 59430.239672281, "inflight": 1}
+{"event": "complete", "request_id": "continuous-1", "task_id": "PPS-DEV-02:0", "time": 59430.239707447, "inflight": 0}
+{"event": "submit", "request_id": "continuous-2", "task_id": "PPS-DEV-01:1", "time": 59430.254591274, "inflight": 1, "input_tokens": 13836, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-3", "task_id": "PPS-DEV-01:2", "time": 59430.265228684, "inflight": 2, "input_tokens": 13677, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-4", "task_id": "PPS-DEV-01:3", "time": 59430.278159225, "inflight": 3, "input_tokens": 13894, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-5", "task_id": "PPS-DEV-01:4", "time": 59430.290268189, "inflight": 4, "input_tokens": 13805, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-6", "task_id": "PPS-DEV-01:5", "time": 59430.301982474, "inflight": 5, "input_tokens": 13685, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-7", "task_id": "PPS-DEV-01:6", "time": 59430.314136322, "inflight": 6, "input_tokens": 13738, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-8", "task_id": "PPS-DEV-01:7", "time": 59430.326433549, "inflight": 7, "input_tokens": 13754, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-9", "task_id": "PPS-DEV-01:8", "time": 59430.339967961, "inflight": 8, "input_tokens": 13755, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-10", "task_id": "PPS-DEV-01:9", "time": 59430.351523229, "inflight": 9, "input_tokens": 13710, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-11", "task_id": "PPS-DEV-01:10", "time": 59430.362453096, "inflight": 10, "input_tokens": 13719, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-12", "task_id": "PPS-DEV-01:11", "time": 59430.374600201, "inflight": 11, "input_tokens": 13696, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-13", "task_id": "PPS-DEV-02:1", "time": 59430.378372482, "inflight": 12, "input_tokens": 2759, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-14", "task_id": "PPS-DEV-02:2", "time": 59430.381430546, "inflight": 13, "input_tokens": 2600, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-15", "task_id": "PPS-DEV-02:3", "time": 59430.385120823, "inflight": 14, "input_tokens": 2817, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-16", "task_id": "PPS-DEV-02:4", "time": 59430.389034538, "inflight": 15, "input_tokens": 2728, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-17", "task_id": "PPS-DEV-02:5", "time": 59430.392602556, "inflight": 16, "input_tokens": 2608, "thinking_budget": null}
+{"event": "complete", "request_id": "continuous-3", "task_id": "PPS-DEV-01:2", "time": 59430.753661112, "inflight": 15}
+{"event": "submit", "request_id": "continuous-18", "task_id": "PPS-DEV-02:6", "time": 59430.758328879, "inflight": 16, "input_tokens": 2661, "thinking_budget": null}
+{"event": "complete", "request_id": "continuous-6", "task_id": "PPS-DEV-01:5", "time": 59430.763005422, "inflight": 15}
+{"event": "submit", "request_id": "continuous-19", "task_id": "PPS-DEV-02:7", "time": 59430.766924417, "inflight": 16, "input_tokens": 2677, "thinking_budget": null}
+{"event": "complete", "request_id": "continuous-9", "task_id": "PPS-DEV-01:8", "time": 59430.791752838, "inflight": 15}
+{"event": "complete", "request_id": "continuous-10", "task_id": "PPS-DEV-01:9", "time": 59430.791810025, "inflight": 14}
+{"event": "complete", "request_id": "continuous-14", "task_id": "PPS-DEV-02:2", "time": 59430.791851843, "inflight": 13}
+{"event": "submit", "request_id": "continuous-20", "task_id": "PPS-DEV-02:8", "time": 59430.795217934, "inflight": 14, "input_tokens": 2678, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-21", "task_id": "PPS-DEV-02:9", "time": 59430.798007054, "inflight": 15, "input_tokens": 2633, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-22", "task_id": "PPS-DEV-02:10", "time": 59430.800898947, "inflight": 16, "input_tokens": 2642, "thinking_budget": null}
+{"event": "complete", "request_id": "continuous-12", "task_id": "PPS-DEV-01:11", "time": 59430.820900072, "inflight": 15}
+{"event": "complete", "request_id": "continuous-17", "task_id": "PPS-DEV-02:5", "time": 59430.820928395, "inflight": 14}
+{"event": "submit", "request_id": "continuous-23", "task_id": "PPS-DEV-03:0", "time": 59430.83790993, "inflight": 15, "input_tokens": 16359, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-24", "task_id": "PPS-DEV-02:11", "time": 59430.840630261, "inflight": 16, "input_tokens": 2619, "thinking_budget": null}
+{"event": "complete", "request_id": "continuous-4", "task_id": "PPS-DEV-01:3", "time": 59431.92552762, "inflight": 15}
+{"event": "complete", "request_id": "continuous-7", "task_id": "PPS-DEV-01:6", "time": 59431.925565661, "inflight": 14}
+{"event": "complete", "request_id": "continuous-15", "task_id": "PPS-DEV-02:3", "time": 59431.925594485, "inflight": 13}
+{"event": "complete", "request_id": "continuous-8", "task_id": "PPS-DEV-01:7", "time": 59432.022162001, "inflight": 12}
+{"event": "complete", "request_id": "continuous-20", "task_id": "PPS-DEV-02:8", "time": 59432.059030157, "inflight": 11}
+{"event": "complete", "request_id": "continuous-21", "task_id": "PPS-DEV-02:9", "time": 59432.059056707, "inflight": 10}
+{"event": "complete", "request_id": "continuous-24", "task_id": "PPS-DEV-02:11", "time": 59432.071044725, "inflight": 9}
+{"event": "complete", "request_id": "continuous-2", "task_id": "PPS-DEV-01:1", "time": 59432.08360273, "inflight": 8}
+{"event": "complete", "request_id": "continuous-22", "task_id": "PPS-DEV-02:10", "time": 59432.083627155, "inflight": 7}
+{"event": "complete", "request_id": "continuous-13", "task_id": "PPS-DEV-02:1", "time": 59432.116506065, "inflight": 6}
+{"event": "complete", "request_id": "continuous-19", "task_id": "PPS-DEV-02:7", "time": 59432.242095451, "inflight": 5}
+{"event": "complete", "request_id": "continuous-18", "task_id": "PPS-DEV-02:6", "time": 59432.252692095, "inflight": 4}
+{"event": "complete", "request_id": "continuous-23", "task_id": "PPS-DEV-03:0", "time": 59432.26278769, "inflight": 3}
+{"event": "submit", "request_id": "continuous-25", "task_id": "PPS-DEV-03:1", "time": 59432.284156346, "inflight": 4, "input_tokens": 16505, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-26", "task_id": "PPS-DEV-03:2", "time": 59432.300063831, "inflight": 5, "input_tokens": 16346, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-27", "task_id": "PPS-DEV-03:3", "time": 59432.317094978, "inflight": 6, "input_tokens": 16563, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-28", "task_id": "PPS-DEV-03:4", "time": 59432.332257298, "inflight": 7, "input_tokens": 16474, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-29", "task_id": "PPS-DEV-03:5", "time": 59432.347732934, "inflight": 8, "input_tokens": 16354, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-30", "task_id": "PPS-DEV-03:6", "time": 59432.363377537, "inflight": 9, "input_tokens": 16407, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-31", "task_id": "PPS-DEV-03:7", "time": 59432.378535148, "inflight": 10, "input_tokens": 16423, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-32", "task_id": "PPS-DEV-03:8", "time": 59432.393502563, "inflight": 11, "input_tokens": 16424, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-33", "task_id": "PPS-DEV-03:9", "time": 59432.40850861, "inflight": 12, "input_tokens": 16379, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-34", "task_id": "PPS-DEV-03:10", "time": 59432.42272, "inflight": 13, "input_tokens": 16388, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-35", "task_id": "PPS-DEV-03:11", "time": 59432.436901594, "inflight": 14, "input_tokens": 16365, "thinking_budget": null}
+{"event": "complete", "request_id": "continuous-5", "task_id": "PPS-DEV-01:4", "time": 59432.437306282, "inflight": 13}
+{"event": "complete", "request_id": "continuous-16", "task_id": "PPS-DEV-02:4", "time": 59432.538174149, "inflight": 12}
+{"event": "complete", "request_id": "continuous-29", "task_id": "PPS-DEV-03:5", "time": 59432.803358583, "inflight": 11}
+{"event": "complete", "request_id": "continuous-32", "task_id": "PPS-DEV-03:8", "time": 59432.816311959, "inflight": 10}
+{"event": "complete", "request_id": "continuous-33", "task_id": "PPS-DEV-03:9", "time": 59432.828927892, "inflight": 9}
+{"event": "complete", "request_id": "continuous-35", "task_id": "PPS-DEV-03:11", "time": 59432.840355021, "inflight": 8}
+{"event": "complete", "request_id": "continuous-27", "task_id": "PPS-DEV-03:3", "time": 59432.975178153, "inflight": 7}
+{"event": "complete", "request_id": "continuous-30", "task_id": "PPS-DEV-03:6", "time": 59433.005815408, "inflight": 6}
+{"event": "complete", "request_id": "continuous-31", "task_id": "PPS-DEV-03:7", "time": 59433.005845043, "inflight": 5}
+{"event": "complete", "request_id": "continuous-25", "task_id": "PPS-DEV-03:1", "time": 59433.127588334, "inflight": 4}
+{"event": "complete", "request_id": "continuous-11", "task_id": "PPS-DEV-01:10", "time": 59433.290537261, "inflight": 3}
+{"event": "submit", "request_id": "continuous-36", "task_id": "PPS-DEV-04:0", "time": 59433.323027915, "inflight": 4, "input_tokens": 19643, "thinking_budget": null}
+{"event": "complete", "request_id": "continuous-28", "task_id": "PPS-DEV-03:4", "time": 59433.386479441, "inflight": 3}
+{"event": "complete", "request_id": "continuous-34", "task_id": "PPS-DEV-03:10", "time": 59434.790539191, "inflight": 2}
+{"event": "complete", "request_id": "continuous-36", "task_id": "PPS-DEV-04:0", "time": 59434.936171964, "inflight": 1}
+{"event": "submit", "request_id": "continuous-37", "task_id": "PPS-DEV-05:0", "time": 59434.948884309, "inflight": 2, "input_tokens": 11129, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-38", "task_id": "PPS-DEV-04:1", "time": 59434.965597493, "inflight": 3, "input_tokens": 19789, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-39", "task_id": "PPS-DEV-04:2", "time": 59434.982502515, "inflight": 4, "input_tokens": 19630, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-40", "task_id": "PPS-DEV-04:3", "time": 59435.000326768, "inflight": 5, "input_tokens": 19847, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-41", "task_id": "PPS-DEV-04:4", "time": 59435.017099563, "inflight": 6, "input_tokens": 19758, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-42", "task_id": "PPS-DEV-04:5", "time": 59435.033554333, "inflight": 7, "input_tokens": 19638, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-43", "task_id": "PPS-DEV-04:6", "time": 59435.050996892, "inflight": 8, "input_tokens": 19691, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-44", "task_id": "PPS-DEV-04:7", "time": 59435.067106806, "inflight": 9, "input_tokens": 19707, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-45", "task_id": "PPS-DEV-04:8", "time": 59435.083336885, "inflight": 10, "input_tokens": 19708, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-46", "task_id": "PPS-DEV-04:9", "time": 59435.098524804, "inflight": 11, "input_tokens": 19663, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-47", "task_id": "PPS-DEV-04:10", "time": 59435.114391312, "inflight": 12, "input_tokens": 19672, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-48", "task_id": "PPS-DEV-04:11", "time": 59435.130832366, "inflight": 13, "input_tokens": 19649, "thinking_budget": null}
+{"event": "complete", "request_id": "continuous-26", "task_id": "PPS-DEV-03:2", "time": 59435.537464699, "inflight": 12}
+{"event": "complete", "request_id": "continuous-42", "task_id": "PPS-DEV-04:5", "time": 59435.906207103, "inflight": 11}
+{"event": "complete", "request_id": "continuous-45", "task_id": "PPS-DEV-04:8", "time": 59435.906237189, "inflight": 10}
+{"event": "complete", "request_id": "continuous-46", "task_id": "PPS-DEV-04:9", "time": 59435.90625913, "inflight": 9}
+{"event": "complete", "request_id": "continuous-48", "task_id": "PPS-DEV-04:11", "time": 59435.906277485, "inflight": 8}
+{"event": "complete", "request_id": "continuous-37", "task_id": "PPS-DEV-05:0", "time": 59436.066755368, "inflight": 7}
+{"event": "submit", "request_id": "continuous-49", "task_id": "PPS-DEV-05:1", "time": 59436.078174843, "inflight": 8, "input_tokens": 11275, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-50", "task_id": "PPS-DEV-05:2", "time": 59436.086975216, "inflight": 9, "input_tokens": 11116, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-51", "task_id": "PPS-DEV-05:3", "time": 59436.100393352, "inflight": 10, "input_tokens": 11333, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-52", "task_id": "PPS-DEV-05:4", "time": 59436.111040031, "inflight": 11, "input_tokens": 11244, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-53", "task_id": "PPS-DEV-05:5", "time": 59436.122229575, "inflight": 12, "input_tokens": 11124, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-54", "task_id": "PPS-DEV-05:6", "time": 59436.132459905, "inflight": 13, "input_tokens": 11177, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-55", "task_id": "PPS-DEV-05:7", "time": 59436.14282159, "inflight": 14, "input_tokens": 11193, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-56", "task_id": "PPS-DEV-05:8", "time": 59436.152737981, "inflight": 15, "input_tokens": 11194, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-57", "task_id": "PPS-DEV-05:9", "time": 59436.161851841, "inflight": 16, "input_tokens": 11149, "thinking_budget": null}
+{"event": "complete", "request_id": "continuous-40", "task_id": "PPS-DEV-04:3", "time": 59436.16214014, "inflight": 15}
+{"event": "submit", "request_id": "continuous-58", "task_id": "PPS-DEV-05:10", "time": 59436.171364386, "inflight": 16, "input_tokens": 11158, "thinking_budget": null}
+{"event": "complete", "request_id": "continuous-43", "task_id": "PPS-DEV-04:6", "time": 59436.171564681, "inflight": 15}
+{"event": "complete", "request_id": "continuous-44", "task_id": "PPS-DEV-04:7", "time": 59436.171595078, "inflight": 14}
+{"event": "submit", "request_id": "continuous-59", "task_id": "PPS-DEV-05:11", "time": 59436.182011486, "inflight": 15, "input_tokens": 11135, "thinking_budget": null}
+{"event": "complete", "request_id": "continuous-38", "task_id": "PPS-DEV-04:1", "time": 59436.413788641, "inflight": 14}
+{"event": "complete", "request_id": "continuous-47", "task_id": "PPS-DEV-04:10", "time": 59436.503057047, "inflight": 13}
+{"event": "complete", "request_id": "continuous-53", "task_id": "PPS-DEV-05:5", "time": 59436.566261725, "inflight": 12}
+{"event": "complete", "request_id": "continuous-56", "task_id": "PPS-DEV-05:8", "time": 59436.578794093, "inflight": 11}
+{"event": "complete", "request_id": "continuous-57", "task_id": "PPS-DEV-05:9", "time": 59436.578820332, "inflight": 10}
+{"event": "complete", "request_id": "continuous-58", "task_id": "PPS-DEV-05:10", "time": 59436.603109889, "inflight": 9}
+{"event": "complete", "request_id": "continuous-59", "task_id": "PPS-DEV-05:11", "time": 59436.603135968, "inflight": 8}
+{"event": "complete", "request_id": "continuous-41", "task_id": "PPS-DEV-04:4", "time": 59436.691606219, "inflight": 7}
+{"event": "complete", "request_id": "continuous-51", "task_id": "PPS-DEV-05:3", "time": 59436.75776642, "inflight": 6}
+{"event": "complete", "request_id": "continuous-54", "task_id": "PPS-DEV-05:6", "time": 59436.779420413, "inflight": 5}
+{"event": "complete", "request_id": "continuous-55", "task_id": "PPS-DEV-05:7", "time": 59436.821936556, "inflight": 4}
+{"event": "complete", "request_id": "continuous-39", "task_id": "PPS-DEV-04:2", "time": 59436.89495245, "inflight": 3}
+{"event": "submit", "request_id": "continuous-60", "task_id": "PPS-DEV-06:0", "time": 59436.925506221, "inflight": 4, "input_tokens": 18596, "thinking_budget": null}
+{"event": "complete", "request_id": "continuous-49", "task_id": "PPS-DEV-05:1", "time": 59436.925694394, "inflight": 3}
+{"event": "complete", "request_id": "continuous-52", "task_id": "PPS-DEV-05:4", "time": 59438.178607718, "inflight": 2}
+{"event": "complete", "request_id": "continuous-50", "task_id": "PPS-DEV-05:2", "time": 59438.197192876, "inflight": 1}
+{"event": "complete", "request_id": "continuous-60", "task_id": "PPS-DEV-06:0", "time": 59438.391794896, "inflight": 0}
+{"event": "submit", "request_id": "continuous-61", "task_id": "PPS-DEV-07:0", "time": 59438.403107081, "inflight": 1, "input_tokens": 10673, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-62", "task_id": "PPS-DEV-06:1", "time": 59438.418985834, "inflight": 2, "input_tokens": 18742, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-63", "task_id": "PPS-DEV-06:2", "time": 59438.435235872, "inflight": 3, "input_tokens": 18583, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-64", "task_id": "PPS-DEV-06:3", "time": 59438.453771929, "inflight": 4, "input_tokens": 18800, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-65", "task_id": "PPS-DEV-06:4", "time": 59438.469939052, "inflight": 5, "input_tokens": 18711, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-66", "task_id": "PPS-DEV-06:5", "time": 59438.485741813, "inflight": 6, "input_tokens": 18591, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-67", "task_id": "PPS-DEV-06:6", "time": 59438.501580371, "inflight": 7, "input_tokens": 18644, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-68", "task_id": "PPS-DEV-06:7", "time": 59438.517051381, "inflight": 8, "input_tokens": 18660, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-69", "task_id": "PPS-DEV-06:8", "time": 59438.532421472, "inflight": 9, "input_tokens": 18661, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-70", "task_id": "PPS-DEV-06:9", "time": 59438.54792909, "inflight": 10, "input_tokens": 18616, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-71", "task_id": "PPS-DEV-06:10", "time": 59438.562945569, "inflight": 11, "input_tokens": 18625, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-72", "task_id": "PPS-DEV-06:11", "time": 59438.57808065, "inflight": 12, "input_tokens": 18602, "thinking_budget": null}
+{"event": "complete", "request_id": "continuous-63", "task_id": "PPS-DEV-06:2", "time": 59439.297029978, "inflight": 11}
+{"event": "complete", "request_id": "continuous-66", "task_id": "PPS-DEV-06:5", "time": 59439.320464595, "inflight": 10}
+{"event": "complete", "request_id": "continuous-69", "task_id": "PPS-DEV-06:8", "time": 59439.320491205, "inflight": 9}
+{"event": "complete", "request_id": "continuous-70", "task_id": "PPS-DEV-06:9", "time": 59439.320513116, "inflight": 8}
+{"event": "complete", "request_id": "continuous-72", "task_id": "PPS-DEV-06:11", "time": 59439.320533444, "inflight": 7}
+{"event": "complete", "request_id": "continuous-61", "task_id": "PPS-DEV-07:0", "time": 59439.48103612, "inflight": 6}
+{"event": "submit", "request_id": "continuous-73", "task_id": "PPS-DEV-07:1", "time": 59439.492021243, "inflight": 7, "input_tokens": 10819, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-74", "task_id": "PPS-DEV-07:2", "time": 59439.500483343, "inflight": 8, "input_tokens": 10660, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-75", "task_id": "PPS-DEV-07:3", "time": 59439.512899374, "inflight": 9, "input_tokens": 10877, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-76", "task_id": "PPS-DEV-07:4", "time": 59439.522595124, "inflight": 10, "input_tokens": 10788, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-77", "task_id": "PPS-DEV-07:5", "time": 59439.531853705, "inflight": 11, "input_tokens": 10668, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-78", "task_id": "PPS-DEV-07:6", "time": 59439.541631839, "inflight": 12, "input_tokens": 10721, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-79", "task_id": "PPS-DEV-07:7", "time": 59439.550684254, "inflight": 13, "input_tokens": 10737, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-80", "task_id": "PPS-DEV-07:8", "time": 59439.559792524, "inflight": 14, "input_tokens": 10738, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-81", "task_id": "PPS-DEV-07:9", "time": 59439.568816716, "inflight": 15, "input_tokens": 10693, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-82", "task_id": "PPS-DEV-07:10", "time": 59439.577443094, "inflight": 16, "input_tokens": 10702, "thinking_budget": null}
+{"event": "complete", "request_id": "continuous-64", "task_id": "PPS-DEV-06:3", "time": 59439.577721666, "inflight": 15}
+{"event": "submit", "request_id": "continuous-83", "task_id": "PPS-DEV-07:11", "time": 59439.58680015, "inflight": 16, "input_tokens": 10679, "thinking_budget": null}
+{"event": "complete", "request_id": "continuous-67", "task_id": "PPS-DEV-06:6", "time": 59439.586994964, "inflight": 15}
+{"event": "complete", "request_id": "continuous-68", "task_id": "PPS-DEV-06:7", "time": 59439.58702983, "inflight": 14}
+{"event": "complete", "request_id": "continuous-62", "task_id": "PPS-DEV-06:1", "time": 59439.798500092, "inflight": 13}
+{"event": "complete", "request_id": "continuous-74", "task_id": "PPS-DEV-07:2", "time": 59439.960008841, "inflight": 12}
+{"event": "complete", "request_id": "continuous-77", "task_id": "PPS-DEV-07:5", "time": 59439.984521335, "inflight": 11}
+{"event": "complete", "request_id": "continuous-80", "task_id": "PPS-DEV-07:8", "time": 59439.996920045, "inflight": 10}
+{"event": "complete", "request_id": "continuous-83", "task_id": "PPS-DEV-07:11", "time": 59440.008967286, "inflight": 9}
+{"event": "complete", "request_id": "continuous-81", "task_id": "PPS-DEV-07:9", "time": 59440.032853599, "inflight": 8}
+{"event": "complete", "request_id": "continuous-65", "task_id": "PPS-DEV-06:4", "time": 59440.066399534, "inflight": 7}
+{"event": "complete", "request_id": "continuous-75", "task_id": "PPS-DEV-07:3", "time": 59440.175237288, "inflight": 6}
+{"event": "complete", "request_id": "continuous-78", "task_id": "PPS-DEV-07:6", "time": 59440.185765275, "inflight": 5}
+{"event": "complete", "request_id": "continuous-79", "task_id": "PPS-DEV-07:7", "time": 59440.196548961, "inflight": 4}
+{"event": "complete", "request_id": "continuous-82", "task_id": "PPS-DEV-07:10", "time": 59440.368571262, "inflight": 3}
+{"event": "complete", "request_id": "continuous-73", "task_id": "PPS-DEV-07:1", "time": 59440.493857539, "inflight": 2}
+{"event": "complete", "request_id": "continuous-76", "task_id": "PPS-DEV-07:4", "time": 59440.586826882, "inflight": 1}
+{"event": "submit", "request_id": "continuous-84", "task_id": "PPS-DEV-08:0", "time": 59440.621841837, "inflight": 2, "input_tokens": 22533, "thinking_budget": null}
+{"event": "complete", "request_id": "continuous-84", "task_id": "PPS-DEV-08:0", "time": 59442.477595347, "inflight": 1}
+{"event": "submit", "request_id": "continuous-85", "task_id": "PPS-DEV-08:1", "time": 59442.499111795, "inflight": 2, "input_tokens": 22679, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-86", "task_id": "PPS-DEV-08:2", "time": 59442.518074513, "inflight": 3, "input_tokens": 22520, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-87", "task_id": "PPS-DEV-08:3", "time": 59442.538038064, "inflight": 4, "input_tokens": 22737, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-88", "task_id": "PPS-DEV-08:4", "time": 59442.557426849, "inflight": 5, "input_tokens": 22648, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-89", "task_id": "PPS-DEV-08:5", "time": 59442.576697534, "inflight": 6, "input_tokens": 22528, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-90", "task_id": "PPS-DEV-08:6", "time": 59442.595244052, "inflight": 7, "input_tokens": 22581, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-91", "task_id": "PPS-DEV-08:7", "time": 59442.613703067, "inflight": 8, "input_tokens": 22597, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-92", "task_id": "PPS-DEV-08:8", "time": 59442.632981496, "inflight": 9, "input_tokens": 22598, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-93", "task_id": "PPS-DEV-08:9", "time": 59442.650533643, "inflight": 10, "input_tokens": 22553, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-94", "task_id": "PPS-DEV-08:10", "time": 59442.668334626, "inflight": 11, "input_tokens": 22562, "thinking_budget": null}
+{"event": "submit", "request_id": "continuous-95", "task_id": "PPS-DEV-08:11", "time": 59442.686390126, "inflight": 12, "input_tokens": 22539, "thinking_budget": null}
+{"event": "complete", "request_id": "continuous-86", "task_id": "PPS-DEV-08:2", "time": 59443.038529853, "inflight": 11}
+{"event": "complete", "request_id": "continuous-89", "task_id": "PPS-DEV-08:5", "time": 59443.063532648, "inflight": 10}
+{"event": "complete", "request_id": "continuous-92", "task_id": "PPS-DEV-08:8", "time": 59443.087620309, "inflight": 9}
+{"event": "complete", "request_id": "continuous-93", "task_id": "PPS-DEV-08:9", "time": 59443.099849542, "inflight": 8}
+{"event": "complete", "request_id": "continuous-94", "task_id": "PPS-DEV-08:10", "time": 59443.099873547, "inflight": 7}
+{"event": "complete", "request_id": "continuous-95", "task_id": "PPS-DEV-08:11", "time": 59443.099895208, "inflight": 6}
+{"event": "complete", "request_id": "continuous-87", "task_id": "PPS-DEV-08:3", "time": 59443.26299155, "inflight": 5}
+{"event": "complete", "request_id": "continuous-91", "task_id": "PPS-DEV-08:7", "time": 59443.273610067, "inflight": 4}
+{"event": "complete", "request_id": "continuous-90", "task_id": "PPS-DEV-08:6", "time": 59443.295815315, "inflight": 3}
+{"event": "complete", "request_id": "continuous-85", "task_id": "PPS-DEV-08:1", "time": 59443.402791925, "inflight": 2}
+{"event": "complete", "request_id": "continuous-88", "task_id": "PPS-DEV-08:4", "time": 59443.619677305, "inflight": 1}
+{"event": "complete", "request_id": "continuous-71", "task_id": "PPS-DEV-06:10", "time": 59443.693379636, "inflight": 0}

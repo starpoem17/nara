@@ -1,0 +1,18 @@
+{
+  "exit_code": 0,
+  "engine_processes_remaining": 0,
+  "source_snapshot_matches_final_code": true,
+  "prepared_records": 200,
+  "groups": 12,
+  "max_input_tokens": 29310,
+  "smoke_records": 8,
+  "failed": 0,
+  "requests": 96,
+  "cached_tokens": 1263136,
+  "input_tokens": 1388264,
+  "request_limits": [
+    512
+  ],
+  "full_graph": true,
+  "cached_fraction": 0.9098672874899875
+}

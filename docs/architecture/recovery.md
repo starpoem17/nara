@@ -1,6 +1,6 @@
 # Failed-notice recovery
 
-Implementation: `src/inference/recovery.py`; default adapter: `src/experiments/pipeline.py`. Engine execution remains in [local engine](<local-engine.md>); judgment validation remains in [dynamic RAG](<dynamic-rag.md>).
+Implementation: `src/inference/recovery.py`; default adapter: `src/inference/pipeline.py`. Engine execution remains in [local engine](<local-engine.md>); judgment validation remains in [dynamic RAG](<dynamic-rag.md>).
 
 ## Interface and policy
 
@@ -31,4 +31,4 @@ The historical replay helper is retained under the corresponding run's code dire
 
 Saved GPU run `experiments/legacy_engine_refactor/after`: all200 notices/2400 groups replay to identical judgments and evidence through the new validation interface. A simulation removes final events from the first group of two real notices; reversed retry ordering still repairs exactly those two groups and restores the saved judgments while preserving successful notices/attempts. No new GPU inference or time/F1 measurement was performed for this logic-only refactor.
 
-Evidence: [retained recovery audit](../maintenance/evidence/recovery_refactor/validation.json). Historical audit code is retained alongside that evidence. Current CPU checks use `uv run --locked python -m unittest discover -s tests`; new preparation uses `uv run --locked nara-experiment --prepare-only`. [Operations](../operations.md) owns the current saved-output replay command.
+Evidence: [retained recovery audit](../maintenance/evidence/recovery_refactor/validation.json). Historical audit code is retained alongside that evidence. Current CPU checks use `uv run --locked python -m unittest discover -s tests`; new preparation uses `uv run --locked nara --input data/dev.jsonl --prepare-only`. [Operations](../operations.md) owns the current saved-output replay command.

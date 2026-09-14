@@ -1,6 +1,6 @@
 # Local inference engine
 
-Implementation: `src/inference/engine.py`. Default caller: `src/experiments/pipeline.py` via `src/experiments/run_experiment.py`. Scheduling remains in `src/inference/prefix_pipeline.py`; conversation/retrieval/validation remain in `src/inference/predictor.py` and `src/inference/continuous.py`.
+Implementation: `src/inference/engine.py`. Default caller: `src/inference/pipeline.py` via `src/cli.py`. Scheduling remains in `src/inference/prefix_pipeline.py`; conversation/retrieval/validation remain in `src/inference/predictor.py` and `src/inference/continuous.py`.
 
 ## Interface
 
@@ -8,6 +8,7 @@ Implementation: `src/inference/engine.py`. Default caller: `src/experiments/pipe
 - `VLLMModel` retains existing constructor arguments and `generate(turns) -> {task_id: Reply}`. Optional `max_num_batched_tokens`, `enable_chunked_prefill`, `collect_scheduler_stats` configure default experiments explicitly. Unspecified options are omitted, preserving old scripts that inject these keywords themselves.
 - `model.stream()` creates a new sequential stage with `submit`, `poll`, `abort`, `rows`, `lifecycle`. One stream is active on an engine at a time. `poll` can return several completions in completion order, joined by task ID. A retry may reuse a task ID; physical request IDs remain unique across stages.
 - `thinking` changes future requests. Rendered prompt tokens and thinking budgets are fixed at submission; changing another request's mode does not change their decoding or reported budget.
+- `close()` explicitly shuts down the engine worker; the sole pipeline uses it on both success and failure so the command can exit.
 - `reset_prefix_cache()` returns engine reset success; the caller resets only between drained stages. `engine_info()` records effective scheduling, graph and cache settings.
 - `with model.observe_scheduler() as rows` observes raw steps and restores the original engine callback even on exceptions. Construct with `collect_scheduler_stats=True` for scheduler/graph evidence. Snapshot rows before clearing for a new stage. Warmup remains outside the observation scope in the default runner.
 

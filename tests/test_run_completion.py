@@ -6,7 +6,7 @@ import tempfile
 import unittest
 from unittest.mock import patch
 from nara.experiments.recording import Run
-from nara.experiments.run_experiment import main
+from nara.cli import main
 from nara.evaluation.compare_dev_runs import compare
 
 
@@ -18,9 +18,9 @@ class RunCompletionTests(unittest.TestCase):
             def local_create(*args, **kwargs):
                 return create(*args, root=root, **kwargs)
             with patch.object(Run, 'create', side_effect=local_create), patch.object(Run, 'capture'), patch.object(Run, 'reference'), \
-                 patch('nara.experiments.pipeline.execute'), patch('nara.evaluation.compare_dev_runs.compare', side_effect=ValueError('comparison failed')):
+                 patch.object(Run, 'capture_input'), patch('nara.inference.pipeline.execute', side_effect=lambda out, *a, **kw: (out / 'report.json').write_text('{"records": 200}')), patch('nara.evaluation.evaluate_dev.evaluate'), patch('nara.evaluation.compare_dev_runs.compare', side_effect=ValueError('comparison failed')):
                 with self.assertRaisesRegex(ValueError, 'comparison failed'):
-                    main(['--grouping', 'groups12', 'groups21'])
+                    main(['--input', 'data/dev.jsonl', '--labels', 'data/dev_labels.csv', '--experiment', '--grouping', 'groups12', 'groups21'])
             record = Run(next((root / 'experiments').iterdir()))
             self.assertEqual(record.metadata['status'], 'failed')
             self.assertIn('comparison failed', record.metadata['error'])

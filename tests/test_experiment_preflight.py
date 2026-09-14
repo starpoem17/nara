@@ -1,7 +1,7 @@
 """Fresh prefix measurements must follow current inputs and enforce context budgets."""
 from types import SimpleNamespace
 import unittest
-from nara.experiments.pipeline import measure_prefix_inputs
+from nara.inference.pipeline import measure_prefix_inputs
 
 
 class PreflightTests(unittest.TestCase):
